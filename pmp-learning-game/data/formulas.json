@@ -1,0 +1,554 @@
+{
+  "categories": [
+    {
+      "id": "evm",
+      "name": "Earned Value Management (EVM)",
+      "formulas": [
+        {
+          "id": "pv",
+          "name": "Planned Value (PV)",
+          "formula": "PV",
+          "description": "Budget for scheduled work (What you PLANNED to spend)",
+          "category": "Basic Values",
+          "type": "definition",
+          "relatedFormulas": ["ev", "ac", "bac"]
+        },
+        {
+          "id": "ev",
+          "name": "Earned Value (EV)",
+          "formula": "EV",
+          "description": "Budget for completed work (Value of work DONE)",
+          "category": "Basic Values",
+          "type": "definition",
+          "relatedFormulas": ["pv", "ac"]
+        },
+        {
+          "id": "ac",
+          "name": "Actual Cost (AC)",
+          "formula": "AC",
+          "description": "Actual cost incurred (What you ACTUALLY spent)",
+          "category": "Basic Values",
+          "type": "definition",
+          "relatedFormulas": ["ev", "pv"]
+        },
+        {
+          "id": "bac",
+          "name": "Budget at Completion (BAC)",
+          "formula": "BAC",
+          "description": "Total project budget",
+          "category": "Basic Values",
+          "type": "definition",
+          "relatedFormulas": ["eac", "vac"]
+        },
+        {
+          "id": "cv",
+          "name": "Cost Variance (CV)",
+          "formula": "CV = EV - AC",
+          "description": "Difference between earned value and actual cost",
+          "category": "Variance Analysis",
+          "type": "calculation",
+          "interpretation": {
+            "positive": "Under budget (Good)",
+            "negative": "Over budget (Bad)",
+            "zero": "On budget"
+          },
+          "example": {
+            "given": "EV = $50,000, AC = $55,000",
+            "calculation": "CV = 50,000 - 55,000 = -5,000",
+            "interpretation": "Project is $5,000 over budget"
+          },
+          "relatedFormulas": ["cpi", "sv"],
+          "commonMistakes": ["Confusing with SV", "Misinterpreting negative as good"]
+        },
+        {
+          "id": "sv",
+          "name": "Schedule Variance (SV)",
+          "formula": "SV = EV - PV",
+          "description": "Difference between earned value and planned value",
+          "category": "Variance Analysis",
+          "type": "calculation",
+          "interpretation": {
+            "positive": "Ahead of schedule (Good)",
+            "negative": "Behind schedule (Bad)",
+            "zero": "On schedule"
+          },
+          "example": {
+            "given": "EV = $35,000, PV = $40,000",
+            "calculation": "SV = 35,000 - 40,000 = -5,000",
+            "interpretation": "Project is $5,000 worth of work behind schedule"
+          },
+          "relatedFormulas": ["spi", "cv"],
+          "commonMistakes": ["Confusing with CV", "Thinking it's time-based"]
+        },
+        {
+          "id": "cpi",
+          "name": "Cost Performance Index (CPI)",
+          "formula": "CPI = EV / AC",
+          "description": "Cost efficiency of work performed",
+          "category": "Performance Indexes",
+          "type": "calculation",
+          "interpretation": {
+            "greater_than_1": "Under budget (Good) - earning more than spending",
+            "equals_1": "On budget",
+            "less_than_1": "Over budget (Bad) - spending more than earning"
+          },
+          "example": {
+            "given": "EV = $50,000, AC = $55,000",
+            "calculation": "CPI = 50,000 / 55,000 = 0.91",
+            "interpretation": "For every dollar spent, only $0.91 of value is earned - project is over budget"
+          },
+          "relatedFormulas": ["cv", "spi", "eac"],
+          "commonMistakes": ["Confusing with SPI", "Using AC / EV instead of EV / AC"]
+        },
+        {
+          "id": "spi",
+          "name": "Schedule Performance Index (SPI)",
+          "formula": "SPI = EV / PV",
+          "description": "Schedule efficiency of work performed",
+          "category": "Performance Indexes",
+          "type": "calculation",
+          "interpretation": {
+            "greater_than_1": "Ahead of schedule (Good)",
+            "equals_1": "On schedule",
+            "less_than_1": "Behind schedule (Bad)"
+          },
+          "example": {
+            "given": "EV = $35,000, PV = $40,000",
+            "calculation": "SPI = 35,000 / 40,000 = 0.88",
+            "interpretation": "Project is progressing at 88% of planned rate"
+          },
+          "relatedFormulas": ["sv", "cpi"],
+          "commonMistakes": ["Confusing with CPI"]
+        },
+        {
+          "id": "eac-typical",
+          "name": "Estimate at Completion (Typical)",
+          "formula": "EAC = BAC / CPI",
+          "description": "Expected total cost if current cost performance continues",
+          "category": "Forecasting",
+          "type": "calculation",
+          "whenToUse": "Most common; assumes current cost performance continues",
+          "example": {
+            "given": "BAC = $100,000, CPI = 0.83",
+            "calculation": "EAC = 100,000 / 0.83 = $120,482",
+            "interpretation": "Project will finish over budget at $120,482"
+          },
+          "relatedFormulas": ["cpi", "etc", "vac"],
+          "commonMistakes": ["Using wrong EAC formula for situation"]
+        },
+        {
+          "id": "eac-atypical",
+          "name": "Estimate at Completion (Atypical)",
+          "formula": "EAC = AC + (BAC - EV)",
+          "description": "Expected total cost when current variance is one-time",
+          "category": "Forecasting",
+          "type": "calculation",
+          "whenToUse": "Current variance is one-time, won't repeat",
+          "relatedFormulas": ["eac-typical"]
+        },
+        {
+          "id": "eac-cpi-spi",
+          "name": "Estimate at Completion (CPI × SPI)",
+          "formula": "EAC = AC + [(BAC - EV) / (CPI × SPI)]",
+          "description": "Expected total cost considering both cost and schedule",
+          "category": "Forecasting",
+          "type": "calculation",
+          "whenToUse": "Both cost and schedule efficiency need to be considered",
+          "relatedFormulas": ["eac-typical", "cpi", "spi"]
+        },
+        {
+          "id": "etc",
+          "name": "Estimate to Complete (ETC)",
+          "formula": "ETC = EAC - AC",
+          "description": "Expected cost to finish remaining work",
+          "category": "Forecasting",
+          "type": "calculation",
+          "alternativeFormula": "ETC = (BAC - EV) / CPI",
+          "example": {
+            "given": "EAC = $120,482, AC = $42,000",
+            "calculation": "ETC = 120,482 - 42,000 = $78,482",
+            "interpretation": "Need $78,482 more to complete the project"
+          },
+          "relatedFormulas": ["eac-typical", "ac"]
+        },
+        {
+          "id": "vac",
+          "name": "Variance at Completion (VAC)",
+          "formula": "VAC = BAC - EAC",
+          "description": "Expected budget variance at project completion",
+          "category": "Forecasting",
+          "type": "calculation",
+          "interpretation": {
+            "positive": "Will finish under budget",
+            "negative": "Will finish over budget",
+            "zero": "Will finish on budget"
+          },
+          "example": {
+            "given": "BAC = $100,000, EAC = $120,482",
+            "calculation": "VAC = 100,000 - 120,482 = -$20,482",
+            "interpretation": "Project will finish $20,482 over budget"
+          },
+          "relatedFormulas": ["bac", "eac-typical"]
+        },
+        {
+          "id": "tcpi-bac",
+          "name": "To-Complete Performance Index (BAC)",
+          "formula": "TCPI = (BAC - EV) / (BAC - AC)",
+          "description": "Cost efficiency needed on remaining work to meet original budget",
+          "category": "Forecasting",
+          "type": "calculation",
+          "interpretation": {
+            "equals_1": "Need to maintain current efficiency",
+            "greater_than_1": "Need to improve efficiency (harder)",
+            "less_than_1": "Can afford to be less efficient (easier)",
+            "greater_than_1_2": "Very difficult to achieve"
+          },
+          "whenToUse": "To meet original budget (BAC)",
+          "example": {
+            "given": "BAC = $100,000, EV = $35,000, AC = $42,000",
+            "calculation": "TCPI = (100,000 - 35,000) / (100,000 - 42,000) = 1.12",
+            "interpretation": "Need 12% efficiency improvement to meet original budget"
+          },
+          "relatedFormulas": ["tcpi-eac", "bac", "cpi"]
+        },
+        {
+          "id": "tcpi-eac",
+          "name": "To-Complete Performance Index (EAC)",
+          "formula": "TCPI = (BAC - EV) / (EAC - AC)",
+          "description": "Cost efficiency needed on remaining work to meet revised estimate",
+          "category": "Forecasting",
+          "type": "calculation",
+          "whenToUse": "When original BAC is no longer realistic and new EAC has been established",
+          "relatedFormulas": ["tcpi-bac", "eac-typical"]
+        }
+      ]
+    },
+    {
+      "id": "schedule",
+      "name": "Schedule Management (CPM)",
+      "formulas": [
+        {
+          "id": "es",
+          "name": "Early Start (ES)",
+          "formula": "ES = Latest EF of all predecessors (or 0 for first activity)",
+          "description": "Earliest an activity can start",
+          "category": "Network Diagram",
+          "type": "calculation",
+          "relatedFormulas": ["ef", "ls", "lf"]
+        },
+        {
+          "id": "ef",
+          "name": "Early Finish (EF)",
+          "formula": "EF = ES + Duration - 1",
+          "description": "Earliest an activity can finish",
+          "category": "Network Diagram",
+          "type": "calculation",
+          "relatedFormulas": ["es", "lf"],
+          "commonMistakes": ["Forgetting to subtract 1"]
+        },
+        {
+          "id": "lf",
+          "name": "Late Finish (LF)",
+          "formula": "LF = Earliest LS of all successors (or project EF for last activity)",
+          "description": "Latest an activity can finish without delaying project",
+          "category": "Network Diagram",
+          "type": "calculation",
+          "relatedFormulas": ["ls", "ef"]
+        },
+        {
+          "id": "ls",
+          "name": "Late Start (LS)",
+          "formula": "LS = LF - Duration + 1",
+          "description": "Latest an activity can start without delaying project",
+          "category": "Network Diagram",
+          "type": "calculation",
+          "relatedFormulas": ["lf", "es"]
+        },
+        {
+          "id": "total-float",
+          "name": "Total Float",
+          "formula": "Total Float = LS - ES (or LF - EF)",
+          "description": "Time an activity can be delayed without delaying project completion",
+          "category": "Float/Slack",
+          "type": "calculation",
+          "interpretation": {
+            "zero": "Activity is on critical path",
+            "positive": "Activity has flexibility"
+          },
+          "relatedFormulas": ["free-float", "critical-path"],
+          "commonMistakes": ["Thinking critical path has most activities instead of zero float"]
+        },
+        {
+          "id": "free-float",
+          "name": "Free Float",
+          "formula": "Free Float = ES(successor) - EF(current)",
+          "description": "Time an activity can be delayed without delaying early start of successor",
+          "category": "Float/Slack",
+          "type": "calculation",
+          "relatedFormulas": ["total-float"]
+        },
+        {
+          "id": "critical-path",
+          "name": "Critical Path",
+          "formula": "Activities with Zero Total Float",
+          "description": "Longest sequence of activities; determines minimum project duration",
+          "category": "Network Diagram",
+          "type": "concept",
+          "relatedFormulas": ["total-float"],
+          "keyPoints": [
+            "Critical path has ZERO float",
+            "Longest path (not most activities)",
+            "Determines minimum project duration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estimation",
+      "name": "Estimation",
+      "formulas": [
+        {
+          "id": "pert",
+          "name": "PERT (Beta Distribution)",
+          "formula": "(O + 4M + P) / 6",
+          "description": "Three-point estimate giving more weight to most likely",
+          "category": "Three-Point Estimating",
+          "type": "calculation",
+          "variables": {
+            "O": "Optimistic (best case)",
+            "M": "Most Likely (most probable)",
+            "P": "Pessimistic (worst case)"
+          },
+          "whenToUse": "Most common on exam; weights 'Most Likely' higher",
+          "example": {
+            "given": "O = 3 days, M = 5 days, P = 9 days",
+            "calculation": "(3 + 4×5 + 9) / 6 = 32 / 6 = 5.33 days",
+            "interpretation": "Expected duration is 5.33 days"
+          },
+          "relatedFormulas": ["triangular", "std-dev"]
+        },
+        {
+          "id": "triangular",
+          "name": "Triangular Distribution",
+          "formula": "(O + M + P) / 3",
+          "description": "Simple average of three estimates with equal weight",
+          "category": "Three-Point Estimating",
+          "type": "calculation",
+          "whenToUse": "Simple average, equal weight to all estimates",
+          "relatedFormulas": ["pert"]
+        },
+        {
+          "id": "std-dev",
+          "name": "Standard Deviation (σ)",
+          "formula": "(P - O) / 6",
+          "description": "Measure of uncertainty/variability in estimate",
+          "category": "Statistical Analysis",
+          "type": "calculation",
+          "example": {
+            "given": "O = 3 days, P = 9 days",
+            "calculation": "(9 - 3) / 6 = 1 day",
+            "interpretation": "Uncertainty is ±1 day"
+          },
+          "relatedFormulas": ["variance", "pert"],
+          "confidenceLevels": {
+            "1_sigma": "±1σ = 68.26% confidence",
+            "2_sigma": "±2σ = 95.46% confidence",
+            "3_sigma": "±3σ = 99.73% confidence"
+          }
+        },
+        {
+          "id": "variance",
+          "name": "Variance",
+          "formula": "σ²",
+          "description": "Square of standard deviation",
+          "category": "Statistical Analysis",
+          "type": "calculation",
+          "relatedFormulas": ["std-dev"],
+          "commonMistakes": ["Confusing variance with standard deviation"]
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "formulas": [
+        {
+          "id": "channels",
+          "name": "Communication Channels",
+          "formula": "n(n - 1) / 2",
+          "description": "Number of communication channels in a group",
+          "category": "Communication",
+          "type": "calculation",
+          "variables": {
+            "n": "Number of people"
+          },
+          "examples": [
+            {"people": 3, "channels": 3, "calculation": "3(2)/2 = 3"},
+            {"people": 5, "channels": 10, "calculation": "5(4)/2 = 10"},
+            {"people": 6, "channels": 15, "calculation": "6(5)/2 = 15"},
+            {"people": 8, "channels": 28, "calculation": "8(7)/2 = 28"},
+            {"people": 10, "channels": 45, "calculation": "10(9)/2 = 45"}
+          ],
+          "keyInsight": "Adding just one person significantly increases communication complexity"
+        }
+      ]
+    },
+    {
+      "id": "financial",
+      "name": "Financial Metrics",
+      "formulas": [
+        {
+          "id": "roi",
+          "name": "Return on Investment (ROI)",
+          "formula": "[(Gain from Investment - Cost of Investment) / Cost of Investment] × 100%",
+          "description": "Percentage return on investment",
+          "category": "Financial",
+          "type": "calculation",
+          "example": {
+            "given": "Investment: $50,000, Gain: $75,000",
+            "calculation": "[(75,000 - 50,000) / 50,000] × 100% = 50%",
+            "interpretation": "50% return on investment"
+          },
+          "relatedFormulas": ["bcr", "npv"]
+        },
+        {
+          "id": "bcr",
+          "name": "Benefit-Cost Ratio (BCR)",
+          "formula": "Total Benefits / Total Costs",
+          "description": "Ratio of benefits to costs",
+          "category": "Financial",
+          "type": "calculation",
+          "interpretation": {
+            "greater_than_1": "Benefits exceed costs (good)",
+            "equals_1": "Break even",
+            "less_than_1": "Costs exceed benefits (bad)"
+          },
+          "example": {
+            "given": "Benefits: $500,000, Costs: $350,000",
+            "calculation": "BCR = 500,000 / 350,000 = 1.43",
+            "interpretation": "Good investment - benefits exceed costs"
+          },
+          "selectionRule": "Choose project with highest BCR",
+          "relatedFormulas": ["roi", "npv"]
+        },
+        {
+          "id": "payback-period",
+          "name": "Payback Period",
+          "formula": "Investment / Annual Savings",
+          "description": "Time to recover investment cost",
+          "category": "Financial",
+          "type": "calculation",
+          "example": {
+            "given": "Investment: $100,000, Annual Savings: $25,000",
+            "calculation": "100,000 / 25,000 = 4 years",
+            "interpretation": "Investment will be recovered in 4 years"
+          },
+          "selectionRule": "Choose project with shortest payback period",
+          "relatedFormulas": ["roi", "npv"]
+        },
+        {
+          "id": "npv",
+          "name": "Net Present Value (NPV)",
+          "formula": "Present value of future cash flows - Initial investment",
+          "description": "Value of project in today's dollars",
+          "category": "Financial",
+          "type": "concept",
+          "interpretation": {
+            "greater_than_0": "Project adds value (good)",
+            "equals_0": "Break even",
+            "less_than_0": "Project loses value (bad)"
+          },
+          "selectionRule": "Choose project with highest NPV",
+          "relatedFormulas": ["irr", "bcr"]
+        },
+        {
+          "id": "irr",
+          "name": "Internal Rate of Return (IRR)",
+          "formula": "Discount rate where NPV = 0",
+          "description": "Rate of return that makes NPV zero",
+          "category": "Financial",
+          "type": "concept",
+          "interpretation": {
+            "greater_than_required": "Good investment",
+            "less_than_required": "Poor investment"
+          },
+          "selectionRule": "Choose project with highest IRR",
+          "relatedFormulas": ["npv"]
+        }
+      ]
+    },
+    {
+      "id": "agile",
+      "name": "Agile Metrics",
+      "formulas": [
+        {
+          "id": "velocity",
+          "name": "Velocity",
+          "formula": "Total Story Points Completed in Sprint",
+          "description": "Team's capacity to complete work in a sprint",
+          "category": "Agile",
+          "type": "calculation",
+          "use": "Forecast future sprint capacity",
+          "example": {
+            "given": "Sprint 1: 25 pts, Sprint 2: 30 pts, Sprint 3: 28 pts",
+            "calculation": "(25 + 30 + 28) / 3 = 27.67 points/sprint",
+            "interpretation": "Team can complete ~28 points per sprint"
+          },
+          "relatedFormulas": ["sprint-planning"]
+        },
+        {
+          "id": "sprint-planning",
+          "name": "Number of Sprints",
+          "formula": "Total Story Points / Average Velocity",
+          "description": "Calculate how many sprints needed",
+          "category": "Agile",
+          "type": "calculation",
+          "example": {
+            "given": "Product Backlog: 150 story points, Average Velocity: 25 pts/sprint",
+            "calculation": "150 / 25 = 6 sprints",
+            "interpretation": "Need 6 sprints to complete backlog"
+          },
+          "relatedFormulas": ["velocity"]
+        }
+      ]
+    }
+  ],
+  "quickReference": {
+    "whatGoodLooksLike": [
+      {"metric": "CV", "good": "Positive", "bad": "Negative", "perfect": "0"},
+      {"metric": "SV", "good": "Positive", "bad": "Negative", "perfect": "0"},
+      {"metric": "CPI", "good": "> 1.0", "bad": "< 1.0", "perfect": "1.0"},
+      {"metric": "SPI", "good": "> 1.0", "bad": "< 1.0", "perfect": "1.0"},
+      {"metric": "VAC", "good": "Positive", "bad": "Negative", "perfect": "0"},
+      {"metric": "BCR", "good": "> 1.0", "bad": "< 1.0", "perfect": "-"},
+      {"metric": "NPV", "good": "> 0", "bad": "< 0", "perfect": "-"},
+      {"metric": "Float", "good": "Positive", "bad": "0 (critical)", "perfect": "-"}
+    ],
+    "examTips": [
+      "Write formulas FIRST - Brain dump at start of exam",
+      "Identify what's given - Circle known values",
+      "Identify what's asked - Underline the question",
+      "Show your work - Use scratch paper",
+      "Double-check units - Dollars, days, hours?",
+      "Check if answer makes sense - CPI < 1 = over budget"
+    ],
+    "commonMistakes": {
+      "evm": [
+        "Confusing CV and SV (use correct formula!)",
+        "Misinterpreting negative variance (negative = bad)",
+        "Using wrong EAC formula (check context)",
+        "Forgetting CPI/SPI > 1 is GOOD"
+      ],
+      "cpm": [
+        "Forgetting 'Duration - 1' in EF calculation",
+        "Adding instead of comparing in forward/backward pass",
+        "Thinking critical path has most activities (it's LONGEST, not most)"
+      ],
+      "estimation": [
+        "Using triangular when PERT is needed (exam usually wants PERT)",
+        "Confusing standard deviation with variance (variance = σ²)"
+      ]
+    }
+  },
+  "brainDumpTemplate": "EVM FORMULAS:\nCV = EV - AC          CPI = EV / AC\nSV = EV - PV          SPI = EV / PV\nEAC = BAC/CPI         ETC = EAC - AC\nVAC = BAC - EAC       TCPI = (BAC-EV)/(BAC-AC)\n\nCPM:\nTotal Float = LS - ES\nFree Float = ES(next) - EF(current)\nCritical Path = Zero Float\n\nESTIMATION:\nPERT = (O + 4M + P) / 6\nσ = (P - O) / 6\n±1σ = 68%, ±2σ = 95%, ±3σ = 99.7%\n\nCOMMUNICATION:\nChannels = n(n-1)/2\n\nFINANCIAL:\nROI = (Gain - Cost) / Cost × 100%\nBCR = Benefits / Costs\nHigher NPV = Better\nHigher IRR = Better"
+}

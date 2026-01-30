@@ -1,0 +1,83 @@
+{
+  "totalQuestions": 1159,
+  "generatedAt": "2026-01-28T16:28:25.359Z",
+  "distribution": {
+    "byDomain": {
+      "people": 387,
+      "process": 511,
+      "business": 261
+    },
+    "byTask": {
+      "d1t14": 24,
+      "d3t3": 62,
+      "d1t2": 37,
+      "d1t9": 31,
+      "d3t2": 62,
+      "d2t17": 16,
+      "d2t5": 196,
+      "d2t14": 29,
+      "d2t3": 98,
+      "d2t4": 19,
+      "d1t11": 18,
+      "d3t4": 59,
+      "d2t7": 13,
+      "d1t7": 21,
+      "d1t12": 18,
+      "d1t1": 90,
+      "d1t3": 25,
+      "d1t13": 18,
+      "d1t10": 26,
+      "d1t8": 27,
+      "d1t4": 20,
+      "d2t2": 18,
+      "d2t16": 11,
+      "d2t1": 14,
+      "d2t6": 30,
+      "d2t9": 18,
+      "d2t8": 12,
+      "d2t10": 11,
+      "d2t13": 16,
+      "d2t15": 12,
+      "d1t5": 17,
+      "d1t6": 17,
+      "d2t11": 9,
+      "d2t12": 9,
+      "d3t1": 56
+    },
+    "byType": {
+      "multiple-choice": 832,
+      "multiple-response": 177,
+      "matching": 100,
+      "fill-blank": 50
+    },
+    "byMethodology": {
+      "predictive": 778,
+      "agile": 381
+    },
+    "byDifficulty": {
+      "medium": 525,
+      "hard": 275,
+      "easy": 359
+    },
+    "byDomainPercentage": {
+      "people": "33%",
+      "process": "44%",
+      "business": "23%"
+    },
+    "byTypePercentage": {
+      "multiple-choice": "72%",
+      "multiple-response": "15%",
+      "matching": "9%",
+      "fill-blank": "4%"
+    },
+    "byMethodologyPercentage": {
+      "predictive": "67%",
+      "agile": "33%"
+    },
+    "byDifficultyPercentage": {
+      "medium": "45%",
+      "hard": "24%",
+      "easy": "31%"
+    }
+  }
+}

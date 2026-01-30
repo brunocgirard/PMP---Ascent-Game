@@ -1,0 +1,51 @@
+# Environment and secrets
+.env
+.env.local
+.env.production
+
+# Source materials (copyrighted/proprietary)
+PMP_udemy_transcript.txt
+PMI - A guide to the project management body of knowledge. PMBOK guide_SevenEdition.txt
+*.pdf
+
+# Temporary development files
+extracted_tasks_raw.json
+mapping-report.txt
+*.pyc
+__pycache__/
+*.log
+*.tmp
+
+# Build and cache directories
+.cache/
+.specstory/
+node_modules/
+dist/
+build/
+clerk-nextjs-guide/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+CLAUDE.md
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# User data backups (keep local only)
+user-progress-backup-*.json
+backup-*.json
+
+# Python virtual environments
+venv/
+env/
+ENV/
+
+# Game development (future v2.0)
+pmp-learning-game-v2/node_modules/
+pmp-learning-game-v2/dist/

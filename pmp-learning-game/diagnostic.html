@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMP App Diagnostic</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2563eb; }
+        .test {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .pass { background: #d1fae5; }
+        .fail { background: #fee2e2; }
+        .pending { background: #fef3c7; }
+        .icon { font-size: 1.5rem; }
+        button {
+            background: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover { background: #1d4ed8; }
+        .code {
+            background: #1e293b;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 PMP App Diagnostic Tool</h1>
+        <p>This tool will check what's working and what's broken.</p>
+
+        <button onclick="runDiagnostic()">▶️ Run Full Diagnostic</button>
+        <button onclick="location.href='index.html'">🎯 Open Main App</button>
+
+        <div id="results"></div>
+
+        <h2>Quick Fix Checklist</h2>
+        <div id="fixes"></div>
+    </div>
+
+    <script>
+        async function runDiagnostic() {
+            const results = document.getElementById('results');
+            results.innerHTML = '<h2>Running Tests...</h2>';
+
+            const tests = [];
+
+            // Test 1: Check if we're on localhost
+            const onLocalhost = window.location.protocol === 'http:' && window.location.hostname === 'localhost';
+            tests.push({
+                name: 'Server Running',
+                pass: onLocalhost,
+                message: onLocalhost ?
+                    '✅ Running on local server' :
+                    '❌ Not on localhost - use START-APP.bat',
+                fix: 'Double-click START-APP.bat to start the server'
+            });
+
+            // Test 2: Check missions.json
+            let missionsExist = false;
+            try {
+                const response = await fetch('data/missions.json');
+                missionsExist = response.ok;
+            } catch(e) {}
+            tests.push({
+                name: 'missions.json',
+                pass: missionsExist,
+                message: missionsExist ?
+                    '✅ Missions file accessible' :
+                    '❌ Cannot load missions.json',
+                fix: 'Verify file exists at: data/missions.json'
+            });
+
+            // Test 3: Check flashcards
+            let flashcardsExist = false;
+            try {
+                const response = await fetch('data/flashcards-mapped.json');
+                flashcardsExist = response.ok;
+            } catch(e) {}
+            tests.push({
+                name: 'flashcards-mapped.json',
+                pass: flashcardsExist,
+                message: flashcardsExist ?
+                    '✅ Flashcards file accessible' :
+                    '❌ Cannot load flashcards-mapped.json',
+                fix: 'Verify file exists at: data/flashcards-mapped.json'
+            });
+
+            // Test 4: Check formulas
+            let formulasExist = false;
+            try {
+                const response = await fetch('data/formulas.json');
+                formulasExist = response.ok;
+            } catch(e) {}
+            tests.push({
+                name: 'formulas.json',
+                pass: formulasExist,
+                message: formulasExist ?
+                    '✅ Formulas file accessible' :
+                    '❌ Cannot load formulas.json',
+                fix: 'Verify file exists at: data/formulas.json'
+            });
+
+            // Test 5: Check learning content
+            let learningExist = false;
+            try {
+                const response = await fetch('data/learning-content.json');
+                learningExist = response.ok;
+            } catch(e) {}
+            tests.push({
+                name: 'learning-content.json',
+                pass: learningExist,
+                message: learningExist ?
+                    '✅ Learning content file accessible' :
+                    '❌ Cannot load learning-content.json',
+                fix: 'This file should exist at: data/learning-content.json'
+            });
+
+            // Test 6: Check exam content outline
+            let examContentExist = false;
+            try {
+                const response = await fetch('data/exam-content-outline.json');
+                examContentExist = response.ok;
+            } catch(e) {}
+            tests.push({
+                name: 'exam-content-outline.json',
+                pass: examContentExist,
+                message: examContentExist ?
+                    '✅ Exam content file accessible' :
+                    '❌ Cannot load exam-content-outline.json',
+                fix: 'Verify file exists at: data/exam-content-outline.json'
+            });
+
+            // Test 7: Check quiz bank
+            let quizBankExist = false;
+            try {
+                const response = await fetch('data/quiz-bank.json');
+                quizBankExist = response.ok;
+            } catch(e) {}
+            tests.push({
+                name: 'quiz-bank.json',
+                pass: quizBankExist,
+                message: quizBankExist ?
+                    '✅ Quiz bank file accessible (1.2MB)' :
+                    '❌ Cannot load quiz-bank.json',
+                fix: 'Verify file exists at: data/quiz-bank.json'
+            });
+
+            // Render results
+            let html = '<h2>📋 Test Results</h2>';
+            let passCount = 0;
+            let failCount = 0;
+
+            tests.forEach(test => {
+                if (test.pass) passCount++;
+                else failCount++;
+
+                html += `
+                    <div class="test ${test.pass ? 'pass' : 'fail'}">
+                        <span class="icon">${test.pass ? '✅' : '❌'}</span>
+                        <div style="flex:1;">
+                            <strong>${test.name}:</strong> ${test.message}
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += `
+                <h2>📊 Summary</h2>
+                <div class="test ${failCount === 0 ? 'pass' : 'fail'}">
+                    <span class="icon">${failCount === 0 ? '🎉' : '⚠️'}</span>
+                    <div>
+                        <strong>Passed: ${passCount} / ${tests.length}</strong><br>
+                        ${failCount === 0 ?
+                            'All systems operational! 🚀' :
+                            `${failCount} issue(s) found that need fixing`}
+                    </div>
+                </div>
+            `;
+
+            results.innerHTML = html;
+
+            // Show fixes
+            const fixes = document.getElementById('fixes');
+            let fixHtml = '';
+
+            const failedTests = tests.filter(t => !t.pass);
+            if (failedTests.length > 0) {
+                fixHtml = '<h3>🔧 Required Fixes:</h3>';
+                failedTests.forEach((test, i) => {
+                    fixHtml += `
+                        <div class="test fail">
+                            <strong>${i+1}.</strong> ${test.fix}
+                        </div>
+                    `;
+                });
+            } else {
+                fixHtml = '<div class="test pass"><span class="icon">✅</span> No fixes needed - everything looks good!</div>';
+            }
+
+            fixes.innerHTML = fixHtml;
+
+            // Show specific instructions
+            if (!onLocalhost) {
+                fixes.innerHTML += `
+                    <h3>🚨 Critical: Server Not Running</h3>
+                    <div class="code">1. Close this browser tab
+2. Navigate to: C:\\Users\\Lenovo\\Desktop\\PMP - PREP EXAM\\pmp-learning-game\\
+3. Double-click START-APP.bat
+4. Browser will open automatically at http://localhost:8000
+5. Then run this diagnostic again</div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
