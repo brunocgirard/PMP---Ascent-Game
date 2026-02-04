@@ -1,0 +1,190 @@
+{
+  "templateVersion": "1.0",
+  "description": "Standard template for all 35 PMP task learn sections - Minimal Viable Engagement approach",
+
+  "structure": {
+    "sections": [
+      {
+        "id": "hero",
+        "name": "Hero Section",
+        "purpose": "Quick hook showing relevance",
+        "timeToRead": "30 seconds",
+        "required": true,
+        "fields": {
+          "taskNumber": "Task number (e.g., Task 1)",
+          "taskName": "Task name (e.g., Manage conflict)",
+          "questionCount": "Estimated exam questions (~27)",
+          "examWeight": "Percentage of domain (33%)",
+          "domainName": "Domain name (People)",
+          "oneLineHook": "1-2 sentence attention grabber showing why this matters"
+        },
+        "template": "<div class=\"hero-section\">\n  <h3>🎯 {taskNumber}: {taskName}</h3>\n  <p class=\"stat-callout\">📊 ~{questionCount} exam questions | {examWeight}% of {domainName} Domain</p>\n  <p class=\"hook\">{oneLineHook}</p>\n</div>"
+      },
+      {
+        "id": "framework",
+        "name": "Framework Section",
+        "purpose": "ONE memorable decision framework or mental model",
+        "timeToRead": "2 minutes",
+        "required": true,
+        "fields": {
+          "frameworkName": "Name of the framework (e.g., I.S.E. Framework)",
+          "frameworkVisual": "Table, diagram, or list showing the framework",
+          "step1": "First step with brief explanation",
+          "step2": "Second step with brief explanation",
+          "step3": "Third step with brief explanation"
+        },
+        "guidelines": [
+          "Keep to 3-5 steps maximum",
+          "Use acronyms or mnemonics when possible",
+          "Make it visual (table or diagram)",
+          "Focus on WHEN to use, not just WHAT it is"
+        ],
+        "template": "<div class=\"framework-box\">\n  <h4>🧠 {frameworkName}</h4>\n  {frameworkVisual}\n  <ul>\n    <li><strong>{step1Label}</strong>: {step1Explanation}</li>\n    <li><strong>{step2Label}</strong>: {step2Explanation}</li>\n    <li><strong>{step3Label}</strong>: {step3Explanation}</li>\n  </ul>\n</div>"
+      },
+      {
+        "id": "scenario",
+        "name": "Exam Scenario",
+        "purpose": "Practice with real exam-style question",
+        "timeToRead": "1-2 minutes",
+        "required": true,
+        "fields": {
+          "scenarioText": "Realistic project situation (2-4 sentences)",
+          "optionA": "First wrong answer",
+          "optionB": "Second wrong answer",
+          "optionC": "Third wrong answer",
+          "optionD": "Correct answer",
+          "whyCorrect": "Why D is correct (2-3 sentences)",
+          "whyWrong": "Why A/B/C are wrong (1-2 sentences each)",
+          "keyPrinciple": "Underlying PMI principle demonstrated"
+        },
+        "guidelines": [
+          "Scenario should be 2-4 sentences max",
+          "Wrong answers should be plausible but violate PMI values",
+          "Include common exam keywords: FIRST, BEST, NEXT",
+          "Use <details> tag for expandable explanation"
+        ],
+        "template": "<div class=\"scenario-box\">\n  <h4>📝 Exam-Style Scenario</h4>\n  <div class=\"scenario-question\">\n    <p>{scenarioText}</p>\n    <p><strong>What should you do {keyword}?</strong></p>\n    <div class=\"options\">\n      <p>A. ❌ {optionA}</p>\n      <p>B. ❌ {optionB}</p>\n      <p>C. ❌ {optionC}</p>\n      <p>D. ✅ {optionD}</p>\n    </div>\n  </div>\n  <details>\n    <summary>💡 Click for explanation</summary>\n    <div class=\"explanation\">\n      <p><strong>Why D?</strong> {whyCorrect}</p>\n      <p><strong>Why not others?</strong> {whyWrong}</p>\n      <p><strong>Key principle:</strong> {keyPrinciple}</p>\n    </div>\n  </details>\n</div>"
+      },
+      {
+        "id": "mindset",
+        "name": "PMI Mindset Golden Rule",
+        "purpose": "ONE golden rule for this task",
+        "timeToRead": "30 seconds",
+        "required": true,
+        "fields": {
+          "alwaysChoice": "What to always choose on exam",
+          "neverChoice": "What to never choose on exam",
+          "oneLinerRule": "Memorable one-sentence summary"
+        },
+        "guidelines": [
+          "Keep it black and white (do vs don't)",
+          "Make the rule memorable and quotable",
+          "Connect to servant leadership when applicable"
+        ],
+        "template": "<div class=\"mindset-box\">\n  <h4>🎓 The Golden Rule</h4>\n  <table class=\"mindset-table\">\n    <tr>\n      <td class=\"do\"><strong>✅ ALWAYS choose:</strong></td>\n      <td class=\"dont\"><strong>❌ NEVER choose:</strong></td>\n    </tr>\n    <tr>\n      <td>{alwaysChoice}</td>\n      <td>{neverChoice}</td>\n    </tr>\n  </table>\n  <p class=\"rule-summary\">💡 <strong>{oneLinerRule}</strong></p>\n</div>"
+      },
+      {
+        "id": "checkpoints",
+        "name": "Quick Knowledge Check",
+        "purpose": "Self-assessment before moving on",
+        "timeToRead": "1 minute",
+        "required": true,
+        "fields": {
+          "question1": "Can you explain/name/identify X?",
+          "question2": "Can you spot/recognize Y in scenarios?",
+          "question3": "Can you apply Z to exam questions?"
+        },
+        "guidelines": [
+          "Use 'Can you...' format",
+          "Progress from knowledge → application",
+          "Keep to 3 questions exactly"
+        ],
+        "template": "<div class=\"checkpoint-box\">\n  <h4>✅ Quick Knowledge Check</h4>\n  <p>Before moving on, can you answer these?</p>\n  <ul class=\"checkpoint-list\">\n    <li>☐ {question1}</li>\n    <li>☐ {question2}</li>\n    <li>☐ {question3}</li>\n  </ul>\n  <p class=\"checkpoint-note\">If you answered yes to all 3, you're ready for flashcards! 🎉</p>\n</div>"
+      },
+      {
+        "id": "examTip",
+        "name": "One-Liner Exam Tip",
+        "purpose": "Memorable shortcut for exam day",
+        "timeToRead": "10 seconds",
+        "required": true,
+        "fields": {
+          "oneLinerTip": "Single sentence exam strategy or decision rule"
+        },
+        "guidelines": [
+          "Must be 15 words or less",
+          "Should be quotable/tweetable",
+          "Focus on decision-making shortcut"
+        ],
+        "template": "<div class=\"exam-tip-box\">\n  <h3>💡 Exam Tip</h3>\n  <p class=\"tip-highlight\">{oneLinerTip}</p>\n</div>"
+      },
+      {
+        "id": "nextAction",
+        "name": "Clear Next Step",
+        "purpose": "Create momentum to continue",
+        "timeToRead": "5 seconds",
+        "required": true,
+        "fields": {
+          "flashcardCount": "Number of flashcards for this task",
+          "nextPhase": "Next phase name (usually Flashcards)"
+        },
+        "template": "<div class=\"next-action\">\n  <p>🎯 <strong>Next:</strong> Review {flashcardCount} flashcards to lock in this framework</p>\n</div>"
+      }
+    ]
+  },
+
+  "contentGuidelines": {
+    "totalReadTime": "~5 minutes per task",
+    "wordCount": "600-800 words",
+    "focusAreas": [
+      "Exam relevance (not just theory)",
+      "Decision frameworks (not just definitions)",
+      "PMI mindset (servant leadership, inclusiveness)",
+      "Practical pattern recognition"
+    ],
+    "voiceAndTone": [
+      "Direct and conversational",
+      "Action-oriented (verbs: identify, choose, apply)",
+      "Confident but not overwhelming",
+      "No fluff or filler content"
+    ]
+  },
+
+  "sourceExtractionStrategy": {
+    "udemy": {
+      "searchFor": [
+        "Domain X Task Y section",
+        "Exam tip mentions",
+        "Real-world examples",
+        "Common mistakes"
+      ],
+      "extractPatterns": [
+        "What PMI wants you to know",
+        "Here's the exam tip",
+        "Remember this",
+        "The answer is always"
+      ]
+    },
+    "pmbok": {
+      "searchFor": [
+        "Task definition",
+        "Key activities",
+        "Considerations"
+      ]
+    }
+  },
+
+  "automationNotes": {
+    "canBeScripted": [
+      "Hero section (extract from missions.json)",
+      "Checkpoints (template-based)",
+      "Next action (use flashcard count)"
+    ],
+    "requiresManualCuration": [
+      "Framework (needs thoughtful design)",
+      "Scenario (needs real exam-style question)",
+      "Golden rule (needs distillation)",
+      "One-liner tip (needs creativity)"
+    ],
+    "estimatedTimePerTask": "30-45 minutes with AI assistance"
+  }
+}

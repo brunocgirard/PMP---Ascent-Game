@@ -1,0 +1,222 @@
+{
+  "taskId": "d2t11",
+  "taskTitle": "Manage Project Changes",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Every climber faces unexpected weather—adapt or get stuck!",
+    "scenarioStory": "Mid-climb, a significant weather system moves in. Your team suggests: (1) Continue with contingency supplies, (2) Descend to base camp and wait 3 days, (3) Pivot to a completely different route, or (4) Send an advance scout team to assess conditions first. The client is watching from below and budget allows for one extra day.",
+    "question": "How should you manage this change request?",
+    "options": {
+      "A": "Implement the pivot immediately—adapt to changing conditions",
+      "B": "Use the Change Control Board process to evaluate impact before deciding",
+      "C": "Consult the client first, then make a decision",
+      "D": "Continue as planned—changes cost too much time"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Change Control Board (CCB) Process",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Controlled Change Management",
+          "explanation": "Changes must go through a formal CCB to evaluate scope, schedule, cost, and risk impacts before implementation. Not every change is approved.",
+          "pmbokSupport": "Change Control Board evaluates all change requests against baselines"
+        },
+        {
+          "principle": "Baseline Protection",
+          "explanation": "Your scope, schedule, and cost baselines exist for a reason. Changes impact them and must be tracked, approved, and documented.",
+          "pmbokSupport": "Baselines anchor planning and measure performance"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Changes feel urgent in the moment—that's why formal processes protect you and the project.",
+      "trapTable": [
+        {
+          "option": "A - Immediate pivot",
+          "violation": "Bypasses CCB review; creates scope creep without approval",
+          "pmiValueBroken": "No change control, unmeasured impact"
+        },
+        {
+          "option": "D - Continue as planned",
+          "violation": "Ignores legitimate change that may improve project success",
+          "pmiValueBroken": "Inflexible, unresponsive to project needs"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is this a legitimate project change?",
+        "Have I submitted it through the Change Control Board?",
+        "What's the impact on scope, schedule, cost, quality?",
+        "Is this within my authority to approve, or escalate to sponsor?"
+      ],
+      "patternRule": "ALL changes → CCB process. CCB evaluates impact → Approve/reject/defer. Document and baseline update."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "C.L.I.M.B. Framework for Change Management",
+    "frameworkIntro": "Managing change requires structured evaluation and control:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "C", "name": "Categorize the Change Request", "color": "#3b82f6"},
+          "action": "Identify source: Scope change, schedule adjustment, cost impact, quality improvement, risk mitigation, or client request?",
+          "keyQuestions": ["What triggered this change?", "What baseline does it impact?"],
+          "examKeywords": "Identify change, Scope, Schedule, Cost"
+        },
+        {
+          "step": {"badge": "L", "name": "Log and Submit to CCB", "color": "#8b5cf6"},
+          "action": "Formally document the change request. Submit to Change Control Board with complete information and justification.",
+          "keyQuestions": ["Is this documented?", "Does CCB have all details?"],
+          "examKeywords": "Change request form, CCB submission, Documentation"
+        },
+        {
+          "step": {"badge": "I", "name": "Impact Analysis", "color": "#10b981"},
+          "action": "Analyze impact on scope, schedule, cost, resources, quality, and risk. Include baseline changes needed.",
+          "keyQuestions": ["What's the schedule impact?", "Cost impact?", "Risk implications?"],
+          "examKeywords": "Impact analysis, Baseline change, Risk assessment"
+        },
+        {
+          "step": {"badge": "M", "name": "Make CCB Decision", "color": "#f59e0b"},
+          "action": "CCB evaluates and decides: Approve, Reject, or Defer. All decisions are documented and communicated.",
+          "keyQuestions": ["Is this approved by authority?", "Who made the decision?"],
+          "examKeywords": "CCB approval, Decision authority, Documented decision"
+        },
+        {
+          "step": {"badge": "B", "name": "Baseline Update & Execute", "color": "#ec4899"},
+          "action": "If approved, update affected baselines. Communicate changes to team. Execute and monitor the change.",
+          "keyQuestions": ["Is baseline updated?", "Is team aware?", "Are we monitoring?"],
+          "examKeywords": "Baseline update, Change implementation, Monitoring"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Process Performance Domain",
+      "principle": "Principle 7: Manage Scope, Schedule, and Resources",
+      "quote": "Change control ensures that all changes are evaluated, approved, and implemented systematically"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Manage Changes",
+    "framework": {
+      "acronym": "C.L.I.M.B.",
+      "steps": ["📋 Categorize change request", "📝 Log & submit to CCB", "🔍 Impact analysis", "✅ Make CCB decision", "🎯 Baseline update & execute"]
+    },
+    "quickReference": "**Never bypass CCB** → All changes need formal evaluation | **Impact analysis** includes scope, schedule, cost, quality, risk | **Document everything**",
+    "goldenRule": "If it changes scope, schedule, cost, or resources → It needs CCB approval before implementation.",
+    "examTip": "Look for 'change,' 'request,' 'modification' → Immediate action is ALWAYS 'submit to CCB' or 'impact analysis,' never 'implement immediately.'",
+    "pmbokPrinciple": "Change Control - Protect baselines while remaining responsive"
+  },
+  "secondScenario": {
+    "title": "Apply C.L.I.M.B.",
+    "intro": "Practice the framework:",
+    "scenarioStory": "Your team discovers that integrating the new security module will require an additional 2 weeks and $50K budget. The feature is new and wasn't in the original scope, but the client has informally agreed it adds value. Team lead wants to start work immediately to minimize delay.",
+    "question": "What's your first action?",
+    "options": {
+      "A": "Start work immediately—client agreed and we minimize delay",
+      "B": "Submit formal change request to CCB with impact analysis; don't start until approved",
+      "C": "Get written client approval first, then notify the team to begin",
+      "D": "Evaluate if this fits within buffer; if yes, absorb it into current timeline"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Changes are inevitable in projects, but uncontrolled changes are project killers. Every change—even small ones—must be evaluated and approved through your Change Control Board.",
+        "author": "Rita Mulcahy",
+        "source": "PMP Exam Prep"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The Project Manager's job includes protecting the baselines while remaining responsive to legitimate change requests.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Hidden Cost of Uncontrolled Changes",
+        "insight": "Projects that skip change control end up with scope creep, missed deadlines, and budget overruns. The CCB protects everyone—team, stakeholders, and sponsor."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Reflect on Change Management",
+    "questions": [
+      {
+        "id": "recent-changes",
+        "question": "What recent changes has your project experienced?",
+        "type": "textarea",
+        "placeholder": "Example: Client requested new reporting feature..."
+      },
+      {
+        "id": "ccb-process",
+        "question": "Does your project have a formal Change Control Board?",
+        "type": "dropdown",
+        "options": ["Yes, formal CCB", "Informal process", "No formal process", "Not sure"]
+      }
+    ],
+    "valueStatement": "Protecting baselines means protecting project success.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Mountain Base Camp",
+    "story": {
+      "title": "Managing the Supply Chain Up the Mountain",
+      "narrative": "As expedition leader, every supply change must go through basecamp logistics...",
+      "scenes": [
+        {
+          "step": "C", "visual": "📋 CATEGORIZE the request",
+          "description": "A climber asks: 'Can we add extra oxygen tanks?' (scope change), 'Can we start earlier?' (schedule change), or 'Use lighter gear?' (cost/quality trade). What type is this?"
+        },
+        {
+          "step": "L", "visual": "📝 LOG it officially",
+          "description": "Write it down. Submit change request to basecamp logistics officer. No verbal agreements for equipment—everything is documented."
+        },
+        {
+          "step": "I", "visual": "🔍 IMPACT analysis",
+          "description": "What does adding oxygen tanks cost? How much weight? Impact on porters' load capacity? Schedule to get more tanks? Resources needed?"
+        },
+        {
+          "step": "M", "visual": "✅ MAKE the decision",
+          "description": "Basecamp logistics officer (your CCB) approves, rejects, or defers. 'Yes, add tanks—here's the budget.' 'No, it overloads the climb.' 'Defer—decide at next camp.'"
+        },
+        {
+          "step": "B", "visual": "🎯 BASELINE updated",
+          "description": "New supply list, new weight limits, new budget recorded. Team climbs with new baseline, not surprised by changes mid-route."
+        }
+      ],
+      "moral": "Expedition leader **C**ategorizes supply changes, **L**ogs officially, **I**mpacts analyzed, **M**akes decisions via logistics, **B**aselines updated for whole team."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What's C.L.I.M.B. in change management?", "When do you use CCB?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Identify a real change from your project", "Trace C.L.I.M.B. steps"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write change request template", "Impact analysis checklist"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice scenarios", "Compare CCB decisions"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t11"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t11"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t11"}
+  }
+}

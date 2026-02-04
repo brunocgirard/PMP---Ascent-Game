@@ -1,0 +1,259 @@
+{
+  "taskId": "d1t12",
+  "taskTitle": "Define Team Ground Rules",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Your first team meeting sets the tone for the entire project!",
+    "scenarioStory": "You've just assembled a new project team with members from different departments, backgrounds, and time zones. In your first team meeting, tensions emerge: one developer keeps interrupting others, a team member is checking emails constantly, and there's an uncomfortable comment made about how someone pronounces technical terms. You notice the team is uncomfortable and unproductive.",
+    "question": "What should you do FIRST as the project manager?",
+    "options": {
+      "A": "Address the email distraction directly with that team member in private",
+      "B": "Establish and have the team agree to ground rules BEFORE these issues continue",
+      "C": "Document the current issues and address them one by one as they occur",
+      "D": "Ignore interpersonal issues and focus on project deliverables"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Establish ground rules immediately as a team",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Prevention Over Cure",
+          "explanation": "Ground rules prevent problems before they happen. Establish them in the first team meeting, not after issues arise. It's easier to agree on behavior upfront than to enforce new rules later.",
+          "pmbokSupport": "PMBOK: Project teams develop team norms and operating guidelines early to establish culture and behavioral expectations"
+        },
+        {
+          "principle": "Team Ownership & Psychological Safety",
+          "explanation": "Ground rules must be CREATED BY THE TEAM, not imposed by the PM. When the team defines rules together, they own them and are more likely to follow them. This creates psychological safety and respect.",
+          "pmbokSupport": "PMBOK: The project team develops its own team charter and norms - facilitating consensus is key"
+        },
+        {
+          "principle": "Violation Enforcement Matters",
+          "explanation": "Ground rules must be enforced. Violations should be addressed immediately with escalating consequences: verbal warning, written warning, dismissal from project. If violated repeatedly, it can be grounds for termination.",
+          "pmbokSupport": "PMI Standard: Ground rule violations must be taken seriously - they can be illegal (discrimination, harassment) and warrant disciplinary action"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Common mistakes with ground rules that derail projects:",
+      "trapTable": [
+        {
+          "option": "A - Address privately later",
+          "violation": "Reactive approach. The problem festers and spreads to team culture before you intervene.",
+          "pmiValueBroken": "Proactive team management"
+        },
+        {
+          "option": "C - Document and address individually",
+          "violation": "You're playing mediator rather than establishing collective standards. This puts you in a policing role.",
+          "pmiValueBroken": "Empowering team to self-manage behavior"
+        },
+        {
+          "option": "D - Ignore interpersonal issues",
+          "violation": "Disrespect destroys psychological safety. Team becomes toxic. Discrimination/harassment issues can expose company to legal liability.",
+          "pmiValueBroken": "Creating safe, respectful environment"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Are ground rules defined EARLY (in first team meeting)?",
+        "Were they created BY THE TEAM, not imposed by PM?",
+        "Does everyone understand and agree to them?",
+        "Are violations being addressed immediately?",
+        "Is there escalating enforcement (warning → written → dismissal)?"
+      ],
+      "patternRule": "DEFINE EARLY + TEAM OWNERSHIP + CLEAR ENFORCEMENT = Healthy team culture. No ground rules = dysfunction and potential legal liability."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "R.U.L.E.S. Framework for Ground Rules",
+    "frameworkIntro": "Establish team ground rules that create psychological safety and enable peak performance:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "R", "name": "Recognize Need Early", "color": "#ef4444"},
+          "action": "Define ground rules in the FIRST team meeting, before negative behaviors establish patterns. Timing matters—establish culture proactively.",
+          "keyQuestions": ["When should we define ground rules?", "Why is early timing critical?"],
+          "examKeywords": "Early, first meeting, team charter, establish culture"
+        },
+        {
+          "step": {"badge": "U", "name": "Utilize Team Input", "color": "#f97316"},
+          "action": "Ground rules must be CREATED BY THE TEAM, not handed down by PM. Facilitate discussion, let them define behavioral expectations. They own these rules.",
+          "keyQuestions": ["Who creates the ground rules?", "How do we ensure team ownership?"],
+          "examKeywords": "Team creates, facilitation, team charter, consensus"
+        },
+        {
+          "step": {"badge": "L", "name": "List & Learn Organizational Principles", "color": "#eab308"},
+          "action": "Communicate organizational principles (no discrimination, inclusive environment, respect) AND reinforce ground rules repeatedly. Preach and reinforce.",
+          "keyQuestions": ["What organizational principles apply?", "How do we reinforce these rules?"],
+          "examKeywords": "Organizational principles, communicate, reinforce, ethical behavior"
+        },
+        {
+          "step": {"badge": "E", "name": "Enforce with Escalation", "color": "#84cc16"},
+          "action": "Violations require action. Escalate: 1st violation = verbal warning, 2nd = written warning, 3rd+ = dismissal from project/organization. Don't let violations slide.",
+          "keyQuestions": ["How do we address violations?", "What's the escalation path?"],
+          "examKeywords": "Enforce, violation, escalation, consequences, dismissal"
+        },
+        {
+          "step": {"badge": "S", "name": "Store in Team Charter", "color": "#10b981"},
+          "action": "Document ground rules in the Team Charter. Make them official, shared, and reference them regularly. The charter is the team's constitution.",
+          "keyQuestions": ["Where do ground rules live?", "How do we reference them?"],
+          "examKeywords": "Team charter, document, formal agreement, reference"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 4: Be Adaptive & Responsive to Project Needs",
+      "quote": "Project teams develop their own team norms and operate within a safe, respectful, nonjudgmental environment. The project manager facilitates this culture creation."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Define Team Ground Rules",
+    "framework": {
+      "acronym": "R.U.L.E.S.",
+      "steps": ["Recognize need early", "Utilize team input", "List organizational principles", "Enforce with escalation", "Store in team charter"]
+    },
+    "quickReference": "**When:** First team meeting. **Who creates:** The team (not PM). **Where:** Team Charter. **Violations:** Escalate—verbal → written → dismissal.",
+    "goldenRule": "Ground rules are established early, created BY the team, reinforced constantly, and enforced without exception.",
+    "examTip": "See 'ground rules,' 'team charter,' 'behavioral expectations' → Immediately think: Define early, team creates, store in charter, enforce violations. Discrimination/harassment can be illegal.",
+    "pmbokPrinciple": "Establish safe, respectful team culture through early norms and operating guidelines"
+  },
+  "secondScenario": {
+    "title": "Apply R.U.L.E.S.",
+    "intro": "Apply the framework to a real situation:",
+    "scenarioStory": "Two weeks into your project, you notice that one team member, Bob, has repeatedly made comments that could be seen as insulting to how a colleague pronounces certain words. The colleague who's being insulted has said nothing publicly but seems withdrawn in meetings. Bob seems unaware it's a problem. The team has ground rules that state: 'No making fun of people's accents, language, or pronunciation.'",
+    "question": "What is your first action as PM?",
+    "options": {
+      "A": "Address it in the next one-on-one with Bob and give him a verbal warning—ground rules violation",
+      "B": "Say nothing; Bob didn't mean anything malicious and the colleague hasn't complained formally",
+      "C": "Schedule a private meeting with the insulted colleague first to get their perspective",
+      "D": "Wait to see if it happens again before taking action"
+    },
+    "correctAnswer": "A"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Ground rules are defined as EARLY as possible by the team and FOR the team with your support. Define them in the first team meeting. Don't wait for problems to arise. And if violations happen, you must address them. Violations can be illegal—don't ignore them.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The project manager is key in establishing and maintaining a safe, respectful, nonjudgmental environment that allows the project team to communicate openly. This is accomplished through developing team norms and operating guidelines.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      },
+      {
+        "type": "examTip",
+        "icon": "⚠️",
+        "text": "On the exam: ground rules are defined EARLY, created BY the team, stored in the team charter, reinforced repeatedly, and violations are ENFORCED with escalating consequences. Don't skip enforcement.",
+        "author": "PMP Exam Strategy",
+        "source": "Common Exam Patterns"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Psychological Safety Drives Performance",
+        "insight": "Teams with strong ground rules and psychological safety perform 50% better. When people feel respected and safe, they contribute ideas, admit mistakes early, and collaborate. When ground rules are weak or unenforced, team members withdraw, hide problems, and underperform."
+      },
+      {
+        "title": "Discrimination and Harassment Are Legal Risks",
+        "insight": "Ground rule violations involving discrimination (race, age, religion, gender, disability, national origin) or harassment can expose your organization to lawsuits. These aren't just 'team problems'—they're legal issues. Document violations and enforce consistently."
+      },
+      {
+        "title": "First Few Meetings Set Culture",
+        "insight": "The team's culture is set in the first few meetings. If you allow disrespect or interruptions early, the team will think it's acceptable. If you establish strong norms immediately, the team embraces them. First impressions matter."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Your Ground Rules Moment",
+    "questions": [
+      {
+        "id": "your-team-dynamics",
+        "question": "What behavioral issues have you seen in your teams? (interrupting, disrespect, distraction, etc.)",
+        "type": "textarea",
+        "placeholder": "Example: Team members often talk over each other in meetings..."
+      },
+      {
+        "id": "current-rules",
+        "question": "Do you have explicit ground rules defined in your current project?",
+        "type": "dropdown",
+        "options": ["Yes, clearly defined", "Vague or informal", "No formal rules", "Not sure"]
+      },
+      {
+        "id": "violation-confidence",
+        "question": "If you saw a ground rule violation (like disrespectful language), would you address it immediately?",
+        "type": "dropdown",
+        "options": ["Yes, definitely", "Probably, but not sure how", "Avoid conflict", "Not sure"]
+      }
+    ],
+    "valueStatement": "Ground rules are the foundation of team culture. Without them, chaos and disrespect grow. With them, teams thrive.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "The Mountain Expedition Camp Rules",
+    "story": {
+      "title": "Base Camp Protocols That Save Lives",
+      "narrative": "Imagine you're leading an expedition to a remote mountain peak. Your climbers come from different countries, backgrounds, and experience levels. Before anyone touches a rope, you establish CAMP RULES at Base Camp. These rules aren't preferences—they're survival standards.",
+      "scenes": [
+        {
+          "step": "R",
+          "visual": "🏔️ RECOGNIZE NEED EARLY",
+          "description": "First thing at Base Camp: gather the team and say, 'Before we climb, we establish rules.' Don't wait for someone to get injured or have a conflict. Establish norms BEFORE climbing starts. Example rule: 'All climbers must check-in every 2 hours' or 'No shortcuts on safety protocols.'"
+        },
+        {
+          "step": "U",
+          "visual": "👥 UTILIZE TEAM INPUT",
+          "description": "Each climber has experience and concerns. Ask: 'What rules do YOU need to feel safe?' One climber says 'Clear communication about weather changes.' Another: 'No climbing in bad visibility.' Let THEM define the rules. When they own the rules, they follow them."
+        },
+        {
+          "step": "L",
+          "visual": "📋 LIST & LEARN PRINCIPLES",
+          "description": "Communicate organization/expedition principles: 'Our expedition values every climber's safety and respect. We don't discriminate based on experience level, nationality, or background. We leave no climber behind.' Post these principles visibly. Say them repeatedly. Make them the expedition's soul."
+        },
+        {
+          "step": "E",
+          "visual": "⚡ ENFORCE WITH ESCALATION",
+          "description": "A climber breaks a rule—skips the 2-hour check-in. 1st time: 'Hey, remember the rule? It keeps us all safe.' 2nd time: Written warning. 3rd time: Removed from the expedition for everyone's safety. Don't tolerate rule violations. Lives depend on it."
+        },
+        {
+          "step": "S",
+          "visual": "📜 STORE IN CHARTER",
+          "description": "Write the rules on a physical sign at Base Camp that all climbers sign. The 'Expedition Charter' becomes the team's contract. Everyone has a copy. Everyone knows the rules. Everyone agreed. This is documented."
+        }
+      ],
+      "moral": "A successful mountain expedition (or project) establishes camp rules early, lets the team create them, reinforces them relentlessly, enforces violations without compromise, and documents everything. Rules → Safety → Success."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does R.U.L.E.S. stand for?", "When are ground rules defined?", "Who creates them?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Recall: How do you enforce violations?", "List 3 ground rules you'd establish"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write the R.U.L.E.S. framework from memory", "Describe how discrimination violations differ"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Compare ground rules with team charter", "Practice violation scenarios"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve first scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply R.U.L.E.S. framework", "xp": 10},
+      {"id": "reflection", "task": "Personal reflection", "xp": 5},
+      {"id": "reference-card", "task": "Download reference card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d1t12"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d1t12"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d1t12"}
+  }
+}

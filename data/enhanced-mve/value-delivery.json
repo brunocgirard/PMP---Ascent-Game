@@ -1,0 +1,418 @@
+{
+  "taskId": "value-delivery",
+  "taskTitle": "Value Delivery: Prioritization & Incremental Delivery",
+  "domain": "Agile",
+
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your product backlog has 50 features. The Product Owner wants to build all of them before releasing anything to customers. The team warns this will take 12 months, and by then market conditions will change. Customers are eager to start using the product. The sponsor is concerned about the long wait for ROI.",
+    "question": "What's the BEST Agile approach to maximize value delivery?",
+    "options": {
+      "A": "Build all 50 features as planned to ensure completeness",
+      "B": "Identify the Minimum Viable Product (MVP) and release incrementally to get early feedback and ROI",
+      "C": "Build the easiest features first to show progress quickly",
+      "D": "Let the development team choose which features to build"
+    },
+    "correctAnswer": "B"
+  },
+
+  "ahaDebrief": {
+    "correctAnswer": "B - Identify the Minimum Viable Product (MVP) and release incrementally to get early feedback and ROI",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Incremental Value Delivery",
+          "explanation": "Deliver value early and often, don't wait for everything to be complete",
+          "pmbokSupport": "Agile Principle: Satisfy customers through early and continuous delivery of valuable software"
+        },
+        {
+          "principle": "MVP (Minimum Viable Product)",
+          "explanation": "The smallest set of features that delivers value and enables learning",
+          "pmbokSupport": "MVP focuses on the minimum functionality needed to learn and deliver value"
+        },
+        {
+          "principle": "Early ROI",
+          "explanation": "Releasing early generates returns sooner and funds further development",
+          "pmbokSupport": "Incremental delivery enables earlier ROI and cash flow"
+        },
+        {
+          "principle": "Validated Learning",
+          "explanation": "Real customer feedback beats assumptions—release early to learn what customers truly value",
+          "pmbokSupport": "Empiricism: Make decisions based on observation and experience, not speculation"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Options A, C, and D miss the core value delivery principles.",
+      "trapTable": [
+        {
+          "option": "A",
+          "violation": "Waiting 12 months delays value, ROI, and learning; increases risk of building wrong thing",
+          "pmiValueBroken": "Violates incremental delivery and validated learning"
+        },
+        {
+          "option": "C",
+          "violation": "Easiest features may not be most valuable; optimizes for output, not value",
+          "pmiValueBroken": "Confuses activity with value"
+        },
+        {
+          "option": "D",
+          "violation": "Developers choose 'how,' not 'what'; Product Owner prioritizes value",
+          "pmiValueBroken": "Violates Product Owner accountability for value maximization"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "✅ MVP identified and delivered first",
+        "✅ Value delivered incrementally and frequently",
+        "✅ Customer feedback informs next priorities",
+        "✅ ROI generated early to fund further work"
+      ],
+      "patternRule": "When faced with many features, prioritize by value, deliver MVP first, and release incrementally to maximize learning and ROI."
+    }
+  },
+
+  "coreFramework": {
+    "frameworkName": "VALUE NOW Framework - Prioritization & Incremental Delivery",
+    "frameworkIntro": "Value delivery is at the heart of Agile. Here's how to maximize value through prioritization and incremental delivery:",
+    "frameworkTable": {
+      "columns": ["Principle", "Key Concept", "Exam Trigger"],
+      "rows": [
+        {
+          "step": {"badge": "V", "name": "Value-Based Prioritization", "color": "blue"},
+          "action": "Prioritize work by business value, not effort or preference",
+          "keyQuestions": ["What delivers most value?", "What should we do first?"],
+          "examKeywords": "value, priority, ROI, business outcome"
+        },
+        {
+          "step": {"badge": "A", "name": "Always Deliver Incrementally", "color": "blue"},
+          "action": "Release small increments frequently rather than big batches rarely",
+          "keyQuestions": ["Can we release sooner?", "What's the smallest valuable increment?"],
+          "examKeywords": "incremental, frequent delivery, small batches"
+        },
+        {
+          "step": {"badge": "L", "name": "Learn from Customers Early", "color": "green"},
+          "action": "Get real customer feedback as soon as possible to validate assumptions",
+          "keyQuestions": ["What do customers actually value?", "Are we building the right thing?"],
+          "examKeywords": "feedback, validated learning, customer input"
+        },
+        {
+          "step": {"badge": "U", "name": "Use MVP Thinking", "color": "green"},
+          "action": "Identify Minimum Viable Product—smallest set that delivers value",
+          "keyQuestions": ["What's the minimum we need?", "What can we defer?"],
+          "examKeywords": "MVP, minimum viable, minimum marketable feature"
+        },
+        {
+          "step": {"badge": "E", "name": "Early ROI Generation", "color": "orange"},
+          "action": "Generate returns early to prove value and fund further development",
+          "keyQuestions": ["When can we start earning returns?", "What delivers ROI fastest?"],
+          "examKeywords": "ROI, returns, payback, cash flow"
+        },
+        {
+          "step": {"badge": "N", "name": "No Big Bang Releases", "color": "purple"},
+          "action": "Avoid waiting for everything to be done; release frequently",
+          "keyQuestions": ["Why wait?", "What's preventing earlier release?"],
+          "examKeywords": "continuous delivery, frequent release, no big bang"
+        },
+        {
+          "step": {"badge": "O", "name": "Outcomes Over Outputs", "color": "purple"},
+          "action": "Focus on business outcomes and customer value, not just features built",
+          "keyQuestions": ["What outcome are we achieving?", "How does this create value?"],
+          "examKeywords": "outcomes, benefits, business value, not just features"
+        },
+        {
+          "step": {"badge": "W", "name": "Weighted Prioritization (MoSCoW, WSJF)", "color": "gold"},
+          "action": "Use frameworks like MoSCoW or WSJF to prioritize objectively",
+          "keyQuestions": ["How do we decide priority?", "What's the scoring method?"],
+          "examKeywords": "MoSCoW, WSJF, prioritization framework, scoring"
+        }
+      ]
+    },
+    "additionalContent": "<div style='margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #333; border-radius: 12px;'><h4 style='margin: 0 0 1rem 0; color: #333;'>💡 Key Prioritization Frameworks</h4><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>MoSCoW:</strong> Must have, Should have, Could have, Won't have (this time)</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>WSJF (Weighted Shortest Job First):</strong> Cost of Delay / Job Duration—highest score = highest priority</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>Kano Model:</strong> Basic needs, Performance needs, Delighters</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>Value vs Effort:</strong> High value + Low effort = Do first</p><p style='margin-top: 1rem; font-style: italic;'><strong>Remember:</strong> Deliver value incrementally. MVP first. Feedback informs next priority.</p></div>",
+    "pmbokConnection": {
+      "performanceDomain": "Delivery Performance Domain",
+      "principle": "Focus on Value",
+      "quote": "Projects exist to deliver value. Focus on outcomes, not just outputs. Deliver value incrementally to maximize learning and ROI."
+    }
+  },
+
+  "visualReferenceCard": {
+    "taskTitle": "Value Delivery - VALUE NOW Framework",
+    "framework": {
+      "acronym": "VALUE NOW",
+      "steps": [
+        "V - Value-based prioritization (not effort)",
+        "A - Always deliver incrementally (small batches)",
+        "L - Learn from customers early (feedback)",
+        "U - Use MVP thinking (minimum viable)",
+        "E - Early ROI generation (prove value)",
+        "N - No big bang releases (continuous)",
+        "O - Outcomes over outputs (value, not features)",
+        "W - Weighted prioritization (MoSCoW, WSJF)"
+      ]
+    },
+    "quickReference": "Value delivery focuses on delivering business value incrementally. Prioritize by value, release MVP first, learn from customers, and iterate.",
+    "goldenRule": "Don't wait for everything to be perfect. Deliver MVP, get feedback, iterate. Value comes from what customers use, not what we build.",
+    "examTip": "Exam tests: MVP vs full product, incremental vs big bang, value-based prioritization, MoSCoW, WSJF. Remember: outcomes over outputs!",
+    "pmbokPrinciple": "Focus on value. Deliver value incrementally and frequently."
+  },
+
+  "secondScenario": {
+    "title": "Apply Value Delivery Principles",
+    "intro": "Now that you know the framework, let's apply it to a new situation.",
+    "scenarioStory": "Your Product Owner has prioritized the backlog using MoSCoW: 10 Must-Haves, 15 Should-Haves, 20 Could-Haves, 5 Won't-Haves. The team can deliver 5 items per Sprint. After Sprint 1, the team delivered 5 Could-Haves because they were easiest. What's the problem?",
+    "question": "What should happen next?",
+    "options": {
+      "A": "Continue with Could-Haves since they're building momentum",
+      "B": "Focus on Must-Haves first—they deliver the most critical value",
+      "C": "Let the team continue choosing based on technical ease",
+      "D": "Build all Must-Haves, Should-Haves, and Could-Haves in parallel"
+    },
+    "correctAnswer": "B"
+  },
+
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The most important aspect of value delivery is delivering valuable outcomes, not just producing outputs. Teams should focus on delivering value early and often, using feedback to guide future work.",
+        "author": "PMI",
+        "source": "PMBOK 7th Edition"
+      },
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "The exam loves to test if you understand VALUE vs ACTIVITY. Building 50 features (activity) is not the goal. Delivering business outcomes and customer satisfaction (value) is the goal. Always choose value over volume.",
+        "author": "PMP Instructor Insight",
+        "source": "Agile Value Delivery"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Real-World Application",
+        "insight": "Many teams confuse 'done' with 'delivered value.' A feature is not valuable until customers use it and achieve outcomes. Release early, measure adoption and outcomes, and iterate based on real data—not assumptions."
+      },
+      {
+        "title": "Exam Strategy",
+        "insight": "When you see prioritization questions, look for: Is it value-based or effort-based? Is the answer MVP or full product? Incremental or big bang? The exam favors value-driven, incremental, customer-feedback-oriented answers."
+      }
+    ]
+  },
+
+  "personalApplication": {
+    "title": "🔄 Connect to Your Experience",
+    "reflectionPrompt": "Reflecting on value delivery helps you internalize it for the exam and real projects.",
+    "questions": [
+      {
+        "id": "value-delivery-experience",
+        "question": "Have you been on a project that delayed release to build 'everything'? What was the result?",
+        "type": "textarea",
+        "placeholder": "Example: We waited 8 months to release, and by then customer needs had changed. We built the wrong thing..."
+      },
+      {
+        "id": "prioritization-method",
+        "question": "What prioritization method do you use (or want to use)?",
+        "type": "dropdown",
+        "options": [
+          "Value-based prioritization (business value first)",
+          "MoSCoW (Must, Should, Could, Won't)",
+          "WSJF (Weighted Shortest Job First)",
+          "Kano Model (Basic, Performance, Delighters)",
+          "Effort-based (easiest first)—want to shift to value-based",
+          "No formal method—stakeholder pressure drives priority"
+        ]
+      },
+      {
+        "id": "mvp-challenge",
+        "question": "What's the hardest part of MVP thinking in your organization?",
+        "type": "dropdown",
+        "options": [
+          "Defining what's truly 'minimum viable'",
+          "Convincing stakeholders to release with less features",
+          "Resisting the urge to add 'just one more thing'",
+          "Measuring whether the MVP delivered value",
+          "Getting customer feedback on MVP"
+        ]
+      }
+    ],
+    "valueStatement": "💎 Personal reflection earns you 5 XP and deepens your understanding for exam scenarios.",
+    "xpReward": 5
+  },
+
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Value Delivery Summit Path",
+    "intro": "Anchor value delivery principles with this vivid mountain climbing story. As you read, visualize each scene:",
+    "story": {
+      "title": "Climbing for Value, Not Volume",
+      "narrative": "You're climbing Value Mountain. Your goal is to deliver value to customers waiting at viewpoints along the way, not just reach the summit.",
+      "scenes": [
+        {
+          "step": "V - Value-Based Prioritization",
+          "visual": "💎",
+          "description": "At the base, you see three paths marked with diamonds (high value), coins (medium value), and pebbles (low value). You choose the DIAMOND PATH—highest value first, not the easiest path."
+        },
+        {
+          "step": "A - Always Deliver Incrementally",
+          "visual": "📦➡️📦➡️📦",
+          "description": "Every few steps, you reach a DELIVERY STATION where you hand packages to waiting customers. Small, frequent deliveries. You don't wait until the summit to deliver everything at once—that would be a BIG BANG (💥 explosion symbol with X over it)."
+        },
+        {
+          "step": "L - Learn from Customers Early",
+          "visual": "👂",
+          "description": "At the first delivery station, CUSTOMERS give you feedback: 'We love this! But can you adjust that?' You LISTEN and adapt your next delivery based on what you LEARNED, not your original assumptions."
+        },
+        {
+          "step": "U - Use MVP Thinking",
+          "visual": "🎯",
+          "description": "You see a sign: 'MVP Checkpoint—Minimum Viable Path.' You deliver the SMALLEST package that's still valuable (a working compass and map, not the full climbing kit). Customers can START using it immediately to plan their own climbs."
+        },
+        {
+          "step": "E - Early ROI Generation",
+          "visual": "💰",
+          "description": "At the first delivery, customers hand you COINS (ROI). You use these coins to FUND the next leg of the climb. Early ROI proves value and sustains the project. No waiting for the summit!"
+        },
+        {
+          "step": "N - No Big Bang Releases",
+          "visual": "🚫💥",
+          "description": "You see a warning sign: 'DANGER—Big Bang Releases Ahead.' A crashed supply crate with '12-month delivery' written on it. You avoid this path. Instead, you take the 'Continuous Delivery' path with frequent small drops."
+        },
+        {
+          "step": "O - Outcomes Over Outputs",
+          "visual": "🏆 > 📊",
+          "description": "At a viewpoint, you see two signs: OUTPUTS (number of features built) and OUTCOMES (customer success achieved). You focus on OUTCOMES—customers successfully climbing because of what you delivered, not just counting packages."
+        },
+        {
+          "step": "W - Weighted Prioritization (MoSCoW/WSJF)",
+          "visual": "⚖️",
+          "description": "At a junction, you see a SCALE weighing items: 'MUST have' (heaviest), 'SHOULD have' (medium), 'COULD have' (light), 'WON'T have' (thrown off cliff). You use MoSCoW to WEIGH priorities objectively. Alternatively, you see WSJF signs: Cost of Delay ÷ Duration = Priority Score."
+        }
+      ],
+      "moral": "Value delivery means prioritizing by value, releasing MVP incrementally, learning from customers, and focusing on outcomes. Don't wait for the summit—deliver value at every station along the way."
+    },
+    "selfTest": "Close your eyes and visualize the Value Delivery Summit Path. Can you recall the 8 VALUE NOW principles?"
+  },
+
+  "spacedRepetition": {
+    "title": "🔁 Spaced Repetition Schedule",
+    "intro": "Research shows spaced repetition increases retention from 50% to 90%. Here's your review schedule:",
+    "schedule": [
+      {
+        "timeframe": "1 Day",
+        "icon": "📅",
+        "title": "Review 1: Tomorrow",
+        "tasks": [
+          "Recite VALUE NOW principles",
+          "Re-read the Value Delivery Summit Memory Palace",
+          "Quiz yourself: What's MVP? Why incremental delivery?"
+        ],
+        "duration": "5 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "📅",
+        "title": "Review 2: In 3 Days",
+        "tasks": [
+          "Review the Visual Reference Card",
+          "Write down MoSCoW and WSJF definitions",
+          "Take 5 practice questions on value delivery"
+        ],
+        "duration": "8 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📅",
+        "title": "Review 3: In 1 Week",
+        "tasks": [
+          "Re-do the Quick Scenario Challenge",
+          "Explain MVP and incremental delivery to someone",
+          "Identify value delivery opportunities in your work"
+        ],
+        "duration": "10 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "📅",
+        "title": "Review 4: In 2 Weeks",
+        "tasks": [
+          "Complete 10 practice questions on value delivery",
+          "Review your personal reflection",
+          "Final check: Can you apply VALUE NOW to new scenarios?"
+        ],
+        "duration": "12 minutes",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention after 2 weeks"
+    }
+  },
+
+  "missionChecklist": {
+    "title": "🎯 Your Mission Progress",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "scenario",
+        "task": "Complete Quick Scenario Challenge",
+        "xp": 10,
+        "description": "Test your intuition before learning",
+        "completed": true
+      },
+      {
+        "id": "framework",
+        "task": "Learn VALUE NOW Framework",
+        "xp": 10,
+        "description": "Master value delivery and prioritization",
+        "completed": true
+      },
+      {
+        "id": "memory",
+        "task": "Visualize Memory Palace",
+        "xp": 5,
+        "description": "Anchor principles with the Summit Path story",
+        "completed": true
+      },
+      {
+        "id": "reflection",
+        "task": "Personal Application Reflection",
+        "xp": 5,
+        "description": "Connect to your experience",
+        "current": true,
+        "ctaButton": "Complete Reflection"
+      },
+      {
+        "id": "reference",
+        "task": "Download Reference Card",
+        "xp": 2,
+        "description": "Save for quick review",
+        "ctaButton": "Download PDF"
+      },
+      {
+        "id": "flashcards",
+        "task": "Review Flashcards",
+        "xp": 15,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/value-delivery"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass Topic Quiz (70%+)",
+        "xp": 25,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/value-delivery"
+      }
+    ],
+    "timeEstimate": "15-20 minutes to complete this topic",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/value-delivery"
+    }
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "taskId": "d3t3",
+  "taskTitle": "Evaluate and Address External Business Environment Changes for Impact on Scope",
+  "domain": "Business",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're 3 months into a 12-month e-commerce platform development project. Your team is executing well, schedule is solid, budget is tracking. Then one Monday morning, you wake up to news: a new federal regulation just passed requiring enhanced payment security standards (PCI-DSS 4.0) for all online retailers—effective in 6 months. This wasn't on your radar. Your current architecture uses PCI-DSS 3.2. Upgrading to 4.0 requires significant redesign work. Your sponsor asks: 'Can we ignore this? It won't affect us for 6 months, right?' Your team lead says: 'Maybe they'll change the deadline.' Your product owner wants to keep shipping features on schedule. Nobody's happy about the compliance disruption.",
+    "question": "As Project Manager, what is your BEST response?",
+    "options": {
+      "A": "Tell the team to ignore the new regulation for now and focus on planned features. Monitor for updates but don't act yet.",
+      "B": "Immediately pause the project and assess the regulation's impact on scope, schedule, cost, and risks. Prioritize compliance in the backlog. Recommend options and adjust the plan.",
+      "C": "Contact regulatory authorities to request a deadline extension before taking action",
+      "D": "Defer the regulatory work to a post-project phase—finish current scope first, then address compliance"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Assess impact immediately, prioritize compliance, recommend options, adjust plan",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "External Changes Are Scope Threats",
+          "explanation": "Regulations, market shifts, technology breakthroughs don't respect project timelines. When external changes emerge, they MUST be assessed for scope impact. Ignoring them = project risk that materializes.",
+          "pmbokSupport": "PMBOK requires continuous monitoring of external environment for risks and opportunities"
+        },
+        {
+          "principle": "Regulations Are Scope Mandates, Not Options",
+          "explanation": "New regulations don't give you a choice of 'do it or don't.' You MUST do it. The question is HOW it impacts your project schedule/budget and WHEN you integrate it.",
+          "pmbokSupport": "Compliance requirements change scope—must be managed through change control"
+        },
+        {
+          "principle": "Early Detection = Better Options",
+          "explanation": "Caught a regulation early? You have time to plan. Caught it late? You're in crisis mode. Early awareness lets you assess impact thoughtfully and recommend realistic options.",
+          "pmbokSupport": "Risk monitoring includes identifying external threats early"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "External change trap: hoping it goes away, ignoring it, or deferring action until crisis.",
+      "trapTable": [
+        {
+          "option": "A - Ignore for now, monitor later",
+          "violation": "By the time you act, deadline is 2 months away; no time to plan properly",
+          "pmiValueBroken": "Reactive vs. proactive management; creates crisis"
+        },
+        {
+          "option": "C - Ask for deadline extension",
+          "violation": "Regulatory deadlines aren't negotiable. You can't appeal to government for extensions",
+          "pmiValueBroken": "Unrealistic expectation; wastes time"
+        },
+        {
+          "option": "D - Defer to post-project phase",
+          "violation": "Regulation takes effect during project execution. Deferring means launching non-compliant, which is illegal",
+          "pmiValueBroken": "Exposing organization to fines/liability"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is this an external change (regulation, market, technology, competitor move)?",
+        "Does it impact project scope, schedule, cost, or resources?",
+        "What's the urgency? When must it be addressed?",
+        "What are the consequences if we don't address it?",
+        "What options exist? (Accelerate, descope, accept delay, hybrid approach)",
+        "How does it ripple through the project?"
+      ],
+      "patternRule": "External change emerges → Assess impact immediately → Categorize (must-do vs. nice-to-have) → Recommend options → Manage through change control → Communicate impact to stakeholders"
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "RADAR Framework for External Environment Monitoring",
+    "frameworkIntro": "Like a climber using radar to detect storms ahead, PMs must monitor external environment and respond to threats early:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "R", "name": "Recognize External Changes", "color": "#3b82f6"},
+          "action": "Continuously scan for external changes: regulations, market shifts, competitive moves, technology breakthroughs, industry trends, economic changes.",
+          "keyQuestions": ["What's changing outside the project?", "How might it affect us?"],
+          "examKeywords": "Monitor, Scan, External environment, Regulations, Market, Technology, Competitive"
+        },
+        {
+          "step": {"badge": "A", "name": "Assess Impact on Project", "color": "#8b5cf6"},
+          "action": "When change is identified: Does it impact scope? Schedule? Cost? Resources? Risks? Conduct impact analysis. Quantify ripple effects.",
+          "keyQuestions": ["How does this change affect our project?", "What's the scope/schedule/cost impact?"],
+          "examKeywords": "Impact analysis, Scope change, Schedule impact, Cost impact, Ripple effect"
+        },
+        {
+          "step": {"badge": "D", "name": "Determine Prioritization & Urgency", "color": "#10b981"},
+          "action": "Classify: Must-do (regulatory, safety, critical capability) vs. Nice-to-have (optimization, feature enhancement). Assess deadline urgency.",
+          "keyQuestions": ["Is this mandatory or optional?", "When must it be done?"],
+          "examKeywords": "Prioritize, Mandatory, Optional, Backlog, Urgency, Classification"
+        },
+        {
+          "step": {"badge": "A", "name": "Analyze & Recommend Options", "color": "#f59e0b"},
+          "action": "Develop multiple approach options: (1) Accelerate/add resources to absorb change, (2) Descope lower-priority work, (3) Extend schedule, (4) Hybrid approach. Show trade-offs.",
+          "keyQuestions": ["What are our options?", "What's realistic?"],
+          "examKeywords": "Options analysis, Trade-offs, Schedule extension, Descope, Acceleration"
+        },
+        {
+          "step": {"badge": "R", "name": "Recommend & Communicate", "color": "#ec4899"},
+          "action": "Present recommendation to sponsor/steering committee. Show impact analysis, options, recommended path, and business implications. Enable informed decision.",
+          "keyQuestions": ["What do I recommend and why?", "What does the sponsor need to decide?"],
+          "examKeywords": "Recommend, Communicate, Stakeholder decision, Business case, Implications"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Business Environment Performance Domain",
+      "principle": "Project managers must continuously monitor external environment and proactively assess scope impacts from external changes",
+      "quote": "External changes are scope risks—identify them early, assess impact, and manage through change control"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Monitor External Changes & Scope Impact",
+    "framework": {
+      "acronym": "R.A.D.A.R.",
+      "steps": ["👀 Recognize external changes", "📊 Assess impact", "🎯 Determine priority", "🔍 Analyze options", "📢 Recommend & communicate"]
+    },
+    "quickReference": "**External changes are inevitable.** Regulations shift, markets move, tech emerges, competitors disrupt. PM's job: scan environment continuously, assess scope impact early, proactively manage change.",
+    "goldenRule": "External change detected → Assess impact immediately → Prioritize (must-do vs. nice-to-have) → Recommend options → Communicate to sponsor → Manage through change control.",
+    "examTip": "Look for 'regulation change,' 'market shift,' 'technology breakthrough,' 'external environment' → These are scope impact questions. Always assess immediately, don't defer.",
+    "pmbokPrinciple": "Business Environment - Continuous monitoring of external environment for scope risks and opportunities"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply R.A.D.A.R.",
+    "intro": "Apply the framework to a real-world disruption:",
+    "scenarioStory": "You're managing a 6-month project to build a custom logistics software system for a shipping company. You're 2 months in, on track. Then international trade agreements change: new tariff structures and trade compliance requirements take effect in 4 months. Your sponsor's first reaction: 'We'll deal with that after the project is done.' However, your compliance officer warns that the new rules will apply during your project execution, and if the software doesn't account for the new tariffs/compliance, the company could face $500K in fines.",
+    "question": "What do you do?",
+    "options": {
+      "A": "Agree with sponsor—deal with tariff changes post-launch",
+      "B": "Conduct immediate impact analysis: (1) Assess scope changes needed, (2) Quantify schedule/cost/resource impacts, (3) Classify tariff compliance as mandatory, (4) Recommend options (add compliance to current sprint, descope lower priority features, or extend timeline), (5) Present findings to sponsor for decision",
+      "C": "Have the compliance officer handle it—it's not a PM concern",
+      "D": "Pause the project until trade agreements stabilize"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "You have to continuously review the external business environment for impact on your project scope. Regulations happen pretty quickly. If changes happen, they're not a surprise, and your project is always in compliance. External changes happen all the time and they're not in your control, but you have to monitor them constantly.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The project manager must monitor and evaluate changes in the external business environment that may impact project scope and adjust accordingly.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The PM as Early Warning System",
+        "insight": "Your job isn't just to manage the current project—it's to be the organization's early warning system for external threats. You're watching the horizon so the sponsor doesn't have to."
+      },
+      {
+        "title": "External Changes = Scope Conversations",
+        "insight": "When regulations change, new technologies emerge, or markets shift, these are NOT surprises to absorb quietly. They're conversations to have with the sponsor: 'Here's what changed, here's the impact, here are our options.'"
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "external-threats",
+        "question": "What external changes could impact YOUR current project? (Regulations, market, technology, competitors, economic)",
+        "type": "textarea",
+        "placeholder": "Example: AI breakthroughs changing customer expectations, new privacy laws, competitive product launch..."
+      },
+      {
+        "id": "monitoring-process",
+        "question": "How frequently do you monitor your project's external environment?",
+        "type": "dropdown",
+        "options": ["Daily", "Weekly", "Monthly", "As-needed/reactive", "Never really"]
+      },
+      {
+        "id": "recent-change",
+        "question": "Has an external change recently impacted your project? How did you handle it?",
+        "type": "textarea",
+        "placeholder": "Example: Regulation change detected and assessed impact on scope..."
+      }
+    ],
+    "valueStatement": "💡 Great PMs don't react to surprises—they anticipate them.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: Weather Watching at Base Camp",
+    "story": {
+      "title": "The Meteorologist Guide",
+      "narrative": "You're a mountain guide managing a climbing expedition. The route is planned, supplies packed, team ready. But you know from experience: weather changes, avalanche risks shift, new storms form. You can't control the weather, but you MUST monitor it constantly. Guides who ignore weather forecasts get climbers killed.",
+      "scenes": [
+        {
+          "step": "R", "visual": "👀 RECOGNIZE weather changes",
+          "description": "Every morning: Check satellite images, barometer, wind patterns, other guides' reports. Is a storm forming? Temperature dropping? Avalanche risk rising? Don't ignore the horizon."
+        },
+        {
+          "step": "A", "visual": "📊 ASSESS impact on the climb",
+          "description": "Storm coming in 2 days? Impact: Route might close, supplies need rerouting, team morale affected, schedule shifts 3 days right. Quantify the impact."
+        },
+        {
+          "step": "D", "visual": "🎯 DETERMINE priority of response",
+          "description": "Life-threatening storm (mandatory response) vs. light drizzle (manageable). Classify: 'This storm is a must-respond change. That weather pattern is nice-to-monitor but not urgent.'"
+        },
+        {
+          "step": "A", "visual": "🔍 ANALYZE response options",
+          "description": "Option 1: Accelerate climb before storm arrives (risk exhaustion). Option 2: Descope some camps, go light and fast. Option 3: Extend timeline, wait out storm at secure location. Each has trade-offs."
+        },
+        {
+          "step": "R", "visual": "📢 RECOMMEND & communicate decision",
+          "description": "Call the expedition sponsor: 'Storm incoming in 2 days. I recommend delaying 4 days, then climbing at faster pace. Here's why. Here are risks. What's your call?' Sponsor informed."
+        }
+      ],
+      "moral": "Guide **R**ecognizes weather changes, **A**ssesses climb impact, **D**etermines priority, **A**nalyzes options, **R**ecommends strategy. Ignoring the horizon = preventable disaster."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does R.A.D.A.R. stand for?", "Examples of external changes?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Name 5 types of external changes", "Assess impact exercise"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write R.A.D.A.R. from memory", "Create impact analysis template"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Scenario practice", "Compare with d3t1 (compliance)"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d3t3"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d3t3"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d3t3"}
+  }
+}

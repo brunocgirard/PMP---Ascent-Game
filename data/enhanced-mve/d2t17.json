@@ -1,0 +1,242 @@
+{
+  "taskId": "d2t17",
+  "taskTitle": "Plan and Manage Project/Phase Closure or Transitions",
+  "domain": "Performance",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your expedition has successfully summited! You're now at the peak with your team. The descent is ahead. Before you leave the summit, you need to: (1) Gather final data and measurements for your research mission; (2) Ensure all team members are accounted for and have enough resources for descent; (3) Schedule equipment hand-off with the relief expedition arriving in 2 days; (4) Document all lessons learned while fresh; (5) Notify all stakeholders (sponsors, media, support teams) of your success.",
+    "question": "What is the CRITICAL sequence for summit closure that ensures mission success?",
+    "options": {
+      "A": "Gather data → Hand off equipment → Account for team → Document lessons → Notify stakeholders",
+      "B": "Account for team safety → Secure critical mission data → Prepare for descent → Document lessons → Transition to relief team",
+      "C": "Notify stakeholders of success → Gather data → Rest the team → Document lessons → Hand off equipment",
+      "D": "Document lessons first → Gather data → Account for team → Plan descent → Transition to relief team"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Safety first, then mission success, then knowledge preservation, then transition",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Closure Hierarchy: Safety > Mission > Knowledge > Transition",
+          "explanation": "Closure isn't random. Safety (team accounted for, ready for descent) comes first. Mission success (secure critical data) comes next. Knowledge (lessons learned) follows. Then smooth transition (handoff to relief team). Skip safety for logistics, and you have a disaster on the mountain.",
+          "pmbokSupport": "Project closure must address stakeholder expectations, risk management, resource transitions, and knowledge transfer in a structured sequence"
+        },
+        {
+          "principle": "Closure vs. Transition Timing",
+          "explanation": "Gathering data at the peak while conditions are optimal is critical (can't return later). Team safety for descent is prerequisite (can't transition if team isn't ready). Lessons must be documented immediately (memories fade). Relief team handoff is the final step (you're leaving, they're arriving).",
+          "pmbokSupport": "Planned transitions require clear sequencing of activities, resource handoffs, and stakeholder communication"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Rushing into closure activities without ensuring safety and mission completeness creates major problems.",
+      "trapTable": [
+        {
+          "option": "A - Data before safety check",
+          "violation": "Gathering data when team isn't accounted for means you might not notice someone missing until descent becomes critical",
+          "pmiValueBroken": "Safety oversight"
+        },
+        {
+          "option": "C - Stakeholder notification premature",
+          "violation": "Celebrating publicly before mission data is secured and team is ready for descent invites pressure to rush unsafe decisions",
+          "pmiValueBroken": "Risk management failure"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is team safety ensured for the next phase (descent)?",
+        "Are critical mission objectives documented/completed?",
+        "Can we capture knowledge while team is still together and fresh?",
+        "Are we ready for the formal handoff/transition to next team/phase?"
+      ],
+      "patternRule": "Project closure sequence: Safety/readiness → Mission completion → Knowledge capture → Formal transition. Skip any, and the next phase starts broken."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "D.E.S.C.E.N.D. Framework for Project/Phase Closure",
+    "frameworkIntro": "Closing a project or transitioning between phases is like descending from a summit—methodical, safety-first, and knowledge-focused:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "D", "name": "Determine Closure Criteria", "color": "#3b82f6"},
+          "action": "Define what 'done' looks like. Have all deliverables been accepted? Project objectives met? Phase goals achieved? Clarity prevents disputes.",
+          "keyQuestions": ["What must be completed for closure?", "Have stakeholders formally accepted deliverables?", "Are success criteria met?"],
+          "examKeywords": "Acceptance criteria, Deliverable completion, Stakeholder sign-off, Phase gate"
+        },
+        {
+          "step": {"badge": "E", "name": "Ensure Resources & Safety Readiness", "color": "#8b5cf6"},
+          "action": "Before you leave, ensure team is ready for transition (next role, next project, offboarding). Account for all resources. Safety = mission readiness.",
+          "keyQuestions": ["Is team prepared for transition?", "Are resources accounted for?", "Are dependencies on next phase clear?"],
+          "examKeywords": "Resource release, Team transition, Handoff readiness, Risk mitigation"
+        },
+        {
+          "step": {"badge": "S", "name": "Secure Final Deliverables & Data", "color": "#10b981"},
+          "action": "Document final outputs, ensure archive completeness, verify quality one last time. This is your last chance to catch issues before project closes.",
+          "keyQuestions": ["Are all deliverables in final form?", "Is documentation complete?", "Are critical files archived?"],
+          "examKeywords": "Final deliverables, Documentation, Archival, Quality assurance"
+        },
+        {
+          "step": {"badge": "C", "name": "Capture & Communicate Lessons", "color": "#f59e0b"},
+          "action": "While team is together and memories are fresh, document what worked, what didn't, what surprised you. This knowledge belongs to the organization, not in individual heads.",
+          "keyQuestions": ["What did we learn?", "What would we do differently?", "Who needs this knowledge?"],
+          "examKeywords": "Lessons learned, Retrospective, Process improvement, Knowledge transfer"
+        },
+        {
+          "step": {"badge": "E", "name": "Execute Transition & Handoff", "color": "#ec4899"},
+          "action": "Formally hand off to next team (phase 2, support team, new PM). Clear ownership transfer. Communication ensures no gaps.",
+          "keyQuestions": ["Who owns it next?", "What did they need to know?", "Are there open threads?"],
+          "examKeywords": "Resource allocation, Stakeholder communication, Transition plan, Ownership transfer"
+        },
+        {
+          "step": {"badge": "N", "name": "Notify & Close Stakeholder Expectations", "color": "#06b6d4"},
+          "action": "Final communications: success summary, what's closing, what continues, gratitude. Formal project end announcement. Close psychological loop.",
+          "keyQuestions": ["Have all stakeholders heard closure news?", "Are expectations aligned for what comes next?", "Is there formal sign-off?"],
+          "examKeywords": "Stakeholder communication, Final report, Project closure report, Sign-off"
+        },
+        {
+          "step": {"badge": "D", "name": "Document & Archive for Future", "color": "#8d5b4c"},
+          "action": "Create closure report, archive all project documents, update organizational knowledge base. This isn't for stakeholders—it's for the next PM who faces similar challenges.",
+          "keyQuestions": ["Is everything documented?", "Is archive organized for retrieval?", "Could another PM find what they need?"],
+          "examKeywords": "Project closure report, Archival, Documentation, Organizational assets"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance & Stakeholder Engagement",
+      "principle": "Principle 7: Manage Stakeholder Engagement & Principle 8: Demonstrate Knowledge Management",
+      "quote": "Project closure ensures deliverables meet acceptance criteria, resources are released, knowledge is preserved, and stakeholders have closure."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Plan & Manage Project/Phase Closure",
+    "framework": {
+      "acronym": "D.E.S.C.E.N.D.",
+      "steps": ["✅ Determine closure criteria", "🔒 Ensure readiness", "📦 Secure deliverables", "📚 Capture lessons", "🤝 Execute handoff", "📢 Notify stakeholders", "📁 Document & archive"]
+    },
+    "quickReference": "**Closure Sequence:** 1) Define done 2) Ensure team ready 3) Finalize deliverables 4) Document learning 5) Transition to next owner 6) Communicate end 7) Archive for future",
+    "goldenRule": "A project isn't closed until stakeholders say it's closed, team is transitioned, and knowledge is captured. Early closure = regret later.",
+    "examTip": "Look for 'project closure,' 'phase gate,' 'transition,' 'lessons learned' → Think sequence: acceptance → readiness → delivery → learning → handoff → communication → archive",
+    "pmbokPrinciple": "Structured Closure - Stakeholder acceptance, Knowledge preservation, Resource transition"
+  },
+  "secondScenario": {
+    "title": "Apply D.E.S.C.E.N.D.",
+    "intro": "Apply the framework:",
+    "scenarioStory": "Your software product release is going live in 1 week. The project has been intense. Your dev team is burned out. The QA team is ready to transition to support role. The executive sponsor wants a celebratory all-hands meeting ASAP to announce launch. Your CTO wants to debrief on technical decisions. You have documentation to finalize and support team to brief. You're under pressure to do everything at once.",
+    "question": "How do you approach closure strategically?",
+    "options": {
+      "A": "Schedule the all-hands meeting immediately, do the CTO debrief, release team to vacation, finish documentation later",
+      "B": "Delay all stakeholder communication, focus on documentation, then hand off to support team, then you're done",
+      "C": "Determine closure criteria with sponsor, ensure support team is trained and ready, finalize deliverables, capture lessons while team is engaged, then celebrate launch, then archive",
+      "D": "Get executive blessing, finish documentation first, debrief technical decisions, train support team, announce launch, release team"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Project closure is not the moment the software goes live or the last deliverable is delivered. It's the moment you've ensured the next owner is ready, knowledge is preserved, and stakeholders have formal closure. Skip that, and you'll be debugging someone else's project for months.",
+        "author": "PMP Masterclass",
+        "source": "Project Closure & Transition Management"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The Close Project or Phase process includes archiving project documents, releasing resources, communicating final project performance, and formally transitioning the project or phase deliverables.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Closure Myth",
+        "insight": "Many PMs think closure = the moment the project ends. Reality: Closure is a planned sequence of activities. You define 'done,' ensure handoff readiness, capture lessons, inform stakeholders, and THEN the project is closed. Skip steps, and you inherit problems in the next phase."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Personal Reflection",
+    "questions": [
+      {
+        "id": "current-closure",
+        "question": "What project or phase are you currently closing or about to close?",
+        "type": "textarea",
+        "placeholder": "Example: Product release, phase 2 transition, team member handoff..."
+      },
+      {
+        "id": "closure-gaps",
+        "question": "Which closure activity worries you most: stakeholder communication, knowledge capture, resource transition, or documentation?",
+        "type": "dropdown",
+        "options": ["Stakeholder communication", "Knowledge capture", "Resource transition", "Documentation", "Formal acceptance"]
+      }
+    ],
+    "valueStatement": "Great PMs close projects the right way—with safety, completeness, learning, and grace.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Final Descent Protocol",
+    "story": {
+      "title": "Closing the Expedition at Base Camp",
+      "narrative": "You've summited. Now you **D.E.S.C.E.N.D.** safely to Base Camp, closing the expedition properly...",
+      "scenes": [
+        {
+          "step": "D", "visual": "✅ DETERMINE closure criteria",
+          "description": "Before leaving peak: Check mission success—did we get the research data? Did everyone reach the summit safely? Did we achieve all objectives? Only then declare closure criteria met."
+        },
+        {
+          "step": "E", "visual": "🔒 ENSURE readiness",
+          "description": "Team prepared for 3-day descent? Sufficient supplies? Climbers healthy? Relief team briefed and in position? Don't transition a broken team to descent."
+        },
+        {
+          "step": "S", "visual": "📦 SECURE deliverables",
+          "description": "Final data collection at peak (can't redo this). Samples properly packed. Equipment inventoried. Environmental research complete. Last quality check before descent begins."
+        },
+        {
+          "step": "C", "visual": "📚 CAPTURE lessons",
+          "description": "Route selection worked? Altitude acclimatization strategy effective? What surprised us? What would we do differently? Document while fresh, while team still together."
+        },
+        {
+          "step": {"step": "E", "visual": "🤝 EXECUTE handoff"},
+          "description": "Relief expedition arrives. Formal handoff: 'Here's our summit data, here's our route knowledge, here's maintenance needed on camp.' Clear ownership transfer."
+        },
+        {
+          "step": "N", "visual": "📢 NOTIFY stakeholders",
+          "description": "Sponsors get final summary. Media gets success story. Supporting teams get thanks. Each stakeholder hears closure news and knows what comes next."
+        },
+        {
+          "step": "D", "visual": "📁 DOCUMENT & archive",
+          "description": "Expedition report filed. Route maps archived for next team. All photos, data, lessons stored. Next expedition leader finds complete knowledge base."
+        }
+      ],
+      "moral": "Expedition leaders **D**efine closure, **E**nsure readiness, **S**ecure outputs, **C**apture wisdom, **E**xecute transition, **N**otify stakeholders, and **D**ocument for the future."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does D.E.S.C.E.N.D. stand for?", "Closure sequence order?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Plan your current closure", "Map stakeholder communications"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write closure plan", "Identify knowledge to capture"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Compare with d2t16", "Practice complex scenarios"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t17"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t17"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t17"}
+  }
+}

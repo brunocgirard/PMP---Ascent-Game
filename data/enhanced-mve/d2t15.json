@@ -1,0 +1,255 @@
+{
+  "taskId": "d2t15",
+  "taskTitle": "Establish Project Governance Structure",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Someone has to be in charge of each camp—or chaos ensues!",
+    "scenarioStory": "Your expedition has reached basecamp with 200 porters, 50 climbers, equipment managers, medical staff, and logistics coordinators. Decisions need to be made: Should we push to Camp 2 tomorrow or wait for weather to clear? Who approves the medical decisions for ill climbers? Who can authorize spending from the emergency fund? Who reports to the sponsor? A medical emergency happens at 2 AM—who makes the decision?",
+    "question": "What's missing from your expedition structure?",
+    "options": {
+      "A": "Clear governance structure defining roles, authorities, escalation paths, and decision-making rules",
+      "B": "More experienced people in leadership positions",
+      "C": "Faster decision-making processes",
+      "D": "A written manual covering every possible scenario"
+    },
+    "correctAnswer": "A"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "A - Clear governance structure",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Roles, Responsibilities & Authority",
+          "explanation": "Every critical decision needs a clear owner. Authority levels must be defined: Who can approve what? At what escalation level does it go to sponsor? Who has veto power?",
+          "pmbokSupport": "Governance defines roles, responsibilities, and decision rights across the project"
+        },
+        {
+          "principle": "Decision Framework & Escalation",
+          "explanation": "Governance documents decision criteria, approval authorities, and escalation paths. This prevents decision paralysis, ensures consistency, and protects the project.",
+          "pmbokSupport": "Governance structure enables timely, consistent, informed decision-making"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Projects without clear governance end up with unclear authority, inconsistent decisions, and unnecessary escalations. It's chaos disguised as flexibility.",
+      "trapTable": [
+        {
+          "option": "B - More experienced leaders",
+          "violation": "More experience doesn't solve unclear authority—people don't know who decides",
+          "pmiValueBroken": "Lack of structure and clarity"
+        },
+        {
+          "option": "D - Manual for every scenario",
+          "violation": "Can't write a manual for every situation; you need decision-making principles instead",
+          "pmiValueBroken": "Bureaucracy instead of clear governance"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Are roles and responsibilities clearly defined?",
+        "Who has authority to approve scope changes?",
+        "Who has authority to approve budget changes?",
+        "What decisions go to the sponsor?",
+        "What's the escalation path?",
+        "Who decides in emergencies?",
+        "How frequently does governance body meet?"
+      ],
+      "patternRule": "Good governance = clear roles + defined authorities + escalation paths + decision criteria + transparent communication."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "S.T.R.U.C.T.U.R.E. Framework for Project Governance",
+    "frameworkIntro": "Strong governance provides clarity, consistency, and timely decision-making:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Specify Stakeholders & Bodies", "color": "#3b82f6"},
+          "action": "Identify all stakeholder groups and decision-making bodies: Sponsor, Steering Committee, Project Manager, Change Control Board, Quality Board, etc.",
+          "keyQuestions": ["Who are the stakeholders?", "What bodies decide what?", "Who's accountable?"],
+          "examKeywords": "Stakeholders, Governance bodies, Decision authority"
+        },
+        {
+          "step": {"badge": "T", "name": "Tailor Roles & Responsibilities", "color": "#8b5cf6"},
+          "action": "Define each role: PM does what? Sponsor does what? CCB does what? Quality Board? Use RACI matrix if needed. Clear responsibility prevents finger-pointing.",
+          "keyQuestions": ["Who's responsible?", "Who approves?", "Who's accountable?", "Who's informed?"],
+          "examKeywords": "Roles, Responsibilities, RACI matrix, Accountability"
+        },
+        {
+          "step": {"badge": "R", "name": "Request Authority Levels", "color": "#10b981"},
+          "action": "Define authorization limits: PM can approve changes up to $5K. Sponsor approves above that. PM can approve scope changes up to 5%. Sponsor approves above that.",
+          "keyQuestions": ["Who approves what?", "What's the limit?", "When escalate?"],
+          "examKeywords": "Authority limits, Delegation, Approval authority"
+        },
+        {
+          "step": {"badge": "U", "name": "Understand Decision Criteria", "color": "#f59e0b"},
+          "action": "Define how decisions are made: By consensus? Majority vote? Single decision-maker? What factors matter (cost, schedule, quality, risk)? Document decision criteria.",
+          "keyQuestions": ["How do we decide?", "What factors matter?", "Documented criteria?"],
+          "examKeywords": "Decision criteria, Decision authority, Governance rules"
+        },
+        {
+          "step": {"badge": "C", "name": "Create Escalation Paths", "color": "#ec4899"},
+          "action": "Define escalation: If PM can't resolve → Sponsor. If sponsor can't → Executive steering. Emergency path: Contact sponsor immediately. Clear path prevents delays.",
+          "keyQuestions": ["When escalate?", "To whom?", "Emergency path?"],
+          "examKeywords": "Escalation, Escalation path, Emergency decision"
+        },
+        {
+          "step": {"badge": "T", "name": "Track Meeting Cadence", "color": "#6366f1"},
+          "action": "Define governance meetings: Steering committee monthly? CCB weekly? Daily standup? Each meeting has agenda, decision owner, and documented outcomes.",
+          "keyQuestions": ["How often meet?", "Who attends?", "What decisions made?"],
+          "examKeywords": "Meeting cadence, Governance meetings, Decision documentation"
+        },
+        {
+          "step": {"badge": "U", "name": "Use Communication Plan", "color": "#f97316"},
+          "action": "Governance decisions must be communicated to all stakeholders. Who gets what info? When? Format? Ensure transparency and alignment.",
+          "keyQuestions": ["Who's informed?", "How often?", "What format?"],
+          "examKeywords": "Communication, Stakeholder engagement, Transparency"
+        },
+        {
+          "step": {"badge": "R", "name": "Review & Adapt Governance", "color": "#14b8a6"},
+          "action": "Governance should evolve as project matures. Early stages: more control. Execution: more autonomy. Closeout: focus on lessons. Review governance periodically.",
+          "keyQuestions": ["Is governance working?", "Need changes?", "Team feedback?"],
+          "examKeywords": "Governance review, Adaptation, Continuous improvement"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Process Performance Domain",
+      "principle": "Principle 13: Manage Project Interfaces",
+      "quote": "Governance structure ensures clear roles, authorities, and decision-making processes across all project interfaces"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Establish Governance",
+    "framework": {
+      "acronym": "S.T.R.U.C.T.U.R.E.",
+      "steps": ["👥 Specify stakeholders & bodies", "🎭 Tailor roles & responsibilities", "⚖️ Request authority levels", "📋 Understand decision criteria", "🔄 Create escalation paths", "📅 Track meeting cadence", "📢 Use communication plan", "🔍 Review & adapt"]
+    },
+    "quickReference": "**Clear roles** prevent confusion | **Authority limits** enable fast decisions | **Escalation paths** prevent deadlock | **Meeting cadence** ensures decisions get made",
+    "goldenRule": "If someone doesn't know who decides and how, your governance is incomplete.",
+    "examTip": "Look for 'governance,' 'steering committee,' 'escalation' → Think: Who decides? What's the authority? When do we escalate? Clear structure?",
+    "pmbokPrinciple": "Governance - Enable clear, timely, consistent decision-making"
+  },
+  "secondScenario": {
+    "title": "Apply S.T.R.U.C.T.U.R.E.",
+    "intro": "Test governance design:",
+    "scenarioStory": "Your $10M project has a Sponsor, PMO, Steering Committee, and Project Manager. A critical issue arises: The team discovered a major technical constraint that will cost $300K to resolve. The PM wants to escalate to the Sponsor. The PMO says go to Steering Committee. The Sponsor is on vacation for a week. The team needs a decision in 2 days to stay on schedule.",
+    "question": "What's the governance problem, and how do you solve it?",
+    "options": {
+      "A": "Wait for Sponsor to return—major decisions need the top authority",
+      "B": "Define approval authorities, escalation paths, and emergency decision processes upfront. PM should have authority to approve issues up to X amount with approval needed for larger amounts",
+      "C": "CCB should make all major decisions regardless of amount",
+      "D": "PM makes the decision independently and reports to Sponsor later"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Good governance isn't about bureaucracy—it's about clarity. When roles, authorities, and escalation paths are clear, decisions happen fast and teams trust the process.",
+        "author": "Rita Mulcahy",
+        "source": "PMP Exam Prep"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Project governance provides the structure for decision-making, ensuring consistency, transparency, and accountability across the project lifecycle.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Governance Prevents Decision Paralysis",
+        "insight": "Projects without clear governance end up with people asking 'Who decides?' or 'Do I escalate or act?' when critical decisions need to be made. This costs time and creates errors."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Reflect on Your Project Governance",
+    "questions": [
+      {
+        "id": "governance-clarity",
+        "question": "Is your project's governance structure documented and clear to all?",
+        "type": "dropdown",
+        "options": ["Very clear and documented", "Mostly clear", "Somewhat unclear", "Very unclear", "Don't know"]
+      },
+      {
+        "id": "decision-authority",
+        "question": "Do you know who has authority for scope/budget/schedule changes?",
+        "type": "dropdown",
+        "options": ["Yes, very clear", "Mostly yes", "Unclear", "No idea", "Never been defined"]
+      }
+    ],
+    "valueStatement": "Clear governance enables fast, consistent, informed decision-making.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Expedition Command Center",
+    "story": {
+      "title": "Chain of Command on the Mountain",
+      "narrative": "Every expedition needs a clear command structure so decisions happen fast and everyone knows their role...",
+      "scenes": [
+        {
+          "step": "S", "visual": "👥 SPECIFY stakeholders",
+          "description": "Sponsor (back home), Expedition Commander, Camp Manager (each camp), Medical Officer, Logistics Chief, Climbing Teams. Who's part of governance? Who decides what?"
+        },
+        {
+          "step": "T", "visual": "🎭 TAILOR roles",
+          "description": "Commander: Overall strategy and major decisions. Camp Manager: Daily logistics and safety at camp. Medical: All medical decisions. Logistics: Supply and porters. Each role is crystal clear."
+        },
+        {
+          "step": "R", "visual": "⚖️ REQUEST authority",
+          "description": "Commander approves decisions over $50K. Camp Manager approves under $5K. Medical Officer has full authority on health decisions (no debate). Emergency: Act, then report."
+        },
+        {
+          "step": "U", "visual": "📋 UNDERSTAND criteria",
+          "description": "Decision criteria: Schedule impact? Cost impact? Safety impact? Team morale? Push higher if multiple impacts. Weather delay = Camp Manager decides. Major route change = Commander."
+        },
+        {
+          "step": "C", "visual": "🔄 CREATE escalation",
+          "description": "Can't decide at camp? Ask Commander. Commander can't decide? Ask Sponsor (by radio). Medical emergency? Medical Officer decides immediately, reports later. Clear path = fast decisions."
+        },
+        {
+          "step": "T", "visual": "📅 TRACK meetings",
+          "description": "Daily 6 AM briefing (all role holders). Weekly strategy meeting (Commander + Camp Manager + Medical). Weather decision: Daily 8 PM. Emergency: anytime."
+        },
+        {
+          "step": "U", "visual": "📢 USE communication",
+          "description": "All decisions announced immediately at briefing. Dispatch to Sponsor daily. Team knows who decided and why. No surprises, no whispers."
+        },
+        {
+          "step": "R", "visual": "🔍 REVIEW governance",
+          "description": "Mid-expedition review: Is structure working? Too many escalations? Not enough autonomy? Too slow? Adjust. By summit, governance has evolved with team experience."
+        }
+      ],
+      "moral": "Commander **S**pecifies structure, **T**ailors roles, **R**equests authority, **U**nderstands criteria, **C**reates escalation, **T**racks meetings, **U**ses communication, **R**eviews & adapts."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What's S.T.R.U.C.T.U.R.E.?", "Why governance structure needed?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Map your project's current governance", "Identify gaps or unclear areas"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Design governance structure", "Create authority matrix"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice escalation scenarios", "Compare with PMBOK"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t15"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t15"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t15"}
+  }
+}

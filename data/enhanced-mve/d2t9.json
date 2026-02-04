@@ -1,0 +1,241 @@
+{
+  "taskId": "d2t9",
+  "taskTitle": "Plan and Manage Scope",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Week 3 of your 12-week project. Sponsor asks: 'Can you add mobile app version alongside the web app? Same deadline, same budget.' Your team says they need 200 extra hours. Current team velocity: 20 hours/week, 60 total hours available in remaining 9 weeks. What do you tell the sponsor?",
+    "question": "What's the CORRECT response?",
+    "options": {
+      "A": "Yes, let's add mobile—our team is efficient",
+      "B": "No—the new scope (200 hrs) exceeds available capacity (60 hrs), so either budget, schedule, or scope must change",
+      "C": "Yes, but extend the deadline by 10 weeks for the mobile version",
+      "D": "Let the team decide if they can handle it"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Scope, schedule, and budget are linked by constraints",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Triple Constraint (Iron Triangle)",
+          "explanation": "You cannot change scope without affecting schedule or budget (or both). Adding mobile without changing timeline or budget is impossible with the given capacity.",
+          "pmbokSupport": "Project constraints (scope, time, cost) are interdependent. Change one, something else changes"
+        },
+        {
+          "principle": "Capacity Must Match Work",
+          "explanation": "200 hours of work vs. 60 hours available = gap. This isn't negotiable—it's math. You need to close this gap explicitly.",
+          "pmbokSupport": "Resource planning ensures capacity exists before committing to scope"
+        },
+        {
+          "principle": "Scope Creep Kills Projects",
+          "explanation": "Adding work without adjusting constraints is the #1 reason projects fail. Saying 'yes' to scope changes without data enables failure.",
+          "pmbokSupport": "Manage scope baselines and control scope changes through formal processes"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Scope decisions require understanding the constraint impact, not hope.",
+      "trapTable": [
+        {
+          "option": "A - Yes, team is efficient",
+          "violation": "Ignores the math: 200 hours of work doesn't fit in 60 hours of capacity",
+          "pmiValueBroken": "Optimism bias without data"
+        },
+        {
+          "option": "C - Extend deadline",
+          "violation": "Changes scope without discussing this trade-off with sponsor",
+          "pmiValueBroken": "Assuming sponsor will accept deadline change"
+        },
+        {
+          "option": "D - Let team decide",
+          "violation": "Scope decisions are PM + sponsor decisions, not team decisions",
+          "pmiValueBroken": "Abdication of responsibility"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "What's the scope request (hours/complexity)?",
+        "What's the available capacity?",
+        "Is there a gap? If yes, which constraint will change?",
+        "Who makes the trade-off decision?"
+      ],
+      "patternRule": "Scope + schedule + budget are locked together. New scope requires trade-off. Calculate before saying yes or no."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "S.C.O.P.E. Framework for Scope Management",
+    "frameworkIntro": "Scope management controls what's in and what's out of the project:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Statement of Work", "color": "#3b82f6"},
+          "action": "Define what's IN the project clearly. What will be delivered? What will NOT be delivered?",
+          "keyQuestions": ["What's included?", "What's excluded?", "Are boundaries clear?"],
+          "examKeywords": "Scope definition, In-scope, Out-of-scope"
+        },
+        {
+          "step": {"badge": "C", "name": "Create WBS (Work Breakdown Structure)", "color": "#8b5cf6"},
+          "action": "Break project into work packages. Hierarchical decomposition. Ensures nothing is missed or duplicated.",
+          "keyQuestions": ["How do we organize the work?", "What are the work packages?"],
+          "examKeywords": "WBS, Work packages, Decomposition"
+        },
+        {
+          "step": {"badge": "O", "name": "Obtain Acceptance Criteria", "color": "#10b981"},
+          "action": "Define how you'll know the deliverable is done. Specific, measurable, testable criteria.",
+          "keyQuestions": ["How do we validate completion?", "What does 'done' look like?"],
+          "examKeywords": "Acceptance criteria, Definition of done, Validation"
+        },
+        {
+          "step": {"badge": "P", "name": "Plan Baselines & Gates", "color": "#f59e0b"},
+          "action": "Establish a scope baseline. Document scope in project charter, requirements docs. Create change control gates.",
+          "keyQuestions": ["What's the approved scope baseline?", "How do we control changes?"],
+          "examKeywords": "Scope baseline, Approved scope, Change control"
+        },
+        {
+          "step": {"badge": "E", "name": "Evaluate Change Requests", "color": "#ec4899"},
+          "action": "When someone asks to change scope, evaluate impact: cost, schedule, risk. Then decide yes/no/defer.",
+          "keyQuestions": ["What's the impact?", "Do we have capacity?", "Who decides?"],
+          "examKeywords": "Change request, Impact analysis, Approval authority"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Delivery Performance Domain",
+      "principle": "Principle 9: Manage Project Boundaries",
+      "quote": "Scope management controls what's included and excluded from the project"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Plan and Manage Scope",
+    "framework": {
+      "acronym": "S.C.O.P.E.",
+      "steps": ["📝 Statement of work", "📊 Create WBS", "✅ Obtain acceptance criteria", "🎯 Plan baselines & gates", "🔄 Evaluate change requests"]
+    },
+    "quickReference": "In-scope = included in project | Out-of-scope = excluded | Scope creep = uncontrolled addition | Scope baseline = approved scope document | Change control = formal process for scope changes",
+    "goldenRule": "Say 'yes' to scope changes only after evaluating impact and securing approvals. Say 'no' to changes that exceed available capacity.",
+    "examTip": "Look for 'scope,' 'change request,' 'in-scope,' 'out-of-scope' → Identify baseline scope. Calculate impact. Apply change control process.",
+    "pmbokPrinciple": "Manage Project Boundaries"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply S.C.O.P.E.",
+    "intro": "Test your scope change thinking:",
+    "scenarioStory": "Your approved scope: web app, 3 user roles, basic reporting. Mid-project, sponsor asks: 'Can we add advanced analytics? Just 3 extra features.' No timeline/budget change mentioned. This will require 150 development hours. Team capacity: 20 hours/week, 8 weeks remaining. How do you respond?",
+    "question": "What's your approach?",
+    "options": {
+      "A": "No—this exceeds capacity and isn't in scope",
+      "B": "Yes, 3 features is reasonable",
+      "C": "Submit a change request documenting scope change, impact (150 hrs, schedule slip of ~7 weeks, or budget increase), and get sponsor decision",
+      "D": "Ask the team if they can 'squeeze it in'"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Scope creep is the silent project killer. One small feature doesn't seem bad. Ten small features? That's a different project and no one noticed the switch.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Scope baseline is the approved project scope plus approved changes. Control scope by managing changes through formal processes.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Scope Controls Schedule & Budget",
+        "insight": "Your sponsor wants deadline and budget fixed. The only variable is scope. Protect the baseline. Every 'yes' to new features either breaks deadline or budget."
+      },
+      {
+        "title": "Change Control is Your Boundary",
+        "insight": "Formal change control isn't bureaucracy—it's the mechanism that says 'your request matters, let's discuss the trade-off.' Without it, chaos."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "scope-creep",
+        "question": "Have you experienced scope creep? What happened?",
+        "type": "textarea",
+        "placeholder": "Example: 'Just add this one more feature'..."
+      },
+      {
+        "id": "scope-control",
+        "question": "How did you manage scope changes?",
+        "type": "dropdown",
+        "options": ["Had formal change control", "Informal requests", "No process", "Not sure"]
+      }
+    ],
+    "valueStatement": "💡 Scope is your boundary. Protect it. Change requests aren't rejections—they're invitations to discuss trade-offs.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Mountain's Summit Boundaries",
+    "story": {
+      "title": "Defining the Expedition Scope",
+      "narrative": "A mountain expedition has a defined scope. Adding activities at the last minute risks the main objective...",
+      "scenes": [
+        {
+          "step": "S",
+          "visual": "📝 STATE what's in the expedition",
+          "description": "Scope: Reach summit of Peak A. In-scope: Base Camp setup, 4 intermediate camps, summit push. Out-of-scope: Climbing Peak B (different mountain), extended research stays."
+        },
+        {
+          "step": "C",
+          "visual": "📊 CREATE work breakdown",
+          "description": "WBS: Logistics (permits, equipment) → Acclimatization → Camp 1 → Camp 2 → Camp 3 → Summit push. Each level is understood."
+        },
+        {
+          "step": "O",
+          "visual": "✅ OBTAIN acceptance criteria",
+          "description": "How do we know success? Summit flag planted, all climbers safely returned, within 14-day window. Clear definition of 'done.'"
+        },
+        {
+          "step": "P",
+          "visual": "🎯 PLAN baseline and gates",
+          "description": "Approved scope: 12 climbers, 10,000 lbs supplies, 14-day timeline. This is the baseline. Only formal change control can modify it."
+        },
+        {
+          "step": "E",
+          "visual": "🔄 EVALUATE change requests",
+          "description": "Week 2: Sponsor asks 'Can we add side research on glaciers (5 extra days)?' Evaluate impact: Extends timeline to 19 days (food shortage), or reduce summit push time (risk). Decide with data."
+        }
+      ],
+      "moral": "Scope management is like expedition planning: **S**tate the objective, **C**reate work breakdown, **O**btain acceptance criteria, **P**lan baselines, **E**valuate all changes against constraints."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What's the triple constraint?", "Scope vs. schedule vs. budget?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Define scope for a scenario", "Create simple WBS"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Explain S.C.O.P.E.", "List change control steps"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice exam questions", "Connect to budget/schedule"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t9"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t9"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t9"}
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "taskId": "d2t2",
+  "taskTitle": "Manage Communications",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a 12-month product launch project with diverse stakeholders: the CEO (wants one-paragraph status emails weekly), the sponsor (wants 2-hour detailed meetings bi-weekly), the team (needs daily standups), and customers (want monthly feature updates). You have limited time. Last month, the CEO complained the meeting agenda was too detailed. The sponsor said the emails lack depth. The team says the standups are too long.",
+    "question": "What's the core issue you need to address?",
+    "options": {
+      "A": "Hold more meetings to satisfy everyone",
+      "B": "Use one communication method for all stakeholders to keep it simple",
+      "C": "Analyze each stakeholder's communication NEEDS and preferences, then tailor communication by audience",
+      "D": "Let each stakeholder group manage their own communications"
+    },
+    "correctAnswer": "C"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "C - Tailor communications to each stakeholder's needs",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Communication is Not One-Size-Fits-All",
+          "explanation": "CEO wants short/high-level. Team needs detailed/frequent. Sponsor wants meetings. One communication method fails everyone. Effective PMs differentiate by stakeholder.",
+          "pmbokSupport": "Analyze communication needs of stakeholders and tailor communications accordingly"
+        },
+        {
+          "principle": "Effective Project Communications",
+          "explanation": "Start by asking: What does THIS stakeholder need? When? How detailed? How often? Then deliver THAT, not a generic communication plan.",
+          "pmbokSupport": "Plan and manage communications based on stakeholder analysis"
+        },
+        {
+          "principle": "Confirm Understanding and Get Feedback",
+          "explanation": "After communicating, verify understanding. Ask: 'Is this clear? Do you have questions?' If stakeholders are complaining, they're not getting what they need.",
+          "pmbokSupport": "Ensure communications are understood and feedback is received"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Treating all stakeholders the same or using ineffective communication strategies.",
+      "trapTable": [
+        {
+          "option": "A - Hold more meetings",
+          "violation": "More meetings ≠ better communication; wastes everyone's time",
+          "pmiValueBroken": "Inefficiency; not respecting stakeholder time"
+        },
+        {
+          "option": "B - One method for all",
+          "violation": "CEO doesn't want meetings. Team needs daily contact. One approach fails both.",
+          "pmiValueBroken": "Ignoring stakeholder needs; poor communication effectiveness"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Who are the stakeholders? (CEO, sponsor, team, customer, etc.)",
+        "What does EACH ONE need/prefer? (formal meeting? email? frequency?)",
+        "What's the communication channel? (meeting, email, report, sync?)",
+        "Is the message being understood? Ask or observe feedback."
+      ],
+      "patternRule": "Different stakeholders = different communication needs. Analyze first, then tailor. If stakeholders are unhappy with communication, you're not meeting their needs."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "CHANNEL Framework for Effective Communications",
+    "frameworkIntro": "Effective project communication is one of the PM's most critical skills:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "C", "name": "Clarify Stakeholder Needs", "color": "#3b82f6"},
+          "action": "Analyze each stakeholder: What info do they need? How detailed? How often? Formal or informal? Use stakeholder register and power/interest grid.",
+          "keyQuestions": ["Who needs to know what?", "How often?", "How detailed?"],
+          "examKeywords": "Stakeholder analysis, communication needs, power/interest grid"
+        },
+        {
+          "step": {"badge": "H", "name": "How Will They Receive It?", "color": "#8b5cf6"},
+          "action": "Choose communication methods (meetings, emails, reports, dashboards). CEO might get weekly emails; team gets daily standups; sponsor gets bi-weekly meetings.",
+          "keyQuestions": ["What's the right channel?", "Face-to-face or asynchronous?"],
+          "examKeywords": "Communication channel, method, frequency, medium"
+        },
+        {
+          "step": {"badge": "A", "name": "Assess and Craft Message", "color": "#10b981"},
+          "action": "Create communications that match their needs. High-level for execs, detailed for team. Written for some, spoken for others.",
+          "keyQuestions": ["Is this the right detail level?", "Is this understandable?"],
+          "examKeywords": "Message crafting, appropriate level of detail, stakeholder-centric"
+        },
+        {
+          "step": {"badge": "N", "name": "Nurture Understanding", "color": "#f59e0b"},
+          "action": "Deliver the communication. Then VERIFY understanding. Ask: 'Do you have questions?' 'Is this clear?' Watch for feedback cues.",
+          "keyQuestions": ["Do they understand?", "What questions do they have?"],
+          "examKeywords": "Deliver, confirm understanding, feedback, engagement"
+        },
+        {
+          "step": {"badge": "E", "name": "Evolve Based on Feedback", "color": "#ec4899"},
+          "action": "If stakeholders are confused or unhappy with communication style, adjust. Communication is a two-way street—listen and adapt.",
+          "keyQuestions": ["Is this working?", "What should we change?"],
+          "examKeywords": "Feedback, iteration, continuous improvement, adaptive"
+        },
+        {
+          "step": {"badge": "L", "name": "Link Communications to Results", "color": "#06b6d4"},
+          "action": "Ensure communications actually achieve project goals. Are stakeholders informed? Engaged? Aligned? If not, communication strategy failed.",
+          "keyQuestions": ["Are stakeholders aligned?", "Is the project on track?"],
+          "examKeywords": "Effectiveness, alignment, integration, impact"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Process Performance Domain",
+      "principle": "Principle 7: Manage Project Communications",
+      "quote": "Effective communications ensure stakeholders are informed, engaged, and aligned with project objectives throughout execution"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Manage Project Communications",
+    "framework": {
+      "acronym": "CHANNEL",
+      "steps": ["📊 Clarify stakeholder needs", "📡 How will they receive it?", "✏️ Assess and craft message", "🗣️ Nurture understanding", "🔄 Evolve based on feedback", "🎯 Link to results"]
+    },
+    "quickReference": "**Communication essentials:** Analyze EACH stakeholder | Tailor method and frequency | Craft appropriate messages | Confirm understanding | Adjust based on feedback",
+    "goldenRule": "One size fits NO stakeholder. Tailor communications to each stakeholder's needs, preferences, and level of detail.",
+    "examTip": "Look for stakeholder communication complaints → Analyze their needs → Tailor approach. If someone says 'too much detail' or 'not enough frequency,' you're not meeting their needs.",
+    "pmbokPrinciple": "Plan and Manage Communications - Analyze, tailor, deliver, verify, iterate"
+  },
+  "secondScenario": {
+    "title": "Apply CHANNEL Framework",
+    "intro": "Apply the framework:",
+    "scenarioStory": "Your IT infrastructure project has: IT director (wants technical deep-dives weekly), CFO (wants cost/schedule status monthly), end-users (want to know when their systems will be ready), and board members (want high-level 'on track/at-risk' quarterly). All four have complained your last communication didn't meet their needs.",
+    "question": "What should you do to fix communications?",
+    "options": {
+      "A": "Send the same status report to everyone to be fair and consistent",
+      "B": "Ask each stakeholder group what they need, then create tailored communications for IT director, CFO, end-users, and board members",
+      "C": "Hold one big monthly meeting where all stakeholders hear the same thing",
+      "D": "Stop communicating until you have definitive results"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "90% of what a project manager does is communicate. Plan communications based on EACH stakeholder's needs. The CEO doesn't want detail. The team needs detail. Your sponsor wants meetings. Your customer wants emails. Tailor your approach.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Project managers analyze stakeholder communication needs and deliver communications effectively to ensure understanding and engagement throughout the project lifecycle.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Communication Channels Formula",
+        "insight": "With N stakeholders, there are N×(N-1)/2 potential communication channels. With 5 stakeholders, that's 10 channels! Tailor by group (CEO, team, sponsor, etc.) to keep communications manageable and effective."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Personal Reflection",
+    "questions": [
+      {
+        "id": "stakeholders",
+        "question": "List 3-4 key stakeholders on your project. What does each one NEED in terms of communication?",
+        "type": "textarea",
+        "placeholder": "Example: CEO wants weekly one-paragraph email; Team needs daily standups..."
+      },
+      {
+        "id": "effectiveness",
+        "question": "Is your current communication approach working for all of them?",
+        "type": "dropdown",
+        "options": ["Yes, everyone's satisfied", "Mostly yes, with a few tweaks needed", "No, stakeholders are unhappy", "Not sure"]
+      }
+    ],
+    "valueStatement": "Project success depends on effective communication. When stakeholders feel heard and informed, everything works better.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Mountain Radio Network",
+    "story": {
+      "title": "Climbing with Different Communication Frequencies",
+      "narrative": "You're leading an expedition with base camp (sponsors/executives), Camp 2 (project managers), Camp 3 (climbing team), and remote towns (customers). Each camp needs DIFFERENT communication...",
+      "scenes": [
+        {
+          "step": "C", "visual": "📊 CLARIFY what each camp needs",
+          "description": "Base camp (execs) wants: 'Is the expedition on track? Yes/No.' Camp 2 (PMs) want: 'What's our pace? How many supplies used? Expected summit date?' Camp 3 (climbers) want: 'What's today's route? Weather forecast? Any hazards?' Remote towns want: 'When will expedition reach town? Any news?' Different needs = different info."
+        },
+        {
+          "step": "H", "visual": "📡 HOW will each camp get their info?",
+          "description": "Base camp: Daily radio check-in (brief). Camp 2: Detailed evening debrief. Camp 3: Daily morning meeting + radio updates. Remote towns: Weekly written dispatch. Different channels suit different camps."
+        },
+        {
+          "step": "A", "visual": "✏️ ASSESS each message carefully",
+          "description": "For base camp: 'Summit expected in 3 weeks, all climbers healthy.' For Camp 2: 'Day 4: 14 miles climbed, 8 supplies consumed, pace on track...' For climbers: 'North route icy, switching to south route, bring extra carabiners.' Same expedition, different messages."
+        },
+        {
+          "step": "N", "visual": "🗣️ NURTURE understanding at each camp",
+          "description": "After radio updates, ask: 'Base camp, do you have questions?' 'Camp 2, is this level of detail right?' 'Climbers, do you understand the route change?' Listen for feedback."
+        },
+        {
+          "step": "E", "visual": "🔄 EVOLVE if communications aren't working",
+          "description": "Base camp says radio checks take too long—switch to brief text. Camp 2 says evening debriefs are too late—move to morning instead. Climbers say route details are unclear—use sketches next time. Adapt based on what works."
+        },
+        {
+          "step": "L", "visual": "🎯 LINK communications to expedition success",
+          "description": "If all camps are informed, aligned, and trust the decisions, expedition succeeds. If communication breaks down, so does coordination. Effective communication = effective expedition."
+        }
+      ],
+      "moral": "Route guide CHANNEL-s communications: Clarify each camp's needs, choose the right HOW for each, craft Appropriate messages, Nurture understanding, Evolve based on feedback, Link to success. Not one radio frequency for everyone—tailor to each camp."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does CHANNEL stand for?", "Why tailor communications?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["List your stakeholders and their needs", "Design tailored communication approach"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Map stakeholders to communication methods", "Explain 90% communication rule"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice questions", "Compare with other communication tasks"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t2"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t2"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t2"}
+  }
+}

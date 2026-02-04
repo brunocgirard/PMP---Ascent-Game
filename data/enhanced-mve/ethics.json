@@ -1,0 +1,367 @@
+{
+  "taskId": "ethics",
+  "taskTitle": "Ethics & Professional Responsibility",
+  "domain": "Foundation",
+
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a construction project. A vendor offers you expensive tickets to a championship game if you select their bid. Their bid is competitive but not the lowest. Your friend who works for a competing vendor asks you to share the other bids so they can 'sharpen their pencil.' Meanwhile, you discover the previous PM inflated budget estimates to create a secret reserve.",
+    "question": "What should you do FIRST?",
+    "options": {
+      "A": "Accept the tickets since the bid is competitive anyway",
+      "B": "Decline the tickets, refuse to share bids, and report the budget inflation",
+      "C": "Share the bids with your friend to help them out",
+      "D": "Keep quiet about the budget inflation to avoid causing problems"
+    },
+    "correctAnswer": "B"
+  },
+
+  "ahaDebrief": {
+    "correctAnswer": "B - Decline the tickets, refuse to share bids, and report the budget inflation",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Responsibility",
+          "explanation": "Take ownership of your decisions. Report unethical behavior even when it's uncomfortable.",
+          "pmbokSupport": "PMI Code of Ethics: Responsibility means making decisions we can live with and reporting unethical behavior."
+        },
+        {
+          "principle": "Fairness",
+          "explanation": "Provide equal access to information. Don't play favorites or accept inappropriate gifts.",
+          "pmbokSupport": "PMI Code of Ethics: Fairness means making decisions and acting impartially and objectively. Avoid conflicts of interest."
+        },
+        {
+          "principle": "Honesty",
+          "explanation": "Be truthful in communications and conduct. Don't conceal wrongdoing.",
+          "pmbokSupport": "PMI Code of Ethics: Honesty means understanding the truth and acting in a truthful manner in communications and conduct."
+        },
+        {
+          "principle": "Respect",
+          "explanation": "Respect the procurement process and all stakeholders by maintaining integrity.",
+          "pmbokSupport": "PMI Code of Ethics: Respect means our duty to show consideration for ourselves, others, and resources."
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "The other options violate the PMI Code of Ethics.",
+      "trapTable": [
+        {
+          "option": "A",
+          "violation": "Accepting gifts creates conflict of interest",
+          "pmiValueBroken": "Fairness & Honesty - accepting inappropriate gifts"
+        },
+        {
+          "option": "C",
+          "violation": "Sharing confidential bid information",
+          "pmiValueBroken": "Fairness & Respect - unfair advantage, breach of trust"
+        },
+        {
+          "option": "D",
+          "violation": "Concealing unethical behavior",
+          "pmiValueBroken": "Responsibility & Honesty - failure to report wrongdoing"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "✅ Decline gifts that could influence decisions",
+        "✅ Maintain confidentiality and fairness in procurement",
+        "✅ Report unethical behavior through proper channels",
+        "✅ Make decisions based on merit, not relationships"
+      ],
+      "patternRule": "When facing ethical dilemmas, apply all four values: Be Responsible (report it), be Respectful (treat all fairly), be Fair (no favoritism), be Honest (transparent)."
+    }
+  },
+
+  "coreFramework": {
+    "frameworkName": "RRFH - The PMI Code of Ethics",
+    "frameworkIntro": "PMI's Code of Ethics has 4 pillars. These aren't just exam topics - they define professional conduct. Think 'RRFH' (Roof - protecting the profession):",
+    "frameworkTable": {
+      "columns": ["Letter", "Value", "Key Principle", "Exam Trigger"],
+      "rows": [
+        {
+          "step": {"badge": "R", "name": "Responsibility", "color": "blue"},
+          "action": "Take ownership; make decisions we can live with; report violations",
+          "keyQuestions": ["Am I taking ownership?", "Should I report this?", "What's the right thing to do?"],
+          "examKeywords": "report violations, take ownership, accountability, escalate, disclose"
+        },
+        {
+          "step": {"badge": "R", "name": "Respect", "color": "green"},
+          "action": "Show consideration for people and resources; listen to others; conduct yourself professionally",
+          "keyQuestions": ["Am I listening?", "Am I treating people with dignity?", "Am I being professional?"],
+          "examKeywords": "listen, cultural sensitivity, professional conduct, cooperation, dignity"
+        },
+        {
+          "step": {"badge": "F", "name": "Fairness", "color": "orange"},
+          "action": "Make impartial decisions; avoid conflicts of interest; provide equal access",
+          "keyQuestions": ["Am I being objective?", "Is there a conflict of interest?", "Am I playing favorites?"],
+          "examKeywords": "impartial, objective, no favoritism, conflict of interest, transparency"
+        },
+        {
+          "step": {"badge": "H", "name": "Honesty", "color": "purple"},
+          "action": "Be truthful; don't deceive; provide accurate information; admit mistakes",
+          "keyQuestions": ["Am I being truthful?", "Am I withholding important information?", "Should I correct this?"],
+          "examKeywords": "truthful, accurate, transparent, correct errors, no deception"
+        }
+      ]
+    },
+    "additionalContent": "<div style='margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border-radius: 12px;'><h4 style='margin: 0 0 1rem 0; color: white;'>🛡️ Memory Trick: RRFH (ROOF)</h4><p style='margin: 0; line-height: 1.8;'><strong>R</strong>esponsibility → <strong>R</strong>espect → <strong>F</strong>airness → <strong>H</strong>onesty</p><p style='margin-top: 1rem; font-style: italic;'>These 4 pillars form the ROOF that protects the project management profession.</p></div><div style='margin-top: 1rem; padding: 1rem; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 4px;'><strong>⚠️ Exam Critical:</strong> Ethics questions have ZERO tolerance. When in doubt, choose the option that: (1) Reports violations, (2) Declines gifts, (3) Maintains transparency, (4) Puts integrity above convenience.</div>",
+    "pmbokConnection": {
+      "performanceDomain": "All domains",
+      "principle": "Stewardship principle",
+      "quote": "As practitioners and representatives of an established profession, we are expected to demonstrate a commitment to ethical and professional conduct."
+    }
+  },
+
+  "visualReferenceCard": {
+    "taskTitle": "Ethics - RRFH (ROOF)",
+    "framework": {
+      "acronym": "RRFH",
+      "steps": [
+        "R - Responsibility (Own it, report it)",
+        "R - Respect (Listen, dignity, professional)",
+        "F - Fairness (Impartial, no conflicts)",
+        "H - Honesty (Truthful, accurate, transparent)"
+      ]
+    },
+    "quickReference": "PMI's Code of Ethics applies to ALL PMI members, certification holders, and those applying for certification. Violations can result in certification suspension or revocation.",
+    "goldenRule": "When facing ethical dilemmas: What would be right if everyone could see my decision?",
+    "examTip": "Ethics questions are often 'easy points' if you remember: Always choose the MOST ethical option, even if it's uncomfortable. Report violations. Decline gifts. Be transparent.",
+    "pmbokPrinciple": "Stewardship - Demonstrate commitment to ethical and professional conduct"
+  },
+
+  "secondScenario": {
+    "title": "Apply the RRFH Framework",
+    "intro": "Now that you know the framework, let's apply it to a new situation.",
+    "scenarioStory": "You're managing a software project. A team member tells you confidentially that they inflated their time estimates by 50% to 'build in buffer.' You also discover a competitor's proprietary code in your team's repository. Your sponsor asks you to report that the project is 'on track' even though you're three weeks behind.",
+    "question": "What's the MOST ethical response?",
+    "options": {
+      "A": "Tell the sponsor the truth, address the code violation, and coach the team member on honest estimating",
+      "B": "Report the team member to HR for dishonesty",
+      "C": "Tell the sponsor what they want to hear to avoid conflict",
+      "D": "Ignore the code issue since it's saving time"
+    },
+    "correctAnswer": "A"
+  },
+
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "As practitioners of project management, we are required to conduct ourselves in an ethical manner. The PMI Code of Ethics and Professional Conduct describes the expectations that we have of ourselves and our fellow practitioners.",
+        "author": "PMI",
+        "source": "PMI Code of Ethics and Professional Conduct"
+      },
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "On the exam, ethics questions are designed to be straightforward if you follow one rule: Choose what's RIGHT, not what's EASY. Always report violations. Always decline inappropriate gifts. Always be truthful. There's no gray area in PMI ethics.",
+        "author": "PMP Instructor Insight",
+        "source": "PMP Exam Prep Courses"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Real-World Application",
+        "insight": "Ethics violations in projects lead to reputation damage, legal issues, and loss of trust. A PM who accepts a gift today loses credibility tomorrow. A PM who conceals problems destroys stakeholder confidence. Your reputation is built on thousands of small ethical choices."
+      },
+      {
+        "title": "Exam Strategy",
+        "insight": "If an ethics question feels tricky, apply this test: 'Would I be comfortable if this decision appeared in tomorrow's newspaper?' If not, it's the wrong choice. PMI expects the HIGHEST standard of conduct, not the minimum."
+      }
+    ]
+  },
+
+  "personalApplication": {
+    "title": "🔄 Connect to Your Experience",
+    "reflectionPrompt": "Reflecting on ethics helps you recognize situations and respond appropriately.",
+    "questions": [
+      {
+        "id": "ethics-challenge",
+        "question": "Have you faced an ethical dilemma on a project? What happened?",
+        "type": "textarea",
+        "placeholder": "Example: A vendor offered me a gift. I declined and documented it to avoid any appearance of favoritism..."
+      },
+      {
+        "id": "ethics-strength",
+        "question": "Which ethical value comes most naturally to you?",
+        "type": "dropdown",
+        "options": [
+          "Responsibility - Taking ownership and accountability",
+          "Respect - Listening and treating people with dignity",
+          "Fairness - Being impartial and objective",
+          "Honesty - Being truthful and transparent"
+        ]
+      },
+      {
+        "id": "ethics-growth",
+        "question": "Which ethical value do you want to strengthen?",
+        "type": "dropdown",
+        "options": [
+          "Responsibility - Taking ownership and accountability",
+          "Respect - Listening and treating people with dignity",
+          "Fairness - Being impartial and objective",
+          "Honesty - Being truthful and transparent"
+        ]
+      }
+    ],
+    "valueStatement": "💎 Personal reflection earns you 5 XP and strengthens your ethical decision-making muscle.",
+    "xpReward": 5
+  },
+
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Four Pillars of the Summit Shelter",
+    "intro": "At the summit, there's a shelter held up by 4 pillars (RRFH = ROOF). Each pillar represents an ethical value:",
+    "story": {
+      "title": "The Summit Shelter's Four Pillars",
+      "narrative": "You've reached the summit! But a storm is coming. The only shelter is a small structure held up by 4 pillars. Each pillar represents one of PMI's ethical values. Remove any pillar, and the entire roof collapses.",
+      "scenes": [
+        {
+          "step": "R - Responsibility Pillar (East)",
+          "visual": "🏛️",
+          "description": "The RESPONSIBILITY pillar (painted blue) has an inscription: 'Take Ownership.' This pillar reminds you to make decisions you can live with and REPORT violations. You see a logbook where climbers report safety hazards - that's responsibility in action."
+        },
+        {
+          "step": "R - Respect Pillar (North)",
+          "visual": "🏛️",
+          "description": "The RESPECT pillar (painted green) shows carved ears - symbolizing LISTENING. This pillar reminds you to show consideration for others, listen to different perspectives, and conduct yourself professionally. Cultural flags from different nations hang from this pillar."
+        },
+        {
+          "step": "F - Fairness Pillar (West)",
+          "visual": "⚖️",
+          "description": "The FAIRNESS pillar (painted orange) has balanced scales carved into it. This pillar reminds you to make IMPARTIAL decisions, avoid conflicts of interest, and provide equal access. A 'No Gifts' sign hangs prominently on this pillar."
+        },
+        {
+          "step": "H - Honesty Pillar (South)",
+          "visual": "📜",
+          "description": "The HONESTY pillar (painted purple) is made of transparent crystal - symbolizing TRANSPARENCY. This pillar reminds you to be truthful, provide accurate information, and correct errors. You can see right through it - nothing hidden."
+        }
+      ],
+      "moral": "The storm rages outside, but the shelter holds strong because ALL FOUR pillars are solid. Remove one - say, accepting a gift (Fairness violation) or concealing a problem (Honesty violation) - and the entire roof collapses. Ethics isn't optional; it's the foundation of the profession."
+    },
+    "selfTest": "Close your eyes and stand in the summit shelter. Touch each pillar. Can you recall all 4 ethical values using RRFH?"
+  },
+
+  "spacedRepetition": {
+    "title": "🔁 Spaced Repetition Schedule",
+    "intro": "Research shows spaced repetition increases retention from 50% to 90%. Here's your review schedule:",
+    "schedule": [
+      {
+        "timeframe": "1 Day",
+        "icon": "📅",
+        "title": "Review 1: Tomorrow",
+        "tasks": [
+          "Recite RRFH without looking",
+          "Re-read the Four Pillars story",
+          "Quiz yourself: What should you do if offered a gift?"
+        ],
+        "duration": "5 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "📅",
+        "title": "Review 2: In 3 Days",
+        "tasks": [
+          "Review the Visual Reference Card",
+          "Write down all 4 values from memory",
+          "Practice: How would you handle an ethical dilemma?"
+        ],
+        "duration": "8 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📅",
+        "title": "Review 3: In 1 Week",
+        "tasks": [
+          "Re-do the Quick Scenario Challenge",
+          "Explain each ethical value to someone",
+          "Reflect on ethics in your current work"
+        ],
+        "duration": "10 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "📅",
+        "title": "Review 4: In 2 Weeks",
+        "tasks": [
+          "Complete 10 practice questions on ethics",
+          "Review your personal reflection",
+          "Final check: Can you apply ethics to new scenarios?"
+        ],
+        "duration": "12 minutes",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention after 2 weeks"
+    }
+  },
+
+  "missionChecklist": {
+    "title": "🎯 Your Mission Progress",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "scenario",
+        "task": "Complete Quick Scenario Challenge",
+        "xp": 10,
+        "description": "Test your ethical intuition",
+        "completed": true
+      },
+      {
+        "id": "framework",
+        "task": "Learn RRFH Framework",
+        "xp": 10,
+        "description": "Master the PMI Code of Ethics",
+        "completed": true
+      },
+      {
+        "id": "memory",
+        "task": "Visualize Memory Palace",
+        "xp": 5,
+        "description": "Anchor ethics with the Four Pillars story",
+        "completed": true
+      },
+      {
+        "id": "reflection",
+        "task": "Personal Application Reflection",
+        "xp": 5,
+        "description": "Connect to your experience",
+        "current": true,
+        "ctaButton": "Complete Reflection"
+      },
+      {
+        "id": "reference",
+        "task": "Download Reference Card",
+        "xp": 2,
+        "description": "Save for quick review",
+        "ctaButton": "Download PDF"
+      },
+      {
+        "id": "flashcards",
+        "task": "Review Flashcards",
+        "xp": 15,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/ethics"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass Topic Quiz (70%+)",
+        "xp": 25,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/ethics"
+      }
+    ],
+    "timeEstimate": "15-20 minutes to complete this topic",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/ethics"
+    }
+  }
+}

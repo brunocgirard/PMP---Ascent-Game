@@ -1,0 +1,227 @@
+{
+  "taskId": "d2t1",
+  "taskTitle": "Execute Project with Urgency to Deliver Business Value",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a software development project. After 3 months of planning, execution begins. Your team can build the complete product in one shot (8 months) OR deliver a minimum viable product (MVP) in 2 months for customer feedback before building the rest. Early feedback shows customer priorities differ from what was planned. You haven't started construction of the next phases yet.",
+    "question": "As a project manager focused on delivering business value, what should you do?",
+    "options": {
+      "A": "Stick to the original 8-month plan to deliver the full product as designed",
+      "B": "Deliver the MVP in 2 months, get customer feedback, then adjust remaining phases based on what you learn",
+      "C": "Extend the timeline to 12 months and deliver incrementally throughout",
+      "D": "Stop the project and replan everything"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Deliver MVP early, get feedback, adjust remaining phases",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Deliver Value Early and Often",
+          "explanation": "Getting the MVP to customers in 2 months delivers SOME value now and enables feedback to guide remaining work. All-or-nothing 8-month approaches delay value realization.",
+          "pmbokSupport": "Project success includes continuous value delivery, not just end-state delivery"
+        },
+        {
+          "principle": "Assess Business Value Throughout",
+          "explanation": "Continuously evaluate: 'Is this still delivering what stakeholders actually need?' Early feedback reveals misalignments before wasting 8 months.",
+          "pmbokSupport": "Monitor business value throughout execution, not just at closeout"
+        },
+        {
+          "principle": "Agile/Incremental Thinking Applies Everywhere",
+          "explanation": "Even traditional projects benefit from breaking work into increments. Not all projects can use true Agile, but MVP concepts apply broadly.",
+          "pmbokSupport": "Look for opportunities to deliver value incrementally, even in predictive projects"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Misunderstanding when to use incremental delivery vs. full delivery.",
+      "trapTable": [
+        {
+          "option": "A - Stick to original 8-month plan",
+          "violation": "Ignores customer feedback opportunity; delays value; increases risk of building wrong things",
+          "pmiValueBroken": "Missing value delivery; ignoring stakeholder needs"
+        },
+        {
+          "option": "D - Stop and replan",
+          "violation": "Excessive—you can gather feedback without stopping execution",
+          "pmiValueBroken": "Inefficiency; wasted planning investment"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Can we deliver ANY value incrementally (MVP, phase, milestone)?",
+        "Will early feedback improve the remaining work?",
+        "Are stakeholders' actual needs clear, or do they need to see something first?",
+        "What's the risk of building everything without early feedback?"
+      ],
+      "patternRule": "If you CAN deliver value in increments AND get useful feedback, do it. If increments aren't usable/valuable, plan differently."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "SPEED Framework for Execution with Value Delivery",
+    "frameworkIntro": "Executing with urgency means delivering value quickly while maintaining quality:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Segment for MVPs", "color": "#3b82f6"},
+          "action": "Identify what minimum viable product or usable increment can be delivered first to provide value and gather feedback.",
+          "keyQuestions": ["What's the smallest valuable chunk?", "Can customers use/provide feedback on this?"],
+          "examKeywords": "MVP, increment, deliverable, usable, feedback"
+        },
+        {
+          "step": {"badge": "P", "name": "Prioritize Delivery", "color": "#8b5cf6"},
+          "action": "Schedule MVP delivery first, then remaining phases. Get feedback early to influence later work.",
+          "keyQuestions": ["What should we deliver first?", "When can we get customer input?"],
+          "examKeywords": "Schedule, prioritize, early value, phased delivery"
+        },
+        {
+          "step": {"badge": "E", "name": "Execute and Assess", "color": "#10b981"},
+          "action": "Build and deliver the increment. Throughout execution, ask: 'Are we still delivering the value stakeholders need?'",
+          "keyQuestions": ["Is this still valuable?", "What are we learning?"],
+          "examKeywords": "Execute, assess, monitor, value realization"
+        },
+        {
+          "step": {"badge": "E", "name": "Embrace Feedback", "color": "#f59e0b"},
+          "action": "Collect feedback from delivered increments. Use it to guide the next phases. Be willing to adjust scope/schedule.",
+          "keyQuestions": ["What did customers learn?", "What should we do differently?"],
+          "examKeywords": "Feedback, stakeholder input, adjust scope, lessons learned"
+        },
+        {
+          "step": {"badge": "D", "name": "Deliver Continuously", "color": "#ec4899"},
+          "action": "Keep delivering increments. Don't wait for perfection—ship often, learn continuously, improve iteratively.",
+          "keyQuestions": ["When's the next delivery?", "Are we delivering value continuously?"],
+          "examKeywords": "Continuous delivery, iterations, incremental, value stream"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Process Performance Domain",
+      "principle": "Principle 3: Focus on Value",
+      "quote": "Project managers deliver value not just at the end, but throughout execution by delivering incremental value and incorporating feedback"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Execute with Urgency & Value Delivery",
+    "framework": {
+      "acronym": "SPEED",
+      "steps": ["📦 Segment work into MVPs", "⚡ Prioritize early delivery", "🎯 Execute & Assess value", "📢 Embrace feedback", "🔄 Deliver continuously"]
+    },
+    "quickReference": "**Execution focus:** Look for MVP opportunities | Get feedback early | Adjust based on learning | Deliver value incrementally",
+    "goldenRule": "Deliver something valuable NOW that enables feedback to improve what comes NEXT.",
+    "examTip": "Look for 'MVP,' 'increment,' 'feedback,' or 'value' → Strategy should emphasize early delivery + feedback loops over all-or-nothing timelines.",
+    "pmbokPrinciple": "Focus on Value - deliver early, often, and continuously"
+  },
+  "secondScenario": {
+    "title": "Apply SPEED Framework",
+    "intro": "Apply the framework:",
+    "scenarioStory": "Your team is building a healthcare app. Full development would take 18 months. However, you could release a core feature (appointment scheduling) in 4 months that provides value to clinics and gives them a reason to adopt the platform. The remaining 14 months would add advanced features based on user feedback.",
+    "question": "How should you execute this project?",
+    "options": {
+      "A": "Wait 18 months and deliver everything at once for maximum stability",
+      "B": "Deliver appointment scheduling in 4 months, collect usage data and feedback from clinics, then plan remaining features based on what you learn",
+      "C": "Deliver features every 2 months in equal portions regardless of value",
+      "D": "Let the team decide what to build each month without a structured plan"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "When executing a project, look for opportunities to deliver things in increments. Get feedback early. You're always trying to deliver value incrementally—don't build for 8 months and hope customers like what you built.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Project success is measured by continuous value delivery throughout the project, not just at the end. Incorporate feedback loops to ensure ongoing alignment with stakeholder needs.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Power of the MVP",
+        "insight": "An MVP (Minimum Viable Product) is functional and usable but minimal in features. It's like a base model car—not all the bells and whistles, but it works and tells you if you're building the right thing. Get it to users fast."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Personal Reflection",
+    "questions": [
+      {
+        "id": "current-project",
+        "question": "What project are you working on? Could any part be delivered incrementally?",
+        "type": "textarea",
+        "placeholder": "Example: Building a reporting dashboard—could release basic reports in 3 months..."
+      },
+      {
+        "id": "feedback-opportunity",
+        "question": "What's ONE thing you could get feedback on earlier rather than later?",
+        "type": "dropdown",
+        "options": ["A feature", "A design", "A process change", "Not sure"]
+      }
+    ],
+    "valueStatement": "Delivering value early changes everything—it keeps stakeholders engaged and keeps your team building the right thing.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Mountain Expedition Strategy",
+    "story": {
+      "title": "Reaching Summit Through Strategic Camp Placements",
+      "narrative": "You're leading an expedition to a 20,000-foot peak. Instead of climbing straight through for 18 days non-stop, you use a SPEED strategy with strategic camps...",
+      "scenes": [
+        {
+          "step": "S", "visual": "📦 SEGMENT the climb into camps",
+          "description": "Base camp at 8,000 ft (MVP). You could climb to summit in 18 days straight, but instead you place Camp 1 at 12,000 ft, Camp 2 at 16,000 ft. Each checkpoint is reachable and provides value (rest, supplies, supplies cache for next push)."
+        },
+        {
+          "step": "P", "visual": "⚡ PRIORITIZE reaching Camp 1 first",
+          "description": "Get your team to 12,000 ft in 4 days. That's your first victory. You're delivering incremental progress. The climbers are acclimating and learning what works."
+        },
+        {
+          "step": "E", "visual": "🎯 EXECUTE and ASSESS at each camp",
+          "description": "At Camp 1, you pause and ask: 'How are people doing? What did we learn about weather? Supplies? Equipment needs?' Adjust the plan based on reality, not what you imagined at base camp."
+        },
+        {
+          "step": "E", "visual": "📢 EMBRACE what you're learning",
+          "description": "Climbers report the north route is too icy. Switch to south route for Camp 2. You adjust the climbing strategy based on feedback from Camp 1, NOT because of poor planning, but because real-world feedback improves the route."
+        },
+        {
+          "step": "D", "visual": "🔄 DELIVER next camp continuously",
+          "description": "Rest 2 days, then execute to Camp 2 (16,000 ft). Repeat the cycle. Each camp delivers value (milestone, morale, learning) and enables better decisions for the next push."
+        }
+      ],
+      "moral": "Don't plan an 18-day straight climb hoping it works. Use SPEED: Segment into camps (MVPs), Prioritize early camps, Execute then Assess, Embrace feedback, Deliver the next camp. Reaching summit = delivering final value. But camps along the way = continuous value delivery and course correction."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does SPEED stand for?", "MVP vs. full product?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Identify an MVP in your project", "When can you get feedback?"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Draw SPEED framework", "Explain incremental value"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice questions", "Compare with other execution strategies"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t1"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t1"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t1"}
+  }
+}

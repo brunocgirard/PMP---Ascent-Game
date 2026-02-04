@@ -1,0 +1,311 @@
+{
+  "taskId": "d1t14",
+  "taskTitle": "Promote Team Performance Through Application of Emotional Intelligence",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "During a project kickoff meeting, you present the timeline to stakeholders. Midway through, you notice a key client leaning back in their chair with arms crossed, frowning. Their team members seem anxious. You realize they're upset but haven't voiced concerns yet. The meeting continues for another 15 minutes before it ends.",
+    "question": "What should you have done in that moment?",
+    "options": {
+      "A": "Continued the presentation as planned—they would have spoken up if it was critical",
+      "B": "Stopped and asked what concerns them, adjusting your communication approach",
+      "C": "Asked if they want to schedule a follow-up meeting later",
+      "D": "Finished quickly and sent a recap email afterward"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Read emotions and adjust communication approach",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Emotional Intelligence is Real-Time Awareness",
+          "explanation": "EQ isn't just about managing your own emotions—it's about reading others' nonverbal cues (body language, facial expressions, tone) and adapting your approach in the moment.",
+          "pmbokSupport": "PMBOK 7: Emotional intelligence allows project managers to read nonverbal cues and adjust communication to meet stakeholder needs"
+        },
+        {
+          "principle": "Self-Awareness + Social Awareness = Better Communication",
+          "explanation": "By pausing to acknowledge their concern, you demonstrate both self-management (staying calm) and social awareness (empathy). This prevents misunderstandings and builds trust.",
+          "pmbokSupport": "The four pillars of EQ: self-awareness, self-management, social awareness, and social skills work together to guide thinking and behavior"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Ignoring emotional signals creates gaps between what you think you said and what stakeholders actually heard.",
+      "trapTable": [
+        {
+          "option": "A - Continue as planned",
+          "violation": "Ignoring nonverbal communication leaves problems unresolved",
+          "pmiValueBroken": "Lack of social awareness; missing opportunity to build trust"
+        },
+        {
+          "option": "C - Schedule follow-up",
+          "violation": "Delays resolution and leaves them upset during the meeting",
+          "pmiValueBroken": "Reactive instead of proactive EQ application"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "What emotions am I seeing (body language, tone, facial expression)?",
+        "What triggered that emotion?",
+        "How is MY emotional state affecting them?",
+        "What adjustment can I make RIGHT NOW?"
+      ],
+      "patternRule": "Notice emotion → Pause → Acknowledge → Adapt communication. Emotional signals are data—use them to guide your next move."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "SUMMIT Framework for Emotional Intelligence",
+    "frameworkIntro": "Emotional intelligence is the foundation of team performance. SUMMIT helps you navigate the emotional landscape of projects:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Self-Awareness", "color": "#3b82f6"},
+          "action": "Know your own emotions, triggers, strengths, and weaknesses. Understand how your mood and behavior affect your team.",
+          "keyQuestions": ["What am I feeling right now?", "How might my emotions affect others?", "What are my triggers?"],
+          "examKeywords": "Self-assessment, Personal emotions, Realistic self-evaluation"
+        },
+        {
+          "step": {"badge": "U", "name": "Understand Others' Emotions", "color": "#8b5cf6"},
+          "action": "Read nonverbal cues: facial expressions, body language, tone of voice. Develop empathy for stakeholder concerns.",
+          "keyQuestions": ["What emotions are they showing?", "Why might they feel that way?", "What do they need from me?"],
+          "examKeywords": "Social awareness, Empathy, Nonverbal cues, Read emotions"
+        },
+        {
+          "step": {"badge": "M", "name": "Manage Your Reactions", "color": "#10b981"},
+          "action": "Self-regulation: Think before acting. Control disruptive feelings. Stay calm under pressure.",
+          "keyQuestions": ["Am I reacting emotionally or responding thoughtfully?", "What's the best response here?", "Can I stay professional?"],
+          "examKeywords": "Self-regulation, Self-management, Control impulses, Think before acting"
+        },
+        {
+          "step": {"badge": "M", "name": "Motivate & Connect", "color": "#f59e0b"},
+          "action": "Use EQ to inspire the team. Show genuine interest in their success. Build rapport and psychological safety.",
+          "keyQuestions": ["How can I inspire them?", "What motivates this person?", "Am I showing genuine care?"],
+          "examKeywords": "Motivation, Inspire team, Build relationships, Psychological safety"
+        },
+        {
+          "step": {"badge": "I", "name": "Influence with Integrity", "color": "#ec4899"},
+          "action": "Use emotional awareness to guide decision-making and persuasion. Adjust your communication style to the audience.",
+          "keyQuestions": ["How should I tailor my message?", "What communication approach will resonate?", "Am I being authentic?"],
+          "examKeywords": "Influence, Communication adaptation, Stakeholder engagement, Authenticity"
+        },
+        {
+          "step": {"badge": "T", "name": "Trust & Resolve", "color": "#06b6d4"},
+          "action": "Build trust through consistent emotional intelligence. Use EQ to resolve conflicts and difficult conversations.",
+          "keyQuestions": ["Do they trust me?", "How can I deescalate this situation?", "What will rebuild trust?"],
+          "examKeywords": "Trust-building, Conflict resolution, Difficult conversations, Deescalation"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 12: Navigate Complexity (Interpersonal Skills)",
+      "quote": "Emotional intelligence is the ability to recognize our own emotions and those of others. This information is used to guide thinking and behavior."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Emotional Intelligence for Project Managers",
+    "framework": {
+      "acronym": "SUMMIT",
+      "steps": ["🧠 Self-Awareness", "👁️ Understand others", "🎯 Manage reactions", "💡 Motivate & connect", "🎭 Influence with integrity", "🤝 Trust & resolve"]
+    },
+    "quickReference": "**Your emotions affect your team.** Notice them. Manage them. Use them to build stronger connections and solve problems faster.",
+    "goldenRule": "Emotional intelligence is 40% knowing yourself + 60% reading and responding to others.",
+    "examTip": "Look for scenarios where stakeholders are upset, team morale is low, or communication breaks down → EQ is often the answer. Adjust your approach, show empathy, stay calm.",
+    "pmbokPrinciple": "Emotional Intelligence - Basis of all leadership forms"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply SUMMIT",
+    "intro": "Apply the framework:",
+    "scenarioStory": "Your top developer suddenly starts submitting work late and seems withdrawn in meetings. Other team members are starting to notice and you sense tension building. You could dismiss it as 'not your problem' since they're still delivering, or you could investigate.",
+    "question": "Using emotional intelligence, what's your best next move?",
+    "options": {
+      "A": "Address it in the next team standup to motivate them publicly",
+      "B": "Schedule a private conversation to understand what's going on—show genuine concern",
+      "C": "Wait and see if it resolves itself",
+      "D": "Document the late submissions for performance review"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Emotional intelligence is the ability to know your own feelings and to understand how those feelings are affecting others. You need to recognize when you're being harsh, when you're upset, and adjust your approach. This skill will transform how you lead teams and resolve problems.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Emotional intelligence is a basis of all forms of leadership. Self-awareness and self-management are required to remain calm and productive during difficult project circumstances. Social awareness and social skills allow for better bonds with project team members and stakeholders.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "EQ as a Superpower",
+        "insight": "The best project managers aren't the smartest—they're the most emotionally intelligent. They notice when someone's struggling, they stay calm during chaos, they make people feel heard. This is learned, not innate. Build it intentionally."
+      },
+      {
+        "title": "Exam Pattern: EQ + Communication",
+        "insight": "Exam questions often present scenarios where communication breaks down or stakeholders are upset. The answer usually involves using emotional intelligence: adjusting your communication style, showing empathy, staying calm, reading nonverbal cues."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "emotional-awareness",
+        "question": "What are YOUR emotional triggers? (Stress, criticism, time pressure, conflict?)",
+        "type": "textarea",
+        "placeholder": "Example: I get frustrated when deadlines shift..."
+      },
+      {
+        "id": "team-emotions",
+        "question": "Which team member's emotions do you find hardest to read or respond to?",
+        "type": "dropdown",
+        "options": ["Quiet/withdrawn people", "Highly emotional people", "Senior executives", "Remote team members", "Not sure"]
+      },
+      {
+        "id": "eq-application",
+        "question": "When did you recently adjust your communication style because you noticed someone was upset?",
+        "type": "textarea",
+        "placeholder": "Example: I noticed my manager seemed frustrated, so I asked what was wrong..."
+      }
+    ],
+    "valueStatement": "💡 Emotional intelligence isn't soft skills—it's the hard skill that makes everything else work.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "⛰️ Memory Palace: The Mountain Summit Journey",
+    "story": {
+      "title": "Climbing to Peak Performance",
+      "narrative": "You're leading a climbing expedition to the summit. Each climber has different emotional needs, fears, and motivations. Your success depends on reading and responding to their emotional state at every turn.",
+      "scenes": [
+        {
+          "step": "S",
+          "visual": "🧠 SELF-AWARENESS at Base Camp",
+          "description": "Before leading anyone else up the mountain, know yourself. Are you calm? Anxious? Impatient? Your emotional energy sets the tone. A nervous guide makes the team nervous. A confident guide makes them confident. Check in with yourself: 'What am I feeling? How might that affect my team?'"
+        },
+        {
+          "step": "U",
+          "visual": "👁️ UNDERSTAND at each waypoint",
+          "description": "As you climb, notice each climber's face. One looks terrified at the steep section. Another is lagging behind—discouraged? Tired? One is overconfident and taking risks. Read these signals. Empathy means: 'I see your fear. That's normal. We can do this together.'"
+        },
+        {
+          "step": "M",
+          "visual": "🎯 MANAGE REACTIONS at the Difficult Passage",
+          "description": "A climber slips. Your heart races. You could panic (spreading fear) or stay calm and respond with clear directions. That's self-regulation. When the terrain gets tough, your ability to think before acting keeps everyone safe. 'Breathe. Focus. Guide.'"
+        },
+        {
+          "step": "M",
+          "visual": "💡 MOTIVATE at the Energy Dip (3/4 up the mountain)",
+          "description": "Everyone's exhausted. The summit still looks far. This is where motivation matters. You remind them why they started. You celebrate how far they've come. You genuinely believe they can reach the top. Your conviction spreads to them. That's emotional influence."
+        },
+        {
+          "step": "I",
+          "visual": "🎭 INFLUENCE WITH INTEGRITY near the Summit",
+          "description": "Different climbers need different messages. The nervous one needs reassurance. The overconfident one needs caution. The exhausted one needs inspiration. You adapt your message, your tone, your approach—but stay true to your values. You're authentic, not manipulative."
+        },
+        {
+          "step": "T",
+          "visual": "🤝 TRUST & RESOLVE at the Peak",
+          "description": "You reach the summit together. The team trusts you because you read them, responded to them, stayed calm, and believed in them. That trust now carries through the descent and into the next climb. Emotional intelligence builds unbreakable bonds."
+        }
+      ],
+      "moral": "The guide who **S**ees themselves, **U**nderstands their climbers, **M**anages their own emotions, **M**otivates the team, **I**nfluences with authenticity, and builds **T**rust reaches the summit safely and inspires climbers to climb again."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {
+        "timeframe": "Tomorrow",
+        "icon": "📱",
+        "title": "5-Min Flashback",
+        "tasks": ["What does SUMMIT stand for?", "Name the 4 pillars of EQ from PMBOK"],
+        "duration": "5 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "🎯",
+        "title": "Practice",
+        "tasks": ["Identify one moment you used self-awareness", "Notice one nonverbal cue this week"],
+        "duration": "10 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📝",
+        "title": "Deep Retrieval",
+        "tasks": ["Write: When is EQ most critical?", "List: What breaks down without EQ?"],
+        "duration": "15 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "🔄",
+        "title": "Integration",
+        "tasks": ["Compare SUMMIT to other frameworks", "Practice a difficult conversation using EQ"],
+        "duration": "20 min",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "read",
+        "task": "Read section",
+        "xp": 10,
+        "completed": true
+      },
+      {
+        "id": "scenario1",
+        "task": "Solve scenario",
+        "xp": 5
+      },
+      {
+        "id": "scenario2",
+        "task": "Apply framework",
+        "xp": 10
+      },
+      {
+        "id": "reflection",
+        "task": "Reflect",
+        "xp": 5
+      },
+      {
+        "id": "reference-card",
+        "task": "Download card",
+        "xp": 2
+      },
+      {
+        "id": "flashcards",
+        "task": "Flashcards",
+        "xp": 15,
+        "current": true,
+        "link": "/flashcards/d1t14"
+      },
+      {
+        "id": "quiz",
+        "task": "Quiz",
+        "xp": 20,
+        "link": "/quiz/d1t14"
+      }
+    ],
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/d1t14"
+    }
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "taskId": "kanban-lean",
+  "taskTitle": "Kanban & Lean: Flow-Based Agile",
+  "domain": "Agile",
+
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your team has 15 items in progress simultaneously. Everyone is busy, but nothing is getting finished. The board shows: 2 items in 'To Do', 15 in 'In Progress', and 0 in 'Done'. Team members keep starting new work before finishing existing work. Lead time has increased from 5 days to 20 days.",
+    "question": "What's the PRIMARY Kanban/Lean principle being violated?",
+    "options": {
+      "A": "The team needs to work faster and add more people",
+      "B": "Limit Work in Progress (WIP) to improve flow and reduce lead time",
+      "C": "Add more columns to the board to track progress better",
+      "D": "Create detailed timelines for each work item"
+    },
+    "correctAnswer": "B"
+  },
+
+  "ahaDebrief": {
+    "correctAnswer": "B - Limit Work in Progress (WIP) to improve flow and reduce lead time",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "WIP Limits",
+          "explanation": "Too much WIP creates bottlenecks, context switching, and delays. WIP limits force focus and completion.",
+          "pmbokSupport": "Kanban principle: Limit WIP to improve throughput and reduce cycle time"
+        },
+        {
+          "principle": "Flow Optimization",
+          "explanation": "Value comes from finished work, not started work. Optimize for flow, not busyness.",
+          "pmbokSupport": "Lean thinking: Stop starting, start finishing"
+        },
+        {
+          "principle": "Lead Time Reduction",
+          "explanation": "Less WIP = faster flow = shorter lead time from request to delivery",
+          "pmbokSupport": "Kanban metric: Lead time measures total time from request to delivery"
+        },
+        {
+          "principle": "Pull System",
+          "explanation": "Pull new work only when capacity exists (WIP limit allows), don't push work",
+          "pmbokSupport": "Kanban principle: Pull system prevents overload and improves flow"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Options A, C, and D miss the core problem and would make things worse.",
+      "trapTable": [
+        {
+          "option": "A",
+          "violation": "Adding people or pressure increases WIP and coordination overhead",
+          "pmiValueBroken": "Violates flow optimization and Little's Law (more WIP = longer lead time)"
+        },
+        {
+          "option": "C",
+          "violation": "More columns don't address the WIP problem—they hide it",
+          "pmiValueBroken": "Adds complexity without improving flow"
+        },
+        {
+          "option": "D",
+          "violation": "Detailed timelines add overhead and don't address WIP overload",
+          "pmiValueBroken": "Predictive thinking in a flow-based system"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "✅ WIP limits are defined and enforced",
+        "✅ Work flows smoothly from left to right",
+        "✅ Team focuses on finishing, not starting",
+        "✅ Lead time and cycle time are tracked"
+      ],
+      "patternRule": "When you see many items in progress but nothing finishing, the solution is WIP limits. When lead time increases, reduce WIP."
+    }
+  },
+
+  "coreFramework": {
+    "frameworkName": "FLOW FAST Framework - Kanban & Lean Principles",
+    "frameworkIntro": "Kanban and Lean focus on flow, not iterations. Here's what PMI expects you to know:",
+    "frameworkTable": {
+      "columns": ["Principle", "Key Concept", "Exam Trigger"],
+      "rows": [
+        {
+          "step": {"badge": "F", "name": "Focus on Flow", "color": "blue"},
+          "action": "Optimize for smooth flow of value, not resource utilization",
+          "keyQuestions": ["Is work flowing?", "Where are bottlenecks?"],
+          "examKeywords": "flow, throughput, continuous delivery, smooth"
+        },
+        {
+          "step": {"badge": "L", "name": "Limit WIP (Work in Progress)", "color": "blue"},
+          "action": "Set WIP limits to force focus and improve throughput",
+          "keyQuestions": ["How much WIP?", "Are limits enforced?"],
+          "examKeywords": "WIP limit, work in progress, queue limit, focus"
+        },
+        {
+          "step": {"badge": "O", "name": "Optimize Lead Time", "color": "green"},
+          "action": "Reduce time from request to delivery; measure and improve",
+          "keyQuestions": ["How long does it take?", "How can we reduce it?"],
+          "examKeywords": "lead time, cycle time, throughput, velocity"
+        },
+        {
+          "step": {"badge": "W", "name": "Waste Elimination", "color": "green"},
+          "action": "Identify and eliminate 7 wastes (Lean: TIMWOOD)",
+          "keyQuestions": ["What adds no value?", "What can we eliminate?"],
+          "examKeywords": "waste, muda, value stream, non-value-add"
+        },
+        {
+          "step": {"badge": "F", "name": "Flow with Pull System", "color": "orange"},
+          "action": "Pull work when capacity exists, don't push work",
+          "keyQuestions": ["Can we accept more work?", "Is there capacity?"],
+          "examKeywords": "pull system, demand-driven, just-in-time"
+        },
+        {
+          "step": {"badge": "A", "name": "Active Visualization", "color": "purple"},
+          "action": "Make work visible on Kanban board; transparency enables flow",
+          "keyQuestions": ["Is all work visible?", "Can everyone see status?"],
+          "examKeywords": "Kanban board, visualization, transparency, visible"
+        },
+        {
+          "step": {"badge": "S", "name": "Stop Starting, Start Finishing", "color": "purple"},
+          "action": "Prioritize completing work over starting new work",
+          "keyQuestions": ["What can we finish?", "Are we finishing before starting?"],
+          "examKeywords": "finish work, completion, done, throughput"
+        },
+        {
+          "step": {"badge": "T", "name": "Track Metrics (Lead Time, Cycle Time, Throughput)", "color": "gold"},
+          "action": "Use flow metrics to measure and improve predictability",
+          "keyQuestions": ["How fast are we delivering?", "Are we improving?"],
+          "examKeywords": "metrics, lead time, cycle time, cumulative flow"
+        }
+      ]
+    },
+    "additionalContent": "<div style='margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border-radius: 12px;'><h4 style='margin: 0 0 1rem 0; color: white;'>💡 Kanban vs Scrum</h4><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>Scrum:</strong> Fixed-length iterations (Sprints), defined roles, prescribed events</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>Kanban:</strong> Continuous flow, no iterations, no prescribed roles, evolutionary change</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>Both:</strong> Agile, empirical, incremental delivery, visual boards</p><p style='margin-top: 1rem; font-style: italic;'><strong>7 Lean Wastes (TIMWOOD):</strong> Transportation, Inventory, Motion, Waiting, Overproduction, Over-processing, Defects</p></div>",
+    "pmbokConnection": {
+      "performanceDomain": "Delivery Performance Domain",
+      "principle": "Kanban & Lean Thinking",
+      "quote": "Kanban is a strategy for optimizing flow. Lean thinking focuses on eliminating waste and maximizing value."
+    }
+  },
+
+  "visualReferenceCard": {
+    "taskTitle": "Kanban & Lean - FLOW FAST Framework",
+    "framework": {
+      "acronym": "FLOW FAST",
+      "steps": [
+        "F - Focus on Flow (not utilization)",
+        "L - Limit WIP (force focus)",
+        "O - Optimize Lead Time (reduce delays)",
+        "W - Waste Elimination (TIMWOOD)",
+        "F - Flow with Pull (not push)",
+        "A - Active Visualization (boards)",
+        "S - Stop Starting, Start Finishing",
+        "T - Track Metrics (lead time, cycle time)"
+      ]
+    },
+    "quickReference": "Kanban optimizes flow through WIP limits and pull. Lean eliminates waste. Both focus on continuous delivery without fixed iterations.",
+    "goldenRule": "When work piles up, LIMIT WIP. When lead time increases, REDUCE WIP. More WIP = longer lead time (Little's Law).",
+    "examTip": "Exam tests: WIP limits, pull vs push, lead time vs cycle time, 7 wastes (TIMWOOD), and Kanban vs Scrum differences.",
+    "pmbokPrinciple": "Lean: Eliminate waste, optimize flow. Kanban: Visualize, limit WIP, manage flow."
+  },
+
+  "secondScenario": {
+    "title": "Apply Kanban & Lean Principles",
+    "intro": "Now that you know the framework, let's apply it to a new situation.",
+    "scenarioStory": "Your team's Kanban board shows: To Do (20 items), In Progress (8 items with WIP limit of 5), Testing (12 items with WIP limit of 3), Done (2 items). Work is accumulating in Testing. The team wants to start more items from To Do because 'developers are idle.'",
+    "question": "What should the team do according to Kanban principles?",
+    "options": {
+      "A": "Start more items from To Do since developers have capacity",
+      "B": "Help finish Testing items (swarm the bottleneck), don't start new work",
+      "C": "Increase WIP limits to allow more work in each column",
+      "D": "Add more testers to handle the Testing queue"
+    },
+    "correctAnswer": "B"
+  },
+
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Kanban is a strategy for optimizing the flow of value through a process that uses a visual, pull-based system. The goal is to limit the amount of work in progress (WIP) to balance demand against the throughput of the delivery team.",
+        "author": "PMI",
+        "source": "Agile Practice Guide"
+      },
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Remember Little's Law: Lead Time = Work in Progress / Throughput. To reduce lead time, either reduce WIP or increase throughput. But you can't increase throughput by adding more WIP—that's the trap! Reduce WIP first.",
+        "author": "PMP Instructor Insight",
+        "source": "Lean/Kanban Expert"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Real-World Application",
+        "insight": "Many teams adopt a Kanban board but ignore WIP limits. That's just a fancy to-do list, not Kanban. The power of Kanban comes from WIP limits creating focus, exposing bottlenecks, and forcing continuous improvement."
+      },
+      {
+        "title": "Exam Strategy",
+        "insight": "When you see a flow/Kanban question, look for: Are WIP limits defined? Is work accumulating somewhere (bottleneck)? Is the team starting too much? The answer usually involves limiting WIP, swarming bottlenecks, and optimizing flow."
+      }
+    ]
+  },
+
+  "personalApplication": {
+    "title": "🔄 Connect to Your Experience",
+    "reflectionPrompt": "Reflecting on Kanban and Lean helps you internalize it for the exam and real projects.",
+    "questions": [
+      {
+        "id": "wip-experience",
+        "question": "Have you experienced too much WIP (many things started, nothing finishing)? What was the impact?",
+        "type": "textarea",
+        "placeholder": "Example: We had 20 projects 'in progress' but delivered nothing for months. Priorities kept changing..."
+      },
+      {
+        "id": "lean-waste",
+        "question": "What type of waste (TIMWOOD) do you see most in your projects?",
+        "type": "dropdown",
+        "options": [
+          "Transportation (unnecessary movement of materials)",
+          "Inventory (excess WIP or stockpiled work)",
+          "Motion (unnecessary movement of people)",
+          "Waiting (idle time between steps)",
+          "Overproduction (making more than needed)",
+          "Over-processing (doing more than customer values)",
+          "Defects (rework, errors, bugs)"
+        ]
+      },
+      {
+        "id": "kanban-practice",
+        "question": "Does your team use WIP limits?",
+        "type": "dropdown",
+        "options": [
+          "Yes, and we enforce them strictly",
+          "Yes, but we ignore them when 'busy'",
+          "No, we don't use WIP limits",
+          "We use a Kanban board but no WIP limits"
+        ]
+      }
+    ],
+    "valueStatement": "💎 Personal reflection earns you 5 XP and deepens your understanding for exam scenarios.",
+    "xpReward": 5
+  },
+
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Flow River Mountain",
+    "intro": "Anchor Kanban and Lean with this vivid mountain climbing story. As you read, visualize each scene:",
+    "story": {
+      "title": "The River of Work",
+      "narrative": "You're climbing a mountain with a river running down it. The river represents work flowing from top (To Do) to bottom (Done). You must manage the flow.",
+      "scenes": [
+        {
+          "step": "F - Focus on Flow",
+          "visual": "🌊",
+          "description": "You stand by the river and watch the FLOW of water. Some sections flow smoothly; others are clogged with debris (bottlenecks). Your job: optimize flow, not force more water in."
+        },
+        {
+          "step": "L - Limit WIP (Dam Gates)",
+          "visual": "🚧",
+          "description": "You see dam gates at each section of the river with numbers: '3 items max,' '5 items max.' These WIP LIMITS control how much can flow through each section. No cheating—the gates are locked!"
+        },
+        {
+          "step": "O - Optimize Lead Time (Stopwatch)",
+          "visual": "⏱️",
+          "description": "A stopwatch tracks how long each item takes from the top of the mountain (request) to the bottom (delivered). LEAD TIME. You measure it constantly to improve."
+        },
+        {
+          "step": "W - Waste Elimination (TIMWOOD Trash)",
+          "visual": "🗑️",
+          "description": "Along the riverbank, you see 7 trash bins labeled TIMWOOD: Transportation, Inventory, Motion, Waiting, Overproduction, Over-processing, Defects. You throw away anything that doesn't add value."
+        },
+        {
+          "step": "F - Flow with Pull (Rope System)",
+          "visual": "🪢",
+          "description": "A PULL rope system: when work finishes at the bottom, it pulls the next item from upstream. Work is PULLED when capacity exists, never PUSHED."
+        },
+        {
+          "step": "A - Active Visualization (Transparent River)",
+          "visual": "💎",
+          "description": "The river is crystal clear—you can see EVERY item flowing through. The KANBAN BOARD makes all work visible. No hidden work, no surprises."
+        },
+        {
+          "step": "S - Stop Starting, Start Finishing",
+          "visual": "🏁",
+          "description": "A sign at the top reads: 'FINISH what's flowing before adding more!' You see climbers helping items reach the DONE pool at the bottom, rather than tossing new items in at the top."
+        },
+        {
+          "step": "T - Track Metrics (Dashboard)",
+          "visual": "📊",
+          "description": "A dashboard displays: Lead Time (15 days ↓), Cycle Time (8 days ↓), Throughput (5 items/week ↑). You track these METRICS to measure and improve flow."
+        }
+      ],
+      "moral": "The river flows best with WIP limits, pull systems, and waste elimination. Too much work clogs the river. Optimize flow, not busyness."
+    },
+    "selfTest": "Close your eyes and visualize the Flow River. Can you recall the 8 FLOW FAST principles using the river story?"
+  },
+
+  "spacedRepetition": {
+    "title": "🔁 Spaced Repetition Schedule",
+    "intro": "Research shows spaced repetition increases retention from 50% to 90%. Here's your review schedule:",
+    "schedule": [
+      {
+        "timeframe": "1 Day",
+        "icon": "📅",
+        "title": "Review 1: Tomorrow",
+        "tasks": [
+          "Recite FLOW FAST principles",
+          "Re-read the Flow River Memory Palace",
+          "Quiz yourself: What are WIP limits? Why do they matter?"
+        ],
+        "duration": "5 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "📅",
+        "title": "Review 2: In 3 Days",
+        "tasks": [
+          "Review the Visual Reference Card",
+          "Write down the 7 Lean wastes (TIMWOOD)",
+          "Take 5 practice questions on Kanban/Lean"
+        ],
+        "duration": "8 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📅",
+        "title": "Review 3: In 1 Week",
+        "tasks": [
+          "Re-do the Quick Scenario Challenge",
+          "Explain Kanban vs Scrum to someone else",
+          "Identify flow issues in your current work"
+        ],
+        "duration": "10 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "📅",
+        "title": "Review 4: In 2 Weeks",
+        "tasks": [
+          "Complete 10 practice questions on Kanban/Lean",
+          "Review your personal reflection",
+          "Final check: Can you apply flow principles to new scenarios?"
+        ],
+        "duration": "12 minutes",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention after 2 weeks"
+    }
+  },
+
+  "missionChecklist": {
+    "title": "🎯 Your Mission Progress",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "scenario",
+        "task": "Complete Quick Scenario Challenge",
+        "xp": 10,
+        "description": "Test your intuition before learning",
+        "completed": true
+      },
+      {
+        "id": "framework",
+        "task": "Learn FLOW FAST Framework",
+        "xp": 10,
+        "description": "Master Kanban and Lean principles",
+        "completed": true
+      },
+      {
+        "id": "memory",
+        "task": "Visualize Memory Palace",
+        "xp": 5,
+        "description": "Anchor principles with the Flow River story",
+        "completed": true
+      },
+      {
+        "id": "reflection",
+        "task": "Personal Application Reflection",
+        "xp": 5,
+        "description": "Connect to your experience",
+        "current": true,
+        "ctaButton": "Complete Reflection"
+      },
+      {
+        "id": "reference",
+        "task": "Download Reference Card",
+        "xp": 2,
+        "description": "Save for quick review",
+        "ctaButton": "Download PDF"
+      },
+      {
+        "id": "flashcards",
+        "task": "Review Flashcards",
+        "xp": 15,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/kanban-lean"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass Topic Quiz (70%+)",
+        "xp": 25,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/kanban-lean"
+      }
+    ],
+    "timeEstimate": "15-20 minutes to complete this topic",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/kanban-lean"
+    }
+  }
+}

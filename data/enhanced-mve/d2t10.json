@@ -1,0 +1,285 @@
+{
+  "taskId": "d2t10",
+  "taskTitle": "Integrate Project Planning Activities",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're planning a software project. Team says 'We need 2,000 hours to deliver full scope.' Finance says 'Budget is $200K = 1,000 hours at $200/hr.' Your sponsor insists on a 6-month deadline (1,200 hours available). Three constraints, three different numbers. How do you proceed?",
+    "question": "What's your FIRST step?",
+    "options": {
+      "A": "Tell the team to work faster—compress their estimates",
+      "B": "Develop THREE integrated plans showing scope-down OR budget-up OR schedule-slip scenarios, then present options to sponsor",
+      "C": "Split the difference: reduce scope, add budget, extend schedule slightly",
+      "D": "Choose the sponsor's deadline as the constraint and force everything to fit"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Integration reveals constraints and enables trade-off decisions",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Plans Must Be Integrated",
+          "explanation": "Scope, schedule, and budget plans cannot exist independently. They're interconnected. A realistic plan shows how they're balanced.",
+          "pmbokSupport": "Project planning is an integrated process. Changes in one area affect others"
+        },
+        {
+          "principle": "Data Drives Trade-Off Decisions",
+          "explanation": "Don't guess which constraint is real. Calculate: What if we reduce scope to fit budget+timeline? What if we extend timeline? What if we add budget? Present options with data.",
+          "pmbokSupport": "Integrated planning provides clear options for sponsor decision-making"
+        },
+        {
+          "principle": "Sponsor Chooses Constraints",
+          "explanation": "You present options. Sponsor chooses which constraints are fixed. That's leadership. Your job is to show the math and consequences.",
+          "pmbokSupport": "Stakeholders approve integrated plans and authorize constraints"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Unintegrated planning creates false promises and project failure.",
+      "trapTable": [
+        {
+          "option": "A - Team works faster",
+          "violation": "Assumes estimates are padded. They probably aren't. Risk of failure increases.",
+          "pmiValueBroken": "Optimism without data"
+        },
+        {
+          "option": "C - Split the difference",
+          "violation": "Compromises without calculating consequences. Likely to fail on all three fronts.",
+          "pmiValueBroken": "Consensus without analysis"
+        },
+        {
+          "option": "D - Force to fit deadline",
+          "violation": "Overrides scope and budget constraints without sponsor decision",
+          "pmiValueBroken": "PM decides constraints instead of sponsor"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Are all three plans (scope, schedule, budget) aligned?",
+        "If not, which constraint is conflicting?",
+        "What are the trade-off scenarios?",
+        "Who makes the constraint decision?"
+      ],
+      "patternRule": "When plans don't align, develop options for sponsor: 'Fix constraint X AND Y, slide constraint Z by this much.' Present with data."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "I.N.T.E.G.R.A.T.E. Framework for Integrated Planning",
+    "frameworkIntro": "Integration ensures all plans work together toward project success:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "I", "name": "Identify All Constraints", "color": "#3b82f6"},
+          "action": "List what's fixed: schedule, budget, scope, quality, resources. Understand which constraints are firm.",
+          "keyQuestions": ["What's fixed?", "What's flexible?", "Who decided?"],
+          "examKeywords": "Constraints, Fixed vs. flexible, Sponsor requirements"
+        },
+        {
+          "step": {"badge": "N", "name": "Note Conflicts Early", "color": "#8b5cf6"},
+          "action": "Develop scope, schedule, budget plans separately. Then compare. Do they align? If not, identify gaps.",
+          "keyQuestions": ["Do the plans fit together?", "What conflicts exist?"],
+          "examKeywords": "Plan alignment, Conflicts, Gaps"
+        },
+        {
+          "step": {"badge": "T", "name": "Trade-Off Analysis", "color": "#10b981"},
+          "action": "Create scenarios: 'If we keep scope + budget, timeline is X.' 'If we keep scope + timeline, budget is Y.' Calculate consequences.",
+          "keyQuestions": ["What are the options?", "What's the impact of each?"],
+          "examKeywords": "Scenarios, Options analysis, Impact assessment"
+        },
+        {
+          "step": {"badge": "E", "name": "Express Options to Sponsor", "color": "#f59e0b"},
+          "action": "Present multiple plans with trade-offs clearly. Don't choose for the sponsor. Show data: 'Option A costs extra $50K,' 'Option B extends schedule 4 weeks.'",
+          "keyQuestions": ["Are options clear?", "Are consequences explicit?"],
+          "examKeywords": "Options presentation, Sponsor choice, Trade-off clarity"
+        },
+        {
+          "step": {"badge": "G", "name": "Get Approval & Document", "color": "#ec4899"},
+          "action": "Sponsor chooses which option. Document the approved integrated plan. This becomes the baseline.",
+          "keyQuestions": ["Which option is approved?", "Is it documented?"],
+          "examKeywords": "Approval, Integrated plan baseline, Documentation"
+        },
+        {
+          "step": {"badge": "R", "name": "Review for Feasibility", "color": "#06b6d4"},
+          "action": "Double-check: Can the team deliver this plan? Do we have resources? Are risks acceptable?",
+          "keyQuestions": ["Is it realistic?", "What risks remain?"],
+          "examKeywords": "Feasibility review, Risk assessment, Realistic planning"
+        },
+        {
+          "step": {"badge": "A", "name": "Align All Teams", "color": "#8b5cf6"},
+          "action": "Ensure scope team, schedule team, and budget team all understand the approved plan and how it's integrated.",
+          "keyQuestions": ["Does everyone understand the integrated plan?", "Are we aligned?"],
+          "examKeywords": "Team alignment, Communication, Shared understanding"
+        },
+        {
+          "step": {"badge": "T", "name": "Track Integration Health", "color": "#10b981"},
+          "action": "Monitor all three plans. If one drifts, others drift too. Early detection of integration problems.",
+          "keyQuestions": ["Are all plans still aligned?", "Do we need rebalancing?"],
+          "examKeywords": "Integration monitoring, Holistic tracking, Rebalancing"
+        },
+        {
+          "step": {"badge": "E", "name": "Escalate Integration Issues", "color": "#ec4899"},
+          "action": "If scope creep occurs but schedule is fixed, budget will increase. Escalate immediately. Don't hide trade-offs.",
+          "keyQuestions": ["Is integration breaking down?", "Who needs to know?"],
+          "examKeywords": "Escalation, Change control, Issue management"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Business Environment Performance Domain",
+      "principle": "Principle 8: Optimize Cost and Value",
+      "quote": "Integrated planning aligns all project constraints and enables informed trade-off decisions"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Integrate Project Planning",
+    "framework": {
+      "acronym": "I.N.T.E.G.R.A.T.E.",
+      "steps": ["🔒 Identify constraints", "⚠️ Note conflicts", "🔄 Trade-off analysis", "📢 Express options", "✅ Get approval", "🔍 Review feasibility", "🤝 Align teams", "📊 Track health", "🚨 Escalate issues"]
+    },
+    "quickReference": "Integrated plan = all three (scope, schedule, budget) balanced | Trade-off = fix two constraints, one will adjust | Sponsor decides which constraints are fixed | PM presents options with data | Integration breaks when one constraint changes without rebalancing others",
+    "goldenRule": "Never say 'yes' to a constraint (scope, schedule, budget) without integrating it with the others. Show impact. Get sponsor decision.",
+    "examTip": "Look for 'project plan,' 'constraints conflict,' 'schedule vs. budget,' 'trade-off' → Identify all three constraints. Show integration gaps. Present options with data.",
+    "pmbokPrinciple": "Optimize Cost and Value"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply I.N.T.E.G.R.A.T.E.",
+    "intro": "Test your integration thinking:",
+    "scenarioStory": "Approved plan: 8-month project, $500K budget, 1,500-hour scope (100 developers × 3 months, then 50 × 2 months). Month 3 status: only 350 hours complete (behind schedule). Sponsor learns about delay and says 'We must hit the 8-month deadline still.' No mention of budget or scope change. How do you handle this?",
+    "question": "What's your response?",
+    "options": {
+      "A": "It's possible. Push the team harder to catch up",
+      "B": "Develop integrated analysis: To keep 8-month deadline AND $500K budget, scope must reduce to ~800 hours (50% cut). OR extend timeline. OR add budget. Present three options with data",
+      "C": "Apologize and commit to catching up in the next month",
+      "D": "Reduce some quality standards to fit the timeline"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Integration is where the magic happens. That's when you stop treating scope, schedule, and budget as separate silos and start seeing them as one connected system.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Project integration links all processes and knowledge areas. Changes in one area ripple through the entire project.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Plans Without Integration are Fiction",
+        "insight": "A scope plan, schedule plan, and budget plan that don't align aren't plans—they're wishes. True integration shows the real constraints and trade-offs."
+      },
+      {
+        "title": "Sponsor Decides, PM Informs",
+        "insight": "You don't choose constraints. Sponsor does. Your job is to show the math: 'If we keep X and Y fixed, Z will be this.' Then sponsor chooses."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "integration-experience",
+        "question": "Have you seen plans that didn't integrate well?",
+        "type": "textarea",
+        "placeholder": "Example: Scope agreed but schedule unrealistic..."
+      },
+      {
+        "id": "integration-handling",
+        "question": "How did you handle the conflict?",
+        "type": "dropdown",
+        "options": ["Identified and escalated", "Tried to patch it", "Hoped it would work out", "Not sure"]
+      }
+    ],
+    "valueStatement": "💡 Integration reveals the truth about constraints. Present it clearly. Let sponsor choose.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Three-Peak Challenge",
+    "story": {
+      "title": "Integrating Three Mountain Peaks into One Expedition",
+      "narrative": "Your expedition can tackle three goals: reach Peak A (high), reach Peak B (medium), reach Peak C (low). But resources, time, and supplies are limited. Integration is the only way...",
+      "scenes": [
+        {
+          "step": "I",
+          "visual": "🔒 IDENTIFY constraints upfront",
+          "description": "Budget: $50K (fixed, sponsor decided). Timeline: 30 days (fixed, permit deadline). Scope: Three peaks to climb. Which is flexible?"
+        },
+        {
+          "step": "N",
+          "visual": "⚠️ NOTE conflicts immediately",
+          "description": "Climbing all three peaks requires 40 days and $70K. Budget+timeline are fixed. Scope conflict detected. Can't climb all three."
+        },
+        {
+          "step": "T",
+          "visual": "🔄 TRADE-OFF analysis",
+          "description": "Option A: Climb Peak A only (highest), $50K, 30 days, success. Option B: Climb Peaks A+C (higher+easier), $50K, 32 days, miss deadline. Option C: Climb A+B but less thoroughly, $50K, 30 days, quality risk."
+        },
+        {
+          "step": "E",
+          "visual": "📢 EXPRESS options to sponsor",
+          "description": "'Option A: One peak, guaranteed success.' 'Option B: Two peaks, 2-day delay.' 'Option C: Two peaks, 30 days, but reduced rigor.' Here are consequences."
+        },
+        {
+          "step": "G",
+          "visual": "✅ GET approval & document",
+          "description": "Sponsor chooses Option A: Focus on Peak A (highest), 30 days, $50K. This is the approved integrated plan."
+        },
+        {
+          "step": "R",
+          "visual": "🔍 REVIEW feasibility",
+          "description": "Can we reach Peak A in 30 days with $50K? Check: team skill, weather windows, equipment. Yes, feasible. Risk: acceptable."
+        },
+        {
+          "step": "A",
+          "visual": "🤝 ALIGN all teams",
+          "description": "Climbing team, logistics team, finance team all understand: Peak A only, 30 days, $50K. One integrated goal."
+        },
+        {
+          "step": "T",
+          "visual": "📊 TRACK integration health",
+          "description": "Day 15: Check progress vs. plan. Days to summit 2. Days remaining 15. On track. Budget spent $25K. Resources on pace."
+        },
+        {
+          "step": "E",
+          "visual": "🚨 ESCALATE if integration breaks",
+          "description": "Day 18: Bad weather. Need extra day. Scope fixed (Peak A), budget fixed ($50K), but timeline now 31 days. Escalate: sponsor approves 1-day extension OR we reduce rigor."
+        }
+      ],
+      "moral": "Integration of planning is like balancing three mountains: **I**dentify constraints, **N**ote conflicts, **T**rade-off analysis, **E**xpress options, **G**et approval, **R**eview feasibility, **A**lign teams, **T**rack health, **E**scalate breaks."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What's integration?", "When do plans conflict?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Create trade-off scenarios", "Identify constraints"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Explain I.N.T.E.G.R.A.T.E.", "Map how scope affects schedule/budget"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice exam questions", "Review all five Process domain tasks together"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t10"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t10"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t10"}
+  }
+}

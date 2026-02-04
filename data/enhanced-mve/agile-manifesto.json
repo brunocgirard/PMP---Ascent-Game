@@ -1,0 +1,407 @@
+{
+  "taskId": "agile-manifesto",
+  "taskTitle": "Agile Manifesto: 4 Values & 12 Principles",
+  "domain": "Agile",
+
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your project team has created comprehensive documentation for every deliverable, following detailed processes and contract negotiations. However, customers are unhappy because the software doesn't work as expected, and the team is too rigid to adapt to feedback. The contract states exactly what will be delivered, but market conditions have changed significantly.",
+    "question": "According to the Agile Manifesto, what should be your PRIMARY focus?",
+    "options": {
+      "A": "Following the contract and comprehensive documentation since they were agreed upon",
+      "B": "Working software, customer collaboration, and responding to the changed conditions",
+      "C": "Sticking to processes and tools to maintain consistency",
+      "D": "Renegotiating the contract before making any changes"
+    },
+    "correctAnswer": "B"
+  },
+
+  "ahaDebrief": {
+    "correctAnswer": "B - Working software, customer collaboration, and responding to the changed conditions",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Working Software Over Documentation",
+          "explanation": "While documentation has value, working software that meets customer needs is more valuable",
+          "pmbokSupport": "Agile Manifesto: We value working software over comprehensive documentation"
+        },
+        {
+          "principle": "Customer Collaboration Over Contract",
+          "explanation": "Collaborate with customers to understand their real needs rather than rigidly following a contract",
+          "pmbokSupport": "Agile Manifesto: We value customer collaboration over contract negotiation"
+        },
+        {
+          "principle": "Responding to Change",
+          "explanation": "Market conditions changed, so the plan must adapt to deliver value",
+          "pmbokSupport": "Agile Manifesto: We value responding to change over following a plan"
+        },
+        {
+          "principle": "Individuals and Interactions",
+          "explanation": "Team flexibility and customer interaction matter more than rigid processes",
+          "pmbokSupport": "Agile Manifesto: We value individuals and interactions over processes and tools"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Options A, C, and D prioritize the LEFT side of the Agile values (documentation, processes, contracts) over the RIGHT side.",
+      "trapTable": [
+        {
+          "option": "A",
+          "violation": "Prioritizes contract and documentation over working software and collaboration",
+          "pmiValueBroken": "Ignores the core Agile value of responding to change and customer collaboration"
+        },
+        {
+          "option": "C",
+          "violation": "Values processes over individuals and adaptability",
+          "pmiValueBroken": "Contradicts 'individuals and interactions over processes and tools'"
+        },
+        {
+          "option": "D",
+          "violation": "Focuses on contract negotiation rather than collaboration",
+          "pmiValueBroken": "Misses the opportunity for immediate customer collaboration"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "✅ Working software is being delivered",
+        "✅ Customer collaboration is happening",
+        "✅ Team is responding to change",
+        "✅ People and interactions are valued"
+      ],
+      "patternRule": "The Agile Manifesto values the items on the RIGHT more than the items on the LEFT. While the left items have value, the right items have MORE value."
+    }
+  },
+
+  "coreFramework": {
+    "frameworkName": "WISE AGILE Framework - 4 Values & 12 Principles",
+    "frameworkIntro": "The Agile Manifesto is the foundation of all Agile approaches. Here's what PMI expects you to know:",
+    "frameworkTable": {
+      "columns": ["Value/Principle", "Key Concept", "Exam Trigger"],
+      "rows": [
+        {
+          "step": {"badge": "W", "name": "Working Software Over Documentation", "color": "blue"},
+          "action": "Deliver functioning products that customers can use",
+          "keyQuestions": ["Is it working?", "Can customers use it?"],
+          "examKeywords": "working software, functional deliverable, usable product"
+        },
+        {
+          "step": {"badge": "I", "name": "Individuals & Interactions Over Processes", "color": "blue"},
+          "action": "Prioritize people and communication over rigid processes",
+          "keyQuestions": ["Are people collaborating?", "Is the process helping or hindering?"],
+          "examKeywords": "team collaboration, communication, people over process"
+        },
+        {
+          "step": {"badge": "S", "name": "Satisfy Customer Through Early/Continuous Delivery", "color": "green"},
+          "action": "Deliver value frequently, from weeks to months",
+          "keyQuestions": ["Are we delivering frequently?", "Is the customer satisfied?"],
+          "examKeywords": "frequent delivery, continuous value, iterations"
+        },
+        {
+          "step": {"badge": "E", "name": "Embrace Change for Competitive Advantage", "color": "green"},
+          "action": "Welcome changing requirements, even late in development",
+          "keyQuestions": ["How can we adapt?", "What does the customer need now?"],
+          "examKeywords": "welcome change, adaptive, flexible requirements"
+        },
+        {
+          "step": {"badge": "A", "name": "Align Business & Developers Daily", "color": "orange"},
+          "action": "Business people and developers work together daily",
+          "keyQuestions": ["Are business and dev talking daily?", "Is everyone aligned?"],
+          "examKeywords": "daily collaboration, business alignment, stakeholder engagement"
+        },
+        {
+          "step": {"badge": "G", "name": "Give Trust & Support to Motivated People", "color": "purple"},
+          "action": "Build projects around motivated individuals, trust them",
+          "keyQuestions": ["Is the team motivated?", "Are we trusting them?"],
+          "examKeywords": "motivated team, trust, environment, support"
+        },
+        {
+          "step": {"badge": "I", "name": "Interact Face-to-Face", "color": "purple"},
+          "action": "Most efficient communication is face-to-face conversation",
+          "keyQuestions": ["Can we meet in person?", "Are we communicating effectively?"],
+          "examKeywords": "face-to-face, direct communication, co-location"
+        },
+        {
+          "step": {"badge": "L", "name": "Live by Working Software as Progress", "color": "gold"},
+          "action": "Working software is the primary measure of progress",
+          "keyQuestions": ["What's working?", "What can customers use now?"],
+          "examKeywords": "working product, measure progress, tangible results"
+        },
+        {
+          "step": {"badge": "E", "name": "Enable Sustainable Pace", "color": "teal"},
+          "action": "Maintain a constant, sustainable pace indefinitely",
+          "keyQuestions": ["Is the pace sustainable?", "Are people burning out?"],
+          "examKeywords": "sustainable pace, no overtime, steady velocity"
+        }
+      ]
+    },
+    "additionalContent": "<div style='margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white; border-radius: 12px;'><h4 style='margin: 0 0 1rem 0; color: white;'>💡 The 4 Core Values</h4><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>1. Individuals & interactions</strong> over processes & tools</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>2. Working software</strong> over comprehensive documentation</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>3. Customer collaboration</strong> over contract negotiation</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>4. Responding to change</strong> over following a plan</p><p style='margin-top: 1rem; font-style: italic;'>That is, while there is value in the items on the left, we value the items on the right MORE.</p></div>",
+    "pmbokConnection": {
+      "performanceDomain": "Delivery Performance Domain",
+      "principle": "Agile Principles & Mindset",
+      "quote": "The Agile Manifesto provides the foundation for all Agile approaches and methodologies"
+    }
+  },
+
+  "visualReferenceCard": {
+    "taskTitle": "Agile Manifesto - 4 Values & Key Principles",
+    "framework": {
+      "acronym": "WISE AGILE",
+      "steps": [
+        "W - Working Software (not docs)",
+        "I - Individuals & Interactions (not processes)",
+        "S - Satisfy through early delivery",
+        "E - Embrace change for advantage",
+        "A - Align business & dev daily",
+        "G - Give trust to motivated people",
+        "I - Interact face-to-face",
+        "L - Live by working software",
+        "E - Enable sustainable pace"
+      ]
+    },
+    "quickReference": "The Agile Manifesto has 4 VALUES and 12 PRINCIPLES. Remember: the right side has MORE value than the left (but both have value).",
+    "goldenRule": "When choosing between documentation vs working software, process vs people, contract vs collaboration, or plan vs change—choose the LATTER.",
+    "examTip": "Exam questions test whether you understand BALANCE. Agile doesn't mean NO documentation—it means LESS emphasis on documentation than on working software.",
+    "pmbokPrinciple": "Foundation for all Agile approaches - Scrum, Kanban, XP, Lean"
+  },
+
+  "secondScenario": {
+    "title": "Apply the Agile Manifesto",
+    "intro": "Now that you know the framework, let's apply it to a new situation.",
+    "scenarioStory": "Your team is delivering working software every two weeks, but the customer wants detailed architectural documentation before each release. The team says this documentation slows them down and the customer rarely reads it. However, the customer insists it's in the contract.",
+    "question": "What's the BEST Agile approach?",
+    "options": {
+      "A": "Create all documentation as specified in the contract",
+      "B": "Collaborate with the customer to find documentation that adds value without slowing delivery",
+      "C": "Refuse to create any documentation since Agile values working software",
+      "D": "Create minimal documentation only after each release"
+    },
+    "correctAnswer": "B"
+  },
+
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The Agile Manifesto emphasizes that while there is value in the items on the left (processes, documentation, contracts, plans), we value the items on the right MORE (individuals, working software, collaboration, responding to change).",
+        "author": "Agile Alliance",
+        "source": "Agile Manifesto, 2001"
+      },
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "The exam loves to test whether you understand BALANCE. Agile doesn't mean no planning or no documentation—it means LESS emphasis on those things compared to working software and customer collaboration. Don't pick extreme answers.",
+        "author": "PMP Instructor Insight",
+        "source": "Agile Practice Guide"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Real-World Application",
+        "insight": "Successful Agile teams don't eliminate documentation—they create JUST ENOUGH documentation to be useful. They don't ignore contracts—they collaborate with customers to evolve agreements. The Manifesto is about emphasis and priorities."
+      },
+      {
+        "title": "Exam Strategy",
+        "insight": "When you see Agile questions, ask: 'Which value is at play here?' Is it about people vs process? Working software vs docs? Collaboration vs contract? Change vs plan? Then choose the RIGHT side of that value."
+      }
+    ]
+  },
+
+  "personalApplication": {
+    "title": "🔄 Connect to Your Experience",
+    "reflectionPrompt": "Reflecting on the Agile Manifesto helps you internalize it for the exam and real projects.",
+    "questions": [
+      {
+        "id": "agile-value-violation",
+        "question": "Think of a project where documentation or process got in the way of delivering value. What happened?",
+        "type": "textarea",
+        "placeholder": "Example: We spent 3 weeks on requirements docs that became outdated before development started..."
+      },
+      {
+        "id": "agile-value-strength",
+        "question": "Which Agile value do you naturally embrace?",
+        "type": "dropdown",
+        "options": [
+          "Individuals & Interactions over Processes & Tools",
+          "Working Software over Comprehensive Documentation",
+          "Customer Collaboration over Contract Negotiation",
+          "Responding to Change over Following a Plan"
+        ]
+      },
+      {
+        "id": "agile-value-growth",
+        "question": "Which Agile value is hardest for your organization to adopt?",
+        "type": "dropdown",
+        "options": [
+          "Individuals & Interactions over Processes & Tools",
+          "Working Software over Comprehensive Documentation",
+          "Customer Collaboration over Contract Negotiation",
+          "Responding to Change over Following a Plan"
+        ]
+      }
+    ],
+    "valueStatement": "💎 Personal reflection earns you 5 XP and deepens your understanding for exam scenarios.",
+    "xpReward": 5
+  },
+
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: Agile Base Camp",
+    "intro": "Anchor the Agile Manifesto with this vivid mountain climbing story. As you read, visualize each scene:",
+    "story": {
+      "title": "The Agile Expedition Begins",
+      "narrative": "You're starting your climb at Agile Base Camp. Four key guideposts mark the way, each pointing RIGHT (the direction of more value).",
+      "scenes": [
+        {
+          "step": "VALUE 1: Individuals & Interactions",
+          "visual": "👥➡️🔧",
+          "description": "At the first signpost, you see two climbers talking and laughing (INDIVIDUALS) on the RIGHT side. On the LEFT, you see empty tools and a dusty process manual. The climbers are making progress; the tools sit unused."
+        },
+        {
+          "step": "VALUE 2: Working Software",
+          "visual": "✅➡️📄",
+          "description": "At the second signpost, on the RIGHT you see a functioning rope system carrying supplies up the mountain (WORKING). On the LEFT, you see stacks of paper documentation about how the rope SHOULD work, but nothing is moving."
+        },
+        {
+          "step": "VALUE 3: Customer Collaboration",
+          "visual": "🤝➡️📋",
+          "description": "At the third signpost, on the RIGHT you see climbers and guides working together, adjusting the route in real-time (COLLABORATION). On the LEFT, you see someone alone with a contract, refusing to deviate from the original plan despite changed weather."
+        },
+        {
+          "step": "VALUE 4: Responding to Change",
+          "visual": "🔄➡️📍",
+          "description": "At the fourth signpost, on the RIGHT you see climbers adapting their route around a new crevasse (RESPONDING TO CHANGE). On the LEFT, you see someone stubbornly following the old map into danger (FOLLOWING A PLAN)."
+        },
+        {
+          "step": "12 Principles Path",
+          "visual": "🛤️",
+          "description": "Beyond the four signposts, you see 12 stepping stones leading up the mountain: 1) Satisfy customer 2) Welcome change 3) Deliver frequently 4) Work together daily 5) Trust motivated people 6) Face-to-face talk 7) Working software = progress 8) Sustainable pace 9) Technical excellence 10) Simplicity 11) Self-organizing teams 12) Reflect & adjust."
+        }
+      ],
+      "moral": "The four values point RIGHT—toward more value. The 12 principles are the stepping stones that guide your daily climb. Follow them to reach Agile mastery."
+    },
+    "selfTest": "Close your eyes and visualize the four signposts. Can you recall what's on the RIGHT (more value) and LEFT (less value) of each?"
+  },
+
+  "spacedRepetition": {
+    "title": "🔁 Spaced Repetition Schedule",
+    "intro": "Research shows spaced repetition increases retention from 50% to 90%. Here's your review schedule:",
+    "schedule": [
+      {
+        "timeframe": "1 Day",
+        "icon": "📅",
+        "title": "Review 1: Tomorrow",
+        "tasks": [
+          "Recite the 4 Agile values: What's on the RIGHT?",
+          "Re-read the Memory Palace story with the signposts",
+          "Quiz yourself: Which value applies to a given scenario?"
+        ],
+        "duration": "5 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "📅",
+        "title": "Review 2: In 3 Days",
+        "tasks": [
+          "Review the Visual Reference Card",
+          "Write down all 4 values and their pairs",
+          "Take 5 practice questions on the Agile Manifesto"
+        ],
+        "duration": "8 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📅",
+        "title": "Review 3: In 1 Week",
+        "tasks": [
+          "Re-do the Quick Scenario Challenge",
+          "Explain the 4 values to someone else",
+          "Identify which values apply in your current work"
+        ],
+        "duration": "10 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "📅",
+        "title": "Review 4: In 2 Weeks",
+        "tasks": [
+          "Complete 10 practice questions on Agile values",
+          "Review your personal reflection",
+          "Final check: Can you apply values to new scenarios?"
+        ],
+        "duration": "12 minutes",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention after 2 weeks"
+    }
+  },
+
+  "missionChecklist": {
+    "title": "🎯 Your Mission Progress",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "scenario",
+        "task": "Complete Quick Scenario Challenge",
+        "xp": 10,
+        "description": "Test your intuition before learning",
+        "completed": true
+      },
+      {
+        "id": "framework",
+        "task": "Learn WISE AGILE Framework",
+        "xp": 10,
+        "description": "Master the 4 values",
+        "completed": true
+      },
+      {
+        "id": "memory",
+        "task": "Visualize Memory Palace",
+        "xp": 5,
+        "description": "Anchor values with the signpost story",
+        "completed": true
+      },
+      {
+        "id": "reflection",
+        "task": "Personal Application Reflection",
+        "xp": 5,
+        "description": "Connect to your experience",
+        "current": true,
+        "ctaButton": "Complete Reflection"
+      },
+      {
+        "id": "reference",
+        "task": "Download Reference Card",
+        "xp": 2,
+        "description": "Save for quick review",
+        "ctaButton": "Download PDF"
+      },
+      {
+        "id": "flashcards",
+        "task": "Review Flashcards",
+        "xp": 15,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/agile-manifesto"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass Topic Quiz (70%+)",
+        "xp": 25,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/agile-manifesto"
+      }
+    ],
+    "timeEstimate": "15-20 minutes to complete this topic",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/agile-manifesto"
+    }
+  }
+}

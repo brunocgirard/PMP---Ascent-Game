@@ -1,0 +1,233 @@
+{
+  "taskId": "d1t10",
+  "taskTitle": "Build Shared Understanding",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a cross-functional project with team members from Engineering, Marketing, and Sales. In the kickoff meeting, you ask everyone what 'on-time delivery' means. Engineering says: 'Code is stable and tested.' Marketing says: 'Ready to announce to customers.' Sales says: 'In customers' hands generating revenue.' Three different interpretations of the same term. The project is already 2 weeks in and the team is confused about timelines.",
+    "question": "What's your first step to build shared understanding?",
+    "options": {
+      "A": "Have the team vote on which definition is correct",
+      "B": "Survey all stakeholders to identify the root cause of different interpretations, then facilitate consensus on a single definition",
+      "C": "Tell Engineering their definition is correct since they do the work",
+      "D": "Document each department's definition separately so everyone knows what others think"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Survey, identify root cause, facilitate consensus",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Eliminate Assumptions, Build Explicit Understanding",
+          "explanation": "Like painting a room without specifying color—unspoken expectations lead to misalignment. You must actively survey stakeholders, identify where interpretations diverge, and build consensus on a shared definition that everyone understands the same way.",
+          "pmbokSupport": "Defining and sharing a clear vision that key stakeholders agree on can entail challenging negotiations"
+        },
+        {
+          "principle": "Root Cause Beats Surface Fixes",
+          "explanation": "Don't just document differences (option D). Don't vote or dictate (options A & C). Dig deeper: Why do they interpret 'on-time' differently? Engineering cares about code quality, Marketing cares about marketing launch, Sales cares about revenue. Understanding the 'why' helps you find common ground.",
+          "pmbokSupport": "Build and sustain alignment through shared understanding and addressing underlying beliefs"
+        },
+        {
+          "principle": "Stakeholder Engagement Creates Ownership",
+          "explanation": "When you survey all parties and facilitate consensus TOGETHER, they own the agreement. They participated in creating it. This prevents later conflicts where someone says, 'I never agreed to that.'",
+          "pmbokSupport": "Stakeholder engagement entails working collaboratively to elicit requirements, manage expectations, and make decisions"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Shared understanding requires active engagement, not passive documentation or unilateral decisions.",
+      "trapTable": [
+        {
+          "option": "A - Have the team vote",
+          "violation": "Voting creates winners and losers; doesn't resolve underlying concerns",
+          "pmiValueBroken": "Collaboration and consensus-building, not majority rule"
+        },
+        {
+          "option": "C - Tell Engineering they're right",
+          "violation": "Dictating a definition without stakeholder buy-in creates resentment and hidden misalignment",
+          "pmiValueBroken": "Stakeholder engagement and shared ownership"
+        },
+        {
+          "option": "D - Document each interpretation",
+          "violation": "Acknowledging differences without resolving them perpetuates confusion",
+          "pmiValueBroken": "Building understanding requires consensus, not documentation of disagreement"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Are there unspoken expectations or assumptions causing misalignment?",
+        "Have you surveyed ALL necessary parties to understand their perspective?",
+        "Is there a root cause to the misunderstanding (different priorities, different contexts)?",
+        "Have you facilitated consensus—an agreement that all parties understand and accept?"
+      ],
+      "patternRule": "Survey all parties → Identify root cause of misunderstanding → Facilitate consensus → Ensure everyone understands the same thing the same way"
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "P.E.A.K. Framework for Building Shared Understanding",
+    "frameworkIntro": "Building shared understanding is foundational to project success. Misunderstanding leads to conflict, rework, and escalation.",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "P", "name": "Probe for Assumptions", "color": "#3b82f6"},
+          "action": "Identify unspoken expectations and assumptions. Ask clarifying questions: What do you mean by that? What's your expectation? Why is that important?",
+          "keyQuestions": ["What assumptions are we making?", "What does success look like to each stakeholder?"],
+          "examKeywords": "Identify assumptions, Expectations, Clarify requirements"
+        },
+        {
+          "step": {"badge": "E", "name": "Examine Root Causes", "color": "#8b5cf6"},
+          "action": "Dig deeper into WHY people have different interpretations. Different departments have different priorities and constraints. Understand the 'why' behind each perspective.",
+          "keyQuestions": ["Why does Engineering interpret it differently?", "What context shapes their view?"],
+          "examKeywords": "Root cause, Different perspectives, Context"
+        },
+        {
+          "step": {"badge": "A", "name": "Activate Consensus Building", "color": "#10b981"},
+          "action": "Facilitate group discussion where all parties contribute. Find common ground. Negotiate a shared definition or approach that all can agree on and understand the same way.",
+          "keyQuestions": ["What can we agree on?", "What does everyone understand and accept?"],
+          "examKeywords": "Consensus, Facilitate discussion, Agreement"
+        },
+        {
+          "step": {"badge": "K", "name": "Keep Communication Clear", "color": "#f59e0b"},
+          "action": "Document the shared understanding EXPLICITLY. Use clear language. Confirm everyone understands it the same way. Address the 'Gulf of Evaluation'—the gap between how you describe something and how others interpret it.",
+          "keyQuestions": ["Is our message clear?", "Could there be any misunderstanding?"],
+          "examKeywords": "Clear communication, Message clarity, Prevent misunderstanding"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Stakeholder Performance Domain",
+      "principle": "Principle 1: Stewardship, Accountability, and Transparency; Principle 6: Demonstrate Leadership Behaviors",
+      "quote": "Shared understanding and alignment enable project outcomes. Defining and sharing a clear vision that key stakeholders agree on is essential for success."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Build Shared Understanding",
+    "framework": {
+      "acronym": "P.E.A.K.",
+      "steps": ["🔍 Probe for assumptions", "🎯 Examine root causes", "🤝 Activate consensus building", "🗣️ Keep communication clear"]
+    },
+    "quickReference": "**Misunderstanding** happens when people have different unspoken expectations | **Shared understanding** happens when you survey all parties, find consensus, and confirm everyone means the same thing",
+    "goldenRule": "Don't assume people understand. Explicitly build consensus. Confirm they understand the same thing the same way.",
+    "examTip": "Look for 'shared understanding,' 'expectations,' 'alignment,' 'consensus' → Survey stakeholders → Identify root causes → Facilitate agreement → Confirm clarity",
+    "pmbokPrinciple": "Shared Understanding - Build alignment through active engagement"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply P.E.A.K.",
+    "intro": "Apply the framework:",
+    "scenarioStory": "You're starting a cloud migration project. The Finance Director says, 'We need to save money.' The CTO says, 'We need maximum uptime and security.' The Business Manager says, 'We need it done before fiscal year-end.' Three different priorities. You haven't started coding yet and there's already misalignment on what success looks like.",
+    "question": "How do you build shared understanding across these stakeholders?",
+    "options": {
+      "A": "Promise all three: cost savings, maximum uptime, and fiscal year-end completion—then figure it out later",
+      "B": "Pick the most important goal (cost savings) and tell the others that's the priority",
+      "C": "Probe their assumptions, examine the root cause of each priority, facilitate discussion to find common ground, and build consensus on what 'success' means for this project",
+      "D": "Create a project charter that lists all three priorities and hope the team can achieve all of them"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "It's not something you can assume that people understand. You have to build that shared understanding explicitly. Eliminate assumptions. Survey all necessary parties. Come to consensus on what the project will produce, when it will produce it, how it will produce it, and what it will cost.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Shared understanding. The purpose for the project and the benefits it will provide are held in common. This creates shared understanding and alignment, which enables project outcomes.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Defining and sharing a clear vision at the start of the project can enable good relationships and alignment throughout the project. Establishing a clear vision that key stakeholders agree on can entail some challenging negotiations.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Root Cause of Project Conflict",
+        "insight": "Most project conflicts don't come from bad people—they come from different unspoken expectations. The team member who didn't deliver what you wanted wasn't trying to fail; they just understood the requirement differently. Your job as PM is to surface these differences EARLY and build shared understanding."
+      },
+      {
+        "title": "The Gulf of Evaluation",
+        "insight": "There's a gap between how you describe something and how others interpret it. When you pass a message from person to person to person, by the time it reaches the end, it doesn't sound like the original message. This is called the Gulf of Evaluation. Combat it with explicit, clear communication and confirmation."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "past-misunderstanding",
+        "question": "Think of a time when you had a misunderstanding on a project. What was the unspoken expectation that caused it?",
+        "type": "textarea",
+        "placeholder": "Example: I thought 'complete' meant fully tested, but stakeholder meant code-complete..."
+      },
+      {
+        "id": "shared-understanding-action",
+        "question": "What's one way you can build more explicit shared understanding on your current project?",
+        "type": "dropdown",
+        "options": ["Have a team meeting to clarify expectations", "Create a shared definition document", "Survey stakeholders on their priorities", "Schedule 1-on-1s to understand different perspectives"]
+      }
+    ],
+    "valueStatement": "💡 Great leaders don't assume—they ask, listen, and build consensus.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "⛰️ Memory Palace: The Summit Vision Quest",
+    "story": {
+      "title": "Reaching the Peak Together",
+      "narrative": "Imagine you're leading a mountain expedition. Every climber has a different vision of what reaching the summit means. You must build P.E.A.K. consensus so everyone is climbing toward the same destination...",
+      "scenes": [
+        {
+          "step": "P", "visual": "🔍 PROBE for assumptions at base camp",
+          "description": "Before climbing, you gather all climbers. Each has unspoken assumptions. One thinks 'summit' means the main peak. Another thinks it means any high point with great views. A third thinks it means where the trail ends. You ask: What does reaching the summit mean to you? Why?"
+        },
+        {
+          "step": "E", "visual": "🎯 EXAMINE root causes of different views",
+          "description": "The experienced mountaineer prioritizes the highest peak for the prestige. The photographer wants the best viewpoint regardless of elevation. The hiker wants a safe, achievable goal. Each has valid reasons. Understanding their 'why' helps you find common ground."
+        },
+        {
+          "step": "A", "visual": "🤝 ACTIVATE consensus building at the campfire",
+          "description": "Facilitate group discussion. Maybe the answer is: 'We'll reach Point X—the highest point that offers safe passage, excellent views, and an achievable timeline.' Everyone participates in creating this definition. Everyone owns it."
+        },
+        {
+          "step": "K", "visual": "🗣️ KEEP communication crystal clear on the trail",
+          "description": "You mark the agreed-upon summit on maps. You announce it daily. You confirm: Everyone knows we're aiming for Point X, right? This way, when someone asks, 'Are we at the summit yet?' everyone knows what they're looking for and why."
+        }
+      ],
+      "moral": "Summit success comes from **P**robing assumptions, **E**xamining different priorities, **A**ctivating consensus, and **K**eeping the destination crystal clear. When everyone understands and agrees on what the summit means, the climb succeeds."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does P.E.A.K. stand for?", "What causes misunderstanding?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Did you clarify any expectations today?", "Review pattern"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write P.E.A.K. from memory", "List root causes of misunderstanding"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Compare shared understanding with impediment removal", "Practice questions"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d1t10"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d1t10"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d1t10"}
+  }
+}

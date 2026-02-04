@@ -1,0 +1,218 @@
+/**
+ * layout-lint-fixes.css
+ * Auto-generated fixes from Layout Lint tool
+ * Applied: 2026-02-04
+ *
+ * These fixes address:
+ * - Overflow issues on mobile viewport
+ * - Responsive design improvements
+ * - Pagination controls
+ */
+
+/* ========================================
+   OVERFLOW FIXES
+   ======================================== */
+
+/* Fix: Screen reader only elements overflow */
+.sr-only {
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Fix: User stats panel overflow on mobile */
+@media (max-width: 767px) {
+  /* Prevent stats panel from causing document overflow */
+  .user-stats {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  /* Ensure stat items fit within the 280px panel */
+  .user-stats .stat-item {
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  /* Prevent flex items from growing beyond container */
+  .user-stats > * {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .user-stats .streak-icon,
+  .user-stats #streak-count,
+  .user-stats .stat-value {
+    flex-shrink: 0;
+  }
+
+  .user-stats .xp-bar-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .user-stats #level-badge,
+  .user-stats .level-badge {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .user-stats .level-number,
+  .user-stats .level-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+  }
+
+  .user-stats .xp-container {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* ========================================
+   RESPONSIVE IMPROVEMENTS
+   ======================================== */
+
+/* Ensure all images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure container elements don't exceed viewport */
+#app,
+#app-header,
+.main-content,
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   PAGINATION FIXES
+   ======================================== */
+
+/* Prevent orphaned headings at page breaks */
+h1, h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+/* Keep related content together */
+.mission-card,
+.task-card,
+.flashcard,
+.quiz-question {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Prevent widows and orphans */
+p, li {
+  orphans: 3;
+  widows: 3;
+}
+
+/* Keep tables together when possible */
+table {
+  page-break-inside: auto;
+}
+
+tr {
+  page-break-inside: avoid;
+  page-break-after: auto;
+}
+
+/* Prevent images from breaking across pages */
+img, figure {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* ========================================
+   ADDITIONAL MOBILE OPTIMIZATIONS
+   ======================================== */
+
+/* Ensure html and body don't cause horizontal scroll */
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Prevent fixed elements from causing overflow detection */
+.user-stats[style*="position: fixed"],
+.user-stats.fixed {
+  will-change: transform;
+}
+
+/* Fix any potential flex container overflows */
+.user-stats,
+.navigation,
+.mission-grid,
+.task-list {
+  min-width: 0;
+}
+
+/* Ensure flex items can shrink */
+.stat-item > * {
+  min-width: 0;
+  flex-shrink: 1;
+}
+
+/* Handle long text gracefully */
+.stat-label,
+.stat-value,
+.mission-title,
+.task-title {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* ========================================
+   PRINT OPTIMIZATIONS
+   ======================================== */
+
+@media print {
+  /* Ensure content fits on page */
+  body {
+    max-width: 100%;
+    font-size: 12pt;
+  }
+
+  /* Page break controls */
+  .mission-card,
+  .domain-section,
+  .task-group {
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* Hide non-essential elements */
+  .stats-button,
+  .menu-icon,
+  .navigation,
+  button:not(.print-button) {
+    display: none !important;
+  }
+
+  /* Show all stats */
+  .user-stats {
+    position: static !important;
+    width: auto !important;
+    display: block !important;
+  }
+}

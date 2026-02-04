@@ -1,0 +1,465 @@
+{
+  "taskId": "principles",
+  "taskTitle": "12 Project Management Principles",
+  "domain": "Foundation",
+
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're leading a software development project. The sponsor wants to skip stakeholder meetings to save time and just implement what they originally requested. The team suggests iterative development with frequent reviews, but the sponsor insists on a fixed plan. Team morale is dropping because they feel micromanaged and not trusted to make decisions.",
+    "question": "FIRST",
+    "options": {
+      "A": "Follow the sponsor's wishes since they're funding the project",
+      "B": "Advocate for stakeholder engagement, adaptive approaches, and team empowerment",
+      "C": "Create a detailed plan and stick to it to avoid scope creep",
+      "D": "Let the team work however they want without oversight"
+    },
+    "correctAnswer": "B"
+  },
+
+  "ahaDebrief": {
+    "correctAnswer": "B - Advocate for stakeholder engagement, adaptive approaches, and team empowerment",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Stewardship",
+          "explanation": "You demonstrate responsible stewardship by advocating for what's right for the project",
+          "pmbokSupport": "Project managers demonstrate stewardship by upholding principles even when it requires difficult conversations"
+        },
+        {
+          "principle": "Team Empowerment",
+          "explanation": "Trust team members to make decisions and self-organize",
+          "pmbokSupport": "Principle: Empower project team members to contribute to their fullest potential"
+        },
+        {
+          "principle": "Stakeholder Engagement",
+          "explanation": "Proactive engagement throughout the project prevents misalignment",
+          "pmbokSupport": "Principle: Engage stakeholders to understand needs and manage expectations"
+        },
+        {
+          "principle": "Adaptability",
+          "explanation": "Respond to change and welcome feedback loops",
+          "pmbokSupport": "Principle: Enable change to achieve the envisioned future state"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Options A, C, and D all violate core PM principles.",
+      "trapTable": [
+        {
+          "option": "A",
+          "violation": "Ignores team input and stakeholder needs",
+          "pmiValueBroken": "Stewardship - blindly following authority without advocacy"
+        },
+        {
+          "option": "C",
+          "violation": "Rigid planning without adaptability",
+          "pmiValueBroken": "Adaptability - inflexible approach ignores change"
+        },
+        {
+          "option": "D",
+          "violation": "No governance or oversight",
+          "pmiValueBroken": "Stewardship - abdication of PM responsibility"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "✅ Engaging stakeholders throughout",
+        "✅ Team has decision-making authority",
+        "✅ Adaptive approach welcomes change",
+        "✅ Stewardship means advocating for what's right"
+      ],
+      "patternRule": "When principles conflict, balance them by advocating for stakeholder engagement, team empowerment, and adaptive delivery."
+    }
+  },
+
+  "coreFramework": {
+    "frameworkName": "CLIMB HIGHER Framework - The 12 PM Principles",
+    "frameworkIntro": "You just experienced multiple principles in action. Now here's the complete framework PMI expects you to know:",
+    "frameworkTable": {
+      "columns": ["Letter", "Principle", "Key Concept", "Exam Trigger"],
+      "rows": [
+        {
+          "step": {"badge": "C", "name": "Create a Collaborative Environment", "color": "blue"},
+          "action": "Foster teamwork and stakeholder engagement",
+          "keyQuestions": ["Is the team working together?", "Are stakeholders engaged?"],
+          "examKeywords": "collaboration, engagement, team-building"
+        },
+        {
+          "step": {"badge": "L", "name": "Lead with Servant Leadership", "color": "blue"},
+          "action": "Demonstrate leadership behaviors that serve the team",
+          "keyQuestions": ["Am I removing impediments?", "Am I supporting the team?"],
+          "examKeywords": "servant leader, support team, remove blockers"
+        },
+        {
+          "step": {"badge": "I", "name": "Integrate System Thinking", "color": "green"},
+          "action": "See the project as part of a larger system",
+          "keyQuestions": ["How does this impact the organization?", "What are the interconnections?"],
+          "examKeywords": "holistic, system-wide, organizational impact"
+        },
+        {
+          "step": {"badge": "M", "name": "Manage Complexity", "color": "green"},
+          "action": "Navigate complexity, not just follow a plan",
+          "keyQuestions": ["What complexity exists?", "How can we simplify?"],
+          "examKeywords": "complexity, uncertainty, navigating ambiguity"
+        },
+        {
+          "step": {"badge": "B", "name": "Be a Steward", "color": "orange"},
+          "action": "Act responsibly inside and outside the organization",
+          "keyQuestions": ["Am I being ethical?", "Am I serving the greater good?"],
+          "examKeywords": "ethics, responsibility, integrity, stewardship"
+        },
+        {
+          "step": {"badge": "H", "name": "Handle Tailoring", "color": "purple"},
+          "action": "Tailor approach to fit the project context",
+          "keyQuestions": ["Does this approach fit?", "Should we adapt?"],
+          "examKeywords": "tailor, customize, context-appropriate"
+        },
+        {
+          "step": {"badge": "I", "name": "Incorporate Quality", "color": "purple"},
+          "action": "Build quality into processes and deliverables",
+          "keyQuestions": ["Are we building quality in?", "What standards apply?"],
+          "examKeywords": "quality, standards, continuous improvement"
+        },
+        {
+          "step": {"badge": "G", "name": "Generate Value", "color": "gold"},
+          "action": "Focus on delivering business value",
+          "keyQuestions": ["Are we delivering value?", "Is this the highest priority?"],
+          "examKeywords": "value, benefits, business outcomes"
+        },
+        {
+          "step": {"badge": "H", "name": "Honor Change", "color": "teal"},
+          "action": "Enable change to achieve the envisioned future",
+          "keyQuestions": ["How do we embrace this change?", "What's the impact?"],
+          "examKeywords": "change, adaptive, flexible, pivot"
+        },
+        {
+          "step": {"badge": "E", "name": "Empower the Team", "color": "teal"},
+          "action": "Trust team to make decisions and self-organize",
+          "keyQuestions": ["Can the team decide this?", "Are we trusting them?"],
+          "examKeywords": "empower, trust, self-organizing, autonomy"
+        },
+        {
+          "step": {"badge": "R", "name": "Risk Management Throughout", "color": "red"},
+          "action": "Continuously identify and address threats/opportunities",
+          "keyQuestions": ["What could go wrong?", "What opportunities exist?"],
+          "examKeywords": "risk, proactive, threat, opportunity"
+        }
+      ]
+    },
+    "additionalContent": "<div style='margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px;'><h4 style='margin: 0 0 1rem 0; color: white;'>💡 Memory Trick: CLIMB HIGHER</h4><p style='margin: 0; line-height: 1.8;'><strong>C</strong>ollaborate → <strong>L</strong>ead → <strong>I</strong>ntegrate Systems → <strong>M</strong>anage Complexity → <strong>B</strong>e a Steward → <strong>H</strong>andle Tailoring → <strong>I</strong>ncorporate Quality → <strong>G</strong>enerate Value → <strong>H</strong>onor Change → <strong>E</strong>mpower → <strong>R</strong>isk</p></div>",
+    "pmbokConnection": {
+      "performanceDomain": "All 8 Performance Domains",
+      "principle": "Foundation for all PM work",
+      "quote": "The principles are interrelated and interdependent. Use them together to guide behavior and actions."
+    }
+  },
+
+  "visualReferenceCard": {
+    "taskTitle": "12 PM Principles - CLIMB HIGHER",
+    "framework": {
+      "acronym": "CLIMB HIGHER",
+      "steps": [
+        "C - Collaborative Environment",
+        "L - Lead (Servant Leadership)",
+        "I - Integrate Systems",
+        "M - Manage Complexity",
+        "B - Be a Steward",
+        "H - Handle Tailoring",
+        "I - Incorporate Quality",
+        "G - Generate Value",
+        "H - Honor Change",
+        "E - Empower Team",
+        "R - Risk Throughout"
+      ]
+    },
+    "quickReference": "These 12 principles form the foundation of ALL project management. They guide behavior, decisions, and actions.",
+    "goldenRule": "When in doubt, ask: Which principle guides this situation?",
+    "examTip": "Principles questions often test multiple principles at once. Look for answers that balance collaboration, value, and adaptability.",
+    "pmbokPrinciple": "Foundation for PMBOK 7th Edition - Principles-based approach"
+  },
+
+  "secondScenario": {
+    "title": "Apply the CLIMB HIGHER Framework",
+    "intro": "Now that you know the framework, let's apply it to a new situation.",
+    "scenarioStory": "Your project is facing significant technical complexity. The team is struggling, but they're afraid to admit they need help. The sponsor is pressuring for faster delivery. You notice quality is slipping.",
+    "question": "What principles should guide your FIRST action?",
+    "options": {
+      "A": "Generate Value - Push for faster delivery to satisfy the sponsor",
+      "B": "Lead with Servant Leadership - Support the team, address complexity, incorporate quality",
+      "C": "Be a Steward - Report the team's struggles to senior management",
+      "D": "Empower the Team - Let them figure it out on their own"
+    },
+    "correctAnswer": "B"
+  },
+
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The principles are the fundamental norms, rules, or values that represent what is desirable and best for the organization and project. They are not a checklist; they interact and depend on each other.",
+        "author": "PMI",
+        "source": "PMBOK 7th Edition, Chapter 2"
+      },
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "The exam tests whether you understand WHY these principles matter. Don't just memorize them—understand how they guide decisions. When two principles seem to conflict, the answer is usually about balance.",
+        "author": "PMP Instructor Insight",
+        "source": "Udemy PMP Course"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Real-World Application",
+        "insight": "Experienced PMs know that principles aren't rigid rules. They're guideposts. When a sponsor demands something unethical (violating Stewardship), you advocate for what's right. When complexity increases (Manage Complexity), you don't panic—you adapt your approach."
+      },
+      {
+        "title": "Exam Strategy",
+        "insight": "On the exam, look for answers that demonstrate MULTIPLE principles working together. The best answer usually involves collaboration, value delivery, and team empowerment."
+      }
+    ]
+  },
+
+  "personalApplication": {
+    "title": "🔄 Connect to Your Experience",
+    "reflectionPrompt": "Reflecting on these principles helps you internalize them for the exam and real projects.",
+    "questions": [
+      {
+        "id": "principle-violation",
+        "question": "Think of a project that failed or struggled. Which principle(s) were violated or ignored?",
+        "type": "textarea",
+        "placeholder": "Example: We didn't engage stakeholders early (Collaborative Environment), so requirements changed constantly..."
+      },
+      {
+        "id": "principle-success",
+        "question": "Which principle do you naturally excel at?",
+        "type": "dropdown",
+        "options": [
+          "Collaborative Environment",
+          "Servant Leadership",
+          "System Thinking",
+          "Manage Complexity",
+          "Stewardship",
+          "Tailoring",
+          "Quality",
+          "Generate Value",
+          "Honor Change",
+          "Empower Team",
+          "Risk Management"
+        ]
+      },
+      {
+        "id": "principle-growth",
+        "question": "Which principle do you want to develop further?",
+        "type": "dropdown",
+        "options": [
+          "Collaborative Environment",
+          "Servant Leadership",
+          "System Thinking",
+          "Manage Complexity",
+          "Stewardship",
+          "Tailoring",
+          "Quality",
+          "Generate Value",
+          "Honor Change",
+          "Empower Team",
+          "Risk Management"
+        ]
+      }
+    ],
+    "valueStatement": "💎 Personal reflection earns you 5 XP and deepens your understanding for exam scenarios.",
+    "xpReward": 5
+  },
+
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: Climbing the Mountain",
+    "intro": "Anchor the 12 principles with this vivid mountain climbing story. As you read, visualize each scene:",
+    "story": {
+      "title": "The Summit Quest Expedition",
+      "narrative": "You're leading an expedition to climb a challenging mountain. Your team of 12 climbers represents the 12 principles.",
+      "scenes": [
+        {
+          "step": "C - Base Camp (Collaborative)",
+          "visual": "🏕️",
+          "description": "At base camp, everyone gathers around the campfire. The team collaborates on the route plan, sharing ideas and building trust. Collaboration is where it all begins."
+        },
+        {
+          "step": "L - Lead Climber (Servant Leadership)",
+          "visual": "🧗",
+          "description": "The lead climber goes first, setting ropes and clearing obstacles for others. True leaders serve by removing impediments."
+        },
+        {
+          "step": "I - Integration Point (System Thinking)",
+          "visual": "🗺️",
+          "description": "At a junction, you study the map showing how your route connects to the larger mountain system. Everything is interconnected."
+        },
+        {
+          "step": "M - Maze of Ice (Manage Complexity)",
+          "visual": "🧊",
+          "description": "You navigate through a complex ice maze. You can't eliminate it, but you can navigate through it carefully."
+        },
+        {
+          "step": "B - Bridge Guardian (Be a Steward)",
+          "visual": "🌉",
+          "description": "A guardian protects an old bridge, ensuring it's used responsibly. Stewardship means protecting resources and acting ethically."
+        },
+        {
+          "step": "H - Harness Adjustment (Handle Tailoring)",
+          "visual": "🔧",
+          "description": "Each climber adjusts their harness to fit perfectly. Tailoring means customizing your approach."
+        },
+        {
+          "step": "I - Inspection Station (Incorporate Quality)",
+          "visual": "✅",
+          "description": "Before the summit push, you inspect every piece of gear. Quality is built in, not inspected in later."
+        },
+        {
+          "step": "G - Gold Summit Flag (Generate Value)",
+          "visual": "🏆",
+          "description": "The golden flag at the summit represents the value you're delivering. Every step brings you closer to that goal."
+        },
+        {
+          "step": "H - Hurricane Winds (Honor Change)",
+          "visual": "💨",
+          "description": "Sudden winds change conditions. You adapt your route instead of stubbornly continuing. Honor change by being flexible."
+        },
+        {
+          "step": "E - Each Climber Decides (Empower)",
+          "visual": "💪",
+          "description": "You trust each climber to choose their own hand-holds and make route micro-decisions. Empowerment means trust."
+        },
+        {
+          "step": "R - Rockfall Risk (Risk Throughout)",
+          "visual": "⚠️",
+          "description": "Throughout the climb, you constantly scan for rockfall hazards and avalanche risk. Risk management never stops."
+        }
+      ],
+      "moral": "You successfully summit because you applied all 12 principles throughout the journey. Each principle supported the others, and together they led to success."
+    },
+    "selfTest": "Close your eyes and walk through the mountain climb. Can you recall all 12 principles from CLIMB HIGHER using the story?"
+  },
+
+  "spacedRepetition": {
+    "title": "🔁 Spaced Repetition Schedule",
+    "intro": "Research shows spaced repetition increases retention from 50% to 90%. Here's your review schedule:",
+    "schedule": [
+      {
+        "timeframe": "1 Day",
+        "icon": "📅",
+        "title": "Review 1: Tomorrow",
+        "tasks": [
+          "Recite CLIMB HIGHER without looking",
+          "Re-read the Memory Palace story",
+          "Quiz yourself: Name 3 principles from a scenario"
+        ],
+        "duration": "5 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "📅",
+        "title": "Review 2: In 3 Days",
+        "tasks": [
+          "Review the Visual Reference Card",
+          "Write down all 12 principles from memory",
+          "Take 5 practice questions on principles"
+        ],
+        "duration": "8 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📅",
+        "title": "Review 3: In 1 Week",
+        "tasks": [
+          "Re-do the Quick Scenario Challenge",
+          "Explain each principle to someone else",
+          "Identify principles in your current work"
+        ],
+        "duration": "10 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "📅",
+        "title": "Review 4: In 2 Weeks",
+        "tasks": [
+          "Complete 10 practice questions on principles",
+          "Review your personal reflection",
+          "Final check: Can you apply principles to new scenarios?"
+        ],
+        "duration": "12 minutes",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention after 2 weeks"
+    }
+  },
+
+  "missionChecklist": {
+    "title": "🎯 Your Mission Progress",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "scenario",
+        "task": "Complete Quick Scenario Challenge",
+        "xp": 10,
+        "description": "Test your intuition before learning",
+        "completed": true
+      },
+      {
+        "id": "framework",
+        "task": "Learn CLIMB HIGHER Framework",
+        "xp": 10,
+        "description": "Master the 12 principles",
+        "completed": true
+      },
+      {
+        "id": "memory",
+        "task": "Visualize Memory Palace",
+        "xp": 5,
+        "description": "Anchor principles with the mountain story",
+        "completed": true
+      },
+      {
+        "id": "reflection",
+        "task": "Personal Application Reflection",
+        "xp": 5,
+        "description": "Connect to your experience",
+        "current": true,
+        "ctaButton": "Complete Reflection"
+      },
+      {
+        "id": "reference",
+        "task": "Download Reference Card",
+        "xp": 2,
+        "description": "Save for quick review",
+        "ctaButton": "Download PDF"
+      },
+      {
+        "id": "flashcards",
+        "task": "Review Flashcards",
+        "xp": 15,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/principles"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass Topic Quiz (70%+)",
+        "xp": 25,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/principles"
+      }
+    ],
+    "timeEstimate": "15-20 minutes to complete this topic",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/principles"
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "taskId": "d3t1",
+  "taskTitle": "Plan and Manage Project Compliance",
+  "domain": "Business",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a financial software project for a banking institution. Your team has completed 60% of the development when your legal department informs you that new federal regulatory requirements (Section XYZ-401) must be implemented in all banking software by the end of Q3. Your sponsor says: 'This regulation is expensive to implement, and we're already over budget. Can we just skip it or implement it later after launch?' Your project timeline is tight, and the team is already stressed.",
+    "question": "As Project Manager, what is your BEST response?",
+    "options": {
+      "A": "Agree with the sponsor—implement the regulation after launch to save time and money",
+      "B": "Tell the team to try to fit it in without extending the schedule or budget",
+      "C": "Acknowledge the regulation is mandatory (not optional), educate the sponsor on consequences of non-compliance (fines/legal liability), and work with them to adjust scope/schedule/budget to accommodate it",
+      "D": "Escalate to the legal department to decide if the regulation really applies to this project"
+    },
+    "correctAnswer": "C"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "C - Mandatory compliance, educate sponsor, adjust plan",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Compliance is NOT Optional",
+          "explanation": "Regulatory compliance is mandatory by law. There's no negotiation on 'whether' to comply—only 'how' and 'when.' The PM's job is to ensure it gets done, even if it disrupts the schedule/budget.",
+          "pmbokSupport": "PMBOK emphasizes that compliance must be designed into the project, not added later"
+        },
+        {
+          "principle": "PM as Educator & Advocate",
+          "explanation": "Sponsors often don't understand consequences of non-compliance (fines, project termination, legal liability). YOU must educate them on the business risk of ignoring regulations.",
+          "pmbokSupport": "Stakeholder management includes clarifying implications of decisions"
+        },
+        {
+          "principle": "Compliance Drives Trade-offs",
+          "explanation": "When new compliance requirements emerge, they have a ripple effect. You must address scope/schedule/cost/resource impacts through change management.",
+          "pmbokSupport": "Integrated change control manages impacts across all baselines"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Compliance trap: assuming you can cut corners, defer it, or negotiate away a legal requirement.",
+      "trapTable": [
+        {
+          "option": "A - Skip it or implement after launch",
+          "violation": "Regulatory requirement is MANDATORY—not optional",
+          "pmiValueBroken": "Ignoring legal/compliance obligations; exposing organization to fines/penalties"
+        },
+        {
+          "option": "B - Fit it in without changing plan",
+          "violation": "Unrealistic; compliance changes have ripple effects that MUST be planned",
+          "pmiValueBroken": "Setting team up for failure; understating impact"
+        },
+        {
+          "option": "D - Let legal decide if it applies",
+          "violation": "Legal advises you it applies; YOUR job is to manage its implementation",
+          "pmiValueBroken": "Avoiding PM responsibility for compliance integration"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is this compliance requirement mandatory (legal/regulatory/safety)?",
+        "Does the sponsor understand the business consequences of non-compliance?",
+        "Have you assessed how compliance impacts scope/schedule/cost/resources?",
+        "Have you initiated change control to adjust the plan?",
+        "Does the team understand compliance is non-negotiable?"
+      ],
+      "patternRule": "Regulatory requirement emerges → Confirm it's mandatory → Educate sponsor → Assess impact → Manage change → Implement → Track compliance"
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "ASCENT Framework for Compliance Management",
+    "frameworkIntro": "Climbing to compliance peak—each step ensures you reach the summit safely and legally:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "A", "name": "Assess Compliance Requirements", "color": "#3b82f6"},
+          "action": "Identify all compliance obligations: regulatory (laws), contractual (agreements), organizational (policies), health & safety.",
+          "keyQuestions": ["What compliance applies to this project?", "Are requirements already identified or emerging?"],
+          "examKeywords": "Identify, Confirm, Requirements, Regulatory, Legal, Mandatory"
+        },
+        {
+          "step": {"badge": "S", "name": "Specify & Document", "color": "#8b5cf6"},
+          "action": "Document requirements in project charter, compliance matrix, project management plan. Include source, scope, deadline, responsible party.",
+          "keyQuestions": ["Where is compliance documented?", "Who owns each requirement?"],
+          "examKeywords": "Document, Plan, Include, Matrix, Charter, Register"
+        },
+        {
+          "step": {"badge": "C", "name": "Classify Threats & Consequences", "color": "#10b981"},
+          "action": "What could prevent compliance? (Team resistance, resource constraints, technical complexity). What are consequences? (Fines, project termination, legal liability).",
+          "keyQuestions": ["What blocks compliance?", "What happens if we fail?"],
+          "examKeywords": "Threats, Risks, Consequences, Penalties, Mandatory"
+        },
+        {
+          "step": {"badge": "E", "name": "Educate & Engage Stakeholders", "color": "#f59e0b"},
+          "action": "Help sponsor, team, stakeholders understand WHY compliance matters. Don't assume they understand legal consequences. Build buy-in.",
+          "keyQuestions": ["Does the sponsor understand the risk?", "Will the team support compliance?"],
+          "examKeywords": "Educate, Train, Communicate, Stakeholder engagement, Buy-in"
+        },
+        {
+          "step": {"badge": "N", "name": "Navigate Integration & Change", "color": "#ec4899"},
+          "action": "Use change management. Assess impact on scope/schedule/cost/resources. Adjust baselines. Integrate compliance into processes & deliverables.",
+          "keyQuestions": ["What's the ripple effect?", "How does this change the plan?"],
+          "examKeywords": "Integrated change, Scope change, Schedule impact, Cost impact, Trade-offs"
+        },
+        {
+          "step": {"badge": "T", "name": "Track & Verify Compliance", "color": "#06b6d4"},
+          "action": "Monitor implementation throughout project. Audit compliance. Measure against requirements. Document evidence. Report status to stakeholders.",
+          "keyQuestions": ["Are we actually compliant?", "Where's the proof?"],
+          "examKeywords": "Monitor, Measure, Audit, Verify, Evidence, Reporting"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Business Environment Performance Domain",
+      "principle": "Design and deliver compliance into every project artifact and process",
+      "quote": "Compliance is non-negotiable. It must be planned, integrated, monitored, and verified throughout the project lifecycle"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Plan & Manage Compliance",
+    "framework": {
+      "acronym": "A.S.C.E.N.T.",
+      "steps": ["📋 Assess requirements", "📝 Specify & document", "⚠️ Classify threats", "🎓 Educate stakeholders", "🔗 Navigate change", "✅ Track & verify"]
+    },
+    "quickReference": "**Compliance is mandatory** - Not optional, not deferrable. Must be planned, integrated, monitored. If regulations apply, they MUST be done.",
+    "goldenRule": "When compliance emerges: Confirm it's mandatory → Educate sponsor on consequences → Assess impact → Change the plan → Implement → Track.",
+    "examTip": "Look for 'regulation,' 'safety,' 'compliance,' 'mandatory' → These are ALWAYS non-negotiable. Never suggest skipping or deferring compliance.",
+    "pmbokPrinciple": "Business Environment - Compliance must be designed in, not bolted on"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply A.S.C.E.N.T.",
+    "intro": "Apply the framework in a complex scenario:",
+    "scenarioStory": "You're managing a healthcare IT project implementing an electronic health records (EHR) system. At the 50% mark, your compliance officer informs you that HIPAA (Health Insurance Portability and Accountability Act) requires encryption of all patient data in transit AND at rest. Your current architecture only encrypts in transit. Adding encryption-at-rest will require redesigning the database layer, adding 3 weeks to the schedule and $150K to the budget. Your sponsor is unhappy. A team lead says, 'We can use a weaker encryption standard to save time—patient data will still be protected somewhat.'",
+    "question": "What do you do?",
+    "options": {
+      "A": "Go with weaker encryption to save time/budget—the sponsor demands it",
+      "B": "Educate sponsor on HIPAA penalties (fines up to $1.5M per violation), confirm full encryption is mandatory, use change management to adjust scope/schedule/budget, and implement proper encryption",
+      "C": "Implement the weaker encryption now and upgrade to full encryption after launch",
+      "D": "Tell the team to figure it out without extending the timeline"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Compliance is mandatory. No matter who screams, no matter who asks, the answer is: this is getting done. The choice is never not to do it. The only option is to educate, train, and encourage people to get it done.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The project manager must understand regulatory and compliance requirements that apply to the project and ensure the project meets or exceeds those requirements.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Compliance is Your Shield & Sword",
+        "insight": "Compliance protects the organization (shield against fines/liability) and protects you (sword against sponsor pressure). When a sponsor says 'skip the regulation,' you're not being difficult—you're protecting the enterprise."
+      },
+      {
+        "title": "The Cost of Non-Compliance",
+        "insight": "Fines are just the beginning. Non-compliance can result in project termination, legal action, license revocation, or imprisonment of executives. The short-term cost of implementing compliance is trivial compared to the risk."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "compliance-challenges",
+        "question": "What compliance challenges has YOUR current project faced?",
+        "type": "textarea",
+        "placeholder": "Example: GDPR data handling, accessibility standards, security certifications..."
+      },
+      {
+        "id": "stakeholder-understanding",
+        "question": "Does your sponsor/team fully understand the consequences of non-compliance?",
+        "type": "dropdown",
+        "options": ["Yes, clearly understood", "Partially understood", "Not well understood", "Never discussed"]
+      },
+      {
+        "id": "compliance-tracking",
+        "question": "How are you currently tracking compliance verification?",
+        "type": "textarea",
+        "placeholder": "Example: Checklists, audits, evidence logs..."
+      }
+    ],
+    "valueStatement": "💡 Great PMs never negotiate mandatory compliance—they integrate it brilliantly.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: Climbing the Compliance Peak",
+    "story": {
+      "title": "The Sacred Compliance Summit",
+      "narrative": "You're a guide leading expedition teams up a treacherous mountain (the project). At the summit is treasure (project success). But there's a sacred rule: all climbers MUST follow the mountain's safety code (compliance). Some sponsors want shortcuts...",
+      "scenes": [
+        {
+          "step": "A", "visual": "📋 ASSESS the climbing permit & regulations",
+          "description": "Before the climb starts, check: What laws govern this mountain? What safety rules exist? Federal (regulations), local (policies), environmental (safety). Document them on the permit."
+        },
+        {
+          "step": "S", "visual": "📝 SPECIFY regulations in writing",
+          "description": "Post climbing rules at base camp. Everyone knows: harnesses required, helmets mandatory, no shortcuts on the ropes. Write it down. Who owns what? The guide ensures everyone complies."
+        },
+        {
+          "step": "C", "visual": "⚠️ CLASSIFY threats to safety",
+          "description": "What stops climbers from complying? (Impatience, fatigue, peer pressure). What if they don't? (Fatal fall, rescue cost, mission failure). Educate: 'One person ignores harness rules, everyone dies.'"
+        },
+        {
+          "step": "E", "visual": "🎓 EDUCATE climbers deeply",
+          "description": "Don't just say 'wear helmets.' Tell the story: 'Three climbers ignored this rule last year; two died.' Sponsor complains about helmet cost? Show videos of falls. Build understanding, not just compliance."
+        },
+        {
+          "step": "N", "visual": "🔗 NAVIGATE around obstacles",
+          "description": "A rockslide blocks the direct route (new regulation). Guide assesses: 'Detour adds 2 days.' Sponsor wants to go through rockslide? 'That route violates our safety code—we adjust the plan, not the rules.'"
+        },
+        {
+          "step": "T", "visual": "✅ TRACK compliance at each camp",
+          "description": "Every camp, verify: Are climbers wearing gear? Evidence: photos, checklist, inspection. Report: 'Camp 3: 100% compliant.' Track continuously to summit. Compliance isn't one-time; it's constant."
+        }
+      ],
+      "moral": "Guide **A**ssesses regulations, **S**pecifies rules, **C**lassifies dangers, **E**ducates climbers, **N**avigates obstacles, **T**racks safety. Some want shortcuts; guide says: 'The mountain's rules aren't negotiable—they keep us alive.'"
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does A.S.C.E.N.T. stand for?", "Is compliance negotiable?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Name 3 compliance types", "What are non-compliance consequences?"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write the A.S.C.E.N.T. framework from memory", "Create a compliance matrix"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Scenario practice", "Compare with other Domain 3 tasks"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d3t1"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d3t1"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d3t1"}
+  }
+}

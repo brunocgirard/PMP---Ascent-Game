@@ -1,0 +1,263 @@
+{
+  "taskId": "d2t8",
+  "taskTitle": "Plan and Manage Quality of Products/Deliverables",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your software team is about to release version 1.0. Testing found: 15 critical bugs (system crashes), 42 major bugs (missing features), 120 minor bugs (UI glitches). Your release date is tomorrow. The sponsor asks: 'Can we release?' What's your recommendation?",
+    "question": "What's your first move BEFORE answering the sponsor?",
+    "options": {
+      "A": "Release as planned—all software has bugs",
+      "B": "Review the quality standards defined in the project charter—compare actual defects to acceptable thresholds",
+      "C": "Fix the 15 critical bugs and release in 2 weeks",
+      "D": "Delay 6 months to achieve zero bugs"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Quality standards define 'acceptable'",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Quality is Defined, Not Subjective",
+          "explanation": "Quality means 'fitness for purpose'—meeting defined standards, not perfection. Your team needs to know: What's acceptable? 5 critical bugs? 10? Zero?",
+          "pmbokSupport": "Quality is planned into the project from the start, not inspected in at the end"
+        },
+        {
+          "principle": "Standards Enable Decision-Making",
+          "explanation": "If the standard says 'zero critical bugs before release,' then 15 critical bugs means NO RELEASE. If it says '≤20 critical bugs acceptable,' then it's a GO decision.",
+          "pmbokSupport": "Compare actual quality metrics to defined thresholds to make release decisions"
+        },
+        {
+          "principle": "Cost of Quality vs. Risk",
+          "explanation": "Releasing with known critical bugs = user risk. Delaying fixes = cost and schedule risk. Standards help balance this trade-off.",
+          "pmbokSupport": "Quality decisions involve trade-offs between cost, schedule, and risk"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Without defined standards, every release decision becomes a guessing game.",
+      "trapTable": [
+        {
+          "option": "A - Release anyway, all software has bugs",
+          "violation": "Ignores the project's quality baseline and acceptance criteria",
+          "pmiValueBroken": "Releasing without validation against standards"
+        },
+        {
+          "option": "C - Fix only critical bugs",
+          "violation": "Assumes which bugs are acceptable without checking project standards",
+          "pmiValueBroken": "Decision-making without data"
+        },
+        {
+          "option": "D - Delay 6 months for zero bugs",
+          "violation": "Assumes zero bugs is the standard—probably not realistic and wasn't pre-planned",
+          "pmiValueBroken": "Changing quality standards retroactively"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "What quality standards were defined for this deliverable?",
+        "How do actual metrics compare to standards?",
+        "Is there a release gate/acceptance criteria document?",
+        "Who approves the trade-off (quality vs. schedule)?"
+      ],
+      "patternRule": "Quality decisions require comparing actual metrics to defined standards, not gut feel. Standards = decision framework."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "Q.U.A.L.I.T.Y. Framework for Quality Management",
+    "frameworkIntro": "Quality management prevents defects and protects the project's value:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "Q", "name": "Quality Planning: Define Standards", "color": "#3b82f6"},
+          "action": "Identify quality requirements and standards EARLY. What's acceptable? Create a quality management plan.",
+          "keyQuestions": ["What does 'done' look like?", "What are acceptance criteria?"],
+          "examKeywords": "Quality planning, Standards, Acceptance criteria"
+        },
+        {
+          "step": {"badge": "U", "name": "Understand Metrics & Baselines", "color": "#8b5cf6"},
+          "action": "Define how to measure quality: defect count, test coverage %, performance benchmarks, user satisfaction.",
+          "keyQuestions": ["How do we measure quality?", "What's the baseline?"],
+          "examKeywords": "Metrics, KPIs, Quality baselines"
+        },
+        {
+          "step": {"badge": "A", "name": "Assure Quality Through Process", "color": "#10b981"},
+          "action": "Build quality INTO the process: code reviews, automated tests, design reviews, peer inspections. Prevention, not just detection.",
+          "keyQuestions": ["What checks are built in?", "Are we preventing or just catching?"],
+          "examKeywords": "Quality assurance, Process audits, Prevention"
+        },
+        {
+          "step": {"badge": "L", "name": "Log & Analyze Defects", "color": "#f59e0b"},
+          "action": "Track all defects: severity, root cause, when discovered, effort to fix. Use data to improve.",
+          "keyQuestions": ["What caused this defect?", "Could we have caught it earlier?"],
+          "examKeywords": "Defect tracking, Root cause analysis, Lessons learned"
+        },
+        {
+          "step": {"badge": "I", "name": "Inspect Deliverables", "color": "#ec4899"},
+          "action": "Test/inspect against standards. Quality control: compare actual to baseline. Flag what doesn't meet standard.",
+          "keyQuestions": ["Does this meet the standard?", "What's the defect count?"],
+          "examKeywords": "Quality control, Testing, Inspection"
+        },
+        {
+          "step": {"badge": "T", "name": "Threshold Decision: Release or Repair?", "color": "#06b6d4"},
+          "action": "Compare actual metrics to defined thresholds. If within standard → release. If not → fix or escalate.",
+          "keyQuestions": ["Are we within standard?", "Is this acceptable?"],
+          "examKeywords": "Release gates, Acceptance criteria, Sign-off"
+        },
+        {
+          "step": {"badge": "Y", "name": "Yield Data for Next Project", "color": "#8b5cf6"},
+          "action": "Document lessons learned: what quality metrics were achieved, what improved, what to change next time.",
+          "keyQuestions": ["What did we learn?", "How do we improve next project?"],
+          "examKeywords": "Lessons learned, Historical data, Continuous improvement"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Delivery Performance Domain",
+      "principle": "Principle 2: Stakeholder Engagement and Values",
+      "quote": "Quality is planned in, not inspected in. Define standards early and build prevention into processes"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Plan and Manage Quality",
+    "framework": {
+      "acronym": "Q.U.A.L.I.T.Y.",
+      "steps": ["📋 Quality planning", "📊 Understand metrics", "🛡️ Assure through process", "🐛 Log defects", "🔍 Inspect deliverables", "🚪 Threshold decision", "📈 Yield data"]
+    },
+    "quickReference": "Quality = Fitness for Purpose (meeting standards) | QA = Building quality in (process) | QC = Finding quality (inspection) | Defect severity: Critical, Major, Minor | Standard first, then measure, then decide",
+    "goldenRule": "Standards define acceptable. Metrics measure. Decision gates compare metric to standard. No standard = no objective decision.",
+    "examTip": "Look for 'quality,' 'defect,' 'release,' 'standard' → Identify what standard was defined. Compare metrics to standard. Make data-driven release decision.",
+    "pmbokPrinciple": "Stakeholder Engagement and Values"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply Q.U.A.L.I.T.Y.",
+    "intro": "Test your quality thinking:",
+    "scenarioStory": "During planning, the team defined: 'Website release standard: maximum 3 critical bugs, maximum 20 major bugs, maximum 200 minor bugs.' Testing results: 2 critical, 18 major, 210 minor bugs. The PM proposes releasing. The QA lead says we should delay. Who's right?",
+    "question": "What's the correct decision?",
+    "options": {
+      "A": "Release—we're below the critical and major thresholds",
+      "B": "Don't release—we exceeded the minor bug threshold",
+      "C": "Release the site; fix the minor bugs in next iteration",
+      "D": "Escalate to sponsor with the data; let them decide the trade-off"
+    },
+    "correctAnswer": "D"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Quality is not negotiable. But what IS negotiable is which bugs are acceptable. That decision must be made early, not during release.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Quality is planned in, not inspected in. The cost of prevention is always less than the cost of fixing defects later.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Standards Enable Decisions",
+        "insight": "Without pre-defined quality standards, every release decision becomes political. With standards, it's objective. Define thresholds in planning, not in crisis."
+      },
+      {
+        "title": "QA Prevents, QC Detects",
+        "insight": "Quality Assurance = building quality in (process audits, code reviews). Quality Control = finding defects (testing). Both matter. QA is cheaper."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "quality-standards",
+        "question": "Have you worked on a project with clear quality standards?",
+        "type": "textarea",
+        "placeholder": "Example: Acceptance criteria, test coverage %..."
+      },
+      {
+        "id": "quality-decision",
+        "question": "How did you handle release decisions?",
+        "type": "dropdown",
+        "options": ["Had clear standards", "Made ad-hoc decisions", "Escalated to sponsor", "Not sure"]
+      }
+    ],
+    "valueStatement": "💡 Define quality standards early. They're your decision framework when crises come.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Climber's Safety Standards",
+    "story": {
+      "title": "Quality Standards for a Safe Summit",
+      "narrative": "A mountain expedition needs quality standards for safety. Before the climb, you define what's acceptable...",
+      "scenes": [
+        {
+          "step": "Q",
+          "visual": "📋 QUALITY planning: Define safety standards",
+          "description": "Before the climb: Equipment standards (rope tensile strength ≥10,000 lbs), oxygen purity ≥99.5%, guide certification, team fitness levels. Standards are set EARLY."
+        },
+        {
+          "step": "U",
+          "visual": "📊 UNDERSTAND what to measure",
+          "description": "How do we measure quality? Check rope with tension gauge. Test oxygen purity with analyzer. Verify guide certifications. Define metrics upfront."
+        },
+        {
+          "step": "A",
+          "visual": "🛡️ ASSURE quality through process",
+          "description": "Build quality in: Pre-expedition training camps, equipment checks at Base Camp, daily rope inspections, guide briefings. Prevention prevents accidents."
+        },
+        {
+          "step": "L",
+          "visual": "🐛 LOG defects and incidents",
+          "description": "Found a worn rope section? Log it. Climber feels dizzy? Log symptoms. Track near-misses. Root cause: why did rope wear? How prevent next time?"
+        },
+        {
+          "step": "I",
+          "visual": "🔍 INSPECT before each stage",
+          "description": "At Base Camp: Test all ropes, check oxygen levels, verify guide certifications. Every deliverable (rope, oxygen bottle) must pass inspection."
+        },
+        {
+          "step": "T",
+          "visual": "🚪 THRESHOLD decision: Safe to proceed?",
+          "description": "Rope: 10,000+ lbs tensile strength? Yes. Oxygen: 99.5%+ purity? 2 bottles failed. Threshold not met. Result: Don't use those bottles. Proceed with good equipment."
+        },
+        {
+          "step": "Y",
+          "visual": "📈 YIELD data for lessons learned",
+          "description": "After summit: Document what standards worked, what failed, what changed. Use data for next expedition's standards."
+        }
+      ],
+      "moral": "Quality management is like safety standards: **Q**uality planned early, **U**nderstand metrics, **A**ssure through process, **L**og defects, **I**nspect deliverables, **T**hreshold decision gate, **Y**ield lessons for improvement."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["QA vs QC difference?", "What's a quality threshold?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Define quality standards for a scenario", "Analyze defects"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Explain Q.U.A.L.I.T.Y.", "Describe release decision framework"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice exam questions", "Connect to risk management"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t8"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t8"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t8"}
+  }
+}

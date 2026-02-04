@@ -1,0 +1,76 @@
+{
+  "id": "d1t1",
+  "title": "Manage conflict",
+  "domain": "People",
+  "taskNumber": "Task 1",
+
+  "hero": {
+    "taskNumber": "Task 1",
+    "taskName": "Manage conflict",
+    "questionCount": "27",
+    "examWeight": "33",
+    "domainName": "People",
+    "oneLineHook": "Project management = problem management. Conflicts happen daily—your job is preventing escalation, not eliminating disagreement."
+  },
+
+  "framework": {
+    "frameworkName": "I.S.E. Framework for Conflict",
+    "frameworkDescription": "When you see a conflict question on the exam:",
+    "steps": [
+      {
+        "label": "Interpret",
+        "icon": "🔍",
+        "description": "What's the SOURCE? What STAGE of escalation (1-5)?"
+      },
+      {
+        "label": "Solve",
+        "icon": "💡",
+        "description": "Evaluate options and recommend solutions"
+      },
+      {
+        "label": "Engage",
+        "icon": "🤝",
+        "description": "Use INCLUSIVE approaches (involve ALL parties)"
+      }
+    ],
+    "additionalContent": "<p><strong>5 Levels of Conflict:</strong></p><ul><li>Level 1 🟢 Information sharing</li><li>Level 2 🟡 Personal protection</li><li>Level 3 🟠 Contest (win/lose)</li><li>Level 4 🔴 Crusade (group protection)</li><li>Level 5 ⛔ Destruction (physical harm)</li></ul><p><em>Intervene early—escalation makes resolution exponentially harder!</em></p>"
+  },
+
+  "scenario": {
+    "scenarioText": "You're managing a software project. Two senior developers, Bob and Jane, are in a heated disagreement about which programming methodology to use. The conflict started during sprint planning and has now escalated—voices are raised and other team members feel uncomfortable.",
+    "keyword": "FIRST",
+    "options": {
+      "A": "Research both methodologies yourself and decide which is best, then inform the team",
+      "B": "Meet with Bob privately to understand his perspective and implement his solution if it makes sense",
+      "C": "Meet with Jane privately since she has more experience, then make a decision",
+      "D": "Bring Bob and Jane together for a face-to-face discussion to collaboratively find a solution"
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "whyCorrect": "Option D is inclusive—it involves ALL parties in the solution. PMI values servant leadership and collaboration. The team should solve their own problems with your facilitation, not have solutions imposed.",
+      "whyWrong": "A excludes both team members from the decision. B and C each exclude one person, violating the inclusiveness principle. Making decisions FOR the team instead of WITH the team is never the PMI way.",
+      "keyPrinciple": "Servant leadership + Inclusive collaboration. When in doubt, bring people together."
+    }
+  },
+
+  "mindset": {
+    "alwaysChoice": "Inclusive solutions that involve ALL parties in finding the answer",
+    "neverChoice": "Making decisions alone, excluding stakeholders, or choosing sides",
+    "oneLinerRule": "When in doubt, bring people together."
+  },
+
+  "checkpoints": {
+    "questions": [
+      "Can I name the 3 steps of the I.S.E. framework?",
+      "Can I explain why inclusive solutions are always preferred on the PMP exam?",
+      "Can I spot an exclusive/dictatorial choice in exam answer options?"
+    ]
+  },
+
+  "examTip": "Ask yourself: 'Is this choice inclusive?' That's your answer.",
+
+  "nextAction": {
+    "flashcardCount": "15",
+    "nextPhase": "Flashcards"
+  }
+}

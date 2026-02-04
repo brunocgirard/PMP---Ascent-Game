@@ -1,0 +1,434 @@
+{
+  "taskId": "d1t3",
+  "taskTitle": "Support Team Performance",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your Agile team's velocity has dropped from 50 story points per sprint to 30 over the last three sprints. During retrospectives, team members mention they're struggling with the new cloud deployment tool that was recently mandated by the IT department. Several developers admit they don't fully understand how to use it.",
+    "question": "What should you do FIRST as the project manager?",
+    "options": {
+      "A": "Hire a cloud deployment specialist to join the team",
+      "B": "Arrange training on the cloud deployment tool for team members who need it",
+      "C": "Escalate to the IT department to change the tool back to the old system",
+      "D": "Accept the lower velocity as the new baseline and adjust project timelines"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Arrange training on the cloud deployment tool",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Support Growth and Development",
+          "explanation": "When team members lack skills or knowledge, the solution is training and coaching. This supports their development and improves performance.",
+          "pmbokSupport": "Project teams can thrive when members use appropriate skills that match stakeholder expectations"
+        },
+        {
+          "principle": "Objective Performance Measurement",
+          "explanation": "You identified the issue through a KPI (velocity drop from 50 to 30). Now address the root cause revealed in retrospectives.",
+          "pmbokSupport": "Knowing how to best motivate people or take action when required can help improve project team performance"
+        },
+        {
+          "principle": "Servant Leadership",
+          "explanation": "Removing impediments means providing the tools, training, and support the team needs to succeed.",
+          "pmbokSupport": "Leaders focus on being transparent, behave unselfishly, and are able to ask for help"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Support doesn't mean replacing the team or giving up—it means equipping them to succeed.",
+      "trapTable": [
+        {
+          "option": "A - Hire specialist",
+          "violation": "Expensive, slow solution; doesn't develop existing team",
+          "pmiValueBroken": "Misses opportunity to grow current team members' capabilities"
+        },
+        {
+          "option": "C - Change tools back",
+          "violation": "Avoids the problem instead of supporting the team through change",
+          "pmiValueBroken": "Teams need to adapt; running from challenges doesn't develop resilience"
+        },
+        {
+          "option": "D - Accept lower velocity",
+          "violation": "Gives up without addressing the root cause",
+          "pmiValueBroken": "Abdicates responsibility to support and improve team performance"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is there a performance drop measurable by KPIs?",
+        "Did you identify the root cause (lack of skills/knowledge)?",
+        "Can training or coaching resolve the issue?",
+        "Will this support team growth and development?"
+      ],
+      "patternRule": "Team member doesn't know how to do something → Train them. Team member doesn't understand something → Coach them. Always support growth."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "S.T.A.R. Framework for Supporting Team Performance",
+    "frameworkIntro": "Supporting team performance isn't about micromanagement—it's about enabling success through measurement, support, and continuous improvement:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {
+            "badge": "S",
+            "name": "Set KPIs",
+            "color": "#3b82f6"
+          },
+          "action": "Establish Key Performance Indicators to objectively measure team performance. Use metrics like velocity, quality, cycle time—not subjective feelings.",
+          "keyQuestions": [
+            "What objective metrics measure team performance?",
+            "Agile: What's the team velocity? Sprint burndown?",
+            "Traditional: Are milestones on track? Quality metrics?",
+            "Are these KPIs agreed upon with the team?"
+          ],
+          "examKeywords": "KPI, Metrics, Measure, Assess, Evaluate, Objective"
+        },
+        {
+          "step": {
+            "badge": "T",
+            "name": "Train & Coach",
+            "color": "#8b5cf6"
+          },
+          "action": "When performance issues arise, support growth through training and coaching. Give them the skills and knowledge they need.",
+          "keyQuestions": [
+            "What specific skills or knowledge are lacking?",
+            "Do they need training (learn new skills)?",
+            "Do they need coaching (improve existing skills)?",
+            "Do they have the right tools and resources?"
+          ],
+          "examKeywords": "Train, Coach, Develop, Support growth, Mentor, Teach"
+        },
+        {
+          "step": {
+            "badge": "A",
+            "name": "Act with Feedback",
+            "color": "#10b981"
+          },
+          "action": "Provide appropriate, timely feedback. Recognize what's working well. Address issues constructively. Create a safe environment for asking for help.",
+          "keyQuestions": [
+            "What feedback have I given recently?",
+            "Am I recognizing good performance?",
+            "Is feedback specific and actionable?",
+            "Can team members ask each other for help?"
+          ],
+          "examKeywords": "Feedback, Recognize, Acknowledge, Constructive, Communication"
+        },
+        {
+          "step": {
+            "badge": "R",
+            "name": "Review & Improve",
+            "color": "#f59e0b"
+          },
+          "action": "After providing support, verify that performance actually improves. Check KPIs again. If not improving, take additional action. Continuous improvement.",
+          "keyQuestions": [
+            "Has velocity/performance improved after training?",
+            "Are KPIs trending in the right direction?",
+            "If not improving, what else is needed?",
+            "What did we learn for next time?"
+          ],
+          "examKeywords": "Verify, Validate, Continuous improvement, Retrospective, Lessons learned"
+        }
+      ]
+    },
+    "additionalContent": {
+      "kpiExamples": {
+        "agile": [
+          "Velocity (story points per sprint)",
+          "Sprint burndown chart",
+          "Number of impediments/blockers",
+          "Team happiness metric",
+          "Defect rate"
+        ],
+        "traditional": [
+          "Milestone completion rate",
+          "Schedule Performance Index (SPI)",
+          "Cost Performance Index (CPI)",
+          "Quality metrics (defects per deliverable)",
+          "Resource utilization rate"
+        ]
+      },
+      "trainVsCoach": {
+        "training": {
+          "when": "Team member needs to LEARN a new skill they don't have",
+          "example": "Doesn't know the new cloud tool → Provide training course"
+        },
+        "coaching": {
+          "when": "Team member needs to IMPROVE an existing skill",
+          "example": "Knows the tool but uses it inefficiently → Provide 1-on-1 coaching"
+        }
+      }
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 3: Be a Diligent, Respectful, and Caring Steward",
+      "quote": "Project teams can thrive when project team members use appropriate leadership traits, skills, and characteristics that match the specific needs and expectations of stakeholders. Knowing how to best communicate with or motivate people, or take action when required, can help improve project team performance."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Support Team Performance",
+    "framework": {
+      "acronym": "S.T.A.R.",
+      "steps": [
+        "📊 Set KPIs (Objective metrics, not feelings)",
+        "🎓 Train & Coach (Give skills/knowledge)",
+        "💬 Act with Feedback (Recognize + constructive)",
+        "🔄 Review & Improve (Verify it worked)"
+      ]
+    },
+    "quickReference": "**Measure:** KPIs (velocity, burndown, SPI/CPI) | **Support:** Train (new skills), Coach (improve existing) | **Feedback:** Recognize good + address issues | **Verify:** Did performance improve?",
+    "goldenRule": "Team member doesn't know how → Train them. Team member doesn't understand → Coach them. Always measure objectively.",
+    "examTip": "Look for: 'velocity dropped,' 'performance issues,' 'team struggling' → Check KPIs → Train/Coach → Verify improvement. Never accept poor performance without action.",
+    "pmbokPrinciple": "Principle 3: Be a Diligent, Respectful, and Caring Steward - Support team growth"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply the S.T.A.R. Framework",
+    "intro": "Now that you know the framework, let's apply it:",
+    "scenarioStory": "You're managing a construction project. Your quality metrics (KPI) show that rework has increased from 5% to 18% over the last month. During a team meeting, you discover that two new subcontractors joined the team and aren't familiar with your quality standards and inspection procedures. The experienced team members have been too busy to help them.",
+    "question": "Following the S.T.A.R. framework, what should you do NEXT?",
+    "options": {
+      "A": "Replace the two new subcontractors with more experienced ones",
+      "B": "Organize a training session on quality standards and pair new subcontractors with experienced mentors for coaching",
+      "C": "Lower the quality standards to accommodate the new team members' current skill level",
+      "D": "Have experienced team members redo all work done by new subcontractors"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "We have to assess our team against some kind of KPI, key performance indicators. There has to be some kind of objective measurement that we can use. Not so much subjective, but something objective, something numerical, something that people can agree with.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course - Domain 1 Task 3"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Knowing how to best communicate with or motivate people, or take action when required, can help improve project team performance and manage obstacles to project success.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition - Principle 6"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Exam Pattern: Train or Coach",
+        "insight": "Expect questions where 1-2 team members have issues. The answer is almost always: Train them (new skill) or Coach them (improve existing skill). Never: fire them, ignore the problem, or lower standards. PMI believes in developing people."
+      },
+      {
+        "title": "Objective vs. Subjective Performance",
+        "insight": "Don't say 'they're doing well' or 'not doing well' based on feelings. Use KPIs: velocity, burndown, SPI, CPI, defect rates. Objective metrics let you have data-driven conversations and identify exactly what needs improvement."
+      },
+      {
+        "title": "The Agile Support Model",
+        "insight": "In Agile, team members should be willing to ask each other for help when needed. That's the support model. Create psychological safety where asking for help is encouraged, not penalized. This is servant leadership in action."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection: Supporting Your Team",
+    "reflectionPrompt": "Think about how you currently measure and support team performance:",
+    "questions": [
+      {
+        "id": "kpi-tracking",
+        "question": "What KPIs do you currently use to measure your team's performance?",
+        "type": "textarea",
+        "placeholder": "Example: We track sprint velocity (currently averaging 42 points), defect rate (3%), and team happiness score (7.5/10)..."
+      },
+      {
+        "id": "performance-issue",
+        "question": "Think of a recent performance issue. Did you address it with training/coaching?",
+        "type": "dropdown",
+        "options": [
+          "Yes, provided training and it improved",
+          "Yes, provided coaching and it improved",
+          "Tried training/coaching but it didn't help",
+          "No, I avoided addressing it",
+          "No, I replaced the team member instead"
+        ]
+      },
+      {
+        "id": "feedback-quality",
+        "question": "When was the last time you gave recognition or constructive feedback to your team?",
+        "type": "text",
+        "placeholder": "Example: Last sprint retrospective, I recognized Sarah's debugging skills..."
+      },
+      {
+        "id": "improvement-action",
+        "question": "What's one support action you'll take this week to improve team performance?",
+        "type": "textarea",
+        "placeholder": "Example: Schedule training on our new testing framework for the 3 developers who are struggling with it..."
+      }
+    ],
+    "valueStatement": "💡 Great PMs don't accept poor performance—they support their team to improve through measurement, training, feedback, and verification.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Mountain Training Camp",
+    "intro": "Remember S.T.A.R. with this vivid story:",
+    "story": {
+      "title": "Training Climbers for the Summit",
+      "narrative": "You're running a mountain climbing training camp, supporting climbers to become **S.T.A.R.** mountaineers...",
+      "scenes": [
+        {
+          "step": "S - Set KPIs",
+          "visual": "📊 You SET UP the performance tracker at base camp",
+          "description": "You track objective KPIs: altitude gain per day, oxygen efficiency, rope speed. Not 'I feel like they're climbing well'—real numbers. You notice rope speed dropped from 15 meters/min to 10. That's your KPI alerting you to a problem."
+        },
+        {
+          "step": "T - Train & Coach",
+          "visual": "🎓 You TRAIN climbers on rope technique",
+          "description": "New climbers need TRAINING on proper knots and belay. Experienced climbers need COACHING to improve efficiency. You provide both. 'Climbers not knowing rope technique becomes frustrating and will slow down the team's ascent.'"
+        },
+        {
+          "step": "A - Act with Feedback",
+          "visual": "💬 You ACT by giving feedback during practice climbs",
+          "description": "You recognize good performance: 'Great anchor placement, Marcus!' You give constructive feedback: 'Sarah, distribute weight more on your legs.' You create an environment where climbers can ask teammates for help without embarrassment."
+        },
+        {
+          "step": "R - Review & Improve",
+          "visual": "🔄 You REVIEW the metrics after training",
+          "description": "Rope speed is back up to 14 meters/min! The training worked. You VERIFY the improvement through your KPIs. If it hadn't improved, you'd take additional action. Continuous improvement for the summit."
+        }
+      ],
+      "moral": "A great climbing instructor doesn't accept poor performance or replace climbers—they **S**et KPIs, **T**rain/coach, **A**ct with feedback, and **R**eview results. That's how you support team performance on the mountain."
+    },
+    "selfTest": "Close your eyes. Picture base camp. Can you see the instructor **S**etting up metrics, **T**raining rope technique, **A**cting with feedback, **R**eviewing the performance? That's S.T.A.R."
+  },
+  "spacedRepetition": {
+    "title": "📅 Spaced Repetition: Lock This In",
+    "intro": "Research shows spacing your reviews increases retention from 50% to 90%. Schedule these micro-reviews:",
+    "schedule": [
+      {
+        "timeframe": "Tomorrow",
+        "icon": "📱",
+        "title": "5-Minute Flashback (24 hours)",
+        "tasks": [
+          "Quiz yourself: What does S.T.A.R. stand for?",
+          "Recall the basketball coach story",
+          "Ask: What's the difference between training and coaching?",
+          "Name 3 Agile KPIs and 3 Traditional KPIs"
+        ],
+        "duration": "5 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "🎯",
+        "title": "Practice Application (72 hours)",
+        "tasks": [
+          "Real scenario: What KPIs are you tracking for your team?",
+          "Have you provided training or coaching this week?",
+          "Did you give recognition or constructive feedback?",
+          "Re-read the exam tip pattern"
+        ],
+        "duration": "10 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📝",
+        "title": "Deep Retrieval (7 days)",
+        "tasks": [
+          "Without looking, write out the S.T.A.R. framework",
+          "Explain to a colleague: When to train vs. coach?",
+          "List 5 KPIs you could use on your current project",
+          "Review your personal reflection—any progress?"
+        ],
+        "duration": "15 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "🔄",
+        "title": "Integration Check (14 days)",
+        "tasks": [
+          "Practice questions on Support Team Performance",
+          "How does this connect to Lead a Team (d1t2)?",
+          "Review all Domain 1 tasks completed so far",
+          "Pattern recognition: Train/coach is always the answer"
+        ],
+        "duration": "20 min",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention with spaced repetition"
+    }
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist: Support Team Performance",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "read",
+        "task": "Read this learn section",
+        "xp": 10,
+        "description": "Complete all 10 sections above",
+        "completed": true
+      },
+      {
+        "id": "scenario1",
+        "task": "Solve Quick Scenario (velocity drop)",
+        "xp": 5,
+        "description": "Got it right on first try? +10 XP!",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "scenario2",
+        "task": "Apply S.T.A.R. Framework (quality issue)",
+        "xp": 10,
+        "description": "Practice applying the framework",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "reflection",
+        "task": "Complete personal reflection",
+        "xp": 5,
+        "description": "Save your team support insights",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "reference-card",
+        "task": "Download S.T.A.R. reference card",
+        "xp": 2,
+        "description": "Keep it handy for exam prep",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "flashcards",
+        "task": "Review 15 flashcards",
+        "xp": 15,
+        "description": "Reinforce key concepts",
+        "completed": false,
+        "current": true,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/d1t3"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass the 10-question quiz (70%+)",
+        "xp": 20,
+        "description": "Prove your mastery",
+        "completed": false,
+        "current": false,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/d1t3"
+      }
+    ],
+    "timeEstimate": "Total: ~35-40 minutes",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards (15 cards)",
+      "link": "/flashcards/d1t3"
+    }
+  }
+}

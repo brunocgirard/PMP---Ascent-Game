@@ -1,0 +1,902 @@
+{
+  "gameVersion": "1.0.0",
+  "theme": "Ascent to PMP: The Summit Quest",
+  "themeDescription": "Climb the mountain to PMP certification through 7 challenging missions",
+  "totalMissions": 7,
+  "missions": [
+    {
+      "id": "m1",
+      "name": "Trail Head - Foundation Training",
+      "icon": "🥾",
+      "altitude": "0m → 500m",
+      "terrain": "Easy hiking trail",
+      "description": "Build your foundation with essential PM principles, domains, ethics, and exam strategy",
+      "unlocked": true,
+      "required": true,
+      "order": 1,
+      "estimatedHours": 8,
+      "topics": [
+        {
+          "id": "principles",
+          "name": "12 Project Management Principles",
+          "description": "Master the foundational principles that guide all project work",
+          "flashcardTags": ["principles"],
+          "minFlashcards": 20,
+          "quizQuestions": 15,
+          "passingScore": 70
+        },
+        {
+          "id": "domains",
+          "name": "8 Performance Domains",
+          "description": "Understand the interconnected areas of project management",
+          "flashcardTags": ["domain"],
+          "minFlashcards": 15,
+          "quizQuestions": 12,
+          "passingScore": 70
+        },
+        {
+          "id": "ethics",
+          "name": "Ethics & Professional Responsibility",
+          "description": "Learn the code of ethics and professional conduct",
+          "flashcardTags": ["ethics", "ac"],
+          "minFlashcards": 10,
+          "quizQuestions": 10,
+          "passingScore": 80
+        },
+        {
+          "id": "exam-strategy",
+          "name": "Exam Format & Strategy",
+          "description": "Understand the exam structure and test-taking strategies",
+          "flashcardTags": ["exam"],
+          "minFlashcards": 8,
+          "quizQuestions": 8,
+          "passingScore": 70
+        }
+      ],
+      "completionCriteria": {
+        "allTopicsCompleted": true,
+        "minOverallScore": 70
+      },
+      "rewards": {
+        "xp": 500,
+        "badge": "foundation-master",
+        "badgeName": "Trail Blazer",
+        "equipment": "Trail Map"
+      }
+    },
+    {
+      "id": "m2",
+      "name": "Forest Path - Domain I: People",
+      "icon": "🌲",
+      "altitude": "500m → 1500m",
+      "terrain": "Forest trail with gentle slopes",
+      "description": "Master the skills of leading teams and managing stakeholders (33% of exam)",
+      "unlocked": false,
+      "unlockRequires": ["m1"],
+      "order": 2,
+      "examWeight": 33,
+      "estimatedHours": 20,
+      "tasks": [
+        {
+          "id": "d1t1",
+          "taskNumber": "Task 1",
+          "name": "Manage conflict",
+          "waypoint": "🚩 Waypoint 1",
+          "description": "Learn to interpret sources and stages of conflict, and reconcile solutions",
+          "examTip": "Always choose inclusive solutions that involve all parties",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t2",
+          "taskNumber": "Task 2",
+          "name": "Lead a team",
+          "waypoint": "🚩 Waypoint 2",
+          "description": "Set clear vision, support diversity, use appropriate leadership styles",
+          "examTip": "Servant leadership and collaborative approaches are preferred",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t3",
+          "taskNumber": "Task 3",
+          "name": "Support team performance",
+          "waypoint": "🚩 Waypoint 3",
+          "description": "Appraise performance against KPIs, provide training and coaching",
+          "examTip": "When in doubt, train the team",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t4",
+          "taskNumber": "Task 4",
+          "name": "Empower team members and stakeholders",
+          "waypoint": "🚩 Waypoint 4",
+          "description": "Organize around team strengths, bestow decision-making authority",
+          "examTip": "Let the team make practical decisions on implementation",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t5",
+          "taskNumber": "Task 5",
+          "name": "Ensure adequate training",
+          "waypoint": "🚩 Waypoint 5",
+          "description": "Determine training needs, provide resources, measure outcomes",
+          "examTip": "Training is the answer to most skill-related problems",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t6",
+          "taskNumber": "Task 6",
+          "name": "Build a team",
+          "waypoint": "🚩 Waypoint 6",
+          "description": "Acquire and develop the project team",
+          "examTip": "Consider team dynamics and skill balance",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t7",
+          "taskNumber": "Task 7",
+          "name": "Address impediments, obstacles, and blockers",
+          "waypoint": "🚩 Waypoint 7",
+          "description": "Remove barriers to team success as a servant leader",
+          "examTip": "Remove administrative blockers, let team solve technical issues",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t8",
+          "taskNumber": "Task 8",
+          "name": "Negotiate project agreements",
+          "waypoint": "🚩 Waypoint 8",
+          "description": "Secure resources and agreements with stakeholders",
+          "examTip": "Win-win solutions are always preferred",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t9",
+          "taskNumber": "Task 9",
+          "name": "Collaborate with stakeholders",
+          "waypoint": "🚩 Waypoint 9",
+          "description": "Engage stakeholders throughout the project lifecycle",
+          "examTip": "Proactive engagement prevents issues",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t10",
+          "taskNumber": "Task 10",
+          "name": "Build shared understanding",
+          "waypoint": "🚩 Waypoint 10",
+          "description": "Ensure common vision and goals across the team",
+          "examTip": "Visual communication and collaboration tools help",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t11",
+          "taskNumber": "Task 11",
+          "name": "Engage and support virtual teams",
+          "waypoint": "🚩 Waypoint 11",
+          "description": "Manage distributed teams with effective communication",
+          "examTip": "Face-to-face (video) with cameras on is best for virtual teams",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t12",
+          "taskNumber": "Task 12",
+          "name": "Define team ground rules",
+          "waypoint": "🚩 Waypoint 12",
+          "description": "Establish working agreements and team norms",
+          "examTip": "Team should create their own ground rules collaboratively",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t13",
+          "taskNumber": "Task 13",
+          "name": "Mentor relevant stakeholders",
+          "waypoint": "🚩 Waypoint 13",
+          "description": "Guide and coach stakeholders in project practices",
+          "examTip": "Mentoring builds long-term capability",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d1t14",
+          "taskNumber": "Task 14",
+          "name": "Promote performance through emotional intelligence",
+          "waypoint": "🚩 Waypoint 14",
+          "description": "Apply emotional intelligence to improve team dynamics",
+          "examTip": "Self-awareness and empathy are key leadership skills",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        }
+      ],
+      "domainAssessment": {
+        "name": "People Domain Mastery Assessment",
+        "questionCount": 50,
+        "timeLimit": 60,
+        "passingScore": 75,
+        "description": "Comprehensive assessment covering all 14 People domain tasks"
+      },
+      "completionCriteria": {
+        "allTasksCompleted": true,
+        "minTaskScore": 75,
+        "domainAssessmentPassed": true
+      },
+      "rewards": {
+        "xp": 2000,
+        "badge": "people-champion",
+        "badgeName": "Forest Guide",
+        "equipment": "Compass"
+      }
+    },
+    {
+      "id": "m3",
+      "name": "Rocky Slopes - Domain II: Process",
+      "icon": "⛰️",
+      "altitude": "1500m → 2500m",
+      "terrain": "Steep rocky slopes, technical climbing",
+      "description": "Master the technical processes of project delivery (41% of exam)",
+      "unlocked": false,
+      "unlockRequires": ["m2"],
+      "order": 3,
+      "examWeight": 41,
+      "estimatedHours": 25,
+      "tasks": [
+        {
+          "id": "d2t1",
+          "taskNumber": "Task 1",
+          "name": "Execute with urgency to deliver business value",
+          "waypoint": "🚩 Waypoint 1",
+          "description": "Focus on value delivery and business outcomes",
+          "examTip": "Value delivery trumps plan adherence",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t2",
+          "taskNumber": "Task 2",
+          "name": "Manage communications",
+          "waypoint": "🚩 Waypoint 2",
+          "description": "Plan and execute effective project communications",
+          "examTip": "Face-to-face communication is most effective",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t3",
+          "taskNumber": "Task 3",
+          "name": "Assess and manage risks",
+          "waypoint": "🚩 Waypoint 3",
+          "description": "Identify, analyze, and respond to project risks",
+          "examTip": "Risk management is continuous throughout the project",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t4",
+          "taskNumber": "Task 4",
+          "name": "Engage stakeholders",
+          "waypoint": "🚩 Waypoint 4",
+          "description": "Manage stakeholder expectations and engagement",
+          "examTip": "Keep stakeholders engaged proactively",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t5",
+          "taskNumber": "Task 5",
+          "name": "Plan and manage budget and resources",
+          "waypoint": "🚩 Waypoint 5",
+          "description": "Estimate costs, create budgets, control spending (includes EVM)",
+          "examTip": "Know all EVM formulas cold",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t6",
+          "taskNumber": "Task 6",
+          "name": "Plan and manage schedule",
+          "waypoint": "🚩 Waypoint 6",
+          "description": "Create schedules using CPM, manage timeline",
+          "examTip": "Critical path determines project duration",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t7",
+          "taskNumber": "Task 7",
+          "name": "Plan and manage quality",
+          "waypoint": "🚩 Waypoint 7",
+          "description": "Define quality standards and ensure compliance",
+          "examTip": "Quality is planned in, not inspected in",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t8",
+          "taskNumber": "Task 8",
+          "name": "Plan and manage scope",
+          "waypoint": "🚩 Waypoint 8",
+          "description": "Define and control what's included in the project",
+          "examTip": "Scope creep is managed through change control",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t9",
+          "taskNumber": "Task 9",
+          "name": "Integrate project planning activities",
+          "waypoint": "🚩 Waypoint 9",
+          "description": "Coordinate all planning activities into cohesive plan",
+          "examTip": "Integration is key to project success",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t10",
+          "taskNumber": "Task 10",
+          "name": "Manage project changes",
+          "waypoint": "🚩 Waypoint 10",
+          "description": "Implement integrated change control process",
+          "examTip": "Never deny change - embrace and manage it",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t11",
+          "taskNumber": "Task 11",
+          "name": "Plan and manage procurement",
+          "waypoint": "🚩 Waypoint 11",
+          "description": "Acquire goods and services from external sources",
+          "examTip": "Contract types allocate risk differently",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t12",
+          "taskNumber": "Task 12",
+          "name": "Manage project artifacts",
+          "waypoint": "🚩 Waypoint 12",
+          "description": "Maintain project documentation and information",
+          "examTip": "Artifacts support decision-making and communication",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t13",
+          "taskNumber": "Task 13",
+          "name": "Determine methodology, methods, and practices",
+          "waypoint": "🚩 Waypoint 13",
+          "description": "Select appropriate approach (Agile, Predictive, Hybrid)",
+          "examTip": "Methodology should fit project context",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t14",
+          "taskNumber": "Task 14",
+          "name": "Establish project governance structure",
+          "waypoint": "🚩 Waypoint 14",
+          "description": "Define decision-making authority and oversight",
+          "examTip": "Governance ensures accountability",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t15",
+          "taskNumber": "Task 15",
+          "name": "Manage project issues",
+          "waypoint": "🚩 Waypoint 15",
+          "description": "Identify, track, and resolve project issues",
+          "examTip": "Issues are current problems, risks are future uncertainties",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t16",
+          "taskNumber": "Task 16",
+          "name": "Ensure knowledge transfer for continuity",
+          "waypoint": "🚩 Waypoint 16",
+          "description": "Document and transfer lessons learned",
+          "examTip": "Knowledge management prevents repeated mistakes",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d2t17",
+          "taskNumber": "Task 17",
+          "name": "Plan and manage closure or transitions",
+          "waypoint": "🚩 Waypoint 17",
+          "description": "Complete project and transition deliverables",
+          "examTip": "Formal closure ensures acceptance and lessons captured",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        }
+      ],
+      "domainAssessment": {
+        "name": "Process Domain Mastery Assessment",
+        "questionCount": 70,
+        "timeLimit": 90,
+        "passingScore": 75,
+        "description": "Comprehensive assessment covering all 17 Process domain tasks"
+      },
+      "completionCriteria": {
+        "allTasksCompleted": true,
+        "minTaskScore": 75,
+        "domainAssessmentPassed": true
+      },
+      "rewards": {
+        "xp": 2500,
+        "badge": "process-master",
+        "badgeName": "Mountain Climber",
+        "equipment": "Ice Axe"
+      }
+    },
+    {
+      "id": "m4",
+      "name": "High Altitude - Domain III: Business Environment",
+      "icon": "🏔️",
+      "altitude": "2500m → 3500m",
+      "terrain": "Thin air, challenging conditions",
+      "description": "Master business strategy and organizational context (26% of exam - MAJOR 2026 FOCUS)",
+      "unlocked": false,
+      "unlockRequires": ["m3"],
+      "order": 4,
+      "examWeight": 26,
+      "estimatedHours": 15,
+      "tasks": [
+        {
+          "id": "d3t1",
+          "taskNumber": "Task 1",
+          "name": "Plan and manage project compliance",
+          "waypoint": "🚩 Waypoint 1",
+          "description": "Ensure project adheres to regulations and standards",
+          "examTip": "Compliance is mandatory, never optional",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d3t2",
+          "taskNumber": "Task 2",
+          "name": "Evaluate and deliver project benefits and value",
+          "waypoint": "🚩 Waypoint 2",
+          "description": "Measure and communicate project value to organization",
+          "examTip": "Value realization may extend beyond project closure",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d3t3",
+          "taskNumber": "Task 3",
+          "name": "Evaluate external business environment changes",
+          "waypoint": "🚩 Waypoint 3",
+          "description": "Monitor market, technology, regulatory changes",
+          "examTip": "External changes may require project adjustments",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        },
+        {
+          "id": "d3t4",
+          "taskNumber": "Task 4",
+          "name": "Support organizational change",
+          "waypoint": "🚩 Waypoint 4",
+          "description": "Facilitate adoption of project outcomes",
+          "examTip": "Change management increases realization of benefits",
+          "mappedFlashcards": [],
+          "quizQuestions": 5,
+          "scenarioQuestions": 2,
+          "passingScore": 75
+        }
+      ],
+      "domainAssessment": {
+        "name": "Business Environment Mastery Assessment",
+        "questionCount": 45,
+        "timeLimit": 55,
+        "passingScore": 75,
+        "description": "Comprehensive assessment covering all 4 Business Environment tasks"
+      },
+      "completionCriteria": {
+        "allTasksCompleted": true,
+        "minTaskScore": 75,
+        "domainAssessmentPassed": true
+      },
+      "rewards": {
+        "xp": 1500,
+        "badge": "business-strategist",
+        "badgeName": "Peak Challenger",
+        "equipment": "Oxygen Tank"
+      }
+    },
+    {
+      "id": "m5",
+      "name": "Integration Ridge - Agile & Hybrid Mastery",
+      "icon": "🌄",
+      "altitude": "3500m → 4000m",
+      "terrain": "Ridge walking, integration of all skills",
+      "description": "Master Agile, Hybrid approaches that appear in 60% of exam questions",
+      "unlocked": false,
+      "unlockRequires": ["m2", "m3", "m4"],
+      "order": 5,
+      "estimatedHours": 18,
+      "topics": [
+        {
+          "id": "agile-manifesto",
+          "name": "Agile Manifesto & Principles",
+          "description": "4 values and 12 principles of Agile",
+          "flashcardTags": ["agile"],
+          "minFlashcards": 16,
+          "quizQuestions": 12,
+          "passingScore": 80
+        },
+        {
+          "id": "scrum-framework",
+          "name": "Scrum Framework",
+          "description": "Roles, ceremonies, artifacts, and flow",
+          "flashcardTags": ["scrum", "agile"],
+          "minFlashcards": 20,
+          "quizQuestions": 15,
+          "passingScore": 80
+        },
+        {
+          "id": "kanban-lean",
+          "name": "Kanban, XP, and Lean",
+          "description": "Alternative Agile approaches",
+          "flashcardTags": ["kanban", "lean", "agile"],
+          "minFlashcards": 12,
+          "quizQuestions": 10,
+          "passingScore": 75
+        },
+        {
+          "id": "hybrid-approaches",
+          "name": "Hybrid Project Management",
+          "description": "Combining Agile and Predictive approaches",
+          "flashcardTags": ["hybrid", "agile"],
+          "minFlashcards": 10,
+          "quizQuestions": 10,
+          "passingScore": 75
+        },
+        {
+          "id": "value-delivery",
+          "name": "Value-Driven Delivery",
+          "description": "Prioritization and incremental value",
+          "flashcardTags": ["value", "agile"],
+          "minFlashcards": 8,
+          "quizQuestions": 8,
+          "passingScore": 75
+        }
+      ],
+      "completionCriteria": {
+        "allTopicsCompleted": true,
+        "minOverallScore": 80
+      },
+      "rewards": {
+        "xp": 2000,
+        "badge": "agile-master",
+        "badgeName": "Ridge Walker",
+        "equipment": "Climbing Rope"
+      }
+    },
+    {
+      "id": "m6",
+      "name": "Practice Cliffs - Training Ground",
+      "icon": "🧗",
+      "altitude": "4000m → 4500m",
+      "terrain": "Technical climbing, precision required",
+      "description": "Build speed and confidence with timed practice and weak area drills",
+      "unlocked": false,
+      "unlockRequires": ["m5"],
+      "order": 6,
+      "estimatedHours": 20,
+      "practiceModules": [
+        {
+          "id": "timed-mini-tests",
+          "name": "Timed Mini-Tests",
+          "description": "20 questions in 30 minutes, domain-specific",
+          "testCount": 12,
+          "questionsPer": 20,
+          "timeLimit": 30,
+          "passingScore": 75
+        },
+        {
+          "id": "weak-area-drills",
+          "name": "Weak Area Adaptive Practice",
+          "description": "Focused practice on your lowest-scoring tasks",
+          "adaptive": true,
+          "minQuestions": 50
+        },
+        {
+          "id": "formula-mastery",
+          "name": "Formula & Calculation Drills",
+          "description": "Master EVM, CPM, and other calculations",
+          "formulaCount": 33,
+          "practiceProblems": 50,
+          "passingScore": 90
+        },
+        {
+          "id": "scenario-practice",
+          "name": "Situational Scenario Practice",
+          "description": "Complex multi-part scenarios",
+          "scenarioCount": 20,
+          "passingScore": 75
+        }
+      ],
+      "completionCriteria": {
+        "allModulesCompleted": true,
+        "minOverallAccuracy": 75
+      },
+      "rewards": {
+        "xp": 2500,
+        "badge": "practice-champion",
+        "badgeName": "Cliff Conqueror",
+        "equipment": "Carabiner Set"
+      }
+    },
+    {
+      "id": "m7",
+      "name": "Final Ascent - Exam Simulation",
+      "icon": "🎯",
+      "altitude": "4500m → 5000m (SUMMIT!)",
+      "terrain": "Final push, summit in sight",
+      "description": "Full PMP exam simulations to validate your readiness",
+      "unlocked": false,
+      "unlockRequires": ["m6"],
+      "order": 7,
+      "estimatedHours": 12,
+      "mockExams": [
+        {
+          "id": "mock-exam-1",
+          "name": "Mock Exam 1",
+          "questionCount": 185,
+          "timeLimit": 240,
+          "breaks": 2,
+          "breakDuration": 10,
+          "domainDistribution": {
+            "people": 61,
+            "process": 76,
+            "business": 48
+          },
+          "passingScore": 75
+        },
+        {
+          "id": "mock-exam-2",
+          "name": "Mock Exam 2",
+          "questionCount": 185,
+          "timeLimit": 240,
+          "breaks": 2,
+          "breakDuration": 10,
+          "domainDistribution": {
+            "people": 61,
+            "process": 76,
+            "business": 48
+          },
+          "passingScore": 75
+        },
+        {
+          "id": "mock-exam-3",
+          "name": "Mock Exam 3 (Optional)",
+          "questionCount": 185,
+          "timeLimit": 240,
+          "breaks": 2,
+          "breakDuration": 10,
+          "domainDistribution": {
+            "people": 61,
+            "process": 76,
+            "business": 48
+          },
+          "passingScore": 75
+        }
+      ],
+      "readinessCheck": {
+        "name": "Exam Readiness Assessment",
+        "description": "Comprehensive analysis of your preparation",
+        "criteria": {
+          "mockExam2Passed": true,
+          "allDomainsAbove70": true,
+          "weakAreasIdentified": true,
+          "confidenceLevel": "high"
+        }
+      },
+      "completionCriteria": {
+        "mockExam2Passed": true,
+        "readinessAssessmentPassed": true
+      },
+      "rewards": {
+        "xp": 5000,
+        "badge": "exam-ready",
+        "badgeName": "Summit Master",
+        "equipment": "Summit Flag"
+      }
+    }
+  ],
+  "levelSystem": {
+    "maxLevel": 10,
+    "levels": [
+      {"level": 1, "name": "PMP Aspirant", "icon": "📝", "xpRequired": 0},
+      {"level": 2, "name": "Knowledge Seeker", "icon": "📚", "xpRequired": 500},
+      {"level": 3, "name": "Task Tackler", "icon": "🎯", "xpRequired": 1500},
+      {"level": 4, "name": "Concept Master", "icon": "💡", "xpRequired": 3000},
+      {"level": 5, "name": "People Leader", "icon": "👥", "xpRequired": 5000},
+      {"level": 6, "name": "Process Pro", "icon": "⚙️", "xpRequired": 7500},
+      {"level": 7, "name": "Business Strategist", "icon": "💼", "xpRequired": 10000},
+      {"level": 8, "name": "Domain Champion", "icon": "🏆", "xpRequired": 13000},
+      {"level": 9, "name": "Exam Ready", "icon": "🎓", "xpRequired": 16000},
+      {"level": 10, "name": "PMP Master", "icon": "✨", "xpRequired": 20000}
+    ]
+  },
+  "achievementSystem": {
+    "achievements": [
+      {
+        "id": "first-steps",
+        "name": "First Steps",
+        "icon": "🎯",
+        "description": "Complete Mission 1: Foundation Training",
+        "category": "foundation",
+        "xpReward": 100
+      },
+      {
+        "id": "bookworm",
+        "name": "Bookworm",
+        "icon": "📚",
+        "description": "Review 100 flashcards",
+        "category": "foundation",
+        "xpReward": 50
+      },
+      {
+        "id": "week-warrior",
+        "name": "Week Warrior",
+        "icon": "🔥",
+        "description": "Maintain a 7-day study streak",
+        "category": "foundation",
+        "xpReward": 150
+      },
+      {
+        "id": "people-champion",
+        "name": "People Champion",
+        "icon": "👥",
+        "description": "Complete Domain I with 100% mastery",
+        "category": "mastery",
+        "xpReward": 500
+      },
+      {
+        "id": "process-pro",
+        "name": "Process Pro",
+        "icon": "⚙️",
+        "description": "Complete Domain II with 100% mastery",
+        "category": "mastery",
+        "xpReward": 500
+      },
+      {
+        "id": "business-expert",
+        "name": "Business Expert",
+        "icon": "💼",
+        "description": "Complete Domain III with 100% mastery",
+        "category": "mastery",
+        "xpReward": 500
+      },
+      {
+        "id": "perfect-score",
+        "name": "Perfect Score",
+        "icon": "🎯",
+        "description": "Score 100% on any task quiz",
+        "category": "excellence",
+        "xpReward": 200
+      },
+      {
+        "id": "speed-demon",
+        "name": "Speed Demon",
+        "icon": "🏃",
+        "description": "Complete a quiz in under 5 minutes with 90%+",
+        "category": "excellence",
+        "xpReward": 150
+      },
+      {
+        "id": "formula-master",
+        "name": "Formula Master",
+        "icon": "🧠",
+        "description": "Answer all 33 formulas correctly",
+        "category": "excellence",
+        "xpReward": 300
+      },
+      {
+        "id": "mock-exam-pass",
+        "name": "Mock Exam Champion",
+        "icon": "🏆",
+        "description": "Score 75%+ on any mock exam",
+        "category": "ultimate",
+        "xpReward": 1000
+      },
+      {
+        "id": "certification-ready",
+        "name": "Certification Ready",
+        "icon": "🎓",
+        "description": "Pass both Mock Exam 1 and 2 with 75%+",
+        "category": "ultimate",
+        "xpReward": 2000
+      },
+      {
+        "id": "pmp-legend",
+        "name": "PMP Legend",
+        "icon": "✨",
+        "description": "Complete ALL 7 missions with mastery",
+        "category": "ultimate",
+        "xpReward": 5000
+      }
+    ]
+  }
+}

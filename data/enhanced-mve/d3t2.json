@@ -1,0 +1,264 @@
+{
+  "taskId": "d3t2",
+  "taskTitle": "Evaluate and Deliver Project Benefits and Value",
+  "domain": "Business",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your organization invested $2M in a customer relationship management (CRM) system project. The project is 80% complete, deliverables are being produced, and the team is on schedule. However, when you review the benefits management plan, you notice: (1) No one has clearly defined what business benefits this project is supposed to deliver, (2) There's no measurement system to track whether benefits are being realized, (3) The sponsor hasn't reviewed actual value in 3 months. Your executive steering committee meeting is next week. You suspect the project is technically on track but strategically drifting—no one can articulate the business case anymore.",
+    "question": "As Project Manager, what is your PRIMARY focus RIGHT NOW?",
+    "options": {
+      "A": "Keep the team focused on completing deliverables—benefits are the sponsor's problem",
+      "B": "Identify/document benefits, establish measurement system, track benefits realization, and demonstrate value to stakeholders",
+      "C": "Wait until the project is complete, then measure benefits (post-project benefit realization)",
+      "D": "Use a minimum viable product (MVP) approach to get something to market quickly and see if customers like it"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Define benefits, measure, track, and demonstrate value throughout",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Benefits Are Project Purpose, Not Afterthought",
+          "explanation": "Projects exist to deliver value/benefits. If you don't define WHAT value upfront, you may deliver 'perfect' deliverables with ZERO business value. The project becomes a solution in search of a problem.",
+          "pmbokSupport": "PMBOK emphasizes benefits realization is core to project success, not optional"
+        },
+        {
+          "principle": "Measurement Must Be Built In, Not Bolted On",
+          "explanation": "You can't measure what you don't define. If no measurement system exists, you can't prove (or disprove) that benefits materialized. Subjective claims don't convince executives.",
+          "pmbokSupport": "Measurement systems must be established during planning, not after project completion"
+        },
+        {
+          "principle": "Value Demonstration Drives Stakeholder Engagement",
+          "explanation": "Sponsors stay engaged when they SEE value. Regular demonstrations (MVP reviews, incremental releases, dashboards) prove ROI and maintain organizational support.",
+          "pmbokSupport": "Stakeholder engagement includes showing progress against benefits targets"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Benefits trap: assuming project completion = automatic value. Reality: deliverables ≠ benefits.",
+      "trapTable": [
+        {
+          "option": "A - Benefits are the sponsor's problem",
+          "violation": "PM is responsible for ensuring project delivers strategic value, not just outputs",
+          "pmiValueBroken": "Abdicating PM responsibility for benefits alignment"
+        },
+        {
+          "option": "C - Measure benefits after project complete",
+          "violation": "Too late. You can't course-correct if benefits aren't being realized during project",
+          "pmiValueBroken": "Waiting to measure = no time to adapt"
+        },
+        {
+          "option": "D - Just do MVP and see what happens",
+          "violation": "MVP without benefits clarity = guessing at value; may build wrong features",
+          "pmiValueBroken": "MVP should validate defined benefits, not discover them accidentally"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Are project benefits clearly identified and documented?",
+        "Is there a benefits management plan with ownership assigned?",
+        "Does a measurement system exist (objective AND subjective metrics)?",
+        "Are stakeholders regularly seeing evidence of value delivery?",
+        "Can anyone articulate the business case/ROI?",
+        "Are you tracking benefits throughout project, not just at end?"
+      ],
+      "patternRule": "No benefits clarity → Add to charter/plan. No measurement system → Create metrics before project starts. No stakeholder demos → Schedule regular value showcases. Benefits realized early AND throughout → Project stays aligned."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "DELIVER Framework for Benefits Realization",
+    "frameworkIntro": "Delivering value is not incidental—it's intentional. Each step ensures benefits flow from execution to stakeholders:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "D", "name": "Define Benefits Clearly", "color": "#3b82f6"},
+          "action": "Identify WHAT value the project delivers (increased revenue, cost savings, customer satisfaction, efficiency gains). Document in charter & benefits management plan.",
+          "keyQuestions": ["What business outcomes does this project enable?", "How does it align with organizational strategy?"],
+          "examKeywords": "Benefits, Value, Outcomes, Strategy alignment, Charter, Management plan"
+        },
+        {
+          "step": {"badge": "E", "name": "Establish Measurement System", "color": "#8b5cf6"},
+          "action": "Define HOW you'll measure benefits: objective (numerical metrics: time, cost, quality) and subjective (feedback, satisfaction). Set baselines and targets.",
+          "keyQuestions": ["How will we know if benefits are realized?", "What are success metrics?"],
+          "examKeywords": "Measurement, Metrics, Baseline, Target, Objective, Subjective, KPIs"
+        },
+        {
+          "step": {"badge": "L", "name": "Link Deliverables to Benefits", "color": "#10b981"},
+          "action": "Show clear connection between each deliverable and specific benefit. Map features/outputs to value streams. Teams understand WHY they're building.",
+          "keyQuestions": ["Does this deliverable drive value?", "Which benefit does it support?"],
+          "examKeywords": "Traceability, Link, Map, Connection, Feature-to-benefit"
+        },
+        {
+          "step": {"badge": "I", "name": "Iterate & Demonstrate Value", "color": "#f59e0b"},
+          "action": "Use incremental delivery (Agile, MVP, phased release) to show value early and often. Run sprint reviews, demos, and stakeholder showcases. Get feedback constantly.",
+          "keyQuestions": ["Can we show value incrementally?", "Are stakeholders seeing it?"],
+          "examKeywords": "Incremental, MVP, Demo, Sprint review, Iteration, Stakeholder feedback"
+        },
+        {
+          "step": {"badge": "V", "name": "Verify Realization During Project", "color": "#ec4899"},
+          "action": "Monitor & measure benefits throughout project execution, not just at completion. Track metrics against targets. Identify gaps. Adapt if benefits are off-track.",
+          "keyQuestions": ["Are benefits targets being met?", "What's tracking well? What's at risk?"],
+          "examKeywords": "Monitor, Track, Measure, Verify, Benefits realization, Metrics review"
+        },
+        {
+          "step": {"badge": "E", "name": "Engage & Report Value", "color": "#06b6d4"},
+          "action": "Regularly communicate benefits status to stakeholders. Show dashboards, ROI tracking, customer impact. Keep sponsors engaged and informed of value delivery.",
+          "keyQuestions": ["Do stakeholders understand the value being delivered?", "Is ROI transparent?"],
+          "examKeywords": "Communication, Reporting, Stakeholder engagement, ROI, Value demonstration"
+        },
+        {
+          "step": {"badge": "R", "name": "Review & Sustain Benefits", "color": "#06d6a6"},
+          "action": "At project closure, document benefits realized vs. planned. Establish post-project benefit realization plan. Who owns benefits sustainability? How will benefits be protected?",
+          "keyQuestions": ["Were benefits actually delivered?", "How are we sustaining them post-project?"],
+          "examKeywords": "Closure, Benefits realization, Ownership, Sustainability, Lessons learned"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Business Environment Performance Domain",
+      "principle": "Projects deliver value through intentional benefits management, not accidental alignment",
+      "quote": "Evaluation and demonstration of benefits must occur throughout the project, not as an afterthought at completion"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Evaluate & Deliver Benefits/Value",
+    "framework": {
+      "acronym": "D.E.L.I.V.E.R.",
+      "steps": ["📋 Define benefits", "📊 Establish measurement", "🔗 Link deliverables", "🎬 Iterate & demonstrate", "✅ Verify realization", "📣 Engage & report", "🔄 Review & sustain"]
+    },
+    "quickReference": "**Deliverables ≠ Benefits.** A project can deliver 'perfect' outputs with zero business value. Define benefits upfront, measure throughout, demonstrate constantly.",
+    "goldenRule": "If you can't clearly articulate the business benefit → The project scope is unclear. If there's no measurement system → You can't prove value happened.",
+    "examTip": "Look for 'benefits,' 'value,' 'ROI,' 'measurement,' 'stakeholder satisfaction' → Benefits must be identified, tracked, and demonstrated throughout project.",
+    "pmbokPrinciple": "Business Environment - Deliver benefits intentionally, measure continuously, engage stakeholders visibly"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply D.E.L.I.V.E.R.",
+    "intro": "Apply the framework when benefits get murky:",
+    "scenarioStory": "You're managing a digital transformation project that's redesigning your company's internal workflow processes. The project is 6 months in, on budget, on schedule. However, when you ask the sponsor 'What specific benefits should we measure?' they say: 'Well, it should make things more efficient, I guess. Maybe save time?' The team has no idea if they're building the right thing. No measurement system exists. No stakeholder has seen a demo. You're concerned the project is technically progressing but strategically adrift.",
+    "question": "What do you do IMMEDIATELY?",
+    "options": {
+      "A": "Continue execution—these are sponsor questions, not PM questions",
+      "B": "Stop the project and create a detailed benefits plan before proceeding",
+      "C": "Initiate a workshop with the sponsor to: (1) Define specific benefits (time savings %, cost reduction $, quality improvements), (2) Establish measurement metrics, (3) Plan incremental demos to validate value, (4) Update benefits management plan in the charter",
+      "D": "Deliver the full system at end of project, then measure benefits post-launch"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Why do companies do projects? Because there's some value to gain. Projects are about delivering value to our stakeholders. You need to identify benefits, track them, measure them, and demonstrate them. If stakeholders can't see the value, they'll question why they funded the project.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The project manager ensures that project benefits are identified, tracked, and realized throughout the project lifecycle.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Perfect Project That Delivered No Value",
+        "insight": "It's possible to deliver a 'perfect' project (on time, on budget, quality excellent) that produces ZERO business value. This happens when benefits were never clearly defined. The project becomes technically successful but strategically irrelevant."
+      },
+      {
+        "title": "Benefits Realization is Organizational Responsibility",
+        "insight": "As PM, you ensure PROJECT delivers benefits. But benefit REALIZATION (whether organization actually uses it and gains value) often extends post-project. Establish ownership and sustainability plan at closure."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "current-benefits",
+        "question": "What are the primary benefits YOUR current project should deliver?",
+        "type": "textarea",
+        "placeholder": "Example: Reduce processing time by 40%, increase customer satisfaction score..."
+      },
+      {
+        "id": "measurement-system",
+        "question": "Do you have a measurement system in place to verify these benefits?",
+        "type": "dropdown",
+        "options": ["Yes, detailed metrics established", "Partially established", "Not yet created", "Not sure"]
+      },
+      {
+        "id": "stakeholder-demo",
+        "question": "When is the last time you demonstrated value to stakeholders?",
+        "type": "textarea",
+        "placeholder": "Example: Sprint review 2 days ago, executive dashboard review..."
+      }
+    ],
+    "valueStatement": "💡 PMs who can articulate business value get support. PMs who can't often lose it.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Valley of Value",
+    "story": {
+      "title": "Climbing to the Value Plateau",
+      "narrative": "You're leading climbers up a mountain seeking treasure (benefits). The team is climbing steadily, building rope systems and camps (deliverables). But some climbers ask: 'What treasure are we finding? How will we know when we've found it?' You realize: great equipment (deliverables) doesn't mean successful expedition (value) unless treasure is found.",
+      "scenes": [
+        {
+          "step": "D", "visual": "📋 DEFINE the treasure we're seeking",
+          "description": "Before the climb: 'This mountain has 3 types of treasure: gold (revenue boost), rubies (customer happiness), diamonds (efficiency gains). We're climbing to find all three.'"
+        },
+        {
+          "step": "E", "visual": "📊 ESTABLISH how we'll measure treasure",
+          "description": "Create a treasure map with markers: 'If we find X amount of gold, Y amount of rubies, Z amount of diamonds, we've succeeded.' Numbers matter. Objective measures."
+        },
+        {
+          "step": "L", "visual": "🔗 LINK every climb step to treasure",
+          "description": "Each camp conquered, each rope system built contributes to treasure hunting. Climbers understand: 'This rope leads to the ruby cavern. That supplies camp leads to gold deposits.'"
+        },
+        {
+          "step": "I", "visual": "🎬 ITERATE & show treasures being found",
+          "description": "Don't wait for summit. At each camp, show stakeholders: 'Found rubies! Customer feedback shows 40% happiness increase.' Celebrate incremental value. Keeps morale high."
+        },
+        {
+          "step": "V", "visual": "✅ VERIFY we're finding treasures",
+          "description": "Track against map: 'We targeted 100 gold by now, found 95. On track. Ruby collection exceeding goals.' If treasure-finding is off, adjust route NOW (not at summit)."
+        },
+        {
+          "step": "E", "visual": "📣 ENGAGE stakeholders with treasure stories",
+          "description": "Constantly report: 'Camp 5: Found 50 rubies! Climbers morale high. Cost to treasure ratio excellent.' Stakeholders see value flowing. They fund more climbs."
+        },
+        {
+          "step": "R", "visual": "🔄 REVIEW treasures & plan post-climb protection",
+          "description": "At summit: 'Total treasure collected: 100 gold, 120 rubies, 80 diamonds.' Success! But then: 'Who guards the treasure post-climb? How do we prevent loss?' Sustainability."
+        }
+      ],
+      "moral": "Expedition guide **D**efines treasure, **E**stablishes measures, **L**inks effort to rewards, **I**terates showing value, **V**erifies treasure-finding, **E**ngages stakeholders, **R**eviews & protects. Perfect rope systems mean nothing if no treasure is found."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does D.E.L.I.V.E.R. stand for?", "Deliverables vs. benefits—difference?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Name 3 objective benefit metrics", "Name 3 subjective benefit metrics"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write D.E.L.I.V.E.R. framework from memory", "Create sample benefits management plan"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Scenario practice", "Benefits vs. compliance comparison"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d3t2"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d3t2"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d3t2"}
+  }
+}

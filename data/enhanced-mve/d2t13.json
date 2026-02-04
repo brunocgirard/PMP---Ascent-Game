@@ -1,0 +1,254 @@
+{
+  "taskId": "d2t13",
+  "taskTitle": "Establish Project Artifact Management Practices",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Every climber's life depends on detailed records—where's the rope? Who's got the map?",
+    "scenarioStory": "Your expedition generates dozens of critical documents: base camp permits, equipment lists, daily weather logs, climber health records, incident reports, route maps, and supply inventories. A climber asks 'Where's the emergency descent plan?' Your team searches for 30 minutes. Another climber says 'I thought we updated the route map yesterday—where's the new version?' The sponsor requests proof that all safety procedures were documented.",
+    "question": "What artifact management practice is missing?",
+    "options": {
+      "A": "A centralized repository with clear naming, versioning, and access controls",
+      "B": "A system to track who owns each document and when it was last updated",
+      "C": "Archive old documents in case someone needs historical reference",
+      "D": "All of the above"
+    },
+    "correctAnswer": "D"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "D - All of the above are required",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Artifact Repository & Organization",
+          "explanation": "A centralized, well-organized repository ensures team members can find documents quickly. Naming conventions and versioning prevent confusion and errors.",
+          "pmbokSupport": "Project documents must be organized and accessible to authorized stakeholders"
+        },
+        {
+          "principle": "Ownership, Maintenance & Control",
+          "explanation": "Each artifact needs an owner responsible for accuracy and timeliness. Version control shows what changed and when. Access control protects sensitive information.",
+          "pmbokSupport": "Document control ensures accuracy, traceability, and regulatory compliance"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Poor artifact management looks like documents scattered across email, drives, and laptops. That's a recipe for confusion, error, and regulatory problems.",
+      "trapTable": [
+        {
+          "option": "A only - Repository without ownership",
+          "violation": "No one knows who's responsible for accuracy; documents get stale",
+          "pmiValueBroken": "Accountability and traceability lost"
+        },
+        {
+          "option": "B only - Tracking without central location",
+          "violation": "You know who owns documents, but no one can find them",
+          "pmiValueBroken": "Accessibility and efficiency lost"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Do we have a centralized document repository?",
+        "Are naming conventions clear and consistent?",
+        "Is version control in place?",
+        "Does each document have an owner?",
+        "Are access controls defined (who can read/edit)?",
+        "Are retention and archival policies documented?"
+      ],
+      "patternRule": "Good artifact management = centralized repo + clear naming + versioning + ownership + access control + retention policy."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "O.R.G.A.N.I.Z.E. Framework for Artifact Management",
+    "frameworkIntro": "Project artifacts must be organized, accessible, and controlled:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "O", "name": "Organize Repository", "color": "#3b82f6"},
+          "action": "Establish centralized repository (shared drive, document management system, or tool like Confluence, Sharepoint, etc.). Define folder structure.",
+          "keyQuestions": ["Where do documents live?", "What's the folder structure?", "Is it accessible to authorized people?"],
+          "examKeywords": "Document repository, Centralized storage, Document management"
+        },
+        {
+          "step": {"badge": "R", "name": "Register Artifacts", "color": "#8b5cf6"},
+          "action": "Create artifact inventory/register listing all documents: type, owner, location, version, status, retention period.",
+          "keyQuestions": ["What artifacts exist?", "Where are they?", "Who manages each?"],
+          "examKeywords": "Artifact inventory, Document register, Documentation plan"
+        },
+        {
+          "step": {"badge": "G", "name": "Govern with Standards", "color": "#10b981"},
+          "action": "Define naming conventions, format standards, quality criteria, and version control rules. Example: 'ProjectName-DocumentType-Version-Date.docx'",
+          "keyQuestions": ["What's the naming standard?", "What format?", "Version control process?"],
+          "examKeywords": "Standards, Naming conventions, Version control"
+        },
+        {
+          "step": {"badge": "A", "name": "Assign Ownership", "color": "#f59e0b"},
+          "action": "Designate owner/custodian for each artifact. Owner is responsible for accuracy, updates, and compliance. Document this responsibility.",
+          "keyQuestions": ["Who owns this document?", "Who's accountable?", "Who approves changes?"],
+          "examKeywords": "Ownership, Accountability, Custodian"
+        },
+        {
+          "step": {"badge": "N", "name": "Navigate Access Control", "color": "#ec4899"},
+          "action": "Define who can read, edit, and approve each document. Implement permissions (public, team, restricted, confidential). Track access for compliance.",
+          "keyQuestions": ["Who needs access?", "Read-only or edit?", "Who approves changes?"],
+          "examKeywords": "Access control, Permissions, Security, Classification"
+        },
+        {
+          "step": {"badge": "I", "name": "Implement Retrieval & Distribution", "color": "#6366f1"},
+          "action": "Ensure documents are easy to find and distribute. Use searchable metadata, tags, and version history. Notify stakeholders of updates.",
+          "keyQuestions": ["Can people find documents easily?", "How are updates communicated?", "Is history tracked?"],
+          "examKeywords": "Retrieval, Distribution, Communication, History tracking"
+        },
+        {
+          "step": {"badge": "Z", "name": "Zero in on Quality Assurance", "color": "#f97316"},
+          "action": "Establish review and approval process. Verify documents are accurate, current, and meet standards before distribution.",
+          "keyQuestions": ["Is this document approved?", "Who reviewed it?", "Is it the latest version?"],
+          "examKeywords": "Quality assurance, Approval process, Document review"
+        },
+        {
+          "step": {"badge": "E", "name": "Execute Retention & Archival", "color": "#14b8a6"},
+          "action": "Define retention periods (how long to keep), archival procedures (how to store old documents), and disposal (when to delete). Follow regulatory requirements.",
+          "keyQuestions": ["How long do we keep this?", "Where's the archive?", "When do we delete?"],
+          "examKeywords": "Retention policy, Archival, Regulatory compliance, Disposal"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Process Performance Domain",
+      "principle": "Principle 7: Plan and Manage Work",
+      "quote": "Project artifacts must be organized, controlled, and maintained to ensure accuracy, traceability, and regulatory compliance"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Manage Project Artifacts",
+    "framework": {
+      "acronym": "O.R.G.A.N.I.Z.E.",
+      "steps": ["📁 Organize repository", "📋 Register artifacts", "📏 Govern with standards", "👤 Assign ownership", "🔐 Navigate access control", "🔍 Implement retrieval", "✅ Zero in on QA", "🗄️ Execute retention"]
+    },
+    "quickReference": "**Central repo** is foundation | **Naming conventions** prevent confusion | **Version control** tracks changes | **Ownership** ensures accountability | **Access control** protects confidentiality",
+    "goldenRule": "If it's a project document → It needs a home, an owner, a version, and clear access rules.",
+    "examTip": "Look for 'artifacts,' 'documents,' 'records' → Think: Where do they live? Who owns them? How are versions managed? Who can access?",
+    "pmbokPrinciple": "Document Management - Organize, control, and protect project artifacts"
+  },
+  "secondScenario": {
+    "title": "Apply O.R.G.A.N.I.Z.E.",
+    "intro": "Test your artifact management knowledge:",
+    "scenarioStory": "Your project team uses: email for some documents, a shared drive for others, and personal laptops for draft files. You have 3 versions of the Project Charter in different places, 5 people edited the schedule independently, and no one knows which risk register is current. An auditor requests 'all documents related to change decisions from last month.'",
+    "question": "What's your first action to establish artifact management?",
+    "options": {
+      "A": "Tell everyone to use the shared drive—problem solved",
+      "B": "Gather all documents into one folder with no structure—at least they're centralized",
+      "C": "Create artifact management plan: central repository, naming standards, version control, ownership, access rules, and quality process",
+      "D": "Implement an expensive document management system immediately"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Artifact management isn't about technology—it's about discipline. A well-organized shared drive with clear naming conventions and version control beats a complex system with no governance.",
+        "author": "Rita Mulcahy",
+        "source": "PMP Exam Prep"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Project documents must be organized, stored, and retrieved efficiently to support stakeholder access and regulatory compliance.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Document Loss = Knowledge Loss",
+        "insight": "Teams that don't manage artifacts well end up wasting time searching for documents, making decisions with stale information, and failing audits. Proper artifact management is a competitive advantage."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Reflect on Your Artifact Management",
+    "questions": [
+      {
+        "id": "current-artifacts",
+        "question": "Where do your project documents currently live?",
+        "type": "textarea",
+        "placeholder": "Example: Email, shared drive, Google Docs, Confluence..."
+      },
+      {
+        "id": "document-chaos",
+        "question": "How much time do you spend searching for the right document version?",
+        "type": "dropdown",
+        "options": ["Less than 5 min", "5-15 min", "15+ min", "Too much!"]
+      }
+    ],
+    "valueStatement": "Organized artifacts save time, reduce errors, and ensure compliance.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Base Camp Library",
+    "story": {
+      "title": "Managing the Expedition's Knowledge Base",
+      "narrative": "Your base camp has a library where all critical documents must be organized so anyone can find them in an emergency...",
+      "scenes": [
+        {
+          "step": "O", "visual": "📁 ORGANIZE the library",
+          "description": "Build shelves with clear sections: Safety (permits, emergency plans), Operations (equipment lists, supply inventory), Health (medical records), Finance (receipts, permits). Each section has its spot."
+        },
+        {
+          "step": "R", "visual": "📋 REGISTER all documents",
+          "description": "Create a master index: 'Emergency Descent Plan (v2.3, 2025-01-15, Owner: Lead Climber, Location: Safety shelf).' Every document in the register."
+        },
+        {
+          "step": "G", "visual": "📏 GOVERN with standards",
+          "description": "Naming rule: 'ExpeditionName-DocumentType-Version-Date.pdf' Example: 'Everest-EmergencyPlan-v2.3-2025-01-15.pdf' Everyone follows the same naming."
+        },
+        {
+          "step": "A", "visual": "👤 ASSIGN owners",
+          "description": "Each section has a librarian: Safety documents = Lead Climber, Medical = Expedition Doctor, Finance = Logistics Officer. They keep documents current."
+        },
+        {
+          "step": "N", "visual": "🔐 NAVIGATE access",
+          "description": "Emergency plan? Everyone can read. Medical records? Only authorized staff. Finance receipts? Only sponsor. Access list posted at library entrance."
+        },
+        {
+          "step": "I", "visual": "🔍 IMPLEMENT retrieval",
+          "description": "Index is searchable. New climbers get briefing: 'Need emergency procedures? Aisle 2, shelf 3, blue binder.' Updates announced at evening meetings."
+        },
+        {
+          "step": "Z", "visual": "✅ ZERO in on quality",
+          "description": "Before filing, Librarian checks: Is this the latest version? Is owner's signature there? Does it meet standards? Only approved documents get shelved."
+        },
+        {
+          "step": "E", "visual": "🗄️ EXECUTE archival",
+          "description": "Old documents (previous year) go to archive storage. Keep for 2 years (regulation requirement). Documents from 2+ years ago: shred for privacy."
+        }
+      ],
+      "moral": "Librarian **O**rganizes repo, **R**egisters artifacts, **G**overns standards, **A**ssigns ownership, **N**avigates access, **I**mplements retrieval, **Z**eros in on QA, **E**xecutes retention."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What's O.R.G.A.N.I.Z.E. in artifact management?", "Why central repository?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Audit your current document storage", "Design naming convention"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write artifact management plan", "Create access control matrix"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice scenarios", "Compare with governance requirements"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t13"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t13"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t13"}
+  }
+}

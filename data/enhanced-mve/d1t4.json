@@ -1,0 +1,458 @@
+{
+  "taskId": "d1t4",
+  "taskTitle": "Empower Team Members and Stakeholders",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're leading a product development team with highly skilled engineers who feel their expertise isn't being utilized. They complain that all technical decisions are made by the architecture team, and they're just 'coding what they're told.' Team morale is low, and you notice several engineers updating their LinkedIn profiles. The project is on track technically, but culturally it's struggling.",
+    "question": "What should you do FIRST to empower the team?",
+    "options": {
+      "A": "Offer salary increases and bonuses to improve morale",
+      "B": "Organize team strengths assessment, then involve them in technical decision-making where their expertise applies",
+      "C": "Speak to the architecture team to stop making all decisions",
+      "D": "Assign more challenging technical problems to the engineers"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Assess strengths, then involve them in decisions",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Organize Around Team Strengths",
+          "explanation": "Before you can empower people, you need to know what they're good at. Then leverage those strengths by giving them decision-making authority in their areas of expertise.",
+          "pmbokSupport": "High-performing projects feature leadership at multiple levels and empower team members to make decisions"
+        },
+        {
+          "principle": "Empowerment Through Autonomy",
+          "explanation": "People feel empowered when they have influence over HOW work gets done, especially in their areas of expertise. Being 'told what to do' demotivates skilled professionals.",
+          "pmbokSupport": "Motivators include autonomy, compelling purpose, and the ability to contribute meaningfully"
+        },
+        {
+          "principle": "Task Accountability",
+          "explanation": "When the team has input in decisions and selects their work, they feel accountable. 'I chose this' creates ownership. 'I was told to do this' doesn't.",
+          "pmbokSupport": "Team members should know they're accountable for completion of tasks they select"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Empowerment isn't about money or harder work—it's about autonomy, contribution, and feeling your work matters.",
+      "trapTable": [
+        {
+          "option": "A - Salary increases",
+          "violation": "Money is a hygiene factor, not a true motivator for skilled professionals",
+          "pmiValueBroken": "Doesn't address the root cause: lack of autonomy and meaningful contribution"
+        },
+        {
+          "option": "C - Stop architecture team",
+          "violation": "Creates conflict; architecture decisions may be their legitimate role",
+          "pmiValueBroken": "Better to clarify where team SHOULD have input vs. top-down decisions"
+        },
+        {
+          "option": "D - Harder problems",
+          "violation": "Assumes challenge is the issue, not autonomy",
+          "pmiValueBroken": "Challenging work without decision-making power still feels disempowering"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Do team members feel their skills/expertise are underutilized?",
+        "Do they lack autonomy or input in decisions they should influence?",
+        "Have you identified team strengths and organized around them?",
+        "Does the team have accountability for their selected work?"
+      ],
+      "patternRule": "Skilled team feels demotivated → Assess strengths → Give autonomy in their expertise areas → Create accountability through choice."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "P.O.W.E.R. Framework for Empowerment",
+    "frameworkIntro": "Empowerment isn't about giving people more work—it's about giving them ownership, autonomy, and a sense that their contribution matters:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {
+            "badge": "P",
+            "name": "Profile Strengths",
+            "color": "#3b82f6"
+          },
+          "action": "Know what your team is strong at (and not good at). You can't organize around strengths you haven't identified. Assess skills, expertise, and preferences.",
+          "keyQuestions": [
+            "What are each team member's strengths?",
+            "Where do they have expertise to contribute?",
+            "What are they passionate about?",
+            "What skills are underutilized?"
+          ],
+          "examKeywords": "Assess, Identify strengths, Skills inventory, Know the team"
+        },
+        {
+          "step": {
+            "badge": "O",
+            "name": "Organize Around Strengths",
+            "color": "#8b5cf6"
+          },
+          "action": "Structure work and roles to leverage team strengths. Don't force square pegs into round holes. Let people do what they're good at.",
+          "keyQuestions": [
+            "Are we using people's best skills?",
+            "Is work aligned with team strengths?",
+            "Are roles clear and well-matched?",
+            "What should we stop/start/continue?"
+          ],
+          "examKeywords": "Leverage, Optimize, Assign, Match skills to tasks, Organize"
+        },
+        {
+          "step": {
+            "badge": "W",
+            "name": "Why - Show Purpose",
+            "color": "#10b981"
+          },
+          "action": "Connect team work to organizational goals and strategy. When people see HOW their work contributes to the big picture, they feel it matters. Inspire with the vision.",
+          "keyQuestions": [
+            "Do team members understand the project vision?",
+            "Can they explain how their work helps the organization?",
+            "Have I connected tasks to meaningful outcomes?",
+            "Do they see the 'why' behind the 'what'?"
+          ],
+          "examKeywords": "Vision, Purpose, Organizational goals, Meaningful contribution, Inspire"
+        },
+        {
+          "step": {
+            "badge": "E",
+            "name": "Enable Decision-Making",
+            "color": "#f59e0b"
+          },
+          "action": "Give the team autonomy to make decisions in their areas of expertise. Let them choose HOW to do the work. Support their decisions. Create accountability through choice.",
+          "keyQuestions": [
+            "What decisions can the team make themselves?",
+            "Where do they have expertise to contribute?",
+            "Am I micromanaging or empowering?",
+            "Do they select their own work (sprint planning)?"
+          ],
+          "examKeywords": "Autonomy, Decision authority, Self-organizing, Empower, Let team decide"
+        },
+        {
+          "step": {
+            "badge": "R",
+            "name": "Recognize & Reward",
+            "color": "#ec4899"
+          },
+          "action": "Acknowledge contributions and create a reward system. Recognition shows their work is valued. Rewards motivate continued excellence. Make it meaningful.",
+          "keyQuestions": [
+            "Do I regularly recognize good work?",
+            "Is there a fair reward system?",
+            "Are contributions acknowledged publicly?",
+            "What motivates each team member?"
+          ],
+          "examKeywords": "Recognize, Reward, Acknowledge, Celebrate, Incentivize, Motivate"
+        }
+      ]
+    },
+    "additionalContent": {
+      "empowermentPrinciples": [
+        "**Autonomy:** Team has control over HOW work gets done (especially in Agile)",
+        "**Mastery:** Work utilizes and develops their skills",
+        "**Purpose:** They understand WHY their work matters",
+        "**Accountability:** They select work and own the results",
+        "**Recognition:** Contributions are acknowledged and valued"
+      ],
+      "motivationTheory": {
+        "whatMotivates": [
+          "Meaningful rewards they can actually achieve",
+          "Work that uses their capabilities (not too hard, not too easy)",
+          "Feeling their contribution makes a difference",
+          "Autonomy to decide HOW to work",
+          "Recognition from peers and leadership"
+        ],
+        "whatDemotivates": [
+          "Impossible work (sets them up for failure)",
+          "Too-easy work (skills underutilized)",
+          "No understanding of why work matters",
+          "Micromanagement (no autonomy)",
+          "Contributions ignored or undervalued"
+        ]
+      }
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 6: Demonstrate Leadership Behaviors",
+      "quote": "Projects work best when leaders understand what motivates people. Motivators include such forces as finances, recognition, autonomy, compelling purpose. High-performing projects feature leadership at multiple levels."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Empower Team Members and Stakeholders",
+    "framework": {
+      "acronym": "P.O.W.E.R.",
+      "steps": [
+        "📋 Profile team strengths (Know their skills)",
+        "🎯 Organize around strengths (Match roles)",
+        "❓ Why - Show purpose (Connect to vision)",
+        "✅ Enable decision-making (Give autonomy)",
+        "🏆 Recognize & Reward (Acknowledge value)"
+      ]
+    },
+    "quickReference": "**Empowerment = Autonomy + Purpose + Recognition** | Know strengths → Use strengths → Show why it matters → Let them decide HOW → Reward contributions",
+    "goldenRule": "Empowered people feel: (1) Their work matters, (2) They have control over HOW, (3) Their expertise is valued.",
+    "examTip": "Look for: 'team feels underutilized,' 'low morale despite technical success,' 'updating LinkedIn' → Answer involves empowerment through autonomy, purpose, recognition—NOT just money or harder work.",
+    "pmbokPrinciple": "Principle 6: Demonstrate Leadership - Understand what motivates people"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply the P.O.W.E.R. Framework",
+    "intro": "Now that you know the framework, apply it:",
+    "scenarioStory": "You're managing a data science team building an AI recommendation engine. The team is talented but disengaged. They complete tasks assigned to them but show no enthusiasm. You discover they don't understand how the recommendation engine fits into the company's business strategy. Also, all algorithm choices are made by external consultants, so the data scientists feel like 'code monkeys.' Last month, one top performer left for a competitor.",
+    "question": "Using P.O.W.E.R., what should you do FIRST?",
+    "options": {
+      "A": "Offer retention bonuses to prevent more departures",
+      "B": "Hold a vision session showing how the AI engine drives revenue, then establish a technical decision-making process that includes the data science team",
+      "C": "Fire the external consultants to give more work to the internal team",
+      "D": "Assign the team additional projects to increase their workload"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Anytime people feel that they're contributing to something, anytime people feel that what I did is really gonna make a difference to this organization, that makes them feel empowered, that makes them feel accountable, that makes them feel, oh man, I gotta get this done because there's so many people dependent on me.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course - Domain 1 Task 4"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Projects work best when leaders understand what motivates people. Motivators include such forces as finances, recognition, autonomy, compelling purpose. High-performing projects feature leadership at multiple levels.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition - Principle 6"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Autonomy Principle (Agile Heart)",
+        "insight": "In Agile, the team should have complete influence over HOW the work gets done. They select work in sprint planning. They decide technical approaches. They self-organize. Product Owner says WHAT (priority), team decides HOW. This is empowerment in action."
+      },
+      {
+        "title": "Purpose Prevents Burnout",
+        "insight": "When team members understand how their code/work contributes to organizational goals, they push through challenges. Without purpose, the same challenges cause burnout. 'I'm building a feature' vs. 'I'm enabling 10,000 customers to save time' — same work, different meaning."
+      },
+      {
+        "title": "The LinkedIn Test",
+        "insight": "If your team is updating LinkedIn profiles, it's a red flag. They're looking for exit. Why? Usually lack of empowerment: skills underutilized, no autonomy, work doesn't feel meaningful, contributions not recognized. Money rarely fixes this—purpose and empowerment do."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection: Empowering Your Team",
+    "reflectionPrompt": "Think about how empowered your team currently feels:",
+    "questions": [
+      {
+        "id": "team-strengths",
+        "question": "List 3 key strengths of your team members and whether they're being fully utilized:",
+        "type": "textarea",
+        "placeholder": "Example: Sarah - excellent at database optimization (currently underutilized), Marcus - great facilitator (fully utilized in sprint planning)..."
+      },
+      {
+        "id": "purpose-connection",
+        "question": "Can your team explain how their work contributes to organizational goals?",
+        "type": "dropdown",
+        "options": [
+          "Yes, they clearly see the connection",
+          "Somewhat, but could be clearer",
+          "No, they just know their tasks",
+          "I'm not sure - haven't asked them",
+          "There is no clear organizational goal"
+        ]
+      },
+      {
+        "id": "autonomy-level",
+        "question": "How much autonomy does your team have over HOW they do their work?",
+        "type": "dropdown",
+        "options": [
+          "Full autonomy - they decide technical approaches",
+          "Some autonomy - they have input but I approve",
+          "Limited autonomy - I make most decisions",
+          "No autonomy - they're told exactly what to do",
+          "It varies by team member"
+        ]
+      },
+      {
+        "id": "empowerment-action",
+        "question": "What's ONE action you'll take this week to increase team empowerment?",
+        "type": "text",
+        "placeholder": "Example: Hold a vision session to connect their work to Q2 revenue goals..."
+      }
+    ],
+    "valueStatement": "💡 Empowered teams don't just work harder—they innovate, take ownership, and stay longer because their work has purpose and their expertise matters.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Expedition Leader",
+    "intro": "Remember P.O.W.E.R. with this vivid story:",
+    "story": {
+      "title": "Leading the Summit Expedition",
+      "narrative": "You're leading a diverse expedition to summit Everest. You need to give each climber **P.O.W.E.R.**...",
+      "scenes": [
+        {
+          "step": "P - Profile",
+          "visual": "📋 You PROFILE each climber's strengths",
+          "description": "Sarah - expert navigator with altitude experience. Marcus - incredible ice climber. Chen - medical doctor and team morale booster. You don't send Sarah to handle medical or Marcus to navigate. You KNOW their strengths first."
+        },
+        {
+          "step": "O - Organize",
+          "visual": "🎯 You ORGANIZE around those strengths",
+          "description": "Sarah leads navigation. Marcus tackles the ice wall sections. Chen handles medical and keeps spirits high. You don't force climbers into roles that don't fit. Each works in their zone of genius on the mountain."
+        },
+        {
+          "step": "W - Why",
+          "visual": "❓ You show them WHY (the summit vision)",
+          "description": "You don't just say 'climb up.' You paint the vision: 'When we reach that summit, we'll see the curvature of Earth. We'll have achieved what 99% of people only dream about. THIS is why we trained for years.' Now their work has PURPOSE."
+        },
+        {
+          "step": "E - Enable",
+          "visual": "✅ You ENABLE them to decide HOW",
+          "description": "You don't micromanage every step. You say 'we need to reach Camp 3 today' and let them decide HOW. Sarah chooses the route. Marcus picks the climbing technique. They have AUTONOMY in their expertise areas."
+        },
+        {
+          "step": "R - Recognize",
+          "visual": "🏆 You RECOGNIZE their contributions",
+          "description": "At each camp, you acknowledge: 'Sarah, brilliant navigation today. Marcus, that ice wall would've stopped lesser climbers. Chen, your encouragement kept us going.' They feel valued and push harder for the summit."
+        }
+      ],
+      "moral": "Great expedition leaders don't control every move—they **P**rofile strengths, **O**rganize roles, show the **W**hy, **E**nable autonomy, **R**ecognize contributions. That's how you empower climbers to reach the summit."
+    },
+    "selfTest": "Close your eyes. Picture the Everest expedition. Can you see the leader **P**rofiling climbers, **O**rganizing by strengths, showing **W**hy, **E**nabling decisions, **R**ecognizing achievements? That's P.O.W.E.R."
+  },
+  "spacedRepetition": {
+    "title": "📅 Spaced Repetition: Lock This In",
+    "intro": "Research shows spacing your reviews increases retention from 50% to 90%. Schedule these micro-reviews:",
+    "schedule": [
+      {
+        "timeframe": "Tomorrow",
+        "icon": "📱",
+        "title": "5-Minute Flashback (24 hours)",
+        "tasks": [
+          "Quiz yourself: What does P.O.W.E.R. stand for?",
+          "Recall the Avengers/superhero story",
+          "Ask: What are the 5 key motivators?",
+          "Review: Autonomy + Purpose + Recognition = ?"
+        ],
+        "duration": "5 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "🎯",
+        "title": "Practice Application (72 hours)",
+        "tasks": [
+          "Real scenario: Did you empower someone this week?",
+          "Have you connected team work to organizational vision?",
+          "Did you give team autonomy in their expertise area?",
+          "Re-read the LinkedIn Test insight"
+        ],
+        "duration": "10 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📝",
+        "title": "Deep Retrieval (7 days)",
+        "tasks": [
+          "Without looking, write out the P.O.W.E.R. framework",
+          "Explain to a colleague: Why does autonomy empower?",
+          "List your team's top 3 strengths",
+          "Review your personal reflection—any progress?"
+        ],
+        "duration": "15 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "🔄",
+        "title": "Integration Check (14 days)",
+        "tasks": [
+          "Practice questions on Empower Team",
+          "How does this connect to Lead a Team (d1t2)?",
+          "Compare: Empowerment vs. Support vs. Leadership",
+          "Identify empowerment patterns in Domain 1"
+        ],
+        "duration": "20 min",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention with spaced repetition"
+    }
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist: Empower Team Members",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "read",
+        "task": "Read this learn section",
+        "xp": 10,
+        "description": "Complete all 10 sections above",
+        "completed": true
+      },
+      {
+        "id": "scenario1",
+        "task": "Solve Quick Scenario (skilled engineers)",
+        "xp": 5,
+        "description": "Got it right on first try? +10 XP!",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "scenario2",
+        "task": "Apply P.O.W.E.R. Framework (data science team)",
+        "xp": 10,
+        "description": "Practice applying the framework",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "reflection",
+        "task": "Complete personal reflection",
+        "xp": 5,
+        "description": "Save your empowerment insights",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "reference-card",
+        "task": "Download P.O.W.E.R. reference card",
+        "xp": 2,
+        "description": "Keep it handy for exam prep",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "flashcards",
+        "task": "Review 15 flashcards",
+        "xp": 15,
+        "description": "Reinforce key concepts",
+        "completed": false,
+        "current": true,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/d1t4"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass the 10-question quiz (70%+)",
+        "xp": 20,
+        "description": "Prove your mastery",
+        "completed": false,
+        "current": false,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/d1t4"
+      }
+    ],
+    "timeEstimate": "Total: ~35-40 minutes",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards (15 cards)",
+      "link": "/flashcards/d1t4"
+    }
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "taskId": "hybrid-approaches",
+  "taskTitle": "Hybrid Approaches: Blending Agile & Predictive",
+  "domain": "Agile",
+
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a large infrastructure project. The hardware installation must follow a strict sequence (regulatory requirement), but the software development has changing requirements. The sponsor wants predictability for the hardware timeline and flexibility for the software. The team is confused about which approach to use.",
+    "question": "What's the BEST approach?",
+    "options": {
+      "A": "Use Agile for everything to maximize flexibility",
+      "B": "Use Predictive for everything to ensure control and consistency",
+      "C": "Use a Hybrid approach: Predictive for hardware, Agile for software",
+      "D": "Let each team member choose their own approach"
+    },
+    "correctAnswer": "C"
+  },
+
+  "ahaDebrief": {
+    "correctAnswer": "C - Use a Hybrid approach: Predictive for hardware, Agile for software",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Tailoring Based on Context",
+          "explanation": "Different work requires different approaches. Hybrid combines the best of both worlds.",
+          "pmbokSupport": "PMBOK 7: Tailor your approach to fit the project context, risk, and requirements certainty"
+        },
+        {
+          "principle": "Predictive for Stable Requirements",
+          "explanation": "Hardware installation has stable requirements and regulatory constraints—Predictive fits",
+          "pmbokSupport": "Use Predictive when requirements are well-defined, stable, and sequential"
+        },
+        {
+          "principle": "Agile for Changing Requirements",
+          "explanation": "Software has changing requirements—Agile welcomes change and delivers incrementally",
+          "pmbokSupport": "Use Agile when requirements evolve, innovation is needed, and feedback is frequent"
+        },
+        {
+          "principle": "Integration Management",
+          "explanation": "Hybrid requires careful integration between Predictive and Agile components",
+          "pmbokSupport": "Hybrid approaches require explicit integration points and dependency management"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Options A, B, and D fail to recognize that different work needs different approaches.",
+      "trapTable": [
+        {
+          "option": "A",
+          "violation": "Agile for regulated, sequential hardware work creates chaos and compliance risk",
+          "pmiValueBroken": "Ignores the need for predictability and regulatory compliance"
+        },
+        {
+          "option": "B",
+          "violation": "Predictive for evolving software requirements creates rigidity and waste",
+          "pmiValueBroken": "Prevents adaptation and delays value delivery"
+        },
+        {
+          "option": "D",
+          "violation": "Inconsistent approaches without integration create confusion and misalignment",
+          "pmiValueBroken": "Lacks governance and integration"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "✅ Approach fits the work (Predictive for stable, Agile for evolving)",
+        "✅ Integration points are defined",
+        "✅ Governance spans both approaches",
+        "✅ Team understands which approach to use when"
+      ],
+      "patternRule": "Use Hybrid when parts of the project need different approaches. Define clear boundaries, integration points, and governance."
+    }
+  },
+
+  "coreFramework": {
+    "frameworkName": "MIX SMART Framework - Hybrid Approaches",
+    "frameworkIntro": "Hybrid approaches combine Agile and Predictive. Here's when and how to blend them:",
+    "frameworkTable": {
+      "columns": ["Principle", "Key Concept", "Exam Trigger"],
+      "rows": [
+        {
+          "step": {"badge": "M", "name": "Match Approach to Work", "color": "blue"},
+          "action": "Use Predictive for stable/sequential, Agile for evolving/innovative",
+          "keyQuestions": ["Are requirements stable or changing?", "Is the work sequential?"],
+          "examKeywords": "tailor, context, requirements certainty, risk"
+        },
+        {
+          "step": {"badge": "I", "name": "Integration Points Matter", "color": "blue"},
+          "action": "Define clear handoffs between Predictive and Agile components",
+          "keyQuestions": ["Where do the approaches meet?", "How do we integrate?"],
+          "examKeywords": "integration, handoff, dependency, interface"
+        },
+        {
+          "step": {"badge": "X", "name": "eXplicit Boundaries", "color": "green"},
+          "action": "Clearly define which parts use which approach and why",
+          "keyQuestions": ["What's Agile?", "What's Predictive?", "Why?"],
+          "examKeywords": "boundaries, scope, separation, clarity"
+        },
+        {
+          "step": {"badge": "S", "name": "Synchronized Governance", "color": "green"},
+          "action": "Create unified governance that spans both approaches",
+          "keyQuestions": ["Who makes decisions?", "How do we govern both?"],
+          "examKeywords": "governance, oversight, decision-making, accountability"
+        },
+        {
+          "step": {"badge": "M", "name": "Manage Dependencies", "color": "orange"},
+          "action": "Track and manage dependencies between Predictive and Agile work",
+          "keyQuestions": ["What depends on what?", "What are the blockers?"],
+          "examKeywords": "dependency, blocker, critical path, integration"
+        },
+        {
+          "step": {"badge": "A", "name": "Adapt Based on Learning", "color": "purple"},
+          "action": "Evolve the approach based on what you learn—don't lock it in",
+          "keyQuestions": ["Is this working?", "Should we adjust the blend?"],
+          "examKeywords": "adapt, evolve, retrospective, empirical"
+        },
+        {
+          "step": {"badge": "R", "name": "Risk-Based Decisions", "color": "purple"},
+          "action": "Choose approach based on risk: high uncertainty = Agile",
+          "keyQuestions": ["What's the risk?", "What's the uncertainty?"],
+          "examKeywords": "risk, uncertainty, volatility, complexity"
+        },
+        {
+          "step": {"badge": "T", "name": "Team Alignment", "color": "gold"},
+          "action": "Ensure the team understands the approach and transitions",
+          "keyQuestions": ["Does everyone understand?", "Are we aligned?"],
+          "examKeywords": "alignment, clarity, communication, training"
+        }
+      ]
+    },
+    "additionalContent": "<div style='margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; border-radius: 12px;'><h4 style='margin: 0 0 1rem 0; color: white;'>💡 When to Use What?</h4><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>Predictive:</strong> Stable requirements, regulatory constraints, sequential work, clear scope, low uncertainty</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>Agile:</strong> Evolving requirements, innovation, frequent feedback, high uncertainty, need for rapid value</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>Hybrid:</strong> Both exist in the same project—use each where it fits best</p><p style='margin-top: 1rem; font-style: italic;'><strong>Common Hybrid Patterns:</strong> Predictive planning + Agile delivery, Agile development + Predictive deployment, Agile R&D + Predictive manufacturing</p></div>",
+    "pmbokConnection": {
+      "performanceDomain": "Planning Performance Domain",
+      "principle": "Tailoring & Hybrid Approaches",
+      "quote": "Hybrid approaches thoughtfully combine predictive and adaptive elements to best fit the project context"
+    }
+  },
+
+  "visualReferenceCard": {
+    "taskTitle": "Hybrid Approaches - MIX SMART Framework",
+    "framework": {
+      "acronym": "MIX SMART",
+      "steps": [
+        "M - Match approach to work type",
+        "I - Integration points matter",
+        "X - eXplicit boundaries (what's what)",
+        "S - Synchronized governance",
+        "M - Manage dependencies",
+        "A - Adapt based on learning",
+        "R - Risk-based decisions",
+        "T - Team alignment"
+      ]
+    },
+    "quickReference": "Hybrid approaches combine Predictive (for stable, sequential work) and Agile (for evolving, innovative work) in the same project. Requires clear boundaries and integration.",
+    "goldenRule": "Don't force one approach everywhere. Tailor to context: Predictive for known, Agile for unknown. Define integration points clearly.",
+    "examTip": "Exam tests: When to use Hybrid? How to integrate Predictive and Agile? How to manage dependencies? Remember: Hybrid requires MORE governance, not less.",
+    "pmbokPrinciple": "Tailor the approach to fit the context, combining elements from different approaches"
+  },
+
+  "secondScenario": {
+    "title": "Apply Hybrid Thinking",
+    "intro": "Now that you know the framework, let's apply it to a new situation.",
+    "scenarioStory": "Your project has a Predictive construction phase (building a data center) and an Agile software development phase. The software team wants to deploy new features every two weeks, but the construction team says the infrastructure won't be ready for 6 months. The software team is frustrated.",
+    "question": "What's the BEST Hybrid approach?",
+    "options": {
+      "A": "Force the construction team to work in Agile Sprints",
+      "B": "Make the software team wait until construction is complete",
+      "C": "Have the software team develop and test in a staging environment, then deploy when infrastructure is ready",
+      "D": "Run them as completely separate projects with no coordination"
+    },
+    "correctAnswer": "C"
+  },
+
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "A hybrid approach is a combination of predictive and adaptive approaches. It means the project life cycle has a mix of predictive and adaptive elements. For example, development could be agile and deployment could be predictive.",
+        "author": "PMI",
+        "source": "Agile Practice Guide"
+      },
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "The exam will test whether you can RECOGNIZE when Hybrid is appropriate. Key signals: part of the work is well-defined (use Predictive) and part is uncertain (use Agile). Don't force everything into one approach!",
+        "author": "PMP Instructor Insight",
+        "source": "Hybrid Project Management"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Real-World Application",
+        "insight": "Most real-world projects are Hybrid, whether we admit it or not. Procurement is often Predictive (contracts, vendors), while development is Agile (iterations, feedback). The key is making the Hybrid approach EXPLICIT and managing integration points."
+      },
+      {
+        "title": "Exam Strategy",
+        "insight": "When you see a scenario with BOTH stable and changing requirements, or BOTH sequential and innovative work, think Hybrid. Look for answers that tailor the approach to the work type and manage integration."
+      }
+    ]
+  },
+
+  "personalApplication": {
+    "title": "🔄 Connect to Your Experience",
+    "reflectionPrompt": "Reflecting on Hybrid approaches helps you internalize them for the exam and real projects.",
+    "questions": [
+      {
+        "id": "hybrid-experience",
+        "question": "Have you worked on a project that mixed Agile and Predictive (even if not formally called Hybrid)? What worked? What was challenging?",
+        "type": "textarea",
+        "placeholder": "Example: We used Predictive planning but Agile sprints. Coordination at release points was always chaotic..."
+      },
+      {
+        "id": "approach-choice",
+        "question": "In your current project, which parts would benefit from which approach?",
+        "type": "dropdown",
+        "options": [
+          "Everything should be Predictive (stable, sequential)",
+          "Everything should be Agile (evolving, innovative)",
+          "Hybrid: Some parts Predictive, some Agile",
+          "Not sure—need to assess"
+        ]
+      },
+      {
+        "id": "hybrid-challenge",
+        "question": "What's the hardest part of blending Agile and Predictive?",
+        "type": "dropdown",
+        "options": [
+          "Defining clear boundaries (what's Agile, what's Predictive)",
+          "Managing integration points and dependencies",
+          "Unified governance across both approaches",
+          "Team understanding and alignment",
+          "Getting stakeholder buy-in for Hybrid"
+        ]
+      }
+    ],
+    "valueStatement": "💎 Personal reflection earns you 5 XP and deepens your understanding for exam scenarios.",
+    "xpReward": 5
+  },
+
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Hybrid Mountain Route",
+    "intro": "Anchor Hybrid approaches with this vivid mountain climbing story. As you read, visualize each scene:",
+    "story": {
+      "title": "Two Paths, One Summit",
+      "narrative": "You're climbing a complex mountain with two distinct paths that must be coordinated to reach the summit.",
+      "scenes": [
+        {
+          "step": "M - Match Approach to Work",
+          "visual": "🗺️",
+          "description": "At the base, you study a MAP showing two routes: The PREDICTIVE Path (left) follows a fixed, marked trail with rope lines—stable and sequential. The AGILE Path (right) is unmarked terrain requiring exploration and adaptation. You MATCH climbers to the path that fits their work."
+        },
+        {
+          "step": "I - Integration Points",
+          "visual": "🔗",
+          "description": "Along the mountain, you see BRIDGES connecting the two paths at specific points. These INTEGRATION POINTS are where the Predictive and Agile work must align. You mark them clearly on the map."
+        },
+        {
+          "step": "X - eXplicit Boundaries",
+          "visual": "🚧",
+          "description": "A clear BOUNDARY line separates the two paths. Signs read: 'PREDICTIVE Zone' and 'AGILE Zone.' Everyone knows which path they're on and why. No confusion about which approach to use."
+        },
+        {
+          "step": "S - Synchronized Governance",
+          "visual": "📡",
+          "description": "At a command post halfway up, ONE leader monitors BOTH paths with radios. GOVERNANCE spans both approaches—unified decision-making, shared goals, coordinated oversight."
+        },
+        {
+          "step": "M - Manage Dependencies",
+          "visual": "⛓️",
+          "description": "You see CHAINS connecting certain sections of both paths: the Agile climbers can't cross the bridge until the Predictive team secures the anchor. DEPENDENCIES must be tracked and managed."
+        },
+        {
+          "step": "A - Adapt Based on Learning",
+          "visual": "🔄",
+          "description": "Halfway up, the team REFLECTS: 'The Agile path is working great, but the Predictive path is too rigid for this terrain.' They ADAPT, moving some work from Predictive to Agile. The approach EVOLVES."
+        },
+        {
+          "step": "R - Risk-Based Decisions",
+          "visual": "⚠️",
+          "description": "At a fork, you assess RISK: 'This section has avalanche danger (high uncertainty)—use AGILE to probe and adapt.' Another section: 'This is a fixed ladder (known, stable)—use PREDICTIVE to plan the sequence.'"
+        },
+        {
+          "step": "T - Team Alignment",
+          "visual": "👥",
+          "description": "Before starting, the entire team gathers for ALIGNMENT. Everyone understands: 'We're using Hybrid. Here's why. Here's what's Predictive, what's Agile, and how we integrate.' No confusion."
+        }
+      ],
+      "moral": "Hybrid approaches require explicit boundaries, integration points, and unified governance. Match the approach to the work, and adapt based on learning."
+    },
+    "selfTest": "Close your eyes and visualize the Hybrid Mountain with two paths. Can you recall the 8 MIX SMART principles?"
+  },
+
+  "spacedRepetition": {
+    "title": "🔁 Spaced Repetition Schedule",
+    "intro": "Research shows spaced repetition increases retention from 50% to 90%. Here's your review schedule:",
+    "schedule": [
+      {
+        "timeframe": "1 Day",
+        "icon": "📅",
+        "title": "Review 1: Tomorrow",
+        "tasks": [
+          "Recite MIX SMART principles",
+          "Re-read the Hybrid Mountain Memory Palace",
+          "Quiz yourself: When do you use Hybrid?"
+        ],
+        "duration": "5 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "📅",
+        "title": "Review 2: In 3 Days",
+        "tasks": [
+          "Review the Visual Reference Card",
+          "Write down when to use Predictive vs Agile vs Hybrid",
+          "Take 5 practice questions on Hybrid approaches"
+        ],
+        "duration": "8 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📅",
+        "title": "Review 3: In 1 Week",
+        "tasks": [
+          "Re-do the Quick Scenario Challenge",
+          "Explain Hybrid to someone else using an example",
+          "Identify Hybrid opportunities in your current work"
+        ],
+        "duration": "10 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "📅",
+        "title": "Review 4: In 2 Weeks",
+        "tasks": [
+          "Complete 10 practice questions on Hybrid approaches",
+          "Review your personal reflection",
+          "Final check: Can you apply Hybrid thinking to new scenarios?"
+        ],
+        "duration": "12 minutes",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention after 2 weeks"
+    }
+  },
+
+  "missionChecklist": {
+    "title": "🎯 Your Mission Progress",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "scenario",
+        "task": "Complete Quick Scenario Challenge",
+        "xp": 10,
+        "description": "Test your intuition before learning",
+        "completed": true
+      },
+      {
+        "id": "framework",
+        "task": "Learn MIX SMART Framework",
+        "xp": 10,
+        "description": "Master Hybrid approaches",
+        "completed": true
+      },
+      {
+        "id": "memory",
+        "task": "Visualize Memory Palace",
+        "xp": 5,
+        "description": "Anchor Hybrid with the two-path story",
+        "completed": true
+      },
+      {
+        "id": "reflection",
+        "task": "Personal Application Reflection",
+        "xp": 5,
+        "description": "Connect to your experience",
+        "current": true,
+        "ctaButton": "Complete Reflection"
+      },
+      {
+        "id": "reference",
+        "task": "Download Reference Card",
+        "xp": 2,
+        "description": "Save for quick review",
+        "ctaButton": "Download PDF"
+      },
+      {
+        "id": "flashcards",
+        "task": "Review Flashcards",
+        "xp": 15,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/hybrid-approaches"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass Topic Quiz (70%+)",
+        "xp": 25,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/hybrid-approaches"
+      }
+    ],
+    "timeEstimate": "15-20 minutes to complete this topic",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/hybrid-approaches"
+    }
+  }
+}

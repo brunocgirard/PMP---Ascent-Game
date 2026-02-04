@@ -1,0 +1,250 @@
+{
+  "taskId": "d1t9",
+  "taskTitle": "Collaborate with Stakeholders",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a software project. The customer expects the system to have advanced reporting features. Your team thinks basic reports are sufficient. The executive sponsor wants cost minimization. Key users haven't been involved in planning. During week 2, you discover major misalignment: everyone has different expectations.",
+    "question": "What should you have done FIRST to prevent this misalignment?",
+    "options": {
+      "A": "Have the team start building immediately to show progress and get feedback",
+      "B": "Evaluate engagement needs and optimize alignment between stakeholders' needs, expectations, and project objectives",
+      "C": "Let stakeholders work it out themselves—they'll reach consensus",
+      "D": "Present the final plan to everyone and ask for sign-off"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Evaluate engagement needs and optimize alignment",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Proactive Alignment Over Reactive Problem-Solving",
+          "explanation": "Collaboration starts BEFORE problems occur. Evaluate how to engage each stakeholder, then ensure their needs, expectations, and the project objectives are aligned. This prevents costly rework.",
+          "pmbokSupport": "PMBOK: 'Stakeholder engagement entails working collaboratively with stakeholders to introduce the project, elicit their requirements, manage expectations, resolve issues'"
+        },
+        {
+          "principle": "Transparency Builds Trust",
+          "explanation": "When stakeholders understand the project vision and see themselves represented in the plan, they become collaborators instead of critics. Transparency reduces misalignment and increases buy-in.",
+          "pmbokSupport": "PMBOK: 'The more transparent you are, the more trustworthy you are. Collaboration will lead to trust.'"
+        },
+        {
+          "principle": "Engagement is Interactive, Not Broadcast",
+          "explanation": "Collaboration requires conversation, not just announcements. Use brainstorming, meetings, and discussions—not just emails and reports. Interactive engagement catches misalignment early.",
+          "pmbokSupport": "PMBOK: 'Engagement is interactive. It includes conversations, phone calls, meetings, brainstorming, product demos.'"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Many PMs wait until problems surface before engaging stakeholders. Collaboration must be proactive and continuous.",
+      "trapTable": [
+        {
+          "option": "A - Build first, get feedback later",
+          "violation": "Wastes time and resources if you built the wrong thing. Late feedback is expensive.",
+          "pmiValueBroken": "Efficiency—alignment upfront saves rework"
+        },
+        {
+          "option": "C - Let stakeholders work it out",
+          "violation": "Stakeholders can't resolve conflicts without help. The PM must facilitate alignment.",
+          "pmiValueBroken": "Collaboration requires active facilitation"
+        },
+        {
+          "option": "D - Present final plan and ask for sign-off",
+          "violation": "Stakeholders feel excluded and unheard. Sign-off isn't engagement—it's compliance. Real collaboration shapes the plan together.",
+          "pmiValueBroken": "Stakeholders must be involved in planning, not just asked to approve"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Who are all the stakeholders (customers, users, sponsors, team, executives)?",
+        "What does EACH stakeholder need from this project?",
+        "What are their expectations and concerns?",
+        "Does the project objective align with their needs?",
+        "How will I engage them—meetings, one-on-ones, workshops?"
+      ],
+      "patternRule": "Proactive collaboration → Identify stakeholders → Understand their needs → Align expectations with project objectives → Build trust through transparency → Continuous engagement throughout project"
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "SYNCH Framework for Stakeholder Collaboration",
+    "frameworkIntro": "Effective stakeholder collaboration requires systematic engagement to maintain alignment and foster positive relationships:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Stakeholder Identification & Understanding", "color": "#3b82f6"},
+          "action": "Identify all stakeholders (customers, users, sponsors, team, executives, regulators). Understand their feelings, beliefs, values, power, and interests in the project.",
+          "keyQuestions": ["Who are all the stakeholders?", "What motivates each group?", "Who has power to influence?"],
+          "examKeywords": "Identify, Understand, Analyze stakeholders"
+        },
+        {
+          "step": {"badge": "Y", "name": "Yield to Their Needs—Evaluate Engagement", "color": "#8b5cf6"},
+          "action": "Evaluate how each stakeholder should be engaged. What communication methods work? How frequently? One-on-ones vs. group meetings? Address their specific needs.",
+          "keyQuestions": ["How should we engage this stakeholder?", "What's their preferred communication?", "How involved should they be?"],
+          "examKeywords": "Engagement strategy, Evaluate engagement needs, Tailor communication"
+        },
+        {
+          "step": {"badge": "N", "name": "Normalize Alignment of Needs, Expectations, and Objectives", "color": "#10b981"},
+          "action": "Ensure alignment between stakeholder needs, their expectations, and the project objective. Resolve conflicts. Make sure everyone agrees on project goals and success criteria.",
+          "keyQuestions": ["Is there alignment?", "Where are the gaps?", "How do we bridge misunderstandings?"],
+          "examKeywords": "Optimize alignment, Manage expectations, Clear vision"
+        },
+        {
+          "step": {"badge": "C", "name": "Communicate & Collaborate Interactively", "color": "#f59e0b"},
+          "action": "Use interactive communication—conversations, meetings, brainstorming, demos—not just emails. Create two-way dialogue. Elicit requirements. Make decisions together.",
+          "keyQuestions": ["Are we having real conversations?", "Is this interactive or one-way?", "Are stakeholders being heard?"],
+          "examKeywords": "Interactive communication, Engage, Collaborate, Soft skills"
+        },
+        {
+          "step": {"badge": "H", "name": "Honor Trust Through Transparency & Influence", "color": "#ec4899"},
+          "action": "Build trust through transparency. Share project progress honestly. Use influence to gain stakeholder support. Create productive working relationships. Monitor satisfaction.",
+          "keyQuestions": ["Do stakeholders trust the process?", "Are we being honest about challenges?", "Is satisfaction increasing?"],
+          "examKeywords": "Build trust, Influence, Transparency, Satisfaction"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Stakeholder Performance Domain",
+      "principle": "Principle 7: Engage Stakeholders",
+      "quote": "Projects are performed by people and for people. Stakeholder engagement proactively advances value delivery."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Collaborate with Stakeholders",
+    "framework": {
+      "acronym": "S.Y.N.C.H.",
+      "steps": ["🎯 Stakeholder Identification & Understanding", "🤝 Yield to Their Needs—Evaluate Engagement", "🎪 Normalize Alignment of Needs/Expectations/Objectives", "💬 Communicate & Collaborate Interactively", "✨ Honor Trust Through Transparency & Influence"]
+    },
+    "quickReference": "**Identify:** All stakeholders | **Understand:** Their needs, power, interests | **Engage:** Based on their needs | **Align:** Expectations with objectives | **Communicate:** Interactively, transparently",
+    "goldenRule": "Collaboration starts EARLY, is INTERACTIVE, and maintains ALIGNMENT throughout the project. Everyone agrees on the vision.",
+    "examTip": "Look for 'misalignment,' 'expectations,' 'stakeholder satisfaction,' 'engagement'—The answer is usually to involve stakeholders EARLIER in conversations, not later.",
+    "pmbokPrinciple": "Stakeholder Engagement—Engage proactively and continuously"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply S.Y.N.C.H.",
+    "intro": "Apply the framework:",
+    "scenarioStory": "Mid-project, you discover that the business sponsor expects the system to be available 24/7, but your development team planned for 99% uptime (1 hour downtime per month). The infrastructure team wasn't even consulted. The customer is frustrated that no one asked about their critical availability needs upfront.",
+    "question": "What went wrong, and how would S.Y.N.C.H. have prevented it?",
+    "options": {
+      "A": "Tell the sponsor that 99% is industry standard and they should accept it",
+      "B": "Immediately reassign people to rebuild for 24/7 availability",
+      "C": "Use S.Y.N.C.H.: Identify the sponsor as a key stakeholder (S), Evaluate their engagement need upfront (Y), Align their 24/7 expectation with project objectives during planning (N), Have interactive discussions about implications (C), Build trust by being transparent about trade-offs (H)",
+      "D": "Accept the requirement change but don't tell anyone the impact"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Project management is all about collaborating with people. Collaboration is critical to the success of any project. Failure to collaborate with stakeholders can lead to dissatisfied customers, confused team members, and missed requirements.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Stakeholder engagement entails working collaboratively with stakeholders to introduce the project, elicit their requirements, manage expectations, resolve issues, negotiate, prioritize, problem solve, and make decisions.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Defining and sharing a clear vision at the start of the project can enable good relationships and alignment throughout the project. Establishing a clear vision that key stakeholders agree on can entail challenging negotiations.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Misalignment is the #1 Project Killer",
+        "insight": "More projects fail due to misaligned expectations than any technical issue. A sponsor wants one thing, the customer wants another, the team interprets it a third way. Collaboration prevents this by ensuring everyone agrees on success BEFORE work begins."
+      },
+      {
+        "title": "Interactive > Broadcast Communication",
+        "insight": "Sending an email about the project scope is NOT collaboration. Having a meeting where stakeholders discuss, question, and agree together IS collaboration. Conversations beat broadcasts."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "stakeholder-groups",
+        "question": "Who are the key stakeholders on your project or in your organization?",
+        "type": "textarea",
+        "placeholder": "Example: Project sponsor, end users, IT department, regulatory body..."
+      },
+      {
+        "id": "alignment-check",
+        "question": "Do they all agree on the project's goals and success criteria?",
+        "type": "dropdown",
+        "options": ["Yes, fully aligned", "Mostly aligned with some gaps", "Significant misalignment", "Not sure—need to check"]
+      },
+      {
+        "id": "engagement-method",
+        "question": "How are you currently engaging stakeholders?",
+        "type": "textarea",
+        "placeholder": "Example: Monthly meetings, weekly emails, one-on-one conversations..."
+      }
+    ],
+    "valueStatement": "💡 Great project leaders invest time early to align everyone around a shared vision. This investment saves enormous time and rework later.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "⛰️ Memory Palace: The Expedition Base Camp",
+    "story": {
+      "title": "Building the Team at Base Camp",
+      "narrative": "Before climbing the mountain, the expedition leader must gather climbers at base camp and ensure everyone agrees on the route, the challenges, the resources, and success criteria. Each climber has different backgrounds, fears, and goals. The leader's job is to **SYNCH** them all...",
+      "scenes": [
+        {
+          "step": "S", "visual": "🎯 STAKEHOLDER IDENTIFICATION & UNDERSTANDING",
+          "description": "Base camp assembly. You gather experienced climbers (sponsors), new climbers (team), porters (support staff), guides (technical experts), and locals (stakeholders). You listen to each one's experience, fears, and motivations. One climber worries about altitude sickness. Another wants speed. The porter wants fair wages. You understand each person."
+        },
+        {
+          "step": "Y", "visual": "🤝 YIELD TO THEIR NEEDS—EVALUATE ENGAGEMENT",
+          "description": "You recognize each climber needs different support. The experienced climber needs autonomy. The newcomer needs mentoring. The worried climber needs medical checks. The porter needs clear compensation. You create an engagement plan that honors each person's needs."
+        },
+        {
+          "step": "N", "visual": "🎪 NORMALIZE ALIGNMENT",
+          "description": "Now comes the hard part: everyone agrees on ONE summit, ONE route, ONE success definition. The speed-focused climber and the safety-focused climber debate. You facilitate discussion: 'We'll aim for the summit by day 5, but NOT if weather is dangerous.' Everyone nods. Everyone aligns. NOW you have one team."
+        },
+        {
+          "step": "C", "visual": "💬 COMMUNICATE & COLLABORATE INTERACTIVELY",
+          "description": "Not a lecture—a campfire discussion. Each person shares concerns and ideas. The porter mentions a shortcut. The experienced climber warns of avalanche risk. The medic suggests acclimatization stops. Everyone contributes. Decisions emerge from the group, not handed down."
+        },
+        {
+          "step": "H", "visual": "✨ HONOR TRUST THROUGH TRANSPARENCY & INFLUENCE",
+          "description": "As you climb, you're honest: 'The weather is worse than expected. We may need to descend.' Climbers trust you because you've been truthful. When you need them to push harder on day 3, they do—because they trust your leadership and transparency. Trust creates willing influence."
+        }
+      ],
+      "moral": "The expedition leader doesn't climb alone. They **S**tay connected to each climber's needs, **Y**ield to diverse perspectives, **N**ormalize shared vision, **C**ollaborate through conversation, and **H**onor trust through honesty. That's how a group becomes a true team ready to summit together."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does S.Y.N.C.H. stand for?", "Why is early engagement important?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Did you align stakeholders this week?", "Review engagement strategy"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write stakeholder needs for your project", "Create engagement plan"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice scenario questions", "Compare with other collaboration tasks"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d1t9"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d1t9"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d1t9"}
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "taskId": "d2t7",
+  "taskTitle": "Plan and Manage Schedule",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your 10-week project planned 40 days of critical path activities (networking setup, database design, integration testing). You're at week 4. You've completed 2 weeks of networking (done on time) but database design is 4 days behind. Integration testing isn't scheduled until week 8. How do you prioritize?",
+    "question": "What should you do IMMEDIATELY?",
+    "options": {
+      "A": "Extend the entire project schedule by 4 days to account for the delay",
+      "B": "Analyze if database delay impacts the critical path—if yes, accelerate it or compress the schedule; if no, monitor but don't panic",
+      "C": "Delay integration testing to create buffer time",
+      "D": "Add more resources to database design to catch up the 4 days"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Critical path analysis is your first move",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Critical Path Determines Project Duration",
+          "explanation": "Only delays on the critical path extend the project end date. A 4-day delay off the critical path might be absorbed by float (slack time).",
+          "pmbokSupport": "Critical path analysis identifies which activities directly impact project completion date"
+        },
+        {
+          "principle": "Float Absorbs Non-Critical Delays",
+          "explanation": "If database design has 5 days of float and you're 4 days behind, the delay is recoverable. If it's on critical path with zero float, immediate action is needed.",
+          "pmbokSupport": "Schedule float/slack buffers non-critical activities from impacting the finish date"
+        },
+        {
+          "principle": "Context Determines Action",
+          "explanation": "Before adding resources (costs money), extending schedule (risks deadline), or cutting scope, understand if the delay matters for project completion.",
+          "pmbokSupport": "Data-driven decision making prevents wasted effort on non-critical activities"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Not all delays are equal. Critical path delays end dates. Non-critical delays might not.",
+      "trapTable": [
+        {
+          "option": "A - Extend entire schedule by 4 days",
+          "violation": "Assumes all activities are equally critical—wastes buffer for non-critical items",
+          "pmiValueBroken": "Reactive instead of analytical approach"
+        },
+        {
+          "option": "C - Delay integration testing",
+          "violation": "Creates cascading delays without understanding current float",
+          "pmiValueBroken": "Doesn't solve the root problem"
+        },
+        {
+          "option": "D - Blindly add resources",
+          "violation": "Costs money and might not help if the task has already started",
+          "pmiValueBroken": "Resource allocation without understanding bottleneck"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is the delayed activity on the critical path?",
+        "How much float does it have?",
+        "If on critical path, can we accelerate or compress?",
+        "What's the cost-benefit of recovery options?"
+      ],
+      "patternRule": "Critical path delay → immediate action required. Non-critical delay with float → monitor. Always analyze before acting."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "S.C.H.E.D.U.L.E. Framework for Schedule Management",
+    "frameworkIntro": "Schedule management prevents delays and keeps projects on track:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Sequence Activities", "color": "#3b82f6"},
+          "action": "Define dependencies: which tasks must start before others? Create the logical sequence.",
+          "keyQuestions": ["What are the dependencies?", "What's the logical flow?"],
+          "examKeywords": "Activity sequencing, Dependencies, Logical relationships"
+        },
+        {
+          "step": {"badge": "C", "name": "Calculate Duration Estimates", "color": "#8b5cf6"},
+          "action": "Use expert judgment, historical data, three-point estimation. Estimate activity duration realistically.",
+          "keyQuestions": ["How long will each task take?", "What's the confidence level?"],
+          "examKeywords": "Duration estimation, Expert judgment, PERT"
+        },
+        {
+          "step": {"badge": "H", "name": "Highlight Critical Path", "color": "#10b981"},
+          "action": "Run CPM analysis. Identify activities with zero float. These control project end date.",
+          "keyQuestions": ["Which activities have zero float?", "What's the critical path?"],
+          "examKeywords": "Critical path, Float, Slack time"
+        },
+        {
+          "step": {"badge": "E", "name": "Estimate Float/Slack", "color": "#f59e0b"},
+          "action": "Calculate available float for non-critical activities. Understand your schedule buffer.",
+          "keyQuestions": ["How much delay can non-critical tasks absorb?", "Where are the risks?"],
+          "examKeywords": "Float, Slack, Schedule flexibility"
+        },
+        {
+          "step": {"badge": "D", "name": "Develop Recovery Options", "color": "#ec4899"},
+          "action": "When delays occur, know your options: fast-track, crash, scope reduction, or extend.",
+          "keyQuestions": ["Can we compress the schedule?", "What's the cost?"],
+          "examKeywords": "Fast-tracking, Crashing, Scope adjustment"
+        },
+        {
+          "step": {"badge": "U", "name": "Update & Rebaseline", "color": "#06b6d4"},
+          "action": "When major changes occur, update the schedule and rebaseline with stakeholder approval.",
+          "keyQuestions": ["Should we change the baseline?", "Who approves?"],
+          "examKeywords": "Schedule baseline, Change control, Approval"
+        },
+        {
+          "step": {"badge": "L", "name": "Level Resources", "color": "#8b5cf6"},
+          "action": "Balance resource allocation. Don't overload one person/team while others are idle.",
+          "keyQuestions": ["Are resources evenly distributed?", "Are there bottlenecks?"],
+          "examKeywords": "Resource leveling, Resource smoothing, Allocation"
+        },
+        {
+          "step": {"badge": "E", "name": "Execute & Monitor Variances", "color": "#10b981"},
+          "action": "Track progress against schedule. Calculate SPI (Schedule Performance Index). Act on variances.",
+          "keyQuestions": ["Are we on schedule?", "What's the SPI trend?"],
+          "examKeywords": "Schedule variance, SPI, Progress tracking"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Delivery Performance Domain",
+      "principle": "Principle 10: Focus on Objectives",
+      "quote": "Schedule management ensures all work is performed in the correct sequence and timeline"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Plan and Manage Schedule",
+    "framework": {
+      "acronym": "S.C.H.E.D.U.L.E.",
+      "steps": ["🔗 Sequence activities", "⏱️ Calculate durations", "🎯 Highlight critical path", "📊 Estimate float", "⚡ Develop recovery options", "🔄 Update & rebaseline", "⚖️ Level resources", "📈 Execute & monitor"]
+    },
+    "quickReference": "Critical Path = longest path through project | Float = schedule flexibility | SPI < 1.0 = behind schedule | Fast-track = parallel work | Crash = add resources",
+    "goldenRule": "Identify critical path first. Manage critical activities obsessively. Monitor non-critical activities but don't micromanage.",
+    "examTip": "Look for 'schedule,' 'delay,' 'critical path,' 'float' → Analyze impact on critical path before deciding on recovery actions.",
+    "pmbokPrinciple": "Focus on Objectives"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply S.C.H.E.D.U.L.E.",
+    "intro": "Test your critical path thinking:",
+    "scenarioStory": "Your project has: Task A (5 days, critical) → Task B (3 days, critical) → Task D (2 days, critical). Task C (4 days, off critical path, 3 days of float) runs in parallel with Task B. Task C is now 2 days behind. What's the impact?",
+    "question": "Should you escalate the Task C delay?",
+    "options": {
+      "A": "Yes, it's already 2 days behind and critical to the project",
+      "B": "No, Task C has 1 day of float remaining, so it won't impact the finish date yet",
+      "C": "Maybe, depends on the cost of the tasks",
+      "D": "Yes, any delay anywhere should be escalated"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "The critical path is your boss. Everything on it controls your end date. Everything off it has flexibility. Know the difference.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Schedule performance index (SPI) measures how efficiently the project is progressing against the schedule baseline. SPI < 1.0 indicates behind schedule.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Critical Path Paranoia Pays Off",
+        "insight": "Monitor critical path activities daily. A delay on the critical path compounds—every day it's behind moves the finish date. Non-critical items? Weekly reviews are fine."
+      },
+      {
+        "title": "Float is Your Schedule Insurance",
+        "insight": "Non-critical activities have float. Protect this buffer. Don't let scope creep consume the float—that's how you end up explaining delays to executives."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "schedule-pressure",
+        "question": "Have you felt schedule pressure? What caused the delay?",
+        "type": "textarea",
+        "placeholder": "Example: Underestimated complexity, resource unavailability..."
+      },
+      {
+        "id": "critical-path",
+        "question": "Did you know which activities were critical to your deadline?",
+        "type": "dropdown",
+        "options": ["Yes, I tracked critical path", "No, I treated all tasks equally", "Partially—only discovered late", "Not sure"]
+      }
+    ],
+    "valueStatement": "💡 Identify your critical path. Protect it. Everything else has breathing room.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Climber's Route Timeline",
+    "story": {
+      "title": "Summit Timeline and Critical Path",
+      "narrative": "Planning a mountain expedition requires understanding which activities control arrival at the summit...",
+      "scenes": [
+        {
+          "step": "S",
+          "visual": "🔗 SEQUENCE the climbing stages",
+          "description": "Base Camp → Camp 1 → Camp 2 → Camp 3 → Summit. Each camp requires the previous one. Logical sequence."
+        },
+        {
+          "step": "C",
+          "visual": "⏱️ CALCULATE duration for each leg",
+          "description": "Base to Camp 1: 2 days. Camp 1 to 2: 3 days. Camp 2 to 3: 4 days. Summit push: 1 day. Total: 10 days on critical path."
+        },
+        {
+          "step": "H",
+          "visual": "🎯 HIGHLIGHT the critical path",
+          "description": "The direct route through all camps IS the critical path (10 days). Side activities like acclimatization hikes at Camp 2 have float—don't delay main ascent."
+        },
+        {
+          "step": "E",
+          "visual": "📊 ESTIMATE your float/flexibility",
+          "description": "Acclimatization at Camp 2: 2-day activity, but 3 days of float. You can do it in 1 day or skip if schedule slips. Critical activities: zero float."
+        },
+        {
+          "step": "D",
+          "visual": "⚡ DEVELOP recovery options",
+          "description": "If Camp 1-to-2 leg takes 4 days (1 day late), can you: Fast-track (climb longer days)? Crash (hire sherpas for loads)? Skip acclimatization?"
+        },
+        {
+          "step": "U",
+          "visual": "🔄 UPDATE when baseline changes",
+          "description": "Bad weather adds 1 day to Camp 2-to-3 leg. Rebaseline: now 11 days. Sponsor approves the new finish date."
+        },
+        {
+          "step": "L",
+          "visual": "⚖️ LEVEL resources between climbers",
+          "description": "Don't overload lead climber while others rest. Rotate lead position. Even pacing prevents exhaustion delays."
+        },
+        {
+          "step": "E",
+          "visual": "📈 EXECUTE & monitor SPI daily",
+          "description": "Each night: Record altitude vs. planned altitude. SPI = altitude gained / altitude planned. If SPI < 1.0, summit date slips."
+        }
+      ],
+      "moral": "Schedule is like a mountain route: **S**equence stages, **C**alculate each leg, **H**ighlight critical path (direct route), **E**stimate flexibility (float), **D**evelop backup plans, **U**pdate baseline when needed, **L**evel climber effort, **E**xecute relentlessly."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What's the critical path?", "When does float matter?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Draw a simple network diagram", "Calculate float"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Explain S.C.H.E.D.U.L.E.", "List recovery options"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice exam questions", "Compare with budget management"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t7"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t7"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t7"}
+  }
+}

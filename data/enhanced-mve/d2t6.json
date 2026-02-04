@@ -1,0 +1,252 @@
+{
+  "taskId": "d2t6",
+  "taskTitle": "Plan and Manage Budget and Resources",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your project has a $500K budget for 12 months. Three months in, you've spent $150K (30% of budget) but completed only 20% of the project scope. Your sponsor is asking for a forecast. What should you concern you MOST?",
+    "question": "What metric should trigger immediate escalation?",
+    "options": {
+      "A": "You're $50K over the monthly spending plan",
+      "B": "Earned Value ($100K) is less than Actual Cost ($150K)—the project is losing money",
+      "C": "You have 9 months left and 80% of work remaining—the trend is unsustainable",
+      "D": "The monthly burn rate is higher than originally planned"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Earned Value ($100K) vs. Actual Cost ($150K)",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Earned Value Management (EVM)",
+          "explanation": "Earned Value ($100K) represents work completed. Actual Cost ($150K) is what you spent. When AC > EV, you're overspending relative to progress. This is the core warning sign.",
+          "pmbokSupport": "EVM measures schedule and budget performance simultaneously"
+        },
+        {
+          "principle": "Cost Performance Index (CPI)",
+          "explanation": "CPI = EV/AC = $100K/$150K = 0.67. A CPI below 1.0 means you're getting $0.67 value per dollar spent—unsustainable.",
+          "pmbokSupport": "CPI < 1.0 indicates cost overrun; requires corrective action"
+        },
+        {
+          "principle": "Forecasting Requires Early Detection",
+          "explanation": "At 3 months, this efficiency issue is detectable early. Waiting until month 6 or 9 makes recovery harder. Early warning = better options.",
+          "pmbokSupport": "Monitor performance regularly to enable proactive management"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Monthly variance is a symptom, not the root cause. EVM reveals the actual problem.",
+      "trapTable": [
+        {
+          "option": "A - $50K over monthly plan",
+          "violation": "Confuses budget variance with earned value—doesn't show efficiency",
+          "pmiValueBroken": "Not using EVM to measure true performance"
+        },
+        {
+          "option": "C - 9 months left, 80% work remaining",
+          "violation": "This is true BUT it's a symptom of the efficiency loss shown in B",
+          "pmiValueBroken": "Identifying consequence, not the core metric"
+        },
+        {
+          "option": "D - Burn rate higher than planned",
+          "violation": "True but doesn't compare spending to work accomplished",
+          "pmiValueBroken": "Measuring spend, not value"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is Earned Value (EV) less than Actual Cost (AC)?",
+        "What's the Cost Performance Index (CPI)?",
+        "Can the project recover with remaining budget and time?",
+        "What corrective actions are available?"
+      ],
+      "patternRule": "When AC > EV (CPI < 1.0), immediately escalate and implement corrective action. Project is inefficient."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "B.U.D.G.E.T. Framework for Budget Management",
+    "frameworkIntro": "Managing budget and resources requires earned value thinking:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "B", "name": "Baseline the Budget", "color": "#3b82f6"},
+          "action": "Establish a cost baseline: approved budget for each work package, over time (with start/end dates).",
+          "keyQuestions": ["What's the total project cost estimate?", "How is it distributed over time?"],
+          "examKeywords": "Cost baseline, Approved budget, Budget allocation"
+        },
+        {
+          "step": {"badge": "U", "name": "Understand Earned Value (EV)", "color": "#8b5cf6"},
+          "action": "EV = % complete × baseline cost. It measures work accomplished, not money spent.",
+          "keyQuestions": ["What % of work is actually done?", "What's the budgeted cost of work performed?"],
+          "examKeywords": "Earned value, BCWP, Work performed"
+        },
+        {
+          "step": {"badge": "D", "name": "Detect Variance Early", "color": "#10b981"},
+          "action": "Calculate Cost Variance (CV = EV - AC) and CPI (EV/AC). Flag immediately if CPI < 1.0.",
+          "keyQuestions": ["Is AC > EV?", "Is CPI trending below 1.0?"],
+          "examKeywords": "Cost variance, CPI, Performance indicator"
+        },
+        {
+          "step": {"badge": "G", "name": "Get Forecasts & Options", "color": "#f59e0b"},
+          "action": "Use CPI to forecast final cost (EAC = BAC/CPI). Present options to sponsor.",
+          "keyQuestions": ["Will we exceed budget at current pace?", "What can we do?"],
+          "examKeywords": "Estimate at completion, Forecast, Options analysis"
+        },
+        {
+          "step": {"badge": "E", "name": "Execute Corrective Action", "color": "#ec4899"},
+          "action": "Implement recovery plan: reduce scope, extend timeline, secure additional budget, increase efficiency.",
+          "keyQuestions": ["Which trade-offs are acceptable?", "Can we improve efficiency?"],
+          "examKeywords": "Corrective action, Scope adjustment, Resource reallocation"
+        },
+        {
+          "step": {"badge": "T", "name": "Track & Communicate", "color": "#06b6d4"},
+          "action": "Report EV metrics in regular status. Escalate when CPI drops or EAC exceeds budget.",
+          "keyQuestions": ["Who needs to know?", "What's the trend?"],
+          "examKeywords": "Status reporting, Trend analysis, Stakeholder communication"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Business Environment Performance Domain",
+      "principle": "Principle 8: Optimize Cost and Value",
+      "quote": "Use earned value management to measure schedule and budget performance simultaneously"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Plan and Manage Budget",
+    "framework": {
+      "acronym": "B.U.D.G.E.T.",
+      "steps": ["💰 Baseline the budget", "📊 Understand earned value", "🚨 Detect variance early", "🔮 Get forecasts", "✋ Execute corrective action", "📈 Track & communicate"]
+    },
+    "quickReference": "EV = Work Completed × Baseline Cost | AC = Actual money spent | CV = EV - AC | CPI = EV/AC | CPI < 1.0 = Red flag",
+    "goldenRule": "Spend and progress should align. If you've spent $150K but only completed $100K of work, you have a problem.",
+    "examTip": "Look for 'cost,' 'budget,' 'forecast,' 'earned value' → Calculate CPI first. CPI < 1.0 means overspending relative to progress.",
+    "pmbokPrinciple": "Optimize Cost and Value"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply B.U.D.G.E.T.",
+    "intro": "Test your understanding:",
+    "scenarioStory": "Your project has a cost baseline of $1M over 12 months. At month 6: Planned Value (PV) = $500K, Earned Value (EV) = $450K, Actual Cost (AC) = $500K. The sponsor asks if the project is over budget.",
+    "question": "What's your answer?",
+    "options": {
+      "A": "Yes, we're over budget—AC equals PV, meaning we've spent our planned amount",
+      "B": "No, we're on budget—AC equals the amount we should have spent",
+      "C": "We're behind schedule (EV < PV) but on budget (AC = PV), but this is unsustainable if efficiency doesn't improve",
+      "D": "No, because EV is only slightly less than AC—we're close enough"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Earned Value is magic. It tells you three things at once: Are you on schedule? Are you on budget? Can you predict the final cost? All from one metric.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The Cost Performance Index (CPI) is the most critical efficiency metric. CPI < 1.0 demands immediate action.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "EV Catches Early Problems",
+        "insight": "Monthly budget variance can hide efficiency loss. EV compares work done to money spent, revealing inefficiencies weeks before traditional budgeting."
+      },
+      {
+        "title": "Forecast Early, Act Faster",
+        "insight": "EAC (Estimate at Completion) = BAC/CPI. Calculate it monthly. If EAC exceeds sponsor's budget, you have options to explore NOW."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "budget-experience",
+        "question": "Have you managed a budget? What surprised you?",
+        "type": "textarea",
+        "placeholder": "Example: Tasks took longer than estimated..."
+      },
+      {
+        "id": "ev-application",
+        "question": "How could EV have helped you catch problems earlier?",
+        "type": "dropdown",
+        "options": ["I didn't track work vs. cost", "I waited too long to escalate", "I didn't have a baseline", "Not sure"]
+      }
+    ],
+    "valueStatement": "💡 Numbers are your early warning system. Use EV to catch problems before they become crises.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Climber's Supply Budget",
+    "story": {
+      "title": "Managing the Mountain Expedition Budget",
+      "narrative": "You're planning a high-altitude expedition and must manage supplies carefully...",
+      "scenes": [
+        {
+          "step": "B",
+          "visual": "💰 BASELINE supplies before the climb",
+          "description": "You plan: 200 meals, 500 meters of rope, 100 oxygen bottles for the 12-week expedition. This is your budget baseline."
+        },
+        {
+          "step": "U",
+          "visual": "📊 UNDERSTAND what work is actually done",
+          "description": "Three weeks in, you've reached Base Camp 2 (30% of the climb). Your baseline said you'd have 60 meals left. You've used 65 meals. EV says: '30% up the mountain' but AC shows you spent more supplies than expected."
+        },
+        {
+          "step": "D",
+          "visual": "🚨 DETECT the efficiency loss",
+          "description": "Cost Variance: You spent more supplies (AC) than your progress deserved (EV). CPI = 0.92. You're getting only 92% value per supply item. Red flag."
+        },
+        {
+          "step": "G",
+          "visual": "🔮 GET a forecast",
+          "description": "At this rate (CPI = 0.92), you'll need 217 meals total, not 200. You won't have enough. EAC = 200/0.92 = 217 meals."
+        },
+        {
+          "step": "E",
+          "visual": "✋ EXECUTE corrective action",
+          "description": "Options: Reduce climb (scope cut), turn back early (schedule), get resupply (more budget), or increase efficiency (rest climbers, lighter loads). Act now."
+        },
+        {
+          "step": "T",
+          "visual": "📈 TRACK daily and report weekly",
+          "description": "Each day: Record supplies used vs. altitude gained. Each week: Show sponsor updated EAC. Trends matter more than single days."
+        }
+      ],
+      "moral": "Budget management is like supply planning: **B**aseline your resources, **U**nderstand work completed, **D**etect when spending outruns progress, **G**et forecasts early, **E**xecute recovery, **T**rack relentlessly."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does EV stand for?", "When is CPI a problem?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Calculate CPI from a scenario", "Review EAC formula"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Explain B.U.D.G.E.T.", "List corrective action options"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice exam questions", "Connect to quality management"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t6"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t6"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t6"}
+  }
+}

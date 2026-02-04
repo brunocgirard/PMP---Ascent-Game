@@ -1,0 +1,233 @@
+{
+  "taskId": "d2t12",
+  "taskTitle": "Plan and Manage Procurement",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "You can't start climbing without the right gear—plan ahead!",
+    "scenarioStory": "Your expedition needs climbing equipment, food supplies, and porter services. Your sponsor wants to know how you'll acquire these. You're considering: (1) Buy everything in advance from your preferred vendor, (2) Wait until you're at basecamp and buy locally, (3) Issue a competitive Request for Quote (RFQ) to multiple vendors, or (4) Use emergency procurement rules for critical items.",
+    "question": "What's your procurement strategy?",
+    "options": {
+      "A": "Buy from preferred vendor immediately—saves planning time",
+      "B": "Issue RFQ to get competitive bids, evaluate vendors, select best value for money",
+      "C": "Wait and buy locally to support local economy",
+      "D": "Emergency procurement for everything—faster and easier"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Competitive Bidding via RFQ",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Procurement Planning & Competition",
+          "explanation": "Good project management requires competitive procurement. RFQ ensures best value, quality, and risk management. Avoids vendor lock-in and favoritism.",
+          "pmbokSupport": "Procurement planning identifies make-or-buy decisions and contract types"
+        },
+        {
+          "principle": "Procurement Document Management",
+          "explanation": "RFQ, RFP, or RFB documents must be clear, complete, and include evaluation criteria. This protects both buyer and seller.",
+          "pmbokSupport": "Well-drafted procurement documents prevent disputes and misunderstandings"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Shortcutting procurement saves time upfront but creates cost, quality, and risk problems later.",
+      "trapTable": [
+        {
+          "option": "A - Preferred vendor",
+          "violation": "No competition means no price negotiation and possible inflated costs",
+          "pmiValueBroken": "Fiduciary responsibility to get value for money"
+        },
+        {
+          "option": "D - Emergency procurement",
+          "violation": "Emergency rules only apply to actual emergencies; misusing them wastes money",
+          "pmiValueBroken": "Waste of resources, lack of due diligence"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Do I have clear procurement requirements?",
+        "Should I make or buy this?",
+        "What contract type fits (fixed-price, time-material, etc.)?",
+        "How will I evaluate sellers fairly?",
+        "Is this a competitive or emergency procurement situation?"
+      ],
+      "patternRule": "Plan procurement → Issue RFQ/RFP → Evaluate sellers based on criteria → Award contract → Manage performance."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "S.U.P.P.L.Y. Framework for Procurement",
+    "frameworkIntro": "Successful procurement requires systematic planning and management:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Scope & Segregate", "color": "#3b82f6"},
+          "action": "Identify what to procure. Segregate procurement needs by urgency, complexity, and type. Make or buy decisions.",
+          "keyQuestions": ["What do we need to procure?", "Make or buy?", "How urgent?"],
+          "examKeywords": "Procurement planning, Make-or-buy, Identify needs"
+        },
+        {
+          "step": {"badge": "U", "name": "Understand & Specify", "color": "#8b5cf6"},
+          "action": "Write clear specifications and requirements. Define evaluation criteria. Choose contract type (fixed-price, cost-plus, time-material, etc.).",
+          "keyQuestions": ["Are requirements clear?", "What contract type?", "What's success?"],
+          "examKeywords": "Specifications, Contract type, Evaluation criteria"
+        },
+        {
+          "step": {"badge": "P", "name": "Prepare RFQ/RFP/RFB", "color": "#10b981"},
+          "action": "Develop procurement documents: Request for Quote (price), Request for Proposal (quality+price), Request for Bid (competitive). Issue to multiple vendors.",
+          "keyQuestions": ["Which document type?", "Who receives it?", "Clear evaluation process?"],
+          "examKeywords": "RFQ, RFP, RFB, Procurement documents"
+        },
+        {
+          "step": {"badge": "P", "name": "Propose & Present", "color": "#f59e0b"},
+          "action": "Vendors submit responses. Review proposals/quotes. Hold vendor conferences if needed. Clarify responses.",
+          "keyQuestions": ["Are responses complete?", "Do we understand each?", "Any clarifications needed?"],
+          "examKeywords": "Vendor proposals, Source selection, Clarification"
+        },
+        {
+          "step": {"badge": "L", "name": "Leverage Criteria & Select", "color": "#ec4899"},
+          "action": "Evaluate vendors against pre-defined criteria: price, quality, delivery, experience, references. Select best value. Negotiate final terms.",
+          "keyQuestions": ["Which vendor best meets criteria?", "Is price fair?", "Can we negotiate?"],
+          "examKeywords": "Source selection, Vendor selection, Evaluation criteria"
+        },
+        {
+          "step": {"badge": "Y", "name": "Yield Contract & Manage", "color": "#6366f1"},
+          "action": "Award contract. Manage seller performance. Monitor deliverables, schedule, quality. Process invoices. Manage changes and disputes.",
+          "keyQuestions": ["Is seller performing?", "Are deliverables on-time/quality?", "Any issues to resolve?"],
+          "examKeywords": "Contract management, Seller performance, Quality assurance"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Process Performance Domain",
+      "principle": "Principle 7: Plan and Manage Work",
+      "quote": "Procurement must be systematically planned, sourced, and managed to ensure value, quality, and risk mitigation"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Plan & Manage Procurement",
+    "framework": {
+      "acronym": "S.U.P.P.L.Y.",
+      "steps": ["🎯 Scope & segregate needs", "📝 Understand & specify", "📋 Prepare RFQ/RFP", "💼 Propose & present", "⚖️ Leverage criteria & select", "🤝 Yield contract & manage"]
+    },
+    "quickReference": "**Planning:** Make-or-buy, specifications, contract type | **Sourcing:** RFQ/RFP, vendor evaluation | **Management:** Monitor performance, manage changes",
+    "goldenRule": "Competitive procurement (multiple vendors) → Best value. Clear specifications → Fewer disputes. Active management → Successful delivery.",
+    "examTip": "Look for 'procurement,' 'vendor,' 'RFQ' → First action is planning and needs assessment, then competitive sourcing, then management.",
+    "pmbokPrinciple": "Procurement Management - Plan, source, and manage seller performance"
+  },
+  "secondScenario": {
+    "title": "Apply S.U.P.P.L.Y.",
+    "intro": "Test your procurement skills:",
+    "scenarioStory": "Your project needs database licenses (critical path item, 8-week delivery), custom software development (high risk, needs experienced team), and office furniture (commodity, low priority). Your sponsor asks you to 'just buy it all as fast as possible.'",
+    "question": "How do you approach procurement for these three items?",
+    "options": {
+      "A": "Use one vendor for all three—consolidate procurement",
+      "B": "Segregate by type: licenses (fixed-price), software (cost-plus with performance milestones), furniture (fixed-price commodity). Different strategies for each",
+      "C": "Emergency procurement for all—speed is most important",
+      "D": "Buy licenses immediately; defer other items until you have more clarity"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Procurement isn't about buying the cheapest—it's about getting the best value for your project. That means evaluating price, quality, schedule, and risk together.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The project manager ensures that procurement is planned strategically and sellers are managed to deliver project requirements.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Competitive Procurement Saves Money",
+        "insight": "On a $1M project budget, competitive RFQs with multiple vendors can save 10-20% through negotiation and competition. That's $100K-$200K of savings just by doing procurement right."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Reflect on Your Procurement",
+    "questions": [
+      {
+        "id": "procurement-items",
+        "question": "What are you procuring for your project?",
+        "type": "textarea",
+        "placeholder": "Example: Cloud services, development resources, hardware..."
+      },
+      {
+        "id": "vendor-approach",
+        "question": "Are you using competitive procurement (multiple vendors) or single-source?",
+        "type": "dropdown",
+        "options": ["Competitive RFQ", "Single vendor", "Not yet decided", "Mixed approach"]
+      }
+    ],
+    "valueStatement": "Good procurement planning means better value, lower risk, and fewer surprises.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Mountain Logistics Camp",
+    "story": {
+      "title": "Outfitting the Expedition Strategically",
+      "narrative": "As procurement officer, you must outfit the entire expedition with the right gear at the best price...",
+      "scenes": [
+        {
+          "step": "S", "visual": "🎯 SCOPE expedition needs",
+          "description": "List all items: climbing equipment (critical), food (critical), porters (critical), guides (nice-to-have). Make-or-buy: Buy from suppliers, hire local porters, use guides."
+        },
+        {
+          "step": "U", "visual": "📝 UNDERSTAND specifications",
+          "description": "Write detailed specs: 'Ropes must be 10mm diameter, rated for 5000kg, certified by ISO.' 'Climbers need experience on 6000m+ peaks.' 'Food must include high-altitude nutrition.'"
+        },
+        {
+          "step": "P", "visual": "📋 PREPARE RFQ/RFP",
+          "description": "Issue RFQ to 3 climbing equipment vendors. RFP to 2 porter companies. RFQ to 2 food suppliers. Include evaluation criteria: price, quality, delivery, experience."
+        },
+        {
+          "step": "P", "visual": "💼 PROPOSE & compare",
+          "description": "Vendor A quotes $50K for gear, 4-week delivery. Vendor B quotes $48K, 6-week delivery. Porter company offers 20 porters or 15 porters. Compare all proposals side-by-side."
+        },
+        {
+          "step": "L", "visual": "⚖️ LEVERAGE criteria",
+          "description": "Vendor A is faster (critical for schedule). Evaluate: price difference ($2K) vs schedule risk (2 weeks). Select vendor based on best value, not just price."
+        },
+        {
+          "step": "Y", "visual": "🤝 YIELD & manage",
+          "description": "Award contract. Track deliveries. Inspect equipment before payment. Manage porter team during expedition. Handle any performance issues immediately."
+        }
+      ],
+      "moral": "Procurement officer **S**copes needs, **U**nderstands specs, **P**repares RFQ/RFP, **P**roposes compared, **L**everages criteria, **Y**ields contract & manages."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does S.U.P.P.L.Y. stand for?", "RFQ vs RFP?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Identify procurement items", "Plan sourcing strategy"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Draft RFQ template", "Create evaluation criteria"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice procurement scenarios", "Compare RFQ vs RFP"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t12"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t12"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t12"}
+  }
+}

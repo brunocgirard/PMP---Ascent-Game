@@ -1,0 +1,418 @@
+{
+  "taskId": "domains",
+  "taskTitle": "8 Performance Domains",
+  "domain": "Foundation",
+
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a healthcare software project. Your team (Domain 2) is skilled but lacks clarity on their roles. Stakeholders (Domain 1) have conflicting requirements. The schedule (Domain 5) is aggressive. Customer feedback (Domain 7) shows the solution isn't meeting their needs. Risk of regulatory non-compliance (Domain 8) is high.",
+    "question": "Which domain should you address FIRST to create the biggest positive impact?",
+    "options": {
+      "A": "Domain 5 (Planning) - Create a detailed schedule to show progress",
+      "B": "Domain 1 (Stakeholders) - Align stakeholders on requirements and priorities",
+      "C": "Domain 2 (Team) - Conduct team building exercises",
+      "D": "Domain 7 (Measurement) - Set up more metrics to track performance"
+    },
+    "correctAnswer": "B"
+  },
+
+  "ahaDebrief": {
+    "correctAnswer": "B - Domain 1 (Stakeholders) - Align stakeholders on requirements and priorities",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Stakeholders Domain is Foundational",
+          "explanation": "Without stakeholder alignment, all other domains suffer. Conflicting requirements create team confusion, planning chaos, and measurement against wrong targets.",
+          "pmbokSupport": "The Stakeholders domain addresses activities and functions associated with stakeholders. It's the foundation that enables all other domains."
+        },
+        {
+          "principle": "Domains are Interconnected",
+          "explanation": "Addressing stakeholders cascades positive effects to Team (clear direction), Planning (agreed scope), and Measurement (right metrics).",
+          "pmbokSupport": "Performance domains are interactive, interrelated, and interdependent. Work in one domain affects others."
+        },
+        {
+          "principle": "Start with 'Why' Before 'How'",
+          "explanation": "Before planning how to deliver, you must align on what to deliver and why it matters.",
+          "pmbokSupport": "Understanding stakeholder needs and expectations is prerequisite to effective planning and execution."
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "The other options address symptoms, not root causes.",
+      "trapTable": [
+        {
+          "option": "A",
+          "violation": "Planning without clear requirements creates detailed plans for the wrong thing",
+          "pmiValueBroken": "Premature planning - 'Ready, fire, aim' approach"
+        },
+        {
+          "option": "C",
+          "violation": "Team building won't help if the team doesn't know what they're building",
+          "pmiValueBroken": "Team needs direction before motivation helps"
+        },
+        {
+          "option": "D",
+          "violation": "Measuring the wrong things precisely doesn't create value",
+          "pmiValueBroken": "Measurement without aligned objectives is wasteful"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "✅ Stakeholders aligned on value and priorities",
+        "✅ Team has clear direction",
+        "✅ Planning based on agreed requirements",
+        "✅ Measuring what actually matters to stakeholders"
+      ],
+      "patternRule": "When multiple domains have issues, address Stakeholders and Team first - they enable effective work in all other domains."
+    }
+  },
+
+  "coreFramework": {
+    "frameworkName": "СТУПЕНИ (STUPENI) - The 8 Performance Domains",
+    "frameworkIntro": "The 8 Performance Domains represent the critical areas of focus for project delivery. Think of them as 8 steps (STUPENI means 'steps' in Russian) climbing the mountain:",
+    "frameworkTable": {
+      "columns": ["Letter", "Domain", "Key Focus", "Exam Trigger"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Stakeholders", "color": "blue"},
+          "action": "Build relationships, manage expectations, engage throughout",
+          "keyQuestions": ["Who are stakeholders?", "Are they engaged?", "Do we understand their needs?"],
+          "examKeywords": "engagement, communication, requirements, buy-in, alignment"
+        },
+        {
+          "step": {"badge": "T", "name": "Team", "color": "green"},
+          "action": "Establish culture, develop people, create high-performing teams",
+          "keyQuestions": ["Is the team effective?", "Do they have what they need?", "Are roles clear?"],
+          "examKeywords": "team development, culture, skills, empowerment, collaboration"
+        },
+        {
+          "step": {"badge": "U", "name": "dU (Development Approach)", "color": "purple"},
+          "action": "Select development approach and lifecycle (predictive, adaptive, hybrid)",
+          "keyQuestions": ["What approach fits?", "Waterfall or agile?", "How adaptive should we be?"],
+          "examKeywords": "lifecycle, methodology, agile, waterfall, hybrid, cadence"
+        },
+        {
+          "step": {"badge": "P", "name": "Planning", "color": "orange"},
+          "action": "Organize and coordinate to deliver scope, maintain alignment",
+          "keyQuestions": ["What's the plan?", "How do we estimate?", "Are we aligned?"],
+          "examKeywords": "schedule, budget, scope, baseline, estimates, WBS"
+        },
+        {
+          "step": {"badge": "E", "name": "project work (Execution)", "color": "red"},
+          "action": "Establish processes, manage resources, focus on learning",
+          "keyQuestions": ["Are processes efficient?", "Are resources available?", "Are we learning?"],
+          "examKeywords": "execution, processes, resources, procurement, knowledge"
+        },
+        {
+          "step": {"badge": "N", "name": "deliveraNce (Delivery)", "color": "teal"},
+          "action": "Deliver scope, focus on value and quality",
+          "keyQuestions": ["Are we delivering value?", "Does it meet quality standards?", "Are requirements met?"],
+          "examKeywords": "deliverables, acceptance, value, quality, scope verification"
+        },
+        {
+          "step": {"badge": "I", "name": "measurIng (Measurement)", "color": "gold"},
+          "action": "Assess performance, adapt as needed, report status",
+          "keyQuestions": ["How are we performing?", "What metrics matter?", "Do we need to adapt?"],
+          "examKeywords": "KPIs, metrics, earned value, variance, performance reporting"
+        },
+        {
+          "step": {"badge": "U", "name": "Uncertainty", "color": "gray"},
+          "action": "Identify risks and opportunities, respond to threats",
+          "keyQuestions": ["What could go wrong?", "What opportunities exist?", "How do we respond?"],
+          "examKeywords": "risk, threat, opportunity, contingency, response, ambiguity"
+        }
+      ]
+    },
+    "additionalContent": "<div style='margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px;'><h4 style='margin: 0 0 1rem 0; color: white;'>💡 Memory Trick: STUPENI (Steps Up the Mountain)</h4><p style='margin: 0; line-height: 1.8;'><strong>S</strong>takeholders → <strong>T</strong>eam → <strong>U</strong> (Development Approach) → <strong>P</strong>lanning → <strong>E</strong>xecution (Project Work) → De<strong>N</strong>ivery → Measur<strong>I</strong>ng → <strong>U</strong>ncertainty</p><p style='margin-top: 1rem; font-style: italic;'>Each step builds on the previous one as you climb to project success!</p></div>",
+    "pmbokConnection": {
+      "performanceDomain": "All 8 domains work together",
+      "principle": "Foundation of PMBOK 7th Edition",
+      "quote": "Project performance domains are interactive and interrelated areas of focus that work in concert to achieve desired project outcomes."
+    }
+  },
+
+  "visualReferenceCard": {
+    "taskTitle": "8 Performance Domains - STUPENI",
+    "framework": {
+      "acronym": "STUPENI",
+      "steps": [
+        "S - Stakeholders (Who matters & their needs)",
+        "T - Team (Build high-performing teams)",
+        "U - dU = Development Approach (Pick lifecycle)",
+        "P - Planning (Organize & coordinate)",
+        "E - projEct work (Execute processes)",
+        "N - deliveraNce (Deliver value & quality)",
+        "I - measurIng (Assess & adapt)",
+        "U - Uncertainty (Manage risks)"
+      ]
+    },
+    "quickReference": "These 8 domains represent WHAT work must be performed on projects. Unlike process groups (which describe WHEN), domains describe focus areas throughout the project.",
+    "goldenRule": "All domains are important. When domains interact, think about cascading impacts across domains.",
+    "examTip": "Exam questions often span multiple domains. Look for answers that address the root cause domain, not just symptoms in other domains.",
+    "pmbokPrinciple": "PMBOK 7 - Performance domains replace the traditional 10 Knowledge Areas"
+  },
+
+  "secondScenario": {
+    "title": "Apply the STUPENI Framework",
+    "intro": "Now that you know the framework, let's apply it to a new situation.",
+    "scenarioStory": "Your agile project is 6 sprints in. Velocity is dropping (Measurement), team morale is low (Team), and the product owner keeps changing priorities (Stakeholders). The development approach feels wrong for this project (Development Approach).",
+    "question": "Which domains should you address to turn this around? (Select the BEST approach)",
+    "options": {
+      "A": "Measurement - Focus on improving velocity metrics",
+      "B": "Stakeholders & Development Approach - Re-align on priorities and confirm agile is right fit",
+      "C": "Team - Conduct team building to improve morale",
+      "D": "Delivery - Push to release something quickly to show progress"
+    },
+    "correctAnswer": "B"
+  },
+
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The eight performance domains are interactive and interdependent. They are not discrete, independent elements of work. Work in one domain enables performance in another domain, and performance in one domain can constrain another domain.",
+        "author": "PMI",
+        "source": "PMBOK 7th Edition, Chapter 2"
+      },
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "On the exam, they won't tell you which domain is being tested. You need to recognize the underlying issue. Is it a stakeholder problem? A team problem? Think about root causes, not symptoms. A schedule issue might actually be a stakeholder alignment problem.",
+        "author": "PMP Instructor Insight",
+        "source": "Andrew Ramdayal PMP Course"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Real-World Application",
+        "insight": "Experienced PMs know that fixing one domain often requires work in another. Can't deliver value (Delivery) if stakeholders aren't aligned (Stakeholders). Can't execute well (Project Work) if the team lacks skills (Team). The domains are a system."
+      },
+      {
+        "title": "Exam Strategy",
+        "insight": "When a scenario shows problems in multiple domains, identify the root cause domain. Stakeholder and Team issues often cascade to other domains. Addressing these foundational domains creates positive ripple effects."
+      }
+    ]
+  },
+
+  "personalApplication": {
+    "title": "🔄 Connect to Your Experience",
+    "reflectionPrompt": "Reflecting on these domains helps you recognize patterns in your own projects.",
+    "questions": [
+      {
+        "id": "domain-strength",
+        "question": "Which performance domain is strongest in your current or recent project?",
+        "type": "dropdown",
+        "options": [
+          "Stakeholders",
+          "Team",
+          "Development Approach & Lifecycle",
+          "Planning",
+          "Project Work",
+          "Delivery",
+          "Measurement",
+          "Uncertainty"
+        ]
+      },
+      {
+        "id": "domain-weakness",
+        "question": "Which domain needs improvement in your projects?",
+        "type": "dropdown",
+        "options": [
+          "Stakeholders",
+          "Team",
+          "Development Approach & Lifecycle",
+          "Planning",
+          "Project Work",
+          "Delivery",
+          "Measurement",
+          "Uncertainty"
+        ]
+      },
+      {
+        "id": "domain-cascade",
+        "question": "Describe a time when a problem in one domain caused issues in another domain.",
+        "type": "textarea",
+        "placeholder": "Example: Poor stakeholder engagement (Stakeholders) led to unclear requirements, causing constant replanning (Planning) and team frustration (Team)..."
+      }
+    ],
+    "valueStatement": "💎 Personal reflection earns you 5 XP and helps you spot domain interactions on exam questions.",
+    "xpReward": 5
+  },
+
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The 8 Base Camps",
+    "intro": "Your mountain has 8 base camps (STUPENI = steps in Russian). As you climb, you pass through each domain:",
+    "story": {
+      "title": "The 8-Camp Summit Journey",
+      "narrative": "To reach the summit, you must pass through 8 base camps. Each camp represents a performance domain. Skip a camp, and your summit attempt fails.",
+      "scenes": [
+        {
+          "step": "S - Stakeholder Camp",
+          "visual": "👥",
+          "description": "At the trailhead, you meet all expedition STAKEHOLDERS - sponsors, climbers, guides, local communities. You listen to their needs, manage expectations, and build relationships. Without their buy-in, you can't even start climbing."
+        },
+        {
+          "step": "T - Team Camp",
+          "visual": "🤝",
+          "description": "Camp 1 is where your TEAM assembles. You assign roles (lead climber, medic, navigator), develop skills, and build trust. A dysfunctional team won't survive the climb."
+        },
+        {
+          "step": "U - dU (Route Approach Camp)",
+          "visual": "🗺️",
+          "description": "At Camp 2, you choose your DEVELOPMENT APPROACH. Direct route to summit (waterfall/predictive)? Or adaptive approach with multiple camps and route adjustments (agile/adaptive)? The terrain dictates the approach."
+        },
+        {
+          "step": "P - Planning Camp",
+          "visual": "📋",
+          "description": "Camp 3 is the PLANNING hub. You create schedules, estimate how much food/rope you need, break down the climb into stages (WBS), and establish baselines. Without a plan, chaos reigns."
+        },
+        {
+          "step": "E - Execution Camp (Project Work)",
+          "visual": "⛏️",
+          "description": "Camp 4 is where the real WORK happens. You execute your plan, manage physical resources (ropes, oxygen), establish processes (daily check-ins), and learn from each day's climb."
+        },
+        {
+          "step": "N - deliveraNce Camp (Delivery)",
+          "visual": "🎯",
+          "description": "Camp 5 focuses on DELIVERY. Are you delivering value? Are you making progress toward the summit (scope)? Does the route meet quality standards (safe anchors, tested ropes)? Are stakeholders satisfied with progress?"
+        },
+        {
+          "step": "I - measurIng Camp (Measurement)",
+          "visual": "📊",
+          "description": "At Camp 6, you MEASURE performance. How's your pace? Are you on schedule? Altitude sickness rates (quality metrics)? Oxygen consumption vs. plan (earned value)? Measurement tells you if you need to adapt."
+        },
+        {
+          "step": "U - Uncertainty Camp",
+          "visual": "⚠️",
+          "description": "Camp 7 is the UNCERTAINTY headquarters. You continuously identify risks (avalanche, rockfall, weather), assess opportunities (better route discovered), and respond (contingency plans, risk reserves). Uncertainty never stops."
+        }
+      ],
+      "moral": "You successfully summit because you attended to ALL 8 domains throughout the climb. Each camp (domain) supported the others. Neglect one domain, and the whole expedition suffers."
+    },
+    "selfTest": "Close your eyes and climb through the 8 camps. Can you recall all 8 domains using STUPENI and the camp story?"
+  },
+
+  "spacedRepetition": {
+    "title": "🔁 Spaced Repetition Schedule",
+    "intro": "Research shows spaced repetition increases retention from 50% to 90%. Here's your review schedule:",
+    "schedule": [
+      {
+        "timeframe": "1 Day",
+        "icon": "📅",
+        "title": "Review 1: Tomorrow",
+        "tasks": [
+          "Recite STUPENI without looking",
+          "Re-read the 8 Base Camps story",
+          "Quiz yourself: Which domain addresses stakeholder engagement?"
+        ],
+        "duration": "5 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "📅",
+        "title": "Review 2: In 3 Days",
+        "tasks": [
+          "Review the Visual Reference Card",
+          "Write down all 8 domains from memory",
+          "Practice: Map a real project issue to a domain"
+        ],
+        "duration": "8 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📅",
+        "title": "Review 3: In 1 Week",
+        "tasks": [
+          "Re-do the Quick Scenario Challenge",
+          "Explain domain interconnections to someone",
+          "Identify which domains are active in your current work"
+        ],
+        "duration": "10 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "📅",
+        "title": "Review 4: In 2 Weeks",
+        "tasks": [
+          "Complete 10 practice questions on domains",
+          "Review your personal reflection",
+          "Final check: Can you identify domains in new scenarios?"
+        ],
+        "duration": "12 minutes",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention after 2 weeks"
+    }
+  },
+
+  "missionChecklist": {
+    "title": "🎯 Your Mission Progress",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "scenario",
+        "task": "Complete Quick Scenario Challenge",
+        "xp": 10,
+        "description": "Test your domain intuition",
+        "completed": true
+      },
+      {
+        "id": "framework",
+        "task": "Learn STUPENI Framework",
+        "xp": 10,
+        "description": "Master the 8 performance domains",
+        "completed": true
+      },
+      {
+        "id": "memory",
+        "task": "Visualize Memory Palace",
+        "xp": 5,
+        "description": "Anchor domains with the 8 camps story",
+        "completed": true
+      },
+      {
+        "id": "reflection",
+        "task": "Personal Application Reflection",
+        "xp": 5,
+        "description": "Connect to your experience",
+        "current": true,
+        "ctaButton": "Complete Reflection"
+      },
+      {
+        "id": "reference",
+        "task": "Download Reference Card",
+        "xp": 2,
+        "description": "Save for quick review",
+        "ctaButton": "Download PDF"
+      },
+      {
+        "id": "flashcards",
+        "task": "Review Flashcards",
+        "xp": 15,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/domains"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass Topic Quiz (70%+)",
+        "xp": 25,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/domains"
+      }
+    ],
+    "timeEstimate": "15-20 minutes to complete this topic",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/domains"
+    }
+  }
+}

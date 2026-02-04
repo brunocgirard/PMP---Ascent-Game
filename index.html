@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ascent to PMP: Transform your PMP exam preparation into an engaging mountain-climbing adventure with daily 15-20 minute learning sessions.">
+  <meta name="keywords" content="PMP, Project Management Professional, PMP Exam Prep, Gamified Learning, Daily Study">
+  <meta name="author" content="PMP Prep Team">
+
+  <!-- Favicon (to be added later) -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css?v=4">
+  <link rel="stylesheet" href="css/components.css?v=4">
+  <link rel="stylesheet" href="css/components-enhanced.css?v=4">
+  <link rel="stylesheet" href="css/animations.css?v=4">
+  <link rel="stylesheet" href="css/enhanced-mve.css?v=4">
+  <link rel="stylesheet" href="css/pagination-fixes.css?v=4">
+  <link rel="stylesheet" href="css/responsive.css?v=4">
+  <link rel="stylesheet" href="css/task-flow.css?v=4">
+  <link rel="stylesheet" href="css/accessibility.css?v=4">
+  <link rel="stylesheet" href="css/layout-lint-fixes.css?v=4">
+  <link rel="stylesheet" href="css/mobile-ux-fixes.css?v=4">
+
+  <!-- Title -->
+  <title>Ascent to PMP: The Summit Quest | Daily Climb Edition</title>
+</head>
+<body>
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- App Container -->
+  <div id="app" class="app-container">
+
+    <!-- Header -->
+    <header id="app-header" class="app-header" role="banner">
+      <div class="container header-content">
+        <!-- Logo / Branding -->
+        <div class="brand">
+          <h1 class="brand-logo">
+            <span class="logo-icon">🏔️</span>
+            <span class="logo-text">Ascent to PMP</span>
+          </h1>
+          <p class="brand-tagline">The Summit Quest</p>
+        </div>
+
+        <!-- User Progress Bar (Top Right) -->
+        <div class="user-stats">
+          <!-- Streak Counter -->
+          <div class="stat-item streak-counter" title="Study Streak">
+            <span class="streak-icon">🔥</span>
+            <span class="streak-count" id="streak-count">0</span>
+            <span class="sr-only">day streak</span>
+          </div>
+
+          <!-- XP Progress Bar -->
+          <div class="stat-item xp-container">
+            <div class="xp-bar-wrapper">
+              <div class="xp-bar" id="xp-bar" style="width: 0%"></div>
+            </div>
+            <span class="xp-text" id="xp-text">0 / 500 XP</span>
+          </div>
+
+          <!-- Level Badge -->
+          <div class="stat-item level-badge" id="level-badge">
+            <span class="level-number">1</span>
+            <span class="level-name">PMP Aspirant</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="app-nav" class="app-nav" role="navigation" aria-label="Main navigation">
+      <div class="container nav-content">
+        <ul class="nav-menu">
+          <li><a href="#/" class="nav-link active">🗺️ Mission Map</a></li>
+          <li><a href="#/dashboard" class="nav-link">📊 Dashboard</a></li>
+          <li><a href="#/settings" class="nav-link">⚙️ Settings</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content Area (Dynamic) -->
+    <main id="main-content" class="main-content" role="main">
+      <div class="container">
+        <!-- Loading State -->
+        <div id="loading-screen" class="loading-screen">
+          <div class="loading-spinner"></div>
+          <p>Loading your journey to PMP certification...</p>
+        </div>
+
+        <!-- Content will be dynamically inserted here by router -->
+        <div id="app-view" class="app-view">
+          <!-- Router will populate this -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="app-footer" class="app-footer" role="contentinfo">
+      <div class="container footer-content">
+        <p class="footer-text">
+          &copy; 2026 Ascent to PMP: The Summit Quest | Daily Climb Edition
+        </p>
+        <p class="footer-links">
+          <a href="#/about">About</a> |
+          <a href="#/privacy">Privacy</a> |
+          <a href="https://github.com/anthropics/claude-code/issues" target="_blank" rel="noopener">Feedback</a>
+        </p>
+        <p class="footer-note">
+          <small>Content aligned with PMI PMP Exam Content Outline 2026</small>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Modal Container -->
+  <div id="modal-container" class="modal-container"></div>
+
+  <!-- JavaScript Modules -->
+  <script type="module" src="js/performance.js?v=4"></script>
+  <script type="module" src="js/swipe-gestures.js?v=4"></script>
+  <script type="module" src="js/collapsible-sections.js?v=4"></script>
+  <script type="module" src="js/analytics-dashboard.js?v=4"></script>
+  <script type="module" src="js/app.js?v=4"></script>
+  <script type="module" src="js/mobile-navigation.js?v=4"></script>
+  <script type="module" src="js/task-flow-manager.js?v=4"></script>
+
+  <!-- Auto-test and validation (runs after app loads) -->
+  <script src="auto-test-and-fix.js"></script>
+
+  <!-- Auto-content generator (generates content for all tasks) -->
+  <script src="auto-content-generator.js"></script>
+
+  <!-- No Script Fallback -->
+  <noscript>
+    <div style="padding: 2rem; text-align: center; background: #FEF2F2; color: #991B1B; border: 2px solid #DC2626; margin: 2rem; border-radius: 8px;">
+      <h2>⚠️ JavaScript Required</h2>
+      <p>This application requires JavaScript to be enabled in your browser.</p>
+      <p>Please enable JavaScript and refresh the page to continue your PMP journey.</p>
+    </div>
+  </noscript>
+</body>
+</html>

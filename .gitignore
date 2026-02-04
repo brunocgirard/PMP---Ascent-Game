@@ -1,0 +1,64 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+venv/
+
+# Development documentation (kept locally)
+dev-docs/
+
+# Large source reference files (kept locally)
+PMI - A guide to the project management body of knowledge. PMBOK guide_SevenEdition.txt
+PMP_udemy_transcript.txt
+
+# Tool-specific directories
+.claude/
+.cache/
+.specstory/
+
+# Logs
+*.log
+server.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.temp
+nul
+
+# Screenshots (unless in assets)
+/*.png
+/*.jpg
+/*.jpeg
+/*.gif
+
+# Build outputs (if needed in future)
+dist/
+build/
+
+# Test outputs
+test-screenshots/
+screenshots/
+
+# Misc
+CLAUDE.md
+clerk-nextjs-guide

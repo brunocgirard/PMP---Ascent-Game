@@ -1,0 +1,457 @@
+{
+  "taskId": "d1t1",
+  "taskTitle": "Manage Conflict",
+  "domain": "People",
+  "taskNumber": "Task 1",
+
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a software project. Two senior developers, Bob and Jane, are in a heated disagreement about which programming methodology to use. The conflict started during sprint planning and has now escalated—voices are raised and other team members feel uncomfortable.",
+    "question": "FIRST",
+    "options": {
+      "A": "Research both methodologies yourself and decide which is best, then inform the team",
+      "B": "Meet with Bob privately to understand his perspective and implement his solution if it makes sense",
+      "C": "Meet with Jane privately since she has more experience, then make a decision",
+      "D": "Bring Bob and Jane together for a face-to-face discussion to collaboratively find a solution"
+    },
+    "correctAnswer": "D"
+  },
+
+  "ahaDebrief": {
+    "correctAnswer": "D - Bring Bob and Jane together for a face-to-face discussion",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Inclusive",
+          "explanation": "Both parties are involved in finding the solution",
+          "pmbokSupport": "Servant leaders enable the project team to perform at their highest level by removing impediments and constraints"
+        },
+        {
+          "principle": "Collaborative",
+          "explanation": "Team solves their own problems with your facilitation (servant leadership)",
+          "pmbokSupport": "Search for alternatives together. Damage incurred from conflict can be repaired by looking for resolutions and alternatives together"
+        },
+        {
+          "principle": "Early Intervention",
+          "explanation": "Addressing conflict immediately prevents escalation",
+          "pmbokSupport": "Because conflict can cause anxiety, it is important to keep a safe environment to explore the source of the conflict"
+        },
+        {
+          "principle": "Team Building",
+          "explanation": "Constructive disagreement handled well becomes team growth",
+          "pmbokSupport": "Not all conflict is negative. How conflict is handled can either lead to more conflict or to better decision making and stronger solutions"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Options A, B, and C all violate the same core principle: They exclude someone or have the PM make the decision alone.",
+      "trapTable": [
+        {
+          "option": "A",
+          "violation": "PM decides alone",
+          "pmiValueBroken": "Not servant leadership"
+        },
+        {
+          "option": "B",
+          "violation": "Excludes Jane",
+          "pmiValueBroken": "Not inclusive"
+        },
+        {
+          "option": "C",
+          "violation": "Excludes Bob",
+          "pmiValueBroken": "Not collaborative"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "scenario": "conflict scenarios on the exam",
+      "checklist": [
+        "Does this choice include ALL affected parties?",
+        "Am I facilitating or dictating?",
+        "Would a servant leader do this?"
+      ],
+      "patternRule": "If ANY answer is NO → Wrong choice!"
+    }
+  },
+
+  "coreFramework": {
+    "frameworkName": "I.S.E. Framework for Conflict Management",
+    "frameworkIntro": "You just experienced conflict management in action. Now here's the systematic approach PMI expects you to use:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {
+            "badge": "I",
+            "name": "Interpret",
+            "color": "blue"
+          },
+          "action": "Identify the SOURCE and STAGE of conflict",
+          "keyQuestions": [
+            "What caused this? (Resources, priorities, methods, personalities?)",
+            "What level of escalation (1-5)?",
+            "Who's affected?",
+            "What's the context?"
+          ],
+          "examKeywords": "The conflict arose because..., The team is disagreeing about..."
+        },
+        {
+          "step": {
+            "badge": "S",
+            "name": "Solve",
+            "color": "green"
+          },
+          "action": "Evaluate options and recommend solutions",
+          "keyQuestions": [
+            "What are the potential solutions?",
+            "Which aligns with PMI values?",
+            "What's the root cause, not just symptoms?",
+            "Does this serve project objectives?"
+          ],
+          "examKeywords": "What should you do FIRST?, The BEST approach is..."
+        },
+        {
+          "step": {
+            "badge": "E",
+            "name": "Engage",
+            "color": "orange"
+          },
+          "action": "Use INCLUSIVE approaches - involve ALL parties",
+          "keyQuestions": [
+            "Am I including everyone affected?",
+            "Am I facilitating or dictating?",
+            "Does this build or break the team?",
+            "Is this face-to-face communication?"
+          ],
+          "examKeywords": "Bring the team together..., Facilitate a discussion..., Collaborative approach..."
+        }
+      ]
+    },
+    "additionalContent": {
+      "deepDive": {
+        "title": "📊 The 5 Levels of Conflict Escalation",
+        "source": "Udemy + General PM Knowledge",
+        "levels": [
+          {
+            "level": 1,
+            "icon": "🟢",
+            "name": "Information Sharing",
+            "description": "\"Let's share info. Here's how I'd do it.\"",
+            "action": "Facilitate discussion - people are open-minded"
+          },
+          {
+            "level": 2,
+            "icon": "🟡",
+            "name": "Personal Protection",
+            "description": "\"My way is better than yours.\"",
+            "action": "Mediate perspectives - starting to get defensive"
+          },
+          {
+            "level": 3,
+            "icon": "🟠",
+            "name": "Contest (Win/Lose)",
+            "description": "\"I must WIN, you must LOSE.\"",
+            "action": "Intensive facilitation needed - not about project anymore"
+          },
+          {
+            "level": 4,
+            "icon": "🔴",
+            "name": "Crusade",
+            "description": "Protecting groups, forgetting collaboration",
+            "action": "May need escalation - very difficult to resolve"
+          },
+          {
+            "level": 5,
+            "icon": "⛔",
+            "name": "Destruction",
+            "description": "\"I must destroy you.\" Physical harm possible",
+            "action": "SEPARATE IMMEDIATELY - safety first!"
+          }
+        ]
+      }
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 6: Demonstrate Leadership Behaviors",
+      "quote": "Some level of conflict is inevitable and even beneficial when it is openly discussed and managed. Project managers should create an environment where differences are respected and diverse perspectives are encouraged."
+    }
+  },
+
+  "visualReferenceCard": {
+    "taskTitle": "Manage Conflict",
+    "framework": {
+      "acronym": "I.S.E.",
+      "steps": [
+        "🔍 Interpret source & stage",
+        "💡 Solve with evaluated options",
+        "🤝 Engage inclusively (ALL parties)"
+      ]
+    },
+    "quickReference": "1🟢 Share → 2🟡 Protect → 3🟠 Contest → 4🔴 Crusade → 5⛔ Destroy",
+    "goldenRule": "When in doubt, bring people together.",
+    "examTip": "Ask: 'Is this inclusive?' → That's your answer.",
+    "pmbokPrinciple": "Principle 6: Demonstrate Leadership Behaviors"
+  },
+
+  "secondScenario": {
+    "title": "💪 Apply What You Learned",
+    "intro": "Now let's see if you can apply the I.S.E. framework!",
+    "scenarioStory": "You're managing a marketing campaign project. Two stakeholders—the CMO and the Brand Director—are in conflict about the campaign messaging. The CMO wants data-driven messaging, while the Brand Director insists on emotional storytelling. The conflict has reached Level 3 (Contest) - both are digging in their heels. You have a launch deadline in 2 weeks.",
+    "question": "Using the I.S.E. framework, what should you do FIRST?",
+    "options": {
+      "A": "Escalate to the sponsor immediately since it's Level 3",
+      "B": "Decide yourself based on project goals to save time",
+      "C": "Research successful campaigns and present data to convince them of the best approach",
+      "D": "Facilitate a working session where both stakeholders can explore a hybrid approach combining data and storytelling"
+    },
+    "correctAnswer": "D",
+    "feedbackCorrect": {
+      "title": "🎉 Excellent! You're applying the framework!",
+      "frameworkMapping": {
+        "interpret": "You recognized this is Level 3 (Contest), meaning intensive facilitation needed—but not escalation yet!",
+        "solve": "You evaluated that a hybrid approach addresses both concerns and serves project goals.",
+        "engage": "You chose the inclusive option—facilitating BOTH stakeholders to find a solution together."
+      },
+      "xpBonus": 10
+    }
+  },
+
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "I personally believe that project management shouldn't be called project management. It should be called problem management. Throughout the day, you're managing problems. When I call my directors, first thing I ask: 'Any problems?' Because I know there will be conflicts. Welcome to project management!",
+        "author": "Andrew Ramdayal, PMP Instructor",
+        "source": "Udemy PMP Prep Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Some level of conflict is inevitable and even beneficial when it is openly discussed and managed. Project managers should create an environment where differences are respected and diverse perspectives are encouraged.",
+        "author": "PMBOK Guide, 7th Edition",
+        "source": "Team Performance Domain"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Conflict is normal",
+        "insight": "Every project has 5-10 significant conflicts. Don't be surprised, be prepared."
+      },
+      {
+        "title": "Early intervention wins",
+        "insight": "PMs who address Level 1-2 conflicts immediately have 80% faster resolution rates."
+      },
+      {
+        "title": "Inclusive = faster",
+        "insight": "Counter-intuitively, involving everyone often resolves conflicts faster than PM deciding alone."
+      },
+      {
+        "title": "Document patterns",
+        "insight": "Track what causes conflicts in YOUR projects—often it's unclear requirements, not personalities."
+      },
+      {
+        "title": "30% of exam questions",
+        "insight": "Expect significant coverage of conflict management on the PMP exam. Master this task!"
+      }
+    ]
+  },
+
+  "personalApplication": {
+    "title": "🏢 Apply to YOUR Work",
+    "reflectionPrompt": "Learning sticks when you connect it to YOUR experience. Take 2 minutes to reflect on a recent workplace conflict:",
+    "questions": [
+      {
+        "id": "source",
+        "question": "What was the SOURCE of the conflict?",
+        "type": "dropdown",
+        "options": [
+          "Resources (budget, people, time)",
+          "Priorities (what's important)",
+          "Methods (how to do it)",
+          "Personalities (communication styles)",
+          "Scope (what's included)",
+          "Expectations (misalignment)"
+        ]
+      },
+      {
+        "id": "level",
+        "question": "What LEVEL was it? (1-5)",
+        "type": "dropdown",
+        "options": [
+          "Level 1 🟢 - Information sharing",
+          "Level 2 🟡 - Personal protection",
+          "Level 3 🟠 - Contest (win/lose)",
+          "Level 4 🔴 - Crusade",
+          "Level 5 ⛔ - Destruction"
+        ]
+      },
+      {
+        "id": "resolution",
+        "question": "How was it resolved?",
+        "type": "textarea",
+        "placeholder": "Briefly describe what happened... (optional)"
+      },
+      {
+        "id": "improvement",
+        "question": "Using I.S.E., what would you do differently as a PMP?",
+        "type": "textarea",
+        "placeholder": "Example: I would have brought both parties together earlier instead of letting it escalate..."
+      }
+    ],
+    "valueStatement": "Research shows adult learners retain 2-3x more when they connect new concepts to personal experience. This isn't busy work—it's how your brain encodes long-term memories.",
+    "xpReward": 5
+  },
+
+  "memoryPalace": {
+    "title": "🧠 Memory Technique: The Mountain Conflict Story",
+    "intro": "Your brain remembers stories better than facts. Here's a story to remember I.S.E. and the 5 levels:",
+    "story": {
+      "title": "🏔️ The Mountain Hiking Conflict",
+      "narrative": "Imagine you're hiking a mountain with two friends who start arguing about which path to take: the safe scenic route vs. the fast direct route.",
+      "scenes": [
+        {
+          "step": "I - Interpret",
+          "visual": "🔍",
+          "description": "First, you INTERPRET: What's the SOURCE? They disagree on safety vs. speed. What STAGE? Just started (Level 1), still friendly and sharing information."
+        },
+        {
+          "step": "S - Solve",
+          "visual": "💡",
+          "description": "Then you SOLVE: What are options? Path A (safe), Path B (fast), Path C (compromise route). Which is PMI way? Get them to decide together, don't choose for them!"
+        },
+        {
+          "step": "E - Engage",
+          "visual": "🤝",
+          "description": "Finally you ENGAGE: 'Let's all look at the map together' (inclusive). NOT 'I'm deciding' or 'Let's vote and someone loses.'"
+        }
+      ],
+      "additionalScenes": [
+        {
+          "visual": "⛰️",
+          "description": "As you climb the mountain, conflicts can escalate through 5 levels:\n\n• Level 1 🟢 Base Camp: 'Let's share info about both paths'\n• Level 2 🟡 Low Slope: 'My path is better'\n• Level 3 🟠 Mid Mountain: 'I must win, you must lose!'\n• Level 4 🔴 High Peak: Groups form, forget the goal\n• Level 5 ⛔ Summit Storm: Physical confrontation - separate them!"
+        }
+      ],
+      "moral": "Deal with it at Base Camp (Level 1), don't let it reach the Summit Storm (Level 5)! The higher you go (escalate), the harder to get back down (resolve)."
+    },
+    "selfTest": "Close your eyes. Can you see the mountain? Can you remember I.S.E. = Interpret, Solve, Engage? Can you visualize the 5 levels as you climb up the mountain? If yes, this story is now in your long-term memory! 🎉"
+  },
+
+  "spacedRepetition": {
+    "title": "🔄 Lock It In: Your Review Schedule",
+    "intro": "Research shows spaced repetition doubles retention. Here's your personalized review schedule for this task:",
+    "schedule": [
+      {
+        "timeframe": "Tomorrow",
+        "icon": "📅",
+        "title": "Quick Review",
+        "tasks": [
+          "Recite I.S.E. from memory",
+          "Draw the 5 levels of escalation",
+          "Re-do Scenario 1 (Bob & Jane)"
+        ],
+        "duration": "2 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "📅",
+        "title": "Flashcard Review",
+        "tasks": [
+          "Review all 15 flashcards for this task",
+          "Focus on ones you got wrong",
+          "Practice the Golden Rule: 'When in doubt, bring people together'"
+        ],
+        "duration": "3 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📅",
+        "title": "Quiz Re-take",
+        "tasks": [
+          "Re-take the 5-question quiz",
+          "Aim for 100% (vs your first score)",
+          "Review any scenarios you missed"
+        ],
+        "duration": "5 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "📅",
+        "title": "Teach Someone",
+        "tasks": [
+          "Explain I.S.E. to a colleague or friend",
+          "Show them the Mountain Story",
+          "Quiz them on a scenario"
+        ],
+        "duration": "10 min",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% forgotten in 1 week",
+      "withReview": "90% retained for exam day"
+    }
+  },
+
+  "missionChecklist": {
+    "title": "✅ Mission Checklist: Complete This Task",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "read",
+        "task": "Read the learn section",
+        "xp": 10,
+        "description": "You're here!",
+        "completed": true
+      },
+      {
+        "id": "reflection",
+        "task": "Save your personal reflection",
+        "xp": 5,
+        "description": "Apply I.S.E. to YOUR job"
+      },
+      {
+        "id": "download",
+        "task": "Download reference card",
+        "xp": 2,
+        "description": "Add to your exam prep folder"
+      },
+      {
+        "id": "flashcards",
+        "task": "Review 15 flashcards",
+        "xp": 15,
+        "description": "Lock in the I.S.E. framework",
+        "current": true,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/d1t1"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass the 5-question quiz (75%+)",
+        "xp": 20,
+        "description": "Prove your knowledge"
+      },
+      {
+        "id": "scenarios",
+        "task": "Complete 2 scenario questions",
+        "xp": 10,
+        "description": "Practice exam-style situations"
+      },
+      {
+        "id": "reminders",
+        "task": "Set review reminders",
+        "xp": 3,
+        "description": "Ensure long-term retention"
+      }
+    ],
+    "timeEstimate": "~18 minutes remaining",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards (15 cards)",
+      "link": "/flashcards/d1t1"
+    }
+  }
+}

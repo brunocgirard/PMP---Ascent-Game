@@ -1,0 +1,435 @@
+{
+  "taskId": "d1t6",
+  "taskTitle": "Build a Team",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're starting a new software development project. HR gives you a list of 15 available developers. You can select anyone, but you notice that while some have excellent technical skills, they have poor collaboration skills. Others are great team players but lack some technical expertise. You need a team of 8 developers.",
+    "question": "What should guide your team selection FIRST?",
+    "options": {
+      "A": "Select the 8 developers with the highest technical skills regardless of personality",
+      "B": "Select based on project needs, considering both technical skills AND ability to work collaboratively",
+      "C": "Let the developers self-select into teams based on their preferences",
+      "D": "Select the 8 developers with the most experience"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Balance technical skills AND collaboration ability",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Not Everyone is Good for Every Team",
+          "explanation": "Team composition matters. The best individual performers don't always make the best team. Balance skills, personalities, and collaboration ability.",
+          "pmbokSupport": "High-performing teams require both competence and collaboration"
+        },
+        {
+          "principle": "Match Team to Project",
+          "explanation": "Different projects need different team compositions. Consider project type, complexity, and stakeholder expectations when building the team.",
+          "pmbokSupport": "Teams should match the specific needs and expectations of stakeholders"
+        },
+        {
+          "principle": "Development vs. Selection",
+          "explanation": "Sometimes you select the team (ideal). Sometimes the team is assigned to you (common). Either way, you must develop them into a high-performing unit.",
+          "pmbokSupport": "Project managers develop teams regardless of how they're formed"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Building a team isn't just about finding the best individuals—it's about creating a cohesive, collaborative unit.",
+      "trapTable": [
+        {
+          "option": "A - Only technical skills",
+          "violation": "Ignores collaboration and team dynamics",
+          "pmiValueBroken": "Technical brilliance without teamwork creates conflict and dysfunction"
+        },
+        {
+          "option": "C - Self-selection",
+          "violation": "Abdicates leadership responsibility for team composition",
+          "pmiValueBroken": "May create cliques or imbalanced teams"
+        },
+        {
+          "option": "D - Only experience",
+          "violation": "Experience doesn't guarantee fit for this specific project",
+          "pmiValueBroken": "Overvalues tenure, undervalues project-specific needs"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "What are the project-specific needs?",
+        "Do candidates have needed technical skills?",
+        "Can they work collaboratively?",
+        "Is there balance and diversity in the team?"
+      ],
+      "patternRule": "Project needs → Match skills + collaboration + diversity. If team is assigned (can't select) → Develop them into high performers."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "B.U.I.L.D. Framework for Team Formation",
+    "frameworkIntro": "Building a high-performing team requires intentional design and development:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {
+            "badge": "B",
+            "name": "Blueprint Project Needs",
+            "color": "#3b82f6"
+          },
+          "action": "Define what this specific project needs. Technical skills? Domain knowledge? Agile experience? Regulatory expertise? Not all teams fit all projects.",
+          "keyQuestions": [
+            "What skills does THIS project require?",
+            "Agile, traditional, or hybrid approach?",
+            "What domain knowledge is critical?",
+            "What's the complexity and risk level?"
+          ],
+          "examKeywords": "Project requirements, Skills needed, Technical competencies, Domain expertise"
+        },
+        {
+          "step": {
+            "badge": "U",
+            "name": "Understand Available Talent",
+            "color": "#8b5cf6"
+          },
+          "action": "Assess who's available (if selecting) or who's assigned (if team is given). Understand their skills, personalities, strengths, and collaboration abilities.",
+          "keyQuestions": [
+            "Can I select the team or is it assigned?",
+            "What are each person's technical skills?",
+            "How well do they collaborate?",
+            "What are their working styles and preferences?"
+          ],
+          "examKeywords": "Assess talent, Skills inventory, Team composition, Available resources"
+        },
+        {
+          "step": {
+            "badge": "I",
+            "name": "Integrate Diversity",
+            "color": "#10b981"
+          },
+          "action": "Build diversity of thought, background, and perspective. Diverse teams innovate better and catch more blind spots. Balance experience levels.",
+          "keyQuestions": [
+            "Do we have cognitive diversity?",
+            "Mix of junior and senior members?",
+            "Different backgrounds and perspectives?",
+            "Inclusive environment for all?"
+          ],
+          "examKeywords": "Diversity, Inclusion, Different perspectives, Balance, Cognitive diversity"
+        },
+        {
+          "step": {
+            "badge": "L",
+            "name": "Launch Team Development",
+            "color": "#f59e0b"
+          },
+          "action": "Develop the team through Forming → Storming → Norming → Performing. Facilitate team charter, ground rules, working agreements. Build cohesion.",
+          "keyQuestions": [
+            "What stage is the team in (Tuckman)?",
+            "Do we have a team charter?",
+            "Are ground rules established?",
+            "How can we accelerate to performing?"
+          ],
+          "examKeywords": "Team development, Tuckman stages, Team charter, Ground rules, Cohesion"
+        },
+        {
+          "step": {
+            "badge": "D",
+            "name": "Deliver Through Collaboration",
+            "color": "#ec4899"
+          },
+          "action": "Foster collaboration, trust, and shared accountability. Remove silos. Celebrate wins together. Make the team greater than the sum of individuals.",
+          "keyQuestions": [
+            "Is the team collaborating effectively?",
+            "Do they trust each other?",
+            "Shared accountability or finger-pointing?",
+            "Are we leveraging collective intelligence?"
+          ],
+          "examKeywords": "Collaboration, Trust, Shared accountability, Team synergy, Collective intelligence"
+        }
+      ]
+    },
+    "additionalContent": {
+      "tuckmanStages": {
+        "forming": "Team members are polite, getting to know each other. Low productivity.",
+        "storming": "Conflicts emerge as personalities clash. Critical to navigate well.",
+        "norming": "Team establishes norms and working agreements. Productivity increases.",
+        "performing": "High trust, high performance. Team is self-organizing.",
+        "adjourning": "Project ends, team disbands. Celebrate and capture lessons."
+      },
+      "selectionCriteria": [
+        "Technical skills match project needs",
+        "Collaboration and communication ability",
+        "Availability and commitment level",
+        "Diversity of thought and background",
+        "Balance of experience levels",
+        "Cultural fit and values alignment"
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 6: Demonstrate Leadership Behaviors",
+      "quote": "Not everyone is good for every team, and not every team is good for every project. Teams should be built with intention and developed continuously."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Build a Team",
+    "framework": {
+      "acronym": "B.U.I.L.D.",
+      "steps": [
+        "📋 Blueprint project needs",
+        "👥 Understand available talent",
+        "🌈 Integrate diversity",
+        "🚀 Launch team development",
+        "🤝 Deliver through collaboration"
+      ]
+    },
+    "quickReference": "**Selection:** Skills + Collaboration + Diversity | **Development:** Forming → Storming → Norming → Performing | **Key:** Not all teams fit all projects",
+    "goldenRule": "Best individuals ≠ Best team. Build for collaboration AND competence.",
+    "examTip": "Look for: 'building a team,' 'team composition,' 'assigned vs. selected' → Answer balances skills + collaboration + diversity. Remember Tuckman stages.",
+    "pmbokPrinciple": "Principle 6: Demonstrate Leadership - Build and develop effective teams"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply the B.U.I.L.D. Framework",
+    "intro": "Apply the framework:",
+    "scenarioStory": "You're assigned a team of 10 people for a mobile app project. You didn't select them—HR assigned them based on availability. The team has never worked together before. Three members are experienced iOS developers, two are Android experts, three are backend developers, and two are new graduates. Personalities range from introverted to very outspoken. The project kicks off in one week.",
+    "question": "Following B.U.I.L.D., what should you do FIRST?",
+    "options": {
+      "A": "Request to replace the new graduates with experienced developers",
+      "B": "Assess the team's skills against project needs, then facilitate a team charter session to establish ground rules and build cohesion",
+      "C": "Immediately assign work based on their technical specialties",
+      "D": "Let the team self-organize since you didn't select them"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Not everyone is good for every team and not every team is good for every project. Even if you select the team members, you have to develop that team.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course - Domain 1 Task 6"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "High-performing teams require both individual competence and collaborative effectiveness. Teams should match the specific needs and expectations of stakeholders.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition - Team Performance Domain"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Tuckman Reality",
+        "insight": "All teams go through Forming (polite) → Storming (conflict) → Norming (agreements) → Performing (high output). You can't skip Storming—it's where trust is built through navigating conflict. Your job: help them get through Storming quickly and productively."
+      },
+      {
+        "title": "Assigned vs. Selected Teams",
+        "insight": "In reality, you rarely get to select your entire team. More often, they're assigned based on availability. That's okay—your job is to DEVELOP whoever you get into a high-performing team. Selection is a luxury; development is a necessity."
+      },
+      {
+        "title": "Diversity Drives Innovation",
+        "insight": "Homogeneous teams feel comfortable but miss blind spots. Diverse teams (background, thought, experience) may have more initial friction but produce more innovative solutions and catch more risks. Facilitate inclusion, not just diversity."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "reflectionPrompt": "Think about your current team:",
+    "questions": [
+      {
+        "id": "team-formation",
+        "question": "Did you select your current team or were they assigned? How has that affected team dynamics?",
+        "type": "textarea",
+        "placeholder": "Example: Team was assigned. Initial friction because skills didn't match project needs perfectly, but we developed them through training..."
+      },
+      {
+        "id": "tuckman-stage",
+        "question": "What Tuckman stage is your team currently in?",
+        "type": "dropdown",
+        "options": [
+          "Forming - Just getting to know each other",
+          "Storming - Experiencing conflicts and friction",
+          "Norming - Establishing working agreements",
+          "Performing - High trust, high output",
+          "Team just disbanded (Adjourning)"
+        ]
+      },
+      {
+        "id": "diversity-level",
+        "question": "How diverse is your team (backgrounds, perspectives, experience levels)?",
+        "type": "dropdown",
+        "options": [
+          "Very diverse - many different backgrounds",
+          "Somewhat diverse",
+          "Mostly homogeneous",
+          "Not sure",
+          "Need to improve diversity"
+        ]
+      },
+      {
+        "id": "team-action",
+        "question": "What's one action you'll take to develop your team this week?",
+        "type": "text",
+        "placeholder": "Example: Facilitate a team charter session to establish ground rules..."
+      }
+    ],
+    "valueStatement": "💡 Great teams aren't born—they're built through intentional selection (when possible) and continuous development (always).",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: Assembling the Expedition Team",
+    "intro": "Remember B.U.I.L.D. with this story:",
+    "story": {
+      "title": "Building Your Summit Team",
+      "narrative": "You're **BUILD**ing your expedition team for K2. Follow the steps...",
+      "scenes": [
+        {
+          "step": "B - Blueprint",
+          "visual": "📋 Create the BLUEPRINT of what you need",
+          "description": "Not all teams fit all mountains. K2 needs technical ice climbers, high-altitude experience, crevasse rescue skills, medical expertise. That's your project needs. Don't copy Everest's team blueprint—design for THIS mountain."
+        },
+        {
+          "step": "U - Understand",
+          "visual": "👥 UNDERSTAND your available climbers",
+          "description": "You meet candidates: Sarah (expert ice, 8000m peaks), Marcus (strong but first 8000m), Chen (doctor, 6000m max), Eva (assigned by sponsor, didn't choose her). You understand their skills and experience. Not who you'd pick ideally, but these are your options."
+        },
+        {
+          "step": "I - Integrate",
+          "visual": "🌈 INTEGRATE diversity of expertise",
+          "description": "You need ice expertise, medical skills, high-altitude veterans, fresh perspectives. Different specialties, different experience levels. Marcus brings enthusiasm. Sarah brings wisdom. Chen brings safety. Diversity makes the team stronger."
+        },
+        {
+          "step": "L - Launch",
+          "visual": "🚀 LAUNCH team development at base camp",
+          "description": "Week 1 is Forming (polite introductions). Week 2 is Storming (Sarah and Marcus disagree on route). Week 3 is Norming (they establish climbing protocols). Week 4 is Performing (moving fast together!). You facilitate through Tuckman stages."
+        },
+        {
+          "step": "D - Deliver",
+          "visual": "🤝 DELIVER the summit through collaboration",
+          "description": "They work as one unit. Sarah leads ice sections. Marcus handles heavy loads. Chen monitors health. Eva documents the climb. Shared accountability. Summit reached. Greater than the sum of individuals."
+        }
+      ],
+      "moral": "Building an expedition team isn't random—it's **B**lueprint needs, **U**nderstand climbers, **I**ntegrate diversity, **L**aunch development, **D**eliver collaboratively. That's B.U.I.L.D."
+    },
+    "selfTest": "Close your eyes. Picture base camp. Can you see **B**lueprinting needs, **U**nderstanding climbers, **I**ntegrating specialties, **L**aunching through Tuckman, **D**elivering the summit? That's B.U.I.L.D."
+  },
+  "spacedRepetition": {
+    "title": "📅 Spaced Repetition",
+    "intro": "Schedule micro-reviews:",
+    "schedule": [
+      {
+        "timeframe": "Tomorrow",
+        "icon": "📱",
+        "title": "5-Minute Flashback",
+        "tasks": [
+          "What does B.U.I.L.D. stand for?",
+          "Name the 5 Tuckman stages",
+          "Recall: Assigned vs. selected teams?",
+          "What's the house-building story?"
+        ],
+        "duration": "5 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "🎯",
+        "title": "Practice Application",
+        "tasks": [
+          "What Tuckman stage is your team in?",
+          "Did you facilitate any team development?",
+          "Review team diversity and balance",
+          "Re-read the exam tip pattern"
+        ],
+        "duration": "10 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📝",
+        "title": "Deep Retrieval",
+        "tasks": [
+          "Write B.U.I.L.D. framework without looking",
+          "Explain: Why can't you skip Storming?",
+          "List 5 team selection criteria",
+          "Review personal reflection"
+        ],
+        "duration": "15 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "🔄",
+        "title": "Integration Check",
+        "tasks": [
+          "Practice questions on Build a Team",
+          "Compare: Building vs. Leading vs. Supporting teams",
+          "Review all Domain 1 so far",
+          "Identify team development patterns"
+        ],
+        "duration": "20 min",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50%",
+      "withReview": "90%"
+    }
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "read",
+        "task": "Read learn section",
+        "xp": 10,
+        "completed": true
+      },
+      {
+        "id": "scenario1",
+        "task": "Solve Quick Scenario",
+        "xp": 5,
+        "completed": false
+      },
+      {
+        "id": "scenario2",
+        "task": "Apply B.U.I.L.D. Framework",
+        "xp": 10,
+        "completed": false
+      },
+      {
+        "id": "reflection",
+        "task": "Complete personal reflection",
+        "xp": 5,
+        "completed": false
+      },
+      {
+        "id": "reference-card",
+        "task": "Download reference card",
+        "xp": 2,
+        "completed": false
+      },
+      {
+        "id": "flashcards",
+        "task": "Review 15 flashcards",
+        "xp": 15,
+        "current": true,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/d1t6"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass quiz (70%+)",
+        "xp": 20,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/d1t6"
+      }
+    ],
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/d1t6"
+    }
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "taskId": "d1t5",
+  "taskTitle": "Ensure Team Members/Stakeholders are Adequately Trained",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your team just received new project management software that's supposed to streamline workflow and increase productivity by 30%. However, after two weeks, adoption is low—only 3 out of 12 team members are using it. The others continue with the old manual process. When you ask why, they say 'the new software is too complicated' and 'nobody showed us how to use it properly.'",
+    "question": "What should you do FIRST?",
+    "options": {
+      "A": "Mandate use of the new software and set a deadline for full adoption",
+      "B": "Determine specific training needs, then arrange appropriate training on the software for the team",
+      "C": "Revert to the old process since the team prefers it",
+      "D": "Replace the team members who won't adapt to new tools"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Determine training needs, then arrange training",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Training Solves Skill Gaps",
+          "explanation": "When team members lack knowledge or skills to use tools/processes, the solution is training—not punishment, replacement, or retreat.",
+          "pmbokSupport": "Project teams thrive when members have the competencies needed to perform their work"
+        },
+        {
+          "principle": "Assess Before Training",
+          "explanation": "Determine WHAT competencies are needed before selecting training. Don't send people to Software B training when they need Software A.",
+          "pmbokSupport": "Determine required competencies and elements of training first"
+        },
+        {
+          "principle": "Enable Success",
+          "explanation": "Servant leadership means providing the resources and knowledge team members need to succeed, not forcing compliance without support.",
+          "pmbokSupport": "Leaders enable project teams to perform at their highest level"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Training is the answer when people CAN'T do something due to lack of knowledge or skills.",
+      "trapTable": [
+        {
+          "option": "A - Mandate without training",
+          "violation": "Forces compliance without providing necessary skills",
+          "pmiValueBroken": "Doesn't support team development; sets them up for failure"
+        },
+        {
+          "option": "C - Revert to old process",
+          "violation": "Avoids the problem instead of developing the team",
+          "pmiValueBroken": "Misses opportunity to improve productivity and develop capabilities"
+        },
+        {
+          "option": "D - Replace team members",
+          "violation": "Punishes people for lack of training you should have provided",
+          "pmiValueBroken": "Violates stewardship and care for team development"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Do team members lack skills/knowledge to perform a task?",
+        "Is the problem 'they don't know how' vs. 'they won't do it'?",
+        "Can training close the competency gap?",
+        "Have you determined specific training needs first?"
+      ],
+      "patternRule": "Team doesn't know HOW → Train. Team doesn't understand WHY → Coach/communicate vision. Team won't DO it (attitude) → Address behavior."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "T.R.A.I.N. Framework for Training Management",
+    "frameworkIntro": "Ensuring adequate training isn't just 'send them to class'—it's a systematic approach to developing competencies:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {
+            "badge": "T",
+            "name": "Target Competencies",
+            "color": "#3b82f6"
+          },
+          "action": "Determine required competencies and training elements. What specific skills/knowledge do they need? Be precise—'learn the software' is too vague.",
+          "keyQuestions": [
+            "What competencies are lacking?",
+            "What specific skills need development?",
+            "Is this a knowledge gap or skill gap?",
+            "What will success look like after training?"
+          ],
+          "examKeywords": "Determine, Identify, Assess competencies, Skill gap, Training needs"
+        },
+        {
+          "step": {
+            "badge": "R",
+            "name": "Research Options",
+            "color": "#8b5cf6"
+          },
+          "action": "Determine training options based on needs. Online? Classroom? Consultant? How does this team learn best? Match training method to learning styles and needs.",
+          "keyQuestions": [
+            "What training options are available?",
+            "How does this team learn best?",
+            "Online, classroom, or hands-on training?",
+            "Which option fits the specific competency need?"
+          ],
+          "examKeywords": "Training options, Online vs classroom, Consultant, Learning style, Resources"
+        },
+        {
+          "step": {
+            "badge": "A",
+            "name": "Allocate Resources",
+            "color": "#10b981"
+          },
+          "action": "Allocate budget and resources for training. This should be in the project budget. If not, submit a change request to get funding.",
+          "keyQuestions": [
+            "Is training budgeted in the project plan?",
+            "Do we need a change request for funding?",
+            "What resources are needed (time, money, trainers)?",
+            "When can training happen without disrupting work?"
+          ],
+          "examKeywords": "Budget, Allocate, Resources, Change request, Funding, Schedule"
+        },
+        {
+          "step": {
+            "badge": "I",
+            "name": "Implement Training",
+            "color": "#f59e0b"
+          },
+          "action": "Provide the training. Engage with the team before, during, and after. Ask what they need. Make sure they're ready to apply the learning.",
+          "keyQuestions": [
+            "Is the team engaged and ready?",
+            "Do they understand the training objectives?",
+            "Is the trainer qualified and effective?",
+            "Are we addressing the right competencies?"
+          ],
+          "examKeywords": "Provide training, Deliver, Execute, Engage team, Consultant delivers"
+        },
+        {
+          "step": {
+            "badge": "N",
+            "name": "kNow It Worked",
+            "color": "#ec4899"
+          },
+          "action": "Measure training outcomes. Use surveys, observe performance, check KPIs. Did productivity improve? Can they use the tool now? If not, take additional action.",
+          "keyQuestions": [
+            "Did training achieve the desired outcome?",
+            "Can team members now perform the task?",
+            "Has performance/productivity improved?",
+            "Do we need additional or different training?"
+          ],
+          "examKeywords": "Measure, Evaluate, Assess effectiveness, Survey, Observe, Verify outcomes"
+        }
+      ]
+    },
+    "additionalContent": {
+      "trainingOptions": [
+        "**Online self-paced:** Flexible, cost-effective, good for theory",
+        "**Live virtual:** Interactive, real-time Q&A, remote-friendly",
+        "**Classroom in-person:** High engagement, hands-on, traditional",
+        "**On-the-job training:** Learn by doing, mentorship, practical",
+        "**External consultant:** Expert knowledge, specialized topics",
+        "**Internal SME:** Organizational context, available resource"
+      ],
+      "measuringOutcomes": {
+        "surveys": "Ask participants if training met their needs",
+        "observation": "Watch them perform the task post-training",
+        "kpiTracking": "Measure productivity, quality, speed improvements",
+        "assessments": "Test knowledge/skills before and after training",
+        "feedback": "Get input from team and stakeholders"
+      }
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 3: Be a Diligent, Respectful, and Caring Steward",
+      "quote": "Project teams can thrive when project team members use appropriate leadership traits, skills, and characteristics that match the specific needs and expectations of stakeholders."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Ensure Adequate Training",
+    "framework": {
+      "acronym": "T.R.A.I.N.",
+      "steps": [
+        "🎯 Target competencies needed",
+        "🔍 Research training options",
+        "💰 Allocate resources/budget",
+        "📚 Implement the training",
+        "✅ kNow it worked (measure)"
+      ]
+    },
+    "quickReference": "**Don't:** Send to wrong training, force without support, ignore skill gaps | **Do:** Assess needs → Match training → Fund it → Deliver → Verify",
+    "goldenRule": "Team doesn't know how → Train them. Always measure if training worked.",
+    "examTip": "Look for: 'team struggling with tool,' 'lack skills,' 'don't know how' → Answer is training. If they lack skills → Train them. That's almost always the answer.",
+    "pmbokPrinciple": "Principle 3: Be a Diligent, Respectful, and Caring Steward - Develop your people"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply the T.R.A.I.N. Framework",
+    "intro": "Now apply the framework:",
+    "scenarioStory": "Your construction team needs to learn a new safety compliance process required by law. You've budgeted $5,000 for training. Three options are available: (1) $500 online self-paced course, (2) $2,500 one-day in-person workshop with hands-on practice, (3) $6,000 three-day comprehensive program. Your team learns best through hands-on practice, and the compliance process involves physical safety procedures that are hard to learn from videos.",
+    "question": "Following T.R.A.I.N., what should you do?",
+    "options": {
+      "A": "Choose option 1 (online) to stay under budget",
+      "B": "Choose option 2 (in-person workshop) as it matches their learning style and fits budget",
+      "C": "Choose option 3 and submit a change request for additional $1,000",
+      "D": "Skip formal training and have experienced workers teach the new process"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "You should expect questions on your exam about training, where they're gonna tell you that some kind of problem is happening in the team or the team is not happy using something or they don't have the adequate skill. The answer is gonna be to get them trained.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course - Domain 1 Task 5"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Project teams can thrive when project team members use appropriate leadership traits, skills, and characteristics that match the specific needs and expectations of stakeholders.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition - Team Performance Domain"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Training Answer Pattern",
+        "insight": "On the exam, if you see 'team doesn't know how to use [tool/process]' or 'lacking skills in [area],' the answer is almost always to provide training. Never: replace them, lower standards, skip the tool. Always: Train them."
+      },
+      {
+        "title": "Match Training to Learning Style",
+        "insight": "Don't just pick the cheapest option. Consider how the team learns best. Hands-on learners need practice, not just videos. Visual learners need diagrams. Some need in-person interaction. Ask the team, engage them, determine what works."
+      },
+      {
+        "title": "Budget for Training Upfront",
+        "insight": "Training should be in your initial project budget. If you discover a training need mid-project, submit a change request for funding. Don't skip training because 'we didn't budget for it'—that's not a valid excuse."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection: Training Your Team",
+    "reflectionPrompt": "Think about training needs on your current project:",
+    "questions": [
+      {
+        "id": "skill-gaps",
+        "question": "What skill or knowledge gaps exist on your team right now?",
+        "type": "textarea",
+        "placeholder": "Example: 3 developers don't know Kubernetes, QA team unfamiliar with our new automation framework..."
+      },
+      {
+        "id": "training-budget",
+        "question": "Is training budgeted in your project plan?",
+        "type": "dropdown",
+        "options": [
+          "Yes, adequate budget allocated",
+          "Partially budgeted",
+          "No budget for training",
+          "Not sure - need to check",
+          "Need to submit change request"
+        ]
+      },
+      {
+        "id": "training-effectiveness",
+        "question": "When was the last time you measured whether training was effective?",
+        "type": "text",
+        "placeholder": "Example: Last month - surveyed team after Docker training, checked if deployment speed improved..."
+      },
+      {
+        "id": "training-action",
+        "question": "What training will you arrange this month to close a competency gap?",
+        "type": "textarea",
+        "placeholder": "Example: Schedule Kubernetes training for the 3 developers who need it, hands-on 2-day workshop..."
+      }
+    ],
+    "valueStatement": "💡 Great PMs invest in their team's development. Training is an investment, not an expense—it multiplies team capability.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Climbing School",
+    "intro": "Remember T.R.A.I.N. with this vivid story:",
+    "story": {
+      "title": "Training for Technical Climbing",
+      "narrative": "Your team needs to learn technical ice climbing for the expedition. Follow the **T.R.A.I.N.** method...",
+      "scenes": [
+        {
+          "step": "T - Target",
+          "visual": "🎯 You TARGET the specific skills needed",
+          "description": "Not just 'learn climbing'—be specific: ice axe technique, crampon placement, crevasse rescue, avalanche safety. You determine WHAT competencies they need for THIS mountain. Don't send them to rock climbing class when they need ice climbing."
+        },
+        {
+          "step": "R - Research",
+          "visual": "🔍 You RESEARCH mountain school options",
+          "description": "Online videos? Classroom theory? Hands-on glacier training? Your team learns best by DOING (hands-on learners), so you choose a school with lots of practice on actual ice, not just videos. Match training to learning style."
+        },
+        {
+          "step": "A - Allocate",
+          "visual": "💰 You ALLOCATE budget for ice climbing school",
+          "description": "Budget for training. Set aside time in the schedule. Doesn't conflict with the summit window. You allocate resources (money, time, equipment) needed for training. If you didn't budget initially, submit a change request now."
+        },
+        {
+          "step": "I - Implement",
+          "visual": "📚 You IMPLEMENT - team attends climbing school",
+          "description": "Engage with your team: 'Are you learning? Do you understand the techniques?' The instructor provides training on a glacier. You support the learning process. They practice, practice, practice on ice."
+        },
+        {
+          "step": "N - kNow",
+          "visual": "✅ You kNOW it worked by measuring",
+          "description": "They pass the ice climbing certification! You observe them handle the ice wall confidently. You measure the outcome—can they self-arrest with the ice axe now? Has climbing speed improved? If not, more training needed."
+        }
+      ],
+      "moral": "Training climbers isn't 'here's an ice axe, figure it out'—it's **T**arget skills, **R**esearch schools, **A**llocate budget, **I**mplement training, k**N**ow it worked. That's T.R.A.I.N."
+    },
+    "selfTest": "Close your eyes. Picture the ice climbing school. Can you see **T**argeting skills, **R**esearching options, **A**llocating budget, **I**mplementing on the glacier, k**N**owing it worked? That's T.R.A.I.N."
+  },
+  "spacedRepetition": {
+    "title": "📅 Spaced Repetition: Lock This In",
+    "intro": "Schedule these micro-reviews:",
+    "schedule": [
+      {
+        "timeframe": "Tomorrow",
+        "icon": "📱",
+        "title": "5-Minute Flashback",
+        "tasks": [
+          "What does T.R.A.I.N. stand for?",
+          "Recall the driving school story",
+          "Name 3 training options",
+          "How do you measure training effectiveness?"
+        ],
+        "duration": "5 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "🎯",
+        "title": "Practice Application",
+        "tasks": [
+          "Real scenario: Any skill gaps on your team?",
+          "Did you provide training this week?",
+          "Did you measure if it worked?",
+          "Review exam tip pattern"
+        ],
+        "duration": "10 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📝",
+        "title": "Deep Retrieval",
+        "tasks": [
+          "Write out T.R.A.I.N. framework without looking",
+          "Explain: Why match training to learning style?",
+          "List 5 ways to measure training outcomes",
+          "Review personal reflection"
+        ],
+        "duration": "15 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "🔄",
+        "title": "Integration Check",
+        "tasks": [
+          "Practice questions on training",
+          "Compare: Training vs. Coaching vs. Mentoring",
+          "Review all Domain 1 tasks so far",
+          "Identify the 'training is the answer' pattern"
+        ],
+        "duration": "20 min",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention",
+      "withReview": "90% retention"
+    }
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "read",
+        "task": "Read this learn section",
+        "xp": 10,
+        "completed": true
+      },
+      {
+        "id": "scenario1",
+        "task": "Solve Quick Scenario",
+        "xp": 5,
+        "completed": false
+      },
+      {
+        "id": "scenario2",
+        "task": "Apply T.R.A.I.N. Framework",
+        "xp": 10,
+        "completed": false
+      },
+      {
+        "id": "reflection",
+        "task": "Complete personal reflection",
+        "xp": 5,
+        "completed": false
+      },
+      {
+        "id": "reference-card",
+        "task": "Download reference card",
+        "xp": 2,
+        "completed": false
+      },
+      {
+        "id": "flashcards",
+        "task": "Review 15 flashcards",
+        "xp": 15,
+        "current": true,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/d1t5"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass 10-question quiz (70%+)",
+        "xp": 20,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/d1t5"
+      }
+    ],
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/d1t5"
+    }
+  }
+}

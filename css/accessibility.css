@@ -1,0 +1,620 @@
+/**
+ * accessibility.css - WCAG 2.1 AA Compliance
+ * Ensures the app is accessible to all users
+ */
+
+/* ========================================
+   1. SKIP LINKS
+   ======================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only:focus {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  width: auto;
+  height: auto;
+  padding: 1rem 2rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  background-color: var(--color-primary-blue);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   2. FOCUS INDICATORS
+   ======================================== */
+
+/* Enhanced focus visibility */
+*:focus-visible {
+  outline: 3px solid var(--color-primary-blue);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Remove outline for mouse users */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Button focus indicators */
+.btn:focus-visible {
+  outline: 3px solid var(--color-primary-blue);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.btn-primary:focus-visible {
+  outline-color: white;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Link focus */
+a:focus-visible {
+  outline: 3px solid var(--color-primary-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Form input focus */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-primary-blue);
+  outline-offset: 0;
+  border-color: var(--color-primary-blue);
+}
+
+/* Radio/Checkbox focus */
+input[type="radio"]:focus-visible,
+input[type="checkbox"]:focus-visible {
+  outline: 3px solid var(--color-primary-blue);
+  outline-offset: 2px;
+}
+
+/* Card focus (for clickable cards) */
+.card[tabindex]:focus-visible,
+.mission-card:focus-visible,
+.task-card:focus-visible {
+  outline: 3px solid var(--color-primary-blue);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+/* ========================================
+   3. COLOR CONTRAST IMPROVEMENTS
+   ======================================== */
+
+:root {
+  /* Enhanced contrast colors */
+  --color-text-secondary: #4B5563; /* 7.1:1 on white */
+  --color-text-muted: #6B7280; /* 4.8:1 on white */
+  --color-border: #D1D5DB;
+  --color-gray-600: #4B5563;
+  --color-gray-700: #374151;
+}
+
+/* Ensure sufficient contrast for interactive elements */
+.btn-outline {
+  border: 2px solid var(--color-primary-blue);
+  color: var(--color-primary-blue);
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background: var(--color-primary-blue);
+  color: white;
+}
+
+/* Secondary text with better contrast */
+.text-secondary,
+.stat-label,
+.task-meta {
+  color: var(--color-text-secondary);
+}
+
+/* Muted text still readable */
+.text-muted,
+.footer-text {
+  color: var(--color-text-muted);
+}
+
+/* ========================================
+   4. TOUCH TARGET SIZES
+   ======================================== */
+
+/* Minimum 44x44px for all interactive elements */
+.btn,
+button,
+a.btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Navigation links */
+.nav-link {
+  padding: 12px 16px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+/* Quiz options */
+.quiz-option {
+  min-height: 54px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+/* Checkbox and radio button labels */
+.quiz-option label,
+.checklist-item label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 8px;
+}
+
+/* Increase radio/checkbox size */
+input[type="radio"],
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Mobile - even larger targets */
+@media (max-width: 767px) {
+  .btn {
+    min-height: 48px;
+    padding: 14px 24px;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+  }
+
+  .quiz-option {
+    min-height: 60px;
+  }
+}
+
+/* ========================================
+   5. SCREEN READER ENHANCEMENTS
+   ======================================== */
+
+/* Visually hidden but available to screen readers */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Progress bars with screen reader text */
+.progress-bar {
+  position: relative;
+}
+
+.progress-bar .sr-only {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* ========================================
+   6. MOTION & ANIMATION PREFERENCES
+   ======================================== */
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Disable problematic animations */
+  .modal,
+  .modal-backdrop,
+  .celebration-icon,
+  .completion-icon {
+    animation: none !important;
+  }
+
+  /* Keep essential transitions but make them instant */
+  .btn,
+  .card,
+  .nav-link {
+    transition: none !important;
+  }
+
+  /* Smooth scroll disabled */
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========================================
+   7. HIGH CONTRAST MODE SUPPORT
+   ======================================== */
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-text-primary: #000000;
+    --color-text-secondary: #000000;
+    --color-background-white: #FFFFFF;
+    --color-border: #000000;
+  }
+
+  .btn-outline {
+    border-width: 3px;
+  }
+
+  *:focus-visible {
+    outline-width: 4px;
+  }
+}
+
+/* ========================================
+   8. FORM ACCESSIBILITY
+   ======================================== */
+
+/* Ensure labels are associated with inputs */
+label {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Required field indicator */
+.required::after {
+  content: " *";
+  color: var(--color-urgency-red);
+  font-weight: bold;
+}
+
+/* Error states */
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border-color: var(--color-urgency-red);
+}
+
+input:invalid:focus,
+textarea:invalid:focus,
+select:invalid:focus {
+  outline-color: var(--color-urgency-red);
+}
+
+/* Error message styling */
+.error-message {
+  color: var(--color-urgency-red);
+  font-size: 0.875rem;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.error-message::before {
+  content: "⚠️";
+}
+
+/* Success states */
+input:valid,
+textarea:valid {
+  border-color: var(--color-trust-green);
+}
+
+/* ========================================
+   9. MODAL ACCESSIBILITY
+   ======================================== */
+
+/* Modal focus trap */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure modal content is keyboard accessible */
+.modal *:focus-visible {
+  outline: 3px solid var(--color-primary-blue);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   10. IMAGE & ICON ACCESSIBILITY
+   ======================================== */
+
+/* Ensure decorative images are hidden from screen readers */
+img[alt=""],
+img[role="presentation"] {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Icon buttons need accessible labels */
+button[aria-label],
+a[aria-label] {
+  position: relative;
+}
+
+/* Emoji with screen reader text */
+[role="img"] {
+  display: inline-block;
+}
+
+/* ========================================
+   11. TABLE ACCESSIBILITY
+   ======================================== */
+
+/* Ensure tables have proper structure */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+}
+
+/* Table headers */
+th[scope="col"] {
+  background: var(--color-gray-100);
+}
+
+th[scope="row"] {
+  font-weight: bold;
+}
+
+/* Responsive tables */
+@media (max-width: 767px) {
+  /* Stack table on mobile for better screen reader experience */
+  table.responsive {
+    display: block;
+  }
+
+  table.responsive thead {
+    display: none;
+  }
+
+  table.responsive tbody,
+  table.responsive tr,
+  table.responsive td {
+    display: block;
+    width: 100%;
+  }
+
+  table.responsive tr {
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 0.5rem;
+  }
+
+  table.responsive td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}
+
+/* ========================================
+   12. NOTIFICATION ACCESSIBILITY
+   ======================================== */
+
+/* Toast notifications - announce to screen readers */
+.toast-container {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 2000;
+}
+
+.toast {
+  background: white;
+  border: 2px solid var(--color-primary-blue);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: var(--shadow-lg);
+  min-width: 300px;
+}
+
+/* Ensure toasts are announced */
+.toast[role="status"],
+.toast[role="alert"] {
+  /* Will be announced by screen readers */
+}
+
+/* ========================================
+   13. TEXT SPACING & READABILITY
+   ======================================== */
+
+/* Support user text spacing preferences */
+* {
+  max-width: 100%;
+}
+
+/* Ensure text can be resized up to 200% */
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Line height for readability */
+p,
+li {
+  line-height: 1.7;
+}
+
+/* Paragraph spacing */
+p + p {
+  margin-top: 1em;
+}
+
+/* Heading spacing */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+/* ========================================
+   14. PRINT ACCESSIBILITY
+   ======================================== */
+
+@media print {
+  /* Ensure printed content is accessible */
+  .no-print,
+  .nav,
+  .footer,
+  .modal-backdrop {
+    display: none !important;
+  }
+
+  /* High contrast for printing */
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  /* Ensure links are visible */
+  a {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  /* Page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  table, figure, img {
+    page-break-inside: avoid;
+  }
+}
+
+/* ========================================
+   15. LANGUAGE & DIRECTION SUPPORT
+   ======================================== */
+
+/* RTL support (future enhancement) */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .btn {
+  flex-direction: row-reverse;
+}
+
+/* ========================================
+   16. KEYBOARD SHORTCUTS HINT
+   ======================================== */
+
+.keyboard-shortcut {
+  font-family: monospace;
+  background: var(--color-gray-100);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--color-gray-300);
+  font-size: 0.875em;
+}
+
+/* ========================================
+   17. LOADING STATES
+   ======================================== */
+
+/* Ensure loading states are announced */
+.loading[role="status"] {
+  /* Screen reader announcement */
+}
+
+.loading::after {
+  content: "Loading...";
+  position: absolute;
+  left: -9999px;
+}
+
+/* ========================================
+   18. ERROR PREVENTION
+   ======================================== */
+
+/* Confirmation dialogs */
+.confirm-dialog {
+  background: var(--color-background-white);
+  border: 3px solid var(--color-urgency-red);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.confirm-dialog [role="alertdialog"] {
+  /* Screen reader will announce as dialog */
+}

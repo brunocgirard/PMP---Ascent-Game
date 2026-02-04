@@ -1,0 +1,265 @@
+{
+  "taskId": "d1t11",
+  "taskTitle": "Engage and Support Virtual Teams",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your distributed team spans four time zones (California, New York, London, and India). During yesterday's async Slack exchange, a developer from India asked a technical question, but no one from the US or UK teams saw it until 16 hours later. By then, they were already working on a workaround. Today, your London team member is on mute during a video call, and the India team is experiencing internet lag. Three team members have already disengaged from the chat.",
+    "question": "As Project Manager, which actions should you prioritize to re-engage and support this virtual team?",
+    "options": {
+      "A": "Schedule all meetings in US time zones—everyone needs to adapt to the primary office",
+      "B": "Assess team member needs (time zones, tools, equipment), establish clear communication protocols, keep video always-on to mimic co-location, and ensure quality equipment",
+      "C": "Switch to email-only communication to reduce technical dependencies",
+      "D": "Tell the India team to work during US hours since most decisions happen in US meetings"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Assess, Establish, Implement, Evaluate",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Understand Virtual Team Needs First",
+          "explanation": "Virtual teams have DIFFERENT needs than co-located teams. You must assess: time zones, internet quality, equipment, language barriers, asynchronous communication preferences. One-size-fits-all doesn't work.",
+          "pmbokSupport": "PMBOK emphasizes assessing team composition and structure based on project needs and constraints"
+        },
+        {
+          "principle": "Osmotic Communication Doesn't Happen by Accident",
+          "explanation": "In physical teams, Bob talks to Jane and you overhear knowledge transfer. In virtual teams, this MUST be intentional. Always-on cameras, shared channels, recorded meetings, overlapping meeting times—all essential.",
+          "pmbokSupport": "PMBOK states: 'On projects where team members work virtually, more time is spent connecting people through technology'"
+        },
+        {
+          "principle": "Technology is Not the Answer—Facilitation Is",
+          "explanation": "You can have the best Zoom setup, but if a developer waits 16 hours for a response, they disengage. You must establish: response time expectations, overlap windows, async-first processes, and response guarantees.",
+          "pmbokSupport": "PMI values clear communication protocols and engagement strategies for distributed teams"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Virtual team support requires INTENTION. Don't assume technology or flexibility alone will work.",
+      "trapTable": [
+        {
+          "option": "A - US time zones only",
+          "violation": "Ignores time zone reality. Disengages India and UK teams. Creates second-class team members.",
+          "pmiValueBroken": "Inclusivity, Respect, Transparency"
+        },
+        {
+          "option": "C - Email only",
+          "violation": "Removes richness of communication (tone, real-time collaboration, visual cues). Makes complex discussions impossible.",
+          "pmiValueBroken": "Effective Communication, Collaboration"
+        },
+        {
+          "option": "D - India works US hours",
+          "violation": "Unreasonable. India is 9.5-13 hours ahead. Creates burnout, violates work-life balance.",
+          "pmiValueBroken": "Respect, Fairness, Sustainability"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "What are the time zones and overlaps?",
+        "What are team members' equipment needs (internet, camera, mic, headset)?",
+        "What communication channels work best for async vs. synchronous?",
+        "How will we mimic osmotic communication virtually?",
+        "What response time expectations are realistic?",
+        "How will we maintain engagement for distributed members?"
+      ],
+      "patternRule": "Virtual team support = Assess needs + Establish clear protocols + Implement quality tech + Evaluate effectiveness. It requires INTENTIONAL leadership, not just tools."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "S.U.M.M.I.T. Framework for Virtual Team Engagement",
+    "frameworkIntro": "Reaching the summit with a distributed team requires deliberate engagement strategy:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Sponsor Shared Understanding", "color": "#3b82f6"},
+          "action": "Assess team member needs: time zones, language, internet quality, equipment gaps, cultural differences. Understand what each person needs to thrive in a virtual environment.",
+          "keyQuestions": ["What are the time zones and overlap windows?", "What equipment does each team member have?", "What are language and communication barriers?", "What support do they need?"],
+          "examKeywords": "Assess needs, Distributed teams, Time zones, Team composition"
+        },
+        {
+          "step": {"badge": "U", "name": "Unify Communication Protocols", "color": "#8b5cf6"},
+          "action": "Establish clear protocols for synchronous (meetings, real-time chat) and asynchronous (email, async updates) communication. Define response time expectations. Create channels for osmotic knowledge transfer.",
+          "keyQuestions": ["When are synchronous meetings? When is async appropriate?", "What's the expected response time?", "How will we share knowledge spontaneously?", "Which tools for which purpose?"],
+          "examKeywords": "Communication protocol, Asynchronous, Synchronous, Clear expectations"
+        },
+        {
+          "step": {"badge": "M", "name": "Maintain Always-On Engagement", "color": "#10b981"},
+          "action": "Implement virtual always-on meetings (cameras on, mics on, channels open) to mimic co-located team environment. Keep communication channels active and monitored. Create ritual touchpoints.",
+          "keyQuestions": ["Are cameras on for engagement?", "Are team members present and engaged?", "Do we have regular sync points?", "Is there a rhythm to our communication?"],
+          "examKeywords": "Always-on, Virtual co-location, Engagement, Ritual/Cadence"
+        },
+        {
+          "step": {"badge": "M", "name": "Monitor Quality & Equipment", "color": "#f59e0b"},
+          "action": "Ensure team members have quality internet, microphones, cameras, and headsets. Technical issues kill engagement. Provide stipends if needed. Regularly check: 'Do you have what you need?'",
+          "keyQuestions": ["Is the internet quality adequate?", "Does everyone have working equipment?", "Are there technical barriers to engagement?", "Do we need to upgrade or provide equipment?"],
+          "examKeywords": "Equipment, Infrastructure, Technology enablement, Resource provision"
+        },
+        {
+          "step": {"badge": "I", "name": "Iterate Engagement Effectiveness", "color": "#ec4899"},
+          "action": "Continuously evaluate: Are team members actually collaborating? Is knowledge being shared? Is anyone disengaged? Adjust protocols, meeting times, tools based on feedback. Virtual teams need constant attention.",
+          "keyQuestions": ["Are team members collaborating effectively?", "Is anyone being left out?", "What's working? What's not?", "How can we improve?"],
+          "examKeywords": "Evaluate, Adjust, Feedback, Continuous improvement"
+        },
+        {
+          "step": {"badge": "T", "name": "Trust & Empower Despite Distance", "color": "#06b6d4"},
+          "action": "Create psychological safety despite distance. Trust team members to work asynchronously. Give them autonomy. Check in on well-being, not just work. Virtual teams need MORE trust-building, not less.",
+          "keyQuestions": ["Do team members feel trusted and safe?", "Are we micromanaging because of distance?", "Is autonomy being respected?", "How is morale and well-being?"],
+          "examKeywords": "Psychological safety, Trust, Autonomy, Well-being"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 7: Support Team Engagement and Collaborative Environment",
+      "quote": "Distributed project teams require intentional technology use and communication protocols to create the same level of collaboration as co-located teams. Project managers spend more time connecting people virtually."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Engage and Support Virtual Teams",
+    "framework": {
+      "acronym": "S.U.M.M.I.T.",
+      "steps": ["🔍 Sponsor understanding of needs", "📋 Unify communication protocols", "🎥 Maintain always-on engagement", "🖥️ Monitor quality & equipment", "🔄 Iterate effectiveness", "🤝 Trust & empower despite distance"]
+    },
+    "quickReference": "**Assess:** Time zones, equipment, needs | **Establish:** Clear protocols, response times, overlap windows | **Implement:** Always-on channels, quality tech, regular touchpoints | **Evaluate:** Engagement, collaboration, team well-being",
+    "goldenRule": "Virtual teams need MORE intentional engagement, not less. Distance doesn't excuse checking in. Osmotic communication must be engineered, not assumed.",
+    "examTip": "Look for 'virtual teams,' 'distributed,' 'time zones' → If question involves engagement: assess needs first, establish protocols, maintain always-on presence, ensure quality equipment. If question involves communication: synchronous for decisions, asynchronous for updates, overlap windows matter.",
+    "pmbokPrinciple": "Intentional engagement and connection through technology"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply S.U.M.M.I.T.",
+    "intro": "Apply the framework to a real situation:",
+    "scenarioStory": "You're starting a new project with team members in Singapore, London, San Francisco, and Toronto. Your first team standup revealed: (1) Singapore team doesn't have good internet at home, (2) One London developer never turns on their camera, (3) San Francisco team uses Slack but Toronto prefers email, (4) Three people asked, 'When are the overlap meeting times?'",
+    "question": "What should you do in your first week as PM?",
+    "options": {
+      "A": "Schedule all meetings at 9am US Pacific time and require everyone to make it work",
+      "B": "Conduct 1:1 assessment of each team member (time zones, equipment, preferences), establish shared communication protocols (which tools for what), identify overlap windows, provide equipment support if needed",
+      "C": "Tell the team to get better internet—it's their responsibility",
+      "D": "Keep everything in writing via email to avoid time zone conflicts"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Virtual teams are pretty much the norm now. The challenge is that we don't have face-to-face communication with a whiteboard. So you have to be intentional about creating ways to mimic that. Always-on meetings, shared channels, overlapping windows, quality equipment—these aren't nice-to-haves, they're essentials.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course - Domain 1 Task 11"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Project teams that are physically dispersed and work virtually require more time spent connecting people through technology. Project managers must consider time zones, language barriers, and cultural differences to enable effective collaboration.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      },
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "People like looking at people. If you're doing a virtual meeting, cameras need to be on. Speakers need to be on so osmotic communication can happen—even if Bob is talking to Jane, if you have your speaker on, you hear it and learn from it. That's knowledge transfer happening naturally.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Virtual Team Paradox",
+        "insight": "Virtual teams need LESS technology (simpler is better) but MORE intentional communication. Complex collaboration tools fail. Simple, always-on channels with clear protocols succeed. The barrier is behavioral (will people engage?), not technical (does the tool work?)."
+      },
+      {
+        "title": "Asynchronous First Doesn't Mean No Synchronous",
+        "insight": "The best distributed teams have: (1) Async-first processes for updates and decisions, (2) Small overlap windows for real-time collaboration, (3) Always-on channels for urgent questions, (4) Recorded meetings for those who can't attend live. It's not either/or, it's both/and."
+      },
+      {
+        "title": "Equipment and Internet > Tools and Processes",
+        "insight": "Before you optimize Slack vs. Teams vs. Discord, make sure everyone has stable internet and a working camera. A team member on a 2-hour commute with poor internet will disengage, no matter how good your communication protocol is. Physical enablement comes first."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "team-distribution",
+        "question": "Is your team distributed? What time zones are they in? What overlap windows do you have?",
+        "type": "textarea",
+        "placeholder": "Example: Team in California (PST), New York (EST), London (GMT). 8am PST to 12pm PST is overlap window..."
+      },
+      {
+        "id": "engagement-gaps",
+        "question": "Where do you see engagement gaps in your virtual team? What could you improve?",
+        "type": "textarea",
+        "placeholder": "Example: India team feels left out of 9am US meetings. Developer on mute all day..."
+      },
+      {
+        "id": "communication-protocols",
+        "question": "Do you have clear communication protocols? When is synchronous? When is async? What are response time expectations?",
+        "type": "dropdown",
+        "options": ["Yes, clear protocols", "Somewhat clear", "Unclear", "We're still figuring it out"]
+      }
+    ],
+    "valueStatement": "💡 Virtual teams aren't just remote teams—they're intentionally designed for engagement across distance. You set the tone.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "⛰️ Memory Palace: The Distributed Summit Expedition",
+    "story": {
+      "title": "Climbing the Mountain as a Distributed Expedition",
+      "narrative": "You're the expedition leader preparing climbers from around the world to reach the summit together. Each climber is in a different camp, different time zone, different weather. Your job is to keep them all engaged, connected, and climbing toward the summit...",
+      "scenes": [
+        {
+          "step": "S", "visual": "🔍 SPONSOR shared understanding of climber needs",
+          "description": "Base Camp meeting: 'What do you need to climb well?' Climber from Camp 1 says, 'Bad oxygen supply.' Climber from Camp 2 says, 'Can't see Camp 3 in the fog—need signaling.' Each climber has different needs. YOU assess them all before planning ascent."
+        },
+        {
+          "step": "U", "visual": "📋 UNIFY communication across camps",
+          "description": "Establish protocols: 'Red flag = emergency, needs immediate response. Green flag = update, no rush.' Base Camp gets reports async. Emergency questions get real-time response. Climbers know which flag to raise and get response in 2 hours or less."
+        },
+        {
+          "step": "M", "visual": "🎥 MAINTAIN always-on engagement—keep camps connected",
+          "description": "Radio base camp stays OPEN 24-7. Camp 1, Camp 2, Camp 3 can hear each other. Climber at Camp 1 solving a crevasse problem? Camp 2 overhears solution. Camp 3 learns from it. Knowledge flows continuously. Cameras (radio signals) are always on."
+        },
+        {
+          "step": "M", "visual": "🖥️ MONITOR quality and equipment at each camp",
+          "description": "Expedition check: 'Do you have oxygen? Working radio? Rope condition? Tent holding up?' Bad equipment kills climbers. Bad internet kills virtual teams. You personally check: 'What do you need?' and FIX IT. Not 'deal with it.' FIX IT."
+        },
+        {
+          "step": "I", "visual": "🔄 ITERATE—adjust protocols as you climb",
+          "description": "Mid-expedition: 'How's the radio system working? Are all camps hearing each other? Is Camp 2 feeling left out?' Feedback reveals: 'We need more overlap time with Camp 1.' You adjust. Always improving."
+        },
+        {
+          "step": "T", "visual": "🤝 TRUST climbers despite distance—they'll reach summit together",
+          "description": "You don't micromanage Camp 3: 'How exactly are you climbing? Do this technique!' You trust them: 'You have what you need. We're connected. Climb your segment well, and we summit together.' Trust + support = engagement."
+        }
+      ],
+      "moral": "Expedition leader **S**ponsors understanding, **U**nifies communication, **M**aintains always-on connection, **M**onitors equipment and well-being, **I**terates on effectiveness, **T**rusts climbers. Summit achieved through intentional engagement, not by hoping distance doesn't matter."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does S.U.M.M.I.T. stand for?", "Name three virtual team challenges", "What's the first step with a new distributed team?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Review your team's communication protocols", "Identify one engagement gap and fix it", "Check: Does everyone have good equipment?"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write the framework steps from memory", "List time zones and overlap windows for your team", "Design async vs sync protocol for a new project"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Compare S.U.M.M.I.T. with C.L.E.A.R. framework", "Practice scenarios: distributed team engagement problems", "Field test one new engagement tactic"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect on your team", "xp": 5},
+      {"id": "reference-card", "task": "Download reference card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d1t11"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d1t11"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d1t11"}
+  }
+}

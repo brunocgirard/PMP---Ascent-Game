@@ -1,0 +1,445 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Enhanced MVE Content Schema",
+  "description": "Schema for Enhanced MVE learn section content - all 10 sections",
+  "version": "1.0.0",
+  "type": "object",
+  "required": [
+    "taskId",
+    "taskTitle",
+    "domain",
+    "quickScenarioChallenge",
+    "ahaDebrief",
+    "coreFramework",
+    "visualReferenceCard",
+    "missionChecklist"
+  ],
+  "properties": {
+    "taskId": {
+      "type": "string",
+      "pattern": "^d[1-3]t[0-9]{1,2}$",
+      "description": "Task ID (e.g., d1t1, d2t5, d3t4)",
+      "examples": ["d1t1", "d2t4", "d3t2"]
+    },
+    "taskTitle": {
+      "type": "string",
+      "description": "Title of the task",
+      "examples": ["Manage Conflict", "Lead a Team"]
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["People", "Process", "Business"],
+      "description": "Domain the task belongs to"
+    },
+    "quickScenarioChallenge": {
+      "type": "object",
+      "required": ["scenarioStory", "question", "options", "correctAnswer"],
+      "properties": {
+        "challengeSubtitle": {
+          "type": "string",
+          "default": "Don't worry if you get it wrong—that's how you learn!"
+        },
+        "scenarioStory": {
+          "type": "string",
+          "description": "2-4 sentence realistic project situation"
+        },
+        "question": {
+          "type": "string",
+          "description": "FIRST, BEST, or NEXT",
+          "examples": ["FIRST", "BEST", "NEXT"]
+        },
+        "options": {
+          "type": "object",
+          "required": ["A", "B", "C", "D"],
+          "properties": {
+            "A": {"type": "string"},
+            "B": {"type": "string"},
+            "C": {"type": "string"},
+            "D": {"type": "string"}
+          }
+        },
+        "correctAnswer": {
+          "type": "string",
+          "enum": ["A", "B", "C", "D"]
+        }
+      }
+    },
+    "ahaDebrief": {
+      "type": "object",
+      "required": ["correctAnswer", "whySection"],
+      "properties": {
+        "correctAnswer": {
+          "type": "string",
+          "description": "The correct answer with option letter (e.g., 'D - Bring both parties together')"
+        },
+        "whySection": {
+          "type": "object",
+          "properties": {
+            "insights": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "principle": {"type": "string"},
+                  "explanation": {"type": "string"},
+                  "pmbokSupport": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "trapSection": {
+          "type": "object",
+          "properties": {
+            "explanation": {"type": "string"},
+            "trapTable": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "option": {"type": "string"},
+                  "violation": {"type": "string"},
+                  "pmiValueBroken": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "patternRecognition": {
+          "type": "object",
+          "properties": {
+            "checklist": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "patternRule": {"type": "string"}
+          }
+        }
+      }
+    },
+    "coreFramework": {
+      "type": "object",
+      "required": ["frameworkName"],
+      "properties": {
+        "frameworkName": {
+          "type": "string",
+          "description": "Name of the framework (e.g., 'I.S.E. Framework for Conflict')"
+        },
+        "frameworkIntro": {"type": "string"},
+        "frameworkTable": {
+          "type": "object",
+          "properties": {
+            "columns": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "rows": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "step": {
+                    "type": "object",
+                    "properties": {
+                      "badge": {"type": "string"},
+                      "name": {"type": "string"},
+                      "color": {"type": "string"}
+                    }
+                  },
+                  "action": {"type": "string"},
+                  "keyQuestions": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  },
+                  "examKeywords": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "additionalContent": {
+          "description": "Can be string (HTML) or object with structured data"
+        },
+        "pmbokConnection": {
+          "type": "object",
+          "properties": {
+            "performanceDomain": {"type": "string"},
+            "principle": {"type": "string"},
+            "quote": {"type": "string"}
+          }
+        }
+      }
+    },
+    "visualReferenceCard": {
+      "type": "object",
+      "required": ["taskTitle", "framework", "goldenRule", "examTip"],
+      "properties": {
+        "taskTitle": {"type": "string"},
+        "framework": {
+          "type": "object",
+          "properties": {
+            "acronym": {"type": "string"},
+            "steps": {
+              "type": "array",
+              "items": {"type": "string"}
+            }
+          }
+        },
+        "quickReference": {"type": "string"},
+        "goldenRule": {"type": "string"},
+        "examTip": {"type": "string"},
+        "pmbokPrinciple": {"type": "string"}
+      }
+    },
+    "secondScenario": {
+      "type": "object",
+      "required": ["scenarioStory", "question", "options", "correctAnswer"],
+      "properties": {
+        "title": {"type": "string"},
+        "intro": {"type": "string"},
+        "scenarioStory": {"type": "string"},
+        "question": {"type": "string"},
+        "options": {
+          "type": "object",
+          "properties": {
+            "A": {"type": "string"},
+            "B": {"type": "string"},
+            "C": {"type": "string"},
+            "D": {"type": "string"}
+          }
+        },
+        "correctAnswer": {
+          "type": "string",
+          "enum": ["A", "B", "C", "D"]
+        }
+      }
+    },
+    "pmWisdom": {
+      "type": "object",
+      "properties": {
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["instructor", "pmbok"]
+              },
+              "icon": {"type": "string"},
+              "text": {"type": "string"},
+              "author": {"type": "string"},
+              "source": {"type": "string"}
+            }
+          }
+        },
+        "fieldInsights": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {"type": "string"},
+              "insight": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "personalApplication": {
+      "type": "object",
+      "required": ["questions"],
+      "properties": {
+        "title": {"type": "string"},
+        "reflectionPrompt": {"type": "string"},
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "string"},
+              "question": {"type": "string"},
+              "type": {
+                "type": "string",
+                "enum": ["dropdown", "textarea", "text"]
+              },
+              "options": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "placeholder": {"type": "string"}
+            }
+          }
+        },
+        "valueStatement": {"type": "string"},
+        "xpReward": {"type": "number"}
+      }
+    },
+    "memoryPalace": {
+      "type": "object",
+      "properties": {
+        "title": {"type": "string"},
+        "intro": {"type": "string"},
+        "story": {
+          "type": "object",
+          "properties": {
+            "title": {"type": "string"},
+            "narrative": {"type": "string"},
+            "scenes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "step": {"type": "string"},
+                  "visual": {"type": "string"},
+                  "description": {"type": "string"}
+                }
+              }
+            },
+            "moral": {"type": "string"}
+          }
+        },
+        "selfTest": {"type": "string"}
+      }
+    },
+    "spacedRepetition": {
+      "type": "object",
+      "required": ["schedule"],
+      "properties": {
+        "title": {"type": "string"},
+        "intro": {"type": "string"},
+        "schedule": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "timeframe": {"type": "string"},
+              "icon": {"type": "string"},
+              "title": {"type": "string"},
+              "tasks": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "duration": {"type": "string"},
+              "reminderButton": {"type": "boolean"}
+            }
+          }
+        },
+        "calendarIntegration": {"type": "boolean"},
+        "retentionVisualization": {
+          "type": "object",
+          "properties": {
+            "withoutReview": {"type": "string"},
+            "withReview": {"type": "string"}
+          }
+        }
+      }
+    },
+    "missionChecklist": {
+      "type": "object",
+      "required": ["xpAvailable", "items"],
+      "properties": {
+        "title": {"type": "string"},
+        "xpAvailable": {"type": "number"},
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "string"},
+              "task": {"type": "string"},
+              "xp": {"type": "number"},
+              "description": {"type": "string"},
+              "completed": {"type": "boolean"},
+              "current": {"type": "boolean"},
+              "ctaButton": {"type": "string"},
+              "link": {"type": "string"}
+            }
+          }
+        },
+        "timeEstimate": {"type": "string"},
+        "nextActionPrimary": {
+          "type": "object",
+          "properties": {
+            "text": {"type": "string"},
+            "link": {"type": "string"}
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "taskId": "d1t1",
+      "taskTitle": "Manage Conflict",
+      "domain": "People",
+      "quickScenarioChallenge": {
+        "scenarioStory": "You're managing a software project. Two senior developers, Bob and Jane, are in a heated disagreement about which programming methodology to use.",
+        "question": "FIRST",
+        "options": {
+          "A": "Research both methodologies yourself and decide which is best",
+          "B": "Meet with Bob privately to understand his perspective",
+          "C": "Meet with Jane privately since she has more experience",
+          "D": "Bring Bob and Jane together for a face-to-face discussion"
+        },
+        "correctAnswer": "D"
+      },
+      "ahaDebrief": {
+        "correctAnswer": "D - Bring Bob and Jane together",
+        "whySection": {
+          "insights": [
+            {
+              "principle": "Inclusive",
+              "explanation": "Both parties are involved in finding the solution",
+              "pmbokSupport": "Servant leaders enable the project team to perform at their highest level"
+            }
+          ]
+        }
+      },
+      "coreFramework": {
+        "frameworkName": "I.S.E. Framework for Conflict Management",
+        "frameworkIntro": "You just experienced conflict management in action. Now here's the systematic approach PMI expects:",
+        "pmbokConnection": {
+          "performanceDomain": "Team Performance Domain",
+          "principle": "Principle 6: Demonstrate Leadership Behaviors"
+        }
+      },
+      "visualReferenceCard": {
+        "taskTitle": "Manage Conflict",
+        "framework": {
+          "acronym": "I.S.E.",
+          "steps": [
+            "🔍 Interpret source & stage",
+            "💡 Solve with options",
+            "🤝 Engage inclusively"
+          ]
+        },
+        "goldenRule": "When in doubt, bring people together.",
+        "examTip": "Ask: 'Is this inclusive?' → That's your answer.",
+        "pmbokPrinciple": "Principle 6: Demonstrate Leadership Behaviors"
+      },
+      "missionChecklist": {
+        "xpAvailable": 50,
+        "items": [
+          {
+            "id": "read",
+            "task": "Read the learn section",
+            "xp": 10,
+            "completed": true
+          },
+          {
+            "id": "flashcards",
+            "task": "Review 15 flashcards",
+            "xp": 15,
+            "current": true,
+            "ctaButton": "Start Flashcards",
+            "link": "/flashcards/d1t1"
+          }
+        ],
+        "nextActionPrimary": {
+          "text": "Continue to Flashcards (15 cards)",
+          "link": "/flashcards/d1t1"
+        }
+      }
+    }
+  ]
+}

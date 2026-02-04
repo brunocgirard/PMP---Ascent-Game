@@ -1,0 +1,429 @@
+{
+  "taskId": "d1t2",
+  "taskTitle": "Lead a Team",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're leading a diverse software development team with members from 5 different countries. The team is struggling to collaborate effectively. Some developers want to use Slack, others prefer email, and a few insist on using a specialized tool. Team meetings have become chaotic and unproductive.",
+    "question": "As the project manager, what should you do FIRST?",
+    "options": {
+      "A": "Select the most advanced collaboration tool and mandate its use across the team",
+      "B": "Let each developer continue using their preferred tool to avoid conflict",
+      "C": "Bring the team together to collaboratively decide on communication tools and ground rules",
+      "D": "Create a detailed communication plan yourself and distribute it to the team"
+    },
+    "correctAnswer": "C"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "C - Bring the team together to collaboratively decide",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Inclusive Leadership",
+          "explanation": "Effective leaders involve the team in decisions that affect how they work. This builds ownership and commitment.",
+          "pmbokSupport": "Demonstrate leadership behaviors to support individual and team needs"
+        },
+        {
+          "principle": "Servant Leadership",
+          "explanation": "A servant leader enables the team to perform at their highest level by removing obstacles and supporting their needs.",
+          "pmbokSupport": "Servant leaders enable the project team to perform at their highest level"
+        },
+        {
+          "principle": "Team Empowerment",
+          "explanation": "The team should have influence over HOW the work gets done, especially on collaborative projects.",
+          "pmbokSupport": "High-performing projects feature leadership at multiple levels"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Leadership isn't about making all decisions yourself—it's about enabling others to succeed.",
+      "trapTable": [
+        {
+          "option": "A - Mandate advanced tool",
+          "violation": "Directive without team input on collaborative decision",
+          "pmiValueBroken": "Ignores diversity and inclusion; may exclude less tech-savvy members"
+        },
+        {
+          "option": "B - Let everyone use their own tool",
+          "violation": "Abdicates leadership; creates communication chaos",
+          "pmiValueBroken": "Fails to establish common ground for team collaboration"
+        },
+        {
+          "option": "D - Create plan yourself",
+          "violation": "Top-down approach on collaborative matter",
+          "pmiValueBroken": "Misses opportunity for team ownership and buy-in"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Does the issue affect HOW the team works together?",
+        "Can the team provide valuable input on the solution?",
+        "Is this a collaborative matter vs. regulatory/compliance issue?",
+        "Will team involvement increase buy-in and adoption?"
+      ],
+      "patternRule": "If the team can solve it and it affects their workflow → Collaborate. If it's administrative/regulatory → Be directive."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "L.E.A.D. Framework for Team Leadership",
+    "frameworkIntro": "You just experienced leadership in action. Now here's the systematic approach PMI expects for leading high-performing teams:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {
+            "badge": "L",
+            "name": "Learn the Context",
+            "color": "#3b82f6"
+          },
+          "action": "Understand team composition, project type, and constraints. Is this collaborative work or regulatory-driven? What's the team's culture and diversity?",
+          "keyQuestions": [
+            "What type of project is this? (Agile/Traditional)",
+            "Are there regulatory/compliance requirements?",
+            "What's the team's diversity and experience level?",
+            "What leadership style fits this context?"
+          ],
+          "examKeywords": "Assess, Analyze, Evaluate context"
+        },
+        {
+          "step": {
+            "badge": "E",
+            "name": "Enable the Team",
+            "color": "#8b5cf6"
+          },
+          "action": "Provide vision, remove impediments, and give them what they need to succeed. Practice servant leadership by fetching 'food and water' (resources, tools, clarity).",
+          "keyQuestions": [
+            "Have I communicated a clear vision and mission?",
+            "What obstacles are blocking team progress?",
+            "Do they have the right tools and resources?",
+            "Am I removing impediments or creating them?"
+          ],
+          "examKeywords": "Servant leader, Remove impediments, Provide resources, Support"
+        },
+        {
+          "step": {
+            "badge": "A",
+            "name": "Adapt Your Style",
+            "color": "#10b981"
+          },
+          "action": "Choose directive when regulations require it; choose collaborative when the team can provide solutions. Effective leaders adapt to the situation.",
+          "keyQuestions": [
+            "Is this a technical problem the team can solve?",
+            "Or is this a compliance/administrative issue?",
+            "Should I direct, collaborate, or support?",
+            "What will motivate this particular team member?"
+          ],
+          "examKeywords": "Situational leadership, Directive vs Collaborative, Adapt, Flexible"
+        },
+        {
+          "step": {
+            "badge": "D",
+            "name": "Develop & Inspire",
+            "color": "#f59e0b"
+          },
+          "action": "Motivate through recognition, rewards, and growth opportunities. Inspire the team by showing how their work contributes to organizational goals.",
+          "keyQuestions": [
+            "How can I recognize and reward performance?",
+            "What motivates each team member?",
+            "Are team members growing and developing?",
+            "Am I inspiring them with the vision?"
+          ],
+          "examKeywords": "Motivate, Inspire, Recognize, Reward, Growth, Development"
+        }
+      ]
+    },
+    "additionalContent": {
+      "leadershipStyles": {
+        "directive": {
+          "when": "Regulatory requirements, safety concerns, compliance-driven work",
+          "example": "Building code requires green paint for safety → Directive: 'Use green paint per code 3.14'"
+        },
+        "collaborative": {
+          "when": "Technical decisions, multiple valid solutions, team expertise applies",
+          "example": "Multiple coding approaches work → Collaborative: 'Team, let's discuss and choose together'"
+        }
+      },
+      "servantLeadership": {
+        "definition": "Leadership philosophy where the leader's primary goal is to serve and enable the team",
+        "actions": [
+          "Remove impediments and obstacles",
+          "Provide tools, resources, and environment",
+          "Shield team from organizational politics",
+          "Facilitate team problem-solving",
+          "Support team decisions on HOW work gets done"
+        ],
+        "examTip": "If the team can solve it → Let the team solve it. If it's administrative/organizational → Leader solves it."
+      }
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 6: Demonstrate Leadership Behaviors",
+      "quote": "Leadership is different than authority. Effective leaders adapt their style to the situation. Effective leaders recognize differences in motivation among project team members."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Lead a Team",
+    "framework": {
+      "acronym": "L.E.A.D.",
+      "steps": [
+        "📋 Learn the context (Agile/Traditional? Regs?)",
+        "🔓 Enable the team (Servant leadership)",
+        "🔄 Adapt your style (Directive vs Collaborative)",
+        "🌟 Develop & inspire (Motivate, recognize)"
+      ]
+    },
+    "quickReference": "**Directive when:** Regulations, safety, compliance | **Collaborative when:** Technical decisions, team expertise applies | **Servant leader:** Remove impediments, let team solve their problems",
+    "goldenRule": "If the team can solve it, let the team solve it. If it's administrative/organizational, you solve it.",
+    "examTip": "Look for: 'diverse team,' 'stakeholder input,' 'team collaboration' → Answer involves inclusion. Look for: 'impediments,' 'obstacles' → Servant leader removes them.",
+    "pmbokPrinciple": "Principle 6: Demonstrate Leadership Behaviors - Leadership adapts to the situation"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply the L.E.A.D. Framework",
+    "intro": "Now that you know the framework, let's see if you can apply it:",
+    "scenarioStory": "You're managing an AI development project. Your team of data scientists is highly skilled but demotivated. Velocity has dropped from 40 to 25 story points per sprint. In your 1-on-1s, you discover they feel their skills aren't being fully utilized and they don't understand how their work connects to company strategy. Meanwhile, senior management wants daily status reports, which the team sees as 'bureaucratic waste of time.'",
+    "question": "What should you do NEXT to restore team motivation and performance?",
+    "options": {
+      "A": "Hold a mandatory team meeting to explain the importance of status reports",
+      "B": "Assign more challenging AI problems to utilize their skills better",
+      "C": "Meet with senior management to handle reporting requirements yourself, then hold a vision session with the team showing how their AI work impacts company goals",
+      "D": "Bring team and senior management together to discuss reporting requirements"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "The work on a project is done by the team, not the project manager. We're not gonna code that application. The team is. We need to lead the team to successfully build that application.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course - Domain 1 Task 2"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Leadership is not exclusive to any specific role. High-performing projects may feature leadership at multiple levels. Leadership is different than authority. Effective leaders adapt their style to the situation.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition - Principle 6"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Directive vs. Collaborative - The Rule",
+        "insight": "Use DIRECTIVE leadership when regulations, safety, or compliance drive the work. Use COLLABORATIVE leadership when technical problems have multiple solutions and team expertise applies. On the exam, if you see 'regulatory,' 'safety code,' or 'compliance' → Directive. If you see 'team discussion,' 'multiple approaches,' 'technical decision' → Collaborative."
+      },
+      {
+        "title": "Motivation Theory for PMs",
+        "insight": "People are motivated when: (1) There's a meaningful reward, AND (2) The work is within their capability. Assigning impossible work demotivates because they're setting themselves up for failure. Assigning too-easy work demotivates because skills aren't utilized. The sweet spot: challenging but achievable."
+      },
+      {
+        "title": "Low Tech, High Touch",
+        "insight": "When leading diverse teams, favor inclusive tools over exclusive ones. A whiteboard with markers includes everyone. Complex software may exclude less tech-savvy members. Physical sticky notes on a board beat digital tools for team engagement. The exam loves 'inclusive' over 'exclusive.'"
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection: Your Leadership Journey",
+    "reflectionPrompt": "Think about your own leadership experiences and how you'll apply L.E.A.D.:",
+    "questions": [
+      {
+        "id": "leadership-style",
+        "question": "Think of a recent project situation. Should you have been more directive or collaborative? Why?",
+        "type": "textarea",
+        "placeholder": "Example: In retrospect, I should have been collaborative when choosing our testing framework because the QA team had expertise I was ignoring..."
+      },
+      {
+        "id": "servant-leadership",
+        "question": "What's one impediment blocking your team right now that you could remove this week?",
+        "type": "textarea",
+        "placeholder": "Example: The procurement approval process is taking 3 weeks. I could escalate to the PMO to get a faster approval path..."
+      },
+      {
+        "id": "motivation-challenge",
+        "question": "Who on your team seems demotivated? What might be causing it?",
+        "type": "dropdown",
+        "options": [
+          "Work is too challenging (beyond their capability)",
+          "Work is too easy (skills not utilized)",
+          "They don't see how their work matters (no vision)",
+          "No recognition or rewards for good work",
+          "Administrative burdens blocking real work"
+        ]
+      },
+      {
+        "id": "action-commitment",
+        "question": "What's ONE leadership behavior you'll practice this week?",
+        "type": "text",
+        "placeholder": "Example: Hold a team vision session to reconnect work to company goals"
+      }
+    ],
+    "valueStatement": "💡 Great leaders aren't born—they're developed through intentional practice. Each situation is a chance to adapt, enable, and inspire.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Mountain Guide Story",
+    "intro": "Remember L.E.A.D. with this vivid story:",
+    "story": {
+      "title": "Leading the Expedition",
+      "narrative": "You're a mountain guide **LEAD**ing climbers up a challenging peak...",
+      "scenes": [
+        {
+          "step": "L - Learn",
+          "visual": "📋 At base camp, you LEARN about each climber",
+          "description": "Check their experience, fitness, gear. Some are Olympic athletes (collaborative expedition). Others are beginners (need directive guidance). Some routes have avalanche warnings (regulatory/safety = directive)."
+        },
+        {
+          "step": "E - Enable",
+          "visual": "🔓 You ENABLE by carrying extra water and gear",
+          "description": "Classic servant leadership! You're fetching 'food and water' for the team. When a climber's rope tangles, you fix it (remove impediments). You provide maps and clear direction to the summit (vision)."
+        },
+        {
+          "step": "A - Adapt",
+          "visual": "🔄 Weather changes, you ADAPT your style",
+          "description": "Avalanche risk? DIRECTIVE: 'Take this path, no discussion.' Choosing lunch spot? COLLABORATIVE: 'Team, where should we rest?' You flex between styles based on the situation."
+        },
+        {
+          "step": "D - Develop",
+          "visual": "🌟 At summit, you DEVELOP and inspire",
+          "description": "Recognize achievements: 'Sarah, great rope work!' Inspire with the view: 'See how our climb opened this whole valley—that's impact!' Motivate for the next peak: 'You're ready for Kilimanjaro now!'"
+        }
+      ],
+      "moral": "A great guide doesn't just know the route—they **L**earn the team, **E**nable their success, **A**dapt to conditions, and **D**evelop climbers for future peaks. That's leadership."
+    },
+    "selfTest": "Close your eyes. Picture the mountain. Can you see the guide **LEARN**ing at base camp, **ENABLE**ing with water, **ADAPT**ing to weather, **DEVELOP**ing at the summit? That's L.E.A.D."
+  },
+  "spacedRepetition": {
+    "title": "📅 Spaced Repetition: Lock This In",
+    "intro": "Research shows spacing your reviews increases retention from 50% to 90%. Schedule these micro-reviews:",
+    "schedule": [
+      {
+        "timeframe": "Tomorrow",
+        "icon": "📱",
+        "title": "5-Minute Flashback (24 hours)",
+        "tasks": [
+          "Quiz yourself: What does L.E.A.D. stand for?",
+          "Recall the mountain guide story",
+          "Ask: When directive vs. collaborative?",
+          "Review: What's servant leadership?"
+        ],
+        "duration": "5 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "🎯",
+        "title": "Practice Application (72 hours)",
+        "tasks": [
+          "Real scenario: Did you face a leadership situation at work?",
+          "Which L.E.A.D. step did you use (or should have used)?",
+          "Did you remove an impediment (servant leadership)?",
+          "Re-read the golden rule and exam tips"
+        ],
+        "duration": "10 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📝",
+        "title": "Deep Retrieval (7 days)",
+        "tasks": [
+          "Without looking, write out the L.E.A.D. framework",
+          "Explain directive vs. collaborative to a colleague",
+          "List 3 servant leadership actions",
+          "Review your personal reflection—any updates?"
+        ],
+        "duration": "15 min",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "🔄",
+        "title": "Integration Check (14 days)",
+        "tasks": [
+          "Practice questions on Lead a Team",
+          "How does this connect to Manage Conflict (d1t1)?",
+          "Review all Domain 1 tasks completed so far",
+          "Identify patterns across People domain"
+        ],
+        "duration": "20 min",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention with spaced repetition"
+    }
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist: Lead a Team",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "read",
+        "task": "Read this learn section",
+        "xp": 10,
+        "description": "Complete all 10 sections above",
+        "completed": true
+      },
+      {
+        "id": "scenario1",
+        "task": "Solve Quick Scenario (diverse team tools)",
+        "xp": 5,
+        "description": "Got it right on first try? +10 XP!",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "scenario2",
+        "task": "Apply L.E.A.D. Framework (AI team scenario)",
+        "xp": 10,
+        "description": "Practice applying the framework",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "reflection",
+        "task": "Complete personal reflection",
+        "xp": 5,
+        "description": "Save your leadership insights",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "reference-card",
+        "task": "Download L.E.A.D. reference card",
+        "xp": 2,
+        "description": "Keep it handy for exam prep",
+        "completed": false,
+        "current": false
+      },
+      {
+        "id": "flashcards",
+        "task": "Review 15 flashcards",
+        "xp": 15,
+        "description": "Reinforce key concepts",
+        "completed": false,
+        "current": true,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/d1t2"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass the 10-question quiz (70%+)",
+        "xp": 20,
+        "description": "Prove your mastery",
+        "completed": false,
+        "current": false,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/d1t2"
+      }
+    ],
+    "timeEstimate": "Total: ~35-40 minutes",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards (15 cards)",
+      "link": "/flashcards/d1t2"
+    }
+  }
+}

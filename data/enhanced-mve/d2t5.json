@@ -1,0 +1,238 @@
+{
+  "taskId": "d2t5",
+  "taskTitle": "Manage Project Issues",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a software project. Three issues have emerged: (1) A supplier is consistently late with component deliveries—it's a PATTERN, not a one-time delay. (2) Two team members are in constant conflict over technical decisions and their tension is slowing work. (3) A bug in the testing phase will require 2 weeks to fix (not originally planned). All three HAVE ALREADY HAPPENED (they're not 'potential risks'—they're current issues). You need to address them.",
+    "question": "What's your primary approach to managing these issues?",
+    "options": {
+      "A": "Solve each issue yourself and tell the team the decisions",
+      "B": "Recognize these as materialized risks that are now issues; collaborate with relevant stakeholders to determine the BEST solution for each",
+      "C": "Ignore them—they'll resolve themselves",
+      "D": "Escalate all of them to the sponsor immediately"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Recognize issues, collaborate with stakeholders to solve them",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Issues are Materialized Risks—Already Happening",
+          "explanation": "Risk = 'Supplier MIGHT be late' (potential). Issue = 'Supplier IS late' (actual problem happening now). Issues require immediate action to resolve.",
+          "pmbokSupport": "Recognize when a risk has materialized into an issue and address it appropriately"
+        },
+        {
+          "principle": "You Don't Solve Issues Alone—Collaborate",
+          "explanation": "Supplier lateness? Talk to supplier + procurement team. Team conflict? Facilitate discussion between conflicted members. Testing bug? Include testers in solution. Collaborative solutions are better.",
+          "pmbokSupport": "Collaborate with relevant stakeholders to determine the optimal approach to resolve each issue"
+        },
+        {
+          "principle": "Right Solution ≠ Fast Solution",
+          "explanation": "You could tell the team to 'find a new supplier' (fast, PM-decided). Better: Work WITH supplier and procurement to understand root cause and improve. Better solution, more buy-in.",
+          "pmbokSupport": "Determine the optimal action to achieve project success, not just the quickest action"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Mishandling issues or solving them without stakeholder input.",
+      "trapTable": [
+        {
+          "option": "A - Solve issues yourself",
+          "violation": "You might solve them wrong (supplier issue = find new supplier, but they're 80% cheaper?). Team doesn't buy in.",
+          "pmiValueBroken": "Poor decision-making; lack of collaboration"
+        },
+        {
+          "option": "C - Ignore issues",
+          "violation": "Issues get WORSE. Late supplier becomes latER. Team conflict becomes project-threatening.",
+          "pmiValueBroken": "Lack of leadership; ignoring problems"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is this a RISK (might happen) or an ISSUE (already happening)?",
+        "Did a risk materialize into an issue? (Yes = address as issue)",
+        "What's the negative impact? (Schedule, cost, quality?)",
+        "Who should be involved in solving this?",
+        "What's the optimal solution, not just the fastest?"
+      ],
+      "patternRule": "Issues = materialized risks. Recognize them immediately. Collaborate with stakeholders to determine the BEST solution (not just your solution). Implement with team buy-in."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "RESOLVE Framework for Managing Project Issues",
+    "frameworkIntro": "Managing issues effectively requires recognition, analysis, and collaborative resolution:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "R", "name": "Recognize Issues Immediately", "color": "#3b82f6"},
+          "action": "Identify when a RISK has become an ISSUE. 'Supplier might be late' → Issue when they ARE late. 'Team conflict might slow work' → Issue when it's slowing work NOW.",
+          "keyQuestions": ["Is this an issue or a risk?", "Is this impacting the project RIGHT NOW?"],
+          "examKeywords": "Recognize, materialized risk, issue identification, current problems"
+        },
+        {
+          "step": {"badge": "E", "name": "Evaluate Impact", "color": "#8b5cf6"},
+          "action": "Assess: How serious is this issue? Does it affect schedule? Cost? Quality? Morale? How urgent is resolution?",
+          "keyQuestions": ["What's the impact?", "How urgent is this?"],
+          "examKeywords": "Impact assessment, severity, urgency, constraints affected"
+        },
+        {
+          "step": {"badge": "S", "name": "Source Stakeholder Input", "color": "#10b981"},
+          "action": "Identify who should be involved in solving this. Supplier issue? Include procurement. Team conflict? Include the conflicted team members. Get INPUT.",
+          "keyQuestions": ["Who should help solve this?", "Who has expertise/authority?"],
+          "examKeywords": "Stakeholder involvement, collaboration, expertise"
+        },
+        {
+          "step": {"badge": "O", "name": "Optimize Resolution Options", "color": "#f59e0b"},
+          "action": "Generate multiple solutions. Supplier late → (A) Escalate/penalize, (B) Work with them to improve, (C) Find new supplier, (D) Adjust schedule. What's BEST for the project?",
+          "keyQuestions": ["What are the options?", "Which is best for project success?"],
+          "examKeywords": "Options, alternatives, trade-offs, optimal solution"
+        },
+        {
+          "step": {"badge": "L", "name": "Launch Implementation", "color": "#ec4899"},
+          "action": "Once solution is chosen, execute it. Communicate clearly to all affected parties. Make sure everyone understands their role.",
+          "keyQuestions": ["Is the plan clear?", "Does everyone know what to do?"],
+          "examKeywords": "Implementation, execution, clear communication"
+        },
+        {
+          "step": {"badge": "V", "name": "Validate Resolution", "color": "#06b6d4"},
+          "action": "Follow up. Is the supplier now on-time? Has team conflict resolved? Is the testing bug fixed? Confirm the issue is RESOLVED, not just addressed.",
+          "keyQuestions": ["Is the issue resolved?", "Are there any side effects?"],
+          "examKeywords": "Verification, follow-up, resolution confirmation"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Process Performance Domain",
+      "principle": "Principle 9: Manage Project Issues",
+      "quote": "Project managers recognize materialized risks as issues and collaborate with stakeholders to determine optimal solutions that ensure project success"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Manage Project Issues",
+    "framework": {
+      "acronym": "RESOLVE",
+      "steps": ["🚨 Recognize issues immediately", "📊 Evaluate impact", "👥 Source stakeholder input", "⚙️ Optimize resolution options", "🚀 Launch implementation", "✅ Validate resolution"]
+    },
+    "quickReference": "**Issue management essentials:** Recognize materialized risks as issues | Assess impact urgently | Involve relevant stakeholders | Generate options collaboratively | Execute solution | Confirm resolution",
+    "goldenRule": "You don't solve issues alone. You recognize them, collaborate with stakeholders, determine the BEST solution (not your solution), and implement it together.",
+    "examTip": "Look for 'issue,' 'problem happening now,' or 'materialized risk' → Recognize it as an issue → Collaborate to find best solution → Avoid making unilateral decisions.",
+    "pmbokPrinciple": "Recognize issues and collaborate with stakeholders to resolve them optimally"
+  },
+  "secondScenario": {
+    "title": "Apply RESOLVE Framework",
+    "intro": "Apply the framework:",
+    "scenarioStory": "During project execution, you discover: (1) A key team member wants to leave (personal reasons, job offer elsewhere). (2) A critical system component is more expensive than budgeted—$200K over estimate. (3) Regulatory changes now require additional testing that wasn't originally planned. All three are NOW HAPPENING, not potential risks.",
+    "question": "How should you address these issues?",
+    "options": {
+      "A": "Accept the team member's resignation, approve the $200K overrun, and hire consulting firm for extra testing (your decisions)",
+      "B": "Recognize these as issues, involve stakeholders: HR for retention strategy, finance for budget options, compliance for testing approach—collaborate on best solutions",
+      "C": "Escalate everything to the sponsor without analysis",
+      "D": "Ignore them until they become critical"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Issues are something that's happening on a project that's probably gonna have negative impact. The supplier IS late. The team member IS having conflict. These are not potential risks—they're issues. Recognize when a risk becomes an issue, and collaborate with stakeholders to come up with the right solution.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Project managers recognize when a risk has materialized into an issue and collaborate with relevant stakeholders to determine the optimal approach to resolve the issue and ensure project success.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Risk vs. Issue - Know the Difference",
+        "insight": "RISK = 'Supplier MIGHT be late' (future, uncertain, prevent/prepare). ISSUE = 'Supplier IS late' (present, real, resolve NOW). On exams, the distinction matters. Risk management is proactive. Issue management is reactive."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Personal Reflection",
+    "questions": [
+      {
+        "id": "current-issues",
+        "question": "What issues (not risks—actual problems) are happening on your project RIGHT NOW?",
+        "type": "textarea",
+        "placeholder": "Example: Team member causing conflict, supplier delay, scope ambiguity..."
+      },
+      {
+        "id": "collaboration",
+        "question": "For each issue, who should be involved in finding the best solution?",
+        "type": "dropdown",
+        "options": ["Just me (PM decides)", "Me + relevant stakeholders", "Stakeholders without me", "Not sure"]
+      }
+    ],
+    "valueStatement": "The best solutions come from collaboration. When you involve stakeholders in solving issues, they buy in more and solutions are better.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Mountain Expedition Issue Resolution",
+    "story": {
+      "title": "Climbing with Real Problems (Not Just Risks)",
+      "narrative": "Your expedition encounters THREE ISSUES (happening NOW, not potential risks): (1) Lead guide is ill and can't continue (2) Food supplies are 30% less than expected (3) Weather forecast shows storm arriving in 3 days. All REAL PROBLEMS. How do you RESOLVE them?",
+      "scenes": [
+        {
+          "step": "R", "visual": "🚨 RECOGNIZE issues immediately",
+          "description": "Guide is sick NOW (issue, not 'might get sick'). Food shortage is happening NOW (issue, not 'might be delayed'). Storm is coming NOW (issue). These require immediate action, not preparation."
+        },
+        {
+          "step": "E", "visual": "📊 EVALUATE impact",
+          "description": "Guide illness: Affects team safety + schedule (need new lead). Food shortage: Affects nutrition + schedule (need rationing or resupply). Storm: Affects safety + timeline (shelter needed). All are serious."
+        },
+        {
+          "step": "S", "visual": "👥 SOURCE stakeholder input",
+          "description": "Guide illness: Talk to guide, medical officer, backup guide. Food shortage: Talk to supply officer, team members (can we ration?). Storm: Talk to meteorologist, camp manager (where can we shelter?). Get INPUT, don't decide alone."
+        },
+        {
+          "step": "O", "visual": "⚙️ OPTIMIZE resolution options",
+          "description": "Guide illness: (A) Continue with backup guide? (B) Stop and wait for recovery? Food: (A) Ration? (B) Send for resupply? Storm: (A) Shelter in place? (B) Adjust route? Discuss options WITH stakeholders."
+        },
+        {
+          "step": "L", "visual": "🚀 LAUNCH implementation",
+          "description": "Decide: Use backup guide. Ration food 20%. Shelter at Camp 2 for 2 days during storm. Communicate clearly: 'Here's what we're doing and why.' Everyone knows their role."
+        },
+        {
+          "step": "V", "visual": "✅ VALIDATE resolution",
+          "description": "Follow up: Is backup guide working well? Is rationing sustainable? Did team survive storm? Are we back on track? Confirm issues are RESOLVED, not just addressed."
+        }
+      ],
+      "moral": "RESOLVE: Recognize issues happening NOW, Evaluate their impact, Source stakeholder input (not your decision alone), Optimize options together, Launch implementation, Validate resolution. Real problems need collaborative solutions."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does RESOLVE stand for?", "Risk vs. Issue difference?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Identify issues on your project", "Plan collaborative resolution"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Document issues and solutions", "Explain stakeholder involvement"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice questions", "Compare with risk management approach"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t5"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t5"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t5"}
+  }
+}

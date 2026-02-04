@@ -1,0 +1,228 @@
+{
+  "taskId": "d2t3",
+  "taskTitle": "Assess and Manage Changes to Scope, Schedule and Costs",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a construction project: 12-month timeline, $2M budget, 3-story office building. Midway through (month 6), the customer requests a 4th floor (additional scope). The customer says: 'It won't take much longer.' Your estimate: 4 additional months and $500K extra cost. The customer hasn't authorized change, but wants you to 'see if we can fit it in.' Your team is asking: 'Do we start planning this or not?'",
+    "question": "What should you do FIRST?",
+    "options": {
+      "A": "Tell the team to plan for the 4th floor since the customer requested it",
+      "B": "Ignore the request—stick to the original scope",
+      "C": "Run impact analysis: scope impact (4 floors), schedule impact (+4 months), cost impact (+$500K), then present to customer for formal approval/rejection",
+      "D": "Start building the 4th floor and present the cost overrun later"
+    },
+    "correctAnswer": "C"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "C - Assess impacts, present options, get formal approval",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Change is Constant—Manage It Formally",
+          "explanation": "Scope changes ALWAYS affect schedule and cost. Customer requests sound small ('It won't take much longer'), but analysis reveals truth: +4 months, +$500K. You MUST show impacts.",
+          "pmbokSupport": "Assess impacts of all change requests on scope, schedule, and cost before approval"
+        },
+        {
+          "principle": "No Formal Change = Project Chaos",
+          "explanation": "If you let customers slip in changes without formal approval, suddenly the 12-month/2M project becomes 16-month/2.5M project. Then EVERYONE is unhappy.",
+          "pmbokSupport": "Implement formal change management process; all changes require analysis and approval"
+        },
+        {
+          "principle": "Know Your Baselines",
+          "explanation": "You need clear original scope (3 floors), schedule (12 months), cost ($2M) to measure IMPACT. Without baselines, you can't assess anything.",
+          "pmbokSupport": "Maintain scope, schedule, and cost baselines to measure deviations"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Mishandling change management or being too flexible with scope.",
+      "trapTable": [
+        {
+          "option": "A - Plan for scope without formal approval",
+          "violation": "You're planning a 4th floor that's not approved. Wasted planning effort; team confusion.",
+          "pmiValueBroken": "Lack of change control; scope creep"
+        },
+        {
+          "option": "D - Start building without analysis",
+          "violation": "You discover after 2 months that 4th floor is truly impossible, but you've already started. Disaster.",
+          "pmiValueBroken": "No planning; reactive instead of proactive"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is this a scope change? (adding something not in original plan)",
+        "What's the schedule impact? (How many extra months/weeks?)",
+        "What's the cost impact? (How much extra budget?)",
+        "Do I have formal approval to proceed with assessment?",
+        "Have I presented options to the customer/sponsor for decision?"
+      ],
+      "patternRule": "ANY scope change → Always assess schedule AND cost impacts → Present to customer/sponsor → Wait for FORMAL approval before executing."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "ASSESS Framework for Managing Scope, Schedule, and Cost Changes",
+    "frameworkIntro": "Managing changes requires rigorous analysis and formal approval:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "A", "name": "Analyze the Change Request", "color": "#3b82f6"},
+          "action": "Clearly define what's being requested. 4th floor? New features? Different requirements? Be specific before assessing impact.",
+          "keyQuestions": ["What exactly is being added?", "How does it differ from original scope?"],
+          "examKeywords": "Change request, scope change, requirement clarification"
+        },
+        {
+          "step": {"badge": "S", "name": "Scope Impact Assessment", "color": "#8b5cf6"},
+          "action": "How much NEW work is required? For a 4th floor: structural design, permits, materials, labor, inspections. Quantify the scope addition.",
+          "keyQuestions": ["How much work is added?", "What are the components?"],
+          "examKeywords": "Scope impact, scope creep, work breakdown, deliverables"
+        },
+        {
+          "step": {"badge": "E", "name": "Evaluate Schedule Impact", "color": "#10b981"},
+          "action": "How many months/weeks will the new scope require? Original: 12 months for 3 floors. 4th floor estimate: +4 months. New timeline: 16 months.",
+          "keyQuestions": ["How long will this addition take?", "What's the new target date?"],
+          "examKeywords": "Schedule impact, delay, timeline, critical path"
+        },
+        {
+          "step": {"badge": "S", "name": "Sum Cost Impact", "color": "#f59e0b"},
+          "action": "What's the budget impact? Materials, labor, equipment, contingency. Original: $2M. 4th floor: +$500K. New budget: $2.5M.",
+          "keyQuestions": ["What's the cost estimate?", "Do we have budget for this?"],
+          "examKeywords": "Cost impact, budget variance, estimates, funding"
+        },
+        {
+          "step": {"badge": "E", "name": "Explain Options and Seek Approval", "color": "#ec4899"},
+          "action": "Present to customer: 'Option A: Add 4th floor = 16 months, $2.5M. Option B: Stick with 3 floors = 12 months, $2M. Which do you choose?' Require formal approval.",
+          "keyQuestions": ["Have I presented options?", "Has customer approved formally?"],
+          "examKeywords": "Approval, decision, stakeholder consensus, formal authorization"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Process Performance Domain",
+      "principle": "Principle 8: Manage Scope, Schedule, and Costs",
+      "quote": "Effective project management requires assessing impacts of ALL changes on scope, schedule, and cost before approval"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Manage Scope, Schedule, Cost Changes",
+    "framework": {
+      "acronym": "ASSESS",
+      "steps": ["📋 Analyze change request", "📦 Scope impact", "⏱️ Evaluate schedule", "💰 Sum cost", "✅ Explain & approve"]
+    },
+    "quickReference": "**Change management essentials:** Clarify request | Assess scope impact | Assess schedule impact | Assess cost impact | Present options | Get approval",
+    "goldenRule": "No scope change without analyzing its schedule and cost impacts. Present options to customer, get formal approval, THEN execute.",
+    "examTip": "Look for 'scope change,' 'change request,' or 'customer wants...' → Assess scope, schedule, AND cost impacts → Present to customer → Require formal approval.",
+    "pmbokPrinciple": "Integrate Scope, Schedule, Cost - Any change to one affects the others"
+  },
+  "secondScenario": {
+    "title": "Apply ASSESS Framework",
+    "intro": "Apply the framework:",
+    "scenarioStory": "Your software development project is in sprint 4 of 8 (8-month total, $1.2M budget). Customer asks for a new payment gateway integration (originally planned for phase 2). PM estimate: 3 sprints of development + testing + integration = 6 weeks, $80K. Current burn rate suggests no buffer. Customer says: 'Can we fit it in?'",
+    "question": "What should you do?",
+    "options": {
+      "A": "Start the integration immediately to keep customer happy",
+      "B": "Assess impact: +6 weeks schedule, +$80K cost, evaluate if it fits in 8-month timeline and $1.2M budget, then present options to customer",
+      "C": "Defer it to phase 2 as originally planned without discussing with customer",
+      "D": "Tell customer it's impossible"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Change management is going to be a hot topic on your exam—expect 10+ questions. Every change affects scope, schedule, and cost. You MUST assess all three impacts, present options to the customer, and get formal approval before executing.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Project managers manage changes to scope, schedule, and cost through a formal change control process. All changes must be assessed and approved before implementation.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Triple Constraint or Iron Triangle",
+        "insight": "Every project has three constraints: Scope, Schedule, Cost. Change one, and the others are affected. More scope → longer timeline or higher cost. You can't just say 'yes' to scope changes without addressing the trade-offs."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Personal Reflection",
+    "questions": [
+      {
+        "id": "changes",
+        "question": "What scope changes are being requested on your current project?",
+        "type": "textarea",
+        "placeholder": "Example: Adding new feature, changing requirements, expanding deliverables..."
+      },
+      {
+        "id": "assessment",
+        "question": "Have you assessed the schedule and cost impacts of these changes?",
+        "type": "dropdown",
+        "options": ["Yes, fully assessed", "Partially assessed", "Not yet assessed", "Not sure if needed"]
+      }
+    ],
+    "valueStatement": "Formal change management protects projects. The customers who respect change control end up happier than those who don't.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Mountain Expedition Scope Changes",
+    "story": {
+      "title": "Managing Unexpected Summit Requests",
+      "narrative": "You planned a 20,000-foot expedition (12 weeks, $50K budget). Midway through, your customer says: 'Can we also summit two nearby 18,000-foot peaks?' You didn't plan for this. How do you respond?",
+      "scenes": [
+        {
+          "step": "A", "visual": "📋 ANALYZE the request",
+          "description": "Customer wants: Main 20K peak + two 18K peaks. That's not the original plan. Clarify: Is this adding the peaks to the route, or a separate expedition?"
+        },
+        {
+          "step": "S", "visual": "📦 SCOPE impact",
+          "description": "Original scope: Route to 20K summit. Additional scope: Planning/climbing two 18K peaks, additional camps, guides, supplies. That's significant new work."
+        },
+        {
+          "step": "E", "visual": "⏱️ EVALUATE schedule impact",
+          "description": "Original: 12 weeks to 20K summit. Adding two 18K peaks: +4 weeks (divert from main route, summit peaks, return to main route). New timeline: 16 weeks."
+        },
+        {
+          "step": "S", "visual": "💰 SUM cost impact",
+          "description": "Additional guides, camps, supplies for 4 weeks: +$15K. New total budget: $50K + $15K = $65K. Customer only budgeted $50K."
+        },
+        {
+          "step": "E", "visual": "✅ EXPLAIN options & seek approval",
+          "description": "Tell customer: 'Option A: 20K only = 12 weeks, $50K. Option B: 20K + two 18K = 16 weeks, $65K. Which choice?' Wait for formal approval before changing the expedition."
+        }
+      ],
+      "moral": "ASSESS framework: Route guide Analyzes request, checks Scope impact, Evaluates Schedule, Sums Cost, and Explains options to climber. Customer approves choice BEFORE execution. That's how changes are managed professionally."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does ASSESS stand for?", "Why assess all three impacts?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Identify scope changes in your project", "Estimate schedule and cost impacts"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Map change to scope/schedule/cost", "Explain triple constraint"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice questions", "Compare with other change management tasks"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t3"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t3"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t3"}
+  }
+}

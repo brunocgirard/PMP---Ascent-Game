@@ -1,0 +1,238 @@
+{
+  "taskId": "d2t4",
+  "taskTitle": "Establish Project Governance Structure",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a $5M enterprise resource planning (ERP) system implementation. The company is hierarchical: IT Director above you, VP of Operations above IT Director, COO above VP. When issues arise, who decides? If the team can't resolve a data migration problem (impacts 3 departments), they escalate to you. Should you solve it, or escalate further? Your governance structure doesn't specify thresholds or escalation paths. People don't know who to talk to or when.",
+    "question": "What's the core governance issue you need to address?",
+    "options": {
+      "A": "Create a clearly defined governance structure with escalation paths and decision thresholds",
+      "B": "Tell everyone to escalate everything to the COO",
+      "C": "Let each person decide who they should talk to",
+      "D": "Avoid formal governance—make decisions ad hoc as issues arise"
+    },
+    "correctAnswer": "A"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "A - Define governance structure, escalation paths, and thresholds",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Governance Provides Structure for Decision-Making",
+          "explanation": "Good governance clarifies: 'Who decides what? At what point do we escalate?' Without it, decisions are chaotic, inconsistent, and slow.",
+          "pmbokSupport": "Establish governance structure that aligns with organizational policies and clearly defines escalation paths and decision thresholds"
+        },
+        {
+          "principle": "Escalation Paths and Thresholds Must Be Clear",
+          "explanation": "Example: Problems affecting budget <$50K → PM decides. >$50K → IT Director. >$250K → VP/COO. EVERYONE knows: if it's $75K, talk to IT Director, not PM.",
+          "pmbokSupport": "Define decision authority at each level; communicate clearly"
+        },
+        {
+          "principle": "Governance Reflects Organizational Culture",
+          "explanation": "Hierarchical org → vertical escalation paths. Flat/agile org → more horizontal decision-making. Governance should mirror org structure, not fight it.",
+          "pmbokSupport": "Incorporate organizational policies and governance into project management approach"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Creating ineffective governance or avoiding formal governance structure.",
+      "trapTable": [
+        {
+          "option": "B - Escalate everything to COO",
+          "violation": "Bottleneck; COO becomes decision blocker; team can't move forward",
+          "pmiValueBroken": "Inefficiency; lack of distributed decision-making"
+        },
+        {
+          "option": "D - Ad hoc decision-making",
+          "violation": "Inconsistent decisions; confusion about who decides what; team frustrated",
+          "pmiValueBroken": "Lack of structure; poor stakeholder management"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "What's the organizational structure? (Hierarchical, flat, matrix?)",
+        "What decisions does the PM make vs. escalate?",
+        "At what threshold do decisions escalate? (Budget? Schedule? Scope?)",
+        "Who's involved at each escalation level?",
+        "Are escalation paths clear to all stakeholders?"
+      ],
+      "patternRule": "Define governance structure with clear escalation paths and decision thresholds. Every team member should know: 'If this happens, I talk to THIS person.' No surprises, no confusion."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "GOVERN Framework for Establishing Project Governance",
+    "frameworkIntro": "Effective governance structures enable faster, better decision-making:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "G", "name": "Gauge Organizational Structure", "color": "#3b82f6"},
+          "action": "Understand how the org operates. Hierarchical? Matrix? Agile? Your governance should align with org culture, not fight it.",
+          "keyQuestions": ["How is the organization structured?", "What's the decision-making culture?"],
+          "examKeywords": "Organizational structure, culture, alignment, policies"
+        },
+        {
+          "step": {"badge": "O", "name": "Outline Decision Authority", "color": "#8b5cf6"},
+          "action": "Define: What decisions does the PM make? What decisions do team leads make? What goes to IT Director? To VP? Be specific.",
+          "keyQuestions": ["Who decides what?", "What's in the PM's authority?"],
+          "examKeywords": "Decision authority, RACI, responsibility matrix"
+        },
+        {
+          "step": {"badge": "V", "name": "Verify Escalation Paths", "color": "#10b981"},
+          "action": "Create clear escalation paths. Example: 'Problems <$50K → PM. $50-250K → Director. >$250K → VP.' Make it visible to the team.",
+          "keyQuestions": ["When do we escalate?", "Who's the next level?"],
+          "examKeywords": "Escalation path, threshold, decision criteria"
+        },
+        {
+          "step": {"badge": "E", "name": "Establish Thresholds", "color": "#f59e0b"},
+          "action": "Define numerical or qualitative thresholds. Budget thresholds, schedule delays (e.g., >5% slippage), scope impacts, quality issues. Clear criteria.",
+          "keyQuestions": ["What triggers escalation?", "How big is 'big'?"],
+          "examKeywords": "Thresholds, criteria, triggers, decision rules"
+        },
+        {
+          "step": {"badge": "R", "name": "Ratify and Communicate", "color": "#ec4899"},
+          "action": "Get sponsor/stakeholder approval on governance structure. Document it. Communicate to EVERYONE. No surprises.",
+          "keyQuestions": ["Is this approved?", "Does everyone understand it?"],
+          "examKeywords": "Approval, communication, documentation, alignment"
+        },
+        {
+          "step": {"badge": "N", "name": "Navigate Changes Consistently", "color": "#06b6d4"},
+          "action": "Apply governance consistently throughout the project. If it says 'escalate at $50K,' enforce it at $51K. Consistency builds trust.",
+          "keyQuestions": ["Are we following governance?", "Are decisions consistent?"],
+          "examKeywords": "Consistent application, enforcement, governance effectiveness"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Process Performance Domain",
+      "principle": "Principle 8: Manage Project Governance",
+      "quote": "Project governance establishes the structure, processes, and decision authorities necessary to manage projects effectively and deliver stakeholder value"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Establish Project Governance Structure",
+    "framework": {
+      "acronym": "GOVERN",
+      "steps": ["🏛️ Gauge org structure", "📋 Outline decision authority", "🛣️ Verify escalation paths", "⏰ Establish thresholds", "✅ Ratify & communicate", "🔄 Navigate consistently"]
+    },
+    "quickReference": "**Governance essentials:** Align with org structure | Define who decides what | Establish escalation paths | Set clear thresholds | Communicate to all | Apply consistently",
+    "goldenRule": "Clear governance = fast decisions. Ambiguous governance = confusion, delays, inconsistent decisions. Define and communicate escalation paths.",
+    "examTip": "Look for 'escalation,' 'decision authority,' 'threshold,' or 'governance structure' → Create clear governance with defined paths and thresholds → Align with organizational policies.",
+    "pmbokPrinciple": "Establish clear governance structure aligned with organizational policies"
+  },
+  "secondScenario": {
+    "title": "Apply GOVERN Framework",
+    "intro": "Apply the framework:",
+    "scenarioStory": "You're managing a marketing campaign with: brand stakeholders, finance, operations, and customer success teams. Everyone seems to want approval authority. Decisions are slow. Last week, brand wanted one campaign direction, finance wanted another, and customer success had a third idea. No one knew who had final authority. The campaign deadline is in 4 weeks.",
+    "question": "How do you establish governance?",
+    "options": {
+      "A": "Ask for approval from all stakeholders on every decision (keeps everyone happy)",
+      "B": "Make all decisions yourself without consulting others",
+      "C": "Define governance: campaign creative decisions → brand lead (with finance review). Budget decisions → finance (with brand input). Timeline → PM. Document and communicate.",
+      "D": "Let stakeholders fight it out until consensus emerges"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Governance is about creating the structure so the project can make decisions quickly. You look at how the organization is designed—maybe vertical (deep escalation) or horizontal (flat). Then you build project governance that mirrors that, with clear escalation paths and thresholds.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Project governance establishes decision-making authorities, escalation paths, and thresholds that align with organizational policies and enable effective project management.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Governance Reflects Organizational Culture",
+        "insight": "A startup might have flat, horizontal governance ('Anyone can make decisions up to $10K'). A Fortune 500 might have strict vertical escalation ('Every decision >$50K needs VP approval'). Your project governance should fit your organization's DNA."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Personal Reflection",
+    "questions": [
+      {
+        "id": "structure",
+        "question": "What's the escalation path on your current project? Can your team clearly explain who decides what?",
+        "type": "textarea",
+        "placeholder": "Example: Budget decisions up to $50K = PM decides, >$50K = Director approves..."
+      },
+      {
+        "id": "clarity",
+        "question": "Is your governance structure documented and clear to all stakeholders?",
+        "type": "dropdown",
+        "options": ["Yes, clearly defined and communicated", "Partially defined", "Not clearly defined", "Not documented"]
+      }
+    ],
+    "valueStatement": "Clear governance makes projects move faster. Teams know who decides what, so decisions happen quickly and consistently.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Mountain Expedition Chain of Command",
+    "story": {
+      "title": "Climbing with Clear Leadership Structure",
+      "narrative": "You're leading an expedition with base camp (sponsor), camp manager (PM), climbing lead (team), and base camp operations (support). Without clear governance, everyone argues about decisions. With GOVERN framework, decisions flow smoothly...",
+      "scenes": [
+        {
+          "step": "G", "visual": "🏛️ GAUGE the structure",
+          "description": "Sponsor leads from base camp (makes funding/policy decisions). PM at field camps (tactical decisions). Climbing lead coordinates climbers (technical decisions). Support handles logistics. Structure reflects the organization."
+        },
+        {
+          "step": "O", "visual": "📋 OUTLINE decision authority",
+          "description": "Climbing lead decides: routes, pace, daily schedule. PM decides: camp location, resource allocation. Sponsor decides: overall scope, budget. Support decides: food, equipment. Everyone knows their domain."
+        },
+        {
+          "step": "V", "visual": "🛣️ VERIFY escalation paths",
+          "description": "Climber → Climbing lead (daily route/pace questions). Climbing lead → PM (camp/resource questions). PM → Sponsor (scope/budget changes). Clear ladder. No confusion about who to ask."
+        },
+        {
+          "step": "E", "visual": "⏰ ESTABLISH thresholds",
+          "description": "Climbing lead handles daily pace issues. If schedule slips >2 days → escalate to PM. If budget impacts >$10K → escalate to sponsor. Thresholds trigger escalation."
+        },
+        {
+          "step": "R", "visual": "✅ RATIFY & communicate",
+          "description": "Sponsor approves governance structure. PM presents to team: 'This is how decisions flow. These are the thresholds.' Everyone understands."
+        },
+        {
+          "step": "N", "visual": "🔄 NAVIGATE consistently",
+          "description": "When climber wants to divert route, climbing lead decides (authority is theirs). When route adds 2 days, escalates to PM (threshold). Decisions flow consistently, no surprises."
+        }
+      ],
+      "moral": "GOVERN: Gauge structure, Outline authority, Verify paths, Establish thresholds, Ratify & communicate, Navigate consistently. Clear governance = fast, consistent decisions = effective expedition."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does GOVERN stand for?", "Why define escalation paths?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Map your governance structure", "Define escalation thresholds"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Draw governance hierarchy", "Explain decision authorities"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice questions", "Compare governance models"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t4"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t4"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t4"}
+  }
+}

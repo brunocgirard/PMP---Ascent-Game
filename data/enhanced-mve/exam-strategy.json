@@ -1,0 +1,428 @@
+{
+  "taskId": "exam-strategy",
+  "taskTitle": "Exam Format & Strategy",
+  "domain": "Foundation",
+
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're taking the PMP exam. You're 90 minutes in and have completed 80 questions. You feel fatigued and want a break. You have 10 questions you've marked for review. You're not sure if breaks count against your time.",
+    "question": "What's your BEST strategy right now?",
+    "options": {
+      "A": "Power through all 180 questions before taking any break",
+      "B": "Take a scheduled 10-minute break now - breaks DON'T count against your time",
+      "C": "Skip the break to save time and go back to review marked questions",
+      "D": "End the exam now if you feel you've done well enough"
+    },
+    "correctAnswer": "B"
+  },
+
+  "ahaDebrief": {
+    "correctAnswer": "B - Take a scheduled 10-minute break now - breaks DON'T count against your time",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Breaks Don't Count Against Your Time",
+          "explanation": "You get two optional 10-minute breaks that DON'T count against your 230 minutes of exam time. Use them!",
+          "pmbokSupport": "PMI Exam Format: 230 minutes of exam time PLUS two optional 10-minute breaks (total up to 4 hours 10 minutes)"
+        },
+        {
+          "principle": "Mental Stamina Matters",
+          "explanation": "Fatigue degrades decision-making. A 10-minute break improves performance on remaining questions.",
+          "pmbokSupport": "Cognitive research shows breaks improve sustained attention and decision quality"
+        },
+        {
+          "principle": "Strategic Pacing",
+          "explanation": "At 80 questions in 90 minutes, you're averaging 1.125 min/question (good pace). You have time for breaks.",
+          "pmbokSupport": "Recommended pace: ~1.3 minutes per question allows time for review and breaks"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "The other options misunderstand the exam format or sacrifice performance.",
+      "trapTable": [
+        {
+          "option": "A",
+          "violation": "Powering through 180 questions without breaks leads to mental fatigue and errors",
+          "pmiValueBroken": "Ignoring free break time that could improve performance"
+        },
+        {
+          "option": "C",
+          "violation": "Skipping breaks is unnecessary - they don't count against your time",
+          "pmiValueBroken": "Misunderstanding exam format leads to suboptimal strategy"
+        },
+        {
+          "option": "D",
+          "violation": "You must answer all 180 questions for scoring",
+          "pmiValueBroken": "Incomplete exam = fail"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "✅ Use both 10-minute breaks - they're FREE time",
+        "✅ Pace at ~1.3 min/question (leaves buffer for review)",
+        "✅ Mark questions for review and come back to them",
+        "✅ Stay mentally sharp by taking breaks when fatigued"
+      ],
+      "patternRule": "Treat the exam like a 4-hour endurance event. Use breaks strategically to maintain peak mental performance."
+    }
+  },
+
+  "coreFramework": {
+    "frameworkName": "PASS FIRST - PMP Exam Strategy Framework",
+    "frameworkIntro": "The PMP exam isn't just about knowledge - it's about strategy. Master these 10 strategic elements to PASS FIRST:",
+    "frameworkTable": {
+      "columns": ["Letter", "Strategy Element", "Key Tactic", "Exam Application"],
+      "rows": [
+        {
+          "step": {"badge": "P", "name": "Pacing (1.3 min/question)", "color": "blue"},
+          "action": "180 questions ÷ 230 min = 1.28 min/question. Aim for 1.3 to leave review buffer",
+          "keyQuestions": ["Am I on pace?", "Do I have time for review?"],
+          "examKeywords": "time management, 90 questions at 2 hours, finish with 30 min buffer"
+        },
+        {
+          "step": {"badge": "A", "name": "Agile Mindset (50%+)", "color": "purple"},
+          "action": "Half or more of exam questions assume agile/hybrid context. Think adaptive, iterative, servant leader.",
+          "keyQuestions": ["What would a Scrum Master do?", "Is this adaptive or predictive?"],
+          "examKeywords": "iterations, sprints, retrospectives, servant leadership, empirical process"
+        },
+        {
+          "step": {"badge": "S", "name": "Scenario-Based (all questions)", "color": "green"},
+          "action": "Every question presents a scenario. Read carefully, identify the domain/principle, eliminate wrong answers.",
+          "keyQuestions": ["What's the real problem?", "Which domain is this?", "What principle applies?"],
+          "examKeywords": "situational judgment, scenario analysis, context matters"
+        },
+        {
+          "step": {"badge": "S", "name": "Stakeholder & Team First", "color": "orange"},
+          "action": "When in doubt, choose answers that engage stakeholders or empower teams.",
+          "keyQuestions": ["Does this engage stakeholders?", "Does this empower the team?"],
+          "examKeywords": "collaborate, engage, empower, servant leader, trust team"
+        },
+        {
+          "step": {"badge": "F", "name": "Foundational Knowledge", "color": "teal"},
+          "action": "Know cold: 12 Principles, 8 Domains, 4 Ethics values, Agile basics, EVM formulas",
+          "keyQuestions": ["Do I know the principles?", "Do I know the domains?"],
+          "examKeywords": "PMBOK fundamentals, principles, domains, ethics"
+        },
+        {
+          "step": {"badge": "I", "name": "Identify Domain (not process)", "color": "red"},
+          "action": "PMBOK 7 is domain-based, not process-based. Identify which domain(s) the question addresses.",
+          "keyQuestions": ["Is this Stakeholders? Team? Planning? Uncertainty?"],
+          "examKeywords": "domain thinking, not ITTOs (Inputs/Tools/Outputs)"
+        },
+        {
+          "step": {"badge": "R", "name": "Read ALL Options", "color": "gold"},
+          "action": "Eliminate clearly wrong answers first. Choose the BEST answer among remaining options.",
+          "keyQuestions": ["Which can I eliminate?", "What's the BEST answer?"],
+          "examKeywords": "process of elimination, best answer (not perfect answer)"
+        },
+        {
+          "step": {"badge": "S", "name": "Scheduled Breaks (2 × 10 min)", "color": "blue"},
+          "action": "Take breaks after ~60 and ~120 questions. Breaks DON'T count against your 230 minutes.",
+          "keyQuestions": ["Am I mentally sharp?", "Should I take a break now?"],
+          "examKeywords": "mental stamina, break strategy, free time"
+        },
+        {
+          "step": {"badge": "T", "name": "Think PMI Way (not real-world)", "color": "purple"},
+          "action": "Choose answers that reflect PMI's ideal world, not your workplace reality.",
+          "keyQuestions": ["What does PMI say is best practice?", "Not: what would my boss do?"],
+          "examKeywords": "PMI best practices, by-the-book, ideal approach"
+        }
+      ]
+    },
+    "additionalContent": "<div style='margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white; border-radius: 12px;'><h4 style='margin: 0 0 1rem 0; color: white;'>✅ Memory Trick: PASS FIRST</h4><p style='margin: 0; line-height: 1.8;'><strong>P</strong>acing → <strong>A</strong>gile Mindset → <strong>S</strong>cenario-Based → <strong>S</strong>takeholder/Team First → <strong>F</strong>oundational Knowledge → <strong>I</strong>dentify Domain → <strong>R</strong>ead All Options → <strong>S</strong>cheduled Breaks → <strong>T</strong>hink PMI Way</p></div><div style='margin-top: 1rem; padding: 1rem; background: #d1ecf1; border-left: 4px solid #0c5460; border-radius: 4px;'><strong>📊 Exam Breakdown:</strong><ul style='margin: 0.5rem 0;'><li><strong>180 questions</strong> (175 scored + 5 pretest unscored)</li><li><strong>230 minutes</strong> (3 hours 50 min) exam time</li><li><strong>2 breaks</strong> (10 min each, optional, DON'T count against time)</li><li><strong>Domain Distribution:</strong> People 42%, Process 50%, Business Environment 8%</li></ul></div>",
+    "pmbokConnection": {
+      "performanceDomain": "All domains tested",
+      "principle": "All 12 principles + Ethics",
+      "quote": "The exam assesses your ability to apply project management knowledge to real-world situations, with emphasis on agile, hybrid, and predictive approaches."
+    }
+  },
+
+  "visualReferenceCard": {
+    "taskTitle": "Exam Strategy - PASS FIRST",
+    "framework": {
+      "acronym": "PASS FIRST",
+      "steps": [
+        "P - Pacing (1.3 min/question)",
+        "A - Agile Mindset (50%+ of exam)",
+        "S - Scenario-Based (every question)",
+        "S - Stakeholder & Team First",
+        "F - Foundational Knowledge (principles, domains, ethics)",
+        "I - Identify Domain (not process)",
+        "R - Read ALL Options (eliminate, then choose best)",
+        "S - Scheduled Breaks (2 × 10 min free)",
+        "T - Think PMI Way (not real-world)"
+      ]
+    },
+    "quickReference": "The PMP exam has 180 questions (175 scored). You have 230 minutes. Passing score is determined by psychometric analysis (no fixed percentage). Focus on agile mindset, stakeholder engagement, and servant leadership.",
+    "goldenRule": "When stuck, ask: 'What would a servant leader do who values stakeholder engagement and team empowerment?'",
+    "examTip": "Exam questions test judgment, not memorization. No ITTOs. Focus on WHY and WHEN, not just WHAT.",
+    "pmbokPrinciple": "Exam reflects PMBOK 7 (principles + domains) + Agile Practice Guide + Process Groups Practice Guide"
+  },
+
+  "secondScenario": {
+    "title": "Apply the PASS FIRST Framework",
+    "intro": "Now that you know the framework, let's apply it to an exam situation.",
+    "scenarioStory": "You're on question 45. You've spent 3 minutes on this question and still can't decide between two options. Both seem reasonable. You've used 60 minutes so far (1.33 min/question pace). You haven't taken a break yet.",
+    "question": "What should you do?",
+    "options": {
+      "A": "Spend another 2 minutes to get this right - every question matters",
+      "B": "Mark for review, make your best guess, and move on - you're at good pace",
+      "C": "Take a break now to clear your mind",
+      "D": "Skip the question entirely and come back later"
+    },
+    "correctAnswer": "B"
+  },
+
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The PMP examination is based on the PMP Examination Content Outline. The exam consists of 180 questions. Of these, 175 questions are scored and 5 are pretest questions. Pretest questions are used to collect data and are randomly placed throughout the exam.",
+        "author": "PMI",
+        "source": "PMP Examination Content Outline"
+      },
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "The biggest mistake exam-takers make is overthinking. PMI wants to know if you can make good decisions quickly. If you're stuck between two answers after 90 seconds, make your best choice and move on. Spending 5 minutes on one question means you've lost time for 3 other questions.",
+        "author": "PMP Instructor Insight",
+        "source": "Andrew Ramdayal PMP Course"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Real-World Application",
+        "insight": "The exam mirrors real PM challenges: you won't have perfect information, you'll face time pressure, and you'll need to make judgment calls. The exam tests whether you can make sound decisions under pressure using PMI principles as your guide."
+      },
+      {
+        "title": "Exam Strategy",
+        "insight": "Treat the exam like a project: Plan your pacing (Planning domain), monitor your progress (Measurement domain), manage your energy (Team domain - you're the team!), and adapt as needed (Uncertainty domain). The exam is itself a project you're managing."
+      }
+    ]
+  },
+
+  "personalApplication": {
+    "title": "🔄 Connect to Your Experience",
+    "reflectionPrompt": "Reflecting on your exam strategy helps you prepare mentally and logistically.",
+    "questions": [
+      {
+        "id": "exam-strength",
+        "question": "Which exam strategy element do you feel most confident about?",
+        "type": "dropdown",
+        "options": [
+          "Pacing - I'm good at time management",
+          "Agile Mindset - I understand agile well",
+          "Scenario Analysis - I'm good at reading situations",
+          "Foundational Knowledge - I know the content",
+          "Elimination Strategy - I can eliminate wrong answers",
+          "Mental Stamina - I can focus for long periods",
+          "PMI Mindset - I understand PMI's perspective"
+        ]
+      },
+      {
+        "id": "exam-concern",
+        "question": "What concerns you most about the exam?",
+        "type": "dropdown",
+        "options": [
+          "Time pressure / pacing",
+          "Agile questions (I come from waterfall background)",
+          "Scenario interpretation",
+          "Remembering all the content",
+          "Test anxiety / nerves",
+          "Mental fatigue during 4-hour exam",
+          "Choosing between similar answers"
+        ]
+      },
+      {
+        "id": "exam-prep-plan",
+        "question": "What's your plan to address your biggest concern?",
+        "type": "textarea",
+        "placeholder": "Example: I'm concerned about time pressure, so I'll practice timed quizzes and aim for 1.3 min/question..."
+      }
+    ],
+    "valueStatement": "💎 Personal reflection earns you 5 XP and helps you build a personalized exam strategy.",
+    "xpReward": 5
+  },
+
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Final Summit Push",
+    "intro": "You're making your final summit push - the PMP exam. This 4-hour climb requires strategy:",
+    "story": {
+      "title": "The 4-Hour Summit Push",
+      "narrative": "You're at the final camp (7,800m). The summit is 180 vertical meters above (180 questions). You have 230 minutes of climbing time, plus two 10-minute rest stops that don't count against your time. Here's your summit strategy:",
+      "scenes": [
+        {
+          "step": "P - Pacing Your Climb",
+          "visual": "⏱️",
+          "description": "You need to climb 180 meters in 230 minutes. That's 1.28 minutes per meter. You set your pace at 1.3 min/meter to have a buffer. You mark 90-meter and 120-meter points for rest breaks."
+        },
+        {
+          "step": "A - Agile Route (not rigid path)",
+          "visual": "🔄",
+          "description": "The route changes constantly due to shifting ice (agile mindset). You can't stick to a rigid plan. You must adapt, iterate, and respond to what you find. 50% of the climb requires adaptive route-finding."
+        },
+        {
+          "step": "S - Scenario Reading",
+          "visual": "📖",
+          "description": "At each meter, you face a scenario: 'Ice ahead - which route?' You carefully read the terrain (scenario), identify the challenge (domain), and choose the best path (answer). You don't rush - you read ALL options."
+        },
+        {
+          "step": "S - Support Your Team",
+          "visual": "🤝",
+          "description": "You're climbing with a team (stakeholder & team-first mindset). When in doubt, you choose routes that keep the team together, empower team members to lead, and engage everyone in decisions. Servant leadership guides you."
+        },
+        {
+          "step": "F - Foundation Check",
+          "visual": "🎒",
+          "description": "Before starting, you check your gear: 12 carabiners (principles), 8 ropes (domains), 4 ice screws (ethics), agile crampons, and EVM compass. These are your foundational tools."
+        },
+        {
+          "step": "I - Identify Terrain Type",
+          "visual": "🗺️",
+          "description": "Each section has different terrain: Stakeholder ice, Team rock, Planning ridge, Uncertainty crevasse. You identify which terrain (domain) you're on to choose the right technique. No more old-school ITTO maps!"
+        },
+        {
+          "step": "R - Read All Routes",
+          "visual": "🧭",
+          "description": "At each decision point, you see 4 possible routes (A, B, C, D). You eliminate obviously dangerous routes first (wrong answers), then choose the BEST remaining route - not perfect, just best."
+        },
+        {
+          "step": "S - Scheduled Rest Stops",
+          "visual": "☕",
+          "description": "At 90 meters (after ~60 questions), you take a 10-minute break. It doesn't count against your time - it's FREE. You rest, hydrate, refocus. Same at 120 meters. You arrive at the summit mentally fresh."
+        },
+        {
+          "step": "T - Think Like a Guide",
+          "visual": "🎓",
+          "description": "You're not just any climber - you're a certified guide (PMI mindset). You don't take shortcuts your clients back home might take. You follow best practices, by-the-book safety protocols, and PMI standards. Think like PMI, not like your workplace."
+        }
+      ],
+      "moral": "You successfully summit using PASS FIRST strategy! You paced yourself, adapted to changing conditions, read scenarios carefully, supported your team, relied on foundational knowledge, identified terrain types, evaluated all options, took strategic breaks, and maintained professional standards. That's how you PASS FIRST!"
+    },
+    "selfTest": "Close your eyes and make your final summit push. Can you recall all 9 elements of PASS FIRST?"
+  },
+
+  "spacedRepetition": {
+    "title": "🔁 Spaced Repetition Schedule",
+    "intro": "Research shows spaced repetition increases retention from 50% to 90%. Here's your review schedule:",
+    "schedule": [
+      {
+        "timeframe": "1 Day",
+        "icon": "📅",
+        "title": "Review 1: Tomorrow",
+        "tasks": [
+          "Recite PASS FIRST without looking",
+          "Review exam format: 180 questions, 230 min, 2 breaks",
+          "Quiz yourself: How many minutes per question?"
+        ],
+        "duration": "5 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "📅",
+        "title": "Review 2: In 3 Days",
+        "tasks": [
+          "Review the Visual Reference Card",
+          "Take a 10-question practice test and track your pace",
+          "Identify your exam concerns and make a prep plan"
+        ],
+        "duration": "15 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📅",
+        "title": "Review 3: In 1 Week",
+        "tasks": [
+          "Take a full 60-question practice exam (timed)",
+          "Evaluate: Are you at 1.3 min/question pace?",
+          "Practice your break strategy"
+        ],
+        "duration": "90 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Day Before Exam",
+        "icon": "📅",
+        "title": "Final Review: Day Before Exam",
+        "tasks": [
+          "Review PASS FIRST one last time",
+          "Visualize the summit push - you're ready!",
+          "Get good sleep - mental stamina is key"
+        ],
+        "duration": "10 minutes",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention after 2 weeks"
+    }
+  },
+
+  "missionChecklist": {
+    "title": "🎯 Your Mission Progress",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "scenario",
+        "task": "Complete Quick Scenario Challenge",
+        "xp": 10,
+        "description": "Test your exam strategy knowledge",
+        "completed": true
+      },
+      {
+        "id": "framework",
+        "task": "Learn PASS FIRST Framework",
+        "xp": 10,
+        "description": "Master exam strategy",
+        "completed": true
+      },
+      {
+        "id": "memory",
+        "task": "Visualize Memory Palace",
+        "xp": 5,
+        "description": "Anchor strategy with the Summit Push story",
+        "completed": true
+      },
+      {
+        "id": "reflection",
+        "task": "Personal Application Reflection",
+        "xp": 5,
+        "description": "Build your personalized exam strategy",
+        "current": true,
+        "ctaButton": "Complete Reflection"
+      },
+      {
+        "id": "reference",
+        "task": "Download Reference Card",
+        "xp": 2,
+        "description": "Save for exam day review",
+        "ctaButton": "Download PDF"
+      },
+      {
+        "id": "practice-test",
+        "task": "Take Practice Test (60 questions)",
+        "xp": 15,
+        "ctaButton": "Start Practice Test",
+        "link": "/practice-test/full"
+      },
+      {
+        "id": "exam-simulator",
+        "task": "Full Exam Simulation (180 questions)",
+        "xp": 25,
+        "ctaButton": "Take Exam Simulator",
+        "link": "/exam-simulator"
+      }
+    ],
+    "timeEstimate": "20-25 minutes to complete this topic",
+    "nextActionPrimary": {
+      "text": "Take Practice Test",
+      "link": "/practice-test/full"
+    }
+  }
+}

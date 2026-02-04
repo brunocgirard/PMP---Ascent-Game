@@ -1,0 +1,260 @@
+{
+  "taskId": "d1t13",
+  "taskTitle": "Mentor Relevant Stakeholders",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're managing a complex project with diverse stakeholders: (1) A junior developer who just joined the team is struggling with the new architecture and keeps making the same mistakes, (2) Your sponsor doesn't understand why the project is taking longer than initially estimated and is frustrated, (3) A customer representative is confused about the project scope and keeps asking for undefined features.",
+    "question": "As Project Manager, how should you prioritize your mentoring efforts?",
+    "options": {
+      "A": "Focus only on the junior developer since they're your team member",
+      "B": "Mentor all stakeholders—team member on technical issues, sponsor on project complexity, customer on scope clarification",
+      "C": "Let the customer handle their own scope confusion; it's not your job",
+      "D": "Spend all your time managing the sponsor's expectations, they control the project"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Mentor all stakeholders across domains",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Mentorship is Inclusive and Multi-Stakeholder",
+          "explanation": "As a PM, you mentor team members on technical growth, sponsors on business complexity, and customers on value delivery. Mentorship isn't limited to one group.",
+          "pmbokSupport": "Servant leaders provide mentoring to all stakeholders to enable their success"
+        },
+        {
+          "principle": "Allocate Time to Meaningful Development",
+          "explanation": "Dedicate specific time blocks to mentoring different stakeholders. Junior developer needs technical guidance on architecture. Sponsor needs education on project dynamics. Customer needs clarity on scope and value.",
+          "pmbokSupport": "Develop project team members and stakeholders through training, coaching, and mentoring"
+        },
+        {
+          "principle": "Guide, Don't Dictate",
+          "explanation": "Your job is to guide people to understanding, not give them all the answers. Help the junior developer learn the architecture. Help sponsor understand trade-offs. Help customer see scope boundaries.",
+          "pmbokSupport": "Mentoring is a professional relationship focused on helping others succeed"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Mentorship requires you to engage with people you don't naturally gravitate toward.",
+      "trapTable": [
+        {
+          "option": "A - Only team members",
+          "violation": "Ignores that sponsors and customers need guidance too",
+          "pmiValueBroken": "Incomplete stakeholder engagement; missing mentoring opportunities"
+        },
+        {
+          "option": "C - Customer can figure it out",
+          "violation": "Abdicates your responsibility to clarify project boundaries and value",
+          "pmiValueBroken": "Servant leadership means serving ALL stakeholders, not just team"
+        },
+        {
+          "option": "D - Only manage expectations",
+          "violation": "Confuses expectation management with mentorship and development",
+          "pmiValueBroken": "Transactional vs. transformational leadership"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Who needs guidance right now? (Team, sponsor, customer, other stakeholders?)",
+        "What is each stakeholder struggling to understand?",
+        "Do I have expertise to mentor them, or do I need to connect them with someone who does?",
+        "When can I allocate dedicated time for mentoring this person?",
+        "What's a teaching moment vs. what's a tell moment?"
+      ],
+      "patternRule": "See mentoring opportunities everywhere → Allocate time → Guide without dictating → Recognize growth. Mentor team on technical and professional development. Mentor sponsors on project dynamics and complexity. Mentor customers on value and scope."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "G.U.I.D.E. Framework for Stakeholder Mentoring",
+    "frameworkIntro": "Effective mentorship guides stakeholders to their own success:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "G", "name": "Guide Recognition", "color": "#3b82f6"},
+          "action": "Recognize mentoring opportunities as they arise. Spot when stakeholders need guidance—confusion, mistakes, misunderstanding, or growth moments.",
+          "keyQuestions": ["Who's struggling right now?", "What's the learning moment?", "Is this a teaching opportunity?"],
+          "examKeywords": "Recognize, Identify, Opportunity, Teaching moment"
+        },
+        {
+          "step": {"badge": "U", "name": "Understand Context", "color": "#8b5cf6"},
+          "action": "Understand what they need to learn and your expertise in that area. Team member learning architecture? You can guide. Customer understanding scope? You can clarify. Sponsor grasping complexity? You can explain.",
+          "keyQuestions": ["Do I have expertise here?", "What are they really asking?", "What's the root misunderstanding?"],
+          "examKeywords": "Understand, Assess, Expertise, Knowledge gap"
+        },
+        {
+          "step": {"badge": "I", "name": "Invest Time Intentionally", "color": "#10b981"},
+          "action": "Allocate dedicated time to mentoring. Don't expect growth from casual conversations. Schedule mentoring sessions. Dedicate time blocks (e.g., 2 hours every other day for a junior dev, 1 hour weekly with sponsor).",
+          "keyQuestions": ["When can I mentor this person?", "How much time do they need?", "Am I consistent?"],
+          "examKeywords": "Allocate time, Schedule, Dedicate, Consistency"
+        },
+        {
+          "step": {"badge": "D", "name": "Develop Through Questions", "color": "#f59e0b"},
+          "action": "Guide them to answers rather than giving answers. Ask questions that help them think through problems. 'What do you think happens if...?' rather than 'Here's what happens.'",
+          "keyQuestions": ["What can they figure out themselves?", "What questions lead them to insight?", "Am I empowering or enabling dependency?"],
+          "examKeywords": "Guide, Question, Facilitate, Discovery"
+        },
+        {
+          "step": {"badge": "E", "name": "Enable Growth & Recognition", "color": "#ec4899"},
+          "action": "Point out growth and improvement. Recognize when they've learned something. Celebrate small wins. Help them see their own development. This builds motivation and trust.",
+          "keyQuestions": ["What have they improved on?", "Can they see their own growth?", "How do I motivate continued learning?"],
+          "examKeywords": "Growth, Improvement, Recognition, Development"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 6: Demonstrate Leadership Behaviors - Mentoring, Coaching, and Development",
+      "quote": "Servant leaders identify gaps in knowledge and skills and provide strategies to address those gaps through training, mentoring, or coaching. Mentoring is a professional relationship focused on helping others succeed and develop their capabilities."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Mentor Relevant Stakeholders",
+    "framework": {
+      "acronym": "G.U.I.D.E.",
+      "steps": ["🎯 Guide Recognition (spot the moment)", "🤔 Understand Context (assess expertise)", "⏰ Invest Time Intentionally (allocate)", "❓ Develop Through Questions (guide)", "🌟 Enable Growth & Recognition (celebrate)"]
+    },
+    "quickReference": "**Mentor:** Team on technical/professional growth | Sponsors on project dynamics | Customers on value/scope | Recognize opportunities → Allocate time → Guide → Celebrate growth",
+    "goldenRule": "Mentorship is for ALL stakeholders. Guide them to their own answers. Allocate dedicated time. Recognize their growth.",
+    "examTip": "Look for 'mentor,' 'develop,' 'coach' → Identify WHO needs mentoring and WHAT they need to learn. Your job is to guide, not dictate. Allocate TIME.",
+    "pmbokPrinciple": "Servant Leadership - Develop team members and stakeholders through mentoring"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply G.U.I.D.E.",
+    "intro": "Apply the framework:",
+    "scenarioStory": "During a sprint retrospective, your experienced QA lead notices a junior tester is struggling with test automation and keeps writing repetitive manual tests. Meanwhile, your product owner (from a different department) is frustrated because they don't understand the sprint velocity concept and keeps questioning if the team can deliver more.",
+    "question": "What's your mentoring approach?",
+    "options": {
+      "A": "Have the QA lead mentor the junior tester. Have the scrum master explain sprint velocity to the PO. You focus on schedule and budget.",
+      "B": "Spend all your time with the junior tester since they're your team member—the PO will figure out sprint velocity eventually",
+      "C": "Guide the QA lead to mentor the junior tester (ask questions about test automation approaches). Schedule dedicated time with the PO to explain velocity through project examples. Recognize the junior tester's progress as they improve.",
+      "D": "Tell the junior tester exactly which automation framework to use. Tell the PO the sprint velocity is fixed and they need to accept it."
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Mentorship is part about being a project manager, part about leading a team, part about being a good friend. Your job is to mentor all your stakeholders—team members, customers, sponsors. If you don't like helping people and mentoring people, you're in the wrong profession.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Servant leaders identify knowledge and skills gaps and provide strategies to address them through training, mentoring, or coaching. Mentoring is a professional relationship between you and someone you're helping develop capabilities.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      },
+      {
+        "type": "fieldInsight",
+        "icon": "💡",
+        "text": "The difference between mentoring and coaching: Coaching helps people improve skills on something they just learned. Mentoring is a longer-term professional relationship where you help them grow across multiple areas and resolve issues.",
+        "author": "Project Leadership Wisdom",
+        "source": "PMP Professional Standards"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Mentorship Isn't Just Technical",
+        "insight": "You mentor team members on technical skills AND professional development. You mentor sponsors on understanding project dynamics and complexity. You mentor customers on scope, value, and realistic expectations. Mentorship covers the full stakeholder ecosystem."
+      },
+      {
+        "title": "Allocate TIME to Mentorship",
+        "insight": "Don't expect mentorship to happen spontaneously. Schedule it. Dedicate time blocks. Maybe it's 2 hours every other day with a junior developer, or 1 hour weekly with a sponsor. Consistency signals that you value their development."
+      },
+      {
+        "title": "Guide, Don't Dictate",
+        "insight": "Your job is NOT to give all the answers. Your job is to guide people to their own insights. Ask questions. Help them think through problems. This builds competence AND confidence."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "current-mentoring",
+        "question": "Who on your project needs mentoring right now (team, stakeholders, customers)?",
+        "type": "textarea",
+        "placeholder": "Example: Junior developer struggling with architecture, sponsor confused about scope..."
+      },
+      {
+        "id": "mentoring-topics",
+        "question": "What do they need to learn or understand?",
+        "type": "textarea",
+        "placeholder": "Example: How to think about system design, why estimates include buffers..."
+      },
+      {
+        "id": "mentoring-time",
+        "question": "How much time can you realistically allocate to mentoring each person per week?",
+        "type": "dropdown",
+        "options": ["Less than 1 hour", "1-2 hours", "2-4 hours", "4+ hours"]
+      },
+      {
+        "id": "mentoring-approach",
+        "question": "Will you guide them to answers through questions, or give them direct instruction? When?",
+        "type": "textarea",
+        "placeholder": "Example: I'll ask questions first, only tell them if they're stuck..."
+      }
+    ],
+    "valueStatement": "💡 Great leaders develop other people. Mentorship multiplies your impact exponentially.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Mountain Guide's Mentorship",
+    "story": {
+      "title": "Guiding Climbers to Summit Success",
+      "narrative": "You're the experienced mountain guide GUIDING climbers to the summit through mentorship...",
+      "scenes": [
+        {
+          "step": "G", "visual": "🎯 GUIDE Recognition",
+          "description": "You notice a climber struggling with the steep pitch—they keep slipping on loose rock. Another climber doesn't understand why you chose this route (route recognition). A climber from town is afraid of heights. These are teaching moments. The experienced mountaineer at the back shows perfect technique. Spot these moments—they're your mentoring opportunities."
+        },
+        {
+          "step": "U", "visual": "🤔 UNDERSTAND Context",
+          "description": "That struggling climber needs to learn proper foot placement and weight distribution. The curious one needs to understand route selection (weather, difficulty, safety). The fearful climber needs to understand altitude and safety systems. You assess what each person needs. You know what they need because you've climbed this mountain before."
+        },
+        {
+          "step": "I", "visual": "⏰ INVEST Time Intentionally",
+          "description": "You don't just keep moving. You stop. You dedicate time. You spend 15 minutes with the struggling climber showing them footwork. You gather everyone and explain the route for 10 minutes. You sit with the fearful climber and go over safety ropes for 20 minutes. Mentorship requires STOPPING and INVESTING."
+        },
+        {
+          "step": "D", "visual": "❓ DEVELOP Through Questions",
+          "description": "You don't just say 'put your foot here.' You ask: 'What do you think happens if you lean too far forward on a steep pitch? Look at my stance—what's different?' The curious climber: 'Why did we take this route instead of that one?' You respond: 'What would happen if we went that way in this weather?' They discover the answer."
+        },
+        {
+          "step": "E", "visual": "🌟 ENABLE Growth & Recognition",
+          "description": "The struggling climber successfully navigates the next pitch. You say, 'You nailed that footwork! See how much better that felt?' The fearful climber makes it through their first real climb. 'You conquered that—look how far we've come.' Recognition and celebration fuel motivation and trust in your mentorship."
+        }
+      ],
+      "moral": "Great guides **G**uide recognition of moments, **U**nderstand context, **I**nvest time intentionally, **D**evelop through questions, **E**nable growth through recognition. Every climber—beginner to experienced, new member to sponsor—deserves mentorship. Your job is to help them all reach their peak."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does G.U.I.D.E. stand for?", "Who should you mentor (hint: ALL)?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Identify one mentoring opportunity in your current project", "Plan one mentoring session this week"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write the framework from memory", "List 3 different stakeholders you could mentor and what they need"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Compare mentoring vs. coaching vs. training", "Practice teaching someone using questions instead of answers"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d1t13"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d1t13"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d1t13"}
+  }
+}

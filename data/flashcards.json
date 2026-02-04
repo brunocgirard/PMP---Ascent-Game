@@ -1,0 +1,4686 @@
+[
+  {
+    "id": 1,
+    "category": "Principles",
+    "subcategory": "Stewardship",
+    "question": "What does the Stewardship principle emphasize?",
+    "answer": "Acting responsibly with integrity, care, trustworthiness, and compliance in all project activities and decisions.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "principles-stewardship",
+    "relatedConcepts": []
+  },
+  {
+    "id": 2,
+    "category": "Principles",
+    "subcategory": "Stewardship",
+    "question": "Name 3 aspects of stewardship behavior.",
+    "answer": "1) Integrity 2) Care for others/environment 3) Trustworthiness and compliance",
+    "difficulty": "hard",
+    "domain": "principles",
+    "tags": [],
+    "learnMoreLink": "principles-stewardship",
+    "relatedConcepts": []
+  },
+  {
+    "id": 3,
+    "category": "Principles",
+    "subcategory": "Stewardship",
+    "question": "How does a PM demonstrate stewardship?",
+    "answer": "By being accountable, making ethical decisions, considering long-term impacts, and protecting stakeholder interests.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "stakeholder",
+      "ac"
+    ],
+    "learnMoreLink": "principles-stewardship",
+    "relatedConcepts": []
+  },
+  {
+    "id": 4,
+    "category": "Principles",
+    "subcategory": "Team",
+    "question": "What is the core of the Team principle?",
+    "answer": "Create a collaborative project team environment that promotes ownership, development, and high performance.",
+    "difficulty": "easy",
+    "domain": "principles",
+    "tags": [
+      "team",
+      "ev"
+    ],
+    "learnMoreLink": "principles-team",
+    "relatedConcepts": []
+  },
+  {
+    "id": 5,
+    "category": "Principles",
+    "subcategory": "Team",
+    "question": "What are the 5 elements of an effective team environment?",
+    "answer": "1) Shared vision 2) Clear roles 3) Agreed processes 4) Mentorship/growth 5) Transparent communication",
+    "difficulty": "hard",
+    "domain": "principles",
+    "tags": [
+      "communication",
+      "team"
+    ],
+    "learnMoreLink": "principles-team",
+    "relatedConcepts": [
+      "collaboration",
+      "team",
+      "stakeholder"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Principles",
+    "subcategory": "Team",
+    "question": "What is the difference between a group and a team?",
+    "answer": "A group shares information; a team shares commitment, accountability, and works collaboratively toward common goals.",
+    "difficulty": "easy",
+    "domain": "principles",
+    "tags": [
+      "team",
+      "ac"
+    ],
+    "learnMoreLink": "principles-team",
+    "relatedConcepts": []
+  },
+  {
+    "id": 7,
+    "category": "Principles",
+    "subcategory": "Stakeholders",
+    "question": "What does the Stakeholders principle require?",
+    "answer": "Proactively engage with stakeholders throughout the project to understand needs, manage expectations, and gain support.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "stakeholder",
+      "ac"
+    ],
+    "learnMoreLink": "principles-stakeholders",
+    "relatedConcepts": []
+  },
+  {
+    "id": 8,
+    "category": "Principles",
+    "subcategory": "Stakeholders",
+    "question": "Why is stakeholder engagement critical?",
+    "answer": "Stakeholders can significantly impact or be impacted by the project; their support is essential for success.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "stakeholder",
+      "ac"
+    ],
+    "learnMoreLink": "principles-stakeholders",
+    "relatedConcepts": []
+  },
+  {
+    "id": 9,
+    "category": "Principles",
+    "subcategory": "Stakeholders",
+    "question": "Name 3 stakeholder engagement strategies.",
+    "answer": "1) Regular communication 2) Involving them in decisions 3) Managing expectations and conflicts",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "communication",
+      "stakeholder",
+      "conflict"
+    ],
+    "learnMoreLink": "principles-stakeholders",
+    "relatedConcepts": [
+      "collaboration",
+      "team",
+      "stakeholder"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Principles",
+    "subcategory": "Value",
+    "question": "What is the Value principle focused on?",
+    "answer": "Continuously evaluate and adjust project alignment to ensure it delivers the intended business value and benefits.",
+    "difficulty": "easy",
+    "domain": "principles",
+    "tags": [
+      "ev"
+    ],
+    "learnMoreLink": "principles-value",
+    "relatedConcepts": []
+  },
+  {
+    "id": 11,
+    "category": "Principles",
+    "subcategory": "Value",
+    "question": "What's the difference between outputs and outcomes?",
+    "answer": "Outputs are deliverables produced; outcomes are the benefits and value realized by stakeholders.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "stakeholder"
+    ],
+    "learnMoreLink": "principles-value",
+    "relatedConcepts": []
+  },
+  {
+    "id": 12,
+    "category": "Principles",
+    "subcategory": "Value",
+    "question": "How can a PM focus on value?",
+    "answer": "By prioritizing features by value, measuring benefits, eliminating waste, and ensuring business case alignment.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [],
+    "learnMoreLink": "principles-value",
+    "relatedConcepts": []
+  },
+  {
+    "id": 13,
+    "category": "Principles",
+    "subcategory": "Systems Thinking",
+    "question": "What does Systems Thinking mean in PM?",
+    "answer": "Recognize, evaluate, and respond to dynamic system interactions to optimize project outcomes.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "principles-systems-thinking",
+    "relatedConcepts": []
+  },
+  {
+    "id": 14,
+    "category": "Principles",
+    "subcategory": "Systems Thinking",
+    "question": "Give an example of system interactions in a project.",
+    "answer": "A schedule change (one element) affects cost, resources, quality, and stakeholder expectations (multiple interconnected elements).",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "ac",
+      "quality",
+      "cost",
+      "stakeholder",
+      "schedule"
+    ],
+    "learnMoreLink": "principles-systems-thinking",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "Principles",
+    "subcategory": "Systems Thinking",
+    "question": "Why is systems thinking important?",
+    "answer": "Projects don't exist in isolation; changes ripple through the system and impact multiple areas.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "principles-systems-thinking",
+    "relatedConcepts": []
+  },
+  {
+    "id": 16,
+    "category": "Principles",
+    "subcategory": "Leadership",
+    "question": "What does the Leadership principle emphasize?",
+    "answer": "Demonstrate leadership behaviors at all levels to inspire, motivate, and guide the team toward project goals.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "team",
+      "spi",
+      "leadership",
+      "ev"
+    ],
+    "learnMoreLink": "principles-leadership",
+    "relatedConcepts": []
+  },
+  {
+    "id": 17,
+    "category": "Principles",
+    "subcategory": "Leadership",
+    "question": "Is leadership limited to the PM role?",
+    "answer": "No! Leadership can be demonstrated by anyone on the project team, not just the PM.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "team",
+      "leadership"
+    ],
+    "learnMoreLink": "principles-leadership",
+    "relatedConcepts": []
+  },
+  {
+    "id": 18,
+    "category": "Principles",
+    "subcategory": "Leadership",
+    "question": "Name 3 leadership behaviors.",
+    "answer": "1) Servant leadership 2) Emotional intelligence 3) Empowering team members",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "team",
+      "leadership",
+      "emotional-intelligence",
+      "servant-leadership"
+    ],
+    "learnMoreLink": "principles-leadership",
+    "relatedConcepts": []
+  },
+  {
+    "id": 19,
+    "category": "Principles",
+    "subcategory": "Tailoring",
+    "question": "What is the Tailoring principle?",
+    "answer": "Adapt the project approach, governance, and processes based on context, complexity, and organizational culture.",
+    "difficulty": "easy",
+    "domain": "principles",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "principles-tailoring",
+    "relatedConcepts": []
+  },
+  {
+    "id": 20,
+    "category": "Principles",
+    "subcategory": "Tailoring",
+    "question": "Why is tailoring necessary?",
+    "answer": "No two projects are identical; one-size-fits-all approaches don't work effectively.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "principles-tailoring",
+    "relatedConcepts": []
+  },
+  {
+    "id": 21,
+    "category": "Principles",
+    "subcategory": "Tailoring",
+    "question": "What factors influence tailoring decisions?",
+    "answer": "Project size, complexity, industry, organizational culture, team maturity, risk tolerance, regulatory requirements.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "risk",
+      "team",
+      "ac"
+    ],
+    "learnMoreLink": "principles-tailoring",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Principles",
+    "subcategory": "Quality",
+    "question": "What does the Quality principle mean?",
+    "answer": "Build quality into processes and deliverables from the start, not inspect it in later.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "quality"
+    ],
+    "learnMoreLink": "principles-quality",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 23,
+    "category": "Principles",
+    "subcategory": "Quality",
+    "question": "What is Cost of Quality (COQ)?",
+    "answer": "The total cost of conformance (prevention & appraisal) plus cost of non-conformance (internal & external failures).",
+    "difficulty": "easy",
+    "domain": "principles",
+    "tags": [
+      "cost",
+      "ev",
+      "quality"
+    ],
+    "learnMoreLink": "principles-quality",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 24,
+    "category": "Principles",
+    "subcategory": "Quality",
+    "question": "Name 2 quality management approaches.",
+    "answer": "1) Continuous improvement (Kaizen) 2) Prevention over inspection",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "ev",
+      "quality",
+      "ac"
+    ],
+    "learnMoreLink": "principles-quality",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 25,
+    "category": "Principles",
+    "subcategory": "Complexity",
+    "question": "What is the Complexity principle about?",
+    "answer": "Navigate complexity through analysis, assessment, and adaptive approaches to manage uncertainties.",
+    "difficulty": "easy",
+    "domain": "principles",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "principles-complexity",
+    "relatedConcepts": []
+  },
+  {
+    "id": 26,
+    "category": "Principles",
+    "subcategory": "Complexity",
+    "question": "What are the 3 types of complexity?",
+    "answer": "1) System behavior (interconnections) 2) Human behavior (dynamics) 3) Ambiguity (uncertainty)",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [],
+    "learnMoreLink": "principles-complexity",
+    "relatedConcepts": []
+  },
+  {
+    "id": 27,
+    "category": "Principles",
+    "subcategory": "Complexity",
+    "question": "How do you manage complexity?",
+    "answer": "Break down problems, use iterative approaches, engage diverse perspectives, maintain flexibility.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "principles-complexity",
+    "relatedConcepts": []
+  },
+  {
+    "id": 28,
+    "category": "Principles",
+    "subcategory": "Risk",
+    "question": "What does the Risk principle emphasize?",
+    "answer": "Proactively optimize responses to threats and opportunities throughout the project.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "principles-risk",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 29,
+    "category": "Principles",
+    "subcategory": "Risk",
+    "question": "What's the difference between threats and opportunities?",
+    "answer": "Threats are negative risks (could harm project); opportunities are positive risks (could benefit project).",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "principles-risk",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 30,
+    "category": "Principles",
+    "subcategory": "Risk",
+    "question": "Name the 4 threat response strategies.",
+    "answer": "1) Avoid 2) Mitigate 3) Transfer 4) Accept",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "principles-risk",
+    "relatedConcepts": []
+  },
+  {
+    "id": 31,
+    "category": "Principles",
+    "subcategory": "Adaptability & Resiliency",
+    "question": "What is Adaptability and Resiliency about?",
+    "answer": "Build change responsiveness and recovery capability into the project to handle disruptions.",
+    "difficulty": "easy",
+    "domain": "principles",
+    "tags": [],
+    "learnMoreLink": "principles-adaptability-and-resiliency",
+    "relatedConcepts": []
+  },
+  {
+    "id": 32,
+    "category": "Principles",
+    "subcategory": "Adaptability & Resiliency",
+    "question": "How does a resilient project respond to change?",
+    "answer": "It adapts quickly, maintains focus on objectives, and recovers from setbacks without derailing.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "ac",
+      "bac"
+    ],
+    "learnMoreLink": "principles-adaptability-and-resiliency",
+    "relatedConcepts": []
+  },
+  {
+    "id": 33,
+    "category": "Principles",
+    "subcategory": "Adaptability & Resiliency",
+    "question": "Give an example of adaptability.",
+    "answer": "Switching from predictive to agile approach when requirements become volatile.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "agile",
+      "ac"
+    ],
+    "learnMoreLink": "principles-adaptability-and-resiliency",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 34,
+    "category": "Principles",
+    "subcategory": "Change",
+    "question": "What is the Change principle?",
+    "answer": "Prepare stakeholders for adoption and sustainment of change to achieve the envisioned future state.",
+    "difficulty": "easy",
+    "domain": "principles",
+    "tags": [
+      "stakeholder",
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "principles-change",
+    "relatedConcepts": []
+  },
+  {
+    "id": 35,
+    "category": "Principles",
+    "subcategory": "Change",
+    "question": "Why do projects fail even with good deliverables?",
+    "answer": "Because stakeholders aren't prepared or willing to adopt the change (change management failure).",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "stakeholder",
+      "ev"
+    ],
+    "learnMoreLink": "principles-change",
+    "relatedConcepts": []
+  },
+  {
+    "id": 36,
+    "category": "Principles",
+    "subcategory": "Change",
+    "question": "What does effective change enablement include?",
+    "answer": "Communication, training, engagement, addressing resistance, and reinforcing new behaviors.",
+    "difficulty": "medium",
+    "domain": "principles",
+    "tags": [
+      "communication"
+    ],
+    "learnMoreLink": "principles-change",
+    "relatedConcepts": [
+      "collaboration",
+      "team",
+      "stakeholder"
+    ]
+  },
+  {
+    "id": 37,
+    "category": "People",
+    "subcategory": "Leadership Styles",
+    "question": "What is Servant Leadership?",
+    "answer": "A leadership style where the leader prioritizes serving the team, removing obstacles, and facilitating their success.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "team",
+      "leadership",
+      "ac",
+      "servant-leadership"
+    ],
+    "learnMoreLink": "people-leadership-styles",
+    "relatedConcepts": []
+  },
+  {
+    "id": 38,
+    "category": "People",
+    "subcategory": "Leadership Styles",
+    "question": "When is servant leadership most effective?",
+    "answer": "In collaborative, self-organizing teams (especially Agile environments) where empowerment is key.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "team",
+      "agile",
+      "leadership",
+      "servant-leadership"
+    ],
+    "learnMoreLink": "people-leadership-styles",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 39,
+    "category": "People",
+    "subcategory": "Leadership Styles",
+    "question": "What is Transformational Leadership?",
+    "answer": "Inspiring and motivating followers to exceed expectations and achieve extraordinary outcomes through vision and enthusiasm.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "leadership",
+      "ac",
+      "spi",
+      "transformational",
+      "ev"
+    ],
+    "learnMoreLink": "people-leadership-styles",
+    "relatedConcepts": []
+  },
+  {
+    "id": 40,
+    "category": "People",
+    "subcategory": "Leadership Styles",
+    "question": "What is Situational Leadership?",
+    "answer": "Adapting leadership style based on team maturity and task complexity (directing, coaching, supporting, delegating).",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "team",
+      "leadership",
+      "ac"
+    ],
+    "learnMoreLink": "people-leadership-styles",
+    "relatedConcepts": []
+  },
+  {
+    "id": 41,
+    "category": "People",
+    "subcategory": "Leadership Styles",
+    "question": "What is Transactional Leadership?",
+    "answer": "Leadership based on clear structure, rewards for performance, and consequences for non-performance.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "leadership",
+      "ac"
+    ],
+    "learnMoreLink": "people-leadership-styles",
+    "relatedConcepts": []
+  },
+  {
+    "id": 42,
+    "category": "People",
+    "subcategory": "Leadership Styles",
+    "question": "What is Laissez-faire Leadership?",
+    "answer": "Hands-off leadership where team has full autonomy; leader provides minimal guidance (effective for highly skilled teams).",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "team",
+      "leadership"
+    ],
+    "learnMoreLink": "people-leadership-styles",
+    "relatedConcepts": []
+  },
+  {
+    "id": 43,
+    "category": "People",
+    "subcategory": "Team Development",
+    "question": "What are Tuckman's 5 stages of team development?",
+    "answer": "1) Forming 2) Storming 3) Norming 4) Performing 5) Adjourning",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "team",
+      "ev"
+    ],
+    "learnMoreLink": "people-team-development",
+    "relatedConcepts": []
+  },
+  {
+    "id": 44,
+    "category": "People",
+    "subcategory": "Team Development",
+    "question": "What happens during the Storming stage?",
+    "answer": "Conflict emerges as team members assert opinions, challenge authority, and compete for position.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "team",
+      "conflict"
+    ],
+    "learnMoreLink": "people-team-development",
+    "relatedConcepts": []
+  },
+  {
+    "id": 45,
+    "category": "People",
+    "subcategory": "Team Development",
+    "question": "What characterizes a Performing team?",
+    "answer": "High productivity, collaboration, self-management, and focus on achieving goals with minimal PM intervention.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "team",
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "people-team-development",
+    "relatedConcepts": []
+  },
+  {
+    "id": 46,
+    "category": "People",
+    "subcategory": "Team Development",
+    "question": "What is the Drexler-Sibbet Team Performance Model?",
+    "answer": "A 7-stage model showing team creation (orientation, trust, goals, commitment) and sustainment (implementation, performance, renewal).",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "team"
+    ],
+    "learnMoreLink": "people-team-development",
+    "relatedConcepts": []
+  },
+  {
+    "id": 47,
+    "category": "People",
+    "subcategory": "Team Development",
+    "question": "What are the 3 team agreements every team should have?",
+    "answer": "1) Working agreements (how we work) 2) Decision-making process 3) Conflict resolution approach",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "team",
+      "conflict",
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "people-team-development",
+    "relatedConcepts": []
+  },
+  {
+    "id": 48,
+    "category": "People",
+    "subcategory": "Conflict Management",
+    "question": "What are the 5 conflict resolution techniques?",
+    "answer": "1) Withdraw/Avoid 2) Smooth/Accommodate 3) Compromise/Reconcile 4) Force/Direct 5) Collaborate/Problem Solve",
+    "difficulty": "hard",
+    "domain": "people",
+    "tags": [
+      "ac",
+      "conflict"
+    ],
+    "learnMoreLink": "people-conflict-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 49,
+    "category": "People",
+    "subcategory": "Conflict Management",
+    "question": "Which conflict resolution technique is BEST?",
+    "answer": "Collaborate/Problem Solve - it addresses root causes and results in win-win solutions.",
+    "difficulty": "hard",
+    "domain": "people",
+    "tags": [
+      "conflict"
+    ],
+    "learnMoreLink": "people-conflict-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 50,
+    "category": "People",
+    "subcategory": "Conflict Management",
+    "question": "When would you use Forcing?",
+    "answer": "In emergencies, when quick decisive action is needed, or when unpopular decisions must be made.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "people-conflict-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 51,
+    "category": "People",
+    "subcategory": "Conflict Management",
+    "question": "What's the difference between Smoothing and Compromise?",
+    "answer": "Smoothing emphasizes agreement while avoiding conflict; Compromise means both parties give up something (lose-lose).",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "conflict"
+    ],
+    "learnMoreLink": "people-conflict-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 52,
+    "category": "People",
+    "subcategory": "Conflict Management",
+    "question": "What is Withdrawal in conflict resolution?",
+    "answer": "Retreating from actual or potential conflict; postponing issue resolution (often temporary, not a solution).",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "ac",
+      "conflict"
+    ],
+    "learnMoreLink": "people-conflict-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 53,
+    "category": "People",
+    "subcategory": "Emotional Intelligence",
+    "question": "What are the 5 components of Emotional Intelligence?",
+    "answer": "1) Self-awareness 2) Self-regulation 3) Motivation 4) Empathy 5) Social skills",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "emotional-intelligence"
+    ],
+    "learnMoreLink": "people-emotional-intelligence",
+    "relatedConcepts": []
+  },
+  {
+    "id": 54,
+    "category": "People",
+    "subcategory": "Emotional Intelligence",
+    "question": "Why is EQ important for PMs?",
+    "answer": "Projects involve people with emotions; EQ helps manage relationships, resolve conflicts, and build trust.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "conflict"
+    ],
+    "learnMoreLink": "people-emotional-intelligence",
+    "relatedConcepts": []
+  },
+  {
+    "id": 55,
+    "category": "People",
+    "subcategory": "Emotional Intelligence",
+    "question": "What is self-awareness in EQ?",
+    "answer": "Understanding your own emotions, strengths, weaknesses, values, and how they impact others.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "people-emotional-intelligence",
+    "relatedConcepts": []
+  },
+  {
+    "id": 56,
+    "category": "People",
+    "subcategory": "Emotional Intelligence",
+    "question": "How does a PM demonstrate empathy?",
+    "answer": "By understanding and considering team members' perspectives, feelings, and circumstances in decisions.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "team"
+    ],
+    "learnMoreLink": "people-emotional-intelligence",
+    "relatedConcepts": []
+  },
+  {
+    "id": 57,
+    "category": "People",
+    "subcategory": "Communication",
+    "question": "What is the communication channels formula?",
+    "answer": "n(n-1)/2, where n = number of people",
+    "difficulty": "hard",
+    "domain": "people",
+    "tags": [
+      "communication"
+    ],
+    "learnMoreLink": "people-communication",
+    "relatedConcepts": [
+      "collaboration",
+      "team",
+      "stakeholder"
+    ]
+  },
+  {
+    "id": 58,
+    "category": "People",
+    "subcategory": "Communication",
+    "question": "How many communication channels exist with 6 people?",
+    "answer": "6(6-1)/2 = 6(5)/2 = 15 channels",
+    "difficulty": "hard",
+    "domain": "people",
+    "tags": [
+      "communication"
+    ],
+    "learnMoreLink": "people-communication",
+    "relatedConcepts": [
+      "collaboration",
+      "team",
+      "stakeholder"
+    ]
+  },
+  {
+    "id": 59,
+    "category": "People",
+    "subcategory": "Communication",
+    "question": "What are the 3 communication methods?",
+    "answer": "1) Interactive (real-time, two-way) 2) Push (one-way, sent to recipients) 3) Pull (recipients access when needed)",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "communication",
+      "ac"
+    ],
+    "learnMoreLink": "people-communication",
+    "relatedConcepts": [
+      "collaboration",
+      "team",
+      "stakeholder"
+    ]
+  },
+  {
+    "id": 60,
+    "category": "People",
+    "subcategory": "Communication",
+    "question": "Give an example of each communication method.",
+    "answer": "Interactive: Meeting; Push: Email; Pull: Website/repository",
+    "difficulty": "hard",
+    "domain": "people",
+    "tags": [
+      "eac",
+      "communication",
+      "ac"
+    ],
+    "learnMoreLink": "people-communication",
+    "relatedConcepts": [
+      "collaboration",
+      "team",
+      "stakeholder"
+    ]
+  },
+  {
+    "id": 61,
+    "category": "People",
+    "subcategory": "Communication",
+    "question": "What percentage of communication is non-verbal?",
+    "answer": "Approximately 55% body language, 38% tone, only 7% words (Mehrabian's rule - context-dependent).",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "communication"
+    ],
+    "learnMoreLink": "people-communication",
+    "relatedConcepts": [
+      "collaboration",
+      "team",
+      "stakeholder"
+    ]
+  },
+  {
+    "id": 62,
+    "category": "People",
+    "subcategory": "Communication",
+    "question": "What is active listening?",
+    "answer": "Fully concentrating on speaker, understanding message, responding thoughtfully, and remembering information.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "people-communication",
+    "relatedConcepts": []
+  },
+  {
+    "id": 63,
+    "category": "People",
+    "subcategory": "Stakeholder Management",
+    "question": "What is the Power/Interest Grid?",
+    "answer": "A stakeholder analysis tool that maps stakeholders by their power (authority) and interest (engagement level).",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "stakeholder",
+      "ev"
+    ],
+    "learnMoreLink": "people-stakeholder-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 64,
+    "category": "People",
+    "subcategory": "Stakeholder Management",
+    "question": "What are the 4 quadrants of Power/Interest Grid?",
+    "answer": "1) High Power/High Interest: Manage Closely 2) High Power/Low Interest: Keep Satisfied 3) Low Power/High Interest: Keep Informed 4) Low Power/Low Interest: Monitor",
+    "difficulty": "hard",
+    "domain": "people",
+    "tags": [],
+    "learnMoreLink": "people-stakeholder-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 65,
+    "category": "People",
+    "subcategory": "Stakeholder Management",
+    "question": "What is the Salience Model?",
+    "answer": "Stakeholder prioritization based on 3 attributes: Power, Legitimacy, and Urgency.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "stakeholder",
+      "ac"
+    ],
+    "learnMoreLink": "people-stakeholder-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 66,
+    "category": "People",
+    "subcategory": "Stakeholder Management",
+    "question": "Who is a \"Definitive Stakeholder\" in Salience Model?",
+    "answer": "One who has all 3 attributes: Power, Legitimacy, AND Urgency - highest priority.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "stakeholder",
+      "ac"
+    ],
+    "learnMoreLink": "people-stakeholder-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 67,
+    "category": "People",
+    "subcategory": "Stakeholder Management",
+    "question": "What's the difference between stakeholder engagement and stakeholder management?",
+    "answer": "Engagement is proactive, collaborative, two-way; Management is controlling, directive, one-way.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "stakeholder",
+      "ac"
+    ],
+    "learnMoreLink": "people-stakeholder-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 68,
+    "category": "People",
+    "subcategory": "Stakeholder Management",
+    "question": "What should you do with a resistant stakeholder?",
+    "answer": "Understand their concerns, involve them in solutions, communicate benefits, address fears, build trust.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "stakeholder"
+    ],
+    "learnMoreLink": "people-stakeholder-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 69,
+    "category": "People",
+    "subcategory": "Virtual Teams",
+    "question": "What are 3 challenges of virtual teams?",
+    "answer": "1) Time zone differences 2) Communication barriers 3) Lack of face-to-face interaction",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "communication",
+      "team",
+      "ac"
+    ],
+    "learnMoreLink": "people-virtual-teams",
+    "relatedConcepts": [
+      "collaboration",
+      "team",
+      "stakeholder"
+    ]
+  },
+  {
+    "id": 70,
+    "category": "People",
+    "subcategory": "Virtual Teams",
+    "question": "How can a PM build trust in virtual teams?",
+    "answer": "Regular video calls, clear expectations, transparency, celebrate successes, create informal interaction opportunities.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "team",
+      "ac"
+    ],
+    "learnMoreLink": "people-virtual-teams",
+    "relatedConcepts": []
+  },
+  {
+    "id": 71,
+    "category": "People",
+    "subcategory": "Virtual Teams",
+    "question": "What tools support virtual team collaboration?",
+    "answer": "Video conferencing, shared documents (cloud), instant messaging, project management software, virtual whiteboards.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "team"
+    ],
+    "learnMoreLink": "people-virtual-teams",
+    "relatedConcepts": []
+  },
+  {
+    "id": 72,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is facilitation?",
+    "answer": "Guiding a group through a process to achieve objectives while ensuring everyone participates and is heard.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 73,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is negotiation in PM context?",
+    "answer": "Reaching agreements through discussion to resolve differences, allocate resources, or make decisions.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "eac",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 74,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is influencing?",
+    "answer": "Getting people to take action or agree without using direct authority (persuasion, expertise, relationships).",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 75,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "Name 3 sources of power for a PM.",
+    "answer": "1) Expert (knowledge) 2) Referent (respect/charisma) 3) Reward (can provide benefits)",
+    "difficulty": "hard",
+    "domain": "people",
+    "tags": [],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 76,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is the difference between power and authority?",
+    "answer": "Authority is formal right to make decisions; Power is ability to get things done (can exist without authority).",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 77,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is the MoSCoW prioritization technique?",
+    "answer": "Must have, Should have, Could have, Won't have (this time) - prioritizes requirements.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 78,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is the Kano Model?",
+    "answer": "Categorizes features as: Basic (expected), Performance (more is better), Excitement (delighters).",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 79,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is progressive elaboration?",
+    "answer": "Continuously improving and detailing the project plan as more information becomes available.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 80,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What's the difference between a requirement and a deliverable?",
+    "answer": "Requirement is a condition/capability needed; Deliverable is a tangible output produced.",
+    "difficulty": "hard",
+    "domain": "people",
+    "tags": [],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 81,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is a Work Breakdown Structure (WBS)?",
+    "answer": "Hierarchical decomposition of total project scope into smaller, manageable work packages.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "scope",
+      "ac",
+      "wbs"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 82,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is the 8/80 rule in WBS?",
+    "answer": "Work packages should be no smaller than 8 hours and no larger than 80 hours of effort.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "wbs",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 83,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What's the difference between WBS and project schedule?",
+    "answer": "WBS shows WHAT work will be done (scope); Schedule shows WHEN work will be done (time).",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "scope",
+      "schedule",
+      "wbs"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 84,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is a work package?",
+    "answer": "The lowest level of WBS where cost and schedule can be estimated, assigned, and monitored.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "ac",
+      "cost",
+      "ev",
+      "wbs",
+      "schedule"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 85,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is scope creep?",
+    "answer": "Uncontrolled expansion of scope without adjustments to time, cost, and resources.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "cost",
+      "scope"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 86,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "How do you prevent scope creep?",
+    "answer": "Clear requirements, change control process, stakeholder agreements, regular scope validation.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "stakeholder",
+      "scope",
+      "ev"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 87,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is the Critical Path?",
+    "answer": "The longest sequence of activities in a network diagram; determines minimum project duration.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "critical-path",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 88,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is Float (Slack)?",
+    "answer": "The amount of time an activity can be delayed without delaying project completion or successor activities.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "float",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 89,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is Free Float?",
+    "answer": "Time an activity can be delayed without delaying the early start of any successor activity.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "float",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 90,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is Total Float?",
+    "answer": "Time an activity can be delayed without delaying project completion date.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "float",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 91,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "How do you calculate Total Float?",
+    "answer": "LS - ES or LF - EF",
+    "difficulty": "hard",
+    "domain": "people",
+    "tags": [
+      "float"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 92,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What activities are on the critical path?",
+    "answer": "Activities with ZERO total float.",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "float",
+      "critical-path",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 93,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is schedule compression?",
+    "answer": "Techniques to shorten project duration without changing scope.",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "scope",
+      "schedule"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 94,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is Crashing?",
+    "answer": "Adding resources to critical path activities to reduce duration (increases cost).",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "cost",
+      "critical-path",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 95,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What is Fast Tracking?",
+    "answer": "Performing activities in parallel that were originally planned in sequence (increases risk).",
+    "difficulty": "easy",
+    "domain": "people",
+    "tags": [
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 96,
+    "category": "People",
+    "subcategory": "Interpersonal Skills",
+    "question": "What's the difference between lag and lead?",
+    "answer": "Lag is waiting time between activities; Lead is overlap (starting next activity before previous completes).",
+    "difficulty": "medium",
+    "domain": "people",
+    "tags": [
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "people-interpersonal-skills",
+    "relatedConcepts": []
+  },
+  {
+    "id": 97,
+    "category": "Process-Planning",
+    "subcategory": "Schedule Management",
+    "question": "What is the Precedence Diagramming Method (PDM)?",
+    "answer": "Network diagram using boxes (nodes) for activities and arrows for dependencies (Activity-on-Node).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-planning-schedule-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 98,
+    "category": "Process-Planning",
+    "subcategory": "Schedule Management",
+    "question": "What are the 4 dependency types in PDM?",
+    "answer": "1) Finish-to-Start (FS) 2) Start-to-Start (SS) 3) Finish-to-Finish (FF) 4) Start-to-Finish (SF - rare)",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-planning-schedule-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 99,
+    "category": "Process-Planning",
+    "subcategory": "Estimation",
+    "question": "What is Analogous Estimating?",
+    "answer": "Using actual cost/duration from similar past projects (top-down, less accurate, quick).",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "cost",
+      "ac"
+    ],
+    "learnMoreLink": "process-planning-estimation",
+    "relatedConcepts": []
+  },
+  {
+    "id": 100,
+    "category": "Process-Planning",
+    "subcategory": "Estimation",
+    "question": "What is Parametric Estimating?",
+    "answer": "Using statistical relationship between variables (e.g., $50/sq ft) - more accurate than analogous.",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-planning-estimation",
+    "relatedConcepts": []
+  },
+  {
+    "id": 101,
+    "category": "Process-Planning",
+    "subcategory": "Estimation",
+    "question": "What is Bottom-Up Estimating?",
+    "answer": "Estimating individual work packages then rolling up - most accurate, most time-consuming.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-planning-estimation",
+    "relatedConcepts": []
+  },
+  {
+    "id": 102,
+    "category": "Process-Planning",
+    "subcategory": "Estimation",
+    "question": "What is Three-Point Estimating?",
+    "answer": "Using optimistic (O), most likely (M), and pessimistic (P) estimates to calculate expected value.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-planning-estimation",
+    "relatedConcepts": []
+  },
+  {
+    "id": 103,
+    "category": "Process-Planning",
+    "subcategory": "Estimation",
+    "question": "What is the PERT formula for three-point estimating?",
+    "answer": "(O + 4M + P) / 6",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-planning-estimation",
+    "relatedConcepts": []
+  },
+  {
+    "id": 104,
+    "category": "Process-Planning",
+    "subcategory": "Estimation",
+    "question": "What is the Triangular Distribution formula?",
+    "answer": "(O + M + P) / 3",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-planning-estimation",
+    "relatedConcepts": []
+  },
+  {
+    "id": 105,
+    "category": "Process-Planning",
+    "subcategory": "Estimation",
+    "question": "What is Reserve Analysis?",
+    "answer": "Setting aside contingency (known risks) and management reserves (unknown risks) in budget/schedule.",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "schedule"
+    ],
+    "learnMoreLink": "process-planning-estimation",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 106,
+    "category": "Process-Planning",
+    "subcategory": "Estimation",
+    "question": "What's the difference between Contingency Reserve and Management Reserve?",
+    "answer": "Contingency is for KNOWN risks (part of baseline); Management reserve is for UNKNOWN risks (not in baseline).",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "process-planning-estimation",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 107,
+    "category": "Process-Cost",
+    "subcategory": "EVM Basics",
+    "question": "What is Planned Value (PV)?",
+    "answer": "The authorized budget assigned to scheduled work (what you PLANNED to spend by now).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "pv",
+      "schedule"
+    ],
+    "learnMoreLink": "process-cost-evm-basics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 108,
+    "category": "Process-Cost",
+    "subcategory": "EVM Basics",
+    "question": "What is Earned Value (EV)?",
+    "answer": "The budget for work actually completed (value of work DONE).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-basics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 109,
+    "category": "Process-Cost",
+    "subcategory": "EVM Basics",
+    "question": "What is Actual Cost (AC)?",
+    "answer": "The actual cost incurred for work completed (what you ACTUALLY spent).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "cost",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-basics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 110,
+    "category": "Process-Cost",
+    "subcategory": "EVM Basics",
+    "question": "What is Budget at Completion (BAC)?",
+    "answer": "The total planned budget for the project.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-evm-basics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 111,
+    "category": "Process-Cost",
+    "subcategory": "EVM Variance",
+    "question": "What is Cost Variance (CV)?",
+    "answer": "CV = EV - AC (Positive = under budget; Negative = over budget)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "cost",
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-variance",
+    "relatedConcepts": []
+  },
+  {
+    "id": 112,
+    "category": "Process-Cost",
+    "subcategory": "EVM Variance",
+    "question": "What is Schedule Variance (SV)?",
+    "answer": "SV = EV - PV (Positive = ahead of schedule; Negative = behind schedule)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "pv",
+      "ev",
+      "schedule"
+    ],
+    "learnMoreLink": "process-cost-evm-variance",
+    "relatedConcepts": []
+  },
+  {
+    "id": 113,
+    "category": "Process-Cost",
+    "subcategory": "EVM Variance",
+    "question": "If CV is negative, what does it mean?",
+    "answer": "Project is OVER BUDGET (spending more than value earned).",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-cost-evm-variance",
+    "relatedConcepts": []
+  },
+  {
+    "id": 114,
+    "category": "Process-Cost",
+    "subcategory": "EVM Variance",
+    "question": "If SV is positive, what does it mean?",
+    "answer": "Project is AHEAD OF SCHEDULE (earned more value than planned).",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "schedule"
+    ],
+    "learnMoreLink": "process-cost-evm-variance",
+    "relatedConcepts": []
+  },
+  {
+    "id": 115,
+    "category": "Process-Cost",
+    "subcategory": "EVM Variance",
+    "question": "A project has PV=100, EV=80, AC=90. What is CV and what does it mean?",
+    "answer": "CV = 80-90 = -10. Project is $10 over budget.",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "pv",
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-variance",
+    "relatedConcepts": []
+  },
+  {
+    "id": 116,
+    "category": "Process-Cost",
+    "subcategory": "EVM Variance",
+    "question": "Same project: PV=100, EV=80, AC=90. What is SV?",
+    "answer": "SV = 80-100 = -20. Project is $20 worth of work behind schedule.",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "pv",
+      "ev",
+      "schedule",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-variance",
+    "relatedConcepts": []
+  },
+  {
+    "id": 117,
+    "category": "Process-Cost",
+    "subcategory": "EVM Performance Indexes",
+    "question": "What is Cost Performance Index (CPI)?",
+    "answer": "CPI = EV / AC (Efficiency of cost spending; >1 good, <1 bad)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "cost",
+      "ev",
+      "cpi",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-performance-indexes",
+    "relatedConcepts": []
+  },
+  {
+    "id": 118,
+    "category": "Process-Cost",
+    "subcategory": "EVM Performance Indexes",
+    "question": "What is Schedule Performance Index (SPI)?",
+    "answer": "SPI = EV / PV (Efficiency of schedule; >1 good, <1 bad)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "pv",
+      "spi",
+      "ev",
+      "schedule"
+    ],
+    "learnMoreLink": "process-cost-evm-performance-indexes",
+    "relatedConcepts": []
+  },
+  {
+    "id": 119,
+    "category": "Process-Cost",
+    "subcategory": "EVM Performance Indexes",
+    "question": "If CPI = 0.8, what does it mean?",
+    "answer": "For every $1 spent, only $0.80 of value is earned - project is over budget and inefficient.",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "ev",
+      "cpi"
+    ],
+    "learnMoreLink": "process-cost-evm-performance-indexes",
+    "relatedConcepts": []
+  },
+  {
+    "id": 120,
+    "category": "Process-Cost",
+    "subcategory": "EVM Performance Indexes",
+    "question": "If SPI = 1.2, what does it mean?",
+    "answer": "Project is progressing 20% faster than planned - ahead of schedule.",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "spi",
+      "schedule"
+    ],
+    "learnMoreLink": "process-cost-evm-performance-indexes",
+    "relatedConcepts": []
+  },
+  {
+    "id": 121,
+    "category": "Process-Cost",
+    "subcategory": "EVM Performance Indexes",
+    "question": "What CPI value means you're exactly on budget?",
+    "answer": "CPI = 1.0 (EV = AC)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ev",
+      "cpi",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-performance-indexes",
+    "relatedConcepts": []
+  },
+  {
+    "id": 122,
+    "category": "Process-Cost",
+    "subcategory": "EVM Performance Indexes",
+    "question": "A project has EV=500, AC=600. Calculate CPI.",
+    "answer": "CPI = 500/600 = 0.83 (Over budget, earning only 83 cents per dollar spent)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ev",
+      "cpi",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-performance-indexes",
+    "relatedConcepts": []
+  },
+  {
+    "id": 123,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "What is Estimate at Completion (EAC)?",
+    "answer": "The expected total cost of the project at completion (revised BAC based on performance).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "cost",
+      "ev",
+      "eac",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 124,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "What is the EAC formula if current CPI continues?",
+    "answer": "EAC = BAC / CPI (assumes current cost efficiency continues)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "cost",
+      "cpi",
+      "eac",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 125,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "What is the EAC formula for atypical variance?",
+    "answer": "EAC = AC + (BAC - EV) - Used when current variance is one-time, won't repeat",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "eac",
+      "bac",
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 126,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "What is EAC formula considering both cost and schedule performance?",
+    "answer": "EAC = AC + [(BAC - EV) / (CPI × SPI)]",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "spi",
+      "ev",
+      "cpi",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 127,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "What is Estimate to Complete (ETC)?",
+    "answer": "The expected cost to finish remaining work.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "cost"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 128,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "What is the ETC formula?",
+    "answer": "ETC = EAC - AC",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "eac",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 129,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "Alternative ETC formula if CPI continues?",
+    "answer": "ETC = (BAC - EV) / CPI",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "bac",
+      "ev",
+      "cpi",
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 130,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "What is Variance at Completion (VAC)?",
+    "answer": "VAC = BAC - EAC (Expected budget variance at project completion)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "eac",
+      "ac",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 131,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "If VAC is negative, what does it mean?",
+    "answer": "Project will finish OVER budget (EAC > BAC).",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "eac",
+      "ac",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 132,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "Project: BAC=1000, AC=400, EV=500, CPI=1.25. Calculate EAC (CPI continues).",
+    "answer": "EAC = 1000/1.25 = 800 (Project will finish under budget)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "ev",
+      "cpi",
+      "eac",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 133,
+    "category": "Process-Cost",
+    "subcategory": "EVM Forecasting",
+    "question": "Same project: Calculate VAC.",
+    "answer": "VAC = 1000-800 = 200 (Expect to finish $200 under budget)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-forecasting",
+    "relatedConcepts": []
+  },
+  {
+    "id": 134,
+    "category": "Process-Cost",
+    "subcategory": "TCPI",
+    "question": "What is TCPI?",
+    "answer": "To-Complete Performance Index - the cost efficiency needed on remaining work to meet a target.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "tcpi",
+      "cost",
+      "cpi"
+    ],
+    "learnMoreLink": "process-cost-tcpi",
+    "relatedConcepts": []
+  },
+  {
+    "id": 135,
+    "category": "Process-Cost",
+    "subcategory": "TCPI",
+    "question": "What is TCPI formula based on BAC?",
+    "answer": "TCPI = (BAC - EV) / (BAC - AC) - Efficiency needed to meet original budget",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "ev",
+      "cpi",
+      "tcpi",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-tcpi",
+    "relatedConcepts": []
+  },
+  {
+    "id": 136,
+    "category": "Process-Cost",
+    "subcategory": "TCPI",
+    "question": "What is TCPI formula based on EAC?",
+    "answer": "TCPI = (BAC - EV) / (EAC - AC) - Efficiency needed to meet revised estimate",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "ev",
+      "cpi",
+      "eac",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-tcpi",
+    "relatedConcepts": []
+  },
+  {
+    "id": 137,
+    "category": "Process-Cost",
+    "subcategory": "TCPI",
+    "question": "If TCPI = 1.3, what does it mean?",
+    "answer": "Need to earn $1.30 of value for every $1 spent on remaining work - very challenging.",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "tcpi",
+      "ev",
+      "cpi"
+    ],
+    "learnMoreLink": "process-cost-tcpi",
+    "relatedConcepts": []
+  },
+  {
+    "id": 138,
+    "category": "Process-Cost",
+    "subcategory": "TCPI",
+    "question": "When would you use TCPI based on EAC?",
+    "answer": "When original BAC is no longer realistic and new EAC has been established.",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "tcpi",
+      "ac",
+      "cpi",
+      "eac",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-tcpi",
+    "relatedConcepts": []
+  },
+  {
+    "id": 139,
+    "category": "Process-Cost",
+    "subcategory": "TCPI",
+    "question": "Project: BAC=1000, EV=400, AC=500. Calculate TCPI to meet BAC.",
+    "answer": "TCPI = (1000-400)/(1000-500) = 600/500 = 1.2 - Need to improve efficiency to 1.2",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "ev",
+      "cpi",
+      "tcpi",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-tcpi",
+    "relatedConcepts": []
+  },
+  {
+    "id": 140,
+    "category": "Process-Cost",
+    "subcategory": "EVM Practice",
+    "question": "PV=1000, EV=800, AC=900, BAC=5000. Is project ahead or behind schedule?",
+    "answer": "SV = 800-1000 = -200. Behind schedule (negative SV).",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "ev",
+      "pv",
+      "schedule",
+      "bac"
+    ],
+    "learnMoreLink": "process-cost-evm-practice",
+    "relatedConcepts": []
+  },
+  {
+    "id": 141,
+    "category": "Process-Cost",
+    "subcategory": "EVM Practice",
+    "question": "Same project: Is it over or under budget?",
+    "answer": "CV = 800-900 = -100. Over budget (negative CV).",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-cost-evm-practice",
+    "relatedConcepts": []
+  },
+  {
+    "id": 142,
+    "category": "Process-Cost",
+    "subcategory": "EVM Practice",
+    "question": "Same project: Calculate CPI and SPI.",
+    "answer": "CPI = 800/900 = 0.89; SPI = 800/1000 = 0.80",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "spi",
+      "cpi"
+    ],
+    "learnMoreLink": "process-cost-evm-practice",
+    "relatedConcepts": []
+  },
+  {
+    "id": 143,
+    "category": "Process-Cost",
+    "subcategory": "EVM Practice",
+    "question": "Same project: Calculate EAC if CPI continues.",
+    "answer": "EAC = 5000/0.89 = 5618 (Will finish over budget)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "eac",
+      "ac",
+      "cpi"
+    ],
+    "learnMoreLink": "process-cost-evm-practice",
+    "relatedConcepts": []
+  },
+  {
+    "id": 144,
+    "category": "Process-Cost",
+    "subcategory": "EVM Practice",
+    "question": "Same project: Calculate ETC.",
+    "answer": "ETC = 5618-900 = 4718 remaining cost",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "cost"
+    ],
+    "learnMoreLink": "process-cost-evm-practice",
+    "relatedConcepts": []
+  },
+  {
+    "id": 145,
+    "category": "Process-Cost",
+    "subcategory": "EVM Practice",
+    "question": "Same project: Calculate VAC.",
+    "answer": "VAC = 5000-5618 = -618 (Will finish $618 over budget)",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-cost-evm-practice",
+    "relatedConcepts": []
+  },
+  {
+    "id": 146,
+    "category": "Process-Quality",
+    "subcategory": "Quality Fundamentals",
+    "question": "What is Quality?",
+    "answer": "The degree to which deliverables meet requirements and fitness for use.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "quality"
+    ],
+    "learnMoreLink": "process-quality-quality-fundamentals",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 147,
+    "category": "Process-Quality",
+    "subcategory": "Quality Fundamentals",
+    "question": "What is Grade?",
+    "answer": "Category assigned to deliverables with same functional use but different technical characteristics (low grade ≠ low quality).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "quality"
+    ],
+    "learnMoreLink": "process-quality-quality-fundamentals",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 148,
+    "category": "Process-Quality",
+    "subcategory": "Quality Fundamentals",
+    "question": "What's the difference between Quality and Grade?",
+    "answer": "Quality is meeting requirements (must meet); Grade is features/characteristics (low grade can be acceptable).",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "quality"
+    ],
+    "learnMoreLink": "process-quality-quality-fundamentals",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 149,
+    "category": "Process-Quality",
+    "subcategory": "Quality Fundamentals",
+    "question": "What is Prevention vs. Inspection?",
+    "answer": "Prevention: Building quality in (proactive, cheaper); Inspection: Finding defects (reactive, expensive).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "eac",
+      "ev",
+      "quality",
+      "ac"
+    ],
+    "learnMoreLink": "process-quality-quality-fundamentals",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 150,
+    "category": "Process-Quality",
+    "subcategory": "Quality Fundamentals",
+    "question": "What is Cost of Quality (COQ)?",
+    "answer": "Total cost of conformance (prevention + appraisal) + non-conformance (internal + external failures).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "cost",
+      "ev",
+      "quality"
+    ],
+    "learnMoreLink": "process-quality-quality-fundamentals",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 151,
+    "category": "Process-Quality",
+    "subcategory": "Quality Fundamentals",
+    "question": "What are Cost of Conformance examples?",
+    "answer": "Training, process documentation, equipment, quality audits (prevention); Testing, inspections (appraisal).",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "cost",
+      "ev",
+      "quality"
+    ],
+    "learnMoreLink": "process-quality-quality-fundamentals",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 152,
+    "category": "Process-Quality",
+    "subcategory": "Quality Fundamentals",
+    "question": "What are Cost of Non-Conformance examples?",
+    "answer": "Rework, scrap (internal failures); Warranty, liability, lost business (external failures).",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "cost"
+    ],
+    "learnMoreLink": "process-quality-quality-fundamentals",
+    "relatedConcepts": []
+  },
+  {
+    "id": 153,
+    "category": "Process-Quality",
+    "subcategory": "Quality Tools",
+    "question": "What is a Cause and Effect Diagram (Ishikawa/Fishbone)?",
+    "answer": "Visual tool to identify potential causes of a problem, organized by categories (6Ms: Methods, Machines, Materials, etc.).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-quality-quality-tools",
+    "relatedConcepts": []
+  },
+  {
+    "id": 154,
+    "category": "Process-Quality",
+    "subcategory": "Quality Tools",
+    "question": "What is a Pareto Chart?",
+    "answer": "Bar chart showing frequency of problems ordered by severity (80/20 rule - 80% of problems from 20% of causes).",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ev"
+    ],
+    "learnMoreLink": "process-quality-quality-tools",
+    "relatedConcepts": []
+  },
+  {
+    "id": 155,
+    "category": "Process-Quality",
+    "subcategory": "Quality Tools",
+    "question": "What is the 80/20 rule (Pareto Principle)?",
+    "answer": "80% of effects come from 20% of causes - focus on vital few causes.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-quality-quality-tools",
+    "relatedConcepts": []
+  },
+  {
+    "id": 156,
+    "category": "Process-Quality",
+    "subcategory": "Quality Tools",
+    "question": "What is a Control Chart?",
+    "answer": "Tracks process performance over time to identify trends, shifts, or out-of-control points.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-quality-quality-tools",
+    "relatedConcepts": []
+  },
+  {
+    "id": 157,
+    "category": "Process-Quality",
+    "subcategory": "Quality Tools",
+    "question": "What are Control Limits in a Control Chart?",
+    "answer": "Upper Control Limit (UCL) and Lower Control Limit (LCL) - boundaries of acceptable variation.",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-quality-quality-tools",
+    "relatedConcepts": []
+  },
+  {
+    "id": 158,
+    "category": "Process-Quality",
+    "subcategory": "Quality Tools",
+    "question": "What is the Rule of Seven in Control Charts?",
+    "answer": "7 consecutive points on one side of mean (even within limits) indicates process is out of control.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ev"
+    ],
+    "learnMoreLink": "process-quality-quality-tools",
+    "relatedConcepts": []
+  },
+  {
+    "id": 159,
+    "category": "Process-Quality",
+    "subcategory": "Quality Tools",
+    "question": "What is a Histogram?",
+    "answer": "Bar chart showing distribution of variables (frequency distribution).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-quality-quality-tools",
+    "relatedConcepts": []
+  },
+  {
+    "id": 160,
+    "category": "Process-Quality",
+    "subcategory": "Quality Tools",
+    "question": "What is a Scatter Diagram?",
+    "answer": "Plots two variables to show if there's a correlation between them.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-quality-quality-tools",
+    "relatedConcepts": []
+  },
+  {
+    "id": 161,
+    "category": "Process-Quality",
+    "subcategory": "Quality Tools",
+    "question": "What is a Flowchart?",
+    "answer": "Visual representation of process steps, decision points, and flow.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-quality-quality-tools",
+    "relatedConcepts": []
+  },
+  {
+    "id": 162,
+    "category": "Process-Quality",
+    "subcategory": "Quality Tools",
+    "question": "What is a Checksheet?",
+    "answer": "Structured form for collecting and organizing data (tally marks).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-quality-quality-tools",
+    "relatedConcepts": []
+  },
+  {
+    "id": 163,
+    "category": "Process-Quality",
+    "subcategory": "Quality Management",
+    "question": "What is Continuous Improvement (Kaizen)?",
+    "answer": "Ongoing effort to improve products, services, or processes through incremental improvements.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-quality-quality-management",
+    "relatedConcepts": []
+  },
+  {
+    "id": 164,
+    "category": "Process-Quality",
+    "subcategory": "Quality Management",
+    "question": "What is the PDCA cycle?",
+    "answer": "Plan-Do-Check-Act - iterative quality improvement cycle.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ac",
+      "quality"
+    ],
+    "learnMoreLink": "process-quality-quality-management",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 165,
+    "category": "Process-Quality",
+    "subcategory": "Quality Management",
+    "question": "What is Six Sigma?",
+    "answer": "Quality methodology aiming for 3.4 defects per million opportunities (very high quality).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "quality"
+    ],
+    "learnMoreLink": "process-quality-quality-management",
+    "relatedConcepts": [
+      "prevention",
+      "inspection",
+      "quality-tools"
+    ]
+  },
+  {
+    "id": 166,
+    "category": "Process-Risk",
+    "subcategory": "Risk Basics",
+    "question": "What is a Risk?",
+    "answer": "An uncertain event or condition that, if it occurs, has positive (opportunity) or negative (threat) effect on objectives.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "ev"
+    ],
+    "learnMoreLink": "process-risk-risk-basics",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 167,
+    "category": "Process-Risk",
+    "subcategory": "Risk Basics",
+    "question": "What's the difference between Risk and Issue?",
+    "answer": "Risk is uncertain (may or may not happen); Issue is certain (already happened, needs resolution now).",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "process-risk-risk-basics",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 168,
+    "category": "Process-Risk",
+    "subcategory": "Risk Basics",
+    "question": "What are the two dimensions of a risk?",
+    "answer": "1) Probability (likelihood of occurring) 2) Impact (effect if it occurs)",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-basics",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 169,
+    "category": "Process-Risk",
+    "subcategory": "Risk Basics",
+    "question": "What is Risk Tolerance?",
+    "answer": "The degree of uncertainty stakeholders are willing to accept (varies by stakeholder).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "stakeholder",
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-basics",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 170,
+    "category": "Process-Risk",
+    "subcategory": "Risk Basics",
+    "question": "What is Risk Appetite?",
+    "answer": "The level of risk an organization is willing to take to achieve objectives.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-basics",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 171,
+    "category": "Process-Risk",
+    "subcategory": "Risk Identification",
+    "question": "What is a Risk Register?",
+    "answer": "Document listing identified risks, their analysis, owners, and response strategies.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "process-risk-risk-identification",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 172,
+    "category": "Process-Risk",
+    "subcategory": "Risk Identification",
+    "question": "What is a SWOT Analysis?",
+    "answer": "Examines Strengths, Weaknesses (internal), Opportunities, Threats (external) to identify risks.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "process-risk-risk-identification",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 173,
+    "category": "Process-Risk",
+    "subcategory": "Risk Identification",
+    "question": "What is the Delphi Technique?",
+    "answer": "Anonymous expert consensus-building through multiple rounds of questionnaires.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-risk-risk-identification",
+    "relatedConcepts": []
+  },
+  {
+    "id": 174,
+    "category": "Process-Risk",
+    "subcategory": "Risk Identification",
+    "question": "What is a Risk Breakdown Structure (RBS)?",
+    "answer": "Hierarchical representation of risk categories (similar to WBS but for risks).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "wbs"
+    ],
+    "learnMoreLink": "process-risk-risk-identification",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 175,
+    "category": "Process-Risk",
+    "subcategory": "Risk Identification",
+    "question": "Name 3 risk identification techniques.",
+    "answer": "1) Brainstorming 2) Interviews 3) Checklists (from past projects)",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "process-risk-risk-identification",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 176,
+    "category": "Process-Risk",
+    "subcategory": "Risk Analysis",
+    "question": "What is Qualitative Risk Analysis?",
+    "answer": "Prioritizing risks by assessing probability and impact (using scales: High/Medium/Low).",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-analysis",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 177,
+    "category": "Process-Risk",
+    "subcategory": "Risk Analysis",
+    "question": "What is Quantitative Risk Analysis?",
+    "answer": "Numerically analyzing the effect of risks on objectives (uses simulations, expected monetary value).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "process-risk-risk-analysis",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 178,
+    "category": "Process-Risk",
+    "subcategory": "Risk Analysis",
+    "question": "What is a Probability and Impact Matrix?",
+    "answer": "Grid plotting risks by probability and impact to prioritize (high probability + high impact = high priority).",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-analysis",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 179,
+    "category": "Process-Risk",
+    "subcategory": "Risk Analysis",
+    "question": "What is Expected Monetary Value (EMV)?",
+    "answer": "Probability × Impact (in dollars) - used for decision tree analysis.",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-analysis",
+    "relatedConcepts": []
+  },
+  {
+    "id": 180,
+    "category": "Process-Risk",
+    "subcategory": "Risk Analysis",
+    "question": "EMV Example: 30% chance of $10,000 gain. Calculate EMV.",
+    "answer": "EMV = 0.30 × 10,000 = $3,000",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [],
+    "learnMoreLink": "process-risk-risk-analysis",
+    "relatedConcepts": []
+  },
+  {
+    "id": 181,
+    "category": "Process-Risk",
+    "subcategory": "Risk Analysis",
+    "question": "What is a Decision Tree?",
+    "answer": "Diagram showing decision alternatives and potential outcomes with probabilities and impacts.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-analysis",
+    "relatedConcepts": []
+  },
+  {
+    "id": 182,
+    "category": "Process-Risk",
+    "subcategory": "Risk Response",
+    "question": "What are the 4 THREAT response strategies?",
+    "answer": "1) Avoid 2) Mitigate 3) Transfer 4) Accept",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-response",
+    "relatedConcepts": []
+  },
+  {
+    "id": 183,
+    "category": "Process-Risk",
+    "subcategory": "Risk Response",
+    "question": "What is Risk Avoidance?",
+    "answer": "Eliminating the threat by removing its cause (e.g., change scope, use proven technology).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "scope"
+    ],
+    "learnMoreLink": "process-risk-risk-response",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 184,
+    "category": "Process-Risk",
+    "subcategory": "Risk Response",
+    "question": "What is Risk Mitigation?",
+    "answer": "Reducing probability or impact of threat to acceptable level (most common strategy).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-response",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 185,
+    "category": "Process-Risk",
+    "subcategory": "Risk Response",
+    "question": "What is Risk Transfer?",
+    "answer": "Shifting impact and ownership to a third party (insurance, contracts, warranties).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-response",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 186,
+    "category": "Process-Risk",
+    "subcategory": "Risk Response",
+    "question": "What is Risk Acceptance?",
+    "answer": "Acknowledging risk exists but taking no proactive action (may have contingency plan).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-response",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 187,
+    "category": "Process-Risk",
+    "subcategory": "Risk Response",
+    "question": "When would you AVOID a risk?",
+    "answer": "When risk probability/impact is too high and it's feasible to eliminate it.",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-response",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 188,
+    "category": "Process-Risk",
+    "subcategory": "Risk Response",
+    "question": "What are the 4 OPPORTUNITY response strategies?",
+    "answer": "1) Exploit 2) Enhance 3) Share 4) Accept",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-response",
+    "relatedConcepts": []
+  },
+  {
+    "id": 189,
+    "category": "Process-Risk",
+    "subcategory": "Risk Response",
+    "question": "What is Risk Exploitation?",
+    "answer": "Ensuring opportunity definitely happens (add resources, assign best team).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "team"
+    ],
+    "learnMoreLink": "process-risk-risk-response",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 190,
+    "category": "Process-Risk",
+    "subcategory": "Risk Response",
+    "question": "What is Risk Enhancement?",
+    "answer": "Increasing probability or impact of opportunity.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-response",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 191,
+    "category": "Process-Risk",
+    "subcategory": "Risk Response",
+    "question": "What is Risk Sharing?",
+    "answer": "Partnering with third party to share benefits of opportunity (joint venture, partnerships).",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "process-risk-risk-response",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 192,
+    "category": "Process-Risk",
+    "subcategory": "Risk Monitoring",
+    "question": "What is Contingency Reserve?",
+    "answer": "Time/budget set aside for KNOWN risks (identified in risk register) - part of baseline.",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "process-risk-risk-monitoring",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 193,
+    "category": "Process-Risk",
+    "subcategory": "Risk Monitoring",
+    "question": "What is Management Reserve?",
+    "answer": "Time/budget for UNKNOWN risks (unknown unknowns) - NOT part of baseline.",
+    "difficulty": "hard",
+    "domain": "process",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "process-risk-risk-monitoring",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 194,
+    "category": "Process-Risk",
+    "subcategory": "Risk Monitoring",
+    "question": "What triggers a contingency plan?",
+    "answer": "A pre-identified risk trigger or threshold being reached.",
+    "difficulty": "medium",
+    "domain": "process",
+    "tags": [
+      "eac",
+      "risk",
+      "ac"
+    ],
+    "learnMoreLink": "process-risk-risk-monitoring",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 195,
+    "category": "Process-Risk",
+    "subcategory": "Risk Monitoring",
+    "question": "What is a Risk Owner?",
+    "answer": "Person responsible for monitoring the risk and executing the response plan if risk occurs.",
+    "difficulty": "easy",
+    "domain": "process",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "process-risk-risk-monitoring",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 196,
+    "category": "Agile",
+    "subcategory": "Agile Manifesto",
+    "question": "What are the 4 values of the Agile Manifesto?",
+    "answer": "1) Individuals & interactions > processes & tools 2) Working software > comprehensive documentation 3) Customer collaboration > contract negotiation 4) Responding to change > following a plan",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "agile",
+      "ac"
+    ],
+    "learnMoreLink": "agile-agile-manifesto",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 197,
+    "category": "Agile",
+    "subcategory": "Agile Manifesto",
+    "question": "Does Agile eliminate documentation?",
+    "answer": "NO - it values working software MORE than documentation, but documentation still has value.",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "agile"
+    ],
+    "learnMoreLink": "agile-agile-manifesto",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 198,
+    "category": "Agile",
+    "subcategory": "Agile Manifesto",
+    "question": "What are 3 of the 12 Agile Principles?",
+    "answer": "(Any 3) Early/continuous delivery, welcome changing requirements, deliver frequently, daily collaboration, motivated individuals, face-to-face conversation, working software as progress measure, sustainable pace, technical excellence, simplicity, self-organizing teams, regular reflection.",
+    "difficulty": "hard",
+    "domain": "agile",
+    "tags": [
+      "team",
+      "agile",
+      "ac"
+    ],
+    "learnMoreLink": "agile-agile-manifesto",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 199,
+    "category": "Agile",
+    "subcategory": "Agile Manifesto",
+    "question": "What is the Agile principle about changing requirements?",
+    "answer": "Welcome changing requirements, even late in development, to provide competitive advantage.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "agile",
+      "ev"
+    ],
+    "learnMoreLink": "agile-agile-manifesto",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 200,
+    "category": "Agile",
+    "subcategory": "Agile Manifesto",
+    "question": "What delivery frequency does Agile prefer?",
+    "answer": "Frequent delivery of working software, from weeks to months, with preference for shorter timescales.",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "agile"
+    ],
+    "learnMoreLink": "agile-agile-manifesto",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 201,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What are the 3 Scrum roles?",
+    "answer": "1) Product Owner 2) Scrum Master 3) Development Team",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "team",
+      "scrum",
+      "ev"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 202,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is the Product Owner responsible for?",
+    "answer": "Maximizing value of product, managing product backlog, prioritizing work, accepting completed work.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "backlog",
+      "ac",
+      "bac"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 203,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is the Scrum Master responsible for?",
+    "answer": "Facilitating Scrum process, removing impediments, coaching team, protecting team from interruptions.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "team",
+      "scrum",
+      "ac"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 204,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "Is the Scrum Master the team manager?",
+    "answer": "NO - Scrum Master is a servant leader and facilitator, not a traditional manager.",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "team",
+      "scrum",
+      "ac"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 205,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What are the 5 Scrum events/ceremonies?",
+    "answer": "1) Sprint 2) Sprint Planning 3) Daily Scrum/Standup 4) Sprint Review 5) Sprint Retrospective",
+    "difficulty": "hard",
+    "domain": "agile",
+    "tags": [
+      "scrum",
+      "sprint",
+      "ev"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 206,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is a Sprint?",
+    "answer": "Time-boxed iteration (usually 1-4 weeks) where a potentially shippable product increment is created.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "sprint"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 207,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is Sprint Planning?",
+    "answer": "Meeting at sprint start where team selects work from backlog and creates sprint plan.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "backlog",
+      "ac",
+      "team",
+      "sprint",
+      "bac"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 208,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What happens in Daily Scrum/Standup?",
+    "answer": "15-minute daily meeting where team synchronizes: What did I do? What will I do? Any blockers?",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "team",
+      "scrum"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 209,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is Sprint Review?",
+    "answer": "Meeting at sprint end where team demonstrates completed work to stakeholders and gets feedback.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "ac",
+      "sprint",
+      "stakeholder",
+      "ev",
+      "bac"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 210,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is Sprint Retrospective?",
+    "answer": "Meeting after sprint where team reflects on process and identifies improvements for next sprint.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "team",
+      "sprint"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 211,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What are the 3 Scrum artifacts?",
+    "answer": "1) Product Backlog 2) Sprint Backlog 3) Product Increment",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "backlog",
+      "ac",
+      "scrum",
+      "sprint",
+      "bac"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 212,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is a Product Backlog?",
+    "answer": "Ordered list of all features, functions, requirements, enhancements for the product (owned by Product Owner).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "backlog",
+      "ac",
+      "bac"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 213,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is a Sprint Backlog?",
+    "answer": "Set of product backlog items selected for the sprint plus plan to deliver them (owned by Development Team).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "backlog",
+      "ac",
+      "sprint",
+      "ev",
+      "bac"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 214,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is a Product Increment?",
+    "answer": "Sum of all product backlog items completed during sprint (must be potentially shippable).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "backlog",
+      "sprint",
+      "ac",
+      "bac"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 215,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "Can you change sprint scope mid-sprint?",
+    "answer": "Generally NO - sprint scope is fixed; only Product Owner can cancel sprint in extreme circumstances.",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "sprint",
+      "scope"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 216,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is a User Story?",
+    "answer": "Short description of feature from user perspective: \"As a [role], I want [feature] so that [benefit].\"",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 217,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is the INVEST criteria for good user stories?",
+    "answer": "Independent, Negotiable, Valuable, Estimable, Small, Testable",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 218,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What are Story Points?",
+    "answer": "Relative measure of effort/complexity for completing a user story (not time-based).",
+    "difficulty": "hard",
+    "domain": "agile",
+    "tags": [],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 219,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is Planning Poker?",
+    "answer": "Collaborative estimation technique using cards (Fibonacci sequence) to estimate story points.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 220,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is T-shirt Sizing?",
+    "answer": "Estimation technique using sizes (XS, S, M, L, XL) for quick, rough estimates.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 221,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is Velocity?",
+    "answer": "Measure of amount of work team completes in a sprint (e.g., story points completed per sprint).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "team",
+      "sprint"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 222,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "How is Velocity used?",
+    "answer": "To predict how much work team can complete in future sprints and forecast delivery dates.",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "team",
+      "sprint"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 223,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is a Burndown Chart?",
+    "answer": "Graph showing remaining work (y-axis) over time (x-axis) - ideally slopes downward to zero.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 224,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What does a flat line in burndown chart indicate?",
+    "answer": "No progress being made (scope not being completed).",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "scope"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 225,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What is a Burnup Chart?",
+    "answer": "Graph showing completed work (y-axis) over time (x-axis) - slopes upward.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 226,
+    "category": "Agile",
+    "subcategory": "Scrum",
+    "question": "What's the advantage of Burnup over Burndown?",
+    "answer": "Burnup shows both scope changes AND work completed (more transparent).",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "scope"
+    ],
+    "learnMoreLink": "agile-scrum",
+    "relatedConcepts": []
+  },
+  {
+    "id": 227,
+    "category": "Agile",
+    "subcategory": "Agile Concepts",
+    "question": "What is an Epic?",
+    "answer": "Large user story that needs to be broken down into smaller stories (too big for one sprint).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "sprint"
+    ],
+    "learnMoreLink": "agile-agile-concepts",
+    "relatedConcepts": []
+  },
+  {
+    "id": 228,
+    "category": "Agile",
+    "subcategory": "Agile Concepts",
+    "question": "What is a Theme?",
+    "answer": "Collection of related user stories (often used for releases or high-level features).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "ev"
+    ],
+    "learnMoreLink": "agile-agile-concepts",
+    "relatedConcepts": []
+  },
+  {
+    "id": 229,
+    "category": "Agile",
+    "subcategory": "Agile Concepts",
+    "question": "What is Definition of Done (DoD)?",
+    "answer": "Checklist of criteria that must be met for work to be considered complete (coded, tested, documented, etc.).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [],
+    "learnMoreLink": "agile-agile-concepts",
+    "relatedConcepts": []
+  },
+  {
+    "id": 230,
+    "category": "Agile",
+    "subcategory": "Agile Concepts",
+    "question": "What is Definition of Ready?",
+    "answer": "Criteria for user story to be ready for sprint (clear, estimated, testable).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "sprint"
+    ],
+    "learnMoreLink": "agile-agile-concepts",
+    "relatedConcepts": []
+  },
+  {
+    "id": 231,
+    "category": "Agile",
+    "subcategory": "Agile Concepts",
+    "question": "What is Timeboxing?",
+    "answer": "Fixed time period allocated for activity; when time expires, activity ends regardless of completion.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "agile-agile-concepts",
+    "relatedConcepts": []
+  },
+  {
+    "id": 232,
+    "category": "Agile",
+    "subcategory": "Agile Concepts",
+    "question": "What is a Spike?",
+    "answer": "Time-boxed research or investigation to answer a question or explore a solution.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "spi"
+    ],
+    "learnMoreLink": "agile-agile-concepts",
+    "relatedConcepts": []
+  },
+  {
+    "id": 233,
+    "category": "Agile",
+    "subcategory": "Agile Concepts",
+    "question": "What is Pair Programming?",
+    "answer": "Two developers working together at one workstation (driver codes, navigator reviews).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "ev"
+    ],
+    "learnMoreLink": "agile-agile-concepts",
+    "relatedConcepts": []
+  },
+  {
+    "id": 234,
+    "category": "Agile",
+    "subcategory": "Agile Concepts",
+    "question": "What is Continuous Integration (CI)?",
+    "answer": "Practice of frequently integrating code changes into shared repository (multiple times per day).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "agile-agile-concepts",
+    "relatedConcepts": []
+  },
+  {
+    "id": 235,
+    "category": "Agile",
+    "subcategory": "Agile Concepts",
+    "question": "What is Refactoring?",
+    "answer": "Improving internal code structure without changing external behavior (code cleanup).",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "agile-agile-concepts",
+    "relatedConcepts": []
+  },
+  {
+    "id": 236,
+    "category": "Agile",
+    "subcategory": "Other Agile Methods",
+    "question": "What is Kanban?",
+    "answer": "Visual workflow management method using boards to limit work in progress (WIP) and optimize flow.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "kanban"
+    ],
+    "learnMoreLink": "agile-other-agile-methods",
+    "relatedConcepts": []
+  },
+  {
+    "id": 237,
+    "category": "Agile",
+    "subcategory": "Other Agile Methods",
+    "question": "What is the key principle of Kanban?",
+    "answer": "Limit Work in Progress (WIP) to reduce multitasking and improve flow.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "kanban"
+    ],
+    "learnMoreLink": "agile-other-agile-methods",
+    "relatedConcepts": []
+  },
+  {
+    "id": 238,
+    "category": "Agile",
+    "subcategory": "Other Agile Methods",
+    "question": "What is Extreme Programming (XP)?",
+    "answer": "Agile methodology emphasizing technical practices: pair programming, TDD, continuous integration, frequent releases.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "agile",
+      "ac"
+    ],
+    "learnMoreLink": "agile-other-agile-methods",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 239,
+    "category": "Agile",
+    "subcategory": "Other Agile Methods",
+    "question": "What is Test-Driven Development (TDD)?",
+    "answer": "Write tests first, then write code to pass tests, then refactor.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "agile-other-agile-methods",
+    "relatedConcepts": []
+  },
+  {
+    "id": 240,
+    "category": "Agile",
+    "subcategory": "Other Agile Methods",
+    "question": "What is Lean?",
+    "answer": "Methodology focused on eliminating waste, amplifying learning, deciding late, delivering fast, empowering team.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "team"
+    ],
+    "learnMoreLink": "agile-other-agile-methods",
+    "relatedConcepts": []
+  },
+  {
+    "id": 241,
+    "category": "Agile",
+    "subcategory": "Other Agile Methods",
+    "question": "What are the 7 wastes in Lean?",
+    "answer": "(TIMWOOD) Transportation, Inventory, Motion, Waiting, Overproduction, Overprocessing, Defects",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [],
+    "learnMoreLink": "agile-other-agile-methods",
+    "relatedConcepts": []
+  },
+  {
+    "id": 242,
+    "category": "Agile",
+    "subcategory": "Hybrid",
+    "question": "What is a Hybrid approach?",
+    "answer": "Combination of predictive and agile methods tailored to project needs.",
+    "difficulty": "easy",
+    "domain": "agile",
+    "tags": [
+      "agile",
+      "ac"
+    ],
+    "learnMoreLink": "agile-hybrid",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 243,
+    "category": "Agile",
+    "subcategory": "Hybrid",
+    "question": "When would you use a Hybrid approach?",
+    "answer": "When some project aspects have stable requirements (predictive) and others need flexibility (agile).",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "agile",
+      "ac"
+    ],
+    "learnMoreLink": "agile-hybrid",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 244,
+    "category": "Agile",
+    "subcategory": "Hybrid",
+    "question": "Give an example of Hybrid approach.",
+    "answer": "Use predictive for infrastructure setup, then agile for software development iterations.",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "agile",
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "agile-hybrid",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 245,
+    "category": "Agile",
+    "subcategory": "Hybrid",
+    "question": "What factors influence methodology selection?",
+    "answer": "Requirements stability, risk, complexity, team experience, organizational culture, regulatory needs.",
+    "difficulty": "medium",
+    "domain": "agile",
+    "tags": [
+      "risk",
+      "team",
+      "ac"
+    ],
+    "learnMoreLink": "agile-hybrid",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 246,
+    "category": "Business",
+    "subcategory": "Business Value",
+    "question": "What is Business Value?",
+    "answer": "The net quantifiable benefit derived from a project (financial and intangible benefits).",
+    "difficulty": "easy",
+    "domain": "business",
+    "tags": [],
+    "learnMoreLink": "business-business-value",
+    "relatedConcepts": []
+  },
+  {
+    "id": 247,
+    "category": "Business",
+    "subcategory": "Business Value",
+    "question": "What's the difference between Outputs and Outcomes?",
+    "answer": "Outputs are deliverables produced; Outcomes are benefits and changes resulting from those deliverables.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [],
+    "learnMoreLink": "business-business-value",
+    "relatedConcepts": []
+  },
+  {
+    "id": 248,
+    "category": "Business",
+    "subcategory": "Business Value",
+    "question": "What is Benefits Realization?",
+    "answer": "The process of ensuring that project benefits defined in business case are achieved.",
+    "difficulty": "easy",
+    "domain": "business",
+    "tags": [
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "business-business-value",
+    "relatedConcepts": []
+  },
+  {
+    "id": 249,
+    "category": "Business",
+    "subcategory": "Business Value",
+    "question": "When should benefits realization be measured?",
+    "answer": "Throughout project AND after project completion (many benefits realized post-project).",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [],
+    "learnMoreLink": "business-business-value",
+    "relatedConcepts": []
+  },
+  {
+    "id": 250,
+    "category": "Business",
+    "subcategory": "Business Value",
+    "question": "What is a Business Case?",
+    "answer": "Document justifying the project investment, including costs, benefits, risks, and alternatives.",
+    "difficulty": "easy",
+    "domain": "business",
+    "tags": [
+      "cost",
+      "risk"
+    ],
+    "learnMoreLink": "business-business-value",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 251,
+    "category": "Business",
+    "subcategory": "Financial Metrics",
+    "question": "What is Return on Investment (ROI)?",
+    "answer": "(Gain from investment - Cost of investment) / Cost of investment × 100%",
+    "difficulty": "hard",
+    "domain": "business",
+    "tags": [
+      "cost"
+    ],
+    "learnMoreLink": "business-financial-metrics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 252,
+    "category": "Business",
+    "subcategory": "Financial Metrics",
+    "question": "What is Net Present Value (NPV)?",
+    "answer": "Present value of future cash flows minus initial investment (higher NPV is better; NPV > 0 is good).",
+    "difficulty": "easy",
+    "domain": "business",
+    "tags": [
+      "pv"
+    ],
+    "learnMoreLink": "business-financial-metrics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 253,
+    "category": "Business",
+    "subcategory": "Financial Metrics",
+    "question": "If choosing between projects, which NPV do you select?",
+    "answer": "Select project with HIGHEST NPV.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "pv"
+    ],
+    "learnMoreLink": "business-financial-metrics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 254,
+    "category": "Business",
+    "subcategory": "Financial Metrics",
+    "question": "What is Internal Rate of Return (IRR)?",
+    "answer": "Discount rate that makes NPV = 0 (higher IRR is better).",
+    "difficulty": "hard",
+    "domain": "business",
+    "tags": [
+      "pv"
+    ],
+    "learnMoreLink": "business-financial-metrics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 255,
+    "category": "Business",
+    "subcategory": "Financial Metrics",
+    "question": "What is Payback Period?",
+    "answer": "Time it takes to recover the investment cost (shorter is better).",
+    "difficulty": "easy",
+    "domain": "business",
+    "tags": [
+      "cost",
+      "ac",
+      "bac"
+    ],
+    "learnMoreLink": "business-financial-metrics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 256,
+    "category": "Business",
+    "subcategory": "Financial Metrics",
+    "question": "What is Benefit-Cost Ratio (BCR)?",
+    "answer": "Benefits / Costs (BCR > 1 means benefits exceed costs - good).",
+    "difficulty": "hard",
+    "domain": "business",
+    "tags": [
+      "cost"
+    ],
+    "learnMoreLink": "business-financial-metrics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 257,
+    "category": "Business",
+    "subcategory": "Financial Metrics",
+    "question": "Project A: BCR = 1.8, Project B: BCR = 1.3. Which to choose?",
+    "answer": "Project A (higher BCR means better return).",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [],
+    "learnMoreLink": "business-financial-metrics",
+    "relatedConcepts": []
+  },
+  {
+    "id": 258,
+    "category": "Business",
+    "subcategory": "Organizational Structures",
+    "question": "What is a Functional Organization?",
+    "answer": "Hierarchical structure grouped by function (IT, HR, Marketing); PM has little/no authority.",
+    "difficulty": "hard",
+    "domain": "business",
+    "tags": [],
+    "learnMoreLink": "business-organizational-structures",
+    "relatedConcepts": []
+  },
+  {
+    "id": 259,
+    "category": "Business",
+    "subcategory": "Organizational Structures",
+    "question": "What is a Projectized Organization?",
+    "answer": "Structure organized by projects; PM has high authority, team members report to PM.",
+    "difficulty": "easy",
+    "domain": "business",
+    "tags": [
+      "team"
+    ],
+    "learnMoreLink": "business-organizational-structures",
+    "relatedConcepts": []
+  },
+  {
+    "id": 260,
+    "category": "Business",
+    "subcategory": "Organizational Structures",
+    "question": "What is a Matrix Organization?",
+    "answer": "Hybrid structure; team members report to both functional manager AND project manager.",
+    "difficulty": "easy",
+    "domain": "business",
+    "tags": [
+      "team"
+    ],
+    "learnMoreLink": "business-organizational-structures",
+    "relatedConcepts": []
+  },
+  {
+    "id": 261,
+    "category": "Business",
+    "subcategory": "Organizational Structures",
+    "question": "What are the 3 types of Matrix organizations?",
+    "answer": "1) Weak Matrix (functional manager has more power) 2) Balanced Matrix (equal power) 3) Strong Matrix (PM has more power)",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [],
+    "learnMoreLink": "business-organizational-structures",
+    "relatedConcepts": []
+  },
+  {
+    "id": 262,
+    "category": "Business",
+    "subcategory": "Organizational Structures",
+    "question": "In which organization does PM have MOST authority?",
+    "answer": "Projectized organization.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [],
+    "learnMoreLink": "business-organizational-structures",
+    "relatedConcepts": []
+  },
+  {
+    "id": 263,
+    "category": "Business",
+    "subcategory": "Organizational Structures",
+    "question": "In which organization does PM have LEAST authority?",
+    "answer": "Functional organization.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [],
+    "learnMoreLink": "business-organizational-structures",
+    "relatedConcepts": []
+  },
+  {
+    "id": 264,
+    "category": "Business",
+    "subcategory": "Governance",
+    "question": "What is Project Governance?",
+    "answer": "Framework of authority, accountability, and decision-making for project alignment with organization.",
+    "difficulty": "easy",
+    "domain": "business",
+    "tags": [
+      "ac"
+    ],
+    "learnMoreLink": "business-governance",
+    "relatedConcepts": []
+  },
+  {
+    "id": 265,
+    "category": "Business",
+    "subcategory": "Governance",
+    "question": "What is Compliance?",
+    "answer": "Adhering to laws, regulations, policies, and standards applicable to the project.",
+    "difficulty": "easy",
+    "domain": "business",
+    "tags": [],
+    "learnMoreLink": "business-governance",
+    "relatedConcepts": []
+  },
+  {
+    "id": 266,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Communication Channels Formula?",
+    "answer": "n(n-1)/2",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "communication"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": [
+      "collaboration",
+      "team",
+      "stakeholder"
+    ]
+  },
+  {
+    "id": 267,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Calculate channels for 8 people.",
+    "answer": "8(7)/2 = 28 channels",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 268,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "PERT Three-Point Estimate Formula?",
+    "answer": "(O + 4M + P) / 6",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 269,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Triangular Distribution Formula?",
+    "answer": "(O + M + P) / 3",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 270,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Standard Deviation Formula (σ)?",
+    "answer": "(P - O) / 6",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "ev"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 271,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Variance Formula?",
+    "answer": "σ² (Standard Deviation squared)",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "ev"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 272,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Cost Variance (CV)?",
+    "answer": "EV - AC",
+    "difficulty": "medium",
+    "domain": "formulas",
+    "tags": [
+      "cost",
+      "ev",
+      "ac"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 273,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Schedule Variance (SV)?",
+    "answer": "EV - PV",
+    "difficulty": "medium",
+    "domain": "formulas",
+    "tags": [
+      "pv",
+      "ev",
+      "schedule"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 274,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Cost Performance Index (CPI)?",
+    "answer": "EV / AC",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "cost",
+      "ev",
+      "cpi",
+      "ac"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 275,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Schedule Performance Index (SPI)?",
+    "answer": "EV / PV",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "pv",
+      "spi",
+      "ev",
+      "schedule"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 276,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Estimate at Completion (typical)?",
+    "answer": "BAC / CPI",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "ac",
+      "cpi",
+      "bac"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 277,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Estimate to Complete (typical)?",
+    "answer": "(BAC - EV) / CPI",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "bac",
+      "ev",
+      "cpi",
+      "ac"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 278,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Variance at Completion (VAC)?",
+    "answer": "BAC - EAC",
+    "difficulty": "medium",
+    "domain": "formulas",
+    "tags": [
+      "eac",
+      "ac",
+      "bac"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 279,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "TCPI (based on BAC)?",
+    "answer": "(BAC - EV) / (BAC - AC)",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "ac",
+      "ev",
+      "cpi",
+      "tcpi",
+      "bac"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 280,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "TCPI (based on EAC)?",
+    "answer": "(BAC - EV) / (EAC - AC)",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "ac",
+      "ev",
+      "cpi",
+      "eac",
+      "bac"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 281,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Total Float?",
+    "answer": "LS - ES or LF - EF",
+    "difficulty": "medium",
+    "domain": "formulas",
+    "tags": [
+      "float"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 282,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Early Finish (EF)?",
+    "answer": "ES + Duration - 1",
+    "difficulty": "medium",
+    "domain": "formulas",
+    "tags": [],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 283,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Late Finish (LF)?",
+    "answer": "LS + Duration - 1",
+    "difficulty": "medium",
+    "domain": "formulas",
+    "tags": [],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 284,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Return on Investment (ROI)?",
+    "answer": "[(Gain - Cost) / Cost] × 100%",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "cost"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 285,
+    "category": "Formulas",
+    "subcategory": "Formulas",
+    "question": "Benefit-Cost Ratio (BCR)?",
+    "answer": "Benefits / Costs",
+    "difficulty": "hard",
+    "domain": "formulas",
+    "tags": [
+      "cost"
+    ],
+    "learnMoreLink": "formulas-formulas",
+    "relatedConcepts": []
+  },
+  {
+    "id": 286,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Team member misses deadlines repeatedly. What do you do FIRST?",
+    "answer": "Have a private conversation to understand the root cause (may be unclear expectations, personal issues, lack of skills).",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "team",
+      "ac"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  },
+  {
+    "id": 287,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Stakeholder requests scope change. What's your FIRST action?",
+    "answer": "Evaluate impact on schedule, cost, quality, risk (impact analysis), then follow change control process.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "ac",
+      "quality",
+      "risk",
+      "stakeholder",
+      "ev"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 288,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Team conflict disrupts sprint. Best resolution?",
+    "answer": "Collaborate/Problem Solve - address root cause with team involvement.",
+    "difficulty": "hard",
+    "domain": "business",
+    "tags": [
+      "team",
+      "sprint",
+      "conflict"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  },
+  {
+    "id": 289,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Risk occurs that wasn't in risk register. What do you use?",
+    "answer": "Management Reserve (for unknown risks).",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "risk"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 290,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Agile team complains about too many meetings. What should Scrum Master do?",
+    "answer": "Ensure ceremonies are time-boxed, valuable, and not adding extra meetings beyond Scrum framework.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "scrum",
+      "team",
+      "agile"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": [
+      "scrum",
+      "sprint",
+      "user-story"
+    ]
+  },
+  {
+    "id": 291,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Product Owner unavailable for questions. Impact?",
+    "answer": "Team can't get clarification on requirements; may cause delays, rework, or wrong features built.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "team",
+      "ac"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  },
+  {
+    "id": 292,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "CPI = 0.85. What does this mean for the PM?",
+    "answer": "Project is over budget; need corrective action (each dollar spent earns only 85 cents of value).",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "eac",
+      "ac",
+      "cpi"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  },
+  {
+    "id": 293,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Project behind schedule. Should you crash or fast-track?",
+    "answer": "Depends: Crash if you can add resources (increases cost); Fast-track if activities can overlap (increases risk).",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "cost",
+      "risk",
+      "ac",
+      "schedule"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": [
+      "risk-analysis",
+      "risk-management",
+      "risk-response"
+    ]
+  },
+  {
+    "id": 294,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Regulatory requirement changes mid-project. What do you do?",
+    "answer": "Assess impact, update requirements/scope, follow change control process, ensure compliance.",
+    "difficulty": "hard",
+    "domain": "business",
+    "tags": [
+      "scope",
+      "ac"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  },
+  {
+    "id": 295,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Team velocity dropping each sprint. What should you investigate?",
+    "answer": "Team morale, impediments, technical debt, unrealistic commitments, external interruptions.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "eac",
+      "team",
+      "sprint",
+      "ac"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  },
+  {
+    "id": 296,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Stakeholder has high power but low interest. Strategy?",
+    "answer": "Keep Satisfied - provide updates but don't over-communicate.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "stakeholder"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  },
+  {
+    "id": 297,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Sprint Review: stakeholder unhappy with feature. What happens next?",
+    "answer": "Product Owner decides: accept as-is, add to backlog for refinement, or prioritize for next sprint.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "backlog",
+      "ac",
+      "sprint",
+      "ev",
+      "bac"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  },
+  {
+    "id": 298,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Critical path has 5 days float. Is this possible?",
+    "answer": "NO - critical path always has ZERO float by definition.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "float",
+      "critical-path"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  },
+  {
+    "id": 299,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "You're assigned to project mid-execution. First thing to do?",
+    "answer": "Review project charter, management plan, current status, and meet stakeholders to understand context.",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "stakeholder",
+      "ev"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  },
+  {
+    "id": 300,
+    "category": "Scenarios",
+    "subcategory": "Scenarios",
+    "question": "Project completed on time/budget but stakeholders unhappy. Why?",
+    "answer": "Likely didn't deliver expected VALUE or meet requirements (output ≠ outcome).",
+    "difficulty": "medium",
+    "domain": "business",
+    "tags": [
+      "stakeholder"
+    ],
+    "learnMoreLink": "scenarios-scenarios",
+    "relatedConcepts": []
+  }
+]

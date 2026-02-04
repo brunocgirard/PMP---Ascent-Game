@@ -1,0 +1,244 @@
+{
+  "taskId": "d1t8",
+  "taskTitle": "Negotiate Project Agreements",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "You're negotiating with a vendor for critical infrastructure work. The vendor quotes $500K for a 4-month timeline with premium resources. Your budget cap is $350K and you need delivery in 3 months. During negotiations, the vendor mentions they could reduce cost if you extend the timeline to 5 months. As the PM, you realize you have flexibility on timeline but not on cost. Your sponsor wants the project done fast, but not at any price.",
+    "question": "What should you do BEFORE entering this negotiation?",
+    "options": {
+      "A": "Immediately counter-offer $350K and 2 months—make your position clear",
+      "B": "Analyze your bounds: budget limit ($350K), minimum timeline (3 months), priorities (quality vs speed), and walk-away point before negotiating",
+      "C": "Accept the vendor's original offer to maintain the relationship",
+      "D": "Ask the vendor what their lowest price is, then negotiate from there"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Analyze bounds, priorities, and objectives BEFORE negotiating",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Know Your Bounds Before You Negotiate",
+          "explanation": "Going into negotiation without knowing your limits, priorities, and walk-away point is dangerous. You might accept a bad deal or leave money on the table. Define: budget cap, minimum/maximum timelines, quality requirements, and your absolute non-negotiables.",
+          "pmbokSupport": "Analyze the bounds of negotiations for agreements—establish your limitations before negotiation begins"
+        },
+        {
+          "principle": "Understand Your Priorities",
+          "explanation": "In this scenario, you CAN be flexible on timeline (can go 4-5 months) but CANNOT exceed budget. Knowing this lets you trade timeline for cost. Without clarity, you negotiate blindly.",
+          "pmbokSupport": "Assess priorities and determine ultimate objectives—what matters most: cost, schedule, quality, or scope?"
+        },
+        {
+          "principle": "Win-Win Comes from Preparation",
+          "explanation": "Good negotiation isn't about winning at the vendor's expense—it's finding mutual benefit. The vendor offers: reduce cost if we extend timeline. This could be WIN-WIN if it meets your priorities.",
+          "pmbokSupport": "Mutual beneficial outcome requires understanding both parties' constraints and flexibility areas"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Walking in unprepared means you make bad deals or miss opportunities.",
+      "trapTable": [
+        {
+          "option": "A - Counter immediately without analysis",
+          "violation": "You don't know what flexibility you have; might reject a deal that could work (4-month timeline might be acceptable)",
+          "pmiValueBroken": "Lack of preparation and strategic thinking"
+        },
+        {
+          "option": "C - Accept original offer passively",
+          "violation": "You exceeded your budget cap ($500K vs $350K limit) without exploring options",
+          "pmiValueBroken": "Failure to protect project constraints"
+        },
+        {
+          "option": "D - Let vendor dictate terms",
+          "violation": "You surrender your negotiating power and don't establish your position",
+          "pmiValueBroken": "PM must be center of negotiations, not passive participant"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "What is my hard budget limit?",
+        "What is my minimum/maximum timeline?",
+        "Which constraints are flexible vs absolute?",
+        "What's my walk-away point?",
+        "What are the vendor's likely constraints?",
+        "Where could we find mutual benefit?"
+      ],
+      "patternRule": "Good negotiation = Good Preparation. Define bounds first, identify where flexibility exists, then find win-win solutions."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "D.E.A.L. Framework for Negotiating Agreements",
+    "frameworkIntro": "Negotiation is a core PM skill. Going in unprepared leads to bad deals. The D.E.A.L. framework ensures you negotiate strategically:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "D", "name": "Define Your Bounds", "color": "#3b82f6"},
+          "action": "Before negotiating, establish your limits: budget ceiling, schedule constraints, quality minimums, scope boundaries, and walk-away point.",
+          "keyQuestions": ["What's my hard budget limit?", "What's my deadline flexibility?", "What can I NOT compromise on?"],
+          "examKeywords": "Analyze bounds, Limitations, Constraints, Walk-away point"
+        },
+        {
+          "step": {"badge": "E", "name": "Establish Priorities", "color": "#8b5cf6"},
+          "action": "Clarify what matters most: Is speed more important than cost? Is quality non-negotiable? Rank your objectives.",
+          "keyQuestions": ["What's my #1 priority?", "Where do I have flexibility?", "What can I trade?"],
+          "examKeywords": "Assess priorities, Objectives, Tradeoffs, Flexibility"
+        },
+        {
+          "step": {"badge": "A", "name": "Analyze Mutual Benefit", "color": "#10b981"},
+          "action": "Understand the other party's constraints. Look for win-win solutions where both sides gain something.",
+          "keyQuestions": ["What does the vendor need?", "Where can we both win?", "What's the vendor's flexibility?"],
+          "examKeywords": "Win-win, Mutual benefit, Character, Trust, Approach"
+        },
+        {
+          "step": {"badge": "L", "name": "Lock in the Agreement", "color": "#f59e0b"},
+          "action": "Once terms are agreed, verify objectives are met, document clearly, and ensure both parties understand and agree.",
+          "keyQuestions": ["Did we meet our objectives?", "Is everything documented?", "Does both sides agree?"],
+          "examKeywords": "Verify objectives, Document agreement, Mutual understanding"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Stakeholder Performance Domain",
+      "principle": "Manage Stakeholder Engagement",
+      "quote": "Negotiation is about establishing mutually beneficial agreements. Think Win-Win: Character, Trust, and Approach are essential to reaching outcomes where everyone is satisfied."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Negotiate Project Agreements",
+    "framework": {
+      "acronym": "D.E.A.L.",
+      "steps": ["🎯 Define your bounds & walk-away", "⚡ Establish priorities & flexibility", "🤝 Analyze mutual benefit", "📝 Lock in the agreement"]
+    },
+    "quickReference": "**Before negotiating:** Know your limits, priorities, and walk-away point. **During negotiation:** Look for win-win. **After agreement:** Verify objectives met and document.",
+    "goldenRule": "You are the center of project negotiations. Go in prepared—define bounds, understand priorities, find mutual benefit.",
+    "examTip": "Look for 'negotiate agreement,' 'bounds,' 'objectives'—Think: What are my limits? What are my priorities? Can this be win-win?",
+    "pmbokPrinciple": "Think Win-Win. Negotiation requires Character (integrity), Trust (accountability), and Approach (understanding both sides)"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply D.E.A.L.",
+    "intro": "Apply the framework:",
+    "scenarioStory": "Your team needs a backend API from an external vendor. Vendor A quotes: $100K, 6 months, enterprise-grade security. Vendor B quotes: $60K, 4 months, standard security. Your budget is $85K and you need delivery in 5 months. Security is important but not critical (you can add security hardening later). You have some timeline flexibility but not much budget.",
+    "question": "How should you use D.E.A.L. here?",
+    "options": {
+      "A": "Vendor B is cheaper, so choose Vendor B immediately",
+      "B": "Vendor A meets all needs, so choose Vendor A and pay the premium",
+      "C": "Define bounds ($85K, 5-month deadline). Establish priority: stay within budget. Analyze if Vendor B's 4-month delivery fits (yes, and it's cheaper). Negotiate with Vendor B on adding security features within budget, or negotiate with Vendor A on timeline/cost tradeoffs.",
+      "D": "Tell both vendors your budget is $50K and see if either can deliver"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Before you go out and negotiate, you need to know your bounds. Know your limitations. Know what you're looking for. Then go negotiate something that's mutually beneficial to both parties. And verify that, you know what, this is what I was looking for. Make sure you participate in these negotiations—the PM is the center person on all project negotiating.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "In negotiations, there are different possible outcomes: Win-Win (optimal), Win-Lose/Lose-Win (competitive), and Lose-Lose (failure). A win-win perspective is generally found when Character, Trust, and Approach are present. The parties are mature, demonstrate integrity, share perspective that there is enough value for everybody, trust each other, and are willing to see the situation from each other's point of view.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition - Steven Covey's Win-Win Model"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Negotiation is Everywhere",
+        "insight": "You negotiate with vendors, team members, functional managers, sponsors, customers, product owners, and regulators. Negotiation isn't just about contracts—it's about reaching agreements on scope, timeline, resources, quality, and more. It's a daily skill."
+      },
+      {
+        "title": "The PM is Central",
+        "insight": "The PM must participate in all major project negotiations. You can't delegate negotiation completely—you're the center point, the one who understands project constraints and objectives, and the one responsible for outcomes."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "upcoming-negotiation",
+        "question": "Is there an upcoming negotiation in your project? What are the key terms being discussed?",
+        "type": "textarea",
+        "placeholder": "Example: Negotiating vendor contract for cloud services—cost, uptime SLA, support level..."
+      },
+      {
+        "id": "bounds",
+        "question": "What are YOUR bounds? (Budget limit, schedule constraint, quality requirement, walk-away point)",
+        "type": "textarea",
+        "placeholder": "Example: Max budget $100K, need delivery by June 30, SLA must be 99.9%..."
+      },
+      {
+        "id": "priorities",
+        "question": "What's your priority? (Cost vs schedule vs quality vs scope)",
+        "type": "dropdown",
+        "options": ["Cost is primary", "Schedule is primary", "Quality is primary", "Scope is primary", "Mix of multiple"]
+      },
+      {
+        "id": "flexibility",
+        "question": "Where do you have flexibility? What can you trade?",
+        "type": "textarea",
+        "placeholder": "Example: Can extend timeline by 1 month if it saves 15% cost..."
+      }
+    ],
+    "valueStatement": "💡 Great negotiators prepare thoroughly, understand both sides, and find solutions where everyone wins.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "⛰️ Memory Palace: The Expedition Basecamp Briefing",
+    "story": {
+      "title": "Negotiating Your Ascent Strategy at Base Camp",
+      "narrative": "Before your expedition climbs the mountain, you're at basecamp meeting with local guides, porters, and suppliers. You must negotiate agreements on resources, timeline, and route. You use D.E.A.L. to reach agreements that work for everyone...",
+      "scenes": [
+        {
+          "step": "D",
+          "visual": "🎯 DEFINE your expedition bounds",
+          "description": "Before talking to anyone, you map out: 'Our budget is $100K. We must summit by September (weather window). We need porters, supplies, and guides. Non-negotiable: safety equipment and backup plan.' You know your limits before you talk to suppliers."
+        },
+        {
+          "step": "E",
+          "visual": "⚡ ESTABLISH your priorities clearly",
+          "description": "You ask yourself: 'What matters most? Timeline (weather window) is MORE important than cost. We can spend more but MUST summit by September. Safety is absolute.' Now you know where you're flexible (cost) and where you're not (timeline, safety)."
+        },
+        {
+          "step": "A",
+          "visual": "🤝 ANALYZE mutual benefit with suppliers",
+          "description": "Porters say: 'We can give you premium guides for $50K but they only work May-July.' You realize: 'We need September. Can you offer standard guides cheaper in August?' Porter responds: 'Yes, $30K for standard guides in August.' WIN-WIN: You save $20K, they keep business year-round."
+        },
+        {
+          "step": "L",
+          "visual": "📝 LOCK IN the agreement at camp",
+          "description": "You write it down with guides and porters: 'Standard guides, $30K, August departure, specific equipment list, backup plan included.' Everyone signs. Everyone understands. No surprises on the mountain."
+        }
+      ],
+      "moral": "Successful expeditions **D**efine bounds before negotiating, **E**stablish priorities so you know where you're flexible, **A**nalyze mutual benefit with guides and suppliers (win-win thinking), and **L**ock in clear written agreements before you start climbing."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does D.E.A.L. stand for?", "Why analyze bounds BEFORE negotiating?", "What's Win-Win?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Identify bounds in a real negotiation you're facing", "List your priorities", "Where can you find flexibility?"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write out D.E.A.L. framework from memory", "Practice scenario: vendor asks for more money", "What's your walk-away point?"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Apply D.E.A.L. to an actual negotiation", "Compare negotiation outcomes with framework", "Debrief: was it win-win? what worked?"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d1t8"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d1t8"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d1t8"}
+  }
+}

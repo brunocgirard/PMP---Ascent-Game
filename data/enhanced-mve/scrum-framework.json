@@ -1,0 +1,442 @@
+{
+  "taskId": "scrum-framework",
+  "taskTitle": "Scrum Framework: 3-5-3 Structure",
+  "domain": "Agile",
+
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your Scrum team is in the middle of a Sprint. The Product Owner keeps interrupting developers with new requests. The Scrum Master is acting like a project manager, assigning tasks and tracking hours. Sprint Reviews are skipped because 'everyone is too busy.' The team hasn't held a Retrospective in three Sprints.",
+    "question": "What are the PRIMARY problems here?",
+    "options": {
+      "A": "The team needs to work harder to accommodate the Product Owner's requests",
+      "B": "Scrum roles, events, and artifacts are being violated—Sprint integrity, SM role, and inspect-adapt cycle",
+      "C": "The Scrum Master should assign tasks more efficiently",
+      "D": "Skip Sprint Planning to save time for actual work"
+    },
+    "correctAnswer": "B"
+  },
+
+  "ahaDebrief": {
+    "correctAnswer": "B - Scrum roles, events, and artifacts are being violated—Sprint integrity, SM role, and inspect-adapt cycle",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Sprint Integrity",
+          "explanation": "Once a Sprint starts, no changes should threaten the Sprint Goal. The PO is violating this.",
+          "pmbokSupport": "Scrum Guide: During the Sprint, no changes are made that would endanger the Sprint Goal"
+        },
+        {
+          "principle": "Scrum Master as Servant Leader",
+          "explanation": "The SM should facilitate and remove impediments, not command-and-control",
+          "pmbokSupport": "Scrum Guide: The Scrum Master serves the team by facilitating, coaching, and removing impediments"
+        },
+        {
+          "principle": "Inspect and Adapt",
+          "explanation": "Sprint Review and Retrospective are essential for inspection and adaptation",
+          "pmbokSupport": "Scrum Guide: Sprint Review inspects the product; Retrospective inspects the process"
+        },
+        {
+          "principle": "Self-Organizing Teams",
+          "explanation": "Developers should choose how to do their work, not be assigned tasks",
+          "pmbokSupport": "Scrum Guide: Developers self-organize to accomplish the Sprint Goal"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Options A, C, and D miss the core Scrum violations and suggest anti-patterns.",
+      "trapTable": [
+        {
+          "option": "A",
+          "violation": "Accepting mid-Sprint changes threatens Sprint Goal and team focus",
+          "pmiValueBroken": "Violates Sprint timeboxing and commitment"
+        },
+        {
+          "option": "C",
+          "violation": "Scrum Master as task-master contradicts servant leadership",
+          "pmiValueBroken": "Violates Scrum Master role and team self-organization"
+        },
+        {
+          "option": "D",
+          "violation": "Skipping events eliminates inspect-adapt opportunities",
+          "pmiValueBroken": "Undermines empiricism and continuous improvement"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "✅ Sprint Goal protected from mid-Sprint changes",
+        "✅ Scrum Master facilitates, doesn't command",
+        "✅ All Scrum events are held consistently",
+        "✅ Team self-organizes their work"
+      ],
+      "patternRule": "Scrum's 3-5-3 structure (3 roles, 5 events, 3 artifacts) creates discipline. Skipping elements breaks the framework and eliminates transparency, inspection, and adaptation."
+    }
+  },
+
+  "coreFramework": {
+    "frameworkName": "3-5-3 SCRUM Framework",
+    "frameworkIntro": "Scrum is the most popular Agile framework. Master the 3 roles, 5 events, and 3 artifacts:",
+    "frameworkTable": {
+      "columns": ["Element", "Key Concept", "Exam Trigger"],
+      "rows": [
+        {
+          "step": {"badge": "3", "name": "THREE ROLES", "color": "blue"},
+          "action": "Product Owner, Scrum Master, Developers",
+          "keyQuestions": ["Who owns the product?", "Who facilitates?", "Who builds it?"],
+          "examKeywords": "PO, SM, Dev Team, accountability"
+        },
+        {
+          "step": {"badge": "R1", "name": "Product Owner (PO)", "color": "blue"},
+          "action": "Maximizes product value; owns and orders Product Backlog",
+          "keyQuestions": ["What delivers most value?", "What's the priority?"],
+          "examKeywords": "value, priority, backlog owner, stakeholder voice"
+        },
+        {
+          "step": {"badge": "R2", "name": "Scrum Master (SM)", "color": "blue"},
+          "action": "Servant leader; facilitates, coaches, removes impediments",
+          "keyQuestions": ["What's blocking the team?", "How can I help?"],
+          "examKeywords": "facilitate, servant leader, impediment, coach"
+        },
+        {
+          "step": {"badge": "R3", "name": "Developers", "color": "blue"},
+          "action": "Self-organizing team that creates the increment",
+          "keyQuestions": ["How will we accomplish this?", "What's our capacity?"],
+          "examKeywords": "self-organizing, cross-functional, committed"
+        },
+        {
+          "step": {"badge": "5", "name": "FIVE EVENTS", "color": "green"},
+          "action": "Sprint, Planning, Daily, Review, Retrospective",
+          "keyQuestions": ["Is inspect-adapt happening?", "Are all events held?"],
+          "examKeywords": "timebox, ceremony, event, cadence"
+        },
+        {
+          "step": {"badge": "E1", "name": "Sprint (Container)", "color": "green"},
+          "action": "1-4 week timebox; fixed length; contains all other events",
+          "keyQuestions": ["Is the Sprint timeboxed?", "Is the Goal protected?"],
+          "examKeywords": "timebox, iteration, Sprint Goal, fixed duration"
+        },
+        {
+          "step": {"badge": "E2", "name": "Sprint Planning", "color": "green"},
+          "action": "Plan the Sprint: What & How? Creates Sprint Backlog",
+          "keyQuestions": ["What can we deliver?", "How will we do it?"],
+          "examKeywords": "Sprint Goal, Sprint Backlog, commitment, capacity"
+        },
+        {
+          "step": {"badge": "E3", "name": "Daily Scrum (Standup)", "color": "green"},
+          "action": "15-min daily sync; inspect progress toward Goal; adapt plan",
+          "keyQuestions": ["Are we on track?", "What impediments exist?"],
+          "examKeywords": "15 minutes, daily, synchronize, adapt, impediments"
+        },
+        {
+          "step": {"badge": "E4", "name": "Sprint Review", "color": "green"},
+          "action": "Inspect the Increment with stakeholders; adapt Product Backlog",
+          "keyQuestions": ["What did we build?", "What feedback do we have?"],
+          "examKeywords": "demo, stakeholder feedback, inspect product, adapt backlog"
+        },
+        {
+          "step": {"badge": "E5", "name": "Sprint Retrospective", "color": "green"},
+          "action": "Inspect the process; identify improvements for next Sprint",
+          "keyQuestions": ["What went well?", "What can we improve?"],
+          "examKeywords": "process improvement, team, continuous improvement"
+        },
+        {
+          "step": {"badge": "3", "name": "THREE ARTIFACTS", "color": "orange"},
+          "action": "Product Backlog, Sprint Backlog, Increment",
+          "keyQuestions": ["What are we building?", "What's done?"],
+          "examKeywords": "transparency, commitment, artifact"
+        },
+        {
+          "step": {"badge": "A1", "name": "Product Backlog", "color": "orange"},
+          "action": "Ordered list of everything needed; owned by PO; emergent",
+          "keyQuestions": ["What's the priority?", "What's most valuable?"],
+          "examKeywords": "prioritized, ordered, emergent, Product Goal"
+        },
+        {
+          "step": {"badge": "A2", "name": "Sprint Backlog", "color": "orange"},
+          "action": "Selected Product Backlog Items + plan; owned by Developers",
+          "keyQuestions": ["What are we committing to?", "What's our plan?"],
+          "examKeywords": "Sprint Goal, commitment, Dev team owns, plan"
+        },
+        {
+          "step": {"badge": "A3", "name": "Increment", "color": "orange"},
+          "action": "Usable, 'Done' product at end of Sprint; meets DoD",
+          "keyQuestions": ["Is it Done?", "Is it usable?"],
+          "examKeywords": "Done, usable, potentially releasable, Definition of Done"
+        }
+      ]
+    },
+    "additionalContent": "<div style='margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px;'><h4 style='margin: 0 0 1rem 0; color: white;'>💡 Remember 3-5-3</h4><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>3 ROLES:</strong> Product Owner, Scrum Master, Developers</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>5 EVENTS:</strong> Sprint (Planning, Daily, Review, Retro)</p><p style='margin: 0 0 0.5rem 0; line-height: 1.8;'><strong>3 ARTIFACTS:</strong> Product Backlog, Sprint Backlog, Increment</p><p style='margin-top: 1rem; font-style: italic;'>Each has a COMMITMENT: Product Goal, Sprint Goal, Definition of Done</p></div>",
+    "pmbokConnection": {
+      "performanceDomain": "Delivery Performance Domain",
+      "principle": "Scrum Framework",
+      "quote": "Scrum is founded on empiricism and lean thinking. Empiricism asserts that knowledge comes from experience and making decisions based on what is observed."
+    }
+  },
+
+  "visualReferenceCard": {
+    "taskTitle": "Scrum Framework - 3-5-3 Structure",
+    "framework": {
+      "acronym": "3-5-3",
+      "steps": [
+        "3 ROLES: PO (value), SM (facilitate), Devs (build)",
+        "5 EVENTS: Sprint > Planning > Daily > Review > Retro",
+        "3 ARTIFACTS: Product Backlog, Sprint Backlog, Increment",
+        "Each artifact has a COMMITMENT: Product Goal, Sprint Goal, DoD"
+      ]
+    },
+    "quickReference": "Scrum creates transparency through artifacts, inspection through events, and adaptation through empiricism.",
+    "goldenRule": "Don't skip Scrum events—each serves a specific inspect-adapt purpose. Don't violate Sprint integrity by accepting mid-Sprint changes.",
+    "examTip": "Exam loves to test: Who owns what? (PO owns Product Backlog, Devs own Sprint Backlog). What happens in each event? Can you skip events? (No!)",
+    "pmbokPrinciple": "Scrum is built on empiricism: transparency, inspection, adaptation"
+  },
+
+  "secondScenario": {
+    "title": "Apply the Scrum Framework",
+    "intro": "Now that you know the framework, let's apply it to a new situation.",
+    "scenarioStory": "Your Sprint Review revealed that the team completed all planned work, but stakeholders are unhappy because the features don't address their current needs. The Product Owner admits they haven't updated the Product Backlog in weeks and haven't talked to stakeholders. What should happen?",
+    "question": "What's the PRIMARY issue and solution?",
+    "options": {
+      "A": "The Developers should have talked to stakeholders directly during the Sprint",
+      "B": "The Product Owner failed to engage stakeholders and maintain the Product Backlog; they need to adapt",
+      "C": "The Scrum Master should take over Product Backlog management",
+      "D": "Cancel the next Sprint to rebuild the Product Backlog"
+    },
+    "correctAnswer": "B"
+  },
+
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Scrum is founded on empiricism and lean thinking. Empiricism asserts that knowledge comes from experience and making decisions based on what is observed. Lean thinking reduces waste and focuses on the essentials.",
+        "author": "Ken Schwaber & Jeff Sutherland",
+        "source": "Scrum Guide 2020"
+      },
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "The exam will test if you know WHO owns WHAT. PO owns Product Backlog (the 'what'). Developers own Sprint Backlog (the 'how'). SM owns nothing—they serve. Get these ownership boundaries clear!",
+        "author": "PMP Instructor Insight",
+        "source": "Agile Practice Guide"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Real-World Application",
+        "insight": "Many teams claim to do Scrum but skip Retrospectives or let the PO interrupt Sprints. This is 'Scrum-but' or 'Zombie Scrum.' Real Scrum requires ALL roles, ALL events, ALL artifacts. The discipline creates the results."
+      },
+      {
+        "title": "Exam Strategy",
+        "insight": "When you see a Scrum question, identify: Which role? Which event? Which artifact? Then apply the rules: PO maximizes value, SM facilitates, Devs self-organize, events enable inspect-adapt, artifacts create transparency."
+      }
+    ]
+  },
+
+  "personalApplication": {
+    "title": "🔄 Connect to Your Experience",
+    "reflectionPrompt": "Reflecting on Scrum helps you internalize it for the exam and real projects.",
+    "questions": [
+      {
+        "id": "scrum-violation",
+        "question": "Have you seen a team skip Scrum events (Review, Retro, etc.)? What was the impact?",
+        "type": "textarea",
+        "placeholder": "Example: We skipped Retrospectives to save time, but problems kept repeating..."
+      },
+      {
+        "id": "scrum-role-clarity",
+        "question": "Which Scrum role do you best understand?",
+        "type": "dropdown",
+        "options": [
+          "Product Owner (maximizes value, owns Product Backlog)",
+          "Scrum Master (facilitates, removes impediments)",
+          "Developers (self-organize, create Increment)"
+        ]
+      },
+      {
+        "id": "scrum-challenge",
+        "question": "What's the hardest part of Scrum for your organization?",
+        "type": "dropdown",
+        "options": [
+          "Protecting Sprint integrity from mid-Sprint changes",
+          "Scrum Master as facilitator (not manager)",
+          "Holding all events consistently",
+          "Creating a truly Done Increment each Sprint",
+          "Product Owner engaging stakeholders"
+        ]
+      }
+    ],
+    "valueStatement": "💎 Personal reflection earns you 5 XP and deepens your understanding for exam scenarios.",
+    "xpReward": 5
+  },
+
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Scrum Mountain Expedition",
+    "intro": "Anchor the Scrum framework with this vivid mountain climbing story. As you read, visualize each scene:",
+    "story": {
+      "title": "The 3-5-3 Climb",
+      "narrative": "You're climbing Scrum Mountain with a specific expedition structure: 3 key people, 5 checkpoints, and 3 essential supplies.",
+      "scenes": [
+        {
+          "step": "3 ROLES: The Expedition Team",
+          "visual": "👥",
+          "description": "Three distinct climbers: The PRODUCT OWNER (wearing a golden 'Value' badge) scouts ahead to find the most valuable route. The SCRUM MASTER (carrying tools) removes obstacles and facilitates the journey. The DEVELOPERS (a self-organizing team of 5-9 climbers) actually climb the mountain together."
+        },
+        {
+          "step": "EVENT 1: The SPRINT Container",
+          "visual": "📦",
+          "description": "You enter a large transparent container labeled '1-4 weeks.' Everything happens inside this container. You can see through it, but nothing from outside can break in (protecting the Sprint Goal)."
+        },
+        {
+          "step": "EVENT 2: SPRINT PLANNING Base Camp",
+          "visual": "🗺️",
+          "description": "Inside the container, you start at Planning Base Camp. The team gathers around a map: WHAT can we climb in this Sprint? HOW will we do it? They create the Sprint Backlog and commit to a Sprint Goal."
+        },
+        {
+          "step": "EVENT 3: DAILY SCRUM Checkpoints",
+          "visual": "⏰",
+          "description": "Every morning at the same time, the team meets at a checkpoint for exactly 15 minutes. They sync: Are we on track? What's blocking us? How do we adapt our plan?"
+        },
+        {
+          "step": "EVENT 4: SPRINT REVIEW Viewpoint",
+          "visual": "👀",
+          "description": "At the end of the Sprint, everyone gathers at a scenic viewpoint. The team shows what they climbed (the Increment). Stakeholders provide feedback. The PO adapts the Product Backlog based on what they learned."
+        },
+        {
+          "step": "EVENT 5: SPRINT RETROSPECTIVE Mirror Lake",
+          "visual": "🪞",
+          "description": "The team stands by Mirror Lake and reflects on HOW they worked together. What went well? What can we improve? They commit to one improvement for the next Sprint."
+        },
+        {
+          "step": "3 ARTIFACTS: Essential Supplies",
+          "visual": "🎒",
+          "description": "Three transparent backpacks: 1) PRODUCT BACKLOG (all future climbs, owned by PO, with Product Goal flag) 2) SPRINT BACKLOG (this Sprint's plan, owned by Developers, with Sprint Goal flag) 3) INCREMENT (the actual progress made, marked 'Done' with Definition of Done stamp)."
+        }
+      ],
+      "moral": "The 3-5-3 structure creates discipline and transparency. Skipping roles, events, or artifacts breaks the framework and eliminates the empirical process."
+    },
+    "selfTest": "Close your eyes and walk through the Scrum Mountain climb. Can you recall the 3 roles, 5 events (in order), and 3 artifacts?"
+  },
+
+  "spacedRepetition": {
+    "title": "🔁 Spaced Repetition Schedule",
+    "intro": "Research shows spaced repetition increases retention from 50% to 90%. Here's your review schedule:",
+    "schedule": [
+      {
+        "timeframe": "1 Day",
+        "icon": "📅",
+        "title": "Review 1: Tomorrow",
+        "tasks": [
+          "Recite 3-5-3: 3 roles, 5 events, 3 artifacts",
+          "Re-read the Memory Palace story",
+          "Quiz yourself: Who owns what in Scrum?"
+        ],
+        "duration": "5 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "3 Days",
+        "icon": "📅",
+        "title": "Review 2: In 3 Days",
+        "tasks": [
+          "Review the Visual Reference Card",
+          "Write down all Scrum roles, events, artifacts from memory",
+          "Take 5 practice questions on Scrum"
+        ],
+        "duration": "8 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "1 Week",
+        "icon": "📅",
+        "title": "Review 3: In 1 Week",
+        "tasks": [
+          "Re-do the Quick Scenario Challenge",
+          "Explain Scrum to someone else using 3-5-3",
+          "Identify Scrum patterns in your current work"
+        ],
+        "duration": "10 minutes",
+        "reminderButton": true
+      },
+      {
+        "timeframe": "2 Weeks",
+        "icon": "📅",
+        "title": "Review 4: In 2 Weeks",
+        "tasks": [
+          "Complete 10 practice questions on Scrum",
+          "Review your personal reflection",
+          "Final check: Can you apply 3-5-3 to new scenarios?"
+        ],
+        "duration": "12 minutes",
+        "reminderButton": true
+      }
+    ],
+    "calendarIntegration": true,
+    "retentionVisualization": {
+      "withoutReview": "50% retention after 2 weeks",
+      "withReview": "90% retention after 2 weeks"
+    }
+  },
+
+  "missionChecklist": {
+    "title": "🎯 Your Mission Progress",
+    "xpAvailable": 50,
+    "items": [
+      {
+        "id": "scenario",
+        "task": "Complete Quick Scenario Challenge",
+        "xp": 10,
+        "description": "Test your intuition before learning",
+        "completed": true
+      },
+      {
+        "id": "framework",
+        "task": "Learn 3-5-3 Scrum Framework",
+        "xp": 10,
+        "description": "Master roles, events, artifacts",
+        "completed": true
+      },
+      {
+        "id": "memory",
+        "task": "Visualize Memory Palace",
+        "xp": 5,
+        "description": "Anchor Scrum with the expedition story",
+        "completed": true
+      },
+      {
+        "id": "reflection",
+        "task": "Personal Application Reflection",
+        "xp": 5,
+        "description": "Connect to your experience",
+        "current": true,
+        "ctaButton": "Complete Reflection"
+      },
+      {
+        "id": "reference",
+        "task": "Download Reference Card",
+        "xp": 2,
+        "description": "Save for quick review",
+        "ctaButton": "Download PDF"
+      },
+      {
+        "id": "flashcards",
+        "task": "Review Flashcards",
+        "xp": 15,
+        "ctaButton": "Start Flashcards",
+        "link": "/flashcards/scrum-framework"
+      },
+      {
+        "id": "quiz",
+        "task": "Pass Topic Quiz (70%+)",
+        "xp": 25,
+        "ctaButton": "Take Quiz",
+        "link": "/quiz/scrum-framework"
+      }
+    ],
+    "timeEstimate": "15-20 minutes to complete this topic",
+    "nextActionPrimary": {
+      "text": "Continue to Flashcards",
+      "link": "/flashcards/scrum-framework"
+    }
+  }
+}

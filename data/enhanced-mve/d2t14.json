@@ -1,0 +1,234 @@
+{
+  "taskId": "d2t14",
+  "taskTitle": "Determine Appropriate Project Methodology/Methods and Practices",
+  "domain": "Process",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Different mountains need different climbing strategies—pick the right method!",
+    "scenarioStory": "You're planning expeditions to three different mountains: (1) Mount Kilimanjaro—straightforward route, clear weather forecasts, predictable challenges. (2) Mount Everest—extreme weather, high altitude sickness risk, complex logistics, frequent changes. (3) A technical rock climbing peak—specific techniques required, small team, high precision needed. Your sponsor wants one standard climbing method for all three.",
+    "question": "Should you use the same methodology for all three mountains?",
+    "options": {
+      "A": "Yes—standardization reduces training and overhead",
+      "B": "No—each mountain requires different methodology tailored to its constraints and risks",
+      "C": "Use Agile for unpredictable mountains (Everest), Waterfall for predictable (Kilimanjaro)",
+      "D": "Ask the sponsor what they prefer"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Tailor methodology to project characteristics",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Project Context Drives Methodology",
+          "explanation": "Different projects have different constraints, risks, and unknowns. Predictable projects suit Waterfall/plan-driven. Uncertain projects suit Agile/iterative. Complex technical projects need hybrid approaches.",
+          "pmbokSupport": "Project managers tailor processes, methodologies, and practices to fit project context"
+        },
+        {
+          "principle": "Tailoring Decisions",
+          "explanation": "Tailoring involves selecting and adapting practices from frameworks like Agile, Waterfall, Lean, Six Sigma, etc. It's not one-size-fits-all.",
+          "pmbokSupport": "PMBOK Principle: 'Select and tailor the project management approach'"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Religious adherence to a single methodology ignores project reality. Some projects need structure; others need flexibility. Great managers adapt.",
+      "trapTable": [
+        {
+          "option": "A - One standard for all",
+          "violation": "Kilimanjaro doesn't need daily sprints. Everest needs more flexibility than Waterfall allows.",
+          "pmiValueBroken": "Lack of responsiveness and tailoring"
+        },
+        {
+          "option": "D - Ask sponsor preference",
+          "violation": "Sponsor doesn't understand methodology—that's the PM's expertise to provide",
+          "pmiValueBroken": "Abdicating professional responsibility"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "How predictable is the project scope?",
+        "How much uncertainty in requirements or environment?",
+        "How experienced is the team?",
+        "What's the regulatory/compliance context?",
+        "How much stakeholder involvement needed?",
+        "What's the pace of change expected?"
+      ],
+      "patternRule": "Predictable + stable requirements → Plan-driven (Waterfall). Uncertain + changing requirements → Agile/iterative. Mixed → Hybrid. Always tailor."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "T.A.I.L.O.R. Framework for Methodology Selection",
+    "frameworkIntro": "Choosing the right methodology requires matching project characteristics to approach:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "T", "name": "Track Project Characteristics", "color": "#3b82f6"},
+          "action": "Assess: Scope clarity, requirements stability, team experience, regulatory constraints, stakeholder availability, pace of change, organizational culture.",
+          "keyQuestions": ["How clear is scope?", "Will requirements change?", "What's team capability?", "Regulatory pressure?"],
+          "examKeywords": "Project context, Constraints, Characteristics, Assessment"
+        },
+        {
+          "step": {"badge": "A", "name": "Assess Predictability", "color": "#8b5cf6"},
+          "action": "Rate predictability on spectrum: High (Waterfall candidate) vs Low (Agile candidate). Consider both scope and environment predictability.",
+          "keyQuestions": ["Can we define all requirements upfront?", "Will environment change?", "How much rework is acceptable?"],
+          "examKeywords": "Predictability, Stability, Requirements clarity"
+        },
+        {
+          "step": {"badge": "I", "name": "Identify Framework Options", "color": "#10b981"},
+          "action": "Consider framework options: Traditional (Waterfall), Agile (Scrum, Kanban), Lean, Six Sigma, Hybrid (Scrumfall), or tailored blend. Match to context.",
+          "keyQuestions": ["What frameworks apply?", "Best fit for scope?", "Industry standard?"],
+          "examKeywords": "Framework selection, Methodology, Approach"
+        },
+        {
+          "step": {"badge": "L", "name": "Leverage Organizational & Team Readiness", "color": "#f59e0b"},
+          "action": "Consider org culture, team skills, and stakeholder readiness. Agile requires different mindset than Waterfall. Don't force a method teams aren't ready for.",
+          "keyQuestions": ["Is org ready for Agile?", "Does team have Agile skills?", "Stakeholder buy-in?"],
+          "examKeywords": "Organizational readiness, Team capability, Change management"
+        },
+        {
+          "step": {"badge": "O", "name": "Optimize Tailoring Decisions", "color": "#ec4899"},
+          "action": "Tailor selected framework: Which practices to use? Which to skip? What cadence (2-week sprints, phase gates, continuous flow)? What artifacts and ceremonies?",
+          "keyQuestions": ["Which practices fit?", "What cadence?", "Which artifacts?", "Roles and responsibilities?"],
+          "examKeywords": "Tailoring, Process adaptation, Customization"
+        },
+        {
+          "step": {"badge": "R", "name": "Record Methodology Plan", "color": "#6366f1"},
+          "action": "Document the methodology decision: Why this approach? Which practices? How will it be executed? Share with team and stakeholders.",
+          "keyQuestions": ["Is rationale documented?", "Does team understand?", "Stakeholder agreement?"],
+          "examKeywords": "Documentation, Communication, Methodology plan"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Process Performance Domain",
+      "principle": "Principle 1: Select and Tailor the Project Management Approach",
+      "quote": "Project managers select and tailor the approach, processes, and practices to meet the specific needs and constraints of the project"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Select Methodology",
+    "framework": {
+      "acronym": "T.A.I.L.O.R.",
+      "steps": ["🔍 Track characteristics", "📊 Assess predictability", "🎯 Identify options", "🚀 Leverage readiness", "⚙️ Optimize tailoring", "📋 Record plan"]
+    },
+    "quickReference": "**Waterfall** for predictable scope, clear requirements upfront | **Agile** for uncertain scope, changing requirements, fast feedback | **Hybrid** for mixed predictability",
+    "goldenRule": "The best methodology is the one that fits YOUR project, YOUR team, and YOUR organization—not the one that's trendy.",
+    "examTip": "Look for 'methodology,' 'approach,' 'Agile vs Waterfall' → First action: ASSESS PROJECT CONTEXT before jumping to a framework.",
+    "pmbokPrinciple": "Tailoring - Match methodology to project characteristics"
+  },
+  "secondScenario": {
+    "title": "Apply T.A.I.L.O.R.",
+    "intro": "Practice methodology selection:",
+    "scenarioStory": "Your organization is launching three projects: (1) Building an internal payroll system with fixed scope and regulatory requirements; (2) Developing a new mobile app for unknown market demands; (3) Upgrading infrastructure with some unknowns but mostly predictable tasks. Your sponsor says 'We're an Agile organization now—use Agile for everything.'",
+    "question": "How would you tailor methodology for each project?",
+    "options": {
+      "A": "Use Agile for all three—organizational standard",
+      "B": "Payroll = plan-driven (fixed scope, regulatory). Mobile = Agile (uncertain). Infrastructure = Hybrid. Tailor to fit context.",
+      "C": "Let each project manager choose their own approach",
+      "D": "Use Waterfall for all three—more predictable"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Agile isn't always better than Waterfall—and Waterfall isn't always wrong. The best methodology is the one that matches your project's constraints and your team's capability.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "There is no single right approach for all projects. Project managers must select and tailor the methodology to fit the specific project context.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Methodology is a Tool, Not a Religion",
+        "insight": "Too many organizations force every project into their preferred framework regardless of fit. The smartest teams assess context, select the right tools, and adapt as needed."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Reflect on Your Project Methodology",
+    "questions": [
+      {
+        "id": "current-methodology",
+        "question": "What methodology does your project currently use?",
+        "type": "dropdown",
+        "options": ["Waterfall", "Agile/Scrum", "Lean", "Hybrid", "Not sure"]
+      },
+      {
+        "id": "fit-assessment",
+        "question": "How well does it fit your project's characteristics?",
+        "type": "dropdown",
+        "options": ["Excellent fit", "Good fit", "Okay fit", "Poor fit", "Not sure"]
+      }
+    ],
+    "valueStatement": "The right methodology for your project is a competitive advantage.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Mountain Selection Lodge",
+    "story": {
+      "title": "Choosing the Climbing Strategy",
+      "narrative": "At the lodge before each expedition, the lead guide must choose the right climbing strategy for that specific mountain...",
+      "scenes": [
+        {
+          "step": "T", "visual": "🔍 TRACK mountain characteristics",
+          "description": "Kilimanjaro: clear route, stable weather, known hazards. Everest: extreme weather, altitude sickness, frequently changing conditions. Rock peak: technical skills required, small team."
+        },
+        {
+          "step": "A", "visual": "📊 ASSESS predictability",
+          "description": "Kilimanjaro = highly predictable (route, timeline, hazards known). Everest = low predictability (weather windows change daily). Rock = medium (techniques known, execution varies)."
+        },
+        {
+          "step": "I", "visual": "🎯 IDENTIFY strategy options",
+          "description": "Traditional step-by-step approach (Kilimanjaro), flexible daily adaptation (Everest), technical precision + team improvisation (Rock peak). Each needs different strategy."
+        },
+        {
+          "step": "L", "visual": "🚀 LEVERAGE team readiness",
+          "description": "Team trained for Kilimanjaro method? Ready for Everest's flexibility? Have rock climbing experience? Don't use extreme mountain tactics on easy peak—waste of effort."
+        },
+        {
+          "step": "O", "visual": "⚙️ OPTIMIZE strategy tailoring",
+          "description": "Kilimanjaro: Step-by-step daily schedule, fixed camps, planned meals. Everest: Flexible departure times, weather windows, daily pivots. Rock: Pre-planned routes with in-situ adjustments."
+        },
+        {
+          "step": "R", "visual": "📋 RECORD the plan",
+          "description": "Write strategy document: 'Everest uses daily adaptation model because weather unpredictable. Kilimanjaro uses fixed schedule because conditions stable.' Team briefed and agrees."
+        }
+      ],
+      "moral": "Guide **T**racks characteristics, **A**ssesses predictability, **I**dentifies options, **L**everages readiness, **O**ptimizes tailoring, **R**ecords the plan for each mountain."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What's T.A.I.L.O.R. framework?", "Waterfall vs Agile when?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Assess your project characteristics", "Design tailored methodology"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Compare three methodologies", "Write methodology selection rationale"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice scenarios", "Defend your methodology choice"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t14"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t14"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t14"}
+  }
+}

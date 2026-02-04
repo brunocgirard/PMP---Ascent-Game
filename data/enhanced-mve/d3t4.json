@@ -1,0 +1,254 @@
+{
+  "taskId": "d3t4",
+  "taskTitle": "Support Organizational Change",
+  "domain": "Business",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your organization, a long-established manufacturing company, is undergoing strategic transformation. Leadership has decided to shift from making physical products to becoming a software-first, data-driven company. This is a MASSIVE organizational change. You're managing a critical project as part of this transformation: migrating customer data to a new cloud platform and building AI-driven analytics. However, you're noticing: (1) Middle management is resistant—they built their careers in manufacturing, (2) Some long-time employees are skeptical ('This will never work'), (3) The organizational culture is traditional, risk-averse, change-adverse, (4) Your project is critical to this transformation, but the organization culture isn't ready. Your sponsor says: 'Just deliver the project. They'll adapt.' You're concerned the organization won't embrace the change, and even if you deliver perfect deliverables, the transformation will fail if people resist.",
+    "question": "As Project Manager, what is your MOST IMPORTANT role RIGHT NOW?",
+    "options": {
+      "A": "Focus purely on project delivery—organizational change is HR's job, not yours",
+      "B": "Assess organizational readiness for change, communicate the transformation's purpose, engage stakeholders in the change narrative, help the organization embrace the new direction, and support adoption beyond project completion",
+      "C": "Implement the project quietly to avoid political disruption, then let leadership announce the transformation when it's done",
+      "D": "Work with IT only—the organization will figure out the culture shift on their own"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Assess organizational readiness, communicate purpose, engage stakeholders, support adoption",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Projects Are Change Vehicles",
+          "explanation": "When a project is transformational (like moving to software/cloud), it's NOT just a technical delivery—it's organizational change. PM must support that change, not ignore it.",
+          "pmbokSupport": "PMBOK recognizes projects drive organizational change; PM's role includes supporting change readiness"
+        },
+        {
+          "principle": "Organizational Culture Determines Success",
+          "explanation": "You can deliver perfect software, but if the organization resists ('We've always done it this way'), adoption fails. Organizational readiness is as critical as technical readiness.",
+          "pmbokSupport": "Stakeholder engagement includes preparing organization for change it enables"
+        },
+        {
+          "principle": "PM as Change Champion",
+          "explanation": "During transformational projects, PM isn't neutral. You're advocating for the transformation: 'Here's why this change matters. Here's what we're becoming. Here's what we're leaving behind. Let me help you through it.'",
+          "pmbokSupport": "Leadership behaviors include championing organizational direction"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Transformation trap: delivering technical solution while ignoring human/cultural resistance. Results: perfect system nobody uses.",
+      "trapTable": [
+        {
+          "option": "A - Just deliver, change is HR's job",
+          "violation": "In transformational projects, PM MUST champion organizational change, not ignore it",
+          "pmiValueBroken": "Abdicating responsibility for transformation success"
+        },
+        {
+          "option": "C - Implement quietly, announce later",
+          "violation": "Change resistance grows when people feel blindsided. Transparency + early engagement = better adoption",
+          "pmiValueBroken": "Hidden change → surprised resistance → failed transformation"
+        },
+        {
+          "option": "D - Only work with IT",
+          "violation": "Transformation affects entire organization—customers, operations, sales, support. Isolated IT project will fail without organizational alignment",
+          "pmiValueBroken": "Narrow focus on technical delivery ignoring organizational reality"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is this a transformational project or routine project?",
+        "What organizational changes does this project enable/require?",
+        "Is the organization ready for this change? (Culture, skills, willingness, leadership alignment)",
+        "Who resists the change? Why?",
+        "How will you help people understand and embrace the new direction?",
+        "Are you a change champion or change neutral?"
+      ],
+      "patternRule": "Transformational project emerges → Assess organizational readiness → Communicate vision & purpose → Engage stakeholders in change narrative → Support adoption → Champion transformation throughout project and beyond"
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "SUMMIT Framework for Supporting Organizational Change",
+    "frameworkIntro": "Reaching the summit requires not just climbing—it requires the entire expedition to be ready for the new reality at the top:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Sense Organizational Culture & Readiness", "color": "#3b82f6"},
+          "action": "Assess: Is the organization open to change? What's the change readiness level? Who are champions vs. resisters? What's the cultural appetite for innovation?",
+          "keyQuestions": ["Is this organization change-ready?", "Who embraces change? Who resists?"],
+          "examKeywords": "Assess, Culture, Readiness, Resistance, Appetite, Champions"
+        },
+        {
+          "step": {"badge": "U", "name": "Understand Transformation Purpose & Impact", "color": "#8b5cf6"},
+          "action": "Deeply understand WHY the change. What's the business case? How will it benefit the organization? What will change? Be able to articulate clearly and compellingly.",
+          "keyQuestions": ["Why are we changing?", "What's the benefit?", "What's different after?"],
+          "examKeywords": "Purpose, Business case, Impact, Benefits, Vision, Direction"
+        },
+        {
+          "step": {"badge": "M", "name": "Mobilize & Communicate the Vision", "color": "#10b981"},
+          "action": "Don't just announce. Paint a picture. Show the organizational direction. Help people see what success looks like. Communicate repeatedly through multiple channels.",
+          "keyQuestions": ["Can people see the new future?", "Do they understand we're changing?"],
+          "examKeywords": "Communicate, Vision, Direction, Change narrative, Storytelling"
+        },
+        {
+          "step": {"badge": "M", "name": "Manage Resistance & Build Buy-in", "color": "#f59e0b"},
+          "action": "Resistance is expected. Address it head-on. Listen to concerns. Show empathy. Answer 'What's in it for me?' Help resisters understand how change benefits them.",
+          "keyQuestions": ["Why do people resist?", "What do they need from us?"],
+          "examKeywords": "Resistance, Stakeholder engagement, Empathy, Buy-in, Concerns"
+        },
+        {
+          "step": {"badge": "I", "name": "Integrate Change into Project Delivery", "color": "#ec4899"},
+          "action": "Build change readiness into project deliverables. Provide training, new processes, tools. Help people transition to new ways of working. Change enablement is part of project delivery.",
+          "keyQuestions": ["Are people ready to USE this change?", "Do they have skills/support?"],
+          "examKeywords": "Training, Enablement, Change management, Skills, Support, Transition"
+        },
+        {
+          "step": {"badge": "T", "name": "Transition & Sustain Beyond Project", "color": "#06b6d4"},
+          "action": "At project closure, establish change sustainability plan. Who owns ongoing change adoption? How will you reinforce new behaviors? Transition from project team to operations.",
+          "keyQuestions": ["Will this change stick post-project?", "Who's sustaining it?"],
+          "examKeywords": "Sustainability, Adoption, Lessons learned, Ongoing support, Transition to operations"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Business Environment Performance Domain",
+      "principle": "Transformational projects require change sponsorship, cultural readiness, stakeholder engagement, and organizational capability building",
+      "quote": "The project manager must help the organization embrace the change it enables—not just deliver the output"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Support Organizational Change",
+    "framework": {
+      "acronym": "S.U.M.M.I.T.",
+      "steps": ["🔍 Sense culture & readiness", "🎯 Understand transformation purpose", "📣 Mobilize & communicate vision", "🤝 Manage resistance & build buy-in", "🚀 Integrate change into delivery", "🔄 Transition & sustain"]
+    },
+    "quickReference": "**Perfect project + resistant organization = failed transformation.** PM's role: assess organizational readiness, communicate vision, manage resistance, support adoption, champion change.",
+    "goldenRule": "Transformational projects aren't just technical—they're organizational. You're not delivering software; you're enabling a new way the organization operates.",
+    "examTip": "Look for 'organizational change,' 'transformation,' 'culture,' 'adoption,' 'resistance' → These are change management questions. PM must champion change and support organizational readiness.",
+    "pmbokPrinciple": "Business Environment - Support organizational change readiness and adoption"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply S.U.M.M.I.T.",
+    "intro": "Apply the framework to a major transformation:",
+    "scenarioStory": "You're managing a project to transition a traditional retail company to omnichannel operations (online + in-store integration). This requires new processes, new technologies, new skills, and a cultural shift from 'sell in stores' to 'serve customers anywhere.' You're 3 months in. You're noticing: (1) Store managers fear losing relevance (online will replace stores), (2) Sales team doesn't know how to operate with shared inventory, (3) Some employees have been in the company 20+ years and don't trust 'tech solutions,' (4) Executive leadership is pushing change hard, but frontline resistance is building.",
+    "question": "What do you do to support change adoption?",
+    "options": {
+      "A": "Tell the team to just implement the changes—they'll adapt over time",
+      "B": "Focus solely on technical delivery; change management is operations' responsibility post-project",
+      "C": "Run town halls explaining why omnichannel strategy is critical. Listen to store managers' fears. Show how omnichannel actually strengthens stores (more customer touchpoints). Provide training on new processes. Involve store managers in designing the transition. Address 'What's in it for me?' Build champions among skeptical employees. Integrate change enablement into project.",
+      "D": "Only work with IT and corporate office; avoid store-level complexity"
+    },
+    "correctAnswer": "C"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "What does it take for an organization to pass the test of time? It must have a culture of organizational change. Organizations that embrace change develop new products and services that meet market requirements. They improve customer satisfaction and employee loyalty. Assess organizational culture: are they willing to change or not?",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "The project manager must support organizational change readiness and enable the organization to realize benefits from project outcomes.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "Change-Ready Organizations Survive; Others Don't",
+        "insight": "BlackBerry created smartphones but didn't embrace change to touchscreen (and app) paradigms. They died. Companies that build cultures of change—Apple, Netflix, Amazon—thrive. Your job as PM in transformational projects: help the organization become change-ready."
+      },
+      {
+        "title": "Resistance Isn't Resistance to Change; It's Fear",
+        "insight": "People resist because: 'Will I lose my job?' 'Can I learn this?' 'Why do we have to change?' Address the fears, not just the resistance. Empathy matters."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "change-readiness",
+        "question": "Is YOUR organization generally ready for change, or change-resistant?",
+        "type": "dropdown",
+        "options": ["Very change-ready", "Moderately ready", "Somewhat resistant", "Highly resistant", "Mixed/depends on area"]
+      },
+      {
+        "id": "current-transformation",
+        "question": "Are you currently managing a transformational project? What's changing?",
+        "type": "textarea",
+        "placeholder": "Example: Digital transformation, new tools/processes, organizational restructuring..."
+      },
+      {
+        "id": "change-champion",
+        "question": "How are you championing organizational change in YOUR project?",
+        "type": "textarea",
+        "placeholder": "Example: Town halls, stakeholder engagement, training programs, addressing resistance..."
+      }
+    ],
+    "valueStatement": "💡 Great organizations change continuously. Great PMs help them do it.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: Preparing Climbers for Summit Life",
+    "story": {
+      "title": "Acclimatization Camp",
+      "narrative": "You're leading climbers to a high-altitude summit (5,000m). At base camp, everything is familiar: friends, food, climate they know. But at the summit, conditions are RADICALLY different: thin air (low oxygen), extreme cold, isolation, stark beauty. Many climbers fear the summit because they've never experienced it. Your job isn't just to reach the summit—it's to prepare climbers mentally and physically for summit life.",
+      "scenes": [
+        {
+          "step": "S", "visual": "🔍 SENSE climber readiness & fears",
+          "description": "At base camp: Are climbers excited or terrified? Who's afraid of heights? Who trusts the equipment? Who resists ('Maybe we shouldn't go.')? Assess psychological readiness."
+        },
+        {
+          "step": "U", "visual": "🎯 UNDERSTAND why we're climbing",
+          "description": "Tell the story: 'Summit offers views no one else sees. You'll stand on top of the world. The struggle is worth it. Here's what the summit experience will give you.' Paint the picture compellingly."
+        },
+        {
+          "step": "M", "visual": "📣 MOBILIZE the team with vision",
+          "description": "Before departure: Show summit photos. Tell stories of past climbers who doubted but succeeded. Create excitement: 'We're doing something extraordinary together.'"
+        },
+        {
+          "step": "M", "visual": "🤝 MANAGE fear & resistance",
+          "description": "Some say: 'The altitude will kill me.' You respond: 'Fear is normal. Here's how we'll acclimatize. Here's our safety plan. I believe in you.' Address fears directly. Build confidence."
+        },
+        {
+          "step": "I", "visual": "🚀 INTEGRATE acclimatization training",
+          "description": "Don't jump to summit. Camp 1 (2,000m), climbers adjust. Camp 2 (3,000m), they acclimate more. Each camp prepares body/mind for next level. Training integrated into climb."
+        },
+        {
+          "step": "T", "visual": "🔄 TRANSITION & sustain summit culture",
+          "description": "At summit: Climbers have changed. They're confident, strong, connected. Transition them to summit lifestyle (respecting weather, safety protocols, new perspectives). Help them sustain this new version of themselves on descent and beyond."
+        }
+      ],
+      "moral": "Guide **S**enses fears, **U**narticulates vision, **M**obilizes team, **M**anages resistance, **I**ntegrates training, **T**ransitions to summit culture. Perfect equipment means nothing if climbers aren't ready for summit reality."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does S.U.M.M.I.T. stand for?", "Why is organizational readiness critical?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Identify transformation projects", "Assess organizational change readiness"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write S.U.M.M.I.T. from memory", "Create change readiness assessment template"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Scenario practice", "Compare all 4 Domain 3 tasks"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d3t4"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d3t4"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d3t4"}
+  }
+}

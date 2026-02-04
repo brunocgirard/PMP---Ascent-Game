@@ -1,0 +1,222 @@
+{
+  "taskId": "d1t7",
+  "taskTitle": "Address and Remove Impediments, Obstacles, and Blockers",
+  "domain": "People",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Your Agile team reports three blockers in the daily standup: (1) A developer needs admin access to the database but IT hasn't responded to the request for 3 days, (2) Two developers can't agree on which API framework to use, and (3) The team is waiting for the Product Owner to clarify a user story requirement.",
+    "question": "As Scrum Master/Project Manager, which blocker should you address FIRST?",
+    "options": {
+      "A": "The API framework disagreement—facilitate a team discussion to decide",
+      "B": "The database access issue—escalate to IT management immediately",
+      "C": "The user story clarification—schedule a meeting with the Product Owner",
+      "D": "All three are equally urgent—address them simultaneously"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Database access (organizational impediment)",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Servant Leadership in Action",
+          "explanation": "Remove organizational/administrative impediments yourself. Let the team solve technical problems they're capable of solving.",
+          "pmbokSupport": "Servant leaders remove impediments that block team progress"
+        },
+        {
+          "principle": "Team vs. PM Impediments",
+          "explanation": "API framework = technical problem team can solve. Database access = organizational problem PM must solve. PO clarification = facilitator role.",
+          "pmbokSupport": "Distinguish what the team should handle vs. what requires PM intervention"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Not all blockers are yours to solve—empower the team on technical issues.",
+      "trapTable": [
+        {
+          "option": "A - API framework first",
+          "violation": "Technical decision team can make themselves",
+          "pmiValueBroken": "Micromanaging instead of empowering"
+        },
+        {
+          "option": "C - PO clarification first",
+          "violation": "Important but not blocking work RIGHT NOW like database access",
+          "pmiValueBroken": "Prioritization issue"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Is this organizational/administrative?",
+        "Is this technical and within team expertise?",
+        "What's blocking work RIGHT NOW?",
+        "Can the team solve it themselves?"
+      ],
+      "patternRule": "Organizational/admin blocker → PM solves. Technical blocker → Team solves (facilitate). Both urgent → Prioritize what blocks work NOW."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "C.L.E.A.R. Framework for Removing Impediments",
+    "frameworkIntro": "Removing impediments is core to servant leadership:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "C", "name": "Categorize the Blocker", "color": "#3b82f6"},
+          "action": "Identify type: Organizational (PM solves), Technical (team solves), or External (requires escalation).",
+          "keyQuestions": ["What type of impediment?", "Who can best resolve it?"],
+          "examKeywords": "Identify, Categorize, Type of blocker"
+        },
+        {
+          "step": {"badge": "L", "name": "Let Team Handle Technical", "color": "#8b5cf6"},
+          "action": "If technical and within team expertise, facilitate but let THEM solve it. Don't micromanage.",
+          "keyQuestions": ["Can the team solve this?", "Am I empowering or controlling?"],
+          "examKeywords": "Empower team, Facilitate, Team decision"
+        },
+        {
+          "step": {"badge": "E", "name": "Escalate Organizational", "color": "#10b981"},
+          "action": "If organizational/administrative, YOU remove it. Escalate to management, work with other departments.",
+          "keyQuestions": ["Does this need my authority?", "Who do I escalate to?"],
+          "examKeywords": "Escalate, Remove impediment, PM action"
+        },
+        {
+          "step": {"badge": "A", "name": "Act with Urgency", "color": "#f59e0b"},
+          "action": "Prioritize blockers that stop work RIGHT NOW. Some are urgent, some are important but not blocking.",
+          "keyQuestions": ["What's blocking work today?", "What can wait?"],
+          "examKeywords": "Prioritize, Urgent, Immediate action"
+        },
+        {
+          "step": {"badge": "R", "name": "Review & Prevent", "color": "#ec4899"},
+          "action": "After removing, ask: How do we prevent this blocker in the future? Root cause analysis.",
+          "keyQuestions": ["Why did this happen?", "How do we prevent it?"],
+          "examKeywords": "Root cause, Prevent, Lessons learned"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Team Performance Domain",
+      "principle": "Principle 6: Demonstrate Leadership Behaviors",
+      "quote": "Servant leaders remove impediments and obstacles from the team"
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Remove Impediments",
+    "framework": {
+      "acronym": "C.L.E.A.R.",
+      "steps": ["🏷️ Categorize blocker type", "👥 Let team handle technical", "⬆️ Escalate organizational", "⚡ Act with urgency", "🔄 Review & prevent"]
+    },
+    "quickReference": "**Team solves:** Technical decisions, implementation details | **PM solves:** Organizational, administrative, access issues",
+    "goldenRule": "If team can solve it → Let them. If organizational → You solve it.",
+    "examTip": "Look for 'impediment,' 'blocker,' 'obstacle' → If technical: facilitate team discussion. If organizational: escalate/remove yourself.",
+    "pmbokPrinciple": "Servant Leadership - Remove impediments"
+  },
+  "secondScenario": {
+    "title": "🎯 Apply C.L.E.A.R.",
+    "intro": "Apply the framework:",
+    "scenarioStory": "Your team has two blockers: (1) They need a decision on whether to use React or Vue for the frontend—both are viable options. (2) Legal department hasn't approved the vendor contract needed to proceed with integration work, and it's been pending for 2 weeks.",
+    "question": "What should you do?",
+    "options": {
+      "A": "Research React vs Vue yourself and make the decision",
+      "B": "Escalate the vendor contract to legal management, and facilitate a team discussion on React vs Vue",
+      "C": "Wait for legal approval before addressing the React/Vue decision",
+      "D": "Tell the team to just pick one (React or Vue) so you can focus on legal"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "If it's a technical problem the team can solve, let the team solve it. If it's an administrative or organizational issue, YOU fix it. Don't give administrative work to the team—let them do what they do best.",
+        "author": "Andrew Ramdayal",
+        "source": "PMP Udemy Course"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Servant leaders remove impediments and obstacles, enabling the project team to perform at their highest level.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Scrum Master's Core Job",
+        "insight": "In Agile, the Scrum Master's PRIMARY job is removing impediments. Not managing the backlog (that's PO). Not writing code (that's developers). Removing blockers so the team can sprint."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "🤔 Personal Reflection",
+    "questions": [
+      {
+        "id": "current-blockers",
+        "question": "What blockers is your team facing right now?",
+        "type": "textarea",
+        "placeholder": "Example: Waiting on security team approval..."
+      },
+      {
+        "id": "blocker-type",
+        "question": "Are they organizational (you solve) or technical (team solves)?",
+        "type": "dropdown",
+        "options": ["Mostly organizational", "Mostly technical", "Mix of both", "Not sure"]
+      }
+    ],
+    "valueStatement": "💡 Great servant leaders clear the path so the team can run.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "🏔️ Memory Palace: The Mountain Route Guide",
+    "story": {
+      "title": "Clearing the Path to Summit",
+      "narrative": "You're the route guide **CLEAR**ing obstacles on the mountain...",
+      "scenes": [
+        {
+          "step": "C", "visual": "🏷️ CATEGORIZE the obstacle",
+          "description": "Avalanche blocking route? (Organizational - you handle with command). Two climbers debating which rope technique? (Technical - they can resolve)."
+        },
+        {
+          "step": "L", "visual": "👥 LET climbers resolve technical debates",
+          "description": "If they can figure it out (rope methods, pace), facilitate but don't dictate. Your job isn't to solve every technical decision."
+        },
+        {
+          "step": "E", "visual": "⬆️ ESCALATE and remove the avalanche debris",
+          "description": "Avalanche blocking the route? That's YOUR job. Call for avalanche team, clear the path, establish safety. Organizational blocker you must handle."
+        },
+        {
+          "step": "A", "visual": "⚡ ACT on what's blocking ascent NOW",
+          "description": "Prioritize. Route blocked by avalanche > minor gear dispute. What stops the climb TODAY gets fixed first."
+        },
+        {
+          "step": "R", "visual": "🔄 REVIEW how to prevent future blocks",
+          "description": "Why did avalanche hit here? Unstable snowpack? Mark danger zones so next expedition avoids it. Prevention."
+        }
+      ],
+      "moral": "Route guide **C**ategorizes obstacles, **L**ets climbers self-resolve technical issues, **E**scalates real blockers, **A**cts on urgent blocks, **R**eviews prevention."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does C.L.E.A.R. stand for?", "Team vs PM blockers?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["Did you remove any blockers?", "Review pattern"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write framework", "List blocker types"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Practice questions", "Compare with other tasks"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "✅ Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d1t7"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d1t7"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d1t7"}
+  }
+}

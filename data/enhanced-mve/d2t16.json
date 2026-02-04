@@ -1,0 +1,232 @@
+{
+  "taskId": "d2t16",
+  "taskTitle": "Manage Project Issues",
+  "domain": "Performance",
+  "quickScenarioChallenge": {
+    "challengeSubtitle": "Don't worry if you get it wrong—that's how you learn!",
+    "scenarioStory": "Midway through your high-altitude climbing expedition, three issues emerge: (1) Your lead climber reports persistent shortness of breath due to altitude—not a blocker yet, but could become critical if ignored; (2) A supply shipment from base camp has been delayed by 5 days, meaning you might run low on oxygen canisters in 3 days; (3) Two team members have developed friction over camp duties, reducing team morale slightly but not affecting current climbing progress.",
+    "question": "As expedition manager, which issue should you address with IMMEDIATE action?",
+    "options": {
+      "A": "The altitude sickness concern—monitor the climber closely and adjust ascent schedule",
+      "B": "The supply shortage—escalate to base camp and implement contingency plan immediately",
+      "C": "The team friction—hold a mediation session to restore morale",
+      "D": "All three equally—tackle them simultaneously in parallel"
+    },
+    "correctAnswer": "B"
+  },
+  "ahaDebrief": {
+    "correctAnswer": "B - Supply shortage (time-critical, affects mission viability)",
+    "whySection": {
+      "insights": [
+        {
+          "principle": "Impact vs. Urgency in Issue Management",
+          "explanation": "The supply issue has both HIGH impact (oxygen = survival) and HIGH urgency (shortage in 3 days). Altitude sickness is important but not yet critical. Team friction is real but doesn't stop the climb now. Prioritize by impact + urgency, not just visibility.",
+          "pmbokSupport": "Issues must be assessed for both probability and impact on project success"
+        },
+        {
+          "principle": "Prevention Through Proactive Issue Management",
+          "explanation": "Issues become risks if ignored, or they become reality. Catching supply shortage early lets you take action NOW. Altitude sickness can be monitored; team friction can wait for evening camp discussion.",
+          "pmbokSupport": "Proactive issue management prevents escalation to crises"
+        }
+      ]
+    },
+    "trapSection": {
+      "explanation": "Not all issues require immediate action—distinguish between visible, urgent, and actually blocking the mission.",
+      "trapTable": [
+        {
+          "option": "A - Altitude sickness priority",
+          "violation": "Real issue, but monitoring + adjustment is the response, not immediate crisis intervention",
+          "pmiValueBroken": "Confusing visible/emotional issues with time-critical impact"
+        },
+        {
+          "option": "C - Team friction priority",
+          "violation": "Important for morale, but team is still climbing effectively",
+          "pmiValueBroken": "Prioritizing nice-to-have over must-have"
+        }
+      ]
+    },
+    "patternRecognition": {
+      "checklist": [
+        "Does this issue have TIME-CRITICAL impact?",
+        "Will delaying action make it worse?",
+        "What's the cascade effect if we ignore it?",
+        "Is this blocking the climb or just uncomfortable?"
+      ],
+      "patternRule": "Time-critical + High-impact issue → Act now. Important but not time-sensitive → Plan response. Comfort issues → Schedule for when time allows."
+    }
+  },
+  "coreFramework": {
+    "frameworkName": "S.U.M.M.I.T. Framework for Issue Management",
+    "frameworkIntro": "Managing issues requires systematic identification, assessment, and resolution—much like planning the ascent of a mountain summit:",
+    "frameworkTable": {
+      "columns": ["Step", "Action", "Key Questions", "Exam Keywords"],
+      "rows": [
+        {
+          "step": {"badge": "S", "name": "Surface & Scan Issues", "color": "#3b82f6"},
+          "action": "Continuously identify emerging issues through team communication, stakeholder feedback, and risk monitoring. Surface problems early before they escalate.",
+          "keyQuestions": ["What's not going as planned?", "Are we hearing concerns from the team?", "What could derail us?"],
+          "examKeywords": "Identify issues, Surface problems, Early warning, Scan environment"
+        },
+        {
+          "step": {"badge": "U", "name": "Understand Root Cause & Impact", "color": "#8b5cf6"},
+          "action": "Don't just fix symptoms—diagnose why the issue exists. Assess impact on schedule, budget, quality, and stakeholders. Determine priority.",
+          "keyQuestions": ["Why did this happen?", "What's the real impact?", "Who is affected?", "When must it be resolved?"],
+          "examKeywords": "Root cause analysis, Impact assessment, Stakeholder analysis, Probability"
+        },
+        {
+          "step": {"badge": "M", "name": "Map Response Strategy", "color": "#10b981"},
+          "action": "Develop solution options: mitigate, escalate, accept, or contingency. Choose strategy based on impact and urgency.",
+          "keyQuestions": ["What are our options?", "Do we have a contingency?", "Do we escalate or resolve locally?"],
+          "examKeywords": "Mitigation strategy, Contingency plan, Escalation, Response options"
+        },
+        {
+          "step": {"badge": "M", "name": "Mobilize & Implement Action", "color": "#f59e0b"},
+          "action": "Assign ownership, set timeline, execute plan. Communicate changes to stakeholders. Don't just identify—ACT.",
+          "keyQuestions": ["Who owns this action?", "What's the timeline?", "Who needs to know?"],
+          "examKeywords": "Action plan, Ownership, Timeline, Communication"
+        },
+        {
+          "step": {"badge": "I", "name": "Inspect & Monitor Progress", "color": "#ec4899"},
+          "action": "Track resolution. Monitor for new issues spawned by the fix. Ensure action stays on track.",
+          "keyQuestions": ["Is it getting better?", "Are we on track?", "Did the fix cause new issues?"],
+          "examKeywords": "Monitor, Track, Status updates, Follow-up"
+        },
+        {
+          "step": {"badge": "T", "name": "Teach & Integrate Lessons", "color": "#06b6d4"},
+          "action": "Once resolved, document what happened and how you fixed it. Share with team so this issue doesn't recur. Update processes.",
+          "keyQuestions": ["How do we prevent this?", "What did we learn?", "Should we update our process?"],
+          "examKeywords": "Lessons learned, Process improvement, Documentation, Root cause prevention"
+        }
+      ]
+    },
+    "pmbokConnection": {
+      "performanceDomain": "Performance Domain - Manage Quality",
+      "principle": "Principle 3: Focus on Value & Principle 7: Manage Stakeholder Engagement",
+      "quote": "Issues are unresolved items that require management intervention. Proactive issue management prevents minor problems from becoming major blockers."
+    }
+  },
+  "visualReferenceCard": {
+    "taskTitle": "Manage Project Issues",
+    "framework": {
+      "acronym": "S.U.M.M.I.T.",
+      "steps": ["🔍 Surface & scan", "🔎 Understand impact", "🗺️ Map strategy", "⚡ Mobilize & implement", "📊 Inspect progress", "📚 Teach & integrate"]
+    },
+    "quickReference": "**Escalate:** Time-critical + high impact | **Monitor:** Important but not urgent | **Accept:** Low impact | **Contingency:** Unknown resolution path",
+    "goldenRule": "The faster you identify and respond to issues, the less damage they do. Ignore an issue, and it becomes a crisis.",
+    "examTip": "Look for 'issue,' 'problem,' 'concern,' 'risk materialized' → Assess impact + urgency → Choose response (mitigate, escalate, accept, contingency)",
+    "pmbokPrinciple": "Proactive Issue Management - Identify Early, Act Fast"
+  },
+  "secondScenario": {
+    "title": "Apply S.U.M.M.I.T.",
+    "intro": "Apply the framework:",
+    "scenarioStory": "Three weeks into your project, a critical issue surfaces: A key vendor hasn't delivered their component yet (promised week 2, now week 3). Your team is blocked from final assembly. The vendor promises delivery 'next week' but has been vague. In parallel, your junior developer reported she's struggling with the learning curve on your new technology stack, but she's still meeting her sprint commitments.",
+    "question": "How do you apply S.U.M.M.I.T.?",
+    "options": {
+      "A": "Focus on vendor issue (high impact) + mentoring the junior dev (good morale builder) in parallel",
+      "B": "Escalate vendor immediately, negotiate a recovery plan, and setup daily check-ins; schedule dev mentoring for when we're not blocked",
+      "C": "Accept the vendor delay as beyond your control; focus on supporting the junior dev to prevent her from burning out",
+      "D": "Tell vendor to deliver on time or face penalties; that should motivate them"
+    },
+    "correctAnswer": "B"
+  },
+  "pmWisdom": {
+    "quotes": [
+      {
+        "type": "instructor",
+        "icon": "🎓",
+        "text": "Issues are risks that have happened or are happening. Your job as PM is not to ignore them or hope they go away—it's to surface them, understand them, respond to them, and prevent them from happening again.",
+        "author": "Coursera PMP Course",
+        "source": "Issue Management Best Practices"
+      },
+      {
+        "type": "pmbok",
+        "icon": "📘",
+        "text": "Issues are unresolved matters that require attention and decision-making by the project manager. Early identification and proactive management can prevent issues from becoming risks or escalating into crises.",
+        "author": "PMI",
+        "source": "PMBOK Guide 7th Edition"
+      }
+    ],
+    "fieldInsights": [
+      {
+        "title": "The Issue Management Trap",
+        "insight": "Many PMs wait for issues to be reported formally—meetings, tickets, etc. Great PMs constantly ask: 'What could go wrong? What's brewing under the surface? What do I need to know?' Early surface = early action = less damage."
+      }
+    ]
+  },
+  "personalApplication": {
+    "title": "Personal Reflection",
+    "questions": [
+      {
+        "id": "current-issues",
+        "question": "What issues is your project currently facing?",
+        "type": "textarea",
+        "placeholder": "Example: Vendor delays, team skill gaps, scope ambiguity..."
+      },
+      {
+        "id": "impact-urgency",
+        "question": "Which is most time-critical and high-impact?",
+        "type": "dropdown",
+        "options": ["Vendor/external", "Team capacity", "Scope/requirements", "Budget", "Other"]
+      }
+    ],
+    "valueStatement": "Great PMs don't prevent all issues—they prevent issues from becoming crises by managing them early.",
+    "xpReward": 5
+  },
+  "memoryPalace": {
+    "title": "Memory Palace: The Expedition Issue Station",
+    "story": {
+      "title": "Reaching Summit Through Issue Management",
+      "narrative": "You're at Base Camp monitoring expedition health, **S.U.M.M.I.T.** your way to the peak...",
+      "scenes": [
+        {
+          "step": "S", "visual": "🔍 SURFACE & SCAN",
+          "description": "Scout reports a crevasse opening on the planned route (issue surfaced early). Radio check reveals oxygen gauge malfunctioning (another issue). Morning weather forecast shows storm possible in 2 days (emerging issue). Surface = listen, observe, ask."
+        },
+        {
+          "step": "U", "visual": "🔎 UNDERSTAND",
+          "description": "Analyze each: Crevasse forces route change (major impact, urgent). Broken gauge means we manually track O2 (workaround available, medium impact). Storm in 2 days (high uncertainty, plan contingency). Understand BEFORE acting."
+        },
+        {
+          "step": "M", "visual": "🗺️ MAP STRATEGY",
+          "description": "Route change: Call mountain guide, assess alternate paths. Gauge: Implement manual tracking system. Storm: Pack up camp, wait it out OR accelerate ascent. Choose response based on impact, not panic."
+        },
+        {
+          "step": {"step": "M", "visual": "⚡ MOBILIZE"},
+          "description": "Assign guide to lead route survey. Assign climber to manage manual O2 tracking. Set contingency time for storm. Communicate updated plan to team. Not just planning—ACTING."
+        },
+        {
+          "step": "I", "visual": "📊 INSPECT",
+          "description": "Daily check-ins: Is guide finding safe route? Is O2 tracking accurate? Is weather prediction still holding? Any new issues appearing? Monitor, don't assume it's solved."
+        },
+        {
+          "step": "T", "visual": "📚 TEACH",
+          "description": "Once resolved: Why did crevasse open? Document new route for next expedition. Update O2 maintenance checklist. Brief team on how we responded. Prevention mindset."
+        }
+      ],
+      "moral": "Expedition leaders **S**urface issues early, **U**nderstand their impact, **M**ap response strategies, **M**obilize action teams, **I**nspect progress, and **T**each lessons to the whole team."
+    }
+  },
+  "spacedRepetition": {
+    "schedule": [
+      {"timeframe": "Tomorrow", "icon": "📱", "title": "5-Min Flashback", "tasks": ["What does S.U.M.M.I.T. stand for?", "Issue vs. risk examples?"], "duration": "5 min", "reminderButton": true},
+      {"timeframe": "3 Days", "icon": "🎯", "title": "Practice", "tasks": ["List current issues", "Assess their impact"], "duration": "10 min", "reminderButton": true},
+      {"timeframe": "1 Week", "icon": "📝", "title": "Deep Retrieval", "tasks": ["Write response strategy", "Review root causes"], "duration": "15 min", "reminderButton": true},
+      {"timeframe": "2 Weeks", "icon": "🔄", "title": "Integration", "tasks": ["Compare with d2t15", "Practice scenarios"], "duration": "20 min", "reminderButton": true}
+    ],
+    "calendarIntegration": true
+  },
+  "missionChecklist": {
+    "title": "Mission Checklist",
+    "xpAvailable": 50,
+    "items": [
+      {"id": "read", "task": "Read section", "xp": 10, "completed": true},
+      {"id": "scenario1", "task": "Solve scenario", "xp": 5},
+      {"id": "scenario2", "task": "Apply framework", "xp": 10},
+      {"id": "reflection", "task": "Reflect", "xp": 5},
+      {"id": "reference-card", "task": "Download card", "xp": 2},
+      {"id": "flashcards", "task": "Flashcards", "xp": 15, "current": true, "link": "/flashcards/d2t16"},
+      {"id": "quiz", "task": "Quiz", "xp": 20, "link": "/quiz/d2t16"}
+    ],
+    "nextActionPrimary": {"text": "Continue to Flashcards", "link": "/flashcards/d2t16"}
+  }
+}
