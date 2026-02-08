@@ -7794,7 +7794,10 @@
       "training"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t5"
+    ]
   },
   {
     "id": 392,
@@ -7809,7 +7812,11 @@
       "training"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t5",
+      "d2t4"
+    ]
   },
   {
     "id": 393,
@@ -7825,7 +7832,12 @@
       "metrics"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t5",
+      "d2t4",
+      "d3t2"
+    ]
   },
   {
     "id": 394,
@@ -7840,7 +7852,11 @@
       "training"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t5",
+      "d1t14"
+    ]
   },
   {
     "id": 395,
@@ -7856,7 +7872,11 @@
       "agile"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t5",
+      "d2t6"
+    ]
   },
   {
     "id": 396,
@@ -7872,7 +7892,11 @@
       "metrics"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t5",
+      "d2t7"
+    ]
   },
   {
     "id": 397,
@@ -7888,7 +7912,10 @@
       "metrics"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t5"
+    ]
   },
   {
     "id": 398,
@@ -7904,7 +7931,10 @@
       "metrics"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t5"
+    ]
   },
   {
     "id": 399,
@@ -7919,7 +7949,11 @@
       "training"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2",
+      "d1t5"
+    ]
   },
   {
     "id": 400,
@@ -7934,7 +7968,10 @@
       "training"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t5"
+    ]
   },
   {
     "id": 401,
@@ -7951,7 +7988,11 @@
       "servant-leadership"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2",
+      "d1t7"
+    ]
   },
   {
     "id": 402,
@@ -7967,7 +8008,11 @@
       "scrum"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2",
+      "d1t7"
+    ]
   },
   {
     "id": 403,
@@ -7983,7 +8028,11 @@
       "agile"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2",
+      "d1t7"
+    ]
   },
   {
     "id": 404,
@@ -7999,7 +8048,11 @@
       "prioritization"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2",
+      "d1t7"
+    ]
   },
   {
     "id": 405,
@@ -8016,7 +8069,14 @@
       "empowerment"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t1",
+      "d1t2",
+      "d1t7",
+      "d2t8",
+      "d3t4"
+    ]
   },
   {
     "id": 406,
@@ -8032,7 +8092,13 @@
       "escalation"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2",
+      "d1t7",
+      "d2t4",
+      "d2t8"
+    ]
   },
   {
     "id": 407,
@@ -8048,7 +8114,11 @@
       "documentation"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2",
+      "d1t7"
+    ]
   },
   {
     "id": 408,
@@ -8065,7 +8135,11 @@
       "ceremonies"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2",
+      "d1t7"
+    ]
   },
   {
     "id": 409,
@@ -8080,7 +8154,12 @@
       "team-charter"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t1",
+      "d2t3",
+      "d2t10"
+    ]
   },
   {
     "id": 410,
@@ -8095,7 +8174,11 @@
       "team-charter"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t1",
+      "d1t10"
+    ]
   },
   {
     "id": 411,
@@ -8111,7 +8194,10 @@
       "ground-rules"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t10"
+    ]
   },
   {
     "id": 412,
@@ -8127,7 +8213,10 @@
       "empowerment"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2"
+    ]
   },
   {
     "id": 413,
@@ -8143,7 +8232,10 @@
       "tuckman"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t1"
+    ]
   },
   {
     "id": 414,
@@ -8158,7 +8250,10 @@
       "ground-rules"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2"
+    ]
   },
   {
     "id": 415,
@@ -8173,7 +8268,10 @@
       "ground-rules"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2"
+    ]
   },
   {
     "id": 416,
@@ -8189,7 +8287,11 @@
       "virtual-teams"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t9",
+      "d2t10"
+    ]
   },
   {
     "id": 417,
@@ -8205,7 +8307,10 @@
       "tuckman"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2"
+    ]
   },
   {
     "id": 418,
@@ -8221,7 +8326,10 @@
       "conflict"
     ],
     "learnMoreLink": "people-team-management",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2"
+    ]
   },
   {
     "id": 419,
@@ -8237,7 +8345,10 @@
       "integration"
     ],
     "learnMoreLink": "process-integration",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t9"
+    ]
   },
   {
     "id": 420,
@@ -8253,7 +8364,14 @@
       "ccb"
     ],
     "learnMoreLink": "process-integration",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t11",
+      "d1t12",
+      "d1t13",
+      "d2t4",
+      "d2t9"
+    ]
   },
   {
     "id": 421,
@@ -8269,7 +8387,20 @@
       "impact-analysis"
     ],
     "learnMoreLink": "process-integration",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t11",
+      "d1t12",
+      "d1t13",
+      "d2t5",
+      "d2t3",
+      "d2t4",
+      "d2t7",
+      "d2t6",
+      "d2t8",
+      "d2t11",
+      "d2t10"
+    ]
   },
   {
     "id": 422,
@@ -8284,7 +8415,10 @@
       "change-management"
     ],
     "learnMoreLink": "process-integration",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5"
+    ]
   },
   {
     "id": 423,
@@ -8300,7 +8434,16 @@
       "systems-thinking"
     ],
     "learnMoreLink": "process-integration",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t11",
+      "d1t12",
+      "d1t13",
+      "d2t3",
+      "d2t4",
+      "d2t7",
+      "d2t8"
+    ]
   },
   {
     "id": 424,
@@ -8317,7 +8460,13 @@
       "predictive"
     ],
     "learnMoreLink": "process-integration",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t11",
+      "d1t12",
+      "d1t13",
+      "d2t10"
+    ]
   },
   {
     "id": 425,
@@ -8333,7 +8482,10 @@
       "documentation"
     ],
     "learnMoreLink": "process-integration",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5"
+    ]
   },
   {
     "id": 426,
@@ -8349,7 +8501,10 @@
       "baseline"
     ],
     "learnMoreLink": "process-integration",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5"
+    ]
   },
   {
     "id": 427,
@@ -8365,7 +8520,14 @@
       "ccb"
     ],
     "learnMoreLink": "process-integration",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5",
+      "d2t3",
+      "d2t4",
+      "d2t6",
+      "d2t8"
+    ]
   },
   {
     "id": 428,
@@ -8381,7 +8543,10 @@
       "configuration"
     ],
     "learnMoreLink": "process-integration",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t9"
+    ]
   },
   {
     "id": 429,
@@ -8397,7 +8562,11 @@
       "governance"
     ],
     "learnMoreLink": "business-compliance",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d3t1",
+      "d3t4"
+    ]
   },
   {
     "id": 430,
@@ -8413,7 +8582,10 @@
       "dependencies"
     ],
     "learnMoreLink": "business-compliance",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d3t1"
+    ]
   },
   {
     "id": 431,
@@ -8428,7 +8600,11 @@
       "compliance"
     ],
     "learnMoreLink": "business-compliance",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5",
+      "d3t1"
+    ]
   },
   {
     "id": 432,
@@ -8444,7 +8620,12 @@
       "risk"
     ],
     "learnMoreLink": "business-compliance",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5",
+      "d2t4",
+      "d3t1"
+    ]
   },
   {
     "id": 433,
@@ -8460,7 +8641,11 @@
       "planning"
     ],
     "learnMoreLink": "business-compliance",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5",
+      "d3t1"
+    ]
   },
   {
     "id": 434,
@@ -8476,7 +8661,11 @@
       "audit"
     ],
     "learnMoreLink": "business-compliance",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5",
+      "d3t1"
+    ]
   },
   {
     "id": 435,
@@ -8493,7 +8682,13 @@
       "principles"
     ],
     "learnMoreLink": "business-compliance",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t11",
+      "d1t12",
+      "d1t13",
+      "d3t1"
+    ]
   },
   {
     "id": 436,
@@ -8509,7 +8704,13 @@
       "planning"
     ],
     "learnMoreLink": "business-compliance",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t5",
+      "d2t5",
+      "d2t3",
+      "d3t1"
+    ]
   },
   {
     "id": 437,
@@ -8525,7 +8726,11 @@
       "leadership"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t4",
+      "d2t8"
+    ]
   },
   {
     "id": 438,
@@ -8542,7 +8747,11 @@
       "self-organizing"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2",
+      "d1t4"
+    ]
   },
   {
     "id": 439,
@@ -8558,7 +8767,11 @@
       "psychological-safety"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t4",
+      "d2t6"
+    ]
   },
   {
     "id": 440,
@@ -8574,7 +8787,12 @@
       "delegation"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t2",
+      "d1t4",
+      "d1t14"
+    ]
   },
   {
     "id": 441,
@@ -8590,7 +8808,10 @@
       "delegation"
     ],
     "learnMoreLink": "people-leadership",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t4"
+    ]
   },
   {
     "id": 442,
@@ -8607,7 +8828,11 @@
       "agile"
     ],
     "learnMoreLink": "people-communication",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t10",
+      "d2t10"
+    ]
   },
   {
     "id": 443,
@@ -8623,7 +8848,10 @@
       "active-listening"
     ],
     "learnMoreLink": "people-communication",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t10"
+    ]
   },
   {
     "id": 444,
@@ -8638,7 +8866,11 @@
       "communication"
     ],
     "learnMoreLink": "people-communication",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t10",
+      "d2t10"
+    ]
   },
   {
     "id": 445,
@@ -8655,7 +8887,13 @@
       "vision"
     ],
     "learnMoreLink": "people-communication",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t11",
+      "d1t12",
+      "d1t13",
+      "d2t10"
+    ]
   },
   {
     "id": 446,
@@ -8670,7 +8908,11 @@
       "communication"
     ],
     "learnMoreLink": "people-communication",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t10",
+      "d2t10"
+    ]
   },
   {
     "id": 447,
@@ -8686,7 +8928,11 @@
       "wbs"
     ],
     "learnMoreLink": "process-scope",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5",
+      "d2t4"
+    ]
   },
   {
     "id": 448,
@@ -8702,7 +8948,10 @@
       "baseline"
     ],
     "learnMoreLink": "process-scope",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5"
+    ]
   },
   {
     "id": 449,
@@ -8718,7 +8967,10 @@
       "requirements"
     ],
     "learnMoreLink": "process-scope",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5"
+    ]
   },
   {
     "id": 450,
@@ -8734,7 +8986,11 @@
       "quality"
     ],
     "learnMoreLink": "process-scope",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d2t5",
+      "d2t7"
+    ]
   },
   {
     "id": 451,
@@ -8750,6 +9006,13 @@
       "change-management"
     ],
     "learnMoreLink": "process-scope",
-    "relatedConcepts": []
+    "relatedConcepts": [],
+    "mappedTasks": [
+      "d1t11",
+      "d1t12",
+      "d1t13",
+      "d2t5",
+      "d2t9"
+    ]
   }
 ]
