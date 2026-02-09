@@ -2492,17 +2492,17 @@ function renderSimulation(taskId) {
               🎮 How Simulations Differ from Quizzes
             </h3>
             <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="margin-bottom: var(--space-sm); display: flex; align-items: flex-start; gap: var(--space-sm);">
-                <span>🔄</span> <strong>No right/wrong answers</strong> — every choice has trade-offs, just like the real PMP exam
+              <li style="margin-bottom: var(--space-sm);">
+                🔄 <strong>No right/wrong answers</strong> — every choice has trade-offs, just like the real PMP exam
               </li>
-              <li style="margin-bottom: var(--space-sm); display: flex; align-items: flex-start; gap: var(--space-sm);">
-                <span>📈</span> <strong>Decisions compound</strong> — early choices affect later situations
+              <li style="margin-bottom: var(--space-sm);">
+                📈 <strong>Decisions compound</strong> — early choices affect later situations
               </li>
-              <li style="margin-bottom: var(--space-sm); display: flex; align-items: flex-start; gap: var(--space-sm);">
-                <span>👀</span> <strong>Visible consequences</strong> — watch KPIs change after each decision
+              <li style="margin-bottom: var(--space-sm);">
+                👀 <strong>Visible consequences</strong> — watch KPIs change after each decision
               </li>
-              <li style="display: flex; align-items: flex-start; gap: var(--space-sm);">
-                <span>🧠</span> <strong>Situational judgment</strong> — trains PM decision-making, not memorization
+              <li>
+                🧠 <strong>Situational judgment</strong> — trains PM decision-making, not memorization
               </li>
             </ul>
           </div>
