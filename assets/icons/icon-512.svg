@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#3B82F6"/>
+  <path d="M256 70 L410 350 H102 Z" fill="#FFFFFF" opacity="0.9"/>
+  <path d="M256 140 L355 350 H157 Z" fill="#10B981"/>
+  <circle cx="256" cy="120" r="22" fill="#FBBF24"/>
+  <text x="256" y="460" text-anchor="middle" font-family="Arial,sans-serif" font-size="60" font-weight="bold" fill="#FFFFFF">PMP</text>
+</svg>

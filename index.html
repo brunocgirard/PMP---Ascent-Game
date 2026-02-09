@@ -7,8 +7,14 @@
   <meta name="keywords" content="PMP, Project Management Professional, PMP Exam Prep, Gamified Learning, Daily Study">
   <meta name="author" content="PMP Prep Team">
 
-  <!-- Favicon (to be added later) -->
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/icon-192.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3B82F6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="PMP Prep">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.svg">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/main.css?v=4">
@@ -148,5 +154,10 @@
       <p>Please enable JavaScript and refresh the page to continue your PMP journey.</p>
     </div>
   </noscript>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
 </body>
 </html>
