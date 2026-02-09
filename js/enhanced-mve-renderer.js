@@ -434,14 +434,6 @@ function renderVisualReferenceCard(taskId, card) {
           ` : ''}
         </div>
 
-        <div class="card-actions">
-          <button class="btn btn-outline" onclick="downloadReferenceCard('${taskId}')">
-            📥 Download as Image
-          </button>
-          <button class="btn btn-outline" onclick="printReferenceCard('${taskId}')">
-            🖨️ Print Card
-          </button>
-        </div>
       </div>
     </div>
   `;

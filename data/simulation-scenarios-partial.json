@@ -1,0 +1,770 @@
+{
+  "d1t1": {
+    "title": "The Conflict Resolution Challenge",
+    "projectContext": "You're the PM on a 6-month enterprise software project with a team of 12. The project is in its early execution phase with a $2M budget. Your goal: deliver the customer portal by Q3.",
+    "decisions": [
+      {
+        "week": "Week 2",
+        "narrative": "Two senior developers disagree on the architecture approach. One wants microservices, the other a monolith. The debate is getting heated in stand-ups and affecting team morale.",
+        "options": [
+          {
+            "text": "Facilitate a structured debate with decision criteria",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -5,
+              "morale": 15,
+              "stakeholders": 5,
+              "risk": -10
+            },
+            "feedback": "Collaborative conflict resolution builds trust. The Thomas-Kilmann collaborating approach invests time upfront but creates buy-in and a stronger solution."
+          },
+          {
+            "text": "Make the architecture decision yourself based on technical merit",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 5,
+              "morale": -10,
+              "stakeholders": 0,
+              "risk": 5
+            },
+            "feedback": "A forcing/directing approach saves time but may reduce team ownership. As PM, overriding technical experts can damage credibility."
+          },
+          {
+            "text": "Ask each developer to prototype their approach for comparison",
+            "kpiImpact": {
+              "budget": -10,
+              "schedule": -10,
+              "morale": 10,
+              "stakeholders": -5,
+              "risk": -5
+            },
+            "feedback": "Prototyping provides evidence-based decisions but costs time and budget. This is a compromising approach with tangible evaluation criteria."
+          },
+          {
+            "text": "Escalate to the technical lead to make the final call",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 0,
+              "morale": -5,
+              "stakeholders": -5,
+              "risk": 0
+            },
+            "feedback": "Delegating up avoids direct resolution and can undermine your authority. The Thomas-Kilmann avoiding style doesn't build team conflict resolution skills."
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "narrative": "The QA lead and a developer are in open conflict about testing standards. The developer says the QA requirements are excessive and slowing velocity. QA insists on thoroughness.",
+        "options": [
+          {
+            "text": "Hold a joint session to define mutually acceptable quality criteria",
+            "kpiImpact": {
+              "budget": -3,
+              "schedule": -3,
+              "morale": 10,
+              "stakeholders": 5,
+              "risk": -10
+            },
+            "feedback": "Collaborating to define shared standards addresses root causes. Integrative negotiation finds solutions that satisfy both parties' core interests."
+          },
+          {
+            "text": "Implement a tiered testing approach - critical paths get full QA, others get lighter review",
+            "kpiImpact": {
+              "budget": 5,
+              "schedule": 5,
+              "morale": 5,
+              "stakeholders": 0,
+              "risk": 5
+            },
+            "feedback": "Compromising gives each side something. Risk-based testing is pragmatic but may miss edge cases in lower-tier features."
+          },
+          {
+            "text": "Back the QA lead's standards since quality is non-negotiable",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -10,
+              "morale": -5,
+              "stakeholders": 5,
+              "risk": -15
+            },
+            "feedback": "Accommodating QA reduces risk but forcing one side's view without discussion breeds resentment. The developer's velocity concerns remain unaddressed."
+          },
+          {
+            "text": "Let them work it out between themselves",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": -5,
+              "morale": -10,
+              "stakeholders": -5,
+              "risk": 5
+            },
+            "feedback": "Avoiding intervention lets conflict fester. Without facilitation, interpersonal conflicts rarely resolve constructively and can spread to other team members."
+          }
+        ]
+      },
+      {
+        "week": "Week 8",
+        "narrative": "A scope change request from the sponsor creates friction. Half the team wants to embrace the change for a better product; the other half fears scope creep and burnout.",
+        "options": [
+          {
+            "text": "Run a team impact assessment workshop before responding to the sponsor",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -5,
+              "morale": 10,
+              "stakeholders": 10,
+              "risk": -10
+            },
+            "feedback": "Including the team in impact analysis respects their expertise and addresses concerns. This is collaborative conflict management combined with proper change control."
+          },
+          {
+            "text": "Accept the change but negotiate additional time and resources from the sponsor",
+            "kpiImpact": {
+              "budget": 5,
+              "schedule": 5,
+              "morale": 0,
+              "stakeholders": 10,
+              "risk": 0
+            },
+            "feedback": "Negotiating resources shows sponsor management skills. However, not involving the team in the decision may not address the underlying tension."
+          },
+          {
+            "text": "Push back on the sponsor with data showing current scope risk",
+            "kpiImpact": {
+              "budget": 5,
+              "schedule": 5,
+              "morale": 5,
+              "stakeholders": -10,
+              "risk": -5
+            },
+            "feedback": "Protecting the team from scope creep builds trust, but saying no to sponsors requires strong political capital. Use data-driven arguments per change control best practices."
+          },
+          {
+            "text": "Split the change into must-have and nice-to-have, implementing only essentials now",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 0,
+              "morale": 5,
+              "stakeholders": 5,
+              "risk": -5
+            },
+            "feedback": "MoSCoW prioritization is a pragmatic compromise. It partially satisfies both camps but may leave the full conflict unresolved for later iterations."
+          }
+        ]
+      },
+      {
+        "week": "Week 14",
+        "narrative": "Two sub-teams working on integrated modules blame each other for integration failures. Finger-pointing is replacing problem-solving. Daily stand-ups have become tense.",
+        "options": [
+          {
+            "text": "Establish a joint integration team with members from both sides",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -5,
+              "morale": 10,
+              "stakeholders": 5,
+              "risk": -15
+            },
+            "feedback": "Creating shared ownership dissolves us-vs-them dynamics. Cross-functional collaboration is a key agile principle that addresses systemic integration conflicts."
+          },
+          {
+            "text": "Implement automated integration testing to provide objective failure data",
+            "kpiImpact": {
+              "budget": -10,
+              "schedule": -5,
+              "morale": 5,
+              "stakeholders": 0,
+              "risk": -10
+            },
+            "feedback": "Removing blame through objective data is excellent. Automated testing provides facts, but the initial investment is significant. This addresses symptoms and root cause."
+          },
+          {
+            "text": "Hold a retrospective focused specifically on integration challenges",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": -3,
+              "morale": 10,
+              "stakeholders": 0,
+              "risk": -5
+            },
+            "feedback": "Retrospectives are a core agile practice for addressing team conflicts. Focusing on process rather than people depersonalizes the conflict."
+          },
+          {
+            "text": "Restructure the teams so integration responsibility is clearly assigned",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -10,
+              "morale": -5,
+              "stakeholders": 0,
+              "risk": -5
+            },
+            "feedback": "Organizational restructuring clarifies accountability but disrupts established working relationships. RACI matrices help, but mid-project changes carry transition costs."
+          }
+        ]
+      },
+      {
+        "week": "Week 20",
+        "narrative": "As delivery approaches, the client's project manager and your team disagree on acceptance criteria interpretation. Both sides believe the contract supports their view.",
+        "options": [
+          {
+            "text": "Propose a joint requirements review with both teams and documented agreements",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -5,
+              "morale": 5,
+              "stakeholders": 15,
+              "risk": -10
+            },
+            "feedback": "Collaborative conflict resolution with documentation prevents future disputes. Joint reviews build shared understanding per stakeholder engagement best practices."
+          },
+          {
+            "text": "Engage a neutral third party to mediate the interpretation dispute",
+            "kpiImpact": {
+              "budget": -10,
+              "schedule": -5,
+              "morale": 5,
+              "stakeholders": 10,
+              "risk": -10
+            },
+            "feedback": "Third-party mediation is appropriate for entrenched positions. It's costly but preserves the relationship. Mediation is a formal conflict resolution escalation technique."
+          },
+          {
+            "text": "Defer to the contract language and have legal review the acceptance criteria",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -10,
+              "morale": 0,
+              "stakeholders": -5,
+              "risk": -5
+            },
+            "feedback": "Legal review protects your organization but can damage the client relationship. Contractual forcing should be a last resort per procurement management principles."
+          },
+          {
+            "text": "Offer to deliver the disputed items as the client interprets them if timeline extends",
+            "kpiImpact": {
+              "budget": -10,
+              "schedule": -10,
+              "morale": -5,
+              "stakeholders": 10,
+              "risk": 5
+            },
+            "feedback": "Accommodating the client builds goodwill but sets a precedent. This smoothing approach may encourage future scope interpretation disputes."
+          }
+        ]
+      }
+    ]
+  },
+  "d1t2": {
+    "title": "The Leadership Crucible",
+    "projectContext": "You're leading a new product development team of 15 across three time zones. The 9-month project involves building an IoT-enabled smart home device. Budget is $3.5M with aggressive go-to-market targets.",
+    "decisions": [
+      {
+        "week": "Week 1",
+        "narrative": "Your team is newly formed from different departments. They're waiting for direction but you want to establish a leadership style early. The team has mixed experience levels.",
+        "options": [
+          {
+            "text": "Hold a vision-setting workshop where the team co-creates project goals and working agreements",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -5,
+              "morale": 15,
+              "stakeholders": 5,
+              "risk": -10
+            },
+            "feedback": "Servant leadership starts with shared vision. This participative approach aligns with the PMBOK emphasis on collaborative leadership and builds intrinsic motivation."
+          },
+          {
+            "text": "Present a clear project charter with defined roles, milestones, and expectations",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 10,
+              "morale": 0,
+              "stakeholders": 10,
+              "risk": -5
+            },
+            "feedback": "Directive leadership provides clarity and structure, especially useful in Tuckman's forming stage. Clear expectations reduce ambiguity but may limit creative ownership."
+          },
+          {
+            "text": "Schedule one-on-ones with each team member to understand their strengths and motivations",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -5,
+              "morale": 10,
+              "stakeholders": 0,
+              "risk": -5
+            },
+            "feedback": "Individualized consideration is a key transformational leadership behavior. Understanding team members enables better role assignment but takes time upfront."
+          },
+          {
+            "text": "Assign a challenging quick-win task to build team momentum and confidence",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 5,
+              "morale": 10,
+              "stakeholders": 5,
+              "risk": 0
+            },
+            "feedback": "Early wins build confidence and team identity. This is an effective leadership technique during forming, though it may rush past important team-building steps."
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "narrative": "The hardware and software sub-teams are developing in silos. Communication gaps are causing design misalignment. You notice the teams have different working cultures.",
+        "options": [
+          {
+            "text": "Establish cross-functional sync meetings and shared integration milestones",
+            "kpiImpact": {
+              "budget": -3,
+              "schedule": 0,
+              "morale": 5,
+              "stakeholders": 5,
+              "risk": -10
+            },
+            "feedback": "Structural integration points address systemic communication gaps. As a leader, creating frameworks for collaboration is more sustainable than ad hoc interventions."
+          },
+          {
+            "text": "Create shared physical/virtual spaces where teams interact informally",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": 0,
+              "morale": 10,
+              "stakeholders": 0,
+              "risk": -5
+            },
+            "feedback": "Osmotic communication, an agile principle, reduces information silos. Informal interactions build rapport across cultural boundaries but take time to show results."
+          },
+          {
+            "text": "Rotate team members between hardware and software for short assignments",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -10,
+              "morale": 5,
+              "stakeholders": 0,
+              "risk": -10
+            },
+            "feedback": "Cross-training builds empathy and T-shaped skills. However, the short-term productivity loss during rotation can impact tight schedules. This is a long-term leadership investment."
+          },
+          {
+            "text": "Appoint integration liaisons from each team to coordinate daily",
+            "kpiImpact": {
+              "budget": -3,
+              "schedule": 5,
+              "morale": 0,
+              "stakeholders": 5,
+              "risk": -5
+            },
+            "feedback": "Liaison roles create clear communication channels without disrupting team structures. However, this can create bottlenecks if liaisons become single points of contact."
+          }
+        ]
+      },
+      {
+        "week": "Week 10",
+        "narrative": "A key team member is underperforming and missing deadlines. Others are picking up the slack and growing resentful. You've heard rumors they're dealing with personal issues.",
+        "options": [
+          {
+            "text": "Have a private, empathetic conversation to understand the situation and offer support",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": -5,
+              "morale": 10,
+              "stakeholders": 0,
+              "risk": 0
+            },
+            "feedback": "Emotional intelligence and empathy are core leadership competencies. Understanding root causes before acting prevents unfair judgment and builds psychological safety."
+          },
+          {
+            "text": "Redistribute work temporarily and set clear performance expectations with a timeline",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 5,
+              "morale": 0,
+              "stakeholders": 5,
+              "risk": -5
+            },
+            "feedback": "Balanced approach addresses both team needs and individual fairness. Setting expectations with support is situational leadership - adjusting style to the person's needs."
+          },
+          {
+            "text": "Pair them with a senior team member for mentoring and workload sharing",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": 0,
+              "morale": 5,
+              "stakeholders": 0,
+              "risk": -5
+            },
+            "feedback": "Mentoring pairs address performance through support rather than pressure. This develops the team but adds load to the senior member. Ensure the mentor has capacity."
+          },
+          {
+            "text": "Formally document performance concerns and engage HR for guidance",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 0,
+              "morale": -10,
+              "stakeholders": 5,
+              "risk": -5
+            },
+            "feedback": "Documentation protects the project and organization but can feel punitive. Jumping to formal processes without first exploring support options may damage trust across the team."
+          }
+        ]
+      },
+      {
+        "week": "Week 18",
+        "narrative": "The team has hit a major technical obstacle. Morale is low. Some team members are suggesting the project pivot to a simpler design. The sponsor is pushing for the original ambitious scope.",
+        "options": [
+          {
+            "text": "Facilitate a structured problem-solving session with time-boxed brainstorming",
+            "kpiImpact": {
+              "budget": -3,
+              "schedule": -5,
+              "morale": 10,
+              "stakeholders": 5,
+              "risk": -10
+            },
+            "feedback": "Leading through adversity by empowering the team to solve problems demonstrates servant leadership. Facilitated brainstorming leverages collective intelligence."
+          },
+          {
+            "text": "Bring in an external technical expert to assess options and advise",
+            "kpiImpact": {
+              "budget": -10,
+              "schedule": -5,
+              "morale": 5,
+              "stakeholders": 5,
+              "risk": -15
+            },
+            "feedback": "External expertise can break through technical impasses. This shows leadership humility - knowing when the team needs outside help. Budget impact is a trade-off for risk reduction."
+          },
+          {
+            "text": "Present the sponsor with a data-driven analysis of options including the pivot",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 0,
+              "morale": 5,
+              "stakeholders": 10,
+              "risk": -5
+            },
+            "feedback": "Transparent upward communication is essential leadership. Presenting options with data respects the sponsor's authority while providing the information for good decisions."
+          },
+          {
+            "text": "Rally the team with a motivational approach - celebrate progress and reaffirm the vision",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 0,
+              "morale": 15,
+              "stakeholders": 0,
+              "risk": 5
+            },
+            "feedback": "Inspirational motivation is a transformational leadership behavior. However, positivity without a concrete plan can feel dismissive of real technical concerns."
+          }
+        ]
+      },
+      {
+        "week": "Week 30",
+        "narrative": "The project is entering final testing. The team is exhausted from months of intense work. You need sustained high performance for 6 more weeks but burnout signs are everywhere.",
+        "options": [
+          {
+            "text": "Implement sustainable pace practices - limit overtime, add buffer time, rotate on-call duties",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -10,
+              "morale": 15,
+              "stakeholders": -5,
+              "risk": -5
+            },
+            "feedback": "Sustainable pace is an agile principle. Protecting team wellbeing may extend the timeline but reduces burnout risk and defect rates during critical testing phases."
+          },
+          {
+            "text": "Negotiate with the sponsor for temporary additional resources to share the load",
+            "kpiImpact": {
+              "budget": -10,
+              "schedule": 5,
+              "morale": 5,
+              "stakeholders": 5,
+              "risk": 5
+            },
+            "feedback": "Adding resources late follows Brooks's Law risk, but temporary focused support can help. Leadership means advocating for your team's capacity needs."
+          },
+          {
+            "text": "Create a visible countdown with team celebrations at each milestone",
+            "kpiImpact": {
+              "budget": -3,
+              "schedule": 0,
+              "morale": 10,
+              "stakeholders": 0,
+              "risk": 0
+            },
+            "feedback": "Recognition and milestone celebrations sustain motivation. Gamification of progress leverages intrinsic and extrinsic motivators during demanding periods."
+          },
+          {
+            "text": "Hold candid team discussion about workload and let the team propose solutions",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": -5,
+              "morale": 10,
+              "stakeholders": 0,
+              "risk": -5
+            },
+            "feedback": "Empowering the team to solve their own burnout demonstrates trust and servant leadership. Teams often find creative solutions leaders wouldn't consider."
+          }
+        ]
+      }
+    ]
+  },
+  "d1t3": {
+    "title": "The Performance Optimization Sprint",
+    "projectContext": "You're managing a 12-person marketing analytics platform rebuild. The 8-month project is at $1.5M budget. Your team includes data engineers, UX designers, and marketing specialists.",
+    "decisions": [
+      {
+        "week": "Week 3",
+        "narrative": "Sprint velocity is inconsistent. Some team members finish early while others struggle with their stories. Estimation accuracy is poor and the team lacks a shared definition of done.",
+        "options": [
+          {
+            "text": "Introduce relative estimation with planning poker and refine the definition of done collaboratively",
+            "kpiImpact": {
+              "budget": -3,
+              "schedule": -5,
+              "morale": 10,
+              "stakeholders": 5,
+              "risk": -10
+            },
+            "feedback": "Planning poker improves estimation through collective wisdom. A shared definition of done aligns quality expectations. Both are core Scrum practices for performance support."
+          },
+          {
+            "text": "Analyze individual velocity data and rebalance workload assignments",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 5,
+              "morale": -5,
+              "stakeholders": 5,
+              "risk": -5
+            },
+            "feedback": "Data-driven workload balancing is efficient but measuring individual velocity can feel like surveillance. Agile philosophy emphasizes team velocity over individual metrics."
+          },
+          {
+            "text": "Pair experienced team members with those struggling for knowledge transfer",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -3,
+              "morale": 10,
+              "stakeholders": 0,
+              "risk": -10
+            },
+            "feedback": "Pair programming and mentoring build capability. Short-term velocity dips as pairs form, but long-term team performance increases. This invests in team capacity."
+          },
+          {
+            "text": "Break stories into smaller, more uniform sizes to improve flow predictability",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 10,
+              "morale": 5,
+              "stakeholders": 5,
+              "risk": -5
+            },
+            "feedback": "Story slicing improves flow and predictability per lean/kanban principles. Smaller work items reduce variability and make bottlenecks visible earlier."
+          }
+        ]
+      },
+      {
+        "week": "Week 7",
+        "narrative": "The team's retrospectives have become stale. People repeat the same issues but nothing changes. Attendance is dropping and some call them a waste of time.",
+        "options": [
+          {
+            "text": "Redesign the retro format with new facilitation techniques and rotating facilitators",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": -3,
+              "morale": 10,
+              "stakeholders": 0,
+              "risk": -5
+            },
+            "feedback": "Variety in retrospective formats maintains engagement. Rotating facilitators builds facilitation skills. Try formats like sailboat, 4Ls, or timeline retrospectives."
+          },
+          {
+            "text": "Create an action item tracker with owners and follow up on previous commitments",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 0,
+              "morale": 5,
+              "stakeholders": 5,
+              "risk": -10
+            },
+            "feedback": "Accountability for action items is crucial. Teams lose faith in retrospectives when nothing changes. Tracking and follow-through demonstrate continuous improvement commitment."
+          },
+          {
+            "text": "Replace formal retros with continuous feedback channels and periodic team health checks",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": 5,
+              "morale": 5,
+              "stakeholders": 0,
+              "risk": 0
+            },
+            "feedback": "Continuous feedback can be more timely than periodic retros. Team health checks (like Spotify's model) provide structured ongoing assessment. But losing dedicated reflection time has risks."
+          },
+          {
+            "text": "Have an honest discussion about why retros feel ineffective and what the team actually needs",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": -3,
+              "morale": 15,
+              "stakeholders": 0,
+              "risk": -5
+            },
+            "feedback": "Meta-retrospective on the retro process itself models the inspect-and-adapt mindset. Addressing team frustration directly builds psychological safety and trust."
+          }
+        ]
+      },
+      {
+        "week": "Week 12",
+        "narrative": "The team has plateaued. They're delivering consistently but not improving. Innovation has stalled and they're comfortable with the status quo. Technical debt is accumulating.",
+        "options": [
+          {
+            "text": "Allocate 20% of sprint capacity to innovation and technical debt reduction",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -10,
+              "morale": 10,
+              "stakeholders": -5,
+              "risk": -10
+            },
+            "feedback": "Dedicated innovation time prevents stagnation and addresses technical debt proactively. Google's 20% time concept keeps teams engaged and reduces long-term risk."
+          },
+          {
+            "text": "Introduce stretch goals and team-level performance incentives",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": 5,
+              "morale": 5,
+              "stakeholders": 5,
+              "risk": 0
+            },
+            "feedback": "Stretch goals can reignite ambition per goal-setting theory. However, external incentives may crowd out intrinsic motivation. Ensure goals are challenging but achievable."
+          },
+          {
+            "text": "Bring in guest speakers or arrange cross-team learning sessions",
+            "kpiImpact": {
+              "budget": -3,
+              "schedule": -3,
+              "morale": 10,
+              "stakeholders": 0,
+              "risk": -5
+            },
+            "feedback": "Exposure to new ideas combats groupthink and complacency. Communities of practice and knowledge sharing are organizational learning best practices."
+          },
+          {
+            "text": "Conduct a skills gap analysis and create individual development plans",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -5,
+              "morale": 5,
+              "stakeholders": 5,
+              "risk": -10
+            },
+            "feedback": "Individual development plans support mastery, a key intrinsic motivator per Daniel Pink's Drive model. Skills gap analysis ensures targeted, relevant growth."
+          }
+        ]
+      },
+      {
+        "week": "Week 20",
+        "narrative": "A critical team member has resigned. They hold key domain knowledge about the legacy system being replaced. The team is shaken and worried about meeting deadlines.",
+        "options": [
+          {
+            "text": "Negotiate an extended notice period and intensive knowledge transfer sessions",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -5,
+              "morale": 5,
+              "stakeholders": 5,
+              "risk": -15
+            },
+            "feedback": "Knowledge transfer during transition mitigates the bus factor risk. Documentation and pair sessions capture tacit knowledge. This is a key risk response strategy."
+          },
+          {
+            "text": "Redistribute responsibilities and empower the team to fill the gap collectively",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": -5,
+              "morale": 5,
+              "stakeholders": 0,
+              "risk": -5
+            },
+            "feedback": "Collective ownership reduces key-person dependency. Empowering the team to step up builds resilience. This follows the agile principle of self-organizing teams."
+          },
+          {
+            "text": "Fast-track hiring a replacement with relevant domain expertise",
+            "kpiImpact": {
+              "budget": -10,
+              "schedule": -10,
+              "morale": 0,
+              "stakeholders": 5,
+              "risk": -5
+            },
+            "feedback": "Replacing critical skills is prudent resource management. However, new team members take time to onboard per Tuckman's model. Budget for the hiring and ramp-up period."
+          },
+          {
+            "text": "Adjust the project plan and communicate revised expectations to stakeholders",
+            "kpiImpact": {
+              "budget": 0,
+              "schedule": -10,
+              "morale": 5,
+              "stakeholders": 10,
+              "risk": -5
+            },
+            "feedback": "Transparent replanning shows mature project management. Adjusting expectations proactively maintains stakeholder trust even with bad news. Manage expectations early."
+          }
+        ]
+      },
+      {
+        "week": "Week 28",
+        "narrative": "The final integration phase reveals that one sub-team's component has significantly more defects than others. That team feels singled out and defensive. Other teams are frustrated.",
+        "options": [
+          {
+            "text": "Conduct a blameless post-mortem to understand systemic causes of the quality gap",
+            "kpiImpact": {
+              "budget": -3,
+              "schedule": -5,
+              "morale": 10,
+              "stakeholders": 5,
+              "risk": -10
+            },
+            "feedback": "Blameless post-mortems focus on process improvement, not finger-pointing. This is a DevOps and SRE best practice that maintains psychological safety while addressing quality."
+          },
+          {
+            "text": "Organize a team-wide bug bash where everyone helps fix defects regardless of origin",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": 5,
+              "morale": 10,
+              "stakeholders": 5,
+              "risk": -10
+            },
+            "feedback": "Collective ownership of quality reinforces that the project succeeds or fails as a team. Bug bashes build cross-component knowledge and team solidarity."
+          },
+          {
+            "text": "Add targeted code reviews and testing support for the struggling component",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": 0,
+              "morale": 0,
+              "stakeholders": 5,
+              "risk": -15
+            },
+            "feedback": "Focused quality gates address the immediate risk. Code reviews are a proven quality practice. Be careful to frame this as support rather than oversight."
+          },
+          {
+            "text": "Reassess the timeline and add a stabilization sprint before release",
+            "kpiImpact": {
+              "budget": -5,
+              "schedule": -15,
+              "morale": 5,
+              "stakeholders": -5,
+              "risk": -15
+            },
+            "feedback": "A hardening sprint addresses quality at the cost of schedule. This is a pragmatic approach but signals that quality wasn't baked in. Stakeholders may question the delay."
+          }
+        ]
+      }
+    ]
+  }
+}

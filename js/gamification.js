@@ -61,6 +61,10 @@ export const XP_REWARDS = {
   MOCK_EXAM_PASS: 1000,
   MOCK_EXAM_PERFECT: 500,  // Bonus
 
+  // Simulation activities
+  SIMULATION_BASE: 60,
+  SIMULATION_EXEMPLARY_BONUS: 25,
+
   // Daily activities
   DAILY_LOGIN: 10,
   MAINTAIN_STREAK_7: 50,
@@ -230,6 +234,29 @@ export const ACHIEVEMENTS = {
     description: 'Complete all Business domain missions',
     icon: '💼',
     xp: 500
+  },
+
+  // Simulation achievements
+  first_simulation_passed: {
+    id: 'first_simulation_passed',
+    name: 'First Command Decision',
+    description: 'Complete your first simulation',
+    icon: '🎮',
+    xp: 50
+  },
+  simulation_exemplary: {
+    id: 'simulation_exemplary',
+    name: 'Exemplary Leader',
+    description: 'Score 90%+ on a simulation',
+    icon: '🌟',
+    xp: 100
+  },
+  simulation_master_10: {
+    id: 'simulation_master_10',
+    name: 'Seasoned PM',
+    description: 'Complete 10 simulations',
+    icon: '👑',
+    xp: 250
   },
 
   // Mock exam

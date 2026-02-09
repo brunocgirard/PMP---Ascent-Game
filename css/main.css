@@ -16,6 +16,10 @@
   --color-background-dark: #1F2937;
   --color-accent-gold: #FCD34D;
   --color-alert-red: #EF4444;
+  --color-urgency-red: #EF4444;
+  --color-urgency-red-light: #FEE2E2;
+  --color-warning-yellow: #F59E0B;
+  --color-warning-yellow-light: #FEF3C7;
 
   /* Extended Palette */
   --color-blue-light: #DBEAFE;

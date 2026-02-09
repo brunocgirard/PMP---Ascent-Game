@@ -24,6 +24,7 @@ import gamification from './gamification.js';
 import { renderEnhancedMVE } from './enhanced-mve-renderer.js?v=4';
 import enhancedMVETracker from './enhanced-mve-gamification.js';
 import taskFlow from './task-flow-manager.js';
+import simulationEngine from './simulation.js';
 
 /**
  * Application Data Store
@@ -34,7 +35,8 @@ const appData = {
   flashcards: null,
   quizBank: null,
   learningContent: null,
-  formulas: null
+  formulas: null,
+  simulationScenarios: null
 };
 
 /**
@@ -62,12 +64,13 @@ async function loadAppData() {
   try {
     console.log('Loading application data...');
 
-    const [missionsData, flashcards, quizBank, learningContent, formulas] = await Promise.all([
+    const [missionsData, flashcards, quizBank, learningContent, formulas, simulationScenarios] = await Promise.all([
       loadJSON('data/missions.json'),
       loadJSON('data/flashcards-mapped.json'),
       loadJSON('data/quiz-bank.json'),
       loadJSON('data/learning-content.json'),
-      loadJSON('data/formulas.json')
+      loadJSON('data/formulas.json'),
+      loadJSON('data/simulation-scenarios.json').catch(() => ({}))
     ]);
 
     // Extract missions array from the data object
@@ -78,11 +81,13 @@ async function loadAppData() {
     appData.quizBank = quizBank;
     appData.learningContent = learningContent;
     appData.formulas = formulas;
+    appData.simulationScenarios = simulationScenarios;
 
     // Initialize modules with data
     missionManager.init(missions);
     flashcardSystem.init(flashcards);
     quizEngine.init(quizBank);
+    simulationEngine.init(simulationScenarios);
 
     console.log('Application data loaded successfully');
     console.log(`- Missions: ${missions.length}`);
@@ -244,6 +249,11 @@ function setupRoutes() {
   router.register('/quiz/:taskId', async (params) => {
     router.render(renderQuiz(params.taskId));
   }, { title: 'Quiz' });
+
+  // Simulation
+  router.register('/simulation/:taskId', async (params) => {
+    router.render(renderSimulation(params.taskId));
+  }, { title: 'Simulation' });
 
   // Onboarding
   router.register('/onboarding', async () => {
@@ -2364,6 +2374,546 @@ function finishQuizSession() {
 
   quizEngine.reset();
   quizSession = null;
+};
+
+// ============================================
+// SIMULATION PHASE
+// ============================================
+
+/**
+ * Simulation session state
+ */
+let simulationSession = null;
+
+/**
+ * Render simulation landing page
+ */
+function renderSimulation(taskId) {
+  const task = missionManager.getTask(taskId);
+  if (!task) {
+    return `<div class="card"><h2>Task not found</h2></div>`;
+  }
+
+  const scenario = appData.simulationScenarios?.[taskId];
+  if (!scenario) {
+    return `
+      <div class="simulation-phase">
+        <div class="card" style="max-width: 900px; margin: 0 auto; text-align: center; padding: var(--space-2xl);">
+          <div style="font-size: 4rem; margin-bottom: var(--space-md);">🎮</div>
+          <h2>Simulation Coming Soon</h2>
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+            The simulation scenario for this task is not yet available.
+          </p>
+          <button class="btn btn-outline" onclick="router.navigate('/task/${taskId}')">
+            ← Back to Task Overview
+          </button>
+        </div>
+      </div>
+    `;
+  }
+
+  const progress = taskFlow.getTaskProgress(taskId);
+  const simAttempts = progress.simulationPhase?.attempts || 0;
+  const highScore = progress.simulationPhase?.highScore || 0;
+
+  return `
+    <div class="simulation-phase">
+      <div class="card" style="max-width: 900px; margin: 0 auto;">
+        <!-- Header -->
+        <div class="card-header" style="text-align: center; padding: var(--space-2xl); background: linear-gradient(135deg, #FEF3C7, #FDE68A); border-bottom: 2px solid var(--color-accent-gold);">
+          <div style="font-size: 4rem; margin-bottom: var(--space-md);">🎮</div>
+          <h2 class="card-title" style="font-size: var(--font-size-3xl); color: var(--color-gray-900); margin-bottom: var(--space-sm);">
+            Summit Challenge: ${scenario.title}
+          </h2>
+          <p style="font-size: var(--font-size-lg); color: var(--color-text-secondary); margin: 0;">
+            ${task.name}
+          </p>
+        </div>
+
+        <!-- Body -->
+        <div class="card-body" style="padding: var(--space-2xl);">
+
+          <!-- Project Briefing -->
+          <div class="simulation-briefing" style="background: linear-gradient(135deg, #EFF6FF, white); border: 2px solid var(--color-primary-blue); border-radius: var(--radius-xl); padding: var(--space-xl); margin-bottom: var(--space-2xl);">
+            <h3 style="color: var(--color-primary-blue); margin: 0 0 var(--space-md) 0; font-size: var(--font-size-xl);">
+              📋 Project Briefing
+            </h3>
+            <p style="margin: 0; line-height: var(--line-height-relaxed); color: var(--color-gray-700); font-size: var(--font-size-md);">
+              ${scenario.projectContext}
+            </p>
+          </div>
+
+          <!-- Starting KPIs -->
+          <div style="margin-bottom: var(--space-2xl);">
+            <h3 style="text-align: center; font-size: var(--font-size-xl); color: var(--color-text-primary); margin-bottom: var(--space-lg);">
+              📊 Starting Project KPIs
+            </h3>
+            <div class="kpi-dashboard" style="display: grid; gap: var(--space-md);">
+              ${renderKPIBar('Budget Health', 'budget', 70, null)}
+              ${renderKPIBar('Schedule Status', 'schedule', 70, null)}
+              ${renderKPIBar('Team Morale', 'morale', 70, null)}
+              ${renderKPIBar('Stakeholder Satisfaction', 'stakeholders', 70, null)}
+              ${renderKPIBar('Risk Exposure', 'risk', 30, null)}
+            </div>
+          </div>
+
+          <!-- What to Expect -->
+          <div style="margin-bottom: var(--space-2xl);">
+            <h3 style="text-align: center; font-size: var(--font-size-xl); color: var(--color-text-primary); margin-bottom: var(--space-lg);">
+              🎯 What to Expect
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-lg);">
+              <div class="card" style="text-align: center; padding: var(--space-lg); border: 2px solid var(--color-primary-blue);">
+                <div style="font-size: 3rem; margin-bottom: var(--space-sm);">5</div>
+                <div style="color: var(--color-text-secondary); font-weight: var(--font-weight-semibold);">Decisions</div>
+                <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-xs);">Trade-off choices</div>
+              </div>
+              <div class="card" style="text-align: center; padding: var(--space-lg); border: 2px solid var(--color-trust-green);">
+                <div style="font-size: 3rem; margin-bottom: var(--space-sm);">60%</div>
+                <div style="color: var(--color-text-secondary); font-weight: var(--font-weight-semibold);">To Pass</div>
+                <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-xs);">Stable or above</div>
+              </div>
+              <div class="card" style="text-align: center; padding: var(--space-lg); border: 2px solid var(--color-accent-gold);">
+                <div style="font-size: 3rem; margin-bottom: var(--space-sm);">+80</div>
+                <div style="color: var(--color-text-secondary); font-weight: var(--font-weight-semibold);">XP Reward</div>
+                <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-xs);">When you pass</div>
+              </div>
+              <div class="card" style="text-align: center; padding: var(--space-lg); border: 2px solid #8B5CF6;">
+                <div style="font-size: 3rem; margin-bottom: var(--space-sm);">∞</div>
+                <div style="color: var(--color-text-secondary); font-weight: var(--font-weight-semibold);">Replays</div>
+                <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-xs);">Try different paths</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key difference from quiz -->
+          <div style="background: linear-gradient(135deg, #FEFCE8, #FEF3C7); border-left: 4px solid var(--color-accent-gold); border-radius: var(--radius-lg); padding: var(--space-xl); margin-bottom: var(--space-2xl);">
+            <h3 style="color: var(--color-accent-gold); margin: 0 0 var(--space-md) 0; font-size: var(--font-size-xl);">
+              🎮 How Simulations Differ from Quizzes
+            </h3>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: var(--space-sm); display: flex; align-items: flex-start; gap: var(--space-sm);">
+                <span>🔄</span> <strong>No right/wrong answers</strong> — every choice has trade-offs, just like the real PMP exam
+              </li>
+              <li style="margin-bottom: var(--space-sm); display: flex; align-items: flex-start; gap: var(--space-sm);">
+                <span>📈</span> <strong>Decisions compound</strong> — early choices affect later situations
+              </li>
+              <li style="margin-bottom: var(--space-sm); display: flex; align-items: flex-start; gap: var(--space-sm);">
+                <span>👀</span> <strong>Visible consequences</strong> — watch KPIs change after each decision
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-sm);">
+                <span>🧠</span> <strong>Situational judgment</strong> — trains PM decision-making, not memorization
+              </li>
+            </ul>
+          </div>
+
+          ${simAttempts > 0 ? `
+            <div style="background: linear-gradient(135deg, #EFF6FF, #DBEAFE); border-left: 4px solid var(--color-primary-blue); border-radius: var(--radius-lg); padding: var(--space-xl); margin-bottom: var(--space-2xl);">
+              <h3 style="color: var(--color-primary-blue); margin: 0 0 var(--space-md) 0;">
+                📊 Previous Attempts
+              </h3>
+              <p style="margin: 0; color: var(--color-gray-700);">
+                Attempts: ${simAttempts} | Best Score: ${highScore}% | Try different choices for a better outcome!
+              </p>
+            </div>
+          ` : ''}
+
+          <!-- Start Button -->
+          <div style="text-align: center;">
+            <button class="btn btn-lg" onclick="startSimulation('${taskId}')" style="background: linear-gradient(135deg, var(--color-accent-gold), #D97706); color: white; min-width: 220px; font-size: var(--font-size-lg); padding: var(--space-lg) var(--space-2xl); box-shadow: var(--shadow-lg);">
+              ${simAttempts > 0 ? '🔄 Replay Simulation' : '🚀 Start Simulation'} →
+            </button>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="card-footer" style="padding: var(--space-xl); background: var(--color-background); border-top: 1px solid var(--color-gray-200);">
+          <div style="display: flex; justify-content: space-between; gap: var(--space-md); flex-wrap: wrap;">
+            <button class="btn btn-outline" onclick="router.navigate('/task/${taskId}')">
+              ← Back to Task Overview
+            </button>
+            <button class="btn btn-secondary" onclick="router.navigate('/quiz/${taskId}')">
+              🏆 Review Quiz
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Render a single KPI bar
+ */
+function renderKPIBar(label, type, value, change) {
+  const icons = { budget: '💰', schedule: '📅', morale: '😊', stakeholders: '🤝', risk: '⚠️' };
+  const colors = { budget: '#3B82F6', schedule: '#8B5CF6', morale: '#F59E0B', stakeholders: '#10B981', risk: '#EF4444' };
+  const changeHtml = change !== null && change !== undefined ? `
+    <span class="kpi-change ${change > 0 && type !== 'risk' ? 'positive' : change < 0 && type !== 'risk' ? 'negative' : change > 0 && type === 'risk' ? 'negative' : change < 0 && type === 'risk' ? 'positive' : ''}" style="font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); margin-left: var(--space-sm);">
+      ${change > 0 ? '+' : ''}${change}
+    </span>
+  ` : '';
+
+  return `
+    <div class="kpi-item" style="display: flex; align-items: center; gap: var(--space-md);">
+      <div class="kpi-label" style="min-width: 160px; display: flex; align-items: center; gap: var(--space-sm); font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); color: var(--color-gray-700);">
+        <span>${icons[type]}</span> ${label}
+      </div>
+      <div class="kpi-bar-track" style="flex: 1; height: 24px; background: var(--color-gray-200); border-radius: var(--radius-full); overflow: hidden;">
+        <div class="kpi-bar-fill ${type}" style="height: 100%; width: ${value}%; background: ${colors[type]}; border-radius: var(--radius-full); transition: width 0.8s ease;"></div>
+      </div>
+      <div class="kpi-value" style="min-width: 60px; text-align: right; font-weight: var(--font-weight-bold); color: ${colors[type]};">
+        ${value}%${changeHtml}
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Start simulation session
+ */
+window.startSimulation = function(taskId) {
+  const simulation = simulationEngine.generateSimulation(taskId);
+
+  if (!simulation) {
+    showToast('No simulation scenario available for this task', 'error');
+    return;
+  }
+
+  simulationSession = {
+    taskId,
+    simulation,
+    selectedOption: null,
+    showingFeedback: false,
+    lastResult: null
+  };
+
+  renderSimulationSession();
+};
+
+/**
+ * Render interactive simulation session
+ */
+function renderSimulationSession() {
+  if (!simulationSession) return;
+
+  const { simulation, selectedOption, showingFeedback, lastResult } = simulationSession;
+  const decision = simulationEngine.getCurrentDecision();
+  const kpis = simulationEngine.projectKPIs;
+  const progress = simulationEngine.getProgress();
+  const isLastDecision = progress.current === progress.total;
+
+  const appView = document.getElementById('app-view');
+  appView.innerHTML = `
+    <div class="simulation-session">
+      <div class="card" style="max-width: 900px; margin: 0 auto;">
+        <!-- Header -->
+        <div class="card-header" style="padding: var(--space-lg) var(--space-xl); background: linear-gradient(135deg, #FEF3C7, #FDE68A);">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+            <h2 style="margin: 0; font-size: var(--font-size-xl);">🎮 ${simulation.title}</h2>
+            <span style="font-size: var(--font-size-sm); color: var(--color-gray-600);">
+              Decision ${progress.current} of ${progress.total}
+            </span>
+          </div>
+          <div class="progress-bar" style="margin-top: var(--space-md); height: 8px; background: rgba(0,0,0,0.1); border-radius: var(--radius-full); overflow: hidden;">
+            <div style="height: 100%; width: ${progress.percentage}%; background: var(--color-accent-gold); transition: width 0.5s ease;"></div>
+          </div>
+        </div>
+
+        <div class="card-body" style="padding: var(--space-xl);">
+          <!-- KPI Dashboard -->
+          <div class="kpi-dashboard" style="display: grid; gap: var(--space-sm); margin-bottom: var(--space-xl); padding: var(--space-lg); background: var(--color-surface); border-radius: var(--radius-lg); border: 1px solid var(--color-gray-200);">
+            <h4 style="margin: 0 0 var(--space-sm) 0; font-size: var(--font-size-sm); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Project KPIs</h4>
+            ${renderKPIBar('Budget Health', 'budget', kpis.budget, lastResult?.kpiChanges?.budget)}
+            ${renderKPIBar('Schedule Status', 'schedule', kpis.schedule, lastResult?.kpiChanges?.schedule)}
+            ${renderKPIBar('Team Morale', 'morale', kpis.morale, lastResult?.kpiChanges?.morale)}
+            ${renderKPIBar('Stakeholders', 'stakeholders', kpis.stakeholders, lastResult?.kpiChanges?.stakeholders)}
+            ${renderKPIBar('Risk Exposure', 'risk', kpis.risk, lastResult?.kpiChanges?.risk)}
+          </div>
+
+          <!-- Decision Narrative -->
+          <div class="decision-narrative" style="border-left: 4px solid var(--color-accent-gold); padding: var(--space-lg); margin-bottom: var(--space-xl); background: linear-gradient(135deg, #FFFBEB, white); border-radius: 0 var(--radius-lg) var(--radius-lg) 0;">
+            <div style="font-size: var(--font-size-sm); color: var(--color-accent-gold); font-weight: var(--font-weight-bold); margin-bottom: var(--space-sm);">
+              📅 ${decision.week}
+            </div>
+            <p style="margin: 0; line-height: var(--line-height-relaxed); color: var(--color-gray-700); font-size: var(--font-size-md);">
+              ${decision.narrative}
+            </p>
+          </div>
+
+          <!-- Decision Options -->
+          <div class="decision-options" style="display: grid; gap: var(--space-md); margin-bottom: var(--space-xl);">
+            <h4 style="margin: 0; color: var(--color-text-primary);">What do you do?</h4>
+            ${decision.options.map((option, index) => {
+              const isSelected = selectedOption === index;
+              let borderColor = 'var(--color-border)';
+              let bgColor = 'var(--color-surface)';
+              let borderWidth = '2px';
+
+              if (isSelected && !showingFeedback) {
+                borderColor = 'var(--color-primary-blue)';
+                bgColor = '#EFF6FF';
+                borderWidth = '3px';
+              }
+              if (showingFeedback && isSelected) {
+                borderColor = 'var(--color-accent-gold)';
+                bgColor = '#FFFBEB';
+                borderWidth = '3px';
+              }
+
+              return `
+                <div class="decision-option ${showingFeedback ? 'disabled' : ''} ${isSelected ? 'selected' : ''}"
+                     onclick="${showingFeedback ? '' : `selectSimulationOption(${index})`}"
+                     style="padding: var(--space-lg); border: ${borderWidth} solid ${borderColor}; border-radius: var(--radius-lg); cursor: ${showingFeedback ? 'default' : 'pointer'}; background: ${bgColor}; transition: all 0.2s;">
+                  <div style="display: flex; align-items: start; gap: var(--space-md);">
+                    <div style="flex-shrink: 0; width: 28px; height: 28px; border: 2px solid ${borderColor}; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: ${isSelected ? borderColor : 'transparent'}; font-size: var(--font-size-sm); color: ${isSelected ? 'white' : 'var(--color-text-secondary)'}; font-weight: var(--font-weight-bold);">
+                      ${isSelected ? '✓' : String.fromCharCode(65 + index)}
+                    </div>
+                    <div style="flex: 1; line-height: var(--line-height-relaxed);">
+                      ${option.text}
+                    </div>
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+
+          <!-- Feedback -->
+          ${showingFeedback && lastResult ? `
+            <div class="simulation-feedback" style="margin-bottom: var(--space-xl); padding: var(--space-xl); background: linear-gradient(135deg, #EFF6FF, white); border: 2px solid var(--color-primary-blue); border-radius: var(--radius-xl); animation: feedbackSlideIn 0.4s ease;">
+              <h4 style="margin: 0 0 var(--space-md) 0; color: var(--color-primary-blue); display: flex; align-items: center; gap: var(--space-sm);">
+                <span style="font-size: 1.5rem;">💡</span> Consequence & Insight
+              </h4>
+              <p style="margin: 0; line-height: var(--line-height-relaxed); color: var(--color-gray-700);">
+                ${lastResult.feedback}
+              </p>
+            </div>
+          ` : ''}
+        </div>
+
+        <!-- Footer -->
+        <div class="card-footer" style="padding: var(--space-lg) var(--space-xl); display: flex; justify-content: space-between;">
+          <button class="btn btn-secondary" onclick="exitSimulationSession()">
+            Exit Simulation
+          </button>
+          ${!showingFeedback ? `
+            <button class="btn btn-primary"
+                    onclick="submitSimulationDecision()"
+                    ${selectedOption === null ? 'disabled style="opacity: 0.5; cursor: not-allowed;"' : ''}>
+              Commit Decision →
+            </button>
+          ` : `
+            <button class="btn btn-primary" onclick="nextSimulationDecision()">
+              ${isLastDecision ? 'See Project Outcome →' : 'Next Situation →'}
+            </button>
+          `}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Select simulation option
+ */
+window.selectSimulationOption = function(index) {
+  if (!simulationSession || simulationSession.showingFeedback) return;
+  simulationSession.selectedOption = index;
+  renderSimulationSession();
+};
+
+/**
+ * Submit simulation decision
+ */
+window.submitSimulationDecision = function() {
+  if (!simulationSession || simulationSession.selectedOption === null) return;
+
+  const result = simulationEngine.submitDecision(simulationSession.selectedOption);
+  simulationSession.lastResult = result;
+  simulationSession.showingFeedback = true;
+  renderSimulationSession();
+};
+
+/**
+ * Advance to next decision or finish
+ */
+window.nextSimulationDecision = function() {
+  if (!simulationSession) return;
+
+  const hasMore = simulationEngine.nextDecision();
+
+  if (!hasMore) {
+    finishSimulationSession();
+  } else {
+    simulationSession.selectedOption = null;
+    simulationSession.showingFeedback = false;
+    simulationSession.lastResult = null;
+    renderSimulationSession();
+  }
+};
+
+/**
+ * Exit simulation early
+ */
+window.exitSimulationSession = function() {
+  if (!simulationSession) return;
+
+  if (simulationEngine.decisions.length > 0) {
+    if (!confirm(`You've made ${simulationEngine.decisions.length} decisions. Exit simulation anyway?`)) {
+      return;
+    }
+  }
+
+  const taskId = simulationSession.taskId;
+  simulationEngine.reset();
+  simulationSession = null;
+  router.navigate(`/simulation/${taskId}`);
+};
+
+/**
+ * Finish simulation and show results
+ */
+function finishSimulationSession() {
+  if (!simulationSession) return;
+
+  const results = simulationEngine.calculateResults();
+  const { taskId } = simulationSession;
+  const task = missionManager.getTask(taskId);
+  const kpis = results.finalKPIs;
+
+  // Rating styles
+  const ratingStyles = {
+    'Crisis': { color: '#DC2626', bg: '#FEE2E2', icon: '🚨' },
+    'Struggling': { color: '#F59E0B', bg: '#FEF3C7', icon: '⚠️' },
+    'Stable': { color: '#3B82F6', bg: '#DBEAFE', icon: '✅' },
+    'Thriving': { color: '#10B981', bg: '#D1FAE5', icon: '🌟' },
+    'Exemplary': { color: '#7C3AED', bg: '#EDE9FE', icon: '🏆' }
+  };
+  const rStyle = ratingStyles[results.rating] || ratingStyles['Stable'];
+
+  const appView = document.getElementById('app-view');
+  appView.innerHTML = `
+    <div class="simulation-results">
+      <div class="card" style="max-width: 800px; margin: 0 auto;">
+        <!-- Header -->
+        <div class="card-header" style="text-align: center; padding: var(--space-2xl); background: linear-gradient(135deg, ${rStyle.bg}, white);">
+          <div style="font-size: 5rem; margin-bottom: var(--space-md);">${rStyle.icon}</div>
+          <h2 style="font-size: var(--font-size-3xl); color: ${rStyle.color}; margin-bottom: var(--space-sm);">
+            Project Outcome: ${results.rating}
+          </h2>
+          <p style="font-size: var(--font-size-lg); color: var(--color-text-secondary); margin: 0;">
+            ${results.passed ? 'You kept the project on track!' : 'The project faced significant challenges.'}
+          </p>
+        </div>
+
+        <div class="card-body" style="padding: var(--space-2xl);">
+          <!-- Score -->
+          <div style="text-align: center; margin-bottom: var(--space-2xl);">
+            <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: ${rStyle.color};">
+              ${results.score}%
+            </div>
+            <div style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
+              Project Health Score (60% to pass)
+            </div>
+          </div>
+
+          <!-- Final KPIs -->
+          <div style="margin-bottom: var(--space-2xl);">
+            <h3 style="text-align: center; margin-bottom: var(--space-lg);">📊 Final Project KPIs</h3>
+            <div class="kpi-dashboard" style="display: grid; gap: var(--space-sm);">
+              ${renderKPIBar('Budget Health', 'budget', kpis.budget, null)}
+              ${renderKPIBar('Schedule Status', 'schedule', kpis.schedule, null)}
+              ${renderKPIBar('Team Morale', 'morale', kpis.morale, null)}
+              ${renderKPIBar('Stakeholders', 'stakeholders', kpis.stakeholders, null)}
+              ${renderKPIBar('Risk Exposure', 'risk', kpis.risk, null)}
+            </div>
+          </div>
+
+          <!-- XP Earned -->
+          <div style="text-align: center; padding: var(--space-xl); background: linear-gradient(135deg, #DBEAFE, white); border: 2px solid var(--color-primary-blue); border-radius: var(--radius-xl); margin-bottom: var(--space-2xl);">
+            <h4 style="margin: 0 0 var(--space-sm) 0; color: var(--color-primary-blue);">XP Earned</h4>
+            <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: var(--color-primary-blue);">
+              +${results.xpEarned} XP
+            </div>
+          </div>
+
+          <!-- Decision Summary -->
+          <div style="margin-bottom: var(--space-xl);">
+            <h3 style="margin-bottom: var(--space-lg);">📝 Your Decisions</h3>
+            ${results.decisions.map((d, i) => `
+              <div style="padding: var(--space-md); margin-bottom: var(--space-sm); background: var(--color-surface); border-radius: var(--radius-md); border-left: 4px solid var(--color-accent-gold);">
+                <div style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--space-xs);">Decision ${i + 1}</div>
+                <div style="color: var(--color-text-primary);">${d.optionText}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="card-footer" style="padding: var(--space-xl); display: flex; justify-content: space-between; gap: var(--space-md); flex-wrap: wrap;">
+          <button class="btn btn-outline" onclick="router.navigate('/task/${taskId}')">
+            ← Back to Task
+          </button>
+          <div style="display: flex; gap: var(--space-md);">
+            <button class="btn btn-secondary" onclick="router.navigate('/simulation/${taskId}')">
+              🔄 Try Again
+            </button>
+            ${results.passed ? `
+              <button class="btn btn-primary" onclick="finishSimulation('${taskId}', ${results.score})">
+                Complete Phase ✓
+              </button>
+            ` : ''}
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Update progress
+  const progress = taskFlow.getTaskProgress(taskId);
+  progress.simulationPhase.attempts = (progress.simulationPhase.attempts || 0) + 1;
+  progress.simulationPhase.lastScore = results.score;
+  if (results.score > (progress.simulationPhase.highScore || 0)) {
+    progress.simulationPhase.highScore = results.score;
+  }
+  if (results.passed) {
+    progress.simulationPhase.passed = true;
+  }
+  taskFlow.updateTaskProgress(taskId, progress);
+
+  // Award XP
+  gamification.awardXP(results.xpEarned);
+
+  if (results.passed) {
+    showToast(`Simulation complete! +${results.xpEarned} XP`, 'success');
+  } else {
+    showToast(`Score: ${results.score}%. Try different approaches!`, 'info');
+  }
+
+  // Check achievements
+  const simHistory = state.get('simulationHistory') || [];
+  simHistory.push({ taskId, score: results.score, date: new Date().toISOString() });
+  state.set('simulationHistory', simHistory);
+
+  if (results.passed && simHistory.length === 1) {
+    gamification.unlockAchievement('first_simulation_passed');
+  }
+  if (results.score >= 90) {
+    gamification.unlockAchievement('simulation_exemplary');
+  }
+  if (simHistory.length >= 10) {
+    gamification.unlockAchievement('simulation_master_10');
+  }
+
+  simulationEngine.reset();
+  simulationSession = null;
+}
+
+/**
+ * Complete simulation phase (called from results screen)
+ */
+window.finishSimulation = function(taskId, score) {
+  taskFlow.completePhase('simulation', taskId, { score });
 };
 
 /**

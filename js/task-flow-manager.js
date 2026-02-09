@@ -52,6 +52,13 @@ class TaskFlowManager {
         lastAttemptScore: 0,
         passed: false
       },
+      simulationPhase: {
+        completed: false,
+        attempts: 0,
+        highScore: 0,
+        lastScore: 0,
+        passed: false
+      },
       overallCompleted: false,
       altitude: 0 // Progress meters gained
     };
@@ -98,14 +105,15 @@ class TaskFlowManager {
         ${hasResumePoint ? this.renderResumePrompt(taskId, progress) : ''}
 
         <div class="three-phase-briefing">
-          <h2>🏔️ Your 3-Step Ascent</h2>
+          <h2>🏔️ Your 4-Step Ascent</h2>
           <p class="briefing-intro">
-            Complete all three phases to master this topic and earn maximum XP!
+            Complete all four phases to master this topic and earn maximum XP!
           </p>
 
           ${this.renderPhaseCard('learn', taskId, taskData, progress)}
           ${this.renderPhaseCard('flashcards', taskId, taskData, progress)}
           ${this.renderPhaseCard('quiz', taskId, taskData, progress)}
+          ${this.renderPhaseCard('simulation', taskId, taskData, progress)}
         </div>
 
         <div class="learning-tips">
@@ -223,6 +231,14 @@ class TaskFlowManager {
         description: '10 questions • 75% to pass • Unlimited retakes',
         duration: '5 min',
         xp: 70
+      },
+      simulation: {
+        number: 4,
+        icon: '🎮',
+        title: 'Simulation (Summit Challenge)',
+        description: '5 PM decisions with trade-offs • 60% to pass • See consequences unfold',
+        duration: '5-8 min',
+        xp: 80
       }
     };
 
@@ -249,6 +265,11 @@ class TaskFlowManager {
       return progress.flashcardsPhase.completed || progress.flashcardsPhase.cardsReviewed > 0;
     }
 
+    // Simulation unlocked after Quiz OR user has attempted quiz
+    if (phase === 'simulation') {
+      return progress.quizPhase.completed || progress.quizPhase.attempts > 0;
+    }
+
     return false;
   }
 
@@ -261,6 +282,7 @@ class TaskFlowManager {
     if (!progress.learnPhase.completed) return 'learn';
     if (!progress.flashcardsPhase.completed) return 'flashcards';
     if (!progress.quizPhase.completed) return 'quiz';
+    if (!progress.simulationPhase.completed) return 'simulation';
     return null; // All complete
   }
 
@@ -374,6 +396,16 @@ class TaskFlowManager {
       `;
     }
 
+    if (phase === 'simulation') {
+      return `
+        <div class="completion-info">
+          <div class="completion-badge">
+            🎮 Best score: ${phaseProgress.highScore}%
+          </div>
+        </div>
+      `;
+    }
+
     return `
       <div class="completion-info">
         <div class="completion-badge">✓ Completed</div>
@@ -430,7 +462,8 @@ class TaskFlowManager {
     // Navigate to appropriate route for other phases
     const routes = {
       flashcards: `/flashcards/${taskId}`,
-      quiz: `/quiz/${taskId}`
+      quiz: `/quiz/${taskId}`,
+      simulation: `/simulation/${taskId}`
     };
 
     window.location.hash = routes[phase];
@@ -472,18 +505,18 @@ class TaskFlowManager {
     progress[`${phase}Phase`].completed = true;
 
     // Update altitude (progress meters)
-    const altitudeGains = { learn: 50, flashcards: 30, quiz: 70 };
+    const altitudeGains = { learn: 50, flashcards: 30, quiz: 70, simulation: 80 };
     progress.altitude += altitudeGains[phase];
 
     // Check if all phases complete
-    if (progress.learnPhase.completed && progress.flashcardsPhase.completed && progress.quizPhase.completed) {
+    if (progress.learnPhase.completed && progress.flashcardsPhase.completed && progress.quizPhase.completed && progress.simulationPhase.completed) {
       progress.overallCompleted = true;
     }
 
     this.updateTaskProgress(taskId, progress);
 
     // Award XP
-    const xpRewards = { learn: 50, flashcards: 30, quiz: 70 };
+    const xpRewards = { learn: 50, flashcards: 30, quiz: 70, simulation: 80 };
     gamification.awardXP(xpRewards[phase], `Completed ${phase} phase`);
 
     // Show celebration modal
@@ -505,20 +538,23 @@ class TaskFlowManager {
     const celebrationTitles = {
       learn: '🏕️ Base Camp Established!',
       flashcards: '🎴 Mid Camp Reached!',
-      quiz: '🏆 Summit Conquered!'
+      quiz: '🏆 Summit Conquered!',
+      simulation: '🎮 Summit Challenge Complete!'
     };
 
     const motivationalQuotes = {
       learn: '"The best view comes after the hardest climb." — You\'ve laid the foundation!',
       flashcards: '"One step at a time, one day at a time." — You\'re building mastery!',
-      quiz: '"The summit is what drives us, but the climb itself is what matters." — Well done!'
+      quiz: '"The summit is what drives us, but the climb itself is what matters." — Well done!',
+      simulation: '"Leadership is not about being in charge. It\'s about taking care of those in your charge." — You led the project!'
     };
 
     // Calculate some stats
-    const progressPercent = Math.round((progress.altitude / 150) * 100);
+    const progressPercent = Math.round((progress.altitude / 230) * 100);
     const totalXP = (progress.learnPhase?.completed ? 50 : 0) +
                     (progress.flashcardsPhase?.completed ? 30 : 0) +
-                    (progress.quizPhase?.completed ? 70 : 0);
+                    (progress.quizPhase?.completed ? 70 : 0) +
+                    (progress.simulationPhase?.completed ? 80 : 0);
 
     const modal = `
       <div class="modal-backdrop" onclick="this.remove()" style="animation: fadeIn 0.3s ease;">
@@ -622,7 +658,8 @@ class TaskFlowManager {
     const gradients = {
       learn: '#DBEAFE, #EDE9FE',
       flashcards: '#EDE9FE, #FEF3C7',
-      quiz: '#D1FAE5, #DBEAFE'
+      quiz: '#D1FAE5, #DBEAFE',
+      simulation: '#FEF3C7, #FDE68A'
     };
     return gradients[phase] || '#DBEAFE, white';
   }
@@ -633,7 +670,7 @@ class TaskFlowManager {
    * @returns {string|null} Next phase or null
    */
   getNextPhase(currentPhase) {
-    const order = ['learn', 'flashcards', 'quiz'];
+    const order = ['learn', 'flashcards', 'quiz', 'simulation'];
     const currentIndex = order.indexOf(currentPhase);
     return currentIndex < order.length - 1 ? order[currentIndex + 1] : null;
   }
@@ -680,6 +717,19 @@ class TaskFlowManager {
       }
     }
 
+    if (phase === 'simulation') {
+      const score = results.score || 0;
+      if (score >= 90) {
+        return `🌟 Exemplary leadership! You scored ${score}% — your project thrived under your decisions!`;
+      } else if (score >= 75) {
+        return `💪 Strong PM skills! You scored ${score}% — your project is thriving!`;
+      } else if (score >= 60) {
+        return `✅ Stable project! You scored ${score}% — you kept things on track through tough decisions.`;
+      } else {
+        return `You scored ${score}%. Every PM faces setbacks — review and try different approaches!`;
+      }
+    }
+
     return 'Great work completing this phase!';
   }
 
@@ -689,7 +739,7 @@ class TaskFlowManager {
    * @returns {number} Altitude in meters
    */
   getAltitudeGain(phase) {
-    return { learn: 50, flashcards: 30, quiz: 70 }[phase];
+    return { learn: 50, flashcards: 30, quiz: 70, simulation: 80 }[phase];
   }
 
   /**
@@ -703,7 +753,8 @@ class TaskFlowManager {
 
     const encouragement = {
       flashcards: 'Now let\'s reinforce what you\'ve learned through spaced repetition!',
-      quiz: 'Time for the final push! Test your mastery and claim the summit.'
+      quiz: 'Time for the final push! Test your mastery and claim the summit.',
+      simulation: 'Put your PM skills to the test! Make real decisions with real consequences.'
     };
 
     return `
@@ -742,8 +793,8 @@ class TaskFlowManager {
   renderAllPhasesComplete(taskId) {
     const celebrations = [
       { icon: '🏔️', text: 'Summit reached! You\'ve mastered this topic from base to peak.' },
-      { icon: '🎖️', text: 'Mission accomplished! You\'ve earned the full 150 XP for this task.' },
-      { icon: '⛰️', text: 'Peak conquered! Your knowledge is now summit-level.' },
+      { icon: '🎖️', text: 'Mission accomplished! You\'ve earned the full 230 XP for this task.' },
+      { icon: '⛰️', text: 'Peak conquered! Your knowledge and leadership are now summit-level.' },
       { icon: '🚩', text: 'Flag planted! You\'ve claimed this peak as your own.' }
     ];
 
@@ -762,7 +813,7 @@ class TaskFlowManager {
         </p>
         <div style="background: white; border-radius: var(--radius-lg); padding: var(--space-md); display: inline-block; box-shadow: var(--shadow-md);">
           <div style="font-size: var(--font-size-3xl); font-weight: bold; color: var(--color-trust-green);">
-            +150 XP
+            +230 XP
           </div>
           <div style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
             Total earned this task
