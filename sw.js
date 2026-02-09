@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pmp-prep-v2';
+const CACHE_NAME = 'pmp-prep-v3';
 
 // Use relative paths so it works on any hosting path (e.g. GitHub Pages subpath)
 const ASSETS_TO_CACHE = [
