@@ -8377,8 +8377,8 @@
     "id": 421,
     "category": "Process",
     "subcategory": "Integration Management",
-    "question": "What knowledge areas must be considered in a comprehensive change impact analysis?",
-    "answer": "All 10: Scope, Schedule, Cost, Quality, Resources, Communications, Risk, Procurement, Stakeholder engagement, Integration. Changes ripple across multiple areas.",
+    "question": "What project dimensions must be considered in a comprehensive change impact analysis?",
+    "answer": "All key project dimensions: Scope, Schedule, Cost, Quality, Resources, Communications, Risk, Procurement, Stakeholder engagement, Integration. Changes ripple across multiple performance domains.",
     "difficulty": "hard",
     "domain": "process",
     "tags": [

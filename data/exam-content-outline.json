@@ -6,7 +6,7 @@
     {
       "id": "domain1",
       "name": "People",
-      "examWeight": 42,
+      "examWeight": 33,
       "description": "The skills and activities associated with effectively leading a project team",
       "taskCount": 14,
       "tasks": [
@@ -287,7 +287,7 @@
     {
       "id": "domain2",
       "name": "Process",
-      "examWeight": 50,
+      "examWeight": 41,
       "description": "The technical aspects of managing projects",
       "taskCount": 17,
       "tasks": [
@@ -621,7 +621,7 @@
     {
       "id": "domain3",
       "name": "Business Environment",
-      "examWeight": 8,
+      "examWeight": 26,
       "description": "The connection between projects and organization strategy",
       "taskCount": 4,
       "tasks": [

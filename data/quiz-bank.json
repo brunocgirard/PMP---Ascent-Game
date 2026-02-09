@@ -1741,7 +1741,7 @@
       }
     ],
     "correctAnswer": "a",
-    "explanation": "In emergencies, when quick decisive action is needed, or when unpopular decisions must be made.. This relates to People.",
+    "explanation": "In emergencies, when quick decisive action is needed, or when unpopular decisions must be made. While forcing may be necessary in emergencies, PMI prefers inclusive, collaborative approaches like problem-solving where all parties work together.",
     "references": {
       "task": "Domain 1",
       "source": "flashcard",
@@ -1776,7 +1776,7 @@
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Smoothing emphasizes agreement while avoiding conflict; Compromise means both parties give up something (lose-lose).. This relates to People.",
+    "explanation": "Smoothing emphasizes agreement while avoiding conflict; Compromise means both parties give up something (lose-lose). Neither approach is as effective as collaborative problem-solving where all parties work together toward an inclusive solution.",
     "references": {
       "task": "Domain 1",
       "source": "flashcard",
@@ -1811,7 +1811,7 @@
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Retreating from actual or potential conflict; postponing issue resolution (often temporary, not a solution).. This relates to People.",
+    "explanation": "Retreating from actual or potential conflict; postponing issue resolution (often temporary, not a solution). PMI favors collaborative approaches that involve all stakeholders working together rather than withdrawal.",
     "references": {
       "task": "Domain 1",
       "source": "flashcard",
@@ -1881,7 +1881,7 @@
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Projects involve people with emotions; EQ helps manage relationships, resolve conflicts, and build trust.. This relates to People.",
+    "explanation": "Projects involve people with emotions; EQ helps manage relationships, resolve conflicts, and build trust. High EQ facilitates inclusive team environments where members collaborate effectively.",
     "references": {
       "task": "Domain 1",
       "source": "flashcard",
@@ -14009,7 +14009,7 @@
       }
     ],
     "correctAnswer": "a",
-    "explanation": "During execution, resource competition and schedule pressures are the most common conflict sources. Teams are actively working and competing for limited resources.",
+    "explanation": "During execution, resource competition and schedule pressures are the most common conflict sources. Teams are actively working and competing for limited resources. Collaborative resolution that involves all parties working together is key to managing these conflicts.",
     "references": {
       "task": "Domain 1 Task 1: Manage conflict"
     },
@@ -14244,7 +14244,7 @@
     "references": {
       "task": "Domain 1 Task 1: Manage conflict"
     },
-    "examTip": "Force/Direct is win-lose and should be a last resort in most situations"
+    "examTip": "Force/Direct is win-lose and should be a last resort. On the exam, always prefer the inclusive, collaborative approach unless there's a clear reason not to"
   },
   {
     "id": "q0409",
@@ -14306,7 +14306,7 @@
       }
     ],
     "correctAnswer": "a",
-    "explanation": "A RACI (Responsible, Accountable, Consulted, Informed) matrix clearly defines who does what, preventing role confusion and territorial conflicts.",
+    "explanation": "A RACI (Responsible, Accountable, Consulted, Informed) matrix clearly defines who does what, preventing role confusion and territorial conflicts. It facilitates inclusive involvement by ensuring all stakeholders understand their roles.",
     "references": {
       "task": "Domain 1 Task 1: Manage conflict"
     },
@@ -14343,7 +14343,7 @@
     "references": {
       "task": "Domain 1 Task 1: Manage conflict"
     },
-    "examTip": "Smooth/Accommodate provides temporary relief but doesn't address root causes"
+    "examTip": "Smooth/Accommodate provides temporary relief but doesn't address root causes. Collaborate/Problem Solve is the inclusive approach that facilitates lasting resolution"
   },
   {
     "id": "q0412",
@@ -24041,7 +24041,7 @@
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Integrated change control manages ALL changes across the project. Every change is reviewed for impact on all knowledge areas before approval.",
+    "explanation": "Integrated change control manages ALL changes across the project. Every change is reviewed for impact on all project dimensions (scope, schedule, cost, quality, resources, risk) before approval.",
     "references": {
       "task": "Domain 2 Task 9: Integrate project planning activities"
     },
@@ -33591,5 +33591,500 @@
       "source": "exam-content-outline"
     },
     "examTip": "Successful change management ends with a structured transition to operational ownership—not indefinite PM involvement or abrupt departure."
+  },
+  {
+    "id": "q0989",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "predictive",
+    "difficulty": "easy",
+    "question": "A project manager is assigned to build a bridge with well-defined engineering specifications and strict regulatory requirements. Which project lifecycle is most appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agile with two-week sprints"
+      },
+      {
+        "id": "b",
+        "text": "Predictive (waterfall) with sequential phases"
+      },
+      {
+        "id": "c",
+        "text": "Hybrid with iterative design and predictive construction"
+      },
+      {
+        "id": "d",
+        "text": "Adaptive with continuous customer feedback loops"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "When requirements are well-defined, the technology is understood, and regulatory constraints demand thorough upfront planning and documentation, a predictive lifecycle is most appropriate. Bridge construction follows strict engineering standards with little ambiguity, making waterfall the natural fit.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "Well-defined requirements + strict regulations + low uncertainty = predictive lifecycle."
+  },
+  {
+    "id": "q0990",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "agile",
+    "difficulty": "easy",
+    "question": "A startup is developing a new mobile app. Requirements are unclear, the market is volatile, and rapid user feedback is essential. What methodology should the project manager recommend?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Predictive with a detailed requirements document upfront"
+      },
+      {
+        "id": "b",
+        "text": "Predictive with change control board reviews"
+      },
+      {
+        "id": "c",
+        "text": "Agile with short iterations and frequent stakeholder reviews"
+      },
+      {
+        "id": "d",
+        "text": "A phased approach with tollgates between each phase"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "When requirements are uncertain and rapid feedback is needed, an agile approach with short iterations allows the team to learn quickly and adapt. Predictive approaches assume stable requirements, which is not the case here.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "High uncertainty + need for rapid feedback + evolving requirements = agile approach."
+  },
+  {
+    "id": "q0991",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "hybrid",
+    "difficulty": "easy",
+    "question": "A project involves building a new data warehouse. The infrastructure setup has clear requirements, but the reporting layer needs extensive business user input. Which approach is most suitable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use agile for the entire project"
+      },
+      {
+        "id": "b",
+        "text": "Use predictive for the entire project"
+      },
+      {
+        "id": "c",
+        "text": "Use predictive for infrastructure and agile for the reporting layer"
+      },
+      {
+        "id": "d",
+        "text": "Let each team decide independently without coordination"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "A hybrid approach lets the team use predictive methods where requirements are clear (infrastructure) and agile where discovery and feedback are needed (reporting). This tailors the methodology to each component's level of uncertainty.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "When different project components have different levels of uncertainty, a hybrid approach tailors methodology to each component."
+  },
+  {
+    "id": "q0992",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "predictive",
+    "difficulty": "medium",
+    "question": "A project manager uses the Stacey complexity matrix to assess a new project. Requirements are close to agreement among stakeholders, and the technology is well-established. Where does this project fall on the matrix, and what approach is recommended?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Close to chaos — use an empirical approach with frequent inspection"
+      },
+      {
+        "id": "b",
+        "text": "Complex zone — use iterative methods to probe and sense"
+      },
+      {
+        "id": "c",
+        "text": "Simple/clear zone — a predictive approach is appropriate"
+      },
+      {
+        "id": "d",
+        "text": "Complicated zone — use agile with expert facilitation"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "On the Stacey matrix, when both requirements agreement and technology certainty are high, the project falls in the simple/clear zone. A predictive approach works well here because outcomes are predictable and planning can be done upfront.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "The Stacey matrix plots requirements agreement vs. technology certainty — high on both axes means simple zone, suitable for predictive methods."
+  },
+  {
+    "id": "q0993",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "agile",
+    "difficulty": "medium",
+    "question": "Using the Cynefin framework, a project manager determines that the project environment is complex — cause and effect can only be understood in retrospect. What practice should the project manager adopt?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Create a comprehensive plan and follow it strictly"
+      },
+      {
+        "id": "b",
+        "text": "Apply best practices from similar past projects"
+      },
+      {
+        "id": "c",
+        "text": "Probe with small experiments, sense the results, then respond"
+      },
+      {
+        "id": "d",
+        "text": "Categorize the work and delegate to subject matter experts"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "In the Cynefin complex domain, the recommended approach is probe-sense-respond. The team runs small experiments, observes outcomes, and adapts. Best practices (B) apply to the clear domain, and expert analysis (D) fits the complicated domain.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "Cynefin complex domain = probe-sense-respond. This aligns with agile experimentation and iterative learning."
+  },
+  {
+    "id": "q0994",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "hybrid",
+    "difficulty": "medium",
+    "question": "An organization wants to scale agile across five teams working on a single product. The teams need alignment on a shared backlog and synchronized planning. Which scaling framework should the project manager consider?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Kanban with individual team boards"
+      },
+      {
+        "id": "b",
+        "text": "Traditional PMO with a master schedule"
+      },
+      {
+        "id": "c",
+        "text": "SAFe (Scaled Agile Framework) with PI Planning events"
+      },
+      {
+        "id": "d",
+        "text": "Independent Scrum teams with no cross-team coordination"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "SAFe provides structure for scaling agile across multiple teams through Program Increment (PI) Planning, shared backlogs, and Agile Release Trains. Independent Scrum (D) lacks coordination, Kanban alone (A) does not address multi-team alignment, and a traditional PMO (B) does not leverage agile principles.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "For scaling agile across multiple teams, know the key frameworks: SAFe (PI Planning), LeSS (single product backlog), and Nexus (integration team)."
+  },
+  {
+    "id": "q0995",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "predictive",
+    "difficulty": "hard",
+    "question": "A pharmaceutical company is developing a new drug. Regulatory approval requires complete traceability of requirements, formal stage-gate reviews, and extensive documentation. However, the R&D team advocates for iterative lab experiments. What should the project manager do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adopt pure agile to satisfy the R&D team's preference"
+      },
+      {
+        "id": "b",
+        "text": "Use a predictive framework with formal gates, allowing iterative experimentation within the R&D phase"
+      },
+      {
+        "id": "c",
+        "text": "Eliminate documentation to move faster"
+      },
+      {
+        "id": "d",
+        "text": "Let each department choose its own methodology independently"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Regulatory environments demand traceability and formal gates, making a predictive framework necessary at the project level. However, within specific phases like R&D, iterative experimentation can be embedded. This tailors the approach while maintaining compliance.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "Regulatory constraints often mandate a predictive outer framework — but iterative practices can still be used within phases."
+  },
+  {
+    "id": "q0996",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "agile",
+    "difficulty": "hard",
+    "question": "A project manager is leading a product development effort with three co-located Scrum teams. Dependencies between teams are causing integration issues every sprint. Which approach would best address this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add buffer time between sprints for integration testing"
+      },
+      {
+        "id": "b",
+        "text": "Implement Nexus with a Nexus Integration Team to manage cross-team dependencies"
+      },
+      {
+        "id": "c",
+        "text": "Merge all three teams into one large Scrum team"
+      },
+      {
+        "id": "d",
+        "text": "Switch to a waterfall approach to plan integration upfront"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Nexus is a scaling framework designed for 3-9 Scrum teams working on a single product. The Nexus Integration Team helps manage cross-team dependencies and ensures integrated increments. Merging teams (C) would exceed recommended Scrum team size, and buffer time (A) does not address the root cause.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "Nexus is purpose-built for 3-9 Scrum teams with integration challenges — know when to recommend it over SAFe or LeSS."
+  },
+  {
+    "id": "q0997",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "hybrid",
+    "difficulty": "hard",
+    "question": "A project manager must deliver a government contract with fixed scope and cost, but the client wants to see working software every month. The team has moderate agile experience. What is the best approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pure Scrum with variable scope per sprint"
+      },
+      {
+        "id": "b",
+        "text": "Pure waterfall with a single delivery at the end"
+      },
+      {
+        "id": "c",
+        "text": "Hybrid approach using predictive planning for scope and cost, with iterative monthly deliveries"
+      },
+      {
+        "id": "d",
+        "text": "Delay the project until the team gains more agile experience"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "A fixed-scope, fixed-cost government contract requires predictive planning for baselines and compliance. However, monthly working software can be achieved through iterative delivery cycles within that predictive framework. This hybrid approach satisfies both contractual and stakeholder needs.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "Fixed contracts with incremental delivery needs are a classic hybrid scenario — predictive for baselines, iterative for delivery cadence."
+  },
+  {
+    "id": "q0998",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "predictive",
+    "difficulty": "hard",
+    "question": "During methodology selection, the project manager identifies these factors: the team is distributed across four time zones, requirements are stable, the organization has low agile maturity, and the contract is firm-fixed-price. Which factor combination most strongly supports choosing a predictive approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Distributed team and low agile maturity only"
+      },
+      {
+        "id": "b",
+        "text": "Stable requirements and firm-fixed-price contract"
+      },
+      {
+        "id": "c",
+        "text": "Distributed team and stable requirements only"
+      },
+      {
+        "id": "d",
+        "text": "Low agile maturity is the only deciding factor"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "While all factors can influence methodology choice, stable requirements and a firm-fixed-price contract are the strongest indicators for a predictive approach. Stable requirements enable upfront planning, and FFP contracts demand fixed scope baselines. Distributed teams and low maturity are contributing factors but not the primary drivers.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "Requirements stability and contract type are primary drivers for methodology selection — team distribution and maturity are secondary factors."
+  },
+  {
+    "id": "q0999",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "agile",
+    "difficulty": "easy",
+    "question": "What is the key difference between an iterative and an incremental development approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Iterative refines through repeated cycles; incremental delivers functionality in successive portions"
+      },
+      {
+        "id": "b",
+        "text": "They are the same concept with different names"
+      },
+      {
+        "id": "c",
+        "text": "Iterative is only used in waterfall; incremental is only used in agile"
+      },
+      {
+        "id": "d",
+        "text": "Incremental means reworking the same feature; iterative means adding new features"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Iterative development refines and improves work through repeated cycles (e.g., successive prototypes). Incremental development delivers the product in functional portions or slices. Many agile approaches combine both — delivering increments that are also refined iteratively.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "Iterative = refine through cycles. Incremental = deliver in portions. Most agile methods use both together."
+  },
+  {
+    "id": "q1000",
+    "taskId": "d2t13",
+    "domain": "process",
+    "type": "multiple-choice",
+    "methodology": "hybrid",
+    "difficulty": "medium",
+    "question": "A project manager is tailoring the methodology for a project where stakeholders demand frequent demos but the organization requires formal change control for scope changes. What is the best approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore the change control requirement to maintain agile speed"
+      },
+      {
+        "id": "b",
+        "text": "Skip demos and follow a strict waterfall process"
+      },
+      {
+        "id": "c",
+        "text": "Implement agile iterations for delivery and demos, with a formal change control process for scope baseline changes"
+      },
+      {
+        "id": "d",
+        "text": "Ask stakeholders to wait until the end of the project for a single demo"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Tailoring means adapting the methodology to fit project and organizational constraints. Frequent demos can be achieved through agile iterations, while formal change control satisfies governance requirements. A hybrid approach accommodates both needs without sacrificing either.",
+    "references": {
+      "task": "Domain 2 Task 13: Determine appropriate project methodology/methods and practices"
+    },
+    "examTip": "Tailoring is about combining practices to meet competing constraints — not choosing one over the other."
+  },
+  {
+    "id": "q1001",
+    "taskId": "d1t5",
+    "domain": "people",
+    "type": "multiple-choice",
+    "methodology": "hybrid",
+    "difficulty": "medium",
+    "question": "A project manager notices that several team members struggle with a new automated testing tool adopted for the hybrid project. What should the PM do FIRST?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace the tool with one the team already knows"
+      },
+      {
+        "id": "b",
+        "text": "Conduct a skills assessment and arrange targeted training for the team"
+      },
+      {
+        "id": "c",
+        "text": "Ask the vendor to provide on-site support indefinitely"
+      },
+      {
+        "id": "d",
+        "text": "Assign all testing work to the one team member who knows the tool"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Assessing skill gaps and providing targeted training ensures the entire team can effectively use the tool. This builds long-term capability rather than creating a single point of failure or abandoning a sound technical decision.",
+    "references": {
+      "task": "Domain 1 Task 5: Ensure adequate training"
+    },
+    "examTip": "Training investments build team capability - always assess gaps before acting"
+  },
+  {
+    "id": "q1002",
+    "taskId": "d1t6",
+    "domain": "people",
+    "type": "multiple-choice",
+    "methodology": "agile",
+    "difficulty": "medium",
+    "question": "An agile team distributed across three time zones is experiencing miscommunication about sprint goals. What should the Scrum Master do to build shared understanding?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Send a detailed email summarizing all sprint goals after each planning session"
+      },
+      {
+        "id": "b",
+        "text": "Facilitate a collaborative visual workshop where all team members co-create a shared sprint goal definition"
+      },
+      {
+        "id": "c",
+        "text": "Assign one team member per location to relay information to others"
+      },
+      {
+        "id": "d",
+        "text": "Reduce the sprint scope until communication improves"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Co-creating shared artifacts through collaborative workshops ensures all team members have the same understanding. Visual tools and inclusive participation overcome time zone and communication barriers more effectively than one-way communication.",
+    "references": {
+      "task": "Domain 1 Task 6: Build shared understanding"
+    },
+    "examTip": "Shared understanding comes from collaborative creation, not one-way communication"
+  },
+  {
+    "id": "q1003",
+    "taskId": "d1t14",
+    "domain": "people",
+    "type": "multiple-choice",
+    "methodology": "hybrid",
+    "difficulty": "hard",
+    "question": "A hybrid project has both a steering committee for phase-gate approvals and an agile team using sprint reviews. A conflict arises when the steering committee wants to approve every user story before development. What should the PM recommend?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminate the steering committee to avoid slowing down the agile team"
+      },
+      {
+        "id": "b",
+        "text": "Have the steering committee approve epics and themes at phase gates while the Product Owner manages individual story prioritization"
+      },
+      {
+        "id": "c",
+        "text": "Convert the project to fully predictive to match the governance structure"
+      },
+      {
+        "id": "d",
+        "text": "Ignore the steering committee requests and continue with agile practices"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "In hybrid governance, strategic decisions (epics, themes, phase gates) align with traditional governance while tactical decisions (user stories, sprint scope) remain with the agile team. This balances oversight with agility.",
+    "references": {
+      "task": "Domain 1 Task 14: Establish project governance"
+    },
+    "examTip": "Hybrid governance means right-sizing oversight - strategic decisions go up, tactical decisions stay with the team"
   }
 ]
