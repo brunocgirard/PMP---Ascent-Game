@@ -2,7 +2,7 @@
   "name": "Ascent to PMP: The Summit Quest",
   "short_name": "PMP Prep",
   "description": "Transform your PMP exam preparation into an engaging mountain-climbing adventure with daily 15-20 minute learning sessions.",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#F3F4F6",
   "theme_color": "#3B82F6",
