@@ -17,6 +17,8 @@
  * - const timeStr = formatTime(seconds);
  */
 
+import { setSafeInnerHTML } from './security.js';
+
 /**
  * ============================================
  * Date & Time Utilities
@@ -314,7 +316,7 @@ export function createElement(tag, attrs = {}, content = '') {
   });
 
   if (typeof content === 'string') {
-    element.innerHTML = content;
+    setSafeInnerHTML(element, content);
   } else if (content instanceof HTMLElement) {
     element.appendChild(content);
   }

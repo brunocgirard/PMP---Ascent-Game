@@ -15,7 +15,7 @@
   padding: var(--space-sm) var(--space-lg);
   font-weight: var(--font-weight-medium);
   border-radius: var(--radius-md);
-  transition: all var(--transition-fast);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast), opacity var(--transition-fast);
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -135,7 +135,7 @@
 /* Card Variants */
 .card-interactive {
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast), opacity var(--transition-fast);
 }
 
 .card-interactive:hover {
@@ -340,9 +340,9 @@
   background-color: var(--color-background-white);
 }
 
-.form-input:focus,
-.form-select:focus,
-.form-textarea:focus {
+.form-input:focus-visible,
+.form-select:focus-visible,
+.form-textarea:focus-visible {
   outline: none;
   border-color: var(--color-primary-blue);
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);

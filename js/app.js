@@ -25,6 +25,7 @@ import { renderEnhancedMVE } from './enhanced-mve-renderer.js?v=4';
 import enhancedMVETracker from './enhanced-mve-gamification.js';
 import taskFlow from './task-flow-manager.js';
 import simulationEngine from './simulation.js';
+import { escapeHTML, escapeInlineHandlerArg, setSafeInnerHTML } from './security.js';
 
 /**
  * Application Data Store
@@ -38,6 +39,10 @@ const appData = {
   formulas: null,
   simulationScenarios: null
 };
+
+function safeActionArg(value) {
+  return escapeInlineHandlerArg(value);
+}
 
 /**
  * Load JSON data file
@@ -109,18 +114,18 @@ async function loadAppData() {
 function showErrorScreen(message) {
   const appView = document.getElementById('app-view');
   if (appView) {
-    appView.innerHTML = `
+    setSafeInnerHTML(appView, `
       <div style="text-align: center; padding: 4rem 2rem;">
         <h1 style="font-size: 4rem; margin-bottom: 1rem;">⚠️</h1>
         <h2 style="margin-bottom: 1rem;">Unable to Load Application</h2>
         <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">
-          ${message}
+          ${escapeHTML(message)}
         </p>
         <button onclick="window.location.reload()" class="btn btn-primary">
           Reload Page
         </button>
       </div>
-    `;
+    `);
   }
   hideLoadingScreen();
 }
@@ -167,10 +172,10 @@ function updateHeaderStats() {
   const levelBadge = document.getElementById('level-badge');
   if (levelBadge) {
     const levelName = getLevelName(progress.level);
-    levelBadge.innerHTML = `
+    setSafeInnerHTML(levelBadge, `
       <span class="level-number">${progress.level}</span>
       <span class="level-name">${levelName}</span>
-    `;
+    `);
   }
 }
 
@@ -340,7 +345,7 @@ function renderMissionCard(mission) {
 
   return `
     <div class="card card-interactive ${isLocked ? 'card-locked' : ''}"
-         ${!isLocked ? `onclick="navigateTo('/mission/${mission.id}')"` : ''}>
+         ${!isLocked ? `onclick="navigateTo('/mission/${encodeURIComponent(mission.id)}')"` : ''}>
       <div class="card-header">
         <h3 class="card-title">${mission.icon} ${mission.name}</h3>
       </div>
@@ -486,7 +491,7 @@ window.showAllAchievements = function() {
 
   const modal = document.createElement('div');
   modal.className = 'modal-backdrop';
-  modal.innerHTML = `
+  setSafeInnerHTML(modal, `
     <div class="modal" style="max-width: 900px;">
       <div class="modal-header">
         <h2 class="modal-title">🏆 All Achievements</h2>
@@ -526,7 +531,7 @@ window.showAllAchievements = function() {
         </div>
       </div>
     </div>
-  `;
+  `);
 
   document.body.appendChild(modal);
 };
@@ -1149,12 +1154,12 @@ function renderMission7Detail(mission) {
               <div class="card-footer">
                 <button
                   class="btn btn-primary"
-                  onclick="startMockExam('${mockExam.id}')"
+                  onclick="startMockExam('${safeActionArg(mockExam.id)}')"
                   ${!examResult && index > 0 && !completedExams.find(e => e.examId === mockExams[index-1].id) ? 'disabled' : ''}>
                   ${examResult ? '🔄 Retake Exam' : '🎯 Start Exam'}
                 </button>
                 ${examResult ? `
-                  <button class="btn btn-outline" onclick="viewMockExamResults('${mockExam.id}')">
+                  <button class="btn btn-outline" onclick="viewMockExamResults('${safeActionArg(mockExam.id)}')">
                     📊 View Results
                   </button>
                 ` : ''}
@@ -1236,7 +1241,7 @@ function renderTaskCard(task, taskNumber, missionId) {
 
   return `
     <div class="card ${isCompleted ? '' : 'card-interactive'}"
-         ${!isCompleted ? `onclick="startTask('${task.id}')"` : ''}>
+         ${!isCompleted ? `onclick="startTask('${safeActionArg(task.id)}')"` : ''}>
       <div class="card-header">
         <div style="display: flex; justify-content: space-between; align-items: start;">
           <div>
@@ -1374,10 +1379,10 @@ async function renderLearnPhase(taskId, options = {}) {
           `}
         </div>
         <div class="card-footer">
-          <button class="btn btn-secondary" onclick="navigateTo('/mission/${task.missionId}')">
+          <button class="btn btn-secondary" onclick="navigateTo('/mission/${encodeURIComponent(task.missionId)}')">
             ← Back to Mission
           </button>
-          <button class="btn btn-primary" onclick="completeLearnAndContinue('${taskId}')">
+          <button class="btn btn-primary" onclick="completeLearnAndContinue('${safeActionArg(taskId)}')">
             Continue to Flashcards →
           </button>
         </div>
@@ -1422,10 +1427,10 @@ function renderFlashcards(taskId) {
           <p>No flashcards available for this task yet.</p>
         </div>
         <div class="card-footer">
-          <button class="btn btn-secondary" onclick="navigateTo('/mission/${task.missionId}')">
+          <button class="btn btn-secondary" onclick="navigateTo('/mission/${encodeURIComponent(task.missionId)}')">
             ← Back to Mission
           </button>
-          <button class="btn btn-primary" onclick="navigateTo('/quiz/${taskId}')">
+          <button class="btn btn-primary" onclick="navigateTo('/quiz/${encodeURIComponent(taskId)}')">
             Skip to Quiz →
           </button>
         </div>
@@ -1539,7 +1544,7 @@ function renderFlashcards(taskId) {
 
           <!-- Start Button -->
           <div style="text-align: center; margin-top: var(--space-2xl);">
-            <button class="btn btn-primary btn-lg" onclick="startFlashcardSession('${taskId}')" style="min-width: 200px; font-size: var(--font-size-lg); padding: var(--space-lg) var(--space-2xl);">
+            <button class="btn btn-primary btn-lg" onclick="startFlashcardSession('${safeActionArg(taskId)}')" style="min-width: 200px; font-size: var(--font-size-lg); padding: var(--space-lg) var(--space-2xl);">
               🎴 Begin Session →
             </button>
             <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-top: var(--space-md);">
@@ -1551,10 +1556,10 @@ function renderFlashcards(taskId) {
         <!-- Footer -->
         <div class="card-footer" style="padding: var(--space-xl); background: var(--color-background); border-top: 1px solid var(--color-gray-200);">
           <div style="display: flex; justify-content: space-between; gap: var(--space-md); flex-wrap: wrap;">
-            <button class="btn btn-outline" onclick="router.navigate('/task/${taskId}')">
+            <button class="btn btn-outline" onclick="router.navigate('/task/${encodeURIComponent(taskId)}')">
               ← Back to Task Overview
             </button>
-            <button class="btn btn-secondary" onclick="router.navigate('/quiz/${taskId}')">
+            <button class="btn btn-secondary" onclick="router.navigate('/quiz/${encodeURIComponent(taskId)}')">
               Skip to Quiz →
             </button>
           </div>
@@ -1614,7 +1619,7 @@ function renderFlashcardSession() {
   const progress = Math.round(((currentIndex + 1) / cards.length) * 100);
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="flashcard-session">
       <div class="card">
         <div class="card-header">
@@ -1694,7 +1699,7 @@ function renderFlashcardSession() {
         </div>
       </div>
     </div>
-  `;
+  `);
 }
 
 /**
@@ -1760,7 +1765,7 @@ function completeFlashcardSession() {
   gamification.awardXP(xpEarned);
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="flashcard-session">
       <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
         <div class="card-header">
@@ -1777,16 +1782,16 @@ function completeFlashcardSession() {
           </p>
         </div>
         <div class="card-footer">
-          <button class="btn btn-secondary" onclick="navigateTo('/flashcards/${taskId}')">
+          <button class="btn btn-secondary" onclick="navigateTo('/flashcards/${encodeURIComponent(taskId)}')">
             ← Back to Flashcards
           </button>
-          <button class="btn btn-primary" onclick="navigateTo('/quiz/${taskId}')">
+          <button class="btn btn-primary" onclick="navigateTo('/quiz/${encodeURIComponent(taskId)}')">
             Take Quiz →
           </button>
         </div>
       </div>
     </div>
-  `;
+  `);
 
   flashcardSession = null;
   showToast(`Flashcard session complete! +${xpEarned} XP`, 'success');
@@ -1952,7 +1957,7 @@ function renderQuiz(taskId) {
 
           <!-- Start Button -->
           <div style="text-align: center;">
-            <button class="btn btn-lg" onclick="startQuiz('${taskId}')" style="background: linear-gradient(135deg, var(--color-trust-green), #059669); color: white; min-width: 220px; font-size: var(--font-size-lg); padding: var(--space-lg) var(--space-2xl); box-shadow: var(--shadow-lg);">
+            <button class="btn btn-lg" onclick="startQuiz('${safeActionArg(taskId)}')" style="background: linear-gradient(135deg, var(--color-trust-green), #059669); color: white; min-width: 220px; font-size: var(--font-size-lg); padding: var(--space-lg) var(--space-2xl); box-shadow: var(--shadow-lg);">
               ${quizAttempts > 0 ? '🔄 Retry Quiz' : '🚀 Start Quiz'} →
             </button>
             <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-top: var(--space-md);">
@@ -1964,10 +1969,10 @@ function renderQuiz(taskId) {
         <!-- Footer -->
         <div class="card-footer" style="padding: var(--space-xl); background: var(--color-background); border-top: 1px solid var(--color-gray-200);">
           <div style="display: flex; justify-content: space-between; gap: var(--space-md); flex-wrap: wrap;">
-            <button class="btn btn-outline" onclick="router.navigate('/task/${taskId}')">
+            <button class="btn btn-outline" onclick="router.navigate('/task/${encodeURIComponent(taskId)}')">
               ← Back to Task Overview
             </button>
-            <button class="btn btn-secondary" onclick="router.navigate('/flashcards/${taskId}')">
+            <button class="btn btn-secondary" onclick="router.navigate('/flashcards/${encodeURIComponent(taskId)}')">
               📚 Review Flashcards
             </button>
           </div>
@@ -2027,7 +2032,7 @@ function renderQuizSession() {
   const isLastQuestion = currentQuestionIndex === quiz.questions.length - 1;
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="quiz-session">
       <div class="card" style="max-width: 900px; margin: 0 auto;">
         <div class="card-header">
@@ -2082,8 +2087,8 @@ function renderQuizSession() {
 
               return `
                 <div class="quiz-option ${showingFeedback ? 'disabled' : ''}"
-                     onclick="${showingFeedback ? '' : `selectQuizAnswer('${option.id}')`}"
-                     style="padding: 1rem 1.5rem; border: ${borderWidth} solid ${borderColor}; border-radius: 8px; cursor: ${showingFeedback ? 'default' : 'pointer'}; transition: all 0.2s; background: ${bgColor}; ${showingFeedback ? '' : 'hover:border-color: var(--color-integrity-blue); hover:background: var(--color-surface-hover);'}">
+                     onclick="${showingFeedback ? '' : `selectQuizAnswer('${safeActionArg(option.id)}')`}"
+                     style="padding: 1rem 1.5rem; border: ${borderWidth} solid ${borderColor}; border-radius: 8px; cursor: ${showingFeedback ? 'default' : 'pointer'}; transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s, opacity 0.2s; background: ${bgColor}; ${showingFeedback ? '' : 'hover:border-color: var(--color-integrity-blue); hover:background: var(--color-surface-hover);'}">
                   <div style="display: flex; align-items: start; gap: 1rem;">
                     <div style="flex-shrink: 0; width: 24px; height: 24px; border: 2px solid ${borderColor}; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: ${isSelected || showCorrect ? borderColor : 'transparent'};">
                       ${(isSelected || showCorrect) ? '<span style="color: white; font-weight: bold;">✓</span>' : ''}
@@ -2096,7 +2101,7 @@ function renderQuizSession() {
                     </div>
                   </div>
                 </div>
-              `;
+              `);
             }).join('')}
           </div>
 
@@ -2299,7 +2304,7 @@ function finishQuizSession() {
   const task = missionManager.getTask(taskId);
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="quiz-session">
       <div class="card" style="max-width: 700px; margin: 0 auto; text-align: center;">
         <div class="card-header">
@@ -2340,22 +2345,22 @@ function finishQuizSession() {
           </div>
         </div>
         <div class="card-footer">
-          <button class="btn btn-secondary" onclick="navigateTo('/learn/${taskId}')">
+          <button class="btn btn-secondary" onclick="navigateTo('/learn/${encodeURIComponent(taskId)}')">
             ← Review Material
           </button>
           ${results.passed ? `
-            <button class="btn btn-primary" onclick="navigateTo('/mission/${task?.missionId || 'm1'}')">
+            <button class="btn btn-primary" onclick="navigateTo('/mission/${encodeURIComponent(task?.missionId || 'm1')}')">
               Continue Journey →
             </button>
           ` : `
-            <button class="btn btn-primary" onclick="navigateTo('/quiz/${taskId}')">
+            <button class="btn btn-primary" onclick="navigateTo('/quiz/${encodeURIComponent(taskId)}')">
               Try Again
             </button>
           `}
         </div>
       </div>
     </div>
-  `;
+  `);
 
   // Award XP
   gamification.awardXP(results.xpEarned);
@@ -2404,7 +2409,7 @@ function renderSimulation(taskId) {
           <p style="color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
             The simulation scenario for this task is not yet available.
           </p>
-          <button class="btn btn-outline" onclick="router.navigate('/task/${taskId}')">
+          <button class="btn btn-outline" onclick="router.navigate('/task/${encodeURIComponent(taskId)}')">
             ← Back to Task Overview
           </button>
         </div>
@@ -2520,7 +2525,7 @@ function renderSimulation(taskId) {
 
           <!-- Start Button -->
           <div style="text-align: center;">
-            <button class="btn btn-lg" onclick="startSimulation('${taskId}')" style="background: linear-gradient(135deg, var(--color-accent-gold), #D97706); color: white; min-width: 220px; font-size: var(--font-size-lg); padding: var(--space-lg) var(--space-2xl); box-shadow: var(--shadow-lg);">
+            <button class="btn btn-lg" onclick="startSimulation('${safeActionArg(taskId)}')" style="background: linear-gradient(135deg, var(--color-accent-gold), #D97706); color: white; min-width: 220px; font-size: var(--font-size-lg); padding: var(--space-lg) var(--space-2xl); box-shadow: var(--shadow-lg);">
               ${simAttempts > 0 ? '🔄 Replay Simulation' : '🚀 Start Simulation'} →
             </button>
           </div>
@@ -2529,10 +2534,10 @@ function renderSimulation(taskId) {
         <!-- Footer -->
         <div class="card-footer" style="padding: var(--space-xl); background: var(--color-background); border-top: 1px solid var(--color-gray-200);">
           <div style="display: flex; justify-content: space-between; gap: var(--space-md); flex-wrap: wrap;">
-            <button class="btn btn-outline" onclick="router.navigate('/task/${taskId}')">
+            <button class="btn btn-outline" onclick="router.navigate('/task/${encodeURIComponent(taskId)}')">
               ← Back to Task Overview
             </button>
-            <button class="btn btn-secondary" onclick="router.navigate('/quiz/${taskId}')">
+            <button class="btn btn-secondary" onclick="router.navigate('/quiz/${encodeURIComponent(taskId)}')">
               🏆 Review Quiz
             </button>
           </div>
@@ -2604,7 +2609,7 @@ function renderSimulationSession() {
   const isLastDecision = progress.current === progress.total;
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="simulation-session">
       <div class="card" style="max-width: 900px; margin: 0 auto;">
         <!-- Header -->
@@ -2664,7 +2669,7 @@ function renderSimulationSession() {
               return `
                 <div class="decision-option ${showingFeedback ? 'disabled' : ''} ${isSelected ? 'selected' : ''}"
                      onclick="${showingFeedback ? '' : `selectSimulationOption(${index})`}"
-                     style="padding: var(--space-lg); border: ${borderWidth} solid ${borderColor}; border-radius: var(--radius-lg); cursor: ${showingFeedback ? 'default' : 'pointer'}; background: ${bgColor}; transition: all 0.2s;">
+                     style="padding: var(--space-lg); border: ${borderWidth} solid ${borderColor}; border-radius: var(--radius-lg); cursor: ${showingFeedback ? 'default' : 'pointer'}; background: ${bgColor}; transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s, opacity 0.2s;">
                   <div style="display: flex; align-items: start; gap: var(--space-md);">
                     <div style="flex-shrink: 0; width: 28px; height: 28px; border: 2px solid ${borderColor}; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: ${isSelected ? borderColor : 'transparent'}; font-size: var(--font-size-sm); color: ${isSelected ? 'white' : 'var(--color-text-secondary)'}; font-weight: var(--font-weight-bold);">
                       ${isSelected ? '✓' : String.fromCharCode(65 + index)}
@@ -2674,7 +2679,7 @@ function renderSimulationSession() {
                     </div>
                   </div>
                 </div>
-              `;
+              `);
             }).join('')}
           </div>
 
@@ -2792,7 +2797,7 @@ function finishSimulationSession() {
   const rStyle = ratingStyles[results.rating] || ratingStyles['Stable'];
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="simulation-results">
       <div class="card" style="max-width: 800px; margin: 0 auto;">
         <!-- Header -->
@@ -2851,15 +2856,15 @@ function finishSimulationSession() {
 
         <!-- Footer -->
         <div class="card-footer" style="padding: var(--space-xl); display: flex; justify-content: space-between; gap: var(--space-md); flex-wrap: wrap;">
-          <button class="btn btn-outline" onclick="router.navigate('/task/${taskId}')">
+          <button class="btn btn-outline" onclick="router.navigate('/task/${encodeURIComponent(taskId)}')">
             ← Back to Task
           </button>
           <div style="display: flex; gap: var(--space-md);">
-            <button class="btn btn-secondary" onclick="router.navigate('/simulation/${taskId}')">
+            <button class="btn btn-secondary" onclick="router.navigate('/simulation/${encodeURIComponent(taskId)}')">
               🔄 Try Again
             </button>
             ${results.passed ? `
-              <button class="btn btn-primary" onclick="finishSimulation('${taskId}', ${results.score})">
+              <button class="btn btn-primary" onclick="finishSimulation('${safeActionArg(taskId)}', ${results.score})">
                 Complete Phase ✓
               </button>
             ` : ''}
@@ -2867,7 +2872,7 @@ function finishSimulationSession() {
         </div>
       </div>
     </div>
-  `;
+  `);
 
   // Update progress
   const progress = taskFlow.getTaskProgress(taskId);
@@ -3221,7 +3226,7 @@ function renderMission6MiniTest(domain) {
               </div>
             </div>
 
-            <button class="btn btn-primary btn-lg" onclick="startMiniTest('${domain}')">
+            <button class="btn btn-primary btn-lg" onclick="startMiniTest('${safeActionArg(domain)}')">
               🚀 Start Mini-Test
             </button>
           </div>
@@ -3321,7 +3326,7 @@ function renderMiniTestSession() {
   const seconds = timeRemaining % 60;
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="mini-test-session">
       <div class="card" style="max-width: 900px; margin: 0 auto;">
         <div class="card-header">
@@ -3377,8 +3382,8 @@ function renderMiniTestSession() {
 
               return `
                 <div class="quiz-option ${showingFeedback ? 'disabled' : ''}"
-                     onclick="${showingFeedback ? '' : `selectMiniTestAnswer('${option.id}')`}"
-                     style="padding: 1rem 1.5rem; border: ${borderWidth} solid ${borderColor}; border-radius: 8px; cursor: ${showingFeedback ? 'default' : 'pointer'}; transition: all 0.2s; background: ${bgColor};">
+                     onclick="${showingFeedback ? '' : `selectMiniTestAnswer('${safeActionArg(option.id)}')`}"
+                     style="padding: 1rem 1.5rem; border: ${borderWidth} solid ${borderColor}; border-radius: 8px; cursor: ${showingFeedback ? 'default' : 'pointer'}; transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s, opacity 0.2s; background: ${bgColor};">
                   <div style="display: flex; align-items: start; gap: 1rem;">
                     <div style="flex-shrink: 0; width: 24px; height: 24px; border: 2px solid ${borderColor}; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: ${isSelected || showCorrect ? borderColor : 'transparent'};">
                       ${(isSelected || showCorrect) ? '<span style="color: white; font-weight: bold;">✓</span>' : ''}
@@ -3391,7 +3396,7 @@ function renderMiniTestSession() {
                     </div>
                   </div>
                 </div>
-              `;
+              `);
             }).join('')}
           </div>
 
@@ -3552,7 +3557,7 @@ function finishMiniTest() {
   gamification.awardXP(xpEarned);
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="mini-test-session">
       <div class="card" style="max-width: 700px; margin: 0 auto; text-align: center;">
         <div class="card-header">
@@ -3599,13 +3604,13 @@ function finishMiniTest() {
           <button class="btn btn-secondary" onclick="navigateTo('/mission/m6')">
             ← Back to Mission 6
           </button>
-          <button class="btn btn-primary" onclick="startMiniTest('${domain}')">
+          <button class="btn btn-primary" onclick="startMiniTest('${safeActionArg(domain)}')">
             Try Again
           </button>
         </div>
       </div>
     </div>
-  `;
+  `);
 
   if (passed) {
     gamification.triggerConfetti(30);
@@ -3644,7 +3649,7 @@ function renderMockExamSession() {
   const seconds = timeRemaining % 60;
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="mock-exam-session">
       <div class="card" style="max-width: 1000px; margin: 0 auto;">
         <div class="card-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
@@ -3694,8 +3699,8 @@ function renderMockExamSession() {
 
               return `
                 <div class="quiz-option"
-                     onclick="selectMockExamAnswer('${option.id}')"
-                     style="padding: 1rem 1.5rem; border: ${borderWidth} solid ${borderColor}; border-radius: 8px; cursor: pointer; transition: all 0.2s; background: ${bgColor};">
+                     onclick="selectMockExamAnswer('${safeActionArg(option.id)}')"
+                     style="padding: 1rem 1.5rem; border: ${borderWidth} solid ${borderColor}; border-radius: 8px; cursor: pointer; transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s, opacity 0.2s; background: ${bgColor};">
                   <div style="display: flex; align-items: start; gap: 1rem;">
                     <div style="flex-shrink: 0; width: 24px; height: 24px; border: 2px solid ${borderColor}; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: ${isSelected ? borderColor : 'transparent'};">
                       ${isSelected ? '<span style="color: white; font-weight: bold;">✓</span>' : ''}
@@ -3706,7 +3711,7 @@ function renderMockExamSession() {
                     </div>
                   </div>
                 </div>
-              `;
+              `);
             }).join('')}
           </div>
         </div>
@@ -3748,7 +3753,7 @@ function showMockExamBreak(breakType) {
   const questionNumber = breakType === 'first' ? 60 : 120;
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="mock-exam-break">
       <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
         <div class="card-header">
@@ -3763,13 +3768,13 @@ function showMockExamBreak(breakType) {
           <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: 2rem;">
             💡 On the real PMP exam, you get two 10-minute breaks (after questions 60 and 120). The timer pauses during breaks.
           </p>
-          <button class="btn btn-primary btn-lg" onclick="resumeFromMockExamBreak('${breakType}')">
+          <button class="btn btn-primary btn-lg" onclick="resumeFromMockExamBreak('${safeActionArg(breakType)}')">
             Continue Exam →
           </button>
         </div>
       </div>
     </div>
-  `;
+  `);
 }
 
 /**
@@ -3840,7 +3845,7 @@ window.mockExamReview = function() {
   const flaggedCount = flaggedQuestions.size;
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="mock-exam-review">
       <div class="card" style="max-width: 1000px; margin: 0 auto;">
         <div class="card-header">
@@ -3875,7 +3880,7 @@ window.mockExamReview = function() {
                         onclick="navigateMockExam(${index})">
                   ${index + 1}${isFlagged ? ' 🚩' : ''}
                 </button>
-              `;
+              `);
             }).join('')}
           </div>
 
@@ -4026,7 +4031,7 @@ function showMockExamResults(exam) {
   const minutes = Math.floor((exam.timeSpent % 3600) / 60);
 
   const appView = document.getElementById('app-view');
-  appView.innerHTML = `
+  setSafeInnerHTML(appView, `
     <div class="mock-exam-results">
       <div class="card" style="max-width: 800px; margin: 0 auto;">
         <div class="card-header" style="background: ${exam.passed ? 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)' : 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}; color: white; text-align: center;">
@@ -4092,7 +4097,7 @@ function showMockExamResults(exam) {
         </div>
       </div>
     </div>
-  `;
+  `);
 }
 
 /**
@@ -4368,7 +4373,7 @@ function renderMission6Formulas() {
 
                       return `
                         <div class="card" style="padding: 1rem; cursor: pointer; border: 2px solid ${mastery.mastered ? 'var(--color-trust-green)' : 'var(--color-border)'};"
-                             onclick="showFormulaDetail('${formula.id}')">
+                             onclick="showFormulaDetail('${safeActionArg(formula.id)}')">
                           <div style="display: flex; justify-content: space-between; align-items: start;">
                             <div style="flex: 1;">
                               <h4 style="margin-bottom: 0.5rem;">
@@ -4432,7 +4437,7 @@ window.showFormulaDetail = function(formulaId) {
 
   const modal = document.createElement('div');
   modal.className = 'modal-backdrop';
-  modal.innerHTML = `
+  setSafeInnerHTML(modal, `
     <div class="modal" style="max-width: 700px;">
       <div class="modal-header">
         <h2 class="modal-title">${formula.name}</h2>
@@ -4474,12 +4479,12 @@ window.showFormulaDetail = function(formulaId) {
       </div>
       <div class="modal-footer">
         <button class="btn btn-secondary" onclick="this.closest('.modal-backdrop').remove()">Close</button>
-        <button class="btn btn-primary" onclick="practiceFormula('${formulaId}'); this.closest('.modal-backdrop').remove();">
+        <button class="btn btn-primary" onclick="practiceFormula('${safeActionArg(formulaId)}'); this.closest('.modal-backdrop').remove();">
           Practice This Formula
         </button>
       </div>
     </div>
-  `;
+  `);
 
   document.body.appendChild(modal);
 };
@@ -4627,12 +4632,12 @@ function showToast(message, type = 'info') {
 
   const toast = document.createElement('div');
   toast.className = `toast toast-${type}`;
-  toast.innerHTML = `
+  setSafeInnerHTML(toast, `
     <span class="toast-icon">${type === 'success' ? '✓' : 'ℹ'}</span>
     <div class="toast-content">
-      <div class="toast-message">${message}</div>
+      <div class="toast-message">${escapeHTML(message)}</div>
     </div>
-  `;
+  `);
 
   container.appendChild(toast);
 

@@ -34,6 +34,7 @@
 
 import state from './state.js';
 import { triggerConfetti, showXPGain } from './utils.js';
+import { escapeHTML, setSafeInnerHTML } from './security.js';
 
 /**
  * ============================================
@@ -364,23 +365,23 @@ class GamificationManager {
     // Create modal or toast notification
     const modal = document.createElement('div');
     modal.className = 'modal-backdrop';
-    modal.innerHTML = `
+    setSafeInnerHTML(modal, `
       <div class="modal level-up-animation">
         <div class="modal-body" style="text-align: center; padding: 3rem;">
-          <h2 style="font-size: 3rem; margin-bottom: 1rem;">${levelInfo.icon}</h2>
+          <h2 style="font-size: 3rem; margin-bottom: 1rem;">${escapeHTML(levelInfo.icon)}</h2>
           <h3 style="margin-bottom: 0.5rem;">Level Up!</h3>
           <p style="font-size: 2rem; font-weight: bold; color: var(--color-primary-blue); margin: 1rem 0;">
             Level ${levelInfo.level}
           </p>
           <p style="font-size: 1.5rem; color: var(--color-text-secondary); margin-bottom: 2rem;">
-            ${levelInfo.name}
+            ${escapeHTML(levelInfo.name)}
           </p>
           <button class="btn btn-primary" onclick="this.closest('.modal-backdrop').remove()">
             Continue Climbing! 🏔️
           </button>
         </div>
       </div>
-    `;
+    `);
 
     document.body.appendChild(modal);
 
@@ -427,16 +428,16 @@ class GamificationManager {
   showAchievementNotification(achievement) {
     const toast = document.createElement('div');
     toast.className = 'toast toast-success achievement-toast';
-    toast.innerHTML = `
+    setSafeInnerHTML(toast, `
       <div style="display: flex; align-items: center; gap: 1rem;">
-        <span style="font-size: 2rem;">${achievement.icon}</span>
+        <span style="font-size: 2rem;">${escapeHTML(achievement.icon)}</span>
         <div>
           <div class="toast-title">Achievement Unlocked!</div>
-          <div class="toast-message">${achievement.name}</div>
+          <div class="toast-message">${escapeHTML(achievement.name)}</div>
           <div style="font-size: 0.75rem; color: var(--color-text-muted);">+${achievement.xp} XP</div>
         </div>
       </div>
-    `;
+    `);
 
     const container = document.getElementById('toast-container');
     if (container) {

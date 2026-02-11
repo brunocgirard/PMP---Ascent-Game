@@ -17,6 +17,11 @@
 import state from './state.js';
 import gamification from './gamification.js';
 import missionManager from './missions.js';
+import { escapeHTML, escapeInlineHandlerArg, insertSafeAdjacentHTML } from './security.js';
+
+function safeActionArg(value) {
+  return escapeInlineHandlerArg(value);
+}
 
 class TaskFlowManager {
   constructor() {
@@ -94,11 +99,11 @@ class TaskFlowManager {
       <div class="task-landing-page">
         <div class="task-header">
           <div class="task-icon">${this.getTaskIcon(taskData)}</div>
-          <h1 class="task-title">${taskData.taskNumber || taskId}: ${taskData.name}</h1>
+          <h1 class="task-title">${escapeHTML(taskData.taskNumber || taskId)}: ${escapeHTML(taskData.name)}</h1>
           <div class="task-meta">
-            <span class="altitude-marker">📍 Altitude: ${this.getAltitudeRange(taskData)}</span>
+            <span class="altitude-marker">📍 Altitude: ${escapeHTML(this.getAltitudeRange(taskData))}</span>
             <span class="time-estimate">⏱️ Estimated: 15-20 minutes</span>
-            <span class="domain-badge">${taskData.domain || 'Core'} Domain</span>
+            <span class="domain-badge">${escapeHTML(taskData.domain || 'Core')} Domain</span>
           </div>
         </div>
 
@@ -130,7 +135,7 @@ class TaskFlowManager {
           <button class="btn btn-outline" onclick="router.back()">
             ← Back to Mission
           </button>
-          <button class="btn btn-lg btn-primary" onclick="taskFlow.startPhase('learn', '${taskId}')">
+          <button class="btn btn-lg btn-primary" onclick="taskFlow.startPhase('learn', '${safeActionArg(taskId)}')">
             ${hasResumePoint ? 'Continue Learning' : 'Start Learning'} →
           </button>
         </div>
@@ -329,10 +334,10 @@ class TaskFlowManager {
           <p>${resumeText}</p>
         </div>
         <div class="resume-actions">
-          <button class="btn btn-primary" onclick="taskFlow.startPhase('${resumePhase}', '${taskId}')">
+          <button class="btn btn-primary" onclick="taskFlow.startPhase('${safeActionArg(resumePhase)}', '${safeActionArg(taskId)}')">
             Resume →
           </button>
-          <button class="btn btn-outline btn-sm" onclick="taskFlow.resetTaskProgress('${taskId}')">
+          <button class="btn btn-outline btn-sm" onclick="taskFlow.resetTaskProgress('${safeActionArg(taskId)}')">
             Start Over
           </button>
         </div>
@@ -352,7 +357,7 @@ class TaskFlowManager {
   renderPhaseAction(phase, taskId, isUnlocked, isCompleted, isCurrent) {
     if (isCompleted) {
       return `
-        <button class="btn btn-success btn-full" onclick="taskFlow.startPhase('${phase}', '${taskId}')">
+        <button class="btn btn-success btn-full" onclick="taskFlow.startPhase('${safeActionArg(phase)}', '${safeActionArg(taskId)}')">
           ✓ Review Again
         </button>
       `;
@@ -362,7 +367,7 @@ class TaskFlowManager {
       return `
         <div class="locked-phase">
           <span class="lock-message">🔒 Complete previous phase first</span>
-          <button class="btn btn-outline btn-sm" onclick="taskFlow.skipToPhase('${phase}', '${taskId}')">
+          <button class="btn btn-outline btn-sm" onclick="taskFlow.skipToPhase('${safeActionArg(phase)}', '${safeActionArg(taskId)}')">
             Skip Ahead Anyway
           </button>
         </div>
@@ -373,7 +378,7 @@ class TaskFlowManager {
     const buttonClass = isCurrent ? 'btn-primary' : 'btn-outline';
 
     return `
-      <button class="btn ${buttonClass} btn-full" onclick="taskFlow.startPhase('${phase}', '${taskId}')">
+      <button class="btn ${buttonClass} btn-full" onclick="taskFlow.startPhase('${safeActionArg(phase)}', '${safeActionArg(taskId)}')">
         ${buttonText}
       </button>
     `;
@@ -615,7 +620,7 @@ class TaskFlowManager {
               <button class="btn btn-outline" onclick="this.closest('.modal-backdrop').remove()" style="min-width: 140px;">
                 ☕ Take a Break
               </button>
-              <button class="btn btn-lg btn-primary" onclick="taskFlow.startPhase('${nextPhase}', '${taskId}'); this.closest('.modal-backdrop').remove();" style="background: linear-gradient(135deg, var(--color-primary-blue), #2563EB); min-width: 180px;">
+              <button class="btn btn-lg btn-primary" onclick="taskFlow.startPhase('${safeActionArg(nextPhase)}', '${safeActionArg(taskId)}'); this.closest('.modal-backdrop').remove();" style="background: linear-gradient(135deg, var(--color-primary-blue), #2563EB); min-width: 180px;">
                 Continue to ${this.getPhaseConfig(nextPhase, {}).icon} ${this.getPhaseConfig(nextPhase, {}).title.split('(')[0].trim()} →
               </button>
             ` : `
@@ -646,7 +651,7 @@ class TaskFlowManager {
       </style>
     `;
 
-    document.body.insertAdjacentHTML('beforeend', modal);
+    insertSafeAdjacentHTML(document.body, 'beforeend', modal);
   }
 
   /**

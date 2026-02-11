@@ -3,9 +3,19 @@
  * Tracks and visualizes user learning progress, patterns, and achievements
  */
 
+const ANALYTICS_LIMITS = {
+  sessions: 200,
+  activitiesPerSession: 500,
+  achievements: 200,
+  dailyStatsDays: 370
+};
+
 class AnalyticsDashboard {
   constructor() {
+    this.saveTimeout = null;
+    this.saveDelayMs = 300;
     this.data = this.loadAnalyticsData();
+    this.trimData();
   }
 
   /**
@@ -50,11 +60,49 @@ class AnalyticsDashboard {
   /**
    * Save analytics data to localStorage
    */
-  saveAnalyticsData() {
+  saveAnalyticsData(immediate = false) {
+    if (!immediate) {
+      clearTimeout(this.saveTimeout);
+      this.saveTimeout = setTimeout(() => this.saveAnalyticsData(true), this.saveDelayMs);
+      return;
+    }
+
+    clearTimeout(this.saveTimeout);
+    this.trimData();
+
     try {
       localStorage.setItem('pmp_analytics', JSON.stringify(this.data));
     } catch (error) {
       console.error('Failed to save analytics data:', error);
+    }
+  }
+
+  trimData() {
+    this.data.sessions = Array.isArray(this.data.sessions)
+      ? this.data.sessions.slice(-ANALYTICS_LIMITS.sessions)
+      : [];
+
+    this.data.sessions.forEach(session => {
+      if (Array.isArray(session.activities) && session.activities.length > ANALYTICS_LIMITS.activitiesPerSession) {
+        session.activities = session.activities.slice(-ANALYTICS_LIMITS.activitiesPerSession);
+      }
+    });
+
+    if (Array.isArray(this.data.achievements)) {
+      const uniqueAchievements = [...new Set(this.data.achievements)];
+      this.data.achievements = uniqueAchievements.slice(-ANALYTICS_LIMITS.achievements);
+    } else {
+      this.data.achievements = [];
+    }
+
+    if (this.data.dailyStats && typeof this.data.dailyStats === 'object') {
+      const dailyKeys = Object.keys(this.data.dailyStats).sort();
+      if (dailyKeys.length > ANALYTICS_LIMITS.dailyStatsDays) {
+        const keysToDrop = dailyKeys.slice(0, dailyKeys.length - ANALYTICS_LIMITS.dailyStatsDays);
+        keysToDrop.forEach(key => delete this.data.dailyStats[key]);
+      }
+    } else {
+      this.data.dailyStats = {};
     }
   }
 
@@ -73,6 +121,7 @@ class AnalyticsDashboard {
     };
 
     this.data.sessions.push(session);
+    this.trimData();
     this.currentSession = session;
     this.saveAnalyticsData();
   }
@@ -80,7 +129,7 @@ class AnalyticsDashboard {
   /**
    * Track session end
    */
-  endSession() {
+  endSession(forceSave = false) {
     if (!this.currentSession) return;
 
     this.currentSession.endTime = new Date().toISOString();
@@ -90,7 +139,7 @@ class AnalyticsDashboard {
 
     this.updateDailyStats(this.currentSession);
     this.updateStudyPatterns();
-    this.saveAnalyticsData();
+    this.saveAnalyticsData(forceSave);
   }
 
   /**
@@ -108,6 +157,9 @@ class AnalyticsDashboard {
     };
 
     this.currentSession.activities.push(activity);
+    if (this.currentSession.activities.length > ANALYTICS_LIMITS.activitiesPerSession) {
+      this.currentSession.activities = this.currentSession.activities.slice(-ANALYTICS_LIMITS.activitiesPerSession);
+    }
 
     // Update totals
     switch (type) {
@@ -323,7 +375,7 @@ class AnalyticsDashboard {
                     min-height: ${day.stats.xpEarned > 0 ? '10px' : '0'};
                     background: linear-gradient(180deg, var(--color-primary-blue), var(--color-trust-green));
                     border-radius: var(--radius-md) var(--radius-md) 0 0;
-                    transition: all 0.3s ease;
+                    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
                   "></div>
                   <div style="font-size: var(--font-size-sm); color: var(--color-text-secondary); font-weight: var(--font-weight-semibold);">
                     ${day.dayName}
@@ -414,7 +466,7 @@ if (document.readyState === 'loading') {
 
 // Auto-end session before page unload
 window.addEventListener('beforeunload', () => {
-  analyticsDashboard.endSession();
+  analyticsDashboard.endSession(true);
 });
 
 // Export for use in other modules

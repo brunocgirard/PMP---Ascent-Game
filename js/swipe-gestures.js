@@ -3,6 +3,8 @@
  * Enables intuitive swipe controls for flashcards and mobile interactions
  */
 
+import { setSafeInnerHTML } from './security.js';
+
 class SwipeGestureHandler {
   constructor(element, options = {}) {
     this.element = element;
@@ -22,22 +24,31 @@ class SwipeGestureHandler {
     this.touchEndTime = 0;
     this.isSwiping = false;
 
+    this.boundHandleTouchStart = this.handleTouchStart.bind(this);
+    this.boundHandleTouchMove = this.handleTouchMove.bind(this);
+    this.boundHandleTouchEnd = this.handleTouchEnd.bind(this);
+    this.boundHandleTouchCancel = this.handleTouchCancel.bind(this);
+    this.boundHandleMouseDown = this.handleMouseDown.bind(this);
+    this.boundHandleMouseMove = this.handleMouseMove.bind(this);
+    this.boundHandleMouseUp = this.handleMouseUp.bind(this);
+    this.boundHandleMouseLeave = this.handleMouseLeave.bind(this);
+
     this.init();
   }
 
   init() {
     // Touch events
-    this.element.addEventListener('touchstart', this.handleTouchStart.bind(this), { passive: !this.options.preventScroll });
-    this.element.addEventListener('touchmove', this.handleTouchMove.bind(this), { passive: !this.options.preventScroll });
-    this.element.addEventListener('touchend', this.handleTouchEnd.bind(this));
-    this.element.addEventListener('touchcancel', this.handleTouchCancel.bind(this));
+    this.element.addEventListener('touchstart', this.boundHandleTouchStart, { passive: !this.options.preventScroll });
+    this.element.addEventListener('touchmove', this.boundHandleTouchMove, { passive: !this.options.preventScroll });
+    this.element.addEventListener('touchend', this.boundHandleTouchEnd);
+    this.element.addEventListener('touchcancel', this.boundHandleTouchCancel);
 
     // Mouse events for desktop testing
     if (this.options.enableMouse) {
-      this.element.addEventListener('mousedown', this.handleMouseDown.bind(this));
-      this.element.addEventListener('mousemove', this.handleMouseMove.bind(this));
-      this.element.addEventListener('mouseup', this.handleMouseUp.bind(this));
-      this.element.addEventListener('mouseleave', this.handleMouseLeave.bind(this));
+      this.element.addEventListener('mousedown', this.boundHandleMouseDown);
+      this.element.addEventListener('mousemove', this.boundHandleMouseMove);
+      this.element.addEventListener('mouseup', this.boundHandleMouseUp);
+      this.element.addEventListener('mouseleave', this.boundHandleMouseLeave);
     }
   }
 
@@ -206,16 +217,16 @@ class SwipeGestureHandler {
   }
 
   destroy() {
-    this.element.removeEventListener('touchstart', this.handleTouchStart);
-    this.element.removeEventListener('touchmove', this.handleTouchMove);
-    this.element.removeEventListener('touchend', this.handleTouchEnd);
-    this.element.removeEventListener('touchcancel', this.handleTouchCancel);
+    this.element.removeEventListener('touchstart', this.boundHandleTouchStart);
+    this.element.removeEventListener('touchmove', this.boundHandleTouchMove);
+    this.element.removeEventListener('touchend', this.boundHandleTouchEnd);
+    this.element.removeEventListener('touchcancel', this.boundHandleTouchCancel);
 
     if (this.options.enableMouse) {
-      this.element.removeEventListener('mousedown', this.handleMouseDown);
-      this.element.removeEventListener('mousemove', this.handleMouseMove);
-      this.element.removeEventListener('mouseup', this.handleMouseUp);
-      this.element.removeEventListener('mouseleave', this.handleMouseLeave);
+      this.element.removeEventListener('mousedown', this.boundHandleMouseDown);
+      this.element.removeEventListener('mousemove', this.boundHandleMouseMove);
+      this.element.removeEventListener('mouseup', this.boundHandleMouseUp);
+      this.element.removeEventListener('mouseleave', this.boundHandleMouseLeave);
     }
   }
 }
@@ -381,7 +392,7 @@ function resetCard(element) {
 function showSwipeHint() {
   const hint = document.createElement('div');
   hint.className = 'swipe-hint-overlay';
-  hint.innerHTML = `
+  setSafeInnerHTML(hint, `
     <div style="background: rgba(0, 0, 0, 0.9); color: white; padding: 2rem; border-radius: 1rem; max-width: 400px; text-align: center;">
       <h3 style="margin: 0 0 1rem 0; font-size: 1.5rem;">💡 Swipe Gestures Enabled!</h3>
       <div style="display: flex; justify-content: space-around; margin-bottom: 1.5rem;">
@@ -401,11 +412,11 @@ function showSwipeHint() {
           <div style="font-size: 0.875rem; margin-top: 0.5rem;">Swipe Right<br>Easy</div>
         </div>
       </div>
-      <button onclick="this.closest('.swipe-hint-overlay').remove()" style="background: #3B82F6; color: white; border: none; padding: 0.75rem 2rem; border-radius: 0.5rem; font-size: 1rem; cursor: pointer;">
+      <button class="swipe-hint-dismiss" style="background: #3B82F6; color: white; border: none; padding: 0.75rem 2rem; border-radius: 0.5rem; font-size: 1rem; cursor: pointer;">
         Got it!
       </button>
     </div>
-  `;
+  `);
   hint.style.cssText = `
     position: fixed;
     top: 0;
@@ -419,6 +430,11 @@ function showSwipeHint() {
     background: rgba(0, 0, 0, 0.5);
     animation: fadeIn 0.3s ease;
   `;
+
+  const dismissButton = hint.querySelector('.swipe-hint-dismiss');
+  if (dismissButton) {
+    dismissButton.addEventListener('click', () => hint.remove(), { once: true });
+  }
 
   document.body.appendChild(hint);
 

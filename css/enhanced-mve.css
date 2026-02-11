@@ -138,7 +138,7 @@
   border: 2px solid #e2e8f0;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
 
 .quiz-option:hover {
@@ -713,7 +713,7 @@
   transition: border-color 0.2s ease;
 }
 
-.form-control:focus {
+.form-control:focus-visible {
   outline: none;
   border-color: #ec4899;
 }
@@ -904,7 +904,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
 
 .checklist-item:hover {
@@ -983,7 +983,7 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
   text-decoration: none;
   font-family: inherit;
 }

@@ -144,7 +144,7 @@
   margin-bottom: var(--space-lg);
   box-shadow: var(--shadow);
   border: 2px solid transparent;
-  transition: all var(--transition-base);
+  transition: background-color var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base), opacity var(--transition-base), color var(--transition-base);
   position: relative;
   overflow: hidden;
 }

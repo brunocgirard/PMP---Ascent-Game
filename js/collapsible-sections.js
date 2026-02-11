@@ -18,6 +18,7 @@ class CollapsibleSectionManager {
     };
 
     this.sections = [];
+    this.saveStateTimeout = null;
     this.init();
   }
 
@@ -45,7 +46,8 @@ class CollapsibleSectionManager {
 
       // Setup click handler
       header.style.cursor = 'pointer';
-      header.addEventListener('click', () => this.toggle(sectionId));
+      const clickHandler = () => this.toggle(sectionId);
+      header.addEventListener('click', clickHandler);
 
       // Keyboard accessibility
       header.setAttribute('tabindex', '0');
@@ -59,12 +61,13 @@ class CollapsibleSectionManager {
 
       header.id = `header-${sectionId}`;
 
-      header.addEventListener('keydown', (e) => {
+      const keydownHandler = (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
           this.toggle(sectionId);
         }
-      });
+      };
+      header.addEventListener('keydown', keydownHandler);
 
       this.sections.push({
         id: sectionId,
@@ -72,7 +75,9 @@ class CollapsibleSectionManager {
         header,
         content,
         icon,
-        isOpen: true
+        isOpen: true,
+        clickHandler,
+        keydownHandler
       });
     });
   }
@@ -177,6 +182,12 @@ class CollapsibleSectionManager {
 
   saveState() {
     if (!this.options.rememberState) return;
+    clearTimeout(this.saveStateTimeout);
+    this.saveStateTimeout = setTimeout(() => this.persistState(), 150);
+  }
+
+  persistState() {
+    if (!this.options.rememberState) return;
 
     const state = {};
     this.sections.forEach(section => {
@@ -218,9 +229,10 @@ class CollapsibleSectionManager {
   }
 
   destroy() {
+    clearTimeout(this.saveStateTimeout);
     this.sections.forEach(section => {
-      section.header.removeEventListener('click', this.toggle);
-      section.header.removeEventListener('keydown', this.toggle);
+      section.header.removeEventListener('click', section.clickHandler);
+      section.header.removeEventListener('keydown', section.keydownHandler);
     });
     this.sections = [];
   }
@@ -262,7 +274,7 @@ function makeCollapsible(containerSelector, options = {}) {
     // Add icon
     const icon = document.createElement('span');
     icon.className = 'collapsible-icon';
-    icon.innerHTML = '▼';
+    icon.textContent = '▼';
     icon.style.marginRight = '0.5rem';
     icon.style.transition = 'transform 0.3s ease';
 
@@ -323,12 +335,12 @@ function addExpandCollapseControls(manager, container) {
   const expandBtn = document.createElement('button');
   expandBtn.textContent = '📖 Expand All';
   expandBtn.className = 'btn btn-sm btn-outline';
-  expandBtn.onclick = () => manager.openAll();
+  expandBtn.addEventListener('click', () => manager.openAll());
 
   const collapseBtn = document.createElement('button');
   collapseBtn.textContent = '📕 Collapse All';
   collapseBtn.className = 'btn btn-sm btn-outline';
-  collapseBtn.onclick = () => manager.closeAll();
+  collapseBtn.addEventListener('click', () => manager.closeAll());
 
   controls.appendChild(expandBtn);
   controls.appendChild(collapseBtn);

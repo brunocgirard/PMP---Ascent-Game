@@ -73,7 +73,7 @@
     height: 3px;
     background-color: var(--color-text-primary);
     border-radius: 2px;
-    transition: all var(--transition-fast);
+    transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast), opacity var(--transition-fast);
   }
 
   /* Animated hamburger to X */
@@ -257,7 +257,7 @@
     text-decoration: none;
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
-    transition: all var(--transition-fast);
+    transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast), opacity var(--transition-fast);
     border-radius: var(--radius-md);
     position: relative;
   }
@@ -1527,7 +1527,7 @@ figcaption {
   object-fit: cover;
   border-radius: var(--radius-md);
   border: 2px solid var(--color-gray-200);
-  transition: all var(--transition-fast);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast), opacity var(--transition-fast);
 }
 
 .thumbnail:hover {

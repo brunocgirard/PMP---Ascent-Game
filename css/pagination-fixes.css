@@ -216,8 +216,8 @@
    ======================================== */
 
 /* Ensure focus is visible when navigating */
-.section-navigation-footer .btn:focus,
-.section-dots > div:focus {
+.section-navigation-footer .btn:focus-visible,
+.section-dots > div:focus-visible {
   outline: 3px solid var(--color-primary-blue);
   outline-offset: 2px;
 }
@@ -225,7 +225,7 @@
 /* High contrast for dots */
 .section-dots > div {
   border: 2px solid transparent;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
 }
 
 .section-dots > div:hover {

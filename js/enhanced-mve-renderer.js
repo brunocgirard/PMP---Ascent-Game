@@ -3,6 +3,12 @@
  * Renders Enhanced MVE learn content - supports both paginated and full view
  */
 
+import { escapeHTML, escapeInlineHandlerArg, setSafeInnerHTML } from './security.js';
+
+function safeActionArg(value) {
+  return escapeInlineHandlerArg(value);
+}
+
 // Section configuration
 const LEARN_SECTIONS = [
   { id: 0, name: 'Quick Scenario Challenge', icon: '⚡', key: 'quickScenarioChallenge', renderer: 'renderQuickScenarioChallenge' },
@@ -139,11 +145,11 @@ function renderPaginatedSection(taskId, content, taskData, sectionIndex) {
       <div class="section-navigation-footer" style="position: sticky; bottom: 0; left: 0; right: 0; background: white; padding: var(--space-md); border-top: 2px solid var(--color-gray-200); box-shadow: 0 -2px 8px rgba(0,0,0,0.1); z-index: 1040;" data-version="fixed-v2">
         <div style="max-width: 100%; margin: 0; display: flex; justify-content: space-between; align-items: center; gap: var(--space-sm);">
           ${sectionIndex > 0 ? `
-            <button class="btn btn-outline" onclick="navigateToSection('${taskId}', ${sectionIndex - 1})" style="flex: 1; max-width: 48%; min-height: 48px;">
+            <button class="btn btn-outline" onclick="navigateToSection('${safeActionArg(taskId)}', ${sectionIndex - 1})" style="flex: 1; max-width: 48%; min-height: 48px;">
               ← Previous
             </button>
           ` : `
-            <button class="btn btn-outline" onclick="router.navigate('/task/${taskId}')" style="flex: 1; max-width: 48%; min-height: 48px;">
+            <button class="btn btn-outline" onclick="router.navigate('/task/${encodeURIComponent(taskId)}')" style="flex: 1; max-width: 48%; min-height: 48px;">
               ← Overview
             </button>
           `}
@@ -157,11 +163,11 @@ function renderPaginatedSection(taskId, content, taskData, sectionIndex) {
           </div>
 
           ${sectionIndex < totalSections - 1 ? `
-            <button class="btn btn-primary" onclick="navigateToSection('${taskId}', ${sectionIndex + 1})" style="flex: 1; max-width: 48%; min-height: 48px;">
+            <button class="btn btn-primary" onclick="navigateToSection('${safeActionArg(taskId)}', ${sectionIndex + 1})" style="flex: 1; max-width: 48%; min-height: 48px;">
               Next →
             </button>
           ` : `
-            <button class="btn btn-primary" onclick="completeLearnPhase('${taskId}')" style="flex: 1; max-width: 48%; min-height: 48px; background: linear-gradient(135deg, var(--color-trust-green), #059669); color: white;">
+            <button class="btn btn-primary" onclick="completeLearnPhase('${safeActionArg(taskId)}')" style="flex: 1; max-width: 48%; min-height: 48px; background: linear-gradient(135deg, var(--color-trust-green), #059669); color: white;">
               Complete ✓
             </button>
           `}
@@ -172,7 +178,7 @@ function renderPaginatedSection(taskId, content, taskData, sectionIndex) {
       <div class="section-dots" style="position: fixed; right: var(--space-lg); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: var(--space-xs); z-index: 50;">
         ${LEARN_SECTIONS.map((section, idx) => `
           <div
-            onclick="navigateToSection('${taskId}', ${idx})"
+            onclick="navigateToSection('${safeActionArg(taskId)}', ${idx})"
             title="${section.name}"
             style="
               width: ${idx === sectionIndex ? '12px' : '8px'};
@@ -180,7 +186,7 @@ function renderPaginatedSection(taskId, content, taskData, sectionIndex) {
               border-radius: 50%;
               background: ${idx === sectionIndex ? 'var(--color-primary-blue)' : 'var(--color-gray-300)'};
               cursor: pointer;
-              transition: all 0.3s ease;
+              transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
               ${idx < sectionIndex ? 'background: var(--color-trust-green);' : ''}
             "
           ></div>
@@ -217,7 +223,7 @@ function renderQuickScenarioChallenge(taskId, scenario) {
           </label>
         `).join('')}
 
-        <button type="button" class="btn btn-primary" onclick="checkScenarioAnswer('scenario-1-${taskId}', '${scenario.correctAnswer}', '${taskId}')">
+        <button type="button" class="btn btn-primary" onclick="checkScenarioAnswer('scenario-1-${safeActionArg(taskId)}', '${safeActionArg(scenario.correctAnswer)}', '${safeActionArg(taskId)}')">
           Check My Answer
         </button>
       </form>
@@ -464,7 +470,7 @@ function renderSecondScenario(taskId, scenario) {
           </label>
         `).join('')}
 
-        <button type="button" class="btn btn-primary" onclick="checkScenarioAnswer('scenario-2-${taskId}', '${scenario.correctAnswer}', '${taskId}', true)">
+        <button type="button" class="btn btn-primary" onclick="checkScenarioAnswer('scenario-2-${safeActionArg(taskId)}', '${safeActionArg(scenario.correctAnswer)}', '${safeActionArg(taskId)}', true)">
           Check Answer
         </button>
       </form>
@@ -540,7 +546,7 @@ function renderPersonalApplication(taskId, application) {
             </div>
           `).join('') || ''}
 
-          <button type="button" class="btn btn-primary" onclick="savePersonalReflection('${taskId}')">
+          <button type="button" class="btn btn-primary" onclick="savePersonalReflection('${safeActionArg(taskId)}')">
             💾 Save My Reflection
           </button>
         </form>
@@ -626,7 +632,7 @@ function renderSpacedRepetition(taskId, repetition) {
               </ul>
             </div>
             ${review.reminderButton !== false ? `
-              <button class="btn btn-sm btn-outline" onclick="setReminder('${taskId}', ${idx})">
+              <button class="btn btn-sm btn-outline" onclick="setReminder('${safeActionArg(taskId)}', ${idx})">
                 🔔 Set Reminder
               </button>
             ` : ''}
@@ -636,7 +642,7 @@ function renderSpacedRepetition(taskId, repetition) {
 
       ${repetition.calendarIntegration ? `
         <div class="repetition-calendar">
-          <button class="btn btn-primary" onclick="addAllToCalendar('${taskId}')">
+          <button class="btn btn-primary" onclick="addAllToCalendar('${safeActionArg(taskId)}')">
             📆 Add All to Calendar
           </button>
           <p class="calendar-note">Adds review events to Google Calendar / Outlook</p>
@@ -682,7 +688,7 @@ function renderMissionChecklist(taskId, checklist) {
               ${item.description ? `<span class="item-desc">${item.description}</span>` : ''}
             </label>
             ${item.ctaButton ? `
-              <button class="btn btn-sm btn-primary" onclick="navigateTo('${item.link || '#'}')">
+              <button class="btn btn-sm btn-primary" onclick="navigateTo('${safeActionArg(item.link || '#')}')">
                 ${item.ctaButton} →
               </button>
             ` : ''}
@@ -705,7 +711,7 @@ function renderMissionChecklist(taskId, checklist) {
 
       ${checklist.nextActionPrimary ? `
         <div class="next-action-primary">
-          <button class="btn btn-lg btn-primary" onclick="navigateTo('${checklist.nextActionPrimary.link}')">
+          <button class="btn btn-lg btn-primary" onclick="navigateTo('${safeActionArg(checklist.nextActionPrimary.link)}')">
             ${checklist.nextActionPrimary.text} →
           </button>
         </div>
@@ -784,22 +790,22 @@ function checkScenarioAnswer(formId, correctAnswer, taskId, isSecondScenario = f
   });
 
   if (isCorrect) {
-    feedbackDiv.innerHTML = `
+    setSafeInnerHTML(feedbackDiv, `
       <div class="feedback-correct">
         <h5>🎉 Excellent! ${isSecondScenario ? "You're applying the framework!" : "Correct!"}</h5>
         ${isSecondScenario ? `<p class="xp-reward">+10 XP Bonus for applying the framework! 🎯</p>` : ''}
       </div>
-    `;
+    `);
     if (isSecondScenario && typeof window.awardXP === 'function') {
       window.awardXP(10, 'scenario-bonus');
     }
   } else {
-    feedbackDiv.innerHTML = `
+    setSafeInnerHTML(feedbackDiv, `
       <div class="feedback-incorrect">
-        <h5>📚 Not quite! The correct answer is ${correctAnswer.toUpperCase()}.</h5>
-        <p>The correct option is now highlighted in green above. Review the framework to understand why ${correctAnswer.toUpperCase()} is the PMI way.</p>
+        <h5>📚 Not quite! The correct answer is ${escapeHTML(correctAnswer.toUpperCase())}.</h5>
+        <p>The correct option is now highlighted in green above. Review the framework to understand why ${escapeHTML(correctAnswer.toUpperCase())} is the PMI way.</p>
       </div>
-    `;
+    `);
   }
 
   feedbackDiv.style.display = 'block';
@@ -869,12 +875,18 @@ function setReminder(taskId, dayIndex) {
 
   // Save reminder to localStorage
   const reminders = JSON.parse(localStorage.getItem('pmp_reminders') || '[]');
-  reminders.push({
+  const reminder = {
     taskId,
     date: reminderDate.toISOString(),
     type: `review-${dayIndex}`
-  });
-  localStorage.setItem('pmp_reminders', JSON.stringify(reminders));
+  };
+  const existingIndex = reminders.findIndex(r => r.taskId === taskId && r.type === reminder.type);
+  if (existingIndex >= 0) {
+    reminders[existingIndex] = reminder;
+  } else {
+    reminders.push(reminder);
+  }
+  localStorage.setItem('pmp_reminders', JSON.stringify(reminders.slice(-250)));
 
   alert(`✅ Reminder set for ${reminderDate.toLocaleDateString()}`);
 }

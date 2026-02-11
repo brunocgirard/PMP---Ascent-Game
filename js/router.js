@@ -22,6 +22,8 @@
  * - 404 handling
  */
 
+import { escapeHTML, setSafeInnerHTML } from './security.js';
+
 /**
  * Single Page Application Router
  * Hash-based routing for client-side navigation
@@ -214,7 +216,7 @@ class Router {
     }
 
     if (typeof content === 'string') {
-      this.viewContainer.innerHTML = content;
+      setSafeInnerHTML(this.viewContainer, content);
     } else if (content instanceof HTMLElement) {
       this.viewContainer.innerHTML = '';
       this.viewContainer.appendChild(content);
@@ -273,7 +275,7 @@ class Router {
         <h1 style="font-size: 4rem; margin-bottom: 1rem;">⚠️</h1>
         <h2 style="margin-bottom: 1rem;">Something Went Wrong</h2>
         <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">
-          ${message}
+          ${escapeHTML(message)}
         </p>
         <button onclick="window.location.reload()" class="btn btn-primary">
           Reload Page

@@ -23,11 +23,26 @@
  * Observable State Manager
  * Implements the Observer pattern for reactive state updates
  */
+const STATE_LIMITS = {
+  quizHistory: 500,
+  mockExams: 100,
+  completedTopics: 1000,
+  completedMissions: 200,
+  achievements: 300,
+  miniTests: 300
+};
+
 class StateManager {
   constructor() {
     this.state = this.getInitialState();
     this.listeners = new Map(); // key: stateKey, value: Set of callback functions
+    this.saveTimeout = null;
+    this.saveDelayMs = 250;
     this.loadFromStorage();
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('beforeunload', () => this.saveToStorage(true));
+    }
   }
 
   /**
@@ -195,12 +210,59 @@ class StateManager {
     this.set(path, newValue, save);
   }
 
+  limitArray(array, max) {
+    if (!Array.isArray(array)) return [];
+    if (array.length <= max) return array;
+    return array.slice(-max);
+  }
+
+  limitUniqueArray(array, max) {
+    if (!Array.isArray(array)) return [];
+    const seen = new Set();
+    const deduped = [];
+    for (let i = array.length - 1; i >= 0; i--) {
+      const value = array[i];
+      if (!seen.has(value)) {
+        seen.add(value);
+        deduped.push(value);
+      }
+    }
+    deduped.reverse();
+    if (deduped.length <= max) return deduped;
+    return deduped.slice(-max);
+  }
+
+  getBoundedStateSnapshot() {
+    return {
+      ...this.state,
+      progress: {
+        ...this.state.progress,
+        completedTopics: this.limitUniqueArray(this.state.progress.completedTopics, STATE_LIMITS.completedTopics),
+        completedMissions: this.limitUniqueArray(this.state.progress.completedMissions, STATE_LIMITS.completedMissions),
+        achievements: this.limitUniqueArray(this.state.progress.achievements, STATE_LIMITS.achievements),
+        miniTests: this.limitArray(this.state.progress.miniTests, STATE_LIMITS.miniTests)
+      },
+      quizHistory: this.limitArray(this.state.quizHistory, STATE_LIMITS.quizHistory),
+      mockExams: this.limitArray(this.state.mockExams, STATE_LIMITS.mockExams)
+    };
+  }
+
   /**
    * Save entire state to localStorage
    */
-  saveToStorage() {
+  saveToStorage(immediate = false) {
+    if (!immediate) {
+      clearTimeout(this.saveTimeout);
+      this.saveTimeout = setTimeout(() => this.saveToStorage(true), this.saveDelayMs);
+      return;
+    }
+
+    clearTimeout(this.saveTimeout);
+
     try {
-      localStorage.setItem('pmpPrepState', JSON.stringify(this.state));
+      const boundedState = this.getBoundedStateSnapshot();
+      this.state = boundedState;
+      localStorage.setItem('pmpPrepState', JSON.stringify(boundedState));
     } catch (error) {
       console.error('Failed to save state to localStorage:', error);
     }
@@ -216,6 +278,7 @@ class StateManager {
         const loadedState = JSON.parse(saved);
         // Merge with initial state to ensure all keys exist
         this.state = this.deepMerge(this.getInitialState(), loadedState);
+        this.state = this.getBoundedStateSnapshot();
 
         // Update streak on load
         this.updateStreak();
@@ -254,7 +317,7 @@ class StateManager {
   reset() {
     if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
       this.state = this.getInitialState();
-      this.saveToStorage();
+      this.saveToStorage(true);
       this.notify('*', this.state);
       console.log('State reset to initial values');
     }
@@ -277,7 +340,8 @@ class StateManager {
     try {
       const importedState = JSON.parse(jsonString);
       this.state = this.deepMerge(this.getInitialState(), importedState);
-      this.saveToStorage();
+      this.state = this.getBoundedStateSnapshot();
+      this.saveToStorage(true);
       this.notify('*', this.state);
       console.log('State imported successfully');
       return true;
@@ -411,11 +475,14 @@ class StateManager {
       ...quizData,
       date: new Date().toISOString()
     });
+    this.state.quizHistory = this.limitArray(this.state.quizHistory, STATE_LIMITS.quizHistory);
 
     this.set('progress.totalQuestionsAnswered',
-      this.state.progress.totalQuestionsAnswered + quizData.totalQuestions);
+      this.state.progress.totalQuestionsAnswered + quizData.totalQuestions,
+      false);
     this.set('progress.correctAnswers',
-      this.state.progress.correctAnswers + quizData.score);
+      this.state.progress.correctAnswers + quizData.score,
+      false);
 
     this.saveToStorage();
     this.notify('quizHistory', this.state.quizHistory);
@@ -428,6 +495,10 @@ class StateManager {
   unlockAchievement(achievementId) {
     if (!this.state.progress.achievements.includes(achievementId)) {
       this.state.progress.achievements.push(achievementId);
+      this.state.progress.achievements = this.limitUniqueArray(
+        this.state.progress.achievements,
+        STATE_LIMITS.achievements
+      );
       this.saveToStorage();
       this.notify('progress', this.state.progress);
       return true; // Achievement newly unlocked
@@ -442,6 +513,10 @@ class StateManager {
   completeMission(missionId) {
     if (!this.state.progress.completedMissions.includes(missionId)) {
       this.state.progress.completedMissions.push(missionId);
+      this.state.progress.completedMissions = this.limitUniqueArray(
+        this.state.progress.completedMissions,
+        STATE_LIMITS.completedMissions
+      );
       this.saveToStorage();
       this.notify('progress', this.state.progress);
     }
@@ -454,6 +529,10 @@ class StateManager {
   completeTopic(topicId) {
     if (!this.state.progress.completedTopics.includes(topicId)) {
       this.state.progress.completedTopics.push(topicId);
+      this.state.progress.completedTopics = this.limitUniqueArray(
+        this.state.progress.completedTopics,
+        STATE_LIMITS.completedTopics
+      );
       this.saveToStorage();
       this.notify('progress', this.state.progress);
     }

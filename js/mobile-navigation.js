@@ -4,6 +4,8 @@
  * Ascent to PMP: The Summit Quest
  */
 
+import { setSafeInnerHTML } from './security.js';
+
 class MobileNavigation {
   constructor() {
     this.menuToggle = null;
@@ -12,6 +14,15 @@ class MobileNavigation {
     this.isStatsOpen = false;
     this.bottomNavLinks = [];
     this.topNavLinks = [];
+    this.bottomNavClickHandlers = new Map();
+    this.touchStartX = 0;
+    this.handleResizeListener = null;
+    this.handleHashChangeListener = null;
+    this.menuToggleClickListener = null;
+    this.statsBackdropClickListener = null;
+    this.documentKeydownListener = null;
+    this.statsTouchStartListener = null;
+    this.statsTouchEndListener = null;
     this.init();
   }
 
@@ -23,12 +34,6 @@ class MobileNavigation {
     this.attachEventListeners();
     this.syncActiveLinks();
     this.handleResize();
-
-    // Listen for window resize
-    window.addEventListener('resize', () => this.handleResize());
-
-    // Listen for route changes to update active links
-    window.addEventListener('hashchange', () => this.syncActiveLinks());
 
     console.log('Mobile Navigation initialized');
   }
@@ -57,13 +62,13 @@ class MobileNavigation {
     toggleButton.className = 'menu-toggle';
     toggleButton.setAttribute('aria-label', 'Toggle stats menu');
     toggleButton.setAttribute('aria-expanded', 'false');
-    toggleButton.innerHTML = `
+    setSafeInnerHTML(toggleButton, `
       <div class="menu-icon">
         <span></span>
         <span></span>
         <span></span>
       </div>
-    `;
+    `);
 
     // Insert after brand
     const brand = header.querySelector('.brand');
@@ -104,9 +109,9 @@ class MobileNavigation {
     // Add header to stats panel
     const header = document.createElement('div');
     header.className = 'stats-panel-header';
-    header.innerHTML = `
+    setSafeInnerHTML(header, `
       <h2 class="stats-panel-title">📊 Your Progress</h2>
-    `;
+    `);
 
     this.statsPanel.insertBefore(header, this.statsPanel.firstChild);
   }
@@ -123,7 +128,7 @@ class MobileNavigation {
     bottomNav.setAttribute('role', 'navigation');
     bottomNav.setAttribute('aria-label', 'Bottom navigation');
 
-    bottomNav.innerHTML = `
+    setSafeInnerHTML(bottomNav, `
       <ul class="bottom-nav-menu">
         <li class="bottom-nav-item">
           <a href="#/" class="bottom-nav-link" data-route="/">
@@ -150,7 +155,7 @@ class MobileNavigation {
           </a>
         </li>
       </ul>
-    `;
+    `);
 
     document.body.appendChild(bottomNav);
     this.bottomNavLinks = Array.from(bottomNav.querySelectorAll('.bottom-nav-link'));
@@ -160,27 +165,33 @@ class MobileNavigation {
    * Attach event listeners
    */
   attachEventListeners() {
+    this.handleResizeListener = this.handleResizeListener || (() => this.handleResize());
+    this.handleHashChangeListener = this.handleHashChangeListener || (() => this.syncActiveLinks());
+    window.addEventListener('resize', this.handleResizeListener);
+    window.addEventListener('hashchange', this.handleHashChangeListener);
+
     // Menu toggle
     if (this.menuToggle) {
-      this.menuToggle.addEventListener('click', (e) => {
+      this.menuToggleClickListener = this.menuToggleClickListener || ((e) => {
         e.stopPropagation();
         this.toggleStats();
       });
+      this.menuToggle.addEventListener('click', this.menuToggleClickListener);
     }
 
     // Backdrop click
     if (this.statsBackdrop) {
-      this.statsBackdrop.addEventListener('click', () => {
-        this.closeStats();
-      });
+      this.statsBackdropClickListener = this.statsBackdropClickListener || (() => this.closeStats());
+      this.statsBackdrop.addEventListener('click', this.statsBackdropClickListener);
     }
 
     // ESC key to close stats
-    document.addEventListener('keydown', (e) => {
+    this.documentKeydownListener = this.documentKeydownListener || ((e) => {
       if (e.key === 'Escape' && this.isStatsOpen) {
         this.closeStats();
       }
     });
+    document.addEventListener('keydown', this.documentKeydownListener);
 
     // Touch swipe to close (swipe right on panel)
     if (this.statsPanel) {
@@ -189,9 +200,9 @@ class MobileNavigation {
 
     // Bottom nav clicks
     this.bottomNavLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        this.handleBottomNavClick(e);
-      });
+      const clickHandler = (e) => this.handleBottomNavClick(e);
+      this.bottomNavClickHandlers.set(link, clickHandler);
+      link.addEventListener('click', clickHandler);
     });
 
     // Top nav links
@@ -296,17 +307,16 @@ class MobileNavigation {
    * Attach swipe gesture to close stats panel
    */
   attachSwipeListener() {
-    let touchStartX = 0;
-    let touchEndX = 0;
+    this.statsTouchStartListener = this.statsTouchStartListener || ((e) => {
+      this.touchStartX = e.changedTouches[0].screenX;
+    });
+    this.statsTouchEndListener = this.statsTouchEndListener || ((e) => {
+      const touchEndX = e.changedTouches[0].screenX;
+      this.handleSwipe(this.touchStartX, touchEndX);
+    });
 
-    this.statsPanel.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    }, { passive: true });
-
-    this.statsPanel.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      this.handleSwipe(touchStartX, touchEndX);
-    }, { passive: true });
+    this.statsPanel.addEventListener('touchstart', this.statsTouchStartListener, { passive: true });
+    this.statsPanel.addEventListener('touchend', this.statsTouchEndListener, { passive: true });
   }
 
   /**
@@ -354,15 +364,44 @@ class MobileNavigation {
    * Destroy mobile navigation (cleanup)
    */
   destroy() {
+    if (this.handleResizeListener) {
+      window.removeEventListener('resize', this.handleResizeListener);
+    }
+    if (this.handleHashChangeListener) {
+      window.removeEventListener('hashchange', this.handleHashChangeListener);
+    }
+
     // Remove event listeners
     if (this.menuToggle) {
-      this.menuToggle.removeEventListener('click', this.toggleStats);
+      if (this.menuToggleClickListener) {
+        this.menuToggle.removeEventListener('click', this.menuToggleClickListener);
+      }
     }
 
     if (this.statsBackdrop) {
-      this.statsBackdrop.removeEventListener('click', this.closeStats);
+      if (this.statsBackdropClickListener) {
+        this.statsBackdrop.removeEventListener('click', this.statsBackdropClickListener);
+      }
       this.statsBackdrop.remove();
     }
+
+    if (this.documentKeydownListener) {
+      document.removeEventListener('keydown', this.documentKeydownListener);
+    }
+
+    if (this.statsPanel) {
+      if (this.statsTouchStartListener) {
+        this.statsPanel.removeEventListener('touchstart', this.statsTouchStartListener);
+      }
+      if (this.statsTouchEndListener) {
+        this.statsPanel.removeEventListener('touchend', this.statsTouchEndListener);
+      }
+    }
+
+    this.bottomNavClickHandlers.forEach((handler, link) => {
+      link.removeEventListener('click', handler);
+    });
+    this.bottomNavClickHandlers.clear();
 
     // Remove created elements
     const bottomNav = document.querySelector('.bottom-nav');

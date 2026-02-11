@@ -19,7 +19,7 @@
   border-width: 0;
 }
 
-.sr-only:focus {
+.sr-only:focus-visible {
   position: fixed;
   top: 10px;
   left: 10px;
@@ -119,7 +119,7 @@ input[type="checkbox"]:focus-visible {
 }
 
 .btn-outline:hover,
-.btn-outline:focus {
+.btn-outline:focus-visible {
   background: var(--color-primary-blue);
   color: white;
 }
@@ -316,9 +316,9 @@ select:invalid {
   border-color: var(--color-urgency-red);
 }
 
-input:invalid:focus,
-textarea:invalid:focus,
-select:invalid:focus {
+input:invalid:focus-visible,
+textarea:invalid:focus-visible,
+select:invalid:focus-visible {
   outline-color: var(--color-urgency-red);
 }
 
